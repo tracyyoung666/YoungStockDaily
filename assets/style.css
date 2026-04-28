@@ -458,3 +458,181 @@ footer {
   .filter-bar { padding: 12px; gap: 8px; }
   .filter-bar input, .filter-bar select { min-width: 100%; }
 }
+
+/* ---------- Tab 切换栏 ---------- */
+.tab-bar {
+  display: flex;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab-btn {
+  flex: 1;
+  min-width: max-content;
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-sub);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.tab-btn:hover { color: var(--blue); background: rgba(37, 99, 235, 0.05); }
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--blue), #60a5fa);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+.tab-panel { display: none; animation: fadeIn 0.25s ease; }
+.tab-panel.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ---------- 报告卡片增强 ---------- */
+.report-card .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 4px 0 8px;
+  line-height: 1.4;
+}
+.report-card.web3 {
+  border-left: 4px solid #f7931a;
+  background: linear-gradient(135deg, #fffaf0 0%, #ffffff 40%);
+}
+.report-card .web3-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  background: rgba(247, 147, 26, 0.12);
+  color: #c76e00;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ---------- 自选股清单 ---------- */
+.portfolio-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+.portfolio-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.portfolio-head h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text);
+}
+.btn-link {
+  font-size: 13px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--blue);
+  transition: all 0.15s;
+}
+.btn-link:hover { background: rgba(37, 99, 235, 0.06); text-decoration: none; }
+
+.portfolio-cat {
+  margin-bottom: 18px;
+}
+.portfolio-cat:last-child { margin-bottom: 0; }
+.portfolio-cat h3 {
+  font-size: 15px;
+  margin: 0 0 10px;
+  color: var(--text);
+  font-weight: 600;
+}
+.portfolio-cat h3 small {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 6px;
+}
+.stock-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.stock-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  padding: 5px 10px;
+  background: var(--bg-card-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-sub);
+}
+.stock-chip b {
+  color: var(--blue);
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12.5px;
+}
+
+/* 完整 portfolio.html 表格 */
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+.portfolio-table thead { background: var(--bg-card-alt); }
+.portfolio-table th,
+.portfolio-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.portfolio-table th {
+  font-weight: 600;
+  color: var(--text);
+}
+.portfolio-table tr:hover td { background: #fafbfd; }
+.portfolio-table .tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+  border-radius: 4px;
+  margin: 1px 3px 1px 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 更新时间 */
+.update-badge {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-card-alt);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ---------- 响应式补充 ---------- */
+@media (max-width: 640px) {
+  .tab-btn { padding: 8px 12px; font-size: 13px; }
+  .portfolio-summary { padding: 16px; }
+  .portfolio-table th, .portfolio-table td { padding: 8px 10px; }
+}

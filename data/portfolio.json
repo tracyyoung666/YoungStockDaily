@@ -1,0 +1,104 @@
+{
+  "updated_at": "2026-04-28",
+  "categories": {
+    "default": {
+      "description": "默认自选（美股半导体/AI/Crypto相关）",
+      "stocks": [
+        {
+          "symbol": "MU",
+          "market": "US",
+          "name": "Micron 美光",
+          "added_at": "2026-04-28",
+          "tags": [
+            "半导体",
+            "HBM",
+            "AI"
+          ]
+        },
+        {
+          "symbol": "AMD",
+          "market": "US",
+          "name": "AMD 超威半导体",
+          "added_at": "2026-04-28",
+          "tags": [
+            "半导体",
+            "AI",
+            "数据中心"
+          ]
+        },
+        {
+          "symbol": "INTC",
+          "market": "US",
+          "name": "Intel 英特尔",
+          "added_at": "2026-04-28",
+          "tags": [
+            "半导体",
+            "代工"
+          ]
+        },
+        {
+          "symbol": "NBIS",
+          "market": "US",
+          "name": "Nebius Group",
+          "added_at": "2026-04-28",
+          "tags": [
+            "AI云",
+            "GPU租赁"
+          ]
+        },
+        {
+          "symbol": "CRWV",
+          "market": "US",
+          "name": "CoreWeave",
+          "added_at": "2026-04-28",
+          "tags": [
+            "AI云",
+            "GPU"
+          ]
+        },
+        {
+          "symbol": "CRCL",
+          "market": "US",
+          "name": "Circle",
+          "added_at": "2026-04-28",
+          "tags": [
+            "Crypto",
+            "稳定币"
+          ]
+        },
+        {
+          "symbol": "MSTR",
+          "market": "US",
+          "name": "MicroStrategy",
+          "added_at": "2026-04-28",
+          "tags": [
+            "Crypto",
+            "BTC仓位"
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "market": "US",
+          "name": "Tesla 特斯拉",
+          "added_at": "2026-04-28",
+          "tags": [
+            "新能源",
+            "AI",
+            "Robotaxi"
+          ]
+        },
+        {
+          "symbol": "XPEV",
+          "market": "US",
+          "name": "XPeng 小鹏汽车",
+          "added_at": "2026-04-28",
+          "tags": [
+            "新能源车",
+            "智驾",
+            "机器人"
+          ]
+        }
+      ]
+    }
+  }
+}
