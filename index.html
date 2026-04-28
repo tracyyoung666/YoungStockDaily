@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Young's Stock Daily — 每日自选股实时行情分析与投资备忘">
+  <title>Young's Stock Daily · 个人股票分析日志</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <div class="brand">
+        <span class="logo">Y</span>
+        <div>
+          Young's Stock Daily
+          <small>个人股票分析日志 · 自托管 · 亮色主题</small>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">📋 全部报告</a>
+        <a href="https://github.com/tracyyoung666/YoungStockDaily" target="_blank" rel="noopener">🔗 GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="filter-bar">
+      <input type="text" id="search" placeholder="🔍 搜索日期、标题、股票代码…">
+      <select id="category-filter">
+        <option value="">📂 全部分类</option>
+      </select>
+      <span class="count" id="result-count">加载中…</span>
+    </div>
+
+    <div id="report-list" class="report-list">
+      <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取报告索引…</p></div>
+    </div>
+  </main>
+
+  <footer>
+    © Young's Stock Daily · 本站内容仅为个人投资备忘，不构成任何投资建议<br>
+    数据来源：westock-data · 新浪财经 gb_ 接口 · investment-masters
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

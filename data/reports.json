@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-04-28T21:05:00+08:00",
+  "reports": [
+    {
+      "date": "2026-04-28",
+      "title": "自选股实时行情分析 · 盘前",
+      "category": "实时行情分析",
+      "summary": "9 只盘前全线翻绿，均跌 -4.2%；主战场 MU/INTC 兑现盈利，次战场 AMD/NBIS 首次试仓，其他保持观望。",
+      "tickers": ["MU", "AMD", "INTC", "NBIS", "CRWV", "CRCL", "MSTR", "TSLA", "XPEV"],
+      "image": "images/2026-04-28.png"
+    }
+  ]
+}
