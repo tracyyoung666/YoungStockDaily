@@ -16,7 +16,7 @@
         <span class="logo">Y</span>
         <div>
           Young's Stock Daily
-          <small>股票 &amp; Web3 投研日志 · 自托管 · 亮色主题</small>
+          <small>股票 &amp; Web3 投研日志</small>
         </div>
       </div>
       <nav class="nav-links">
@@ -30,13 +30,21 @@
   <main>
     <!-- 顶部 Tab 切换 -->
     <div class="tab-bar" role="tablist">
-      <button class="tab-btn active" data-tab="stock" role="tab">📈 股票分析报告</button>
+      <button class="tab-btn active" data-tab="today" role="tab">🔥 今日最新</button>
+      <button class="tab-btn" data-tab="stock" role="tab">📈 股票报告</button>
       <button class="tab-btn" data-tab="web3" role="tab">🪙 Web3 日报</button>
       <button class="tab-btn" data-tab="portfolio" role="tab">⭐ 自选股速览</button>
     </div>
 
-    <!-- Tab 1：股票分析 -->
-    <section class="tab-panel active" data-panel="stock">
+    <!-- Tab 0：今日最新（默认）—— 当日股票 + 当日 Web3 合并在一页 -->
+    <section class="tab-panel active" data-panel="today">
+      <div id="today-container">
+        <div class="empty-state"><h3>⏳ 加载中</h3><p>正在加载最新报告…</p></div>
+      </div>
+    </section>
+
+    <!-- Tab 1：股票报告（历史归档） -->
+    <section class="tab-panel" data-panel="stock">
       <div class="filter-bar">
         <input type="text" id="search-stock" placeholder="🔍 搜索日期 / 标题 / 股票代码…">
         <select id="category-stock">
@@ -49,7 +57,7 @@
       </div>
     </section>
 
-    <!-- Tab 2：Web3 日报 -->
+    <!-- Tab 2：Web3 日报（历史归档） -->
     <section class="tab-panel" data-panel="web3">
       <div class="filter-bar">
         <input type="text" id="search-web3" placeholder="🔍 搜索日期 / 关键词…">

@@ -29,7 +29,7 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 | 股票报告详情页 | - | `reports/YYYY-MM-DD.html` |
 | Web3 详情页 | - | `web3/YYYY-MM-DD.html` |
 | 异常信号总览图 | - | `images/YYYY-MM-DD.png` |
-| 访问入口 | - | `http://youngstockdaily.jianyang918.workers.dev/` |
+| 访问入口 | - | `https://youngstockdaily.pages.dev/` |
 
 默认 Git 仓库：`https://github.com/tracyyoung666/YoungStockDaily.git`（可通过 `--repo` 覆盖）。
 默认 Token：从 `~/.config/knot/github_token` 读取（可通过环境变量 `GITHUB_TOKEN` 覆盖）。
@@ -128,20 +128,18 @@ python3 scripts/publish_site.py \
 
 **第二条（文字简报，仅精简摘要）**：
 - title: `📝 今日投研简报 | YYYY-MM-DD`
-- message 格式（严格按下方模版，不加前言总结）：
+- message 格式（严格按下方模版，不加前言总结，**首行仅保留站点根地址，不贴子页面链接**）：
   ```
-  🔗 http://youngstockdaily.jianyang918.workers.dev/
+  🔗 https://youngstockdaily.pages.dev/
 
   ━━━ 📈 自选股行情 ━━━
   ・异常信号：<列 1-3 条关键异常，如 "MU 创新高 RSI 超买">
   ・建议动作：<列 1-2 条，如 "MU 减仓 1/3 / AMD 观望">
-  ・详见：http://youngstockdaily.jianyang918.workers.dev/reports/YYYY-MM-DD.html
 
   ━━━ 🪙 Web3 日报 ━━━
   ・BTC / ETH：<价格和涨跌>
   ・恐贪指数：<数值 + 文字>
   ・一句话：<一句话总结>
-  ・详见：http://youngstockdaily.jianyang918.workers.dev/web3/YYYY-MM-DD.html
   ```
 
 ## 参数约定（外部可覆盖）
@@ -151,7 +149,7 @@ python3 scripts/publish_site.py \
 | 仓库地址 | `https://github.com/tracyyoung666/YoungStockDaily.git` | `REPO_URL` |
 | 本地克隆目录 | `/data/workspace/YoungStockDaily` | `REPO_DIR` |
 | GitHub PAT | `~/.config/knot/github_token` | `GITHUB_TOKEN` |
-| 访问入口 | `http://youngstockdaily.jianyang918.workers.dev/` | - |
+| 访问入口 | `https://youngstockdaily.pages.dev/` | - |
 
 ## 常见场景速查
 

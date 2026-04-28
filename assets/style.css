@@ -636,3 +636,84 @@ footer {
   .portfolio-summary { padding: 16px; }
   .portfolio-table th, .portfolio-table td { padding: 8px 10px; }
 }
+
+/* ================================================================
+   今日最新板块
+   ================================================================ */
+.today-header {
+  background: linear-gradient(135deg, #fff 0%, #f0f6ff 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.today-title { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.today-title h1 {
+  margin: 0; font-size: 22px; color: var(--text); font-weight: 700;
+}
+.today-chip {
+  display: inline-flex; align-items: center;
+  background: linear-gradient(135deg, #ef4444 0%, #f59e0b 100%);
+  color: #fff; font-size: 13px; font-weight: 600;
+  padding: 4px 12px; border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+}
+.today-anchors {
+  display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap;
+}
+.today-anchors a {
+  display: inline-flex; align-items: center;
+  padding: 6px 14px; border-radius: 999px;
+  background: #fff; border: 1px solid var(--border);
+  color: var(--text-sub); font-size: 13.5px; font-weight: 500;
+  text-decoration: none; transition: all 0.2s;
+}
+.today-anchors a:hover {
+  color: var(--blue); border-color: var(--blue);
+  background: #eff6ff; transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.today-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: 80px;  /* 锚点定位时留出顶部空间 */
+}
+.today-block-title {
+  margin: 0 0 16px 0;
+  font-size: 19px;
+  color: var(--text);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--bg-card-alt);
+}
+.today-block-body { font-size: 15px; }
+.today-block-body > .report-content { padding: 0; }
+.today-block-foot {
+  margin-top: 14px; padding-top: 14px;
+  border-top: 1px dashed var(--border);
+  text-align: right;
+}
+.today-block-foot .btn-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 16px; border-radius: 8px;
+  background: var(--blue); color: #fff;
+  font-size: 13.5px; font-weight: 500;
+  text-decoration: none; transition: all 0.2s;
+}
+.today-block-foot .btn-link:hover {
+  background: #1d4ed8; text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+@media (max-width: 640px) {
+  .today-header { padding: 16px 18px; }
+  .today-title h1 { font-size: 18px; }
+  .today-block { padding: 18px 18px; }
+  .today-block-title { font-size: 17px; }
+}
