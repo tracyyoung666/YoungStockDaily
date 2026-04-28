@@ -1,7 +1,8 @@
-.DS_Store
 *.log
-node_modules/
-.vscode/
-.idea/
 *.swp
+.DS_Store
+.cache/
 .env
+.idea/
+.vscode/
+node_modules/

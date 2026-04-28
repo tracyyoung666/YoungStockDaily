@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-render_overview.py
-读取 overview_data JSON，渲染【异常信号总览 + 组合总结 + 行动清单】竖版手机友好 PNG（亮色系）。
+render_overview.py · v2（修复版）
+数据驱动生成【异常信号总览 + 组合总结 + 行动清单】亮色竖屏 PNG，手机微信友好。
 
 用法：
   python3 render_overview.py --input overview_data.json --output images/YYYY-MM-DD.png
@@ -19,32 +19,41 @@ try:
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    from matplotlib.patches import FancyBboxPatch
+    from matplotlib.patches import FancyBboxPatch, Rectangle
+    from matplotlib import font_manager
 except ImportError:
     sys.stderr.write('需要安装 matplotlib: pip install matplotlib\n')
     sys.exit(2)
 
 
-# ---------- 字体（中文 + 符号兜底） ----------
+# ---------- 中文字体（强制注入） ----------
 def setup_font():
+    """按优先级查找 CJK 字体，确保中文不变方框。"""
     candidates = [
-        'Noto Sans CJK SC', 'Noto Sans CJK JP',
-        'Source Han Sans CN', 'WenQuanYi Zen Hei',
-        'PingFang SC', 'Microsoft YaHei',
-        'DejaVu Sans',
+        'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Noto Sans CJK TC',
+        'Source Han Sans CN', 'Source Han Sans SC',
+        'WenQuanYi Zen Hei', 'WenQuanYi Micro Hei',
+        'PingFang SC', 'Microsoft YaHei', 'SimHei',
     ]
-    from matplotlib import font_manager
     installed = {f.name for f in font_manager.fontManager.ttflist}
+    chosen = None
     for c in candidates:
         if c in installed:
-            plt.rcParams['font.sans-serif'] = [c, 'DejaVu Sans']
+            chosen = c
             break
+    if chosen:
+        # 同时设置全局 family 和 rcParams，避免某些文字对象走默认
+        plt.rcParams['font.family'] = ['sans-serif']
+        plt.rcParams['font.sans-serif'] = [chosen, 'DejaVu Sans']
     plt.rcParams['axes.unicode_minus'] = False
+    return chosen
 
 
-COLORS = {
+# ---------- 配色（亮色系） ----------
+C = {
     'bg': '#f7f9fc',
     'card': '#ffffff',
+    'alt': '#fafbfd',
     'border': '#dbe3ee',
     'text': '#1a2332',
     'sub': '#4a5568',
@@ -55,10 +64,9 @@ COLORS = {
     'orange': '#f59e0b',
     'fire': '#ef4444',
     'ok': '#10b981',
+    'header_bg': '#eef2f8',
 }
-
-SIGNAL_COLORS = {'fire': COLORS['fire'], 'warn': COLORS['orange'], 'ok': COLORS['ok']}
-SIGNAL_EMOJI = {'fire': '▲', 'warn': '!', 'ok': '✓'}
+SIG = {'fire': C['fire'], 'warn': C['orange'], 'ok': C['ok']}
 
 
 def fmt_pct(v):
@@ -68,12 +76,13 @@ def fmt_pct(v):
     return f'{sign}{v:.2f}%'
 
 
-def color_for_change(v):
+def color_change(v):
     if v is None:
-        return COLORS['muted']
-    return COLORS['green'] if v < 0 else COLORS['red']
+        return C['muted']
+    return C['green'] if v < 0 else C['red']
 
 
+# ---------- 主渲染 ----------
 def render(data, out_path):
     setup_font()
 
@@ -83,161 +92,220 @@ def render(data, out_path):
     phase = data.get('phase', '盘前')
     date = data.get('date', '')
 
-    # 高度估算：头部 120 + 每行 52 + 总结 (行数*30+60) + 行动 (行数*34+80) + 底部 60
-    row_h = 0.48
-    base_h = 2.1
-    total_h = base_h + len(rows) * row_h + len(summary) * 0.32 + len(actions) * 0.38
+    # ====== 布局参数（单位：像素，1 inch = 100 dpi 下） ======
+    W = 1080                      # 画布宽度 px
+    PAD_X = 36                    # 左右 padding
+    HEADER_H = 130                # 顶部标题
+    TABLE_HEADER_H = 52           # 表头高度
+    ROW_H = 64                    # 每行高度
+    SECTION_GAP = 30              # 节之间间距
+    SECTION_TITLE_H = 44          # 节标题高度
+    SUMMARY_LINE_H = 36           # 总结每行
+    ACTION_LINE_H = 64            # 每条行动（两行文字：动作+标的 / 详情）
+    CARD_PAD = 18                 # 卡片内 padding
+    FOOTER_H = 52                 # 底部
 
-    fig = plt.figure(figsize=(10, total_h), facecolor=COLORS['bg'], dpi=130)
+    table_h = TABLE_HEADER_H + ROW_H * len(rows)
+    summary_card_h = 0
+    if summary:
+        summary_card_h = SECTION_TITLE_H + CARD_PAD * 2 + SUMMARY_LINE_H * len(summary)
+    actions_card_h = 0
+    if actions:
+        actions_card_h = SECTION_TITLE_H + CARD_PAD * 2 + ACTION_LINE_H * len(actions)
+
+    H = (HEADER_H + table_h + SECTION_GAP
+         + summary_card_h + (SECTION_GAP if summary else 0)
+         + actions_card_h + (SECTION_GAP if actions else 0)
+         + FOOTER_H + 20)
+
+    # matplotlib: figsize 以英寸为单位，dpi=100 -> 1 inch = 100 px
+    DPI = 100
+    fig = plt.figure(figsize=(W / DPI, H / DPI), facecolor=C['bg'], dpi=DPI)
     ax = fig.add_axes([0, 0, 1, 1])
-    ax.set_xlim(0, 100)
-    ax.set_ylim(0, total_h * 10)
+    ax.set_xlim(0, W)
+    ax.set_ylim(0, H)
+    ax.invert_yaxis()       # 让 y=0 在顶部，向下增长，更直观
     ax.axis('off')
 
-    y_cursor = total_h * 10
+    y = 0  # 从顶部开始
 
-    # ---------- 标题卡片 ----------
-    y_cursor -= 1.2
-    ax.text(5, y_cursor, f'📈 自选股行情 · {phase}总览', fontsize=19,
-            fontweight='bold', color=COLORS['text'], va='center')
-    y_cursor -= 0.8
-    ax.text(5, y_cursor, date, fontsize=12, color=COLORS['muted'], va='center')
+    # ===== 顶部标题 =====
+    y += 40
+    ax.text(PAD_X, y, f'■ 自选股行情 · {phase}总览',
+            fontsize=22, fontweight='bold', color=C['blue'],
+            va='top', ha='left')
+    ax.text(W - PAD_X, y + 8, date,
+            fontsize=14, color=C['muted'],
+            va='top', ha='right')
+    y = HEADER_H  # 进入表格区
 
-    y_cursor -= 1.0
+    # ===== 表格表头 =====
+    # 7 列的 x 中心坐标（基于 W=1080 分配）
+    # 代码(90) | 昨收(170) | 昨涨跌(170) | 盘前价(180) | 盘前%(180) | 距52W(150) | 信号(～140)
+    cols_x = [95, 215, 385, 555, 725, 870, 1000]
+    cols_name = ['代码', '昨收', '昨涨跌', '盘前价', '盘前%', '距52W高', '信号']
 
-    # ---------- 表头 ----------
-    header_y = y_cursor
-    header = FancyBboxPatch((3, header_y - 0.5), 94, 1.0,
-                             boxstyle='round,pad=0.0,rounding_size=0.4',
-                             linewidth=1, edgecolor=COLORS['border'],
-                             facecolor='#eef2f8', zorder=1)
-    ax.add_patch(header)
-    cols = [
-        ('代码', 8),
-        ('昨收', 22),
-        ('昨涨跌', 38),
-        ('盘前价', 52),
-        ('盘前%', 66),
-        ('距52W高', 80),
-        ('信号', 92),
-    ]
-    for text, x in cols:
-        ax.text(x, header_y, text, fontsize=11, color=COLORS['text'],
-                fontweight='bold', ha='center', va='center')
-    y_cursor -= 1.2
+    # 表头背景
+    ax.add_patch(FancyBboxPatch(
+        (PAD_X, y), W - 2 * PAD_X, TABLE_HEADER_H,
+        boxstyle='round,pad=0,rounding_size=8',
+        linewidth=1, edgecolor=C['border'], facecolor=C['header_bg']))
+    for name, cx in zip(cols_name, cols_x):
+        ax.text(cx, y + TABLE_HEADER_H / 2, name,
+                fontsize=13, fontweight='bold', color=C['text'],
+                va='center', ha='center')
+    y += TABLE_HEADER_H
 
-    # ---------- 每行 ----------
+    # ===== 每行数据 =====
     for i, r in enumerate(rows):
-        row_y = y_cursor
-        # 背景（交替）
-        bg_color = '#fafbfd' if i % 2 == 0 else '#ffffff'
-        ax.add_patch(FancyBboxPatch((3, row_y - 0.32), 94, 0.9,
-                                     boxstyle='round,pad=0.0,rounding_size=0.25',
-                                     linewidth=0, facecolor=bg_color, zorder=1))
-        # 左色条（信号级别）
+        row_y = y
+        row_bg = C['alt'] if i % 2 == 0 else C['card']
+        ax.add_patch(Rectangle((PAD_X, row_y), W - 2 * PAD_X, ROW_H,
+                               facecolor=row_bg, edgecolor='none', linewidth=0))
+        # 左侧色条（信号等级）
         level = r.get('signal_level', 'ok')
-        ax.add_patch(plt.Rectangle((3, row_y - 0.32), 0.8, 0.9,
-                                    facecolor=SIGNAL_COLORS.get(level, COLORS['ok']),
-                                    linewidth=0, zorder=2))
+        ax.add_patch(Rectangle((PAD_X, row_y), 8, ROW_H,
+                               facecolor=SIG.get(level, C['ok']),
+                               edgecolor='none', linewidth=0))
+        # 底部分隔线
+        ax.add_patch(Rectangle((PAD_X, row_y + ROW_H - 1),
+                               W - 2 * PAD_X, 1,
+                               facecolor=C['border'], edgecolor='none', linewidth=0))
 
-        sym = r.get('symbol', '')
-        ax.text(8, row_y, sym, fontsize=12, color=COLORS['text'],
-                fontweight='bold', ha='center', va='center')
+        cy = row_y + ROW_H / 2
 
+        # 1 代码
+        ax.text(cols_x[0], cy, r.get('symbol', ''),
+                fontsize=15, fontweight='bold', color=C['text'],
+                va='center', ha='center')
+
+        # 2 昨收
         pc = r.get('prev_close')
-        ax.text(22, row_y, f"${pc:.2f}" if pc else '--', fontsize=11,
-                color=COLORS['sub'], ha='center', va='center')
+        ax.text(cols_x[1], cy, f'${pc:.2f}' if pc else '--',
+                fontsize=13, color=C['sub'], va='center', ha='center')
 
+        # 3 昨涨跌
         pcp = r.get('prev_change_pct')
-        ax.text(38, row_y, fmt_pct(pcp), fontsize=11,
-                color=color_for_change(pcp), fontweight='bold',
-                ha='center', va='center')
+        ax.text(cols_x[2], cy, fmt_pct(pcp),
+                fontsize=13, fontweight='bold', color=color_change(pcp),
+                va='center', ha='center')
 
+        # 4 盘前价
         pm = r.get('premarket_price')
-        ax.text(52, row_y, f"${pm:.2f}" if pm else '--', fontsize=11,
-                color=COLORS['text'], fontweight='bold',
-                ha='center', va='center')
+        ax.text(cols_x[3], cy, f'${pm:.2f}' if pm else '--',
+                fontsize=13, fontweight='bold', color=C['text'],
+                va='center', ha='center')
 
+        # 5 盘前%
         pmp = r.get('premarket_change_pct')
-        ax.text(66, row_y, fmt_pct(pmp), fontsize=11,
-                color=color_for_change(pmp), fontweight='bold',
-                ha='center', va='center')
+        ax.text(cols_x[4], cy, fmt_pct(pmp),
+                fontsize=13, fontweight='bold', color=color_change(pmp),
+                va='center', ha='center')
 
+        # 6 距52W高
         d52 = r.get('dist_52w_high_pct')
-        d52_text = '新高' if d52 is not None and abs(d52) < 0.1 else (fmt_pct(d52) if d52 is not None else '--')
-        d52_color = COLORS['red'] if d52 is not None and abs(d52) < 0.1 else COLORS['sub']
-        ax.text(80, row_y, d52_text, fontsize=11, color=d52_color,
-                ha='center', va='center')
+        if d52 is not None and abs(d52) < 0.1:
+            d52_text, d52_color = '★ 新高', C['red']
+        elif d52 is not None:
+            d52_text = fmt_pct(d52)
+            d52_color = C['sub']
+        else:
+            d52_text, d52_color = '--', C['muted']
+        ax.text(cols_x[5], cy, d52_text,
+                fontsize=12, color=d52_color, va='center', ha='center')
 
+        # 7 信号标签
         label = r.get('signal_label', '')
-        ax.text(92, row_y, label, fontsize=10, color=SIGNAL_COLORS.get(level, COLORS['sub']),
-                fontweight='bold', ha='center', va='center')
+        # 自动换行：超过 10 个字符切断
+        if len(label) > 12:
+            label = label[:11] + '…'
+        ax.text(cols_x[6], cy, label,
+                fontsize=11, fontweight='bold',
+                color=SIG.get(level, C['sub']),
+                va='center', ha='center')
 
-        y_cursor -= row_h
+        y += ROW_H
 
-    y_cursor -= 0.4
+    y += SECTION_GAP
 
-    # ---------- 组合总结 ----------
+    # ===== 组合层面总结 =====
     if summary:
-        ax.text(5, y_cursor, '📊 组合层面总结', fontsize=14,
-                fontweight='bold', color=COLORS['text'], va='center')
-        y_cursor -= 0.5
-        # 卡片底色
-        card_top = y_cursor + 0.2
-        card_h = len(summary) * 0.32 + 0.4
-        ax.add_patch(FancyBboxPatch((3, card_top - card_h), 94, card_h,
-                                     boxstyle='round,pad=0.0,rounding_size=0.4',
-                                     linewidth=1, edgecolor=COLORS['border'],
-                                     facecolor=COLORS['card'], zorder=1))
-        y_cursor -= 0.1
-        for s in summary:
-            ax.text(6, y_cursor, f'• {s}', fontsize=11,
-                    color=COLORS['sub'], va='center')
-            y_cursor -= 0.32
-        y_cursor -= 0.3
+        ax.text(PAD_X, y, '■ 组合层面总结',
+                fontsize=16, fontweight='bold', color=C['blue'],
+                va='top', ha='left')
+        y += SECTION_TITLE_H
 
-    # ---------- 行动清单 ----------
+        card_h = CARD_PAD * 2 + SUMMARY_LINE_H * len(summary)
+        ax.add_patch(FancyBboxPatch(
+            (PAD_X, y), W - 2 * PAD_X, card_h,
+            boxstyle='round,pad=0,rounding_size=10',
+            linewidth=1, edgecolor=C['border'], facecolor=C['card']))
+
+        ty = y + CARD_PAD + SUMMARY_LINE_H / 2
+        for s in summary:
+            # 限制长度防溢出
+            if len(s) > 50:
+                s = s[:49] + '…'
+            ax.text(PAD_X + 20, ty, f'• {s}',
+                    fontsize=13, color=C['sub'], va='center', ha='left')
+            ty += SUMMARY_LINE_H
+        y += card_h + SECTION_GAP
+
+    # ===== 开盘前行动清单 =====
     if actions:
-        ax.text(5, y_cursor, '🎯 开盘前行动清单', fontsize=14,
-                fontweight='bold', color=COLORS['text'], va='center')
-        y_cursor -= 0.5
-        card_top = y_cursor + 0.2
-        card_h = len(actions) * 0.38 + 0.4
-        ax.add_patch(FancyBboxPatch((3, card_top - card_h), 94, card_h,
-                                     boxstyle='round,pad=0.0,rounding_size=0.4',
-                                     linewidth=1, edgecolor=COLORS['border'],
-                                     facecolor=COLORS['card'], zorder=1))
-        y_cursor -= 0.1
-        action_color = {
-            '减仓': COLORS['fire'], '卖出': COLORS['fire'],
-            '加仓': COLORS['green'], '建仓': COLORS['green'], '买入': COLORS['green'],
-            '观望': COLORS['orange'], '持有': COLORS['blue'],
+        ax.text(PAD_X, y, '■ 开盘前行动清单',
+                fontsize=16, fontweight='bold', color=C['blue'],
+                va='top', ha='left')
+        y += SECTION_TITLE_H
+
+        card_h = CARD_PAD * 2 + ACTION_LINE_H * len(actions)
+        ax.add_patch(FancyBboxPatch(
+            (PAD_X, y), W - 2 * PAD_X, card_h,
+            boxstyle='round,pad=0,rounding_size=10',
+            linewidth=1, edgecolor=C['border'], facecolor=C['card']))
+
+        action_color_map = {
+            '减仓': C['fire'], '卖出': C['fire'], '止损': C['fire'],
+            '加仓': C['green'], '建仓': C['green'], '买入': C['green'],
+            '观望': C['orange'], '持有': C['blue'],
         }
+
+        ty = y + CARD_PAD + ACTION_LINE_H / 2
         for a in actions:
             act = a.get('action', '')
             tgt = a.get('target', '')
             det = a.get('detail', '')
-            col = action_color.get(act, COLORS['sub'])
-            ax.text(6, y_cursor, f'[{act}]', fontsize=11,
-                    color=col, fontweight='bold', va='center')
-            ax.text(16, y_cursor, tgt, fontsize=11,
-                    color=COLORS['text'], fontweight='bold', va='center')
-            ax.text(26, y_cursor, det, fontsize=10.5,
-                    color=COLORS['sub'], va='center')
-            y_cursor -= 0.38
-        y_cursor -= 0.2
+            col = action_color_map.get(act, C['sub'])
+            # 第 1 行：[动作] 标的
+            tag_x = PAD_X + 20
+            ax.text(tag_x, ty - 12, f'[{act}]',
+                    fontsize=12.5, fontweight='bold', color=col,
+                    va='center', ha='left')
+            ax.text(tag_x + 80, ty - 12, tgt,
+                    fontsize=13.5, fontweight='bold', color=C['text'],
+                    va='center', ha='left')
+            # 第 2 行：详情（超长截断）
+            if len(det) > 70:
+                det = det[:69] + '…'
+            ax.text(tag_x, ty + 12, det,
+                    fontsize=12, color=C['sub'],
+                    va='center', ha='left')
+            ty += ACTION_LINE_H
+        y += card_h + SECTION_GAP
 
-    # ---------- 底部 ----------
-    ax.text(50, 0.3, 'Young\'s Stock Daily · 仅为个人投资备忘', fontsize=9,
-            color=COLORS['muted'], ha='center', va='center')
+    # ===== 底部 =====
+    ax.text(W / 2, H - 22,
+            "Young's Stock Daily · 仅为个人投资备忘，不构成投资建议",
+            fontsize=10.5, color=C['muted'],
+            va='center', ha='center')
 
-    # 保存
+    # ===== 保存 =====
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_path, facecolor=COLORS['bg'], dpi=130,
+    fig.savefig(out_path, facecolor=C['bg'], dpi=DPI,
                 bbox_inches=None, pad_inches=0)
     plt.close(fig)
-    print(f'[ok] rendered {out_path}  ({out_path.stat().st_size} bytes)')
+    print(f'[ok] rendered {out_path}  ({out_path.stat().st_size} bytes, {W}x{H}px)')
 
 
 def main():
