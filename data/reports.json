@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-04-29T19:05:24",
+  "reports": [
+    {
+      "date": "2026-04-29",
+      "title": "自选股实时行情分析 · 盘前 · 2026-04-29 晚间",
+      "category": "实时行情分析",
+      "summary": "半导体高位回踩 3-4%，INTC RSI 超买建议分批止盈；AI 云算力 NBIS/CRWV 盘前急挫 >5%；加密随 BTC 77K 低位震荡",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/2026-04-29.png"
+    }
+  ]
+}
