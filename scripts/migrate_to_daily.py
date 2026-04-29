@@ -101,13 +101,15 @@ def build_one_daily_html(slug, date_str, gen_time, stock_body, web3_body, has_im
   <meta name="theme-color" content="#f7f9fc">
   <title>{date_str} · 投研日报 · Young's Stock Daily</title>
   <link rel="stylesheet" href="../assets/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
 </head>
 <body>
   <header class="site-header">
     <div class="inner">
       <div class="brand">
-        <span class="logo">Y</span>
+        <img class="logo" src="../assets/logo.svg" alt="Young's Stock Daily Logo" width="44" height="44">
         <div>
           Young's Stock Daily
           <small>股票 &amp; Web3 投研日志</small>
@@ -134,11 +136,17 @@ def build_one_daily_html(slug, date_str, gen_time, stock_body, web3_body, has_im
 '''
 
 def main():
+    # 守卫：如果旧的 reports/ 和 web3/ 目录都不存在，说明迁移已经完成过，拒绝再次执行
+    if not REPORTS_DIR.exists() and not WEB3_DIR.exists():
+        print('⚠️  reports/ 和 web3/ 目录均不存在，迁移已完成。跳过，避免覆盖现有 daily.json。')
+        print('   如需重建 data/daily.json 索引，请改用 scripts/rebuild_daily_index.py')
+        return
+
     # 收集所有日期
     dates = set()
-    for p in REPORTS_DIR.glob('*.html'):
+    for p in REPORTS_DIR.glob('*.html') if REPORTS_DIR.exists() else []:
         dates.add(p.stem)
-    for p in WEB3_DIR.glob('*.html'):
+    for p in WEB3_DIR.glob('*.html') if WEB3_DIR.exists() else []:
         dates.add(p.stem)
     dates = sorted(dates)
 

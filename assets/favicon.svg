@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Young's Stock Daily · Favicon 精简版（去掉文字，保证小尺寸可辨识）-->
+  <defs>
+    <linearGradient id="fav-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1e3a8a"/>
+      <stop offset="55%"  stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="fav-gold" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#fav-bg)"/>
+
+  <!-- 三根 K 线递进，最后一根冲顶 -->
+  <line x1="17" y1="40" x2="17" y2="52" stroke="#f87171" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="14.2" y="43" width="5.6" height="7" rx="1" fill="#ef4444"/>
+
+  <line x1="32" y1="24" x2="32" y2="44" stroke="#34d399" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="29.2" y="28" width="5.6" height="12" rx="1" fill="none" stroke="#10b981" stroke-width="1.8"/>
+
+  <line x1="47" y1="8"  x2="47" y2="34" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="44"  y="14" width="6" height="14" rx="1.1" fill="#10b981" stroke="#34d399" stroke-width="1"/>
+
+  <!-- 金色趋势线 + 箭头 -->
+  <path d="M 12 46 L 26 34 L 38 22 L 54 6"
+        fill="none" stroke="url(#fav-gold)" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 54 6 L 48 7.5 L 51 11 Z" fill="#fcd34d"/>
+</svg>
