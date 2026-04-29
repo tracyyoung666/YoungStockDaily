@@ -1,35 +1,85 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Young's Stock Daily · Favicon v2（黑金风 精简版）-->
+  <!-- Young's Stock Daily · Logo v3（统一版，同时作为 Logo 与 Favicon）
+       设计：墨黑钻石底 + 同心双菱金徽章 + 四角钻石切面 + 极简上升曲线 + 脉冲追踪点
+       风格：瑞士私行 / 精品对冲基金 VI · 无文字 · 品牌化
+  -->
   <defs>
-    <linearGradient id="fav2-base" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#1a1f2e"/>
+    <!-- 墨黑钻石渐变底 -->
+    <linearGradient id="v3-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1a2138"/>
       <stop offset="55%"  stop-color="#0a0e1a"/>
       <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
-    <linearGradient id="fav2-gold" x1="0" y1="0" x2="1" y2="1">
+
+    <!-- 主香槟金渐变（外菱形） -->
+    <linearGradient id="v3-gold" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%"   stop-color="#8a6d3b"/>
-      <stop offset="45%"  stop-color="#f0d88a"/>
+      <stop offset="30%"  stop-color="#d4a849"/>
+      <stop offset="60%"  stop-color="#f0d88a"/>
       <stop offset="100%" stop-color="#a9843e"/>
     </linearGradient>
-    <linearGradient id="fav2-gold-bright" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#d4a849"/>
-      <stop offset="100%" stop-color="#ffe9a8"/>
+
+    <!-- 高光金（上升曲线） -->
+    <linearGradient id="v3-gold-bright" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#b98a3d"/>
+      <stop offset="50%"  stop-color="#f4d57a"/>
+      <stop offset="100%" stop-color="#fff0c0"/>
     </linearGradient>
+
+    <!-- 内层微光（在底色上增加一点纵深感） -->
+    <radialGradient id="v3-inner-glow" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="75%"  stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 终点金点的辐光 -->
+    <radialGradient id="v3-dot-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#fff0c0" stop-opacity="1"/>
+      <stop offset="40%"  stop-color="#f4d57a" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#d4a849" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <!-- 圆角深底 -->
-  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#fav2-base)"/>
+  <!-- 深色圆角底 -->
+  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#v3-base)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#v3-inner-glow)"/>
 
-  <!-- 菱形徽章（favicon 下描金粗一点以保证小尺寸可见） -->
-  <polygon points="32,8 56,32 32,56 8,32"
-           fill="none" stroke="url(#fav2-gold)" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- 描金外框 -->
+  <rect x="2.5" y="2.5" width="59" height="59" rx="13.5" ry="13.5"
+        fill="none" stroke="url(#v3-gold)" stroke-width="0.9" stroke-opacity="0.55"/>
 
-  <!-- 上升曲线（金色高光，更粗保证 16/32 尺寸可见） -->
-  <path d="M 17 41 C 23 40, 27 37, 31 32 C 35 26, 40 23, 48 19"
-        fill="none" stroke="url(#fav2-gold-bright)" stroke-width="3.2"
+  <!-- 同心双菱形徽章 -->
+  <!-- 外菱形（主线） -->
+  <polygon points="32,7 57,32 32,57 7,32"
+           fill="none" stroke="url(#v3-gold)" stroke-width="1.9" stroke-linejoin="round"/>
+  <!-- 内菱形（细辅线） -->
+  <polygon points="32,13 51,32 32,51 13,32"
+           fill="none" stroke="url(#v3-gold)" stroke-width="0.7" stroke-opacity="0.55" stroke-linejoin="round"/>
+
+  <!-- 四角钻石切面小菱形（精品感关键装饰） -->
+  <g fill="url(#v3-gold)">
+    <polygon points="32,5 33.4,7 32,9 30.6,7"/>
+    <polygon points="59,32 57,33.4 55,32 57,30.6"/>
+    <polygon points="32,59 30.6,57 32,55 33.4,57"/>
+    <polygon points="5,32 7,30.6 9,32 7,33.4"/>
+  </g>
+
+  <!-- ==== 徽章中央：极简上升曲线 ==== -->
+  <!-- 浅色辅助基准线（非常淡，暗示"水平趋势基线"） -->
+  <line x1="17" y1="41" x2="47" y2="41"
+        stroke="#d4a849" stroke-opacity="0.15" stroke-width="0.6" stroke-dasharray="1 2"/>
+
+  <!-- 主上升曲线（平滑贝塞尔） -->
+  <path d="M 17 42 C 23 41, 26 38, 29 33 C 33 26, 38 22, 47 19"
+        fill="none" stroke="url(#v3-gold-bright)" stroke-width="2.4"
         stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- 箭头 -->
-  <path d="M 48 19 L 43.8 19.3 L 46.3 23 Z" fill="#f4d57a"/>
-  <!-- 起点金点 -->
-  <circle cx="17" cy="41" r="2.4" fill="#f0d88a"/>
+
+  <!-- 曲线起点：脉冲追踪圈（外圈虚环 + 内圈实点） -->
+  <circle cx="17" cy="42" r="3.6" fill="none" stroke="#d4a849" stroke-opacity="0.35" stroke-width="0.8"/>
+  <circle cx="17" cy="42" r="1.9" fill="#f0d88a"/>
+
+  <!-- 曲线终点：发光金圆点（替代原来的箭头，更现代） -->
+  <circle cx="47" cy="19" r="5.5" fill="url(#v3-dot-glow)"/>
+  <circle cx="47" cy="19" r="2.2" fill="#fff0c0"/>
+  <circle cx="47" cy="19" r="2.2" fill="none" stroke="#f4d57a" stroke-width="0.6" stroke-opacity="0.9"/>
 </svg>
