@@ -1,10 +1,11 @@
 /* ================================================================
-   YoungStockDaily · 前端 SPA v6
+   YoungStockDaily · 前端 SPA v7
    - 数据源：data/daily.json 索引 + daily/daily_YYYYMMDD_HHMM.json 全量
    - 三个一级 Tab：今日最新 / 分析日报 / 自选股
    - 分析日报：列表 <-> 详情 原地切换（hash 路由 #daily/<slug>）
    - 去白框 UI：内容直接平铺
    - v6 修复：版本化 ?v= 击穿浏览器缓存；_indexPromise 失败时 console 明显提示
+   - v7 修复：兼容 JSON 缺少 has_stock/has_web3/image 字段，从内容自动推断
    ================================================================ */
 
 (function () {
@@ -168,7 +169,12 @@
   function renderDetail(container, slug, opts) {
     opts = opts || {};
     fetchJSON('daily/' + encodeURIComponent(slug) + '.json').then(function (d) {
-      let html = '';
+      // 兼容：如果 JSON 缺少 has_stock/has_web3 字段，从内容自动推断
+      var hasStock = d.has_stock != null ? d.has_stock : !!(d.stock_body_html && d.stock_body_html.length > 10);
+      var hasWeb3  = d.has_web3  != null ? d.has_web3  : !!(d.web3_body_html && d.web3_body_html.length > 10);
+      var imgPath  = d.image || d.overview_image || null;
+
+      var html = '';
       // 页首元信息
       html += '<div class="daily-page-head">';
       if (opts.isTodayHeader) {
@@ -179,15 +185,15 @@
       html += '</div>';
 
       // 预览图
-      if (d.image) {
+      if (imgPath) {
         html += '<figure class="hero-image-plain">' +
-                  '<img src="' + escapeHtml(d.image) + '" alt="' + escapeHtml(d.date) + ' 异常信号总览" loading="lazy">' +
+                  '<img src="' + escapeHtml(imgPath) + '" alt="' + escapeHtml(d.date) + ' 异常信号总览" loading="lazy">' +
                   '<figcaption>异常信号总览 · 点击可查看大图</figcaption>' +
                 '</figure>';
       }
 
       // 锚点导航（两部分都有才显示）
-      if (d.has_stock && d.has_web3) {
+      if (hasStock && hasWeb3) {
         html += '<div class="daily-anchor-nav">' +
                   '<a href="#stock-section">📈 自选股</a>' +
                   '<a href="#web3-section">🪙 Web3</a>' +
@@ -195,20 +201,20 @@
       }
 
       // 股票区
-      if (d.has_stock) {
+      if (hasStock) {
         html += '<section class="daily-block" id="stock-section">' +
                   '<h2 class="daily-block-title">📈 自选股实时行情分析</h2>' +
                   '<div class="daily-block-body">' + rewriteRelativePaths(d.stock_body_html || '') + '</div>' +
                 '</section>';
       }
       // Web3 区
-      if (d.has_web3) {
+      if (hasWeb3) {
         html += '<section class="daily-block" id="web3-section">' +
                   '<h2 class="daily-block-title">🪙 Web3 加密日报</h2>' +
                   '<div class="daily-block-body">' + (d.web3_body_html || '') + '</div>' +
                 '</section>';
       }
-      if (!d.has_stock && !d.has_web3) {
+      if (!hasStock && !hasWeb3) {
         html += '<div class="empty-state"><h3>该记录暂无内容</h3></div>';
       }
       container.innerHTML = html;
@@ -297,7 +303,7 @@
 
   // ================= 启动 =================
   document.addEventListener('DOMContentLoaded', function () {
-    console.log('%c[YSD] SPA v6 booted','color:#d4a849;font-weight:700');
+    console.log('%c[YSD] SPA v7 booted','color:#d4a849;font-weight:700');
     initTabs();
     initToday();
     initDaily();

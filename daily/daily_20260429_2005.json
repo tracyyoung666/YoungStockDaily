@@ -21,5 +21,8 @@
     "session": "pre_market",
     "bj_time": "2026-04-29 20:05:15 CST",
     "et_time": "2026-04-29 08:05:15 EDT"
-  }
+  },
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/daily_20260429_2005.png"
 }
