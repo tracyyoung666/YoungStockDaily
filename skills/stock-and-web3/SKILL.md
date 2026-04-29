@@ -23,14 +23,13 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 | 用途 | 本地路径 | 仓库路径 |
 |---|---|---|
 | 自选股清单 | `/data/workspace/portfolio/watchlist.json` | `data/portfolio.json` |
-| 合并日报（JSON）| - | `daily/daily_YYYYMMDD_HHMM.json` |
-| 合并日报（HTML 详情页）| - | `daily/daily_YYYYMMDD_HHMM.html` |
-| 日报统一索引 | - | `data/daily.json` |
+| 股票报告索引 | - | `data/reports.json` |
 | Web3 归档数据 | `/data/workspace/web3-archive/digests/YYYY-MM-DD.json` | - |
-| 异常信号总览图 | - | `images/daily_YYYYMMDD_HHMM.png` |
+| Web3 列表索引 | - | `data/web3.json` |
+| 股票报告详情页 | - | `reports/YYYY-MM-DD.html` |
+| Web3 详情页 | - | `web3/YYYY-MM-DD.html` |
+| 异常信号总览图 | - | `images/YYYY-MM-DD.png` |
 | 访问入口 | - | `https://youngstockdaily.pages.dev/` |
-
-> ⚠️ **`reports/`、`web3/`、`data/reports.json`、`data/web3.json` 已废弃移除，不再使用**。
 
 默认 Git 仓库：`https://github.com/tracyyoung666/YoungStockDaily.git`（可通过 `--repo` 覆盖）。
 默认 Token：从 `~/.config/knot/github_token` 读取（可通过环境变量 `GITHUB_TOKEN` 覆盖）。
@@ -45,18 +44,33 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 
 ### 步骤 2：获取每只自选股的实时行情 + 异常信号
 
-对清单中每只股票，调用 **westock-data** 获取：
-- 实时行情（含当前/昨收/涨跌/成交量/52周高低）
-- 技术指标（量比、RSI6、MACD、创新高新低）
-- 当日新闻 2 条（`news --type 3 --limit 2`）
+**⚠️ 重要：数据口径与时区（v2 修正，2026-04-29）**
 
-**异常判定口径**：单日涨跌 > 4% | 量比 > 2 | RSI6 > 85 或 < 15 | 创 52 周新高/新低。
+直接调用封装好的统一抓取工具（已固化正确时区/字段映射，防止踩坑）：
+```bash
+python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,AMD,INTC,...
+```
 
-**盘前价补充**：若当前是美股盘前时段（北京时间 16:00-22:30），用新浪 `gb_` 接口补盘前价：
-```
-curl -s "https://hq.sinajs.cn/?list=gb_${symbol_lower}" -H "Referer: https://finance.sina.com.cn"
-```
-详情见 `references/premarket.md`。
+返回的每只股包含：
+- `close_price` → **昨收**（= 美东 T 日收盘 = 北京昨夜刚结束的那个盘），来自 westock-data
+- `prev_close` → 前日收盘（= 美东 T-1 日收盘，仅作参考）
+- `pct_1d` → T 日当日涨跌%（已跌算完）
+- `volume_ratio`、`high_52w`、`dist_from_52w_high_pct` 等
+- `premarket_price` → **盘前价**（只在盘前时段才有值；无有效成交时为 `None`）
+- `premarket_pct_vs_close` → 真实盘前涨跌% = (盘前价 - 昨收) / 昨收
+- `premarket_note` → `'ok'` / `'no_premarket_activity'` / `'fields_insufficient'`
+- `abnormal_signals` → 自动打标的异常列表
+
+**🚫 绝对禁止的错误**：
+1. 不要把新浪 `gb_` 接口的 `change_pct` 当作盘前涨跌（基准是 T-1，不是昨收）
+2. 没拉到盘前价时**不要用昨收兜底冒充盘前**，必须写 `暂无有效盘前`
+3. 忽略 fetch_quotes 返回的 `meta.session`，在休市时段（08:00-16:00）还强拉盘前
+
+详见 `references/premarket.md`。
+
+**异常判定口径**：单日涨跌 > 4% | 量比 > 2 | RSI6 > 85 或 < 15 | 创 52 周新高/新低 | 盘前涨跌 > 4%。
+
+另外补充每只股的新闻（`westock-data news --type 3 --limit 2`）。
 
 ### 步骤 3：生成异常信号总览图（PNG）
 
@@ -64,12 +78,10 @@ curl -s "https://hq.sinajs.cn/?list=gb_${symbol_lower}" -H "Referer: https://fin
 ```bash
 python3 scripts/render_overview.py \
   --input /tmp/overview_data.json \
-  --output <仓库>/images/daily_YYYYMMDD_HHMM.png
+  --output <仓库>/images/YYYY-MM-DD.png
 ```
 
 输入 JSON schema 见 `references/data-schemas.md#overview_data`。图默认 1188×约 2100，亮色 `#f7f9fc` 背景，无底部冗余留白。
-
-**命名规范**：`SLUG = daily_YYYYMMDD_HHMM`（取当前 `datetime.now().strftime('%Y%m%d_%H%M')`）。所有同一批次的文件（.json / .html / .png）必须使用同一 SLUG。
 
 ### 步骤 4：拉取 Web3 日报
 
@@ -98,24 +110,24 @@ sys.stdout.write(json.dumps({'date':date,'digest_md':md,'digest_wechat':wc,
 ### 步骤 5：构建 HTML 站点并 git push
 
 调用 `scripts/publish_site.py`，它会一次性完成：
-1. 更新 `data/portfolio.json`（从 watchlist.json 同步）
-2. 将本次股票报告 + Web3 日报合并写入 `daily/<slug>.json` + `daily/<slug>.html`
-3. 复制异常信号总览图到 `images/<slug>.png`（slug = `daily_YYYYMMDD_HHMM`）
-4. 更新 `data/daily.json` 统一索引（追加新条目）
-5. `git add / commit / push`
+1. 重新生成 Web3 日报详情页（扫描 `/data/workspace/web3-archive/digests/*.json`）
+2. 更新 `data/portfolio.json`（从 watchlist.json 同步）
+3. 将本次股票报告详情页写入 `reports/YYYY-MM-DD.html`
+4. 更新 `data/reports.json` 索引
+5. 复制异常信号总览图到 `images/YYYY-MM-DD.png`
+6. `git add / commit / push`
 
 ```bash
 python3 scripts/publish_site.py \
   --repo-url https://github.com/tracyyoung666/YoungStockDaily.git \
   --repo-dir /data/workspace/YoungStockDaily \
   --token-file ~/.config/knot/github_token \
-  --slug daily_YYYYMMDD_HHMM \
-  --stock-report-html /tmp/stock_report_body.html \
+  --date YYYY-MM-DD \
+  --stock-report /tmp/stock_report.html \
   --stock-summary "一句话摘要" \
   --tickers "MU,AMD,INTC,..." \
-  --web3-body-html /tmp/web3_body.html \
-  --web3-summary "Web3 一句话" \
-  --overview-png /tmp/overview.png
+  --overview-png /tmp/overview.png \
+  --category "实时行情分析"
 ```
 
 所有参数都可以通过环境变量覆盖（`GITHUB_TOKEN`、`REPO_URL`、`REPO_DIR`）。详见脚本 `--help`。
@@ -126,7 +138,7 @@ python3 scripts/publish_site.py \
 - title: `📈 自选股行情分析 | YYYY-MM-DD`
 - message: 仅 Markdown 图片语法，指向 raw.githubusercontent URL
   ```
-  ![异常信号总览](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/daily_YYYYMMDD_HHMM.png)
+  ![异常信号总览](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/YYYY-MM-DD.png)
   ```
 
 **第二条（文字简报，仅精简摘要）**：
