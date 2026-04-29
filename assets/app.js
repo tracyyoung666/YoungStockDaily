@@ -1,19 +1,14 @@
 /* ================================================================
-   YoungStockDaily · 前端逻辑 v3
-   - 首页：4 Tab（今日最新 / 股票 / Web3 / 自选股），默认"今日最新"
-   - 今日最新：合并显示当日股票报告 + Web3 日报 + 顶部锚点导航
-   - 详情页：图片 Lightbox
+   YoungStockDaily · 前端 SPA v4
+   - 三个一级 Tab：今日最新 / 分析日报 / 自选股
+   - 分析日报：列表 <-> 详情 原地切换，不跳页
+   - 详情合并当日股票 + Web3 内容
    ================================================================ */
 
 (function () {
   'use strict';
 
-  // ---------- 工具 ----------
-  function el(html) {
-    const d = document.createElement('div');
-    d.innerHTML = html.trim();
-    return d.firstChild;
-  }
+  // ================= 工具 =================
   function escapeHtml(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -27,288 +22,270 @@
     return fetch(url + (url.indexOf('?') === -1 ? '?' : '&') + '_=' + Date.now())
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url); return r.text(); });
   }
+  function rewriteRelativePaths(html) {
+    // 详情页里的相对路径（../images/x.png / ../web3/x.html）→ 在首页根目录访问时改为 images/x.png / web3/x.html
+    return html
+      .replace(/src="\.\.\/(images\/[^"]+)"/g, 'src="$1"')
+      .replace(/href="\.\.\/(images\/[^"]+)"/g, 'href="$1"')
+      .replace(/href="\.\.\/(web3\/[^"]+)"/g, 'href="$1"')
+      .replace(/href="\.\.\/(reports\/[^"]+)"/g, 'href="$1"')
+      .replace(/href="\.\.\/portfolio\.html"/g, 'href="#portfolio"')
+      .replace(/href="\.\.\/index\.html"/g, 'href="#today"');
+  }
 
-  // ---------- Tab 切换 ----------
+  // 从股票详情页 HTML 抽出预览图块 + 正文 <article class="report-content">
+  function extractStockParts(htmlStr) {
+    const mPreview = htmlStr.match(/<div class="preview-image"[\s\S]*?<\/div>\s*(?=<article|<section|<div class="toc"|$)/i);
+    const mArticle = htmlStr.match(/<article[^>]*class="report-content"[^>]*>([\s\S]*?)<\/article>/i);
+    let out = '';
+    if (mPreview) out += rewriteRelativePaths(mPreview[0]);
+    if (mArticle) out += '<article class="report-content">' + rewriteRelativePaths(mArticle[1]) + '</article>';
+    return out;
+  }
+  // 从 Web3 详情页 HTML 抽出 #digest-body
+  function extractWeb3Body(htmlStr) {
+    const m = htmlStr.match(/<div[^>]*id="digest-body"[^>]*>([\s\S]*?)<\/div>\s*<details/i);
+    if (m) return '<div class="report-content">' + m[1] + '</div>';
+    // 退化：抓 main 里所有内容
+    const m2 = htmlStr.match(/<main[^>]*>([\s\S]*?)<\/main>/i);
+    if (m2) return '<div class="report-content">' + m2[1] + '</div>';
+    return '';
+  }
+
+  // ================= Tab 切换 =================
   function initTabs() {
     const btns = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
-    if (!btns.length) return;
     btns.forEach(function (b) {
       b.addEventListener('click', function () {
-        const t = b.dataset.tab;
-        btns.forEach(function (x) { x.classList.toggle('active', x === b); });
-        panels.forEach(function (p) { p.classList.toggle('active', p.dataset.panel === t); });
-        try { history.replaceState(null, '', '#' + t); } catch (e) {}
+        activateTab(b.dataset.tab);
+        // 清掉详情 hash，回到 Tab 根
+        try { history.replaceState(null, '', '#' + b.dataset.tab); } catch (e) {}
+        // 切到 daily 时，默认回列表视图
+        if (b.dataset.tab === 'daily') showDailyList();
       });
     });
-    // 启动时根据 hash 定位 Tab
+    // 启动路由
+    routeFromHash();
+    window.addEventListener('hashchange', routeFromHash);
+  }
+  function activateTab(name) {
+    document.querySelectorAll('.tab-btn').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === name);
+    });
+    document.querySelectorAll('.tab-panel').forEach(function (p) {
+      p.classList.toggle('active', p.dataset.panel === name);
+    });
+  }
+  function routeFromHash() {
     const h = (location.hash || '').replace('#', '');
-    if (h && ['today', 'stock', 'web3', 'portfolio'].indexOf(h) !== -1) {
-      const btn = document.querySelector('.tab-btn[data-tab="' + h + '"]');
-      if (btn) btn.click();
+    if (!h) { activateTab('today'); return; }
+    // 支持 #daily/2026-04-29
+    const parts = h.split('/');
+    const tab = parts[0];
+    if (['today', 'daily', 'portfolio'].indexOf(tab) === -1) { activateTab('today'); return; }
+    activateTab(tab);
+    if (tab === 'daily') {
+      if (parts[1]) showDailyDetail(parts[1]);
+      else showDailyList();
     }
   }
 
-  // ---------- 今日最新（合并页） ----------
+  // ================= Tab 1：今日最新 =================
   function initToday() {
     const box = document.getElementById('today-container');
     if (!box) return;
-
     Promise.all([
       fetchJSON('data/reports.json').catch(function () { return { reports: [] }; }),
       fetchJSON('data/web3.json').catch(function () { return { digests: [] }; })
-    ]).then(function (results) {
-      const stocks = (results[0].reports || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
-      const web3s  = (results[1].digests || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
-
-      const latestStock = stocks[0] || null;
-      const latestWeb3  = web3s[0]  || null;
-
-      if (!latestStock && !latestWeb3) {
-        box.innerHTML = '<div class="empty-state"><h3>暂无报告</h3><p>定时任务尚未生成任何报告，请稍后再来</p></div>';
+    ]).then(function (res) {
+      const stocks = (res[0].reports || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+      const web3s  = (res[1].digests || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+      const stock = stocks[0], web3 = web3s[0];
+      if (!stock && !web3) {
+        box.innerHTML = '<div class="empty-state"><h3>暂无报告</h3></div>';
         return;
       }
-
-      // 选用较新的一个作为"今日"标签；实际上两份内容都展示
-      const headerDate = (latestStock && latestStock.date) || (latestWeb3 && latestWeb3.date) || '';
-
-      // 头部信息 + 锚点导航
-      let html = '';
-      html += '<div class="today-header">' +
-                '<div class="today-title">' +
-                  '<span class="today-chip">🔥 今日最新</span>' +
-                  '<h1>' + escapeHtml(headerDate) + ' · 投研日报</h1>' +
-                '</div>' +
-                '<div class="today-anchors">' +
-                  (latestStock ? '<a href="#stock-section">📈 股票行情</a>' : '') +
-                  (latestWeb3  ? '<a href="#web3-section">🪙 Web3 日报</a>' : '') +
-                  '<a href="#portfolio-section">⭐ 自选股</a>' +
-                '</div>' +
-              '</div>';
-
-      // === 股票板块 ===
-      if (latestStock) {
-        html += '<section class="today-block" id="stock-section">' +
-                  '<h2 class="today-block-title">📈 自选股实时行情分析</h2>' +
-                  '<div class="today-block-body" id="today-stock-body">' +
-                    '<div class="empty-state"><h3>⏳ 加载股票报告…</h3></div>' +
-                  '</div>' +
-                  '<div class="today-block-foot">' +
-                    '<a class="btn-link" href="reports/' + encodeURIComponent(latestStock.date) + '.html">打开完整股票报告 →</a>' +
-                  '</div>' +
-                '</section>';
-      }
-
-      // === Web3 板块 ===
-      if (latestWeb3) {
-        html += '<section class="today-block" id="web3-section">' +
-                  '<h2 class="today-block-title">🪙 Web3 加密日报</h2>' +
-                  '<div class="today-block-body" id="today-web3-body">' +
-                    '<div class="empty-state"><h3>⏳ 加载 Web3 日报…</h3></div>' +
-                  '</div>' +
-                  '<div class="today-block-foot">' +
-                    '<a class="btn-link" href="web3/' + encodeURIComponent(latestWeb3.date) + '.html">打开完整 Web3 日报 →</a>' +
-                  '</div>' +
-                '</section>';
-      }
-
-      // === 自选股速览 ===
-      html += '<section class="today-block" id="portfolio-section">' +
-                '<h2 class="today-block-title">⭐ 自选股速览</h2>' +
-                '<div class="today-block-body" id="today-portfolio-body">' +
-                  '<div class="empty-state"><h3>⏳ 加载自选股…</h3></div>' +
-                '</div>' +
-                '<div class="today-block-foot">' +
-                  '<a class="btn-link" href="portfolio.html">打开完整清单 →</a>' +
-                '</div>' +
-              '</section>';
-
-      box.innerHTML = html;
-
-      // 加载实际内容（并行）
-      if (latestStock) loadStockBody(latestStock);
-      if (latestWeb3)  loadWeb3Body(latestWeb3);
-      loadPortfolioBody(document.getElementById('today-portfolio-body'));
-
+      const date = (stock && stock.date) || (web3 && web3.date);
+      renderCombinedDetail(box, date, stock, web3, { isTodayHeader: true });
     }).catch(function (err) {
       box.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
     });
   }
 
-  function loadStockBody(meta) {
-    const container = document.getElementById('today-stock-body');
-    if (!container) return;
-    fetchText('reports/' + encodeURIComponent(meta.date) + '.html').then(function (htmlStr) {
-      // 抽出 <article class="report-content">...</article>
-      const mArticle = htmlStr.match(/<article[^>]*class="report-content"[^>]*>([\s\S]*?)<\/article>/i);
-      const mPreview = htmlStr.match(/<div class="preview-image"[\s\S]*?<\/div>/i);
-      let bodyHtml = '';
-      if (mPreview) {
-        // 修正图片路径：详情页里 ../images/xx.png，到首页需要 images/xx.png
-        bodyHtml += mPreview[0].replace(/src="\.\.\/(images\/[^"]+)"/g, 'src="$1"');
-      }
-      if (mArticle) {
-        // 修正内部链接：详情页里 ../web3/...、../images/... 需要改成 web3/...、images/...
-        let article = mArticle[1];
-        article = article.replace(/href="\.\.\/(web3\/[^"]+)"/g, 'href="$1"');
-        article = article.replace(/src="\.\.\/(images\/[^"]+)"/g, 'src="$1"');
-        bodyHtml += '<article class="report-content">' + article + '</article>';
-      } else {
-        // 退化为摘要
-        bodyHtml += '<div class="report-content"><h3>' + escapeHtml(meta.title || '') + '</h3><p>' + escapeHtml(meta.summary || '') + '</p></div>';
-      }
-      container.innerHTML = bodyHtml;
-      // 对新插入的预览图挂 lightbox
-      attachLightboxFor(container);
-    }).catch(function (err) {
-      container.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-    });
-  }
+  // ================= Tab 2：分析日报 =================
+  function initDaily() {
+    const listEl = document.getElementById('list-daily');
+    if (!listEl) return;
+    const searchInput = document.getElementById('search-daily');
+    const countEl = document.getElementById('count-daily');
+    const backBtn = document.getElementById('btn-daily-back');
 
-  function loadWeb3Body(meta) {
-    const container = document.getElementById('today-web3-body');
-    if (!container) return;
-    fetchText('web3/' + encodeURIComponent(meta.date) + '.html').then(function (htmlStr) {
-      const m = htmlStr.match(/<div[^>]*id="digest-body"[^>]*>([\s\S]*?)<\/div>\s*<details/i);
-      if (m) {
-        container.innerHTML = '<div class="report-content">' + m[1] + '</div>';
-      } else {
-        container.innerHTML = '<div class="report-content"><h3>' + escapeHtml(meta.title || 'Web3 日报') + '</h3><p>' + escapeHtml(meta.summary || '') + '</p></div>';
-      }
-    }).catch(function (err) {
-      container.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-    });
-  }
+    let merged = []; // [{date, stock, web3, title, summary, tickers, image}]
 
-  function loadPortfolioBody(container) {
-    if (!container) return;
-    fetchJSON('data/portfolio.json').then(function (data) {
-      const cats = data.categories || {};
-      const html = Object.keys(cats).map(function (k) {
-        const c = cats[k];
-        const chips = (c.stocks || []).map(function (s) {
-          return '<span class="stock-chip"><b>' + escapeHtml(s.symbol) + '</b> · ' + escapeHtml(s.name) + '</span>';
-        }).join('');
-        return '<div class="portfolio-cat">' +
-                '<h3>📁 ' + escapeHtml(k) + ' <small>' + escapeHtml(c.description || '') + '</small></h3>' +
-                '<div class="stock-chips">' + chips + '</div>' +
-               '</div>';
+    Promise.all([
+      fetchJSON('data/reports.json').catch(function () { return { reports: [] }; }),
+      fetchJSON('data/web3.json').catch(function () { return { digests: [] }; })
+    ]).then(function (res) {
+      const byDate = {};
+      (res[0].reports || []).forEach(function (r) { byDate[r.date] = byDate[r.date] || {}; byDate[r.date].stock = r; });
+      (res[1].digests || []).forEach(function (w) { byDate[w.date] = byDate[w.date] || {}; byDate[w.date].web3 = w; });
+      merged = Object.keys(byDate).sort(function (a, b) { return b.localeCompare(a); }).map(function (d) {
+        const s = byDate[d].stock, w = byDate[d].web3;
+        return {
+          date: d,
+          stock: s || null,
+          web3: w || null,
+          title: (s && s.title) || (w && w.title) || d + ' 分析日报',
+          summary: [s && s.summary, w && w.summary].filter(Boolean).join(' · '),
+          tickers: (s && s.tickers) || [],
+          image: (s && s.image) || null,
+          hasStock: !!s,
+          hasWeb3:  !!w
+        };
+      });
+      window.__DAILY_INDEX__ = merged; // 供详情视图按日期查找
+      render();
+    }).catch(function (err) {
+      listEl.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+    });
+
+    function render() {
+      const q = (searchInput.value || '').trim().toLowerCase();
+      const filtered = merged.filter(function (r) {
+        if (!q) return true;
+        return [r.date, r.title, r.summary, r.tickers.join(' ')].join(' ').toLowerCase().indexOf(q) !== -1;
+      });
+      countEl.textContent = '共 ' + filtered.length + ' 篇';
+      if (!filtered.length) {
+        listEl.innerHTML = '<div class="empty-state"><h3>🔍 未找到</h3></div>';
+        return;
+      }
+      const html = filtered.map(function (r) {
+        const badges = (r.hasStock ? '<span class="badge stock">📈 股票</span>' : '') +
+                       (r.hasWeb3  ? '<span class="badge web3">🪙 Web3</span>'  : '');
+        const tickers = r.tickers.length
+          ? '<div class="tickers">' + r.tickers.map(function (t) { return '<span>' + escapeHtml(t) + '</span>'; }).join('') + '</div>'
+          : '';
+        return '<a class="report-card" href="#daily/' + encodeURIComponent(r.date) + '" data-date="' + escapeHtml(r.date) + '">' +
+                 (r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="' + escapeHtml(r.date) + '" loading="lazy">' : '') +
+                 '<div class="date">' + escapeHtml(r.date) + '</div>' +
+                 '<div class="badges">' + badges + '</div>' +
+                 '<div class="title">' + escapeHtml(r.title) + '</div>' +
+                 '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
+                 tickers +
+               '</a>';
       }).join('');
-      container.innerHTML = html || '<div class="empty-state"><h3>暂无自选股</h3></div>';
-    }).catch(function (err) {
-      container.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-    });
-  }
-
-  // ---------- 股票报告列表 ----------
-  function initStockList() {
-    const listEl = document.getElementById('list-stock');
-    if (!listEl) return;
-    const searchInput = document.getElementById('search-stock');
-    const categorySelect = document.getElementById('category-stock');
-    const countEl = document.getElementById('count-stock');
-
-    let all = [];
-
-    fetchJSON('data/reports.json').then(function (data) {
-      all = (data.reports || []).sort(function (a, b) { return b.date.localeCompare(a.date); });
-      const cats = Array.from(new Set(all.map(function (r) { return r.category; }))).sort();
-      cats.forEach(function (c) {
-        const opt = document.createElement('option');
-        opt.value = c; opt.textContent = c;
-        categorySelect.appendChild(opt);
-      });
-      render();
-    }).catch(function (err) {
-      listEl.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-    });
-
-    function render() {
-      const q = (searchInput.value || '').trim().toLowerCase();
-      const cat = categorySelect.value;
-      const filtered = all.filter(function (r) {
-        if (cat && r.category !== cat) return false;
-        if (!q) return true;
-        const hay = [r.date, r.title, r.summary, r.category, (r.tickers || []).join(' ')].join(' ').toLowerCase();
-        return hay.indexOf(q) !== -1;
-      });
-      countEl.textContent = '共 ' + filtered.length + ' 篇';
-      if (!filtered.length) {
-        listEl.innerHTML = '<div class="empty-state"><h3>🔍 未找到</h3><p>换个关键词试试</p></div>';
-        return;
-      }
-      listEl.innerHTML = '';
-      filtered.forEach(function (r) {
-        const card = el(
-          '<a class="report-card" href="reports/' + encodeURIComponent(r.date) + '.html">' +
-            (r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="' + escapeHtml(r.date) + '" loading="lazy">' : '') +
-            '<div class="date">' + escapeHtml(r.date) + '</div>' +
-            '<span class="category">' + escapeHtml(r.category) + '</span>' +
-            '<div class="title">' + escapeHtml(r.title || '') + '</div>' +
-            '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
-            (r.tickers && r.tickers.length
-              ? '<div class="tickers">' + r.tickers.map(function (t) { return '<span>' + escapeHtml(t) + '</span>'; }).join('') + '</div>'
-              : '') +
-          '</a>'
-        );
-        listEl.appendChild(card);
-      });
+      listEl.innerHTML = html;
     }
     searchInput.addEventListener('input', render);
-    categorySelect.addEventListener('change', render);
-  }
 
-  // ---------- Web3 日报列表 ----------
-  function initWeb3List() {
-    const listEl = document.getElementById('list-web3');
-    if (!listEl) return;
-    const searchInput = document.getElementById('search-web3');
-    const countEl = document.getElementById('count-web3');
-    let all = [];
-
-    fetchJSON('data/web3.json').then(function (data) {
-      all = (data.digests || []).sort(function (a, b) { return b.date.localeCompare(a.date); });
-      render();
-    }).catch(function (err) {
-      listEl.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-    });
-
-    function render() {
-      const q = (searchInput.value || '').trim().toLowerCase();
-      const filtered = all.filter(function (r) {
-        if (!q) return true;
-        return [r.date, r.title, r.summary].join(' ').toLowerCase().indexOf(q) !== -1;
-      });
-      countEl.textContent = '共 ' + filtered.length + ' 篇';
-      if (!filtered.length) {
-        listEl.innerHTML = '<div class="empty-state"><h3>🔍 未找到</h3><p>换个关键词试试</p></div>';
-        return;
-      }
-      listEl.innerHTML = '';
-      filtered.forEach(function (r) {
-        const card = el(
-          '<a class="report-card web3" href="web3/' + encodeURIComponent(r.date) + '.html">' +
-            '<div class="web3-badge">🪙 Web3</div>' +
-            '<div class="date">' + escapeHtml(r.date) + '</div>' +
-            '<div class="title">' + escapeHtml(r.title || 'Web3 日报') + '</div>' +
-            '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
-          '</a>'
-        );
-        listEl.appendChild(card);
+    if (backBtn) {
+      backBtn.addEventListener('click', function () {
+        try { history.pushState(null, '', '#daily'); } catch (e) {}
+        showDailyList();
       });
     }
-    searchInput.addEventListener('input', render);
   }
 
-  // ---------- 自选股速览（Tab 3） ----------
-  function initPortfolioPreview() {
-    const box = document.getElementById('portfolio-preview');
-    if (!box) return;
-    loadPortfolioBody(box);
+  function showDailyList() {
+    const lv = document.getElementById('daily-list-view');
+    const dv = document.getElementById('daily-detail-view');
+    if (lv) lv.style.display = '';
+    if (dv) dv.style.display = 'none';
+  }
+  function showDailyDetail(date) {
+    const lv = document.getElementById('daily-list-view');
+    const dv = document.getElementById('daily-detail-view');
+    const body = document.getElementById('daily-detail-body');
+    const dateEl = document.getElementById('daily-detail-date');
+    if (!lv || !dv || !body) return;
+    lv.style.display = 'none';
+    dv.style.display = '';
+    dateEl.textContent = date;
+    body.innerHTML = '<div class="empty-state"><h3>⏳ 加载中</h3></div>';
+
+    // 在索引里找对应的 stock/web3 元数据
+    const idx = (window.__DAILY_INDEX__ || []).filter(function (r) { return r.date === date; })[0];
+    const tryRender = function () {
+      const item = (window.__DAILY_INDEX__ || []).filter(function (r) { return r.date === date; })[0];
+      renderCombinedDetail(body, date, item ? item.stock : null, item ? item.web3 : null, { isTodayHeader: false });
+    };
+    if (idx) { tryRender(); return; }
+    // 索引未加载时，等待一下
+    let waits = 0;
+    const t = setInterval(function () {
+      waits += 1;
+      if (window.__DAILY_INDEX__ || waits > 20) {
+        clearInterval(t);
+        tryRender();
+      }
+    }, 200);
   }
 
-  // ---------- 独立 portfolio.html 页的详细渲染 ----------
-  function initPortfolioPage() {
+  // ================= 合并详情渲染（今日最新 + 日报详情共用） =================
+  function renderCombinedDetail(container, date, stockMeta, web3Meta, opts) {
+    opts = opts || {};
+    let html = '';
+    if (opts.isTodayHeader) {
+      html += '<div class="today-header">' +
+                '<div class="today-title">' +
+                  '<span class="today-chip">🔥 今日最新</span>' +
+                  '<h1>' + escapeHtml(date) + ' · 投研日报</h1>' +
+                '</div>' +
+              '</div>';
+    }
+    // 📈 股票区
+    if (stockMeta) {
+      html += '<section class="today-block" id="stock-section">' +
+                '<h2 class="today-block-title">📈 自选股实时行情分析</h2>' +
+                '<div class="today-block-body" id="slot-stock-' + date + '">' +
+                  '<div class="empty-state"><h3>⏳ 加载股票报告…</h3></div>' +
+                '</div>' +
+              '</section>';
+    }
+    // 🪙 Web3 区
+    if (web3Meta) {
+      html += '<section class="today-block" id="web3-section">' +
+                '<h2 class="today-block-title">🪙 Web3 加密日报</h2>' +
+                '<div class="today-block-body" id="slot-web3-' + date + '">' +
+                  '<div class="empty-state"><h3>⏳ 加载 Web3 日报…</h3></div>' +
+                '</div>' +
+              '</section>';
+    }
+    if (!stockMeta && !web3Meta) {
+      html += '<div class="empty-state"><h3>该日期暂无内容</h3></div>';
+    }
+    container.innerHTML = html;
+
+    // 异步填充
+    if (stockMeta) {
+      fetchText('reports/' + encodeURIComponent(date) + '.html').then(function (s) {
+        const slot = document.getElementById('slot-stock-' + date);
+        if (!slot) return;
+        const parts = extractStockParts(s);
+        slot.innerHTML = parts || ('<div class="report-content"><h3>' + escapeHtml(stockMeta.title || '') + '</h3><p>' + escapeHtml(stockMeta.summary || '') + '</p></div>');
+        attachLightboxFor(slot);
+      }).catch(function (err) {
+        const slot = document.getElementById('slot-stock-' + date);
+        if (slot) slot.innerHTML = '<div class="empty-state"><h3>😔 股票报告加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+      });
+    }
+    if (web3Meta) {
+      fetchText('web3/' + encodeURIComponent(date) + '.html').then(function (s) {
+        const slot = document.getElementById('slot-web3-' + date);
+        if (!slot) return;
+        const body = extractWeb3Body(s);
+        slot.innerHTML = body || ('<div class="report-content"><h3>Web3 日报</h3><p>' + escapeHtml(web3Meta.summary || '') + '</p></div>');
+      }).catch(function (err) {
+        const slot = document.getElementById('slot-web3-' + date);
+        if (slot) slot.innerHTML = '<div class="empty-state"><h3>😔 Web3 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+      });
+    }
+  }
+
+  // ================= Tab 3：自选股（完整清单原地展示） =================
+  function initPortfolio() {
     const box = document.getElementById('portfolio-full');
     if (!box) return;
     fetchJSON('data/portfolio.json').then(function (data) {
@@ -341,7 +318,7 @@
     });
   }
 
-  // ---------- Lightbox ----------
+  // ================= Lightbox =================
   function buildLightboxOnce() {
     if (document.querySelector('.lightbox')) return document.querySelector('.lightbox');
     const lightbox = document.createElement('div');
@@ -372,16 +349,13 @@
       });
     });
   }
-  function initLightbox() { attachLightboxFor(document); }
 
-  // ---------- 启动 ----------
+  // ================= 启动 =================
   document.addEventListener('DOMContentLoaded', function () {
     initTabs();
     initToday();
-    initStockList();
-    initWeb3List();
-    initPortfolioPreview();
-    initPortfolioPage();
-    initLightbox();
+    initDaily();
+    initPortfolio();
+    attachLightboxFor(document);
   });
 })();

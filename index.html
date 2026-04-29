@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#f7f9fc">
-  <meta name="description" content="Young's Stock Daily — 每日自选股实时行情分析 + Web3 日报 + 自选股清单">
+  <meta name="description" content="Young's Stock Daily — 自选股实时行情分析 + Web3 日报">
   <title>Young's Stock Daily · 股票 & Web3 投研日志</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
@@ -20,64 +20,58 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="index.html">🏠 首页</a>
-        <a href="portfolio.html">⭐ 自选股清单</a>
         <a href="https://github.com/tracyyoung666/YoungStockDaily" target="_blank" rel="noopener">🔗 GitHub</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- 顶部 Tab 切换 -->
+    <!-- 一级 Tab（精简为 3 个） -->
     <div class="tab-bar" role="tablist">
       <button class="tab-btn active" data-tab="today" role="tab">🔥 今日最新</button>
-      <button class="tab-btn" data-tab="stock" role="tab">📈 股票报告</button>
-      <button class="tab-btn" data-tab="web3" role="tab">🪙 Web3 日报</button>
-      <button class="tab-btn" data-tab="portfolio" role="tab">⭐ 自选股速览</button>
+      <button class="tab-btn" data-tab="daily" role="tab">📅 分析日报</button>
+      <button class="tab-btn" data-tab="portfolio" role="tab">⭐ 自选股</button>
     </div>
 
-    <!-- Tab 0：今日最新（默认）—— 当日股票 + 当日 Web3 合并在一页 -->
+    <!-- Tab 1：今日最新（原地合并显示股票 + Web3） -->
     <section class="tab-panel active" data-panel="today">
       <div id="today-container">
         <div class="empty-state"><h3>⏳ 加载中</h3><p>正在加载最新报告…</p></div>
       </div>
     </section>
 
-    <!-- Tab 1：股票报告（历史归档） -->
-    <section class="tab-panel" data-panel="stock">
-      <div class="filter-bar">
-        <input type="text" id="search-stock" placeholder="🔍 搜索日期 / 标题 / 股票代码…">
-        <select id="category-stock">
-          <option value="">📂 全部分类</option>
-        </select>
-        <span class="count" id="count-stock">加载中…</span>
+    <!-- Tab 2：分析日报（列表 + 详情切换，不跳页） -->
+    <section class="tab-panel" data-panel="daily">
+      <!-- 列表视图 -->
+      <div id="daily-list-view">
+        <div class="filter-bar">
+          <input type="text" id="search-daily" placeholder="🔍 搜索日期 / 关键词 / 股票代码…">
+          <span class="count" id="count-daily">加载中…</span>
+        </div>
+        <div id="list-daily" class="report-list">
+          <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取日报索引…</p></div>
+        </div>
       </div>
-      <div id="list-stock" class="report-list">
-        <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取股票报告索引…</p></div>
+      <!-- 详情视图（默认隐藏，点击列表项时显示） -->
+      <div id="daily-detail-view" style="display:none;">
+        <div class="detail-toolbar">
+          <button class="btn-back" id="btn-daily-back">← 返回列表</button>
+          <span class="detail-date" id="daily-detail-date"></span>
+        </div>
+        <div id="daily-detail-body">
+          <div class="empty-state"><h3>⏳ 加载中</h3></div>
+        </div>
       </div>
     </section>
 
-    <!-- Tab 2：Web3 日报（历史归档） -->
-    <section class="tab-panel" data-panel="web3">
-      <div class="filter-bar">
-        <input type="text" id="search-web3" placeholder="🔍 搜索日期 / 关键词…">
-        <span class="count" id="count-web3">加载中…</span>
-      </div>
-      <div id="list-web3" class="report-list">
-        <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取 Web3 日报索引…</p></div>
-      </div>
-    </section>
-
-    <!-- Tab 3：自选股速览 -->
+    <!-- Tab 3：自选股（原地完整清单） -->
     <section class="tab-panel" data-panel="portfolio">
-      <div class="portfolio-summary">
-        <div class="portfolio-head">
-          <h2>⭐ 自选股清单速览</h2>
-          <a class="btn-link" href="portfolio.html">查看完整清单 →</a>
-        </div>
-        <div id="portfolio-preview" class="portfolio-preview">
-          <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取自选股清单…</p></div>
-        </div>
+      <div class="portfolio-page-header">
+        <h2>⭐ 自选股完整清单</h2>
+        <span class="portfolio-updated" id="portfolio-updated"></span>
+      </div>
+      <div id="portfolio-full" class="portfolio-full">
+        <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取自选股清单…</p></div>
       </div>
     </section>
   </main>

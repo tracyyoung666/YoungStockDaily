@@ -717,3 +717,84 @@ footer {
   .today-block { padding: 18px 18px; }
   .today-block-title { font-size: 17px; }
 }
+
+/* ================================================================
+   分析日报：详情视图切换
+   ================================================================ */
+.detail-toolbar {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 16px;
+  background: #fff; padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  position: sticky; top: 60px; z-index: 5;
+}
+.btn-back {
+  display: inline-flex; align-items: center;
+  padding: 6px 14px; border-radius: 8px;
+  border: 1px solid var(--border); background: #fff;
+  color: var(--text); font-size: 14px; cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-back:hover {
+  background: #eff6ff; color: var(--blue); border-color: var(--blue);
+}
+.detail-date {
+  font-weight: 600; color: var(--text-sub); font-size: 15px;
+}
+
+/* 报告卡徽章 */
+.report-card .badges { margin: 6px 0; }
+.report-card .badge {
+  display: inline-block; margin-right: 6px;
+  padding: 2px 8px; border-radius: 6px;
+  font-size: 11.5px; font-weight: 600;
+}
+.report-card .badge.stock { background: #eff6ff; color: #1d4ed8; }
+.report-card .badge.web3  { background: #fef3c7; color: #b45309; }
+
+/* ================================================================
+   自选股 Tab：完整清单原地展示
+   ================================================================ */
+.portfolio-page-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 18px; flex-wrap: wrap; gap: 8px;
+}
+.portfolio-page-header h2 { margin: 0; font-size: 22px; color: var(--text); }
+.portfolio-updated { color: var(--text-muted); font-size: 13px; }
+.portfolio-full .portfolio-cat {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 22px;
+  margin-bottom: 16px; box-shadow: var(--shadow-sm);
+}
+.portfolio-full .portfolio-cat h3 {
+  margin: 0 0 14px 0; font-size: 17px; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 10px;
+}
+.portfolio-full .portfolio-cat h3 small {
+  font-size: 12.5px; color: var(--text-muted); font-weight: 400; margin-left: 8px;
+}
+.portfolio-full .table-wrap { overflow-x: auto; }
+.portfolio-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.portfolio-table th, .portfolio-table td {
+  padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--bg-card-alt);
+}
+.portfolio-table th {
+  background: var(--bg-card-alt); color: var(--text-sub); font-weight: 600; font-size: 13px;
+}
+.portfolio-table tr:last-child td { border-bottom: none; }
+.portfolio-table .tag {
+  display: inline-block; margin-right: 5px; margin-bottom: 3px;
+  padding: 2px 8px; border-radius: 4px;
+  background: #eff6ff; color: #1d4ed8; font-size: 11.5px;
+}
+
+@media (max-width: 640px) {
+  .detail-toolbar { flex-wrap: wrap; top: 56px; }
+  .portfolio-full .portfolio-cat { padding: 14px 16px; }
+  .portfolio-table { font-size: 13px; }
+  .portfolio-table th, .portfolio-table td { padding: 7px 8px; }
+}
