@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-04-29T19:51:34",
+  "updated_at": "2026-04-29T20:07:26.391112",
   "dailies": [
+    {
+      "slug": "daily_20260429_2005",
+      "date": "2026-04-29",
+      "generated_at": "2026-04-29 20:05:00",
+      "title": "投研日报 · 2026-04-29 20:05",
+      "summary": "MU盘前+4.44%超买信号；NBIS昨日-6.52%大跌盘前反弹；CRWV昨日-5.83%",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260429_2005.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260427_0904",
       "date": "2026-04-27",
