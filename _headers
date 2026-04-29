@@ -1,12 +1,37 @@
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
 /data/*.json
   Cache-Control: public, max-age=60, must-revalidate
 
-/assets/*
-  Cache-Control: public, max-age=3600
+/daily/*.json
+  Cache-Control: public, max-age=60, must-revalidate
 
+/daily/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# JS/CSS 短期弱缓存；实际缓存击穿依赖 index.html 里的 ?v=YYYYMMDDHHMM 版本号
+/assets/*.js
+  Cache-Control: public, max-age=300, must-revalidate
+/assets/*.css
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Logo/Favicon 可以缓存久一些（品牌资产不常变）；变时靠 ?v= 击穿
+/assets/*.svg
+  Cache-Control: public, max-age=86400, must-revalidate
+/assets/*.png
+  Cache-Control: public, max-age=86400, must-revalidate
+/favicon.ico
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# 图片内容（股票报告 PNG）基本不变，可长期缓存
 /images/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=604800, immutable
 
+# 统一安全头
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin

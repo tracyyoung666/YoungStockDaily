@@ -1,9 +1,10 @@
 /* ================================================================
-   YoungStockDaily · 前端 SPA v5
+   YoungStockDaily · 前端 SPA v6
    - 数据源：data/daily.json 索引 + daily/daily_YYYYMMDD_HHMM.json 全量
    - 三个一级 Tab：今日最新 / 分析日报 / 自选股
    - 分析日报：列表 <-> 详情 原地切换（hash 路由 #daily/<slug>）
    - 去白框 UI：内容直接平铺
+   - v6 修复：版本化 ?v= 击穿浏览器缓存；_indexPromise 失败时 console 明显提示
    ================================================================ */
 
 (function () {
@@ -296,6 +297,7 @@
 
   // ================= 启动 =================
   document.addEventListener('DOMContentLoaded', function () {
+    console.log('%c[YSD] SPA v6 booted','color:#d4a849;font-weight:700');
     initTabs();
     initToday();
     initDaily();
