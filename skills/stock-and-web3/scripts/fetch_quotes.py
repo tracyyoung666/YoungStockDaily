@@ -123,21 +123,32 @@ def fetch_westock_quote(symbols: List[str]) -> Dict[str, Dict]:
 
 def fetch_sina_premarket(symbols: List[str]) -> Dict[str, Dict]:
     """从新浪 gb_ 接口获取盘前价。
-    **关键**：只在盘前时段调用；拉到的盘前价必须跟"昨收"对比后才算真盘前涨跌。
 
-    新浪 gb_ 接口字段顺序（36 字段）：
-        [0] 名称            [1] 当前报价（盘前/盘中/盘后实时）
-        [2] 累计涨跌%       [3] 时间戳（北京时间）
-        [4] 涨跌额          [5] 今开      [6] 最高     [7] 最低
-        [8] 52w高           [9] 52w低     [10] 成交量  [11] 均量
-        ...
-        [25] 美东时间      [26] 美东前收盘价（T-1交易日收盘）
-        ...
-        [-4] 盘前一笔价    [-3] 盘前累计额  [-2] 盘前高  [-1] 盘前最新价
-
-    **重要**：当前处于盘前阶段时，[1] 可能仍是 T日收盘价（即北京昨收），
-    真正的盘前实时价要看最后 4 个字段（-4 ~ -1）。若最后几个字段与 [1] 完全一致，
-    说明盘前尚无有效成交，返回 None。
+    新浪 gb_ 接口 36 字段 **正确映射**（2026-04-29 逐字段交叉验证确认）：
+        [0]  名称
+        [1]  常规交易日收盘价（= 北京昨收 = westock 的 price）
+        [2]  累计涨跌%（[1] vs [26]，基准是 T-1 不是昨收，⚠️不可直接用）
+        [3]  北京时间戳
+        [4]  累计涨跌额
+        [5]  常规开盘价      [6]  常规最高      [7]  常规最低
+        [8]  52w高           [9]  52w低
+        [10] 常规成交量      [11] 平均量        [12] 总市值
+        [13] EPS             [14] PE
+        [15]-[18] 其他       [19] 总股本        [20] 某评级
+        ----------- 盘前区 -----------
+        [21] ⭐ 盘前实时价        ← 核心！
+        [22] ⭐ 盘前涨跌%（vs [1] 昨收）
+        [23] ⭐ 盘前涨跌额（vs [1] 昨收）
+        [24] 美东盘前时间戳（如 "Apr 29 07:40AM EDT"）
+        [25] 美东常规收盘时间戳（如 "Apr 28 03:59PM EDT"）
+        [26] 美东 T-1 收盘价（前前交易日）
+        [27] ⭐ 盘前成交量
+        [28]-[30] 其他
+        [31] ⭐ 盘前最高价
+        [32] ⭐ 盘前最低价
+        [33] ⭐ 盘前成交额
+        [34] 盘前某参考价
+        [35] 盘前某参考价2
     """
     sym_lower = ",".join([f"gb_{s.lower()}" for s in symbols])
     url = f"https://hq.sinajs.cn/list={sym_lower}"
@@ -155,36 +166,60 @@ def fetch_sina_premarket(symbols: List[str]) -> Dict[str, Dict]:
             sym = line.split("=")[0].replace("var hq_str_gb_", "").strip().upper()
             data_str = line.split('"', 1)[1].rsplit('"', 1)[0]
             parts = data_str.split(",")
-            if len(parts) < 30:
+            if len(parts) < 34:
                 result[sym] = {"premarket_price": None, "reason": "fields_insufficient"}
                 continue
 
-            # 最新报价字段 [1]（可能是盘前/盘中/盘后）
-            current_price = float(parts[1]) if parts[1] else None
-            timestamp = parts[3]  # 北京时间
-            # 盘前/盘后最新一笔 —— 最后一个数字字段
-            pre_last = None
-            for candidate in reversed(parts):
+            def safe_float(idx):
+                v = parts[idx].strip() if idx < len(parts) else ''
+                if not v or v == '--':
+                    return None
                 try:
-                    pre_last = float(candidate.strip())
-                    break
+                    return float(v)
                 except ValueError:
-                    continue
-            # 判断：如果 [1] 与最后一笔价完全一致，认为没有真盘前成交
-            if current_price is not None and pre_last is not None and abs(current_price - pre_last) < 0.001:
-                # 但也要看 [1] 对应的时间戳是否就是今天 —— 若时间戳是今天，而其他迹象也说明盘前无成交，返回 None
+                    return None
+
+            def safe_int(idx):
+                v = parts[idx].strip() if idx < len(parts) else ''
+                try:
+                    return int(v)
+                except ValueError:
+                    return 0
+
+            pre_price = safe_float(21)
+            pre_pct   = safe_float(22)
+            pre_chg   = safe_float(23)
+            pre_time  = parts[24].strip() if len(parts) > 24 else ''
+            pre_vol   = safe_int(27)
+            pre_high  = safe_float(31)
+            pre_low   = safe_float(32)
+            pre_amt   = safe_float(33)
+            close_price = safe_float(1)  # 常规收盘 = 昨收
+
+            # 有效性判断：盘前价有值 + 盘前成交量 > 0 + 盘前时间戳包含今日日期
+            has_activity = (pre_price is not None and pre_vol > 0)
+
+            if has_activity:
                 result[sym] = {
-                    "sina_current": current_price,
-                    "premarket_price": None,
-                    "timestamp": timestamp,
-                    "reason": "no_premarket_activity",
+                    "premarket_price": pre_price,
+                    "premarket_pct": pre_pct,
+                    "premarket_change": pre_chg,
+                    "premarket_volume": pre_vol,
+                    "premarket_high": pre_high,
+                    "premarket_low": pre_low,
+                    "premarket_amount": pre_amt,
+                    "premarket_time_et": pre_time,
+                    "close_price_sina": close_price,
+                    "timestamp": parts[3].strip(),
+                    "reason": "ok",
                 }
             else:
                 result[sym] = {
-                    "sina_current": current_price,
-                    "premarket_price": pre_last,
-                    "timestamp": timestamp,
-                    "reason": "ok",
+                    "premarket_price": None,
+                    "premarket_volume": pre_vol,
+                    "close_price_sina": close_price,
+                    "timestamp": parts[3].strip(),
+                    "reason": "no_premarket_activity",
                 }
         except Exception as e:
             continue
@@ -213,18 +248,13 @@ def fetch_all(symbols: List[str]) -> Dict:
 
         close_price = q.get("close_price")
         pre = premarket_data.get(sym_u, {})
-        pre_price_raw = pre.get("premarket_price")
+        pre_price = pre.get("premarket_price")
 
-        # 二次校验：如果盘前价与昨收完全一致（差值 < 1 分），视为盘前无有效成交
-        pre_price = None
+        # 用自己算的盘前涨跌%（不信接口字段，以防口径偏差）
         pre_pct = None
         pre_note = pre.get("reason")
-        if pre_price_raw is not None and close_price:
-            if abs(pre_price_raw - close_price) < 0.01:
-                pre_note = "no_premarket_activity"
-            else:
-                pre_price = pre_price_raw
-                pre_pct = round((pre_price - close_price) / close_price * 100, 2)
+        if pre_price is not None and close_price and close_price > 0:
+            pre_pct = round((pre_price - close_price) / close_price * 100, 2)
 
         # 判断异常信号
         abnormal = []
@@ -241,6 +271,11 @@ def fetch_all(symbols: List[str]) -> Dict:
             **q,
             "premarket_price": pre_price,
             "premarket_pct_vs_close": pre_pct,
+            "premarket_volume": pre.get("premarket_volume"),
+            "premarket_high": pre.get("premarket_high"),
+            "premarket_low": pre.get("premarket_low"),
+            "premarket_amount": pre.get("premarket_amount"),
+            "premarket_time_et": pre.get("premarket_time_et"),
             "premarket_note": pre_note,
             "premarket_timestamp": pre.get("timestamp"),
             "abnormal_signals": abnormal,
