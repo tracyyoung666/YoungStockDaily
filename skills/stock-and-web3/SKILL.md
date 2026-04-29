@@ -23,13 +23,14 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 | 用途 | 本地路径 | 仓库路径 |
 |---|---|---|
 | 自选股清单 | `/data/workspace/portfolio/watchlist.json` | `data/portfolio.json` |
-| 股票报告索引 | - | `data/reports.json` |
+| 合并日报（JSON）| - | `daily/daily_YYYYMMDD_HHMM.json` |
+| 合并日报（HTML 详情页）| - | `daily/daily_YYYYMMDD_HHMM.html` |
+| 日报统一索引 | - | `data/daily.json` |
 | Web3 归档数据 | `/data/workspace/web3-archive/digests/YYYY-MM-DD.json` | - |
-| Web3 列表索引 | - | `data/web3.json` |
-| 股票报告详情页 | - | `reports/YYYY-MM-DD.html` |
-| Web3 详情页 | - | `web3/YYYY-MM-DD.html` |
-| 异常信号总览图 | - | `images/YYYY-MM-DD.png` |
+| 异常信号总览图 | - | `images/daily_YYYYMMDD_HHMM.png` |
 | 访问入口 | - | `https://youngstockdaily.pages.dev/` |
+
+> ⚠️ **`reports/`、`web3/`、`data/reports.json`、`data/web3.json` 已废弃移除，不再使用**。
 
 默认 Git 仓库：`https://github.com/tracyyoung666/YoungStockDaily.git`（可通过 `--repo` 覆盖）。
 默认 Token：从 `~/.config/knot/github_token` 读取（可通过环境变量 `GITHUB_TOKEN` 覆盖）。
@@ -63,10 +64,12 @@ curl -s "https://hq.sinajs.cn/?list=gb_${symbol_lower}" -H "Referer: https://fin
 ```bash
 python3 scripts/render_overview.py \
   --input /tmp/overview_data.json \
-  --output <仓库>/images/YYYY-MM-DD.png
+  --output <仓库>/images/daily_YYYYMMDD_HHMM.png
 ```
 
 输入 JSON schema 见 `references/data-schemas.md#overview_data`。图默认 1188×约 2100，亮色 `#f7f9fc` 背景，无底部冗余留白。
+
+**命名规范**：`SLUG = daily_YYYYMMDD_HHMM`（取当前 `datetime.now().strftime('%Y%m%d_%H%M')`）。所有同一批次的文件（.json / .html / .png）必须使用同一 SLUG。
 
 ### 步骤 4：拉取 Web3 日报
 
@@ -95,24 +98,24 @@ sys.stdout.write(json.dumps({'date':date,'digest_md':md,'digest_wechat':wc,
 ### 步骤 5：构建 HTML 站点并 git push
 
 调用 `scripts/publish_site.py`，它会一次性完成：
-1. 重新生成 Web3 日报详情页（扫描 `/data/workspace/web3-archive/digests/*.json`）
-2. 更新 `data/portfolio.json`（从 watchlist.json 同步）
-3. 将本次股票报告详情页写入 `reports/YYYY-MM-DD.html`
-4. 更新 `data/reports.json` 索引
-5. 复制异常信号总览图到 `images/YYYY-MM-DD.png`
-6. `git add / commit / push`
+1. 更新 `data/portfolio.json`（从 watchlist.json 同步）
+2. 将本次股票报告 + Web3 日报合并写入 `daily/<slug>.json` + `daily/<slug>.html`
+3. 复制异常信号总览图到 `images/<slug>.png`（slug = `daily_YYYYMMDD_HHMM`）
+4. 更新 `data/daily.json` 统一索引（追加新条目）
+5. `git add / commit / push`
 
 ```bash
 python3 scripts/publish_site.py \
   --repo-url https://github.com/tracyyoung666/YoungStockDaily.git \
   --repo-dir /data/workspace/YoungStockDaily \
   --token-file ~/.config/knot/github_token \
-  --date YYYY-MM-DD \
-  --stock-report /tmp/stock_report.html \
+  --slug daily_YYYYMMDD_HHMM \
+  --stock-report-html /tmp/stock_report_body.html \
   --stock-summary "一句话摘要" \
   --tickers "MU,AMD,INTC,..." \
-  --overview-png /tmp/overview.png \
-  --category "实时行情分析"
+  --web3-body-html /tmp/web3_body.html \
+  --web3-summary "Web3 一句话" \
+  --overview-png /tmp/overview.png
 ```
 
 所有参数都可以通过环境变量覆盖（`GITHUB_TOKEN`、`REPO_URL`、`REPO_DIR`）。详见脚本 `--help`。
@@ -123,7 +126,7 @@ python3 scripts/publish_site.py \
 - title: `📈 自选股行情分析 | YYYY-MM-DD`
 - message: 仅 Markdown 图片语法，指向 raw.githubusercontent URL
   ```
-  ![异常信号总览](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/YYYY-MM-DD.png)
+  ![异常信号总览](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/daily_YYYYMMDD_HHMM.png)
   ```
 
 **第二条（文字简报，仅精简摘要）**：

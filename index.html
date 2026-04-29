@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#f7f9fc">
   <meta name="description" content="Young's Stock Daily — 自选股实时行情分析 + Web3 日报">
-  <title>Young's Stock Daily · 股票 & Web3 投研日志</title>
+  <title>Young's Stock Daily · 股票 &amp; Web3 投研日志</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
 </head>
@@ -26,7 +26,7 @@
   </header>
 
   <main>
-    <!-- 一级 Tab（精简为 3 个） -->
+    <!-- 一级 Tab（3 个） -->
     <div class="tab-bar" role="tablist">
       <button class="tab-btn active" data-tab="today" role="tab">🔥 今日最新</button>
       <button class="tab-btn" data-tab="daily" role="tab">📅 分析日报</button>
@@ -42,7 +42,6 @@
 
     <!-- Tab 2：分析日报（列表 + 详情切换，不跳页） -->
     <section class="tab-panel" data-panel="daily">
-      <!-- 列表视图 -->
       <div id="daily-list-view">
         <div class="filter-bar">
           <input type="text" id="search-daily" placeholder="🔍 搜索日期 / 关键词 / 股票代码…">
@@ -52,7 +51,6 @@
           <div class="empty-state"><h3>⏳ 加载中</h3><p>正在读取日报索引…</p></div>
         </div>
       </div>
-      <!-- 详情视图（默认隐藏，点击列表项时显示） -->
       <div id="daily-detail-view" style="display:none;">
         <div class="detail-toolbar">
           <button class="btn-back" id="btn-daily-back">← 返回列表</button>
@@ -64,7 +62,7 @@
       </div>
     </section>
 
-    <!-- Tab 3：自选股（原地完整清单） -->
+    <!-- Tab 3：自选股 -->
     <section class="tab-panel" data-panel="portfolio">
       <div class="portfolio-page-header">
         <h2>⭐ 自选股完整清单</h2>

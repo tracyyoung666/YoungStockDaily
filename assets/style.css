@@ -798,3 +798,193 @@ footer {
   .portfolio-table { font-size: 13px; }
   .portfolio-table th, .portfolio-table td { padding: 7px 8px; }
 }
+
+/* ================================================================
+   v5：去白框、内容平铺（高优先级覆盖旧规则）
+   ================================================================ */
+
+/* 1. 报告正文：去白底卡片，留边距 */
+.daily-block-body .report-content,
+.daily-block-body > .report-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* 2. daily-block：块与块之间只留间距，不画框 */
+.daily-block {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  margin: 32px 0 0 0;
+  scroll-margin-top: 80px;
+}
+.daily-block + .daily-block { margin-top: 40px; }
+.daily-block-title {
+  margin: 0 0 18px 0;
+  font-size: 20px;
+  color: var(--text);
+  padding: 0 0 12px 0;
+  border-bottom: 2px solid var(--bg-card-alt);
+  font-weight: 700;
+}
+.daily-block-body { font-size: 15px; color: var(--text-sub); }
+
+/* 3. 股票详情页内嵌的 .card / .report-hero / .stock-report —— 全部去白框 */
+.daily-block-body .card,
+.daily-block-body .report-hero,
+.daily-block-body .stock-report {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 18px 0 !important;
+}
+/* 只保留标题样式（从 h2 下边框继承） */
+.daily-block-body .card h2 {
+  font-size: 17px;
+  margin: 20px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--border);
+  color: var(--text);
+}
+.daily-block-body .card h3 {
+  font-size: 15px;
+  margin: 14px 0 6px 0;
+  color: var(--text);
+}
+.daily-block-body .report-meta .chip {
+  display: inline-block; padding: 3px 10px; border-radius: 14px;
+  background: #eff6ff; color: #1d4ed8;
+  font-size: 12.5px; margin-right: 6px; margin-bottom: 6px;
+}
+.daily-block-body .report-meta .chip-muted { background: #f1f5f9; color: #64748b; }
+.daily-block-body .lead {
+  font-size: 15px; color: var(--text-sub); line-height: 1.7;
+  margin: 10px 0 14px;
+}
+.daily-block-body .footnote {
+  color: var(--text-muted); font-size: 12.5px; margin-top: 8px;
+}
+
+/* 嵌入在 body 中的信号/股票表格：保持可读但不加白底 */
+.daily-block-body .signal-table {
+  width: 100%; border-collapse: collapse; margin: 10px 0;
+  font-size: 13.5px; display: block; overflow-x: auto;
+}
+.daily-block-body .signal-table th,
+.daily-block-body .signal-table td {
+  padding: 8px 10px; border: 1px solid var(--border);
+  text-align: left; white-space: nowrap;
+}
+.daily-block-body .signal-table thead { background: var(--bg-card-alt); }
+.daily-block-body .signal-table .row-fire td { background: #fef2f2; }
+.daily-block-body .signal-table .row-warn td { background: #fffbeb; }
+.daily-block-body .signal-table .neg { color: #dc2626; font-weight: 600; }
+.daily-block-body .signal-table .pos { color: #16a34a; font-weight: 600; }
+
+/* 股票列表项 */
+.daily-block-body .stock-item {
+  margin: 10px 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--border);
+}
+.daily-block-body .stock-item:last-child { border-bottom: none; }
+.daily-block-body .stock-item .tag {
+  display: inline-block; padding: 1px 8px; border-radius: 4px;
+  background: #eff6ff; color: #1d4ed8;
+  font-size: 11.5px; margin-left: 6px;
+}
+.daily-block-body .bullet-list,
+.daily-block-body .action-list { padding-left: 22px; margin: 8px 0; }
+.daily-block-body .bullet-list li,
+.daily-block-body .action-list li { margin: 6px 0; color: var(--text-sub); }
+.daily-block-body .neg { color: #dc2626; }
+.daily-block-body .pos { color: #16a34a; }
+
+/* 4. 页头元信息块 */
+.daily-page-head {
+  padding: 6px 0 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.daily-page-head h1 {
+  margin: 6px 0 4px 0;
+  font-size: 24px; color: var(--text); font-weight: 700;
+}
+.daily-page-head .daily-meta {
+  color: var(--text-muted); font-size: 13.5px;
+}
+.today-chip {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  padding: 3px 12px; border-radius: 12px;
+  font-size: 12.5px; font-weight: 600;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+}
+
+/* 5. 预览图（去白底） */
+.hero-image-plain {
+  margin: 14px 0 20px 0;
+  text-align: center;
+}
+.hero-image-plain img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+.hero-image-plain img:hover { transform: scale(1.01); }
+.hero-image-plain figcaption {
+  margin-top: 8px; font-size: 12.5px; color: var(--text-muted);
+}
+/* 详情页里嵌入的 .hero-image（旧样式兼容） */
+.daily-block-body .hero-image {
+  margin: 8px 0 16px 0;
+  text-align: center; background: transparent !important;
+  padding: 0 !important; border: none !important; box-shadow: none !important;
+}
+.daily-block-body .hero-image img {
+  max-width: 100%; height: auto; border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); cursor: zoom-in;
+}
+.daily-block-body .hero-image figcaption {
+  margin-top: 6px; font-size: 12px; color: var(--text-muted);
+}
+
+/* 6. 锚点导航（块内精简版） */
+.daily-anchor-nav {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin: 12px 0 4px 0;
+}
+.daily-anchor-nav a {
+  padding: 5px 14px; border-radius: 14px;
+  background: #f1f5f9; color: var(--text-sub);
+  font-size: 13px; text-decoration: none;
+  transition: all 0.2s;
+}
+.daily-anchor-nav a:hover {
+  background: var(--blue); color: #fff;
+}
+
+/* 7. 报告卡生成时间戳 */
+.report-card .date small {
+  color: var(--text-muted); font-weight: 400;
+  font-size: 12px; margin-left: 6px;
+}
+
+@media (max-width: 640px) {
+  .daily-block { margin-top: 24px; }
+  .daily-block + .daily-block { margin-top: 28px; }
+  .daily-block-title { font-size: 17px; }
+  .daily-page-head h1 { font-size: 20px; }
+  .daily-block-body .signal-table { font-size: 12px; }
+  .daily-block-body .signal-table th,
+  .daily-block-body .signal-table td { padding: 6px 8px; }
+}
