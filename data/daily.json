@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-04-29T11:37:40",
+  "updated_at": "2026-04-29T19:51:34",
   "dailies": [
-    {
-      "slug": "daily_20260429_0904",
-      "date": "2026-04-29",
-      "generated_at": "2026-04-29 09:04:16",
-      "title": "自选股实时行情分析 · 2026-04-29 盘前 + Web3 日报",
-      "summary": "AI云NBIS/CRWV跳水5%+、半导体MU/AMD高位回调3-4%、BTC破6K拖累MSTR，情绪转谨慎，短线防守 · 大盘行情:",
-      "tickers": [
-        "MU",
-        "AMD",
-        "INTC",
-        "NBIS",
-        "CRWV",
-        "CRCL",
-        "MSTR",
-        "TSLA",
-        "XPEV"
-      ],
-      "image": "images/daily_20260429_0904.png",
-      "has_stock": true,
-      "has_web3": true
-    },
-    {
-      "slug": "daily_20260428_0904",
-      "date": "2026-04-28",
-      "generated_at": "2026-04-29 09:04:16",
-      "title": "自选股实时行情分析 · 盘中 + Web3 日报",
-      "summary": "9 只盘中全线翻绿，INTC RSI6=86 极度超买最强警示；MU/AMD/INTC 半导体集体回调，NBIS -7.31% 领跌 AI 云 · 大盘行情:",
-      "tickers": [
-        "MU",
-        "AMD",
-        "INTC",
-        "NBIS",
-        "CRWV",
-        "CRCL",
-        "MSTR",
-        "TSLA",
-        "XPEV"
-      ],
-      "image": "images/daily_20260428_0904.png",
-      "has_stock": true,
-      "has_web3": true
-    },
     {
       "slug": "daily_20260427_0904",
       "date": "2026-04-27",
