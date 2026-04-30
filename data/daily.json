@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-04-29T20:58:49",
+  "updated_at": "2026-04-30T09:08:19",
   "dailies": [
+    {
+      "slug": "daily_20260430_0907",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30 09:07:00",
+      "title": "投研日报 · 2026-04-30 09:07",
+      "summary": "AI半导体全面走强，INTC暴涨12%创52w新高；CRWV/NBIS/AMD均涨>4%；MSTR受BTC回调跌4.5%",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "has_stock": true,
+      "has_web3": true,
+      "image": "images/daily_20260430_0907.png"
+    },
     {
       "slug": "daily_20260429_2058",
       "date": "2026-04-29",
