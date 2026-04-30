@@ -1,6 +1,6 @@
 ---
 name: stock-and-web3
-description: 股票自选股管理与 Web3 日报一体化持久化技能。一次性完成【自选股维护 + 自选股实时行情分析（含盘前价、异常信号总览图、逐股详解）+ Web3 日报拉取 + 内容归档到 HTML 站点 + 推送 Git 仓库 + 返回结果】的完整闭环。适用场景（任一触发即调用）：(1) 用户要求"出一份自选股分析"、"跑一下今天的盘前分析"、"推送今天的股票 + Web3 日报"、"生成今日投研报告"；(2) 用户要求"把 X 加入/移除自选股"、"查看自选股清单"；(3) 用户要求"获取今日 Web3 日报"并希望沉淀到站点；(4) 用户设置了定时任务要求每日盘前/盘后推送图片 + 简报。前置依赖 Skills：westock-data（行情/新闻/财务）、web3-daily（加密日报）、investment-masters（大师视角，可选）、stock-analyzer（可选兜底）。Git 仓库地址和 Token 支持外部传入（默认仓库 tracyyoung666/YoungStockDaily，默认 Token 从 ~/.config/knot/github_token 读取）。
+description: 股票自选股管理与 Web3 日报一体化持久化技能。一次性完成【自选股维护 + 自选股实时行情分析（含盘前/盘后/盘中价、异常信号总览图、逐股详解）+ Web3 日报拉取 + 内容归档到站点 + 推送 Git 仓库 + 返回结果】的完整闭环。适用场景（任一触发即调用）：(1) 用户要求"出一份自选股分析"、"跑一下今天的盘前分析"、"推送今天的股票 + Web3 日报"、"生成今日投研报告"；(2) 用户要求"把 X 加入/移除自选股"、"查看自选股清单"；(3) 用户要求"获取今日 Web3 日报"并希望沉淀到站点；(4) 用户设置了定时任务要求每日盘前/盘后推送图片 + 简报。前置依赖 Skills：westock-data（行情/新闻/财务）、web3-daily（加密日报）、investment-masters（大师视角，可选）、stock-analyzer（可选兜底）。Git 仓库地址和 Token 支持外部传入（默认仓库 tracyyoung666/YoungStockDaily，默认 Token 从 ~/.config/knot/github_token 读取）。
 ---
 
 # stock_and_web3 · 股票与 Web3 一体化投研技能
@@ -12,10 +12,10 @@ description: 股票自选股管理与 Web3 日报一体化持久化技能。一�
 ```
 自选股清单 ─┐
             ├─→ 行情/新闻/异常信号 ─→ 异常信号总览图（PNG）─┐
-westock-data┘                                                ├─→ 合并成 HTML 报告 ─→ git commit + push
-web3-daily ─→ Web3 日报（MD+微信版）──────────────────────┘                      │
-                                                                                  ↓
-                                                                        notify 推送（先图后文）
+westock-data┘                                                ├─→ 合并写入 daily JSON ─→ git commit + push
+web3-daily ─→ Web3 日报（MD+微信版）──────────────────────┘                          │
+                                                                                      ↓
+                                                                            notify 推送（先图后文）
 ```
 
 ## 核心数据与仓库路径
@@ -23,16 +23,21 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 | 用途 | 本地路径 | 仓库路径 |
 |---|---|---|
 | 自选股清单 | `/data/workspace/portfolio/watchlist.json` | `data/portfolio.json` |
-| 股票报告索引 | - | `data/reports.json` |
+| 日报数据（JSON） | - | `daily/daily_YYYYMMDD_HHMM.json` |
+| 日报索引 | - | `data/daily.json`（由 `rebuild_daily_index.py` 自动生成） |
+| 异常信号总览图 | - | `images/daily_YYYYMMDD_HHMM.png` |
+| 7日K线数据 | - | `data/sparkline.json` |
+| 财报分析页 | - | `earnings/SYMBOL-YYYYQN.html` |
+| 财报索引 | - | `data/earnings.json` |
 | Web3 归档数据 | `/data/workspace/web3-archive/digests/YYYY-MM-DD.json` | - |
-| Web3 列表索引 | - | `data/web3.json` |
-| 股票报告详情页 | - | `reports/YYYY-MM-DD.html` |
-| Web3 详情页 | - | `web3/YYYY-MM-DD.html` |
-| 异常信号总览图 | - | `images/YYYY-MM-DD.png` |
 | 访问入口 | - | `https://youngstockdaily.pages.dev/` |
 
 默认 Git 仓库：`https://github.com/tracyyoung666/YoungStockDaily.git`（可通过 `--repo` 覆盖）。
 默认 Token：从 `~/.config/knot/github_token` 读取（可通过环境变量 `GITHUB_TOKEN` 覆盖）。
+
+## 自选股清单（当前 11 只，顺序固定）
+
+MU / AMD / INTC / GOOG / NVDA / NBIS / CRWV / CRCL / MSTR / TSLA / XPEV
 
 ## 工作流（标准六步）
 
@@ -47,7 +52,7 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 **⚠️ 重要：必须使用 fetch_quotes.py v4 统一抓取工具**
 
 ```bash
-python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,AMD,INTC,...
+python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,AMD,INTC,GOOG,NVDA,NBIS,CRWV,CRCL,MSTR,TSLA,XPEV
 ```
 
 **v4 自动根据北京时间选择数据策略**：
@@ -63,12 +68,12 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,
 - `latest_rating` → 最新机构评级（机构名/评级/目标价）
 - `upcoming_events` → 关键事件日历（财报披露日/分红除权日）
 - `abnormal_signals` → 异常信号（新增 RSI6>85 超买 / RSI6<15 超卖）
-- `sector_analysis` → 板块关联分析（半导体/AI基建/Crypto/新能源车 各赛道平均涨跌）
+- `sector_analysis` → 板块关联分析（半导体/科技巨头/AI基建/Crypto/新能源车 各赛道平均涨跌）
 
 **异常判定口径（v4 增强）**：
 - 单日涨跌 > 4%
 - 量比 > 2
-- RSI6 > 85（超买）或 < 15（超卖）← 新增
+- RSI6 > 85（超买）或 < 15（超卖）
 - 创 52 周新高/新低
 - 盘前/盘后/盘中涨跌 > 4%
 
@@ -76,35 +81,35 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,
 
 ### 步骤 2.5：生成股票报告 HTML（stock_body_html 内容规范）
 
-**⚠️ 核心要求：stock_body_html 必须包含以下 4 大板块，缺一不可：**
+**⚠️ 核心要求：stock_body_html 必须包含以下板块，缺一不可：**
 
 ```
 1️⃣ 异常信号总览表
-   - HTML table，列：代码 | 名称 | 昨收 | 昨日涨跌 | 盘前价 | 盘前涨跌 | 距52周高 | 信号
-   - 每只股票一行，无遗漏
+   - HTML table class="stock-table"，列：代码 | 名称 | 收盘价 | 今日涨跌 | 盘前/盘后价 | 盘前/盘后涨跌 | 距52周高 | 信号
+   - 每只股票一行，11只无遗漏
 
 2️⃣ 组合层面总结 + 行动清单
    - <h3>⚡ 异常信号详解</h3>：只列有异常的股票，简述原因
    - <h3>💡 建议动作</h3>：P0/P1/P2 优先级 + 具体触发条件
 
 3️⃣ 📝 逐股详解（最重要！不能省略！）
-   - 对自选股清单中的【每一只】股票，生成独立段落，格式：
-     <h3>N️⃣ 代码 · 名称 — 评分 X.X</h3>
+   - 对自选股清单中的【每一只】股票（当前 11 只），生成独立段落，格式：
+     <h4>N️⃣ 代码 · 名称 — 评分 X.X</h4>
      <ul>
-       <li><strong>行情：</strong>昨收$XXX(±X.XX%) · 盘前/盘后/盘中 $XXX(±X.XX%)</li>
-       <li><strong>技术：</strong>RSI6/KDJ/MA/量比/距52W高等技术面关键指标（RSI6>85 或 <15 需醒目标注⚠️）</li>
+       <li><strong>行情：</strong>收盘$XXX(±X.XX%) · 盘前/盘后/盘中 $XXX(±X.XX%)</li>
+       <li><strong>技术：</strong>RSI6/KDJ/MA/量比/距52W高等（RSI6>85 或 <15 需醒目标注⚠️）</li>
        <li><strong>新闻：</strong>最近1-2条相关新闻（已过滤低质量内容，无则写"—"）</li>
-       <li><strong>评级：</strong>最新机构评级（机构名+评级+目标价，无则写"—"）← v4新增</li>
-       <li><strong>事件：</strong>近期关键事件（财报日/除权日，无则写"—"）← v4新增</li>
-       <li><strong>建议：</strong>具体操作建议+价位+触发条件（这是用户最看重的！）</li>
-       <li><strong>大师视角：</strong>1-2位投资大师的简短点评（可选，有则更好）</li>
+       <li><strong>评级：</strong>最新机构评级（机构名+评级+目标价，无则写"—"）</li>
+       <li><strong>事件：</strong>近期关键事件（财报日/除权日，无则写"—"）</li>
+       <li><strong>建议：</strong>具体操作建议+价位+触发条件（用户最看重！）</li>
+       <li><strong>大师视角：</strong>1-2位投资大师的简短点评（可选）</li>
      </ul>
-   - 9只全部要有，不能只做异常的几只
+   - 11只全部要有，不能只做异常的几只
 
-4️⃣ 板块关联分析 ← v4新增
+4️⃣ 🏷️ 板块关联分析
    - <h3>🏷️ 板块关联分析</h3>
-   - 按赛道（半导体/AI基建/Crypto/新能源车）聚合当日平均涨跌
-   - 一句话总结板块格局（如"半导体板块+6.2%领涨，INTC 驱动"）
+   - 按赛道（半导体/科技巨头/AI基建/Crypto/新能源车）聚合当日平均涨跌
+   - 一句话总结板块格局
 
 5️⃣ 一句话结论
    - <h3>💡 一句话结论</h3>：整体总结今日策略方向
@@ -112,12 +117,12 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,
 
 **绝对禁止**：只生成一个概览表格就结束——那是"摘要"不是"报告"。逐股详解是用户查看报告的核心价值。
 
-### 步骤 2.6：数据验证护栏 ← v4新增
+### 步骤 2.6：数据验证护栏
 
-**在推送前必须执行验证**，调用 `fetch_quotes.validate_report(json_path, png_path, num_stocks=9)`：
+**在推送前必须执行验证**，调用 `fetch_quotes.validate_report(json_path, png_path, num_stocks=11)`：
 ```python
 from scripts.fetch_quotes import validate_report
-errors = validate_report("daily/daily_YYYYMMDD_HHMM.json", "images/daily_YYYYMMDD_HHMM.png")
+errors = validate_report("daily/daily_YYYYMMDD_HHMM.json", "images/daily_YYYYMMDD_HHMM.png", num_stocks=11)
 if errors:
     # 终止推送！通过 notify 报告错误
     ...
@@ -127,7 +132,7 @@ if errors:
 1. JSON 文件存在且可解析
 2. 必填字段完整（slug/date/generated_at/title/has_stock/has_web3/image/stock_body_html/web3_body_html/tickers）
 3. has_stock / has_web3 为 True
-4. 逐股详解 `<h4>` 数量 = 自选股数量（9）
+4. 逐股详解 `<h4>` 数量 = 自选股数量（当前 11）
 5. stock_body_html 长度 >= 3000 字符
 6. 图片文件存在且 >= 20KB
 
@@ -135,12 +140,12 @@ if errors:
 
 调用 `scripts/render_overview.py`，生成适合手机竖屏的亮色系表格图：
 ```bash
-python3 scripts/render_overview.py \
+python3 /data/workspace/.agent/skills/stock-and-web3/scripts/render_overview.py \
   --input /tmp/overview_data.json \
-  --output <仓库>/images/YYYY-MM-DD.png
+  --output /data/workspace/YoungStockDaily/images/daily_YYYYMMDD_HHMM.png
 ```
 
-输入 JSON schema 见 `references/data-schemas.md#overview_data`。图默认 1188×约 2100，亮色 `#f7f9fc` 背景，无底部冗余留白。
+图片标题固定为"自选股行情总览"，宽 1080px，高度随行数动态。亮色 `#f7f9fc` 背景。**红涨绿跌**。
 
 ### 步骤 4：拉取 Web3 日报
 
@@ -197,22 +202,23 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 
 ### 步骤 6：通过 notify 推送（两条，先图后文）
 
-**第一条（图片）**：
-- title: `📈 自选股行情分析 | YYYY-MM-DD`
-- message: 仅 Markdown 图片语法，指向 raw.githubusercontent URL
+**第一条（图片链接，纯文本 URL）**：
+- title: `📈 自选股行情分析 | YYYY-MM-DD HH:MM`
+- message（⚠️ 纯文本+URL，严禁 markdown `![]()` 语法）：
   ```
-  ![异常信号总览](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/YYYY-MM-DD.png)
+  实时价格总览图：
+  https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/daily_YYYYMMDD_HHMM.png
   ```
 
 **第二条（文字简报，仅精简摘要）**：
-- title: `📝 今日投研简报 | YYYY-MM-DD`
-- message 格式（严格按下方模版，不加前言总结，**首行仅保留站点根地址，不贴子页面链接**）：
+- title: `📝 今日投研简报 | YYYY-MM-DD HH:MM`
+- message 格式（严格按模版，**首行仅保留站点根地址**）：
   ```
   🔗 https://youngstockdaily.pages.dev/
 
   ━━━ 📈 自选股行情 ━━━
-  ・异常信号：<列 1-3 条关键异常，如 "MU 创新高 RSI 超买">
-  ・建议动作：<列 1-2 条，如 "MU 减仓 1/3 / AMD 观望">
+  ・异常信号：<列 1-3 条关键异常>
+  ・建议动作：<列 1-2 条>
 
   ━━━ 🪙 Web3 日报 ━━━
   ・BTC / ETH：<价格和涨跌>
@@ -229,30 +235,30 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 | GitHub PAT | `~/.config/knot/github_token` | `GITHUB_TOKEN` |
 | 访问入口 | `https://youngstockdaily.pages.dev/` | - |
 
-## 周报流程（每周六 20:00 自动触发）← v4新增
+## 周报流程（每周六 20:00 自动触发）
 
-周报是对本周 5 个交易日日报的聚合复盘，推送给用户用于周末复盘。周六/周日不再推送日报。
+周报是对本周 5 个交易日日报的聚合复盘。周六/周日不再推送日报。
 
 **周报内容板块**：
-1. 📊 本周涨跌排名（按本周累计涨跌排序，含收盘价 + 周涨跌%）
-2. 🚨 本周异常事件回顾（摘取本周 10 份日报中的所有异常信号去重汇总）
-3. 📰 本周重要新闻 TOP 5（从本周所有新闻中筛选最有影响力的 5 条）
-4. 📅 下周关键事件预告（财报日/除权日/期权到期日）
-5. 💡 下周操作策略建议（基于本周走势 + 技术面 + 事件面的综合判断）
-6. 🪙 本周 Web3 摘要（BTC/ETH 周涨跌 + 恐贪指数变化趋势）
+1. 📊 本周涨跌排名（按累计涨跌排序）
+2. 🚨 本周异常事件回顾
+3. 📰 本周重要新闻 TOP 5
+4. 📅 下周关键事件预告（财报日/除权日）
+5. 💡 下周操作策略建议
+6. 🪙 本周 Web3 摘要
 
-**数据来源**：读取 `data/daily.json` 索引中本周一~周五的 5 份日报 JSON，聚合分析。
+## 财报分析流程
 
-**推送标题格式**：`📊 自选股周报 | YYYY-MM-DD ~ YYYY-MM-DD`
+检测到某只股票有新财报发布时，自动生成独立分析页 `earnings/SYMBOL-YYYYQN.html`，更新 `data/earnings.json` 索引。
 
 ## 定时任务调度规则
 
 | 时间 | 任务 | 说明 |
 |---|---|---|
-| **周一~周五 09:00** | 日报推送 | 盘后/休市数据 |
+| **周一~周五 09:00** | 日报推送 | 盘后数据 |
 | **周一~周五 19:00** | 日报推送 | 盘前数据 |
 | **周六 20:00** | **周报推送** | 本周聚合复盘 |
-| 周六/周日 09:00 & 19:00 | **不推送** | 日报定时任务需跳过周末 |
+| 周六/周日 09:00 & 19:00 | **不推送** | |
 
 ## 常见场景速查
 
@@ -263,18 +269,19 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 
 ## 参考文件
 
-- `references/data-schemas.md` - watchlist.json / reports.json / web3.json / overview_data JSON 的完整 schema
+- `references/data-schemas.md` - watchlist.json / daily.json / overview_data JSON schema
 - `references/wechat-format.md` - Markdown → 微信纯文本转换规则
 - `references/premarket.md` - 盘前价获取和时段判定
-- `scripts/render_overview.py` - 异常信号总览图渲染（matplotlib）
-- `scripts/publish_site.py` - 站点构建与 git push 一体化脚本
-- `scripts/build_web3_pages.py` - 扫描 web3-archive 生成 HTML 详情页和列表索引
+- `scripts/render_overview.py` - 异常信号总览图渲染（matplotlib，红涨绿跌）
+- `scripts/fetch_quotes.py` - v4 统一行情抓取（盘前/盘后/盘中 + RSI6 + 新闻 + 评级 + 事件 + 板块）
+- `scripts/fetch_sparkline.py` - 7日K线数据获取
+- `scripts/build_web3_pages.py` - 扫描 web3-archive 生成 HTML 详情页
 
 ## 异常与回退
 
 - git push 401：检查 token 是否过期
-- 盘前接口超时：跳过盘前价，只用昨收
-- matplotlib 字体找不到：用 `DejaVu Sans` 兜底，emoji 用文字符号代替
+- 盘前/盘后接口超时：跳过扩展时段价，只用收盘价
+- matplotlib 字体找不到：用 `DejaVu Sans` 兜底
 - Web3 API 超时：用最近一次 `/data/workspace/web3-archive/digests/` 最新文件
 
 任一步失败，用 notify 发 title `❌ 投研推送失败 | YYYY-MM-DD`，message 说明失败步骤和原因。

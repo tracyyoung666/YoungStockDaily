@@ -546,7 +546,7 @@ def fetch_all(symbols: List[str], include_extras: bool = True) -> Dict:
     return out
 
 
-def validate_report(json_path: str, png_path: str, num_stocks: int = 9) -> List[str]:
+def validate_report(json_path: str, png_path: str, num_stocks: int = 11) -> List[str]:
     """数据验证护栏：检查报告 JSON 和图片完整性。返回错误列表（空=通过）。"""
     errors = []
 
