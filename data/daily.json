@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30T10:40:29",
+  "updated_at": "2026-04-30T12:02:21",
   "dailies": [
     {
       "slug": "daily_20260430_1040",
@@ -19,27 +19,6 @@
         "XPEV"
       ],
       "image": "images/daily_20260430_1040.png",
-      "has_stock": true,
-      "has_web3": true
-    },
-    {
-      "slug": "daily_20260430_0907",
-      "date": "2026-04-30",
-      "generated_at": "2026-04-30 09:07:46",
-      "title": "投研日报 · 2026-04-30 09:07",
-      "summary": "",
-      "tickers": [
-        "MU",
-        "AMD",
-        "INTC",
-        "NBIS",
-        "CRWV",
-        "CRCL",
-        "MSTR",
-        "TSLA",
-        "XPEV"
-      ],
-      "image": "images/daily_20260430_0907.png",
       "has_stock": true,
       "has_web3": true
     },
