@@ -40,12 +40,12 @@
     </radialGradient>
   </defs>
 
-  <!-- 深色圆角底 -->
-  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#v3-base)"/>
-  <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#v3-inner-glow)"/>
+  <!-- 深色圆角底（填满整个画布，无白边）-->
+  <rect x="0" y="0" width="64" height="64" rx="14" ry="14" fill="url(#v3-base)"/>
+  <rect x="0" y="0" width="64" height="64" rx="14" ry="14" fill="url(#v3-inner-glow)"/>
 
   <!-- 描金外框 -->
-  <rect x="2.5" y="2.5" width="59" height="59" rx="13.5" ry="13.5"
+  <rect x="1" y="1" width="62" height="62" rx="13" ry="13"
         fill="none" stroke="url(#v3-gold)" stroke-width="0.9" stroke-opacity="0.55"/>
 
   <!-- 同心双菱形徽章 -->
