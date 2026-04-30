@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30T12:02:21",
+  "updated_at": "2026-04-30T12:10:59",
   "dailies": [
     {
       "slug": "daily_20260430_1040",
@@ -18,7 +18,7 @@
         "TSLA",
         "XPEV"
       ],
-      "image": "images/daily_20260430_1040.png",
+      "image": "images/daily_20260430_1040_v2.png",
       "has_stock": true,
       "has_web3": true
     },

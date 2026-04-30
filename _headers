@@ -27,9 +27,9 @@
 /favicon.ico
   Cache-Control: public, max-age=86400, must-revalidate
 
-# 图片内容（股票报告 PNG）基本不变，可长期缓存
+# 图片内容（股票报告 PNG）可能会重新渲染更新，不能设 immutable
 /images/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=300, must-revalidate
 
 # 统一安全头
 /*
