@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28",
+  "updated_at": "2026-04-30",
   "categories": {
     "default": {
       "description": "默认自选（美股半导体/AI/Crypto相关）",
@@ -34,6 +34,28 @@
           "tags": [
             "半导体",
             "代工"
+          ]
+        },
+        {
+          "symbol": "GOOG",
+          "market": "US",
+          "name": "谷歌 Alphabet C",
+          "added_at": "2026-04-30",
+          "tags": [
+            "科技巨头",
+            "AI",
+            "广告"
+          ]
+        },
+        {
+          "symbol": "NVDA",
+          "market": "US",
+          "name": "英伟达 NVIDIA",
+          "added_at": "2026-04-30",
+          "tags": [
+            "半导体",
+            "AI",
+            "GPU"
           ]
         },
         {

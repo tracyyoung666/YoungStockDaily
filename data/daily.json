@@ -1,0 +1,58 @@
+{
+  "updated_at": "2026-04-30T12:10:59",
+  "dailies": [
+    {
+      "slug": "daily_20260430_1040",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30 10:40:03",
+      "title": "投研日报 · 2026-04-30 10:40（盘后）",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260430_1040_v2.png",
+      "has_stock": true,
+      "has_web3": true
+    },
+    {
+      "slug": "daily_20260429_2058",
+      "date": "2026-04-29",
+      "generated_at": "2026-04-29 20:58:19",
+      "title": "投研日报 · 2026-04-29 20:58",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260429_2058.png",
+      "has_stock": true,
+      "has_web3": true
+    },
+    {
+      "slug": "daily_20260427_0904",
+      "date": "2026-04-27",
+      "generated_at": "2026-04-29 09:04:16",
+      "title": "Web3 日报",
+      "summary": "大盘行情:",
+      "tickers": [],
+      "image": null,
+      "has_stock": false,
+      "has_web3": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-04-30 15:25:42",
+  "reports": [
+    {
+      "symbol": "GOOG",
+      "name": "谷歌 Alphabet C",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-04-29",
+      "verdict": "beat",
+      "verdict_label": "大幅超预期 +94%",
+      "eps_actual": 5.11,
+      "eps_estimate": 2.63,
+      "revenue_actual": 109.9,
+      "revenue_estimate": 107.0,
+      "revenue_unit": "B",
+      "url": "earnings/GOOG-2026Q1.html",
+      "generated_at": "2026-04-30 15:22:00"
+    }
+  ]
+}

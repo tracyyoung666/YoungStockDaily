@@ -44,18 +44,92 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 
 ### 步骤 2：获取每只自选股的实时行情 + 异常信号
 
-对清单中每只股票，调用 **westock-data** 获取：
-- 实时行情（含当前/昨收/涨跌/成交量/52周高低）
-- 技术指标（量比、RSI6、MACD、创新高新低）
-- 当日新闻 2 条（`news --type 3 --limit 2`）
+**⚠️ 重要：必须使用 fetch_quotes.py v4 统一抓取工具**
 
-**异常判定口径**：单日涨跌 > 4% | 量比 > 2 | RSI6 > 85 或 < 15 | 创 52 周新高/新低。
+```bash
+python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,AMD,INTC,...
+```
 
-**盘前价补充**：若当前是美股盘前时段（北京时间 16:00-22:30），用新浪 `gb_` 接口补盘前价：
+**v4 自动根据北京时间选择数据策略**：
+- 北京 07:00-15:00 工作日 → 获取**盘后价**
+- 北京 15:00-21:30 → 获取**盘前价**
+- 北京 21:30-04:00 → 获取**盘中实时价**（新增！）
+- 北京 04:00-07:00 → 获取**盘后价**
+- 周六/周日 → 获取**周五收盘+盘后价**
+
+**v4 返回的每只股额外包含**：
+- `rsi6` / `kdj_k` → 技术指标（自动抓取）
+- `news` → 过滤后的新闻标题（已去除纯成交额播报等低质量内容）
+- `latest_rating` → 最新机构评级（机构名/评级/目标价）
+- `upcoming_events` → 关键事件日历（财报披露日/分红除权日）
+- `abnormal_signals` → 异常信号（新增 RSI6>85 超买 / RSI6<15 超卖）
+- `sector_analysis` → 板块关联分析（半导体/AI基建/Crypto/新能源车 各赛道平均涨跌）
+
+**异常判定口径（v4 增强）**：
+- 单日涨跌 > 4%
+- 量比 > 2
+- RSI6 > 85（超买）或 < 15（超卖）← 新增
+- 创 52 周新高/新低
+- 盘前/盘后/盘中涨跌 > 4%
+
+**🚫 绝对禁止**：不要自己拼接 westock-data + 新浪 gb_ 接口，必须用 fetch_quotes.py。
+
+### 步骤 2.5：生成股票报告 HTML（stock_body_html 内容规范）
+
+**⚠️ 核心要求：stock_body_html 必须包含以下 4 大板块，缺一不可：**
+
 ```
-curl -s "https://hq.sinajs.cn/?list=gb_${symbol_lower}" -H "Referer: https://finance.sina.com.cn"
+1️⃣ 异常信号总览表
+   - HTML table，列：代码 | 名称 | 昨收 | 昨日涨跌 | 盘前价 | 盘前涨跌 | 距52周高 | 信号
+   - 每只股票一行，无遗漏
+
+2️⃣ 组合层面总结 + 行动清单
+   - <h3>⚡ 异常信号详解</h3>：只列有异常的股票，简述原因
+   - <h3>💡 建议动作</h3>：P0/P1/P2 优先级 + 具体触发条件
+
+3️⃣ 📝 逐股详解（最重要！不能省略！）
+   - 对自选股清单中的【每一只】股票，生成独立段落，格式：
+     <h3>N️⃣ 代码 · 名称 — 评分 X.X</h3>
+     <ul>
+       <li><strong>行情：</strong>昨收$XXX(±X.XX%) · 盘前/盘后/盘中 $XXX(±X.XX%)</li>
+       <li><strong>技术：</strong>RSI6/KDJ/MA/量比/距52W高等技术面关键指标（RSI6>85 或 <15 需醒目标注⚠️）</li>
+       <li><strong>新闻：</strong>最近1-2条相关新闻（已过滤低质量内容，无则写"—"）</li>
+       <li><strong>评级：</strong>最新机构评级（机构名+评级+目标价，无则写"—"）← v4新增</li>
+       <li><strong>事件：</strong>近期关键事件（财报日/除权日，无则写"—"）← v4新增</li>
+       <li><strong>建议：</strong>具体操作建议+价位+触发条件（这是用户最看重的！）</li>
+       <li><strong>大师视角：</strong>1-2位投资大师的简短点评（可选，有则更好）</li>
+     </ul>
+   - 9只全部要有，不能只做异常的几只
+
+4️⃣ 板块关联分析 ← v4新增
+   - <h3>🏷️ 板块关联分析</h3>
+   - 按赛道（半导体/AI基建/Crypto/新能源车）聚合当日平均涨跌
+   - 一句话总结板块格局（如"半导体板块+6.2%领涨，INTC 驱动"）
+
+5️⃣ 一句话结论
+   - <h3>💡 一句话结论</h3>：整体总结今日策略方向
 ```
-详情见 `references/premarket.md`。
+
+**绝对禁止**：只生成一个概览表格就结束——那是"摘要"不是"报告"。逐股详解是用户查看报告的核心价值。
+
+### 步骤 2.6：数据验证护栏 ← v4新增
+
+**在推送前必须执行验证**，调用 `fetch_quotes.validate_report(json_path, png_path, num_stocks=9)`：
+```python
+from scripts.fetch_quotes import validate_report
+errors = validate_report("daily/daily_YYYYMMDD_HHMM.json", "images/daily_YYYYMMDD_HHMM.png")
+if errors:
+    # 终止推送！通过 notify 报告错误
+    ...
+```
+
+验证项：
+1. JSON 文件存在且可解析
+2. 必填字段完整（slug/date/generated_at/title/has_stock/has_web3/image/stock_body_html/web3_body_html/tickers）
+3. has_stock / has_web3 为 True
+4. 逐股详解 `<h4>` 数量 = 自选股数量（9）
+5. stock_body_html 长度 >= 3000 字符
+6. 图片文件存在且 >= 20KB
 
 ### 步骤 3：生成异常信号总览图（PNG）
 
@@ -150,6 +224,31 @@ python3 scripts/publish_site.py \
 | 本地克隆目录 | `/data/workspace/YoungStockDaily` | `REPO_DIR` |
 | GitHub PAT | `~/.config/knot/github_token` | `GITHUB_TOKEN` |
 | 访问入口 | `https://youngstockdaily.pages.dev/` | - |
+
+## 周报流程（每周六 20:00 自动触发）← v4新增
+
+周报是对本周 5 个交易日日报的聚合复盘，推送给用户用于周末复盘。周六/周日不再推送日报。
+
+**周报内容板块**：
+1. 📊 本周涨跌排名（按本周累计涨跌排序，含收盘价 + 周涨跌%）
+2. 🚨 本周异常事件回顾（摘取本周 10 份日报中的所有异常信号去重汇总）
+3. 📰 本周重要新闻 TOP 5（从本周所有新闻中筛选最有影响力的 5 条）
+4. 📅 下周关键事件预告（财报日/除权日/期权到期日）
+5. 💡 下周操作策略建议（基于本周走势 + 技术面 + 事件面的综合判断）
+6. 🪙 本周 Web3 摘要（BTC/ETH 周涨跌 + 恐贪指数变化趋势）
+
+**数据来源**：读取 `data/daily.json` 索引中本周一~周五的 5 份日报 JSON，聚合分析。
+
+**推送标题格式**：`📊 自选股周报 | YYYY-MM-DD ~ YYYY-MM-DD`
+
+## 定时任务调度规则
+
+| 时间 | 任务 | 说明 |
+|---|---|---|
+| **周一~周五 09:00** | 日报推送 | 盘后/休市数据 |
+| **周一~周五 19:00** | 日报推送 | 盘前数据 |
+| **周六 20:00** | **周报推送** | 本周聚合复盘 |
+| 周六/周日 09:00 & 19:00 | **不推送** | 日报定时任务需跳过周末 |
 
 ## 常见场景速查
 

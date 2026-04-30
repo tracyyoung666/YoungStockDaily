@@ -1,8 +1,11 @@
 /* ================================================================
-   YoungStockDaily · 前端 SPA v4
+   YoungStockDaily · 前端 SPA v7
+   - 数据源：data/daily.json 索引 + daily/daily_YYYYMMDD_HHMM.json 全量
    - 三个一级 Tab：今日最新 / 分析日报 / 自选股
-   - 分析日报：列表 <-> 详情 原地切换，不跳页
-   - 详情合并当日股票 + Web3 内容
+   - 分析日报：列表 <-> 详情 原地切换（hash 路由 #daily/<slug>）
+   - 去白框 UI：内容直接平铺
+   - v6 修复：版本化 ?v= 击穿浏览器缓存；_indexPromise 失败时 console 明显提示
+   - v7 修复：兼容 JSON 缺少 has_stock/has_web3/image 字段，从内容自动推断
    ================================================================ */
 
 (function () {
@@ -14,58 +17,32 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  function bust(url) { return url + (url.indexOf('?') === -1 ? '?' : '&') + '_=' + Date.now(); }
   function fetchJSON(url) {
-    return fetch(url + (url.indexOf('?') === -1 ? '?' : '&') + '_=' + Date.now())
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url); return r.json(); });
+    return fetch(bust(url)).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url);
+      return r.json();
+    });
   }
-  function fetchText(url) {
-    return fetch(url + (url.indexOf('?') === -1 ? '?' : '&') + '_=' + Date.now())
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url); return r.text(); });
-  }
+  /* 从 daily JSON 抽出的 body HTML 里，相对路径 ../images/xxx.png 在首页根目录下访问时不生效
+     需改成 images/xxx.png */
   function rewriteRelativePaths(html) {
-    // 详情页里的相对路径（../images/x.png / ../web3/x.html）→ 在首页根目录访问时改为 images/x.png / web3/x.html
+    if (!html) return '';
     return html
       .replace(/src="\.\.\/(images\/[^"]+)"/g, 'src="$1"')
-      .replace(/href="\.\.\/(images\/[^"]+)"/g, 'href="$1"')
-      .replace(/href="\.\.\/(web3\/[^"]+)"/g, 'href="$1"')
-      .replace(/href="\.\.\/(reports\/[^"]+)"/g, 'href="$1"')
-      .replace(/href="\.\.\/portfolio\.html"/g, 'href="#portfolio"')
-      .replace(/href="\.\.\/index\.html"/g, 'href="#today"');
+      .replace(/href="\.\.\/(images\/[^"]+)"/g, 'href="$1"');
   }
 
-  // 从股票详情页 HTML 抽出预览图块 + 正文 <article class="report-content">
-  function extractStockParts(htmlStr) {
-    const mPreview = htmlStr.match(/<div class="preview-image"[\s\S]*?<\/div>\s*(?=<article|<section|<div class="toc"|$)/i);
-    const mArticle = htmlStr.match(/<article[^>]*class="report-content"[^>]*>([\s\S]*?)<\/article>/i);
-    let out = '';
-    if (mPreview) out += rewriteRelativePaths(mPreview[0]);
-    if (mArticle) out += '<article class="report-content">' + rewriteRelativePaths(mArticle[1]) + '</article>';
-    return out;
-  }
-  // 从 Web3 详情页 HTML 抽出 #digest-body
-  function extractWeb3Body(htmlStr) {
-    const m = htmlStr.match(/<div[^>]*id="digest-body"[^>]*>([\s\S]*?)<\/div>\s*<details/i);
-    if (m) return '<div class="report-content">' + m[1] + '</div>';
-    // 退化：抓 main 里所有内容
-    const m2 = htmlStr.match(/<main[^>]*>([\s\S]*?)<\/main>/i);
-    if (m2) return '<div class="report-content">' + m2[1] + '</div>';
-    return '';
-  }
-
-  // ================= Tab 切换 =================
+  // ================= Tab 切换 & 路由 =================
   function initTabs() {
-    const btns = document.querySelectorAll('.tab-btn');
-    const panels = document.querySelectorAll('.tab-panel');
-    btns.forEach(function (b) {
+    document.querySelectorAll('.tab-btn').forEach(function (b) {
       b.addEventListener('click', function () {
-        activateTab(b.dataset.tab);
-        // 清掉详情 hash，回到 Tab 根
-        try { history.replaceState(null, '', '#' + b.dataset.tab); } catch (e) {}
-        // 切到 daily 时，默认回列表视图
-        if (b.dataset.tab === 'daily') showDailyList();
+        const name = b.dataset.tab;
+        try { history.replaceState(null, '', '#' + name); } catch (e) {}
+        activateTab(name);
+        if (name === 'daily') showDailyList();
       });
     });
-    // 启动路由
     routeFromHash();
     window.addEventListener('hashchange', routeFromHash);
   }
@@ -80,36 +57,126 @@
   function routeFromHash() {
     const h = (location.hash || '').replace('#', '');
     if (!h) { activateTab('today'); return; }
-    // 支持 #daily/2026-04-29
     const parts = h.split('/');
     const tab = parts[0];
     if (['today', 'daily', 'portfolio'].indexOf(tab) === -1) { activateTab('today'); return; }
     activateTab(tab);
     if (tab === 'daily') {
-      if (parts[1]) showDailyDetail(parts[1]);
+      if (parts[1]) showDailyDetail(decodeURIComponent(parts[1]));
       else showDailyList();
     }
   }
+
+  // ================= 共享索引 =================
+  const _indexPromise = fetchJSON('data/daily.json').catch(function (e) {
+    console.error(e); return { dailies: [] };
+  });
 
   // ================= Tab 1：今日最新 =================
   function initToday() {
     const box = document.getElementById('today-container');
     if (!box) return;
-    Promise.all([
-      fetchJSON('data/reports.json').catch(function () { return { reports: [] }; }),
-      fetchJSON('data/web3.json').catch(function () { return { digests: [] }; })
-    ]).then(function (res) {
-      const stocks = (res[0].reports || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
-      const web3s  = (res[1].digests || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
-      const stock = stocks[0], web3 = web3s[0];
-      if (!stock && !web3) {
+    _indexPromise.then(function (idx) {
+      const list = (idx.dailies || []).slice().sort(function (a, b) {
+        return (b.date + ' ' + b.generated_at).localeCompare(a.date + ' ' + a.generated_at);
+      });
+      const latest = list[0];
+      if (!latest) {
         box.innerHTML = '<div class="empty-state"><h3>暂无报告</h3></div>';
         return;
       }
-      const date = (stock && stock.date) || (web3 && web3.date);
-      renderCombinedDetail(box, date, stock, web3, { isTodayHeader: true });
-    }).catch(function (err) {
-      box.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+      // 先渲染 7 天走势迷你图区域，再渲染详情
+      var sparkHtml = buildSparklineSection(list);
+      box.innerHTML = sparkHtml;
+      var detailBox = document.createElement('div');
+      box.appendChild(detailBox);
+      renderDetail(detailBox, latest.slug, { isTodayHeader: true });
+    });
+  }
+
+  // ================= 7天K线迷你图 =================
+  function buildSparklineSection(dailyList) {
+    var html = '<div class="sparkline-section">';
+    html += '<h3 class="sparkline-title">📈 最近 7 日 K 线走势</h3>';
+    html += '<div class="sparkline-grid" id="sparkline-grid">';
+    html += '<div class="sparkline-loading">加载K线数据中…</div>';
+    html += '</div></div>';
+    setTimeout(function () { loadKlineData(); }, 100);
+    return html;
+  }
+
+  function loadKlineData() {
+    var grid = document.getElementById('sparkline-grid');
+    if (!grid) return;
+
+    fetchJSON('data/sparkline.json').then(function (data) {
+      var stocks = data.stocks || {};
+      var symbols = Object.keys(stocks);
+      if (symbols.length === 0) {
+        grid.innerHTML = '<div class="sparkline-empty">暂无K线数据</div>';
+        return;
+      }
+
+      var html = '';
+      symbols.forEach(function (sym) {
+        var klines = stocks[sym];
+        if (!klines || klines.length < 2) return;
+
+        var first = klines[0];
+        var last = klines[klines.length - 1];
+        var weekPct = ((last.close - first.open) / first.open * 100).toFixed(2);
+        var isWeekUp = last.close >= first.open;
+        var themeColor = isWeekUp ? '#dc2626' : '#16a34a';
+
+        // 计算全局高低
+        var allHigh = Math.max.apply(null, klines.map(function (k) { return k.high; }));
+        var allLow = Math.min.apply(null, klines.map(function (k) { return k.low; }));
+        var priceRange = allHigh - allLow || 1;
+
+        // SVG K线图参数
+        var W = 154, H = 52, PAD_T = 3, PAD_B = 3, PAD_X = 6;
+        var barW = Math.min(14, (W - PAD_X * 2) / klines.length - 2);
+        var gap = (W - PAD_X * 2 - barW * klines.length) / (klines.length - 1 || 1);
+
+        var svgContent = '';
+        klines.forEach(function (k, i) {
+          var x = PAD_X + i * (barW + gap) + barW / 2;
+          var isUp = k.close >= k.open;
+          var bodyTop = isUp ? k.close : k.open;
+          var bodyBot = isUp ? k.open : k.close;
+          var color = isUp ? '#dc2626' : '#16a34a';
+
+          // Y 坐标映射（价格 → 像素，Y 轴反转）
+          var yHigh = PAD_T + (1 - (k.high - allLow) / priceRange) * (H - PAD_T - PAD_B);
+          var yLow = PAD_T + (1 - (k.low - allLow) / priceRange) * (H - PAD_T - PAD_B);
+          var yBodyTop = PAD_T + (1 - (bodyTop - allLow) / priceRange) * (H - PAD_T - PAD_B);
+          var yBodyBot = PAD_T + (1 - (bodyBot - allLow) / priceRange) * (H - PAD_T - PAD_B);
+          var bodyH = Math.max(1, yBodyBot - yBodyTop);
+
+          // 上下影线
+          svgContent += '<line x1="' + x.toFixed(1) + '" y1="' + yHigh.toFixed(1) + '" x2="' + x.toFixed(1) + '" y2="' + yLow.toFixed(1) + '" stroke="' + color + '" stroke-width="1.2"/>';
+          // 实体
+          svgContent += '<rect x="' + (x - barW / 2).toFixed(1) + '" y="' + yBodyTop.toFixed(1) + '" width="' + barW + '" height="' + bodyH.toFixed(1) + '" fill="' + (isUp ? color : color) + '" rx="1"/>';
+        });
+
+        html += '<div class="sparkline-card" style="border-color: ' + themeColor + '22;">';
+        html += '<div class="sparkline-header">';
+        html += '<span class="sparkline-sym">' + sym + '</span>';
+        html += '<span class="sparkline-price" style="color:' + themeColor + '">$' + last.close.toFixed(2) + '</span>';
+        html += '</div>';
+        html += '<svg class="sparkline-svg" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">';
+        html += svgContent;
+        html += '</svg>';
+        html += '<div class="sparkline-footer">';
+        html += '<span class="sparkline-range">' + first.date.slice(5) + '~' + last.date.slice(5) + '</span>';
+        html += '<span class="sparkline-pct" style="color:' + themeColor + '">' + (isWeekUp ? '+' : '') + weekPct + '%</span>';
+        html += '</div>';
+        html += '</div>';
+      });
+
+      grid.innerHTML = html;
+    }).catch(function () {
+      grid.innerHTML = '<div class="sparkline-empty">K线数据加载失败</div>';
     });
   }
 
@@ -121,62 +188,47 @@
     const countEl = document.getElementById('count-daily');
     const backBtn = document.getElementById('btn-daily-back');
 
-    let merged = []; // [{date, stock, web3, title, summary, tickers, image}]
+    let all = [];
 
-    Promise.all([
-      fetchJSON('data/reports.json').catch(function () { return { reports: [] }; }),
-      fetchJSON('data/web3.json').catch(function () { return { digests: [] }; })
-    ]).then(function (res) {
-      const byDate = {};
-      (res[0].reports || []).forEach(function (r) { byDate[r.date] = byDate[r.date] || {}; byDate[r.date].stock = r; });
-      (res[1].digests || []).forEach(function (w) { byDate[w.date] = byDate[w.date] || {}; byDate[w.date].web3 = w; });
-      merged = Object.keys(byDate).sort(function (a, b) { return b.localeCompare(a); }).map(function (d) {
-        const s = byDate[d].stock, w = byDate[d].web3;
-        return {
-          date: d,
-          stock: s || null,
-          web3: w || null,
-          title: (s && s.title) || (w && w.title) || d + ' 分析日报',
-          summary: [s && s.summary, w && w.summary].filter(Boolean).join(' · '),
-          tickers: (s && s.tickers) || [],
-          image: (s && s.image) || null,
-          hasStock: !!s,
-          hasWeb3:  !!w
-        };
+    _indexPromise.then(function (idx) {
+      all = (idx.dailies || []).slice().sort(function (a, b) {
+        return (b.date + ' ' + b.generated_at).localeCompare(a.date + ' ' + a.generated_at);
       });
-      window.__DAILY_INDEX__ = merged; // 供详情视图按日期查找
+      window.__DAILY_INDEX__ = all;
       render();
-    }).catch(function (err) {
-      listEl.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
     });
 
     function render() {
       const q = (searchInput.value || '').trim().toLowerCase();
-      const filtered = merged.filter(function (r) {
+      const filtered = all.filter(function (r) {
         if (!q) return true;
-        return [r.date, r.title, r.summary, r.tickers.join(' ')].join(' ').toLowerCase().indexOf(q) !== -1;
+        const hay = [r.date, r.generated_at, r.title, r.summary, (r.tickers || []).join(' ')].join(' ').toLowerCase();
+        return hay.indexOf(q) !== -1;
       });
       countEl.textContent = '共 ' + filtered.length + ' 篇';
       if (!filtered.length) {
         listEl.innerHTML = '<div class="empty-state"><h3>🔍 未找到</h3></div>';
         return;
       }
-      const html = filtered.map(function (r) {
-        const badges = (r.hasStock ? '<span class="badge stock">📈 股票</span>' : '') +
-                       (r.hasWeb3  ? '<span class="badge web3">🪙 Web3</span>'  : '');
-        const tickers = r.tickers.length
+      listEl.innerHTML = filtered.map(function (r) {
+        const badges =
+          (r.has_stock ? '<span class="badge stock">📈 股票</span>' : '') +
+          (r.has_web3  ? '<span class="badge web3">🪙 Web3</span>'  : '');
+        const tickers = (r.tickers || []).length
           ? '<div class="tickers">' + r.tickers.map(function (t) { return '<span>' + escapeHtml(t) + '</span>'; }).join('') + '</div>'
           : '';
-        return '<a class="report-card" href="#daily/' + encodeURIComponent(r.date) + '" data-date="' + escapeHtml(r.date) + '">' +
-                 (r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="' + escapeHtml(r.date) + '" loading="lazy">' : '') +
-                 '<div class="date">' + escapeHtml(r.date) + '</div>' +
+        const img = r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="" loading="lazy">' : '';
+        return '<a class="report-card" href="#daily/' + encodeURIComponent(r.slug) + '">' +
+                 img +
+                 '<div class="date">' + escapeHtml(r.date) + ' <small>🕒 ' + escapeHtml(r.generated_at || '') + '</small></div>' +
                  '<div class="badges">' + badges + '</div>' +
                  '<div class="title">' + escapeHtml(r.title) + '</div>' +
                  '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
                  tickers +
                '</a>';
       }).join('');
-      listEl.innerHTML = html;
+      // 注入财报条目到列表
+      injectEarningsToList(listEl, filtered);
     }
     searchInput.addEventListener('input', render);
 
@@ -187,14 +239,13 @@
       });
     }
   }
-
   function showDailyList() {
     const lv = document.getElementById('daily-list-view');
     const dv = document.getElementById('daily-detail-view');
     if (lv) lv.style.display = '';
     if (dv) dv.style.display = 'none';
   }
-  function showDailyDetail(date) {
+  function showDailyDetail(slug) {
     const lv = document.getElementById('daily-list-view');
     const dv = document.getElementById('daily-detail-view');
     const body = document.getElementById('daily-detail-body');
@@ -202,89 +253,88 @@
     if (!lv || !dv || !body) return;
     lv.style.display = 'none';
     dv.style.display = '';
-    dateEl.textContent = date;
+    dateEl.textContent = slug;
     body.innerHTML = '<div class="empty-state"><h3>⏳ 加载中</h3></div>';
-
-    // 在索引里找对应的 stock/web3 元数据
-    const idx = (window.__DAILY_INDEX__ || []).filter(function (r) { return r.date === date; })[0];
-    const tryRender = function () {
-      const item = (window.__DAILY_INDEX__ || []).filter(function (r) { return r.date === date; })[0];
-      renderCombinedDetail(body, date, item ? item.stock : null, item ? item.web3 : null, { isTodayHeader: false });
-    };
-    if (idx) { tryRender(); return; }
-    // 索引未加载时，等待一下
-    let waits = 0;
-    const t = setInterval(function () {
-      waits += 1;
-      if (window.__DAILY_INDEX__ || waits > 20) {
-        clearInterval(t);
-        tryRender();
-      }
-    }, 200);
+    renderDetail(body, slug, { isTodayHeader: false, updateToolbarDate: true });
   }
 
-  // ================= 合并详情渲染（今日最新 + 日报详情共用） =================
-  function renderCombinedDetail(container, date, stockMeta, web3Meta, opts) {
+  // ================= 详情渲染（今日最新 / 日报详情共用） =================
+  function renderDetail(container, slug, opts) {
     opts = opts || {};
-    let html = '';
-    if (opts.isTodayHeader) {
-      html += '<div class="today-header">' +
-                '<div class="today-title">' +
-                  '<span class="today-chip">🔥 今日最新</span>' +
-                  '<h1>' + escapeHtml(date) + ' · 投研日报</h1>' +
-                '</div>' +
-              '</div>';
-    }
-    // 📈 股票区
-    if (stockMeta) {
-      html += '<section class="today-block" id="stock-section">' +
-                '<h2 class="today-block-title">📈 自选股实时行情分析</h2>' +
-                '<div class="today-block-body" id="slot-stock-' + date + '">' +
-                  '<div class="empty-state"><h3>⏳ 加载股票报告…</h3></div>' +
-                '</div>' +
-              '</section>';
-    }
-    // 🪙 Web3 区
-    if (web3Meta) {
-      html += '<section class="today-block" id="web3-section">' +
-                '<h2 class="today-block-title">🪙 Web3 加密日报</h2>' +
-                '<div class="today-block-body" id="slot-web3-' + date + '">' +
-                  '<div class="empty-state"><h3>⏳ 加载 Web3 日报…</h3></div>' +
-                '</div>' +
-              '</section>';
-    }
-    if (!stockMeta && !web3Meta) {
-      html += '<div class="empty-state"><h3>该日期暂无内容</h3></div>';
-    }
-    container.innerHTML = html;
+    fetchJSON('daily/' + encodeURIComponent(slug) + '.json').then(function (d) {
+      // 兼容：如果 JSON 缺少 has_stock/has_web3 字段，从内容自动推断
+      var hasStock = d.has_stock != null ? d.has_stock : !!(d.stock_body_html && d.stock_body_html.length > 10);
+      var hasWeb3  = d.has_web3  != null ? d.has_web3  : !!(d.web3_body_html && d.web3_body_html.length > 10);
+      var imgPath  = d.image || d.overview_image || null;
 
-    // 异步填充
-    if (stockMeta) {
-      fetchText('reports/' + encodeURIComponent(date) + '.html').then(function (s) {
-        const slot = document.getElementById('slot-stock-' + date);
-        if (!slot) return;
-        const parts = extractStockParts(s);
-        slot.innerHTML = parts || ('<div class="report-content"><h3>' + escapeHtml(stockMeta.title || '') + '</h3><p>' + escapeHtml(stockMeta.summary || '') + '</p></div>');
-        attachLightboxFor(slot);
-      }).catch(function (err) {
-        const slot = document.getElementById('slot-stock-' + date);
-        if (slot) slot.innerHTML = '<div class="empty-state"><h3>😔 股票报告加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+      var html = '';
+      // 页首元信息
+      html += '<div class="daily-page-head">';
+      if (opts.isTodayHeader) {
+        html += '<span class="today-chip">🔥 今日最新</span>';
+      }
+      html += '<h1>' + escapeHtml(d.date) + ' · 投研日报</h1>';
+      html += '<div class="daily-meta">🕒 生成于 ' + escapeHtml(d.generated_at || '') + '</div>';
+      html += '</div>';
+
+      // 财报链接区域（显示在总览图上方）
+      html += '<div class="earnings-links" id="earnings-links-' + slug + '"></div>';
+
+      // 预览图
+      if (imgPath) {
+        html += '<figure class="hero-image-plain">' +
+                  '<img src="' + escapeHtml(imgPath) + '" alt="' + escapeHtml(d.date) + ' 异常信号总览" loading="lazy">' +
+                  '<figcaption>异常信号总览 · 点击可查看大图</figcaption>' +
+                '</figure>';
+      }
+
+      // 锚点导航（两部分都有才显示）
+      if (hasStock && hasWeb3) {
+        html += '<div class="daily-anchor-nav">' +
+                  '<a href="#stock-section">📈 自选股</a>' +
+                  '<a href="#web3-section">🪙 Web3</a>' +
+                '</div>';
+      }
+
+      // 股票区
+      if (hasStock) {
+        html += '<section class="daily-block" id="stock-section">' +
+                  '<h2 class="daily-block-title">📈 自选股实时行情分析</h2>' +
+                  '<div class="daily-block-body">' + rewriteRelativePaths(d.stock_body_html || '') + '</div>' +
+                '</section>';
+      }
+      // Web3 区
+      if (hasWeb3) {
+        html += '<section class="daily-block" id="web3-section">' +
+                  '<h2 class="daily-block-title">🪙 Web3 加密日报</h2>' +
+                  '<div class="daily-block-body">' + (d.web3_body_html || '') + '</div>' +
+                '</section>';
+      }
+      if (!hasStock && !hasWeb3) {
+        html += '<div class="empty-state"><h3>该记录暂无内容</h3></div>';
+      }
+      container.innerHTML = html;
+      // 加载财报链接
+      loadEarningsLinks(slug, d.date);
+      if (opts.updateToolbarDate) {
+        const dateEl = document.getElementById('daily-detail-date');
+        if (dateEl) dateEl.textContent = d.date + ' · 🕒 ' + (d.generated_at || '');
+      }
+      attachLightboxFor(container);
+      // 处理锚点跳转（因为 hash 已被用于 SPA 路由，锚点需要 JS 平滑滚动）
+      container.querySelectorAll('.daily-anchor-nav a').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          const tgt = container.querySelector(a.getAttribute('href'));
+          if (tgt) tgt.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       });
-    }
-    if (web3Meta) {
-      fetchText('web3/' + encodeURIComponent(date) + '.html').then(function (s) {
-        const slot = document.getElementById('slot-web3-' + date);
-        if (!slot) return;
-        const body = extractWeb3Body(s);
-        slot.innerHTML = body || ('<div class="report-content"><h3>Web3 日报</h3><p>' + escapeHtml(web3Meta.summary || '') + '</p></div>');
-      }).catch(function (err) {
-        const slot = document.getElementById('slot-web3-' + date);
-        if (slot) slot.innerHTML = '<div class="empty-state"><h3>😔 Web3 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
-      });
-    }
+    }).catch(function (err) {
+      container.innerHTML = '<div class="empty-state"><h3>😔 加载失败</h3><p>' + escapeHtml(err.message) + '</p></div>';
+    });
   }
 
-  // ================= Tab 3：自选股（完整清单原地展示） =================
+  // ================= Tab 3：自选股 =================
   function initPortfolio() {
     const box = document.getElementById('portfolio-full');
     if (!box) return;
@@ -334,24 +384,77 @@
     return lightbox;
   }
   function attachLightboxFor(root) {
-    const previews = (root || document).querySelectorAll('.preview-image');
-    if (!previews.length) return;
+    const imgs = (root || document).querySelectorAll('.hero-image-plain img, .preview-image img');
+    if (!imgs.length) return;
     const lightbox = buildLightboxOnce();
     const lightImg = lightbox.querySelector('img');
-    previews.forEach(function (preview) {
-      if (preview.dataset.lbBound) return;
-      preview.dataset.lbBound = '1';
-      const img = preview.querySelector('img');
-      if (!img) return;
-      preview.addEventListener('click', function () {
+    imgs.forEach(function (img) {
+      if (img.dataset.lbBound) return;
+      img.dataset.lbBound = '1';
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function () {
         lightImg.src = img.src;
         lightbox.classList.add('show'); document.body.style.overflow = 'hidden';
       });
     });
   }
 
+  // ================= 财报链接加载 =================
+  var _earningsPromise = null;
+  function getEarningsIndex() {
+    if (!_earningsPromise) {
+      _earningsPromise = fetchJSON('data/earnings.json').catch(function () { return { reports: [] }; });
+    }
+    return _earningsPromise;
+  }
+
+  function loadEarningsLinks(slug, reportDate) {
+    getEarningsIndex().then(function (idx) {
+      var reports = idx.reports || [];
+      if (!reports.length) return;
+      // 只显示 report_date 在 reportDate 当天或之前最近 7 天内的财报
+      var linkEl = document.getElementById('earnings-links-' + slug);
+      if (!linkEl) return;
+      // 简单逻辑：显示所有可用的财报链接
+      var html = '<div class="earnings-banner">';
+      html += '<div class="earnings-banner-title">📊 最新财报分析</div>';
+      html += '<div class="earnings-banner-links">';
+      reports.forEach(function (r) {
+        var verdictClass = r.verdict === 'beat' ? 'beat' : (r.verdict === 'miss' ? 'miss' : 'inline');
+        html += '<a href="' + r.url + '" class="earnings-link earnings-' + verdictClass + '">';
+        html += '<span class="earnings-link-sym">' + r.symbol + '</span>';
+        html += '<span class="earnings-link-period">' + r.period_label + ' 财报分析</span>';
+        html += '<span class="earnings-link-verdict">' + r.verdict_label + '</span>';
+        html += '</a>';
+      });
+      html += '</div></div>';
+      linkEl.innerHTML = html;
+    });
+  }
+
+  // 在日报列表中也注入财报条目
+  function injectEarningsToList(listEl, existingItems) {
+    getEarningsIndex().then(function (idx) {
+      var reports = idx.reports || [];
+      if (!reports.length) return;
+      // 在列表顶部插入财报条目
+      var earningsHtml = '';
+      reports.forEach(function (r) {
+        earningsHtml += '<li class="report-card earnings-card" data-date="' + r.report_date + '">';
+        earningsHtml += '<a href="' + r.url + '">';
+        earningsHtml += '<div class="date">' + r.report_date + ' <small>财报</small></div>';
+        earningsHtml += '<div class="title">📊 ' + r.symbol + ' · ' + r.period_label + ' 财报分析</div>';
+        earningsHtml += '<div class="summary">' + r.verdict_label + ' | EPS $' + r.eps_actual + ' vs 预期 $' + r.eps_estimate + ' | 营收 $' + r.revenue_actual + r.revenue_unit + '</div>';
+        earningsHtml += '</a></li>';
+      });
+      // 插入到列表最前面
+      listEl.insertAdjacentHTML('afterbegin', earningsHtml);
+    });
+  }
+
   // ================= 启动 =================
   document.addEventListener('DOMContentLoaded', function () {
+    console.log('%c[YSD] SPA v7 booted','color:#d4a849;font-weight:700');
     initTabs();
     initToday();
     initDaily();
