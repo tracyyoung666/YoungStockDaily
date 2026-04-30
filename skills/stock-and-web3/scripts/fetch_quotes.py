@@ -32,22 +32,23 @@ WESTOCK_CODE_MAP = {
     "MU":   "usMU.OQ",
     "AMD":  "usAMD.OQ",
     "INTC": "usINTC.OQ",
+    "GOOG": "usGOOG.OQ",
+    "NVDA": "usNVDA.OQ",
     "NBIS": "usNBIS.OQ",
     "CRWV": "usCRWV.OQ",
     "CRCL": "usCRCL.N",
     "MSTR": "usMSTR.OQ",
     "TSLA": "usTSLA.OQ",
     "XPEV": "usXPEV.N",
-    "GOOG": "usGOOG.OQ",
 }
 
 # 板块分组
 SECTOR_MAP = {
-    "半导体": ["MU", "AMD", "INTC"],
+    "半导体": ["MU", "AMD", "INTC", "NVDA"],
+    "科技巨头": ["GOOG"],
     "AI基建": ["NBIS", "CRWV"],
     "Crypto": ["CRCL", "MSTR"],
     "新能源车": ["TSLA", "XPEV"],
-    "科技巨头": ["GOOG"],
 }
 
 WESTOCK_SCRIPT = "/data/workspace/.agent/skills/westock-data/scripts/index.js"

@@ -17,13 +17,14 @@ SYMBOLS = {
     "MU": "usMU.OQ",
     "AMD": "usAMD.OQ",
     "INTC": "usINTC.OQ",
+    "GOOG": "usGOOG.OQ",
+    "NVDA": "usNVDA.OQ",
     "NBIS": "usNBIS.OQ",
     "CRWV": "usCRWV.OQ",
     "CRCL": "usCRCL.N",
     "MSTR": "usMSTR.OQ",
     "TSLA": "usTSLA.OQ",
     "XPEV": "usXPEV.N",
-    "GOOG": "usGOOG.OQ",
 }
 
 
