@@ -81,39 +81,79 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,
 
 ### 步骤 2.5：生成股票报告 HTML（stock_body_html 内容规范）
 
-**⚠️ 核心要求：stock_body_html 必须包含以下板块，缺一不可：**
+**⚠️ 核心要求：stock_body_html 必须包含以下板块，缺一不可。**
 
+**🚨 HTML 格式强制规范（每次都必须严格遵守，不能自行发挥）：**
+- 涨跌颜色：**红涨绿跌**（涨用 `color:#dc2626`，跌用 `color:#16a34a`）
+- 总览表格必须用 `class="stock-table"`，**严禁** `border="1"` 或 inline table 样式
+- 异常信号详解和建议动作的 `<h3>` 标签不需要额外 class，前端 CSS 会自动通过 `:nth-of-type` 选择器高亮
+- 逐股详解用 `<h4>` 标签（不是 `<h3>`）
+- 整个 stock_body_html 必须包裹在 `<div class="stock-report">` 中
+
+**1️⃣ 异常信号总览表（HTML 模板，直接复制修改数据即可）：**
+
+```html
+<div class="stock-report">
+
+<h3>📊 异常信号总览表</h3>
+<table class="stock-table">
+<thead><tr>
+  <th>代码</th><th>名称</th><th>收盘价</th><th>今日涨跌</th>
+  <th>盘前/盘后价</th><th>盘前/盘后%</th><th>距52W高</th><th>信号</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td><strong>MU</strong></td><td>美光科技</td><td>$518.46</td>
+  <td style="color:#dc2626">+2.81%</td>
+  <td>$523.16</td><td style="color:#dc2626">+0.91%</td>
+  <td>-2.4%</td><td>正常</td>
+</tr>
+<!-- 每只股票一行，11只全部列出，涨用#dc2626红，跌用#16a34a绿 -->
+</tbody>
+</table>
+
+<h3>⚡ 异常信号详解</h3>
+<!-- 只列有异常的股票 -->
+<ul>
+  <li><strong>INTC：</strong>日涨+12.10% + 创52W新高 + RSI6=93.6超买 ...</li>
+</ul>
+
+<h3>💡 建议动作</h3>
+<ul>
+  <li><strong>P0 INTC：</strong>RSI超买+暴涨后建议...</li>
+</ul>
+
+<h3>📝 逐股详解</h3>
+<!-- 每只用 <h4> 不是 <h3> -->
+<h4>1️⃣ MU · 美光科技 — 评分 7.5</h4>
+<ul>
+  <li><strong>行情：</strong>...</li>
+  <li><strong>技术：</strong>...</li>
+  <li><strong>新闻：</strong>...</li>
+  <li><strong>评级：</strong>...</li>
+  <li><strong>事件：</strong>...</li>
+  <li><strong>建议：</strong>...</li>
+</ul>
+<!-- 重复 11 只 -->
+
+<h3>🏷️ 板块关联分析</h3>
+<ul>
+  <li><strong>半导体：</strong>+6.40%（MU +2.81%, AMD +4.30%, INTC +12.10%, NVDA -1.84%）</li>
+  <!-- 其他板块 -->
+</ul>
+
+<h3>💡 一句话结论</h3>
+<p>...</p>
+
+</div>
 ```
-1️⃣ 异常信号总览表
-   - HTML table class="stock-table"，列：代码 | 名称 | 收盘价 | 今日涨跌 | 盘前/盘后价 | 盘前/盘后涨跌 | 距52周高 | 信号
-   - 每只股票一行，11只无遗漏
 
-2️⃣ 组合层面总结 + 行动清单
-   - <h3>⚡ 异常信号详解</h3>：只列有异常的股票，简述原因
-   - <h3>💡 建议动作</h3>：P0/P1/P2 优先级 + 具体触发条件
-
-3️⃣ 📝 逐股详解（最重要！不能省略！）
-   - 对自选股清单中的【每一只】股票（当前 11 只），生成独立段落，格式：
-     <h4>N️⃣ 代码 · 名称 — 评分 X.X</h4>
-     <ul>
-       <li><strong>行情：</strong>收盘$XXX(±X.XX%) · 盘前/盘后/盘中 $XXX(±X.XX%)</li>
-       <li><strong>技术：</strong>RSI6/KDJ/MA/量比/距52W高等（RSI6>85 或 <15 需醒目标注⚠️）</li>
-       <li><strong>新闻：</strong>最近1-2条相关新闻（已过滤低质量内容，无则写"—"）</li>
-       <li><strong>评级：</strong>最新机构评级（机构名+评级+目标价，无则写"—"）</li>
-       <li><strong>事件：</strong>近期关键事件（财报日/除权日，无则写"—"）</li>
-       <li><strong>建议：</strong>具体操作建议+价位+触发条件（用户最看重！）</li>
-       <li><strong>大师视角：</strong>1-2位投资大师的简短点评（可选）</li>
-     </ul>
-   - 11只全部要有，不能只做异常的几只
-
-4️⃣ 🏷️ 板块关联分析
-   - <h3>🏷️ 板块关联分析</h3>
-   - 按赛道（半导体/科技巨头/AI基建/Crypto/新能源车）聚合当日平均涨跌
-   - 一句话总结板块格局
-
-5️⃣ 一句话结论
-   - <h3>💡 一句话结论</h3>：整体总结今日策略方向
-```
+**🚫 严禁：**
+- 严禁用 `border="1"` / `cellpadding` / `cellspacing` 等 inline table 样式
+- 严禁用 `#e03e3e` 旧红色（必须用 `#dc2626`）
+- 严禁涨用绿跌用红（必须**红涨绿跌**：涨 `#dc2626`，跌 `#16a34a`）
+- 严禁逐股详解用 `<h3>` 标签（必须用 `<h4>`）
+- 严禁省略外层 `<div class="stock-report">` 包裹
 
 **绝对禁止**：只生成一个概览表格就结束——那是"摘要"不是"报告"。逐股详解是用户查看报告的核心价值。
 
