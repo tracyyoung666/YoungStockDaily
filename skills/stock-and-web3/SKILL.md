@@ -166,30 +166,34 @@ sys.stdout.write(json.dumps({'date':date,'digest_md':md,'digest_wechat':wc,
   | python3 /data/workspace/web3-archive/archive.py
 ```
 
-### 步骤 5：构建 HTML 站点并 git push
+### 步骤 5：更新索引并 git push
 
-调用 `scripts/publish_site.py`，它会一次性完成：
-1. 重新生成 Web3 日报详情页（扫描 `/data/workspace/web3-archive/digests/*.json`）
-2. 更新 `data/portfolio.json`（从 watchlist.json 同步）
-3. 将本次股票报告详情页写入 `reports/YYYY-MM-DD.html`
-4. 更新 `data/reports.json` 索引
-5. 复制异常信号总览图到 `images/YYYY-MM-DD.png`
-6. `git add / commit / push`
+**⚠️ 严格按以下步骤执行，不要自己手写 daily.json 追加逻辑！**
 
 ```bash
-python3 scripts/publish_site.py \
-  --repo-url https://github.com/tracyyoung666/YoungStockDaily.git \
-  --repo-dir /data/workspace/YoungStockDaily \
-  --token-file ~/.config/knot/github_token \
-  --date YYYY-MM-DD \
-  --stock-report /tmp/stock_report.html \
-  --stock-summary "一句话摘要" \
-  --tickers "MU,AMD,INTC,..." \
-  --overview-png /tmp/overview.png \
-  --category "实时行情分析"
+# 5.1 运行 rebuild_daily_index.py 重建 data/daily.json 索引
+#     它会自动扫描 daily/*.json，写入 "dailies" 数组（不是 "reports"！）
+python3 /data/workspace/YoungStockDaily/scripts/rebuild_daily_index.py
+
+# 5.2 更新 7 日 K 线数据
+python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_sparkline.py \
+  /data/workspace/YoungStockDaily/data/sparkline.json
+
+# 5.3 同步 watchlist → portfolio
+cp /data/workspace/portfolio/watchlist.json /data/workspace/YoungStockDaily/data/portfolio.json
+
+# 5.4 git add + commit + push（必须包含 daily.json + sparkline.json + portfolio.json）
+cd /data/workspace/YoungStockDaily
+git add -A
+git commit -m "📈 日报 YYYY-MM-DD HH:MM | <一句话摘要>"
+TOKEN=$(cat ~/.config/knot/github_token)
+git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDaily.git" main
 ```
 
-所有参数都可以通过环境变量覆盖（`GITHUB_TOKEN`、`REPO_URL`、`REPO_DIR`）。详见脚本 `--help`。
+**🚫 绝对禁止**：
+1. 不要自己 `json.dump` 直接写 `data/daily.json`——必须用 `rebuild_daily_index.py`
+2. 不要把新条目追加到 `reports` 或其他字段——前端只读 `dailies` 数组
+3. 不要忘记 `git add -A`（确保 daily.json + sparkline.json + 图片全部提交）
 
 ### 步骤 6：通过 notify 推送（两条，先图后文）
 

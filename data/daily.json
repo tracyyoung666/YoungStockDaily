@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-04-30T19:10:19.796068",
+  "updated_at": "2026-04-30T19:55:17",
   "dailies": [
+    {
+      "slug": "daily_20260430_1909",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30 19:09:40",
+      "title": "自选股盘前分析 · 2026-04-30",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260430_1909.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260430_1040",
       "date": "2026-04-30",
@@ -53,30 +76,6 @@
       "image": null,
       "has_stock": false,
       "has_web3": true
-    }
-  ],
-  "reports": [
-    {
-      "slug": "daily_20260430_1909",
-      "date": "2026-04-30",
-      "generated_at": "2026-04-30 19:10:19",
-      "title": "自选股盘前分析 · 2026-04-30",
-      "has_stock": true,
-      "has_web3": true,
-      "image": "images/daily_20260430_1909.png",
-      "tickers": [
-        "MU",
-        "AMD",
-        "INTC",
-        "GOOG",
-        "NVDA",
-        "NBIS",
-        "CRWV",
-        "CRCL",
-        "MSTR",
-        "TSLA",
-        "XPEV"
-      ]
     }
   ]
 }
