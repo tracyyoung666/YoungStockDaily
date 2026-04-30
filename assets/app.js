@@ -227,6 +227,8 @@
                  tickers +
                '</a>';
       }).join('');
+      // 注入财报条目到列表
+      injectEarningsToList(listEl, filtered);
     }
     searchInput.addEventListener('input', render);
 
@@ -275,6 +277,9 @@
       html += '<div class="daily-meta">🕒 生成于 ' + escapeHtml(d.generated_at || '') + '</div>';
       html += '</div>';
 
+      // 财报链接区域（显示在总览图上方）
+      html += '<div class="earnings-links" id="earnings-links-' + slug + '"></div>';
+
       // 预览图
       if (imgPath) {
         html += '<figure class="hero-image-plain">' +
@@ -309,6 +314,8 @@
         html += '<div class="empty-state"><h3>该记录暂无内容</h3></div>';
       }
       container.innerHTML = html;
+      // 加载财报链接
+      loadEarningsLinks(slug, d.date);
       if (opts.updateToolbarDate) {
         const dateEl = document.getElementById('daily-detail-date');
         if (dateEl) dateEl.textContent = d.date + ' · 🕒 ' + (d.generated_at || '');
@@ -389,6 +396,59 @@
         lightImg.src = img.src;
         lightbox.classList.add('show'); document.body.style.overflow = 'hidden';
       });
+    });
+  }
+
+  // ================= 财报链接加载 =================
+  var _earningsPromise = null;
+  function getEarningsIndex() {
+    if (!_earningsPromise) {
+      _earningsPromise = fetchJSON('data/earnings.json').catch(function () { return { reports: [] }; });
+    }
+    return _earningsPromise;
+  }
+
+  function loadEarningsLinks(slug, reportDate) {
+    getEarningsIndex().then(function (idx) {
+      var reports = idx.reports || [];
+      if (!reports.length) return;
+      // 只显示 report_date 在 reportDate 当天或之前最近 7 天内的财报
+      var linkEl = document.getElementById('earnings-links-' + slug);
+      if (!linkEl) return;
+      // 简单逻辑：显示所有可用的财报链接
+      var html = '<div class="earnings-banner">';
+      html += '<div class="earnings-banner-title">📊 最新财报分析</div>';
+      html += '<div class="earnings-banner-links">';
+      reports.forEach(function (r) {
+        var verdictClass = r.verdict === 'beat' ? 'beat' : (r.verdict === 'miss' ? 'miss' : 'inline');
+        html += '<a href="' + r.url + '" class="earnings-link earnings-' + verdictClass + '">';
+        html += '<span class="earnings-link-sym">' + r.symbol + '</span>';
+        html += '<span class="earnings-link-period">' + r.period_label + ' 财报分析</span>';
+        html += '<span class="earnings-link-verdict">' + r.verdict_label + '</span>';
+        html += '</a>';
+      });
+      html += '</div></div>';
+      linkEl.innerHTML = html;
+    });
+  }
+
+  // 在日报列表中也注入财报条目
+  function injectEarningsToList(listEl, existingItems) {
+    getEarningsIndex().then(function (idx) {
+      var reports = idx.reports || [];
+      if (!reports.length) return;
+      // 在列表顶部插入财报条目
+      var earningsHtml = '';
+      reports.forEach(function (r) {
+        earningsHtml += '<li class="report-card earnings-card" data-date="' + r.report_date + '">';
+        earningsHtml += '<a href="' + r.url + '">';
+        earningsHtml += '<div class="date">' + r.report_date + ' <small>财报</small></div>';
+        earningsHtml += '<div class="title">📊 ' + r.symbol + ' · ' + r.period_label + ' 财报分析</div>';
+        earningsHtml += '<div class="summary">' + r.verdict_label + ' | EPS $' + r.eps_actual + ' vs 预期 $' + r.eps_estimate + ' | 营收 $' + r.revenue_actual + r.revenue_unit + '</div>';
+        earningsHtml += '</a></li>';
+      });
+      // 插入到列表最前面
+      listEl.insertAdjacentHTML('afterbegin', earningsHtml);
     });
   }
 

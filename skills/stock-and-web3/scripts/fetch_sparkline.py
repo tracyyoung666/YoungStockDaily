@@ -23,6 +23,7 @@ SYMBOLS = {
     "MSTR": "usMSTR.OQ",
     "TSLA": "usTSLA.OQ",
     "XPEV": "usXPEV.N",
+    "GOOG": "usGOOG.OQ",
 }
 
 
