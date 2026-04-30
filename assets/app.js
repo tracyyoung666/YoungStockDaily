@@ -85,7 +85,152 @@
         box.innerHTML = '<div class="empty-state"><h3>暂无报告</h3></div>';
         return;
       }
-      renderDetail(box, latest.slug, { isTodayHeader: true });
+      // 先渲染 7 天走势迷你图区域，再渲染详情
+      var sparkHtml = buildSparklineSection(list);
+      box.innerHTML = sparkHtml;
+      var detailBox = document.createElement('div');
+      box.appendChild(detailBox);
+      renderDetail(detailBox, latest.slug, { isTodayHeader: true });
+    });
+  }
+
+  // ================= 7天走势迷你图 =================
+  function buildSparklineSection(dailyList) {
+    // 取最近 7 天的日报（按日期去重，每天取最新一份）
+    var dateMap = {};
+    dailyList.forEach(function (d) {
+      if (!dateMap[d.date] && d.has_stock) dateMap[d.date] = d;
+    });
+    var dates = Object.keys(dateMap).sort().slice(-7);
+    if (dates.length < 2) return '';
+
+    // 从每份日报的 tickers 和 summary 中无法直接拿到收盘价
+    // 所以用 slug 异步加载 JSON 拿价格——但这里做同步布局，实际数据延迟填充
+    var html = '<div class="sparkline-section">';
+    html += '<h3 class="sparkline-title">📈 最近 ' + dates.length + ' 天走势</h3>';
+    html += '<div class="sparkline-grid" id="sparkline-grid">';
+    html += '<div class="sparkline-loading">加载走势数据中…</div>';
+    html += '</div></div>';
+
+    // 异步加载数据并渲染
+    setTimeout(function () { loadSparklineData(dates, dateMap); }, 100);
+    return html;
+  }
+
+  function loadSparklineData(dates, dateMap) {
+    var grid = document.getElementById('sparkline-grid');
+    if (!grid) return;
+
+    // 对每个日期加载 JSON 获取收盘价
+    var promises = dates.map(function (date) {
+      var d = dateMap[date];
+      return fetchJSON('daily/' + encodeURIComponent(d.slug) + '.json')
+        .then(function (json) { return { date: date, data: json }; })
+        .catch(function () { return { date: date, data: null }; });
+    });
+
+    Promise.all(promises).then(function (results) {
+      // 从 stock_body_html 提取价格（找 <td>$XXX.XX</td> 模式）
+      // 或从 meta 中直接取——更好的方式是解析 tickers
+      var stockPrices = {}; // { symbol: [{date, close}] }
+
+      results.forEach(function (r) {
+        if (!r.data) return;
+        var tickers = r.data.tickers || [];
+        // 尝试从 meta.stocks 取价格
+        var meta = r.data.meta || {};
+        var stocks = meta.stocks || {};
+        // 如果 meta 里没有 stocks，从 stock_body_html 中正则提取
+        if (Object.keys(stocks).length === 0 && r.data.stock_body_html) {
+          // 从表格提取：<td><strong>MU</strong></td><td>...<td>$518.46</td>
+          var tableMatch = r.data.stock_body_html.match(/<tbody>([\s\S]*?)<\/tbody>/);
+          if (tableMatch) {
+            var rows = tableMatch[1].match(/<tr>[\s\S]*?<\/tr>/g) || [];
+            rows.forEach(function (row) {
+              var cells = row.match(/<td[^>]*>([\s\S]*?)<\/td>/g) || [];
+              if (cells.length >= 3) {
+                var symMatch = cells[0].match(/<strong>(\w+)<\/strong>/);
+                var priceMatch = cells[2].match(/\$([\d.]+)/);
+                if (symMatch && priceMatch) {
+                  var sym = symMatch[1];
+                  var price = parseFloat(priceMatch[1]);
+                  if (!stockPrices[sym]) stockPrices[sym] = [];
+                  stockPrices[sym].push({ date: r.date, close: price });
+                }
+              }
+            });
+          }
+        } else {
+          // 从 meta.stocks 取
+          Object.keys(stocks).forEach(function (sym) {
+            var cp = stocks[sym].close_price;
+            if (cp) {
+              if (!stockPrices[sym]) stockPrices[sym] = [];
+              stockPrices[sym].push({ date: r.date, close: cp });
+            }
+          });
+        }
+      });
+
+      // 渲染迷你图
+      var html = '';
+      var symbols = Object.keys(stockPrices);
+      if (symbols.length === 0) {
+        grid.innerHTML = '<div class="sparkline-empty">暂无足够数据绘制走势图</div>';
+        return;
+      }
+
+      symbols.forEach(function (sym) {
+        var points = stockPrices[sym].sort(function (a, b) { return a.date.localeCompare(b.date); });
+        if (points.length < 2) return;
+        var prices = points.map(function (p) { return p.close; });
+        var minP = Math.min.apply(null, prices);
+        var maxP = Math.max.apply(null, prices);
+        var range = maxP - minP || 1;
+        var first = prices[0];
+        var last = prices[prices.length - 1];
+        var totalPct = ((last - first) / first * 100).toFixed(2);
+        var isUp = last >= first;
+        var color = isUp ? '#16a34a' : '#dc2626';
+        var bgColor = isUp ? 'rgba(22,163,74,0.06)' : 'rgba(220,38,38,0.06)';
+
+        // SVG sparkline
+        var W = 140, H = 40, PAD = 2;
+        var step = (W - PAD * 2) / (prices.length - 1);
+        var pathD = prices.map(function (p, i) {
+          var x = PAD + i * step;
+          var y = PAD + (1 - (p - minP) / range) * (H - PAD * 2);
+          return (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1);
+        }).join(' ');
+
+        // 渐变填充
+        var fillD = pathD + ' L' + (PAD + (prices.length - 1) * step).toFixed(1) + ',' + H + ' L' + PAD + ',' + H + ' Z';
+
+        html += '<div class="sparkline-card" style="border-color: ' + color + '22;">';
+        html += '<div class="sparkline-header">';
+        html += '<span class="sparkline-sym">' + sym + '</span>';
+        html += '<span class="sparkline-price" style="color:' + color + '">$' + last.toFixed(2) + '</span>';
+        html += '</div>';
+        html += '<svg class="sparkline-svg" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">';
+        html += '<defs><linearGradient id="sg-' + sym + '" x1="0" y1="0" x2="0" y2="1">';
+        html += '<stop offset="0%" stop-color="' + color + '" stop-opacity="0.25"/>';
+        html += '<stop offset="100%" stop-color="' + color + '" stop-opacity="0.02"/>';
+        html += '</linearGradient></defs>';
+        html += '<path d="' + fillD + '" fill="url(#sg-' + sym + ')"/>';
+        html += '<path d="' + pathD + '" fill="none" stroke="' + color + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+        // 终点圆点
+        var lastX = PAD + (prices.length - 1) * step;
+        var lastY = PAD + (1 - (last - minP) / range) * (H - PAD * 2);
+        html += '<circle cx="' + lastX.toFixed(1) + '" cy="' + lastY.toFixed(1) + '" r="3" fill="' + color + '"/>';
+        html += '</svg>';
+        html += '<div class="sparkline-footer">';
+        html += '<span class="sparkline-range">' + points[0].date.slice(5) + '~' + points[points.length - 1].date.slice(5) + '</span>';
+        html += '<span class="sparkline-pct" style="color:' + color + '">' + (isUp ? '+' : '') + totalPct + '%</span>';
+        html += '</div>';
+        html += '</div>';
+      });
+
+      grid.innerHTML = html;
     });
   }
 
