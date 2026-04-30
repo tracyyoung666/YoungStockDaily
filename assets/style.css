@@ -12,8 +12,8 @@
   --text-sub: #4a5568;
   --text-muted: #8894a8;
 
-  --red: #e03e3e;     /* 涨 */
-  --green: #16a34a;   /* 跌 */
+  --red: #dc2626;     /* 涨 - 红色 */
+  --green: #16a34a;   /* 跌 - 绿色 */
   --orange: #f59e0b;  /* 警告 */
   --fire: #ef4444;    /* 极端 */
   --blue: #2563eb;    /* 强调 */
@@ -893,8 +893,8 @@ footer {
 .daily-block-body .signal-table thead { background: var(--bg-card-alt); }
 .daily-block-body .signal-table .row-fire td { background: #fef2f2; }
 .daily-block-body .signal-table .row-warn td { background: #fffbeb; }
-.daily-block-body .signal-table .neg { color: #dc2626; font-weight: 600; }
-.daily-block-body .signal-table .pos { color: #16a34a; font-weight: 600; }
+.daily-block-body .signal-table .neg { color: #16a34a; font-weight: 600; }
+.daily-block-body .signal-table .pos { color: #dc2626; font-weight: 600; }
 
 /* 股票列表项 */
 .daily-block-body .stock-item {
@@ -912,8 +912,8 @@ footer {
 .daily-block-body .action-list { padding-left: 22px; margin: 8px 0; }
 .daily-block-body .bullet-list li,
 .daily-block-body .action-list li { margin: 6px 0; color: var(--text-sub); }
-.daily-block-body .neg { color: #dc2626; }
-.daily-block-body .pos { color: #16a34a; }
+.daily-block-body .neg { color: #16a34a; }
+.daily-block-body .pos { color: #dc2626; }
 
 /* 4. 页头元信息块 */
 .daily-page-head {
@@ -1046,11 +1046,11 @@ footer {
   color: #1a2332;
 }
 .stock-table td.up, .stock-table .up {
-  color: #16a34a;
+  color: #dc2626;
   font-weight: 600;
 }
 .stock-table td.down, .stock-table .down {
-  color: #dc2626;
+  color: #16a34a;
   font-weight: 600;
 }
 .stock-table .data-note,

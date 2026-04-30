@@ -126,7 +126,7 @@
         var last = klines[klines.length - 1];
         var weekPct = ((last.close - first.open) / first.open * 100).toFixed(2);
         var isWeekUp = last.close >= first.open;
-        var themeColor = isWeekUp ? '#16a34a' : '#dc2626';
+        var themeColor = isWeekUp ? '#dc2626' : '#16a34a';
 
         // 计算全局高低
         var allHigh = Math.max.apply(null, klines.map(function (k) { return k.high; }));
@@ -144,7 +144,7 @@
           var isUp = k.close >= k.open;
           var bodyTop = isUp ? k.close : k.open;
           var bodyBot = isUp ? k.open : k.close;
-          var color = isUp ? '#16a34a' : '#dc2626';
+          var color = isUp ? '#dc2626' : '#16a34a';
 
           // Y 坐标映射（价格 → 像素，Y 轴反转）
           var yHigh = PAD_T + (1 - (k.high - allLow) / priceRange) * (H - PAD_T - PAD_B);

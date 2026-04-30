@@ -90,7 +90,7 @@ def fmt_pct(v):
 def color_pct(v):
     if v is None:
         return C['muted']
-    return C['green'] if v > 0 else C['red'] if v < 0 else C['sub']
+    return C['red'] if v > 0 else C['green'] if v < 0 else C['sub']
 
 
 # ---------- 主渲染 ----------
