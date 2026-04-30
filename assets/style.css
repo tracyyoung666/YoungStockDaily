@@ -997,4 +997,145 @@ footer {
   .daily-block-body .signal-table { font-size: 12px; }
   .daily-block-body .signal-table th,
   .daily-block-body .signal-table td { padding: 6px 8px; }
+  .stock-table { font-size: 12px; }
+  .stock-table th, .stock-table td { padding: 8px 6px; }
+  .alert-card { padding: 16px; }
+}
+
+/* ========== 8. stock-table 行情总览表格 ========== */
+.stock-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.06);
+  margin: 16px 0 24px;
+}
+.stock-table thead {
+  background: linear-gradient(135deg, #eef2ff 0%, #e8f0fe 100%);
+}
+.stock-table th {
+  padding: 12px 10px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  border-bottom: 2px solid #cbd5e1;
+}
+.stock-table td {
+  padding: 11px 10px;
+  text-align: center;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s;
+}
+.stock-table tbody tr:hover td {
+  background: #f8fafc;
+}
+.stock-table tbody tr:nth-child(even) td {
+  background: #fafbfd;
+}
+.stock-table tbody tr:nth-child(even):hover td {
+  background: #f1f5f9;
+}
+.stock-table td:first-child {
+  font-weight: 700;
+  color: #1a2332;
+}
+.stock-table td.up, .stock-table .up {
+  color: #16a34a;
+  font-weight: 600;
+}
+.stock-table td.down, .stock-table .down {
+  color: #dc2626;
+  font-weight: 600;
+}
+.stock-table .data-note,
+.stock-report .data-note {
+  font-size: 13px;
+  color: #64748b;
+  margin: 4px 0 12px;
+  padding-left: 2px;
+}
+
+/* ========== 9. 异常信号详解 & 建议动作 高亮卡片 ========== */
+.stock-report h3:has(+ ul) {
+  /* fallback for browsers without :has */
+}
+/* 通用 alert-card 样式——用 JS 注入 class 或直接写 CSS 选择器 */
+.alert-card,
+.stock-report > ul:nth-of-type(1),
+.stock-report > ul:nth-of-type(2) {
+  background: linear-gradient(135deg, #fef9ec 0%, #fefce8 100%);
+  border-left: 4px solid #f59e0b;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 12px 0 20px;
+}
+.alert-card-danger,
+.stock-report h3:nth-of-type(1) + ul {
+  background: linear-gradient(135deg, #fef2f2 0%, #fff1f2 100%);
+  border-left: 4px solid #ef4444;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 12px 0 20px;
+}
+.alert-card-action,
+.stock-report h3:nth-of-type(2) + ul {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+  border-left: 4px solid #10b981;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 12px 0 20px;
+}
+/* h3 本身也加视觉区分 */
+.stock-report h3:nth-of-type(1),
+.stock-report h3:nth-of-type(2) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 24px 0 8px;
+}
+.stock-report h3:nth-of-type(1) {
+  background: #fef2f2;
+  color: #dc2626;
+}
+.stock-report h3:nth-of-type(2) {
+  background: #ecfdf5;
+  color: #059669;
+}
+/* 逐股详解的 h3/h4 保持正常风格，不被误染 */
+.stock-report h3:nth-of-type(n+3) {
+  background: none;
+  color: #1e293b;
+  padding: 0;
+  margin: 32px 0 12px;
+  font-size: 17px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+.stock-report h4 {
+  font-size: 15.5px;
+  color: #1e40af;
+  margin: 24px 0 8px;
+  padding-left: 12px;
+  border-left: 3px solid #2563eb;
+}
+.stock-report h4 + ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+.stock-report h4 + ul li {
+  margin: 6px 0;
+  line-height: 1.7;
+  color: #334155;
+}
+.stock-report h4 + ul li strong {
+  color: #1e293b;
 }
