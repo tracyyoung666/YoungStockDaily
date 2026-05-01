@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-render_overview.py · v3
-数据驱动生成【自选股行情总览】亮色竖屏 PNG，手机微信友好。
+render_overview.py · v4
+数据驱动生成【自选股行情总览】亮色竖屏 PNG，手机微信友好。红涨绿跌。
 
 用法：
   python3 render_overview.py --input overview_data.json --output images/daily_YYYYMMDD_HHMM.png
 
 输入 JSON 格式（由 fetch_quotes.py 生成后简单包装）：
 {
-  "title": "自选股行情总览",            // 可选，默认"自选股行情总览"
-  "generated_at": "2026-04-30 10:40",
-  "session": "盘后 After-Hours",        // 盘前/盘后/常规
+  "title": "自选股行情总览",
+  "generated_at": "2026-05-01 19:02",
+  "session": "盘前",                      // 或 "盘后"/"盘中"
+  "session_label": "盘前",                // 也接受此字段
   "stocks": [
     {
       "symbol": "MU", "name": "美光科技",
-      "close": 518.46, "pct_1d": 2.81,
-      "premarket": 523.16, "premarket_pct": 0.91,   // 可为 null
-      "dist_52w_high": -2.4, "volume_ratio": 1.19,
-      "signals": ["盘后>4%(+4.24%)"]                // 数组
+      "close_price": 517.16,              // 或 "close": 517.16（兼容旧名）
+      "pct_1d": -0.25,
+      "extended_price": 507.75,           // 或 "premarket": 507.75（兼容旧名）
+      "extended_pct": -1.82,              // 或 "premarket_pct": -1.82（兼容旧名）
+      "dist_from_52w_high_pct": -3.42,    // 或 "dist_52w_high": -3.42（兼容旧名）
+      "signals": ["日跌>4%"]              // 数组
     }, ...
   ]
 }
@@ -102,12 +105,13 @@ def render(data, out_path):
         print('[warn] stocks 数组为空，无数据可渲染')
         # 仍然生成一个空图避免报错
 
-    session = data.get('session', '')
+    session = data.get('session', '') or data.get('session_label', '')
     gen_at = data.get('generated_at', '')
 
-    # 判断是盘前还是盘后（决定列名）
+    # 判断是盘前还是盘后还是盘中（决定列名）
     is_afterhours = '盘后' in session or 'After' in session
-    ext_label = '盘后' if is_afterhours else '盘前'
+    is_realtime = '盘中' in session or 'realtime' in session.lower()
+    ext_label = '盘后' if is_afterhours else ('盘中' if is_realtime else '盘前')
 
     # ====== 布局参数 ======
     W = 1080
@@ -185,8 +189,8 @@ def render(data, out_path):
                 fontsize=14, fontweight='bold', color=C['text'],
                 va='center', ha='center')
 
-        # 2 收盘价
-        close = s.get('close')
+        # 2 收盘价（兼容 close / close_price 两种字段名）
+        close = s.get('close') or s.get('close_price')
         ax.text(cols_x[1], cy, f'${close:.2f}' if close else '--',
                 fontsize=13, color=C['sub'], va='center', ha='center')
 
@@ -196,20 +200,20 @@ def render(data, out_path):
                 fontsize=13, fontweight='bold', color=color_pct(pct_1d),
                 va='center', ha='center')
 
-        # 4 盘前/盘后价
-        ext_price = s.get('premarket')
+        # 4 盘前/盘后价（兼容 premarket / extended_price）
+        ext_price = s.get('premarket') or s.get('extended_price')
         ax.text(cols_x[3], cy, f'${ext_price:.2f}' if ext_price else '--',
                 fontsize=13, fontweight='bold', color=C['text'],
                 va='center', ha='center')
 
-        # 5 盘前/盘后%
-        ext_pct = s.get('premarket_pct')
+        # 5 盘前/盘后%（兼容 premarket_pct / extended_pct）
+        ext_pct = s.get('premarket_pct') or s.get('extended_pct')
         ax.text(cols_x[4], cy, fmt_pct(ext_pct),
                 fontsize=13, fontweight='bold', color=color_pct(ext_pct),
                 va='center', ha='center')
 
-        # 6 距52W高
-        d52 = s.get('dist_52w_high')
+        # 6 距52W高（兼容 dist_52w_high / dist_from_52w_high_pct）
+        d52 = s.get('dist_52w_high') if s.get('dist_52w_high') is not None else s.get('dist_from_52w_high_pct')
         if d52 is not None and d52 > -0.5:
             d52_text, d52_color = '★新高', C['fire']
         elif d52 is not None:

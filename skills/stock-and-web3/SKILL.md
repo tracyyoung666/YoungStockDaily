@@ -185,6 +185,27 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/render_overview.py 
   --output /data/workspace/YoungStockDaily/images/daily_YYYYMMDD_HHMM.png
 ```
 
+**⚠️ /tmp/overview_data.json 每只股必须包含以下字段（缺一不可！）：**
+```json
+{
+  "generated_at": "2026-05-01 19:02",
+  "session_label": "盘前",
+  "stocks": [
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "close_price": 517.16,
+      "pct_1d": -0.25,
+      "extended_price": 507.75,
+      "extended_pct": -1.82,
+      "dist_from_52w_high_pct": -3.42,
+      "signals": ["日跌>4%"]
+    }
+  ]
+}
+```
+**🚫 严禁遗漏 `close_price` / `extended_price` / `extended_pct` / `dist_from_52w_high_pct` 中的任何一个字段！否则图片中这些列会显示为 `--`！**
+
 图片标题固定为"自选股行情总览"，宽 1080px，高度随行数动态。亮色 `#f7f9fc` 背景。**红涨绿跌**。
 
 ### 步骤 4：拉取 Web3 日报
