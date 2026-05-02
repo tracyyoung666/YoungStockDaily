@@ -1,0 +1,38 @@
+{
+  "slug": "weekly_20260502",
+  "date": "2026-05-02",
+  "generated_at": "2026-05-02 20:00:00",
+  "title": "自选股周报 04-28 ~ 05-02",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/weekly_20260502.png",
+  "stock_body_html": "<div class=\"stock-report\">\n\n<h3>📊 本周涨跌排名（04-28 ~ 05-02）</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>代码</th><th>名称</th><th>上周五收盘</th><th>本周五收盘</th>\n  <th>周涨跌%</th><th>盘后价</th><th>盘后%</th><th>RSI6</th>\n</tr></thead>\n<tbody>\n<tr>\n  <td><strong>INTC</strong></td><td>英特尔</td><td>$82.54</td><td>$99.62</td>\n  <td style=\"color:#dc2626\">+20.69%</td>\n  <td>$100.77</td><td style=\"color:#dc2626\">+1.15%</td>\n  <td>94.1</td>\n</tr>\n<tr>\n  <td><strong>GOOG</strong></td><td>谷歌</td><td>$342.31</td><td>$383.22</td>\n  <td style=\"color:#dc2626\">+11.95%</td>\n  <td>$382.45</td><td style=\"color:#16a34a\">-0.2%</td>\n  <td>92.6</td>\n</tr>\n<tr>\n  <td><strong>MU</strong></td><td>美光科技</td><td>$496.71</td><td>$542.21</td>\n  <td style=\"color:#dc2626\">+9.16%</td>\n  <td>$539.91</td><td style=\"color:#16a34a\">-0.42%</td>\n  <td>79.2</td>\n</tr>\n<tr>\n  <td><strong>CRWV</strong></td><td>CoreWeave</td><td>$110.14</td><td>$119.01</td>\n  <td style=\"color:#dc2626\">+8.05%</td>\n  <td>$119.26</td><td style=\"color:#dc2626\">+0.21%</td>\n  <td>62.6</td>\n</tr>\n<tr>\n  <td><strong>NBIS</strong></td><td>Nebius</td><td>$147.16</td><td>$154.49</td>\n  <td style=\"color:#dc2626\">+4.98%</td>\n  <td>$155.00</td><td style=\"color:#dc2626\">+0.33%</td>\n  <td>60.3</td>\n</tr>\n<tr>\n  <td><strong>TSLA</strong></td><td>特斯拉</td><td>$376.30</td><td>$390.82</td>\n  <td style=\"color:#dc2626\">+3.86%</td>\n  <td>$391.34</td><td style=\"color:#dc2626\">+0.13%</td>\n  <td>64.8</td>\n</tr>\n<tr>\n  <td><strong>AMD</strong></td><td>超威半导体</td><td>$347.81</td><td>$360.54</td>\n  <td style=\"color:#dc2626\">+3.66%</td>\n  <td>$361.85</td><td style=\"color:#dc2626\">+0.36%</td>\n  <td>81.2</td>\n</tr>\n<tr>\n  <td><strong>MSTR</strong></td><td>微策略</td><td>$171.01</td><td>$177.17</td>\n  <td style=\"color:#dc2626\">+3.60%</td>\n  <td>$176.79</td><td style=\"color:#16a34a\">-0.21%</td>\n  <td>66.8</td>\n</tr>\n<tr>\n  <td><strong>CRCL</strong></td><td>Circle</td><td>$99.66</td><td>$99.70</td>\n  <td style=\"color:#dc2626\">+0.04%</td>\n  <td>$100.55</td><td style=\"color:#dc2626\">+0.85%</td>\n  <td>53.1</td>\n</tr>\n<tr>\n  <td><strong>NVDA</strong></td><td>英伟达</td><td>$208.28</td><td>$198.45</td>\n  <td style=\"color:#16a34a\">-4.72%</td>\n  <td>$198.12</td><td style=\"color:#16a34a\">-0.17%</td>\n  <td>40.9</td>\n</tr>\n<tr>\n  <td><strong>XPEV</strong></td><td>小鹏汽车</td><td>$16.66</td><td>$15.83</td>\n  <td style=\"color:#16a34a\">-4.98%</td>\n  <td>$15.89</td><td style=\"color:#dc2626\">+0.38%</td>\n  <td>28.2</td>\n</tr>\n</tbody>\n</table>\n\n<h3>🚨 本周异常事件回顾</h3>\n<ul>\n  <li><strong>INTC 英特尔：</strong>本周累计暴涨+20.69%，连续创52W新高至$100.45。驱动力：苹果/谷歌导入英特尔代工 + EMIB封装良率90% + 马斯克联手建超级晶圆厂 + CPU涨价预期。RSI6=94.1极度超买，周内每日都处于超买区。</li>\n  <li><strong>GOOG 谷歌：</strong>本周累计+11.95%，周四单日暴涨+9.97%（财报超预期+首次派息+700亿回购），量比2.48创52W新高$383.39。RSI6=92.6极度超买。</li>\n  <li><strong>MU 美光科技：</strong>本周累计+9.16%，周五+4.84%创52W新高$545.91。存储超级周期+CXL加码+DA Davidson给出$1000最高目标价。</li>\n  <li><strong>NBIS Nebius：</strong>周五暴涨+11.76%（$154.49），本周累计+4.98%。前半周大跌-6.52%后强势V型反转。</li>\n  <li><strong>CRWV CoreWeave：</strong>本周累计+8.05%。周二大跌-5.83%后连续反弹，周三+8.21%，Oppenheimer绩前唱多。</li>\n  <li><strong>CRCL Circle：</strong>周四单日-4.90%（稳定币监管反复），但周五暴力反弹+9.71%，周累计几乎持平(+0.04%)。</li>\n  <li><strong>MSTR 微策略：</strong>周三跌-4.54%（BTC走弱），但周五+7.08%反弹（BTC企稳$78K）。B.Riley上调目标价至$200。</li>\n  <li><strong>NVDA 英伟达：</strong>本周累计-4.72%，是本周表现最弱的大盘股。周四单日-4.63%（B300服务器价格翻倍引发成本担忧），AI资本开支利好被获利了结消化。</li>\n  <li><strong>XPEV 小鹏汽车：</strong>本周累计-4.98%垫底。持续走弱，RSI6=28.2接近超卖。4月交付创新高但股价未反映。</li>\n</ul>\n\n<h3>📰 本周重要新闻 TOP 5</h3>\n<ul>\n  <li><strong>TOP1 GOOG 财报超预期：</strong>Q1营收/利润/云业务三超预期，首次宣布现金股息+700亿回购，单日暴涨10%。花旗上调目标价。</li>\n  <li><strong>TOP2 INTC 代工业务多线突破：</strong>苹果/谷歌明年导入英特尔代工，EMIB封装良率达90%，马斯克联手建超级晶圆厂。CPU在AI推理端价值被重新发现。</li>\n  <li><strong>TOP3 MU 存储超级周期：</strong>三星营收+69%印证存储景气，存储巨头密集加码CXL，DA Davidson给出$1000华尔街最高目标价。但斌建仓美光+台积电。</li>\n  <li><strong>TOP4 DeFi安全危机：</strong>KelpDAO遭近3亿美元漏洞攻击，4月DeFi黑客损失超6.3亿，Aave牵头成立DeFi United救助，推动行业风险共担机制。</li>\n  <li><strong>TOP5 美联储鹰派维持利率：</strong>连续第三次不变，投票分歧扩大，降息预期后移，加密市场BTC/ETH承压。恐贪指数从43降至39再回45。</li>\n</ul>\n\n<h3>📅 下周关键事件预告</h3>\n<ul>\n  <li><strong>05-05 (周一) AMD Q1财报：</strong>数据中心业务占比48%，市场关注MI350 GPU芯片进展和AI收入指引。本周累计+3.66%，RSI=81.2偏高。</li>\n  <li><strong>05-05 (周一) MSTR Q1财报：</strong>关注BTC持仓变化和账面价值。BTC本周从$77,586涨至$78,128。</li>\n  <li><strong>05-07 (周三) CRWV Q1财报：</strong>Oppenheimer绩前唱多，市场期待数据中心产能和收入验证。本周+8.05%反弹。</li>\n  <li><strong>05-20 (下下周) NVDA FY27Q1财报：</strong>关注B300/H200出货量和数据中心收入。本周-4.72%回调，估值更合理（PE=40.5）。</li>\n</ul>\n\n<h3>💡 下周操作策略建议</h3>\n<ul>\n  <li><strong>P0 INTC/GOOG 止盈：</strong>RSI6分别为94.1/92.6极度超买。INTC连续暴涨+20%后回调风险极高，建议减仓1/2锁利，止盈线$93（约-7%）。GOOG财报利好充分Price-in，减仓1/3，回踩$360-370再考虑回补。</li>\n  <li><strong>P1 AMD 财报博弈：</strong>周一盘后财报。RSI=81.2偏高，建议财报前不加仓。若Q1超预期+指引积极，$370+追涨可尝试；若不及预期，$340为支撑。</li>\n  <li><strong>P1 CRWV 财报观察：</strong>周三财报。技术面中性（RSI=62.6），Oppenheimer唱多。财报前观望，确认收入加速后再考虑加仓。止损$105。</li>\n  <li><strong>P2 NVDA 逢低布局：</strong>本周-4.72%回调，RSI=40.9回到中性偏弱区间。$190-195是优质加仓区。AI资本开支长期确定性不变，中期目标$230。</li>\n  <li><strong>P2 XPEV 底部观察：</strong>RSI=28.2接近超卖，$15.4为52W低点支撑。若下周放量企稳+KDJ金叉可轻仓试探，止损$14.5。</li>\n  <li><strong>P3 MU 冲高警惕：</strong>创52W新高$545.91后盘后-0.42%，RSI=79.2接近超买。$530+可分批减仓1/4，若站稳$545看$560。</li>\n</ul>\n\n<h3>🪙 本周 Web3 摘要</h3>\n<ul>\n  <li><strong>BTC 周表现：</strong>周初$77,586 → 周中低点$75,604(-2.14%) → 周末$78,128(+0.85%)。本周振幅约3.3%，整体小幅收涨+0.7%。</li>\n  <li><strong>ETH 周表现：</strong>周初$2,332 → 周中低点$2,243(-3.67%) → 周末$2,301(+0.63%)。本周小幅收跌-1.3%，机构大额抛售约1万枚ETH。</li>\n  <li><strong>恐贪指数变化：</strong>43(周一) → 39(周三/周四恐慌低点) → 45(周末)。整体从恐慌区略有回升。</li>\n  <li><strong>核心主线：</strong>①美联储鹰派维持利率压制风险偏好 ②DeFi安全危机（KelpDAO 3亿漏洞 + 4月黑客损失>6亿）③稳定币支付加速落地（Meta/Visa/Circle推进USDC）④RWA代币化机构入场加速。</li>\n  <li><strong>KOL舆情：</strong>综合情绪4.6-5.6/10偏谨慎。中文圈悲观（波动率枯竭/赚钱难），英文圈中性偏多（机构配置+结构性牛市）。</li>\n</ul>\n\n<h3>💡 一句话结论</h3>\n<p>本周自选股11只中9涨2跌，半导体板块全面爆发（INTC +20.69%领涨，MU/AMD创52W新高），GOOG财报驱动科技股狂飙；NVDA/XPEV是唯二下跌标的。下周重点关注AMD/MSTR/CRWV三只财报，INTC/GOOG极度超买需果断止盈。Web3方面BTC小幅收涨但恐贪指数仍在恐慌区，稳定币/RWA成为确定性赛道。</p>\n\n</div>",
+  "web3_body_html": "<div class=\"web3-report\">\n<h3>🪙 本周 Web3 市场周报 | 04-28 ~ 05-02</h3>\n<ul>\n<li><strong>BTC：</strong>$77,586 → $78,128（周涨+0.7%），中间低点$75,604（-2.14%）</li>\n<li><strong>ETH：</strong>$2,332 → $2,301（周跌-1.3%），中间低点$2,243（-3.67%）</li>\n<li><strong>恐贪指数：</strong>43 → 39 → 45（从恐慌区小幅回升）</li>\n</ul>\n<h4>本周三大主线</h4>\n<ul>\n<li><strong>美联储鹰派：</strong>连续第三次维持利率不变，投票分歧扩大，降息预期后移，BTC/ETH承压回调</li>\n<li><strong>DeFi安全危机：</strong>KelpDAO近3亿美元漏洞，4月DeFi黑客损失超6.3亿。Aave牵头DeFi United 3亿美元救助</li>\n<li><strong>稳定币加速落地：</strong>Meta/Stripe推USDC创作者支付，Visa稳定币结算年化70亿，Circle合规推进</li>\n</ul>\n<h4>机会与风险</h4>\n<ul>\n<li><strong>机会：</strong>稳定币支付扩张（★★★★）/ RWA代币化（★★★★）/ ETH生态修复反弹（★★★）</li>\n<li><strong>风险：</strong>宏观流动性（★★★★★）/ DeFi安全（★★★★）/ 监管不确定性（★★★）</li>\n</ul>\n</div>",
+  "tickers": [
+    "MU",
+    "AMD",
+    "INTC",
+    "GOOG",
+    "NVDA",
+    "NBIS",
+    "CRWV",
+    "CRCL",
+    "MSTR",
+    "TSLA",
+    "XPEV"
+  ],
+  "session": "weekly_report",
+  "is_weekly": true,
+  "week_range": "04-28 ~ 05-02",
+  "abnormal_signals": [
+    "INTC 周累计+20.69% + RSI超买(94.1) + 创52W新高",
+    "GOOG 周累计+11.95% + RSI超买(92.6) + 创52W新高 + 财报超预期",
+    "MU 周累计+9.16% + 创52W新高 + 日涨>4%",
+    "NBIS 周五暴涨+11.76%",
+    "CRWV 周累计+8.05% + 日涨>4%",
+    "CRCL 周四跌-4.90%后周五涨+9.71%",
+    "MSTR 周三跌-4.54%后周五涨+7.08%",
+    "NVDA 周累计-4.72% + 周四日跌-4.63%",
+    "XPEV 周累计-4.98%"
+  ]
+}

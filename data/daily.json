@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-05-01T19:05:10",
+  "updated_at": "2026-05-02T20:05:59",
   "dailies": [
+    {
+      "slug": "weekly_20260502",
+      "date": "2026-05-02",
+      "generated_at": "2026-05-02 20:00:00",
+      "title": "自选股周报 04-28 ~ 05-02",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/weekly_20260502.png",
+      "has_stock": true,
+      "has_web3": true,
+      "is_weekly": true
+    },
     {
       "slug": "daily_20260501_1902",
       "date": "2026-05-01",
