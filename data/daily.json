@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-05T19:04:15",
+  "updated_at": "2026-05-06T09:04:44",
   "dailies": [
+    {
+      "slug": "daily_20260506_0904",
+      "date": "2026-05-06",
+      "generated_at": "2026-05-06 09:04",
+      "title": "投研日报 2026-05-06 09:04",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "daily_20260506_0904.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260505_1903",
       "date": "2026-05-05",
