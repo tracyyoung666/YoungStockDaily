@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-05-08 00:36:00",
+  "updated_at": "2026-05-08 00:57:00",
   "reports": [
+    {
+      "symbol": "MSTR",
+      "name": "Strategy 微策略",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-05",
+      "verdict": "beat",
+      "verdict_label": "营收大超预期 BTC持仓81.8万枚",
+      "eps_actual": 38.25,
+      "eps_estimate": -0.17,
+      "revenue_actual": 0.1243,
+      "revenue_estimate": 0.0494,
+      "revenue_unit": "B",
+      "url": "earnings/MSTR-2026Q1.html",
+      "generated_at": "2026-05-08 00:57:00"
+    },
     {
       "symbol": "AMD",
       "name": "AMD 超威半导体",

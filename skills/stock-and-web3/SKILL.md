@@ -310,28 +310,46 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 
 ## 财报分析流程（步骤 2.7，在标准六步流程的步骤 2.6 之后执行）
 
-### 触发条件（满足任意一项即触发）
+### 触发条件（必须同时满足"初筛 + 确认"两阶段）
 
-在每日投研推送流程中（步骤 2 获取行情后），检查以下条件：
+在每日投研推送流程中（步骤 2 获取行情后），按以下两阶段检查：
 
-1. **事件日历匹配**：`fetch_quotes.py` 返回的 `upcoming_events` 中，某只股票有 `type: "earnings"` 且 `date` 为**昨天或今天**（美东日期）
+#### 阶段一：初筛（满足任意一项即进入确认阶段）
+
+1. **事件日历匹配**：`westock-data reserve` 返回某只股票的 `disclosureDate` 为**昨天或今天**（美东日期）
 2. **新闻关键词检测**：该股票新闻标题中包含以下关键词之一：`财报`、`earnings`、`Q1`/`Q2`/`Q3`/`Q4`、`季度业绩`、`beat`、`miss`、`超预期`、`不及预期`、`每股收益`、`EPS`
 3. **盘后/盘前异常波动**：`extended_pct_vs_close` 绝对值 > 10%（大幅财报反应的特征）
+
+#### 阶段二：确认财报已实际发布（🚨关键！防止误判）
+
+初筛命中后，**必须验证财报确实已发布**，而非仅到了预定披露日：
+
+1. **时间窗口判断**：
+   - 美股财报通常在**盘后（16:00 ET后）**发布 → 对应北京时间次日早间（04:00+）
+   - 因此：`disclosureDate` 为今天的股票，**早9点场景（盘后模式）才可能已发布**；晚19点场景（盘前模式）此时还未到美股盘后，**不应触发**
+   - 规则：`disclosureDate = 今天` 时 → 仅在**早9点推送**中触发（此时已过美东盘后）
+   - 规则：`disclosureDate = 昨天` 时 → 早9点和晚19点都可触发
+
+2. **新闻验证**：必须通过 `westock-data news` 能搜索到**包含具体财务数据**的新闻（如"营收XX亿"、"EPS $X.XX"、"同比增长XX%"），而不仅仅是"即将发布"或"预告"类新闻
+
+3. **如果无法确认已发布**：标记为"待确认"，跳过本次，等下一次定时任务再检查
 
 ### 排除条件
 
 - 如果 `data/earnings.json` 中已存在该 `SYMBOL-YYYYQN` 条目，跳过（避免重复生成）
+- 如果只有"即将发布财报"类预告新闻，没有实际业绩数据，跳过
 
 ### 生成步骤
 
-满足触发条件后，执行以下步骤：
+确认财报已发布后，执行以下步骤：
 
-1. **确认财报期间**：根据当前日期推断 fiscal quarter（如 5月发布通常是 Q1 报告）
+1. **确认财报期间**：根据 `westock-data reserve` 的 `reportEndDate` 字段（如 `FY2026Q1`）确定期间
 2. **收集财报数据**：
-   - 通过 `westock-data finance` 获取最新季度财务数据
-   - 通过 `westock-data news` + `web_search` 获取财报具体数据（EPS/营收/分部表现/指引等）
+   - 通过 `westock-data news` 获取最新财报相关新闻（含具体数据）
+   - 通过 `web_search` 搜索 "{SYMBOL} Q{N} {YEAR} earnings results" 获取详细数据（EPS/营收/分部表现/指引等）
+   - 通过 `westock-data finance` 获取历史季度数据做同比对比
    - 通过 `westock-data rating` + `westock-data consensus` 获取市场预期作为对比基准
-3. **生成 `earnings/SYMBOL-YYYYQN.html`**：参照已有模板（如 `earnings/GOOG-2026Q1.html`），必须包含：
+3. **生成 `earnings/SYMBOL-YYYYQN.html`**：参照已有模板（如 `earnings/AMD-2026Q1.html`），必须包含：
    - KPI 速览（营收/EPS/净利润/核心业务指标）
    - 业务分部表（各业务线营收+YoY+亮点）
    - 核心亮点分析（3-5 条）
