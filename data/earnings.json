@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-04-30 15:25:42",
+  "updated_at": "2026-05-08 00:36:00",
   "reports": [
+    {
+      "symbol": "AMD",
+      "name": "AMD 超威半导体",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-05",
+      "verdict": "beat",
+      "verdict_label": "超预期 营收+3.6% EPS+7%",
+      "eps_actual": 1.37,
+      "eps_estimate": 1.28,
+      "revenue_actual": 10.25,
+      "revenue_estimate": 9.89,
+      "revenue_unit": "B",
+      "url": "earnings/AMD-2026Q1.html",
+      "generated_at": "2026-05-08 00:36:00"
+    },
     {
       "symbol": "GOOG",
       "name": "谷歌 Alphabet C",
