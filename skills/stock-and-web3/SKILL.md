@@ -308,9 +308,45 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 5. 💡 下周操作策略建议
 6. 🪙 本周 Web3 摘要
 
-## 财报分析流程
+## 财报分析流程（步骤 2.7，在标准六步流程的步骤 2.6 之后执行）
 
-检测到某只股票有新财报发布时，自动生成独立分析页 `earnings/SYMBOL-YYYYQN.html`，更新 `data/earnings.json` 索引。
+### 触发条件（满足任意一项即触发）
+
+在每日投研推送流程中（步骤 2 获取行情后），检查以下条件：
+
+1. **事件日历匹配**：`fetch_quotes.py` 返回的 `upcoming_events` 中，某只股票有 `type: "earnings"` 且 `date` 为**昨天或今天**（美东日期）
+2. **新闻关键词检测**：该股票新闻标题中包含以下关键词之一：`财报`、`earnings`、`Q1`/`Q2`/`Q3`/`Q4`、`季度业绩`、`beat`、`miss`、`超预期`、`不及预期`、`每股收益`、`EPS`
+3. **盘后/盘前异常波动**：`extended_pct_vs_close` 绝对值 > 10%（大幅财报反应的特征）
+
+### 排除条件
+
+- 如果 `data/earnings.json` 中已存在该 `SYMBOL-YYYYQN` 条目，跳过（避免重复生成）
+
+### 生成步骤
+
+满足触发条件后，执行以下步骤：
+
+1. **确认财报期间**：根据当前日期推断 fiscal quarter（如 5月发布通常是 Q1 报告）
+2. **收集财报数据**：
+   - 通过 `westock-data finance` 获取最新季度财务数据
+   - 通过 `westock-data news` + `web_search` 获取财报具体数据（EPS/营收/分部表现/指引等）
+   - 通过 `westock-data rating` + `westock-data consensus` 获取市场预期作为对比基准
+3. **生成 `earnings/SYMBOL-YYYYQN.html`**：参照已有模板（如 `earnings/GOOG-2026Q1.html`），必须包含：
+   - KPI 速览（营收/EPS/净利润/核心业务指标）
+   - 业务分部表（各业务线营收+YoY+亮点）
+   - 核心亮点分析（3-5 条）
+   - 风险与关注点（3-4 条）
+   - 投资建议（短期/中期/风险控制/关键价位）
+   - 与市场预期对比表
+4. **更新 `data/earnings.json`**：追加新条目（symbol/name/period/period_label/fiscal_end/report_date/verdict/verdict_label/eps_actual/eps_estimate/revenue_actual/revenue_estimate/revenue_unit/url/generated_at）
+5. **git add + commit**（随日报一起推送即可）
+
+### 推送补充
+
+如果生成了新的财报分析，在第二条 notify（投研简报）的异常信号中额外加一行：
+```
+📊 新增财报分析：AMD 2026Q1 超预期 → https://youngstockdaily.pages.dev/earnings/AMD-2026Q1.html
+```
 
 ## 定时任务调度规则
 
