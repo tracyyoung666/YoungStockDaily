@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08 00:57:00",
+  "updated_at": "2026-05-08 09:04:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -51,6 +51,23 @@
       "revenue_unit": "B",
       "url": "earnings/GOOG-2026Q1.html",
       "generated_at": "2026-04-30 15:22:00"
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-07",
+      "verdict": "mixed",
+      "verdict_label": "营收超预期+6% 亏损扩大EPS Miss",
+      "eps_actual": -1.4,
+      "eps_estimate": -1.2,
+      "revenue_actual": 2.078,
+      "revenue_estimate": 1.965,
+      "revenue_unit": "B",
+      "url": "earnings/CRWV-2026Q1.html",
+      "generated_at": "2026-05-08 09:04:00"
     }
   ]
 }

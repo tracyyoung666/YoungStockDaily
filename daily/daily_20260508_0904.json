@@ -1,0 +1,133 @@
+{
+  "slug": "daily_20260508_0904",
+  "date": "2026-05-08",
+  "generated_at": "2026-05-08 09:04",
+  "title": "CRWV财报引发AI基建板块踩踏 半导体消化超买",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/daily_20260508_0904.png",
+  "stock_body_html": "<div class=\"stock-report\">\n\n<h3>📊 异常信号总览表</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>代码</th><th>名称</th><th>收盘价</th><th>今日涨跌</th>\n  <th>盘后价</th><th>盘后%</th><th>距52W高</th><th>信号</th>\n</tr></thead>\n<tbody>\n<tr>\n  <td><strong>MU</strong></td><td>美光科技</td><td>$646.47</td>\n  <td style=\"color:#16a34a\">-3.02%</td>\n  <td>$643.45</td><td style=\"color:#16a34a\">-0.47%</td>\n  <td>-5.36%</td><td>⚠️ RSI超买</td>\n</tr>\n<tr>\n  <td><strong>AMD</strong></td><td>超威半导体</td><td>$408.46</td>\n  <td style=\"color:#16a34a\">-3.07%</td>\n  <td>$407.92</td><td style=\"color:#16a34a\">-0.13%</td>\n  <td>-5.14%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>INTC</strong></td><td>英特尔</td><td>$109.62</td>\n  <td style=\"color:#16a34a\">-3.00%</td>\n  <td>$108.21</td><td style=\"color:#16a34a\">-1.29%</td>\n  <td>-4.27%</td><td>⚠️ RSI超买</td>\n</tr>\n<tr>\n  <td><strong>GOOG</strong></td><td>谷歌</td><td>$395.30</td>\n  <td style=\"color:#dc2626\">+0.04%</td>\n  <td>$394.35</td><td style=\"color:#16a34a\">-0.24%</td>\n  <td>-0.52%</td><td>⚠️ RSI超买</td>\n</tr>\n<tr>\n  <td><strong>NVDA</strong></td><td>英伟达</td><td>$211.50</td>\n  <td style=\"color:#dc2626\">+1.76%</td>\n  <td>$211.43</td><td style=\"color:#16a34a\">-0.03%</td>\n  <td>-2.46%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>NBIS</strong></td><td>Nebius</td><td>$184.77</td>\n  <td style=\"color:#16a34a\">-5.29%</td>\n  <td>$179.70</td><td style=\"color:#16a34a\">-2.74%</td>\n  <td>-6.63%</td><td>🔴 日跌>4%</td>\n</tr>\n<tr>\n  <td><strong>CRWV</strong></td><td>CoreWeave</td><td>$128.84</td>\n  <td style=\"color:#16a34a\">-6.62%</td>\n  <td>$116.90</td><td style=\"color:#16a34a\">-9.27%</td>\n  <td>-31.10%</td><td>🔴 日跌>4% + 盘后跌>4%</td>\n</tr>\n<tr>\n  <td><strong>CRCL</strong></td><td>Circle</td><td>$113.25</td>\n  <td style=\"color:#16a34a\">-7.02%</td>\n  <td>$112.45</td><td style=\"color:#16a34a\">-0.71%</td>\n  <td>-62.12%</td><td>🔴 日跌>4%</td>\n</tr>\n<tr>\n  <td><strong>MSTR</strong></td><td>微策略</td><td>$179.84</td>\n  <td style=\"color:#16a34a\">-3.74%</td>\n  <td>$178.55</td><td style=\"color:#16a34a\">-0.72%</td>\n  <td>-60.67%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>TSLA</strong></td><td>特斯拉</td><td>$411.81</td>\n  <td style=\"color:#dc2626\">+3.28%</td>\n  <td>$409.08</td><td style=\"color:#16a34a\">-0.66%</td>\n  <td>-17.44%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>XPEV</strong></td><td>小鹏汽车</td><td>$15.55</td>\n  <td style=\"color:#16a34a\">-2.39%</td>\n  <td>$15.60</td><td style=\"color:#dc2626\">+0.32%</td>\n  <td>-44.94%</td><td>正常</td>\n</tr>\n</tbody>\n</table>\n\n<h3>⚡ 异常信号详解</h3>\n<ul>\n  <li><strong>CRWV（CoreWeave）：</strong>日跌-6.62% + 盘后再跌-9.27%，累计跌幅超15%。Q1财报发布后市场反应激烈——营收超预期但EPS大幅miss，亏损扩大135%。盘后成交额超$10亿，抛压沉重。距52W高点-31%。</li>\n  <li><strong>CRCL（Circle）：</strong>日跌-7.02%，距52W高点-62%。整体Crypto板块承压，且公司05月11日即将发布财报，市场提前避险。董事减持3.5万股加剧卖压。</li>\n  <li><strong>NBIS（Nebius）：</strong>日跌-5.29%，盘后继续下探至$179.7（-2.74%）。AI基建板块集体回调，与CRWV联动下行。</li>\n  <li><strong>MU/INTC/GOOG RSI超买：</strong>MU RSI6=92.0、INTC RSI6=87.3、GOOG RSI6=89.9，三只近期累计涨幅过大，短线存在技术性回调压力。今日MU/INTC/GOOG均小幅下跌验证了超买信号。</li>\n</ul>\n\n<h3>💡 建议动作</h3>\n<ul>\n  <li><strong>P0 CRWV：</strong>财报后暴跌，盘后$116.9。短期情绪极差，不建议接刀。关注$100-110支撑带，若此区间企稳可考虑中期左侧布局（积压订单$994亿支撑长期逻辑）。</li>\n  <li><strong>P1 MU/INTC/GOOG：</strong>RSI超买+今日回调，若持仓较重可考虑减仓5-10%锁定利润。GOOG接近52W高仅-0.52%，属强势回踩，回调幅度有限可耐心持有。</li>\n</ul>\n\n<h3>📝 逐股详解</h3>\n\n<h4>1️⃣ MU · 美光科技 — 评分 7.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$646.47（-3.02%），盘后$643.45（-0.47%）。当日振幅$635-683，盘中一度触及52W新高$683后回落。</li>\n  <li><strong>技术：</strong>RSI6=92.0 严重超买，KDJ_K=86.8。短线面临均值回归压力，但中期趋势仍向上。</li>\n  <li><strong>新闻：</strong>①PE仅10倍vs EPS增长327%：大涨后仍具吸引力；②机构看好估值偏低+高增长。</li>\n  <li><strong>评级：</strong>暂无最新评级更新。</li>\n  <li><strong>事件：</strong>无近期重大事件。</li>\n  <li><strong>建议：</strong>短线超买回调正常，HBM+AI逻辑不变。持仓可减5%锁利，等RSI回落至60-70再加仓。</li>\n</ul>\n\n<h4>2️⃣ AMD · 超威半导体 — 评分 7.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$408.46（-3.07%），盘后$407.92（-0.13%）。财报超预期后的获利回吐延续。</li>\n  <li><strong>技术：</strong>RSI6=82.5 偏高但未达超买线85，KDJ_K=86.6。5日均线附近有支撑。</li>\n  <li><strong>新闻：</strong>①MI350P PCIe AIC形态发布，规模砍半但覆盖更多客户场景；②AMD大涨6800亿后中国产业链受益分析。</li>\n  <li><strong>评级：</strong>暂无更新（前期多家机构目标价$450+）。</li>\n  <li><strong>事件：</strong>Q1 2026财报已于5/5发布（超预期，已有分析页）。</li>\n  <li><strong>建议：</strong>Q2指引$112亿远超预期，MI450 Q4放量为下半年催化剂。回调至$380-400为良好加仓区间。持仓继续持有。</li>\n</ul>\n\n<h4>3️⃣ INTC · 英特尔 — 评分 6.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$109.62（-3.00%），盘后$108.21（-1.29%）。盘中触及52W新高$114.51后回落。</li>\n  <li><strong>技术：</strong>RSI6=87.3 超买，KDJ_K=90.1。短线涨幅过大需要消化。</li>\n  <li><strong>新闻：</strong>①软银联手英特尔破局内存墙，ZAM垂直架构；②AI Agent改写CPU定价权之争（Arm/AMD/Intel）。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>无近期事件。从$19涨至$110+，累计涨幅惊人。</li>\n  <li><strong>建议：</strong>超买信号明确+PE为负（仍亏损），短线风险偏高。建议减仓10-15%，等回调至$95-100再评估。基本面转型仍需验证。</li>\n</ul>\n\n<h4>4️⃣ GOOG · 谷歌 Alphabet — 评分 8.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$395.30（+0.04%），盘后$394.35（-0.24%）。全天窄幅震荡，接近52W高点$397.36。</li>\n  <li><strong>技术：</strong>RSI6=89.9 超买，KDJ_K=93.4。但强势股RSI可在85以上持续较长时间。</li>\n  <li><strong>新闻：</strong>①英矽智能与Google Cloud合作；②Fitbit Air AI健康手环发布。</li>\n  <li><strong>评级：</strong>暂无更新（Q1财报大超后机构普遍上调目标价至$400-450）。</li>\n  <li><strong>事件：</strong>Q1 2026财报已发布（大超预期+94%，已有分析页）。</li>\n  <li><strong>建议：</strong>基本面最强标的之一，Q1 EPS $5.11远超预期$2.63。RSI超买可能通过横盘消化而非下跌。持仓继续持有，不建议追高。</li>\n</ul>\n\n<h4>5️⃣ NVDA · 英伟达 — 评分 7.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$211.50（+1.76%），盘后$211.43（-0.03%）。逆市上涨，成交额$351亿领跑全市场。</li>\n  <li><strong>技术：</strong>RSI6=66.5 中性偏强，KDJ_K=41.5 偏低。技术面健康，有上行空间。</li>\n  <li><strong>新闻：</strong>①英伟达再投21亿美元扩张；②国产芯片是否能翻过英伟达围墙讨论。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>无近期重大事件。5/28 Q1财报待发布（关注）。</li>\n  <li><strong>建议：</strong>AI王者地位稳固，技术面健康。距52W高仅-2.46%，突破$216.83将开启新高空间。持仓继续持有。</li>\n</ul>\n\n<h4>6️⃣ NBIS · Nebius Group — 评分 6.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$184.77（-5.29%），盘后$179.70（-2.74%）。AI基建板块集体回调的牺牲品。</li>\n  <li><strong>技术：</strong>RSI6=80.3 偏高，KDJ_K=71.6。前期涨幅过大需消化。</li>\n  <li><strong>新闻：</strong>无重大新闻，受AI基建板块情绪拖累（CRWV财报引发联动下行）。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>无近期事件。</li>\n  <li><strong>建议：</strong>与CRWV高度相关的GPU租赁赛道，CRWV财报负面可能短期拖累NBIS情绪。关注$170支撑，若跌至$160-170可考虑逢低布局。</li>\n</ul>\n\n<h4>7️⃣ CRWV · CoreWeave — 评分 5.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$128.84（-6.62%），盘后$116.90（-9.27%）。Q1财报触发暴跌，盘后成交$10亿+。</li>\n  <li><strong>技术：</strong>RSI6=73.3 回落中，KDJ_K=76.3。但盘后大跌后技术指标失效，需看明日开盘确认。</li>\n  <li><strong>新闻：</strong>①Q1营收$20.78亿超预期，净亏损$5.89亿逊预期；②亏损扩大+Q2指引逊于预期，绩后大跌10%。</li>\n  <li><strong>评级：</strong>花旗下调2026 EPS预测至-$2.97。</li>\n  <li><strong>事件：</strong>📊 Q1 2026财报刚发布（新增财报分析页）。</li>\n  <li><strong>建议：</strong>短期避险。$100-110为关键支撑带（P/S约5x），中期逻辑（$994亿积压订单）仍在，但亏损扩大+$300亿CapEx让市场担忧现金流。观望为主。</li>\n</ul>\n\n<h4>8️⃣ CRCL · Circle — 评分 5.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$113.25（-7.02%），盘后$112.45（-0.71%）。Crypto板块全线下跌中跌幅最大。</li>\n  <li><strong>技术：</strong>RSI6=64.3 中性，KDJ_K=66.5。距52W高点-62%，长期处于下行通道。</li>\n  <li><strong>新闻：</strong>①5月11日盘前发布财报（预告）；②董事售出3.5万股（约$324万），减持信号。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>5/11 财报发布在即。</li>\n  <li><strong>建议：</strong>财报前+董事减持双重利空压制。建议等5/11财报落地后再决策。距52W高-62%说明基本面持续承压，USDC稳定币业务虽稳但估值修复困难。</li>\n</ul>\n\n<h4>9️⃣ MSTR · 微策略 — 评分 6.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$179.84（-3.74%），盘后$178.55（-0.72%）。跟随BTC和Crypto板块回调。</li>\n  <li><strong>技术：</strong>RSI6=61.7 中性，KDJ_K=73.7。技术面中性偏强。</li>\n  <li><strong>新闻：</strong>①盘中异动大跌5%报$177；②机构评级最高看至$570（当前距目标价有极大空间）。</li>\n  <li><strong>评级：</strong>最高目标价$570。</li>\n  <li><strong>事件：</strong>Q1 2026财报已发布（BTC持仓81.8万枚，营收大超预期）。</li>\n  <li><strong>建议：</strong>BTC代理标的，走势高度依赖BTC价格。当前BTC $81,439横盘，MSTR估值溢价收窄。持仓继续持有，距52W高-61%反映了BTC阶段性见顶的市场定价。</li>\n</ul>\n\n<h4>🔟 TSLA · 特斯拉 — 评分 7.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$411.81（+3.28%），盘后$409.08（-0.66%）。逆市大涨，成交额$259亿。</li>\n  <li><strong>技术：</strong>RSI6=78.8 偏高但未超买，KDJ_K=73.0。上行趋势中。</li>\n  <li><strong>新闻：</strong>①Model Y通过美国新辅助驾驶基准（全球首款）；②特斯拉\"灵魂拷问\"国产电动车。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>无近期重大事件。Robotaxi进展持续催化。</li>\n  <li><strong>建议：</strong>Model Y辅助驾驶基准通过是正面催化。PE 378x极贵，纯看增长预期。短期看$415-420阻力，突破则看$450。持仓继续持有。</li>\n</ul>\n\n<h4>1️⃣1️⃣ XPEV · 小鹏汽车 — 评分 5.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$15.55（-2.39%），盘后$15.60（+0.32%）。接近52W低点$15.38，下行空间有限但缺乏催化。</li>\n  <li><strong>技术：</strong>RSI6=30.3 接近超卖，KDJ_K=14.1 严重超卖。技术面提示短线反弹概率增加。</li>\n  <li><strong>新闻：</strong>①多家车企发布一季报；②王凤英入职3年获股权。</li>\n  <li><strong>评级：</strong>暂无更新。</li>\n  <li><strong>事件：</strong>无近期重大事件。</li>\n  <li><strong>建议：</strong>KDJ严重超卖+接近52W低，技术性反弹概率较高。但基本面仍亏损、竞争激烈。可少量博反弹，止损$14.5。</li>\n</ul>\n\n<h3>🏷️ 板块关联分析</h3>\n<ul>\n  <li><strong>半导体：</strong>均跌-1.83%（MU -3.02%, AMD -3.07%, INTC -3.00%, NVDA +1.76%）—— NVDA独强，其余回调消化超买。</li>\n  <li><strong>AI基建：</strong>均跌-5.96%（NBIS -5.29%, CRWV -6.62%）—— CRWV财报引发板块踩踏。</li>\n  <li><strong>Crypto：</strong>均跌-5.38%（CRCL -7.02%, MSTR -3.74%）—— BTC横盘+CRCL财报前避险。</li>\n  <li><strong>科技巨头：</strong>微涨+0.04%（GOOG +0.04%）—— 最稳健板块，Q1超预期后资金流入避险。</li>\n  <li><strong>新能源车：</strong>涨跌分化+0.44%（TSLA +3.28%, XPEV -2.39%）—— TSLA辅助驾驶利好独涨。</li>\n</ul>\n\n<h3>💡 一句话结论</h3>\n<p>CRWV财报引爆AI基建+Crypto板块集体回调，半导体消化RSI超买压力；TSLA和NVDA逆市走强说明资金向龙头聚集。XPEV超卖博反弹，CRWV/CRCL短期避险。</p>\n\n</div>",
+  "web3_body_html": "<div class=\"web3-report\">\n# 📅 Web3 日报 | 2026-05-07<br>\n<br>\n---<br>\n<br>\n## 📊 市场概览<br>\n<br>\n**大盘行情**:<br>\n- **BTC**: $81,439 (+0.64%)<br>\n- **ETH**: $2,351 (-0.42%)<br>\n<br>\n**市场情绪**:<br>\n- **恐惧&贪婪指数**: 50 / 100 (中性)<br>\n<br>\n💡 **市场解读**: 市场情绪中性 (指数 50)，BTC 横盘整理 (+0.6%)，多空博弈均衡，等待外部催化剂打破僵局。<br>\n<br>\n---<br>\n<br>\n## 📰 宏观市场分析<br>\n<br>\n> 数据来源：12条新闻，时间窗口：过去24小时<br>\n<br>\n### 🔥 主线1：BTC宏观情绪回暖<br>\n**影响等级**: High | **涉及领域**: 比特币 / 宏观地缘<br>\n<br>\n**核心事件**:<br>\n美伊冲突缓和预期升温，油价回落，风险资产反弹，比特币一度逼近8.3万美元，创三个月新高，ETF与衍生品情绪同步修复。<br>\n<br>\n**影响分析**:<br>\n- **短期**: BTC维持强势震荡<br>\n- **中期**: 宏观风险仍主导趋势<br>\n<br>\n**相关来源**: Decrypt、The Defiant、Cointelegraph<br>\n<br>\n---<br>\n<br>\n### 🔥 主线2：机构加速入场加密<br>\n**影响等级**: High | **涉及领域**: TradFi / 合规交易<br>\n<br>\n**核心事件**:<br>\n摩根士丹利在E*Trade上线现货加密交易，CME推出比特币波动率期货，标志传统金融加速提供合规加密敞口。<br>\n<br>\n**影响分析**:<br>\n- **短期**: 提振市场信心<br>\n- **中期**: 扩大机构资金池<br>\n<br>\n**相关来源**: Financial Times、Bloomberg、Cointelegraph<br>\n<br>\n---<br>\n<br>\n### 🔥 主线3：链上国债与RWA扩张<br>\n**影响等级**: Medium | **涉及领域**: RWA / 以太坊<br>\n<br>\n**核心事件**:<br>\n以太坊链上美债规模突破80亿美元，JPMorgan、Ripple等测试跨境结算，现实资产上链进入规模化验证阶段。<br>\n<br>\n**影响分析**:<br>\n- **短期**: 推动ETH基本面<br>\n- **中期**: 重塑DeFi收益结构<br>\n<br>\n**相关来源**: Cryptonews、Decrypt<br>\n<br>\n---<br>\n<br>\n## 💰 资金流向追踪<br>\n<br>\n### 主要流入<br>\n| 方向 | 金额 | 解读 |<br>\n|------|------|------|<br>\n| ETF → BTC | 暂无明确数据 | 价格上行支撑 |<br>\n| 机构 → ETH | 暂无明确数据 | RWA叙事强化 |<br>\n| 稳定币 → 永续合约 | 暂无明确数据 | 杠杆情绪回升 |<br>\n<br>\n### 主要流出<br>\n| 方向 | 金额 | 解读 |<br>\n|------|------|------|<br>\n| DeFi → 场外 | 暂无明确数据 | 安全担忧未散 |<br>\n| 风险资产 → 现金 | 暂无明确数据 | 宏观不确定性 |<br>\n| 山寨币 → BTC | 暂无明确数据 | 资金避险轮动 |<br>\n<br>\n---<br>\n<br>\n## 📡 全球 KOL 舆情<br>\n<br>\n> 数据来源：300条推文（中文163条 | 英文137条），73位KOL<br>\n<br>\n### 综合情绪指数: **6.3 / 10（偏乐观）**<br>\n<br>\n| 维度 | 中文圈 | 英文圈 | 差异解读 |<br>\n|------|--------|--------|----------|<br>\n| 市场情绪 | 分歧偏多 6.0/10 | 明显偏多 6.8/10 | 英文圈更确信趋势 |<br>\n| 主要担忧 | 回调、庄控、卖压 | 估值、政策、抛售 | 中文更怕短期波动 |<br>\n| 关注焦点 | 山寨/Meme/短线 | BTC/ETF/机构 | 投资周期差异明显 |<br>\n| 操作风格 | 高波动短线 | 配置+趋势 | 可形成节奏套利 |<br>\n<br>\n### 最大分歧：**MicroStrategy（Saylor）“卖币”对BTC是否构成利空**<br>\n<br>\n**中文圈主流观点**:  <br>\nSaylor卖币将打破信仰，可能触发情绪性下杀，需谨慎防回调（逍遥XTony、子时）<br>\n<br>\n**英文圈主流观点**:  <br>\n卖币属资本结构优化，不改变BTC长期牛市逻辑（Ran Neuner、Scott Melker）<br>\n<br>\n**差异分析**:<br>\n- 信息差：英文圈更理解财务结构  <br>\n- 立场差异：中文短线，英文长期  <br>\n- 操作启示：情绪恐慌时分批吸筹  <br>\n<br>\n### 高度共识<br>\n1. **BTC重回8万上方** - 趋势转强，市场风险偏好回升  <br>\n2. **机构与RWA持续入场** - ETF、代币化资产成主线  <br>\n3. **山寨与细分赛道轮动** - ZEC、DePIN、AI成热点<br>\n<br>\n---<br>\n<br>\n## ⚠️ 风险警示<br>\n<br>\n### 🚨 宏观地缘反复（风险等级：★★★★★）<br>\n中东局势仍存反复可能，若冲突升级将迅速压制风险资产，BTC波动率或放大。<br>\n**应对建议**: 控制杠杆，设置止损<br>\n<br>\n### 🚨 机构抛压风险（风险等级：★★★★☆）<br>\nStrategy首次释放可能卖出BTC信号，若执行或引发情绪踩踏。<br>\n**应对建议**: 关注链上大额转账<br>\n<br>\n### ⚠️ DeFi安全事件（风险等级：★★★☆☆）<br>\n近期多起黑客事件后，资金对DeFi仍保持谨慎。<br>\n**应对建议**: 避免高风险协议<br>\n<br>\n---<br>\n<br>\n## 💡 机会信号<br>\n<br>\n### BTC趋势交易（可信度：★★★★☆）<br>\n地缘缓和窗口期内，BTC维持高位，关注8万-8.5万美元区间突破。<br>\n<br>\n### RWA与ETH配置（可信度：★★★★☆）<br>\n链上国债扩张趋势明确，关注ETH及RWA基础设施代币。<br>\n<br>\n### 波动率衍生品（可信度：★★★☆☆）<br>\nCME比特币波动率期货上线前，相关策略具备前瞻价值。<br>\n<br>\n---<br>\n<br>\n## 💬 一句话总结<br>\n<br>\n**地缘缓和与机构入场共振推动加密市场回暖，但宏观与结构性风险并存，整体处于谨慎偏多阶段。**<br>\n<br>\n---<br>\n<br>\n**数据统计**<br>\n- 推文总数：300条（中文163条 | 英文137条）<br>\n- KOL数量：73位<br>\n- 新闻来源：150条<br>\n- 数据时间：过去24小时<br>\n<br>\n---<br>\n<br>\n**免责声明**: 本日报仅供参考，不构成投资建议。投资有风险，入市需谨慎。\n</div>",
+  "tickers": [
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "close": 646.47,
+      "pct_1d": -3.02,
+      "extended": 643.45,
+      "extended_pct": -0.47,
+      "signals": [
+        "RSI6超买(92.0)"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 408.46,
+      "pct_1d": -3.07,
+      "extended": 407.92,
+      "extended_pct": -0.13,
+      "signals": []
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 109.62,
+      "pct_1d": -3.0,
+      "extended": 108.21,
+      "extended_pct": -1.29,
+      "signals": [
+        "RSI6超买(87.3)"
+      ]
+    },
+    {
+      "symbol": "GOOG",
+      "name": "谷歌",
+      "close": 395.3,
+      "pct_1d": 0.04,
+      "extended": 394.35,
+      "extended_pct": -0.24,
+      "signals": [
+        "RSI6超买(89.9)"
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "英伟达",
+      "close": 211.5,
+      "pct_1d": 1.76,
+      "extended": 211.43,
+      "extended_pct": -0.03,
+      "signals": []
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius",
+      "close": 184.77,
+      "pct_1d": -5.29,
+      "extended": 179.7,
+      "extended_pct": -2.74,
+      "signals": [
+        "日跌>4%"
+      ]
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "close": 128.84,
+      "pct_1d": -6.62,
+      "extended": 116.9,
+      "extended_pct": -9.27,
+      "signals": [
+        "日跌>4%",
+        "盘后跌>4%"
+      ]
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle",
+      "close": 113.25,
+      "pct_1d": -7.02,
+      "extended": 112.45,
+      "extended_pct": -0.71,
+      "signals": [
+        "日跌>4%"
+      ]
+    },
+    {
+      "symbol": "MSTR",
+      "name": "微策略",
+      "close": 179.84,
+      "pct_1d": -3.74,
+      "extended": 178.55,
+      "extended_pct": -0.72,
+      "signals": []
+    },
+    {
+      "symbol": "TSLA",
+      "name": "特斯拉",
+      "close": 411.81,
+      "pct_1d": 3.28,
+      "extended": 409.08,
+      "extended_pct": -0.66,
+      "signals": []
+    },
+    {
+      "symbol": "XPEV",
+      "name": "小鹏汽车",
+      "close": 15.55,
+      "pct_1d": -2.39,
+      "extended": 15.6,
+      "extended_pct": 0.32,
+      "signals": []
+    }
+  ],
+  "earnings_new": [
+    {
+      "symbol": "CRWV",
+      "period": "2026Q1",
+      "verdict": "mixed",
+      "url": "earnings/CRWV-2026Q1.html"
+    }
+  ]
+}
