@@ -11,7 +11,9 @@ DATA_DIR  = ROOT / 'data'
 
 def main():
     entries = []
-    for f in sorted(DAILY_DIR.glob('daily_*.json')):
+    # 扫描日报 daily_*.json 和周报 weekly_*.json
+    all_files = sorted(DAILY_DIR.glob('daily_*.json')) + sorted(DAILY_DIR.glob('weekly_*.json'))
+    for f in all_files:
         try:
             d = json.loads(f.read_text(encoding='utf-8'))
         except Exception as e:

@@ -1,6 +1,128 @@
 {
-  "updated_at": "2026-05-09T20:07:47",
+  "updated_at": "2026-05-09T21:07:06",
   "dailies": [
+    {
+      "slug": "weekly_20260509",
+      "date": "2026-05-09",
+      "generated_at": "2026-05-09 20:05",
+      "title": "📊 自选股周报 | 05-05 ~ 05-09",
+      "summary": "",
+      "tickers": [
+        {
+          "symbol": "MU",
+          "name": "美光科技",
+          "close": 746.81,
+          "pct_1d": 15.49,
+          "weekly_pct": 37.73,
+          "extended": 757.35,
+          "extended_pct": 1.41,
+          "signals": []
+        },
+        {
+          "symbol": "AMD",
+          "name": "超威半导体",
+          "close": 455.19,
+          "pct_1d": 11.44,
+          "weekly_pct": 26.25,
+          "extended": 461.2,
+          "extended_pct": 1.32,
+          "signals": []
+        },
+        {
+          "symbol": "INTC",
+          "name": "英特尔",
+          "close": 124.92,
+          "pct_1d": 13.96,
+          "weekly_pct": 25.4,
+          "extended": 126.0,
+          "extended_pct": 0.86,
+          "signals": []
+        },
+        {
+          "symbol": "NBIS",
+          "name": "Nebius",
+          "close": 177.05,
+          "pct_1d": -4.18,
+          "weekly_pct": 14.6,
+          "extended": 178.48,
+          "extended_pct": 0.81,
+          "signals": []
+        },
+        {
+          "symbol": "CRCL",
+          "name": "Circle",
+          "close": 113.67,
+          "pct_1d": 0.37,
+          "weekly_pct": 14.01,
+          "extended": 115.95,
+          "extended_pct": 2.0,
+          "signals": []
+        },
+        {
+          "symbol": "TSLA",
+          "name": "特斯拉",
+          "close": 428.35,
+          "pct_1d": 4.02,
+          "weekly_pct": 9.6,
+          "extended": 427.98,
+          "extended_pct": -0.09,
+          "signals": []
+        },
+        {
+          "symbol": "NVDA",
+          "name": "英伟达",
+          "close": 215.2,
+          "pct_1d": 1.75,
+          "weekly_pct": 8.44,
+          "extended": 215.05,
+          "extended_pct": -0.07,
+          "signals": []
+        },
+        {
+          "symbol": "MSTR",
+          "name": "微策略",
+          "close": 187.59,
+          "pct_1d": 4.31,
+          "weekly_pct": 5.88,
+          "extended": 188.7,
+          "extended_pct": 0.59,
+          "signals": []
+        },
+        {
+          "symbol": "GOOG",
+          "name": "谷歌",
+          "close": 397.05,
+          "pct_1d": 0.44,
+          "weekly_pct": 3.61,
+          "extended": 395.8,
+          "extended_pct": -0.31,
+          "signals": []
+        },
+        {
+          "symbol": "XPEV",
+          "name": "小鹏汽车",
+          "close": 15.62,
+          "pct_1d": 0.45,
+          "weekly_pct": -1.33,
+          "extended": 15.64,
+          "extended_pct": 0.13,
+          "signals": []
+        },
+        {
+          "symbol": "CRWV",
+          "name": "CoreWeave",
+          "close": 114.15,
+          "pct_1d": -11.4,
+          "weekly_pct": -4.08,
+          "extended": 113.86,
+          "extended_pct": -0.25,
+          "signals": []
+        }
+      ],
+      "image": "images/weekly_20260509.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260508_1905",
       "date": "2026-05-08",
@@ -329,6 +451,29 @@
         "XPEV"
       ],
       "image": "images/daily_20260504_0901.png",
+      "has_stock": true,
+      "has_web3": true
+    },
+    {
+      "slug": "weekly_20260502",
+      "date": "2026-05-02",
+      "generated_at": "2026-05-02 20:00:00",
+      "title": "自选股周报 04-28 ~ 05-02",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/weekly_20260502.png",
       "has_stock": true,
       "has_web3": true
     },
