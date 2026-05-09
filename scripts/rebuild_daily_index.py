@@ -19,13 +19,19 @@ def main():
         except Exception as e:
             print(f'[skip] {f.name}: {e}', file=sys.stderr)
             continue
+        # tickers 兼容：可能是字符串数组或对象数组，统一存为字符串数组
+        raw_tickers = d.get("tickers", [])
+        if raw_tickers and isinstance(raw_tickers[0], dict):
+            tickers = [t.get("symbol", "") for t in raw_tickers if t.get("symbol")]
+        else:
+            tickers = raw_tickers
         entries.append({
             "slug":         d["slug"],
             "date":         d["date"],
             "generated_at": d["generated_at"],
             "title":        d.get("title", ''),
             "summary":      d.get("summary", ''),
-            "tickers":      d.get("tickers", []),
+            "tickers":      tickers,
             "image":        d.get("image"),
             "has_stock":    d.get("has_stock", False),
             "has_web3":     d.get("has_web3", False),

@@ -763,6 +763,13 @@ footer {
 }
 .report-card .badge.stock { background: #eff6ff; color: #1d4ed8; }
 .report-card .badge.web3  { background: #fef3c7; color: #b45309; }
+.report-card .badge.weekly { background: #f0fdf4; color: #15803d; }
+
+/* 周报卡片区分样式 */
+.report-card.weekly-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #f7fee7 100%);
+  border-left: 3px solid #86efac;
+}
 
 /* ================================================================
    自选股 Tab：完整清单原地展示

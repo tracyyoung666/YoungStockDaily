@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-09T21:07:06",
+  "updated_at": "2026-05-09T21:31:12",
   "dailies": [
     {
       "slug": "weekly_20260509",
@@ -8,116 +8,17 @@
       "title": "📊 自选股周报 | 05-05 ~ 05-09",
       "summary": "",
       "tickers": [
-        {
-          "symbol": "MU",
-          "name": "美光科技",
-          "close": 746.81,
-          "pct_1d": 15.49,
-          "weekly_pct": 37.73,
-          "extended": 757.35,
-          "extended_pct": 1.41,
-          "signals": []
-        },
-        {
-          "symbol": "AMD",
-          "name": "超威半导体",
-          "close": 455.19,
-          "pct_1d": 11.44,
-          "weekly_pct": 26.25,
-          "extended": 461.2,
-          "extended_pct": 1.32,
-          "signals": []
-        },
-        {
-          "symbol": "INTC",
-          "name": "英特尔",
-          "close": 124.92,
-          "pct_1d": 13.96,
-          "weekly_pct": 25.4,
-          "extended": 126.0,
-          "extended_pct": 0.86,
-          "signals": []
-        },
-        {
-          "symbol": "NBIS",
-          "name": "Nebius",
-          "close": 177.05,
-          "pct_1d": -4.18,
-          "weekly_pct": 14.6,
-          "extended": 178.48,
-          "extended_pct": 0.81,
-          "signals": []
-        },
-        {
-          "symbol": "CRCL",
-          "name": "Circle",
-          "close": 113.67,
-          "pct_1d": 0.37,
-          "weekly_pct": 14.01,
-          "extended": 115.95,
-          "extended_pct": 2.0,
-          "signals": []
-        },
-        {
-          "symbol": "TSLA",
-          "name": "特斯拉",
-          "close": 428.35,
-          "pct_1d": 4.02,
-          "weekly_pct": 9.6,
-          "extended": 427.98,
-          "extended_pct": -0.09,
-          "signals": []
-        },
-        {
-          "symbol": "NVDA",
-          "name": "英伟达",
-          "close": 215.2,
-          "pct_1d": 1.75,
-          "weekly_pct": 8.44,
-          "extended": 215.05,
-          "extended_pct": -0.07,
-          "signals": []
-        },
-        {
-          "symbol": "MSTR",
-          "name": "微策略",
-          "close": 187.59,
-          "pct_1d": 4.31,
-          "weekly_pct": 5.88,
-          "extended": 188.7,
-          "extended_pct": 0.59,
-          "signals": []
-        },
-        {
-          "symbol": "GOOG",
-          "name": "谷歌",
-          "close": 397.05,
-          "pct_1d": 0.44,
-          "weekly_pct": 3.61,
-          "extended": 395.8,
-          "extended_pct": -0.31,
-          "signals": []
-        },
-        {
-          "symbol": "XPEV",
-          "name": "小鹏汽车",
-          "close": 15.62,
-          "pct_1d": 0.45,
-          "weekly_pct": -1.33,
-          "extended": 15.64,
-          "extended_pct": 0.13,
-          "signals": []
-        },
-        {
-          "symbol": "CRWV",
-          "name": "CoreWeave",
-          "close": 114.15,
-          "pct_1d": -11.4,
-          "weekly_pct": -4.08,
-          "extended": 113.86,
-          "extended_pct": -0.25,
-          "signals": []
-        }
+        "MU",
+        "AMD",
+        "INTC",
+        "NBIS",
+        "CRCL",
+        "TSLA",
+        "NVDA",
+        "MSTR",
+        "GOOG",
+        "XPEV",
+        "CRWV"
       ],
       "image": "images/weekly_20260509.png",
       "has_stock": true,
@@ -153,118 +54,17 @@
       "title": "CRWV财报引发AI基建板块踩踏 半导体消化超买",
       "summary": "",
       "tickers": [
-        {
-          "symbol": "MU",
-          "name": "美光科技",
-          "close": 646.47,
-          "pct_1d": -3.02,
-          "extended": 643.45,
-          "extended_pct": -0.47,
-          "signals": [
-            "RSI6超买(92.0)"
-          ]
-        },
-        {
-          "symbol": "AMD",
-          "name": "超威半导体",
-          "close": 408.46,
-          "pct_1d": -3.07,
-          "extended": 407.92,
-          "extended_pct": -0.13,
-          "signals": []
-        },
-        {
-          "symbol": "INTC",
-          "name": "英特尔",
-          "close": 109.62,
-          "pct_1d": -3.0,
-          "extended": 108.21,
-          "extended_pct": -1.29,
-          "signals": [
-            "RSI6超买(87.3)"
-          ]
-        },
-        {
-          "symbol": "GOOG",
-          "name": "谷歌",
-          "close": 395.3,
-          "pct_1d": 0.04,
-          "extended": 394.35,
-          "extended_pct": -0.24,
-          "signals": [
-            "RSI6超买(89.9)"
-          ]
-        },
-        {
-          "symbol": "NVDA",
-          "name": "英伟达",
-          "close": 211.5,
-          "pct_1d": 1.76,
-          "extended": 211.43,
-          "extended_pct": -0.03,
-          "signals": []
-        },
-        {
-          "symbol": "NBIS",
-          "name": "Nebius",
-          "close": 184.77,
-          "pct_1d": -5.29,
-          "extended": 179.7,
-          "extended_pct": -2.74,
-          "signals": [
-            "日跌>4%"
-          ]
-        },
-        {
-          "symbol": "CRWV",
-          "name": "CoreWeave",
-          "close": 128.84,
-          "pct_1d": -6.62,
-          "extended": 116.9,
-          "extended_pct": -9.27,
-          "signals": [
-            "日跌>4%",
-            "盘后跌>4%"
-          ]
-        },
-        {
-          "symbol": "CRCL",
-          "name": "Circle",
-          "close": 113.25,
-          "pct_1d": -7.02,
-          "extended": 112.45,
-          "extended_pct": -0.71,
-          "signals": [
-            "日跌>4%"
-          ]
-        },
-        {
-          "symbol": "MSTR",
-          "name": "微策略",
-          "close": 179.84,
-          "pct_1d": -3.74,
-          "extended": 178.55,
-          "extended_pct": -0.72,
-          "signals": []
-        },
-        {
-          "symbol": "TSLA",
-          "name": "特斯拉",
-          "close": 411.81,
-          "pct_1d": 3.28,
-          "extended": 409.08,
-          "extended_pct": -0.66,
-          "signals": []
-        },
-        {
-          "symbol": "XPEV",
-          "name": "小鹏汽车",
-          "close": 15.55,
-          "pct_1d": -2.39,
-          "extended": 15.6,
-          "extended_pct": 0.32,
-          "signals": []
-        }
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
       ],
       "image": "images/daily_20260508_0904.png",
       "has_stock": true,

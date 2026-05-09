@@ -211,17 +211,21 @@
         return;
       }
       listEl.innerHTML = filtered.map(function (r) {
+        const isWeekly = (r.slug || '').indexOf('weekly_') === 0;
         const badges =
           (r.has_stock ? '<span class="badge stock">📈 股票</span>' : '') +
           (r.has_web3  ? '<span class="badge web3">🪙 Web3</span>'  : '');
         const tickers = (r.tickers || []).length
-          ? '<div class="tickers">' + r.tickers.map(function (t) { return '<span>' + escapeHtml(t) + '</span>'; }).join('') + '</div>'
+          ? '<div class="tickers">' + r.tickers.map(function (t) {
+              var label = (typeof t === 'string') ? t : (t.symbol || '');
+              return '<span>' + escapeHtml(label) + '</span>';
+            }).join('') + '</div>'
           : '';
         const img = r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="" loading="lazy">' : '';
-        return '<a class="report-card" data-date="' + escapeHtml(r.date) + '" href="#daily/' + encodeURIComponent(r.slug) + '">' +
+        return '<a class="report-card' + (isWeekly ? ' weekly-card' : '') + '" data-date="' + escapeHtml(r.date) + '" href="#daily/' + encodeURIComponent(r.slug) + '">' +
                  img +
                  '<div class="date">' + escapeHtml(r.date) + ' <small>🕒 ' + escapeHtml(r.generated_at || '') + '</small></div>' +
-                 '<div class="badges">' + badges + '</div>' +
+                 '<div class="badges">' + badges + (isWeekly ? '<span class="badge weekly">📊 周报</span>' : '') + '</div>' +
                  '<div class="title">' + escapeHtml(r.title) + '</div>' +
                  '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
                  tickers +
