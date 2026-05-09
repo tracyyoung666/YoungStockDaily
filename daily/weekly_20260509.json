@@ -1,0 +1,123 @@
+{
+  "slug": "weekly_20260509",
+  "date": "2026-05-09",
+  "generated_at": "2026-05-09 20:05",
+  "title": "📊 自选股周报 | 05-05 ~ 05-09",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/weekly_20260509.png",
+  "stock_body_html": "<div class=\"stock-report\">\n\n<h3>📊 本周涨跌排名（05-05 ~ 05-08，4个交易日）</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>代码</th><th>名称</th><th>上周五收盘</th><th>本周收盘</th>\n  <th>周涨跌%</th><th>盘后价</th><th>盘后%</th>\n</tr></thead>\n<tbody>\n<tr>\n  <td><strong>MU</strong></td><td>美光科技</td>\n  <td>$542.21</td><td>$746.81</td>\n  <td style=\"color:#dc2626\">+37.73%</td>\n  <td>$757.35</td><td style=\"color:#dc2626\">+1.41%</td>\n</tr>\n<tr>\n  <td><strong>AMD</strong></td><td>超威半导体</td>\n  <td>$360.54</td><td>$455.19</td>\n  <td style=\"color:#dc2626\">+26.25%</td>\n  <td>$461.20</td><td style=\"color:#dc2626\">+1.32%</td>\n</tr>\n<tr>\n  <td><strong>INTC</strong></td><td>英特尔</td>\n  <td>$99.62</td><td>$124.92</td>\n  <td style=\"color:#dc2626\">+25.40%</td>\n  <td>$126.00</td><td style=\"color:#dc2626\">+0.86%</td>\n</tr>\n<tr>\n  <td><strong>NBIS</strong></td><td>Nebius</td>\n  <td>$154.49</td><td>$177.05</td>\n  <td style=\"color:#dc2626\">+14.60%</td>\n  <td>$178.48</td><td style=\"color:#dc2626\">+0.81%</td>\n</tr>\n<tr>\n  <td><strong>CRCL</strong></td><td>Circle</td>\n  <td>$99.70</td><td>$113.67</td>\n  <td style=\"color:#dc2626\">+14.01%</td>\n  <td>$115.95</td><td style=\"color:#dc2626\">+2.00%</td>\n</tr>\n<tr>\n  <td><strong>TSLA</strong></td><td>特斯拉</td>\n  <td>$390.82</td><td>$428.35</td>\n  <td style=\"color:#dc2626\">+9.60%</td>\n  <td>$427.98</td><td style=\"color:#16a34a\">-0.09%</td>\n</tr>\n<tr>\n  <td><strong>NVDA</strong></td><td>英伟达</td>\n  <td>$198.45</td><td>$215.20</td>\n  <td style=\"color:#dc2626\">+8.44%</td>\n  <td>$215.05</td><td style=\"color:#16a34a\">-0.07%</td>\n</tr>\n<tr>\n  <td><strong>MSTR</strong></td><td>微策略</td>\n  <td>$177.17</td><td>$187.59</td>\n  <td style=\"color:#dc2626\">+5.88%</td>\n  <td>$188.70</td><td style=\"color:#dc2626\">+0.59%</td>\n</tr>\n<tr>\n  <td><strong>GOOG</strong></td><td>谷歌</td>\n  <td>$383.22</td><td>$397.05</td>\n  <td style=\"color:#dc2626\">+3.61%</td>\n  <td>$395.80</td><td style=\"color:#16a34a\">-0.31%</td>\n</tr>\n<tr>\n  <td><strong>XPEV</strong></td><td>小鹏汽车</td>\n  <td>$15.83</td><td>$15.62</td>\n  <td style=\"color:#16a34a\">-1.33%</td>\n  <td>$15.64</td><td style=\"color:#dc2626\">+0.13%</td>\n</tr>\n<tr>\n  <td><strong>CRWV</strong></td><td>CoreWeave</td>\n  <td>$119.01</td><td>$114.15</td>\n  <td style=\"color:#16a34a\">-4.08%</td>\n  <td>$113.86</td><td style=\"color:#16a34a\">-0.25%</td>\n</tr>\n</tbody>\n</table>\n\n<h3>🚨 本周异常事件回顾</h3>\n<ul>\n  <li><strong>MU (美光科技)：</strong>周一日涨>4%(+11.1%) / 周二日涨>4%(+4.15%) / 周四日涨>4%(+15.49%) / 全周RSI6持续超买(95.7) / 创52W新高</li>\n  <li><strong>AMD (超威半导体)：</strong>周一日跌>4% / 周二日涨>4% / 周三暴涨+18.64% / 周四日涨>4%(+11.44%) / 创52W新高 / RSI超买(87.8)</li>\n  <li><strong>INTC (英特尔)：</strong>周一日涨>4%(+12.95%) / 周二日涨>4%(+4.49%) / 周四日涨>4%(+13.96%) / RSI超买(92.2)</li>\n  <li><strong>GOOG (谷歌)：</strong>全周RSI6持续超买(90.3) / 接近52W新高</li>\n  <li><strong>NVDA (英伟达)：</strong>周二日涨>4%(+5.68%)</li>\n  <li><strong>NBIS (Nebius)：</strong>周一日涨>4% / 周二日涨>4%(+10.9%) / 周四日跌>4%(-4.18%) / 接近52W高后回落</li>\n  <li><strong>CRWV (CoreWeave)：</strong>周一日涨>4% / 周二日涨>4% / 周四暴跌-11.40%(财报利空) / 盘后跌>4%</li>\n  <li><strong>CRCL (Circle)：</strong>周一日涨>4%/量比>2 / 周二日跌>4% / 周三日涨>4% / 周四日跌>4% / 全周剧烈震荡</li>\n  <li><strong>MSTR (微策略)：</strong>周四日涨>4%(+4.31%)</li>\n  <li><strong>TSLA (特斯拉)：</strong>周四日涨>4%(+4.02%) / RSI超买(85.5)</li>\n</ul>\n\n<h3>📰 本周重要新闻 TOP 5</h3>\n<ol>\n  <li><strong>[AMD]</strong> 超威半导体Q1财报超预期，AI数据中心营收暴涨，股价周三单日暴涨18.64%</li>\n  <li><strong>[MU]</strong> 存储芯片股继续大涨：AI算力建设从\"缺GPU\"走向\"缺内存\"，MU周涨+37.73%领跑</li>\n  <li><strong>[CRWV]</strong> CoreWeave首份财报利润大幅承压，盘后跌超10%，但千亿积压订单获华尔街逆势上调目标价</li>\n  <li><strong>[INTC]</strong> 千亿私募猛买英特尔，力积电跻身英特尔EMIB阵营，周涨+25.40%</li>\n  <li><strong>[TSLA]</strong> 特斯拉提交新款Roadster徽标商标，百万年薪招数据标注员</li>\n</ol>\n\n<h3>📅 下周关键事件预告</h3>\n<ul>\n  <li><strong>5/12(Mon)：</strong>美国4月CPI数据发布（核心CPI年率预期2.7% vs 前值2.6%），通胀数据或影响半导体估值</li>\n  <li><strong>5/13(Tue)：</strong>美国4月PPI数据发布，EIA月度短期能源展望报告</li>\n  <li><strong>5/14(Wed)：</strong>MU 分红除权（需确认具体日期）</li>\n  <li><strong>全周：</strong>多只自选股RSI超买状态，关注周五期权到期日（5/16为5月月度期权到期）</li>\n</ul>\n\n<h3>💡 下周操作策略建议</h3>\n<ul>\n  <li><strong>半导体三雄(MU/AMD/INTC)：</strong>本周暴涨后RSI极度超买，短线获利盘压力巨大。建议逢高分批减仓锁利，MU若回调至680-700区间可低吸。AMD若回落至420以下可补仓。</li>\n  <li><strong>CRWV：</strong>财报后暴跌打开下跌空间，但华尔街看多逻辑未变（千亿积压订单）。短期观望，若跌破100关口止损，100-110区间可轻仓试探。</li>\n  <li><strong>NVDA/GOOG：</strong>稳步上行但RSI超买，CPI数据若超预期可能引发科技股回调。持有为主，加仓等回调。</li>\n  <li><strong>TSLA：</strong>动能恢复+RSI刚触超买，短期偏多但追高需谨慎。</li>\n  <li><strong>关键风险：</strong>CPI若超预期→加息预期升温→科技股集体回调。建议控制仓位在70%以下。</li>\n</ul>\n\n<h3>🪙 本周 Web3 摘要</h3>\n<ul>\n  <li><strong>BTC 周涨跌：</strong>$80,936 → $80,338（-0.74%），横盘整理</li>\n  <li><strong>ETH 周涨跌：</strong>$2,377 → $2,315（-2.61%），弱于BTC</li>\n  <li><strong>恐贪指数：</strong>49 → 50（中性，变化不大）</li>\n  <li><strong>本周要闻：</strong>LayerZero信任危机（14个协议暂停跨链）/ Aave司法解冻7100万ETH / CLARITY Act审议推进RWA加速</li>\n  <li><strong>KOL情绪：</strong>6.4/10偏乐观，中英文圈对是否已入牛市存分歧</li>\n</ul>\n\n</div>",
+  "web3_body_html": "",
+  "tickers": [
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "close": 746.81,
+      "pct_1d": 15.49,
+      "weekly_pct": 37.73,
+      "extended": 757.35,
+      "extended_pct": 1.41,
+      "signals": []
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 455.19,
+      "pct_1d": 11.44,
+      "weekly_pct": 26.25,
+      "extended": 461.2,
+      "extended_pct": 1.32,
+      "signals": []
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 124.92,
+      "pct_1d": 13.96,
+      "weekly_pct": 25.4,
+      "extended": 126.0,
+      "extended_pct": 0.86,
+      "signals": []
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius",
+      "close": 177.05,
+      "pct_1d": -4.18,
+      "weekly_pct": 14.6,
+      "extended": 178.48,
+      "extended_pct": 0.81,
+      "signals": []
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle",
+      "close": 113.67,
+      "pct_1d": 0.37,
+      "weekly_pct": 14.01,
+      "extended": 115.95,
+      "extended_pct": 2.0,
+      "signals": []
+    },
+    {
+      "symbol": "TSLA",
+      "name": "特斯拉",
+      "close": 428.35,
+      "pct_1d": 4.02,
+      "weekly_pct": 9.6,
+      "extended": 427.98,
+      "extended_pct": -0.09,
+      "signals": []
+    },
+    {
+      "symbol": "NVDA",
+      "name": "英伟达",
+      "close": 215.2,
+      "pct_1d": 1.75,
+      "weekly_pct": 8.44,
+      "extended": 215.05,
+      "extended_pct": -0.07,
+      "signals": []
+    },
+    {
+      "symbol": "MSTR",
+      "name": "微策略",
+      "close": 187.59,
+      "pct_1d": 4.31,
+      "weekly_pct": 5.88,
+      "extended": 188.7,
+      "extended_pct": 0.59,
+      "signals": []
+    },
+    {
+      "symbol": "GOOG",
+      "name": "谷歌",
+      "close": 397.05,
+      "pct_1d": 0.44,
+      "weekly_pct": 3.61,
+      "extended": 395.8,
+      "extended_pct": -0.31,
+      "signals": []
+    },
+    {
+      "symbol": "XPEV",
+      "name": "小鹏汽车",
+      "close": 15.62,
+      "pct_1d": 0.45,
+      "weekly_pct": -1.33,
+      "extended": 15.64,
+      "extended_pct": 0.13,
+      "signals": []
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "close": 114.15,
+      "pct_1d": -11.4,
+      "weekly_pct": -4.08,
+      "extended": 113.86,
+      "extended_pct": -0.25,
+      "signals": []
+    }
+  ]
+}
