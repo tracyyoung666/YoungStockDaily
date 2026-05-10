@@ -48,7 +48,7 @@
       var tableHtml = '<table class="web3-table">';
       rows.forEach(function (row, idx) {
         // 跳过分隔行 |---|---|
-        if (/^\s*\|[\s\-:]+\|\s*$/.test(row)) return;
+        if (/^\s*\|[\s\-:|]+\|\s*$/.test(row)) return;
         var cells = row.split('|').filter(function (c, i, arr) {
           return i > 0 && i < arr.length - 1;
         });
