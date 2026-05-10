@@ -1,0 +1,81 @@
+{
+  "updated_at": "2026-05-11 00:27:19",
+  "period": "2 trading days",
+  "filter": {
+    "min_market_cap_usd": 20000000000,
+    "min_pct_2d": 5.0,
+    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
+  },
+  "hotspots": [
+    {
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 200.16,
+      "pct_2d": 39.28,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 207.88,
+      "pct_2d": 13.18,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 527.77,
+      "pct_2d": 12.75,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "close": 746.81,
+      "pct_2d": 12.03,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "close": 124.92,
+      "pct_2d": 10.54,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 152.13,
+      "pct_2d": 9.58,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 152.45,
+      "pct_2d": 9.1,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "close": 455.19,
+      "pct_2d": 8.02,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "close": 428.35,
+      "pct_2d": 7.43,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "close": 96.57,
+      "pct_2d": 5.38,
+      "date_range": "2026-05-06 ~ 2026-05-08"
+    }
+  ]
+}

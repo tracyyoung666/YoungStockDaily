@@ -142,6 +142,21 @@ python3 /data/workspace/.agent/skills/stock-and-web3/scripts/fetch_quotes.py MU,
   <!-- 其他板块 -->
 </ul>
 
+<h3>🔥 市场近期热点（全市场2日涨幅Top）</h3>
+<table class="stock-table">
+<thead><tr>
+  <th>排名</th><th>代码</th><th>名称</th><th>收盘价</th><th>2日涨幅</th><th>热点原因</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td>1</td><td><strong>DDOG</strong></td><td>Datadog</td><td>$178.52</td>
+  <td style="color:#dc2626">+39.28%</td><td>Q1财报大幅超预期+AI可观测性需求爆发</td>
+</tr>
+<!-- 最多10只，按涨幅排序；数据来自 fetch_market_hotspots.py 输出的 hotspots.json -->
+<!-- 热点原因：结合 westock-data news 逐只查询新闻标题分析上涨原因 -->
+</tbody>
+</table>
+
 <h3>💡 一句话结论</h3>
 <p>...</p>
 
