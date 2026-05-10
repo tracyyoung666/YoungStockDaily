@@ -42,6 +42,7 @@ html, body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a { color: var(--blue); text-decoration: none; }
@@ -122,6 +123,7 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 28px 20px 60px;
+  overflow-x: hidden;
 }
 
 /* ---------- 首页筛选条 ---------- */
@@ -848,7 +850,7 @@ footer {
   border-bottom: 2px solid var(--bg-card-alt);
   font-weight: 700;
 }
-.daily-block-body { font-size: 15px; color: var(--text-sub); }
+.daily-block-body { font-size: 15px; color: var(--text-sub); overflow-x: hidden; }
 
 /* 3. 股票详情页内嵌的 .card / .report-hero / .stock-report —— 全部去白框 */
 .daily-block-body .card,
@@ -859,6 +861,9 @@ footer {
   box-shadow: none !important;
   padding: 0 !important;
   margin: 18px 0 !important;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 /* 只保留标题样式（从 h2 下边框继承） */
 .daily-block-body .card h2 {
