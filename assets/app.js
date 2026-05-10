@@ -88,6 +88,11 @@
       // 先渲染 7 天走势迷你图区域，再渲染详情
       var sparkHtml = buildSparklineSection(list);
       box.innerHTML = sparkHtml;
+      // 走势对比图区域
+      var perfBox = document.createElement('div');
+      perfBox.id = 'performance-container';
+      box.appendChild(perfBox);
+      loadPerformanceChart(perfBox);
       var detailBox = document.createElement('div');
       box.appendChild(detailBox);
       renderDetail(detailBox, latest.slug, { isTodayHeader: true });
@@ -177,6 +182,173 @@
       grid.innerHTML = html;
     }).catch(function () {
       grid.innerHTML = '<div class="sparkline-empty">K线数据加载失败</div>';
+    });
+  }
+
+  // ================= 自选股走势对比图 =================
+  var PERF_COLORS = [
+    '#dc2626', '#2563eb', '#16a34a', '#d97706', '#7c3aed',
+    '#db2777', '#0891b2', '#65a30d', '#c026d3', '#ea580c', '#4f46e5'
+  ];
+
+  function loadPerformanceChart(container) {
+    fetchJSON('data/performance.json').then(function (data) {
+      var stocks = data.stocks || {};
+      var symbols = Object.keys(stocks);
+      if (symbols.length === 0) return;
+
+      // 归一化：以第一天收盘价为基准，计算每天的涨跌幅%
+      var allDates = [];
+      var normalized = {}; // { symbol: [{date, pct}] }
+
+      symbols.forEach(function (sym) {
+        var klines = stocks[sym];
+        if (!klines || klines.length < 2) return;
+        var base = klines[0].close;
+        normalized[sym] = klines.map(function (k) {
+          return { date: k.date, pct: ((k.close - base) / base) * 100 };
+        });
+        // 收集所有日期
+        klines.forEach(function (k) {
+          if (allDates.indexOf(k.date) === -1) allDates.push(k.date);
+        });
+      });
+      allDates.sort();
+
+      // 计算最终涨跌排名
+      var finalRank = symbols.filter(function (s) { return normalized[s]; }).map(function (s) {
+        var pts = normalized[s];
+        return { symbol: s, finalPct: pts[pts.length - 1].pct };
+      }).sort(function (a, b) { return b.finalPct - a.finalPct; });
+
+      // 构建HTML
+      var html = '<div class="perf-section">';
+      html += '<h3 class="perf-title">📊 自选股走势对比 <small>近' + allDates.length + '个交易日 · 归一化涨跌幅</small></h3>';
+      html += '<div class="perf-chart-wrap">';
+      html += '<div class="perf-chart" id="perf-chart"></div>';
+      html += '</div>';
+      html += '<div class="perf-legend" id="perf-legend"></div>';
+      html += '</div>';
+      container.innerHTML = html;
+
+      // 渲染SVG图表
+      renderPerfSVG(allDates, normalized, finalRank);
+    }).catch(function () {
+      container.innerHTML = '';
+    });
+  }
+
+  function renderPerfSVG(dates, normalized, rankList) {
+    var chartEl = document.getElementById('perf-chart');
+    var legendEl = document.getElementById('perf-legend');
+    if (!chartEl || !legendEl) return;
+
+    var W = 800, H = 360;
+    var PAD = { top: 30, right: 70, bottom: 40, left: 56 };
+    var plotW = W - PAD.left - PAD.right;
+    var plotH = H - PAD.top - PAD.bottom;
+
+    // 计算Y轴范围
+    var allPcts = [];
+    rankList.forEach(function (r) {
+      (normalized[r.symbol] || []).forEach(function (p) { allPcts.push(p.pct); });
+    });
+    var yMin = Math.min.apply(null, allPcts);
+    var yMax = Math.max.apply(null, allPcts);
+    var yPad = (yMax - yMin) * 0.1 || 5;
+    yMin -= yPad; yMax += yPad;
+
+    // 颜色映射
+    var colorMap = {};
+    rankList.forEach(function (r, i) { colorMap[r.symbol] = PERF_COLORS[i % PERF_COLORS.length]; });
+
+    // 隐藏状态
+    var hidden = {};
+
+    function buildSVG() {
+      var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="perf-svg">';
+
+      // 背景网格
+      var gridSteps = 5;
+      for (var gi = 0; gi <= gridSteps; gi++) {
+        var gy = PAD.top + (plotH / gridSteps) * gi;
+        var gVal = yMax - ((yMax - yMin) / gridSteps) * gi;
+        svg += '<line x1="' + PAD.left + '" y1="' + gy.toFixed(1) + '" x2="' + (W - PAD.right) + '" y2="' + gy.toFixed(1) + '" stroke="#e2e8f0" stroke-width="0.5"/>';
+        svg += '<text x="' + (PAD.left - 8) + '" y="' + (gy + 4).toFixed(1) + '" text-anchor="end" font-size="10" fill="#94a3b8">' + gVal.toFixed(1) + '%</text>';
+      }
+
+      // 零线
+      if (yMin < 0 && yMax > 0) {
+        var zeroY = PAD.top + ((yMax - 0) / (yMax - yMin)) * plotH;
+        svg += '<line x1="' + PAD.left + '" y1="' + zeroY.toFixed(1) + '" x2="' + (W - PAD.right) + '" y2="' + zeroY.toFixed(1) + '" stroke="#64748b" stroke-width="1" stroke-dasharray="4,3"/>';
+      }
+
+      // X轴日期标签（间隔显示）
+      var xStep = Math.max(1, Math.floor(dates.length / 6));
+      dates.forEach(function (dt, i) {
+        if (i % xStep === 0 || i === dates.length - 1) {
+          var x = PAD.left + (i / (dates.length - 1)) * plotW;
+          svg += '<text x="' + x.toFixed(1) + '" y="' + (H - PAD.bottom + 18) + '" text-anchor="middle" font-size="10" fill="#94a3b8">' + dt.slice(5) + '</text>';
+        }
+      });
+
+      // 绘制每只股票的折线
+      rankList.forEach(function (r) {
+        if (hidden[r.symbol]) return;
+        var pts = normalized[r.symbol];
+        if (!pts || pts.length < 2) return;
+        var color = colorMap[r.symbol];
+        var pathD = '';
+        pts.forEach(function (p, i) {
+          var di = dates.indexOf(p.date);
+          if (di === -1) return;
+          var x = PAD.left + (di / (dates.length - 1)) * plotW;
+          var y = PAD.top + ((yMax - p.pct) / (yMax - yMin)) * plotH;
+          pathD += (i === 0 ? 'M' : 'L') + x.toFixed(2) + ',' + y.toFixed(2);
+        });
+        // 最好/最差的线加粗
+        var sw = (r === rankList[0] || r === rankList[rankList.length - 1]) ? '2.5' : '1.8';
+        svg += '<path d="' + pathD + '" fill="none" stroke="' + color + '" stroke-width="' + sw + '" stroke-linecap="round" stroke-linejoin="round"/>';
+
+        // 末端标注
+        var lastPt = pts[pts.length - 1];
+        var ldi = dates.indexOf(lastPt.date);
+        var lx = PAD.left + (ldi / (dates.length - 1)) * plotW;
+        var ly = PAD.top + ((yMax - lastPt.pct) / (yMax - yMin)) * plotH;
+        svg += '<circle cx="' + lx.toFixed(1) + '" cy="' + ly.toFixed(1) + '" r="3" fill="' + color + '"/>';
+        svg += '<text x="' + (lx + 6).toFixed(1) + '" y="' + (ly + 4).toFixed(1) + '" font-size="10" font-weight="600" fill="' + color + '">' + r.symbol + '</text>';
+      });
+
+      svg += '</svg>';
+      return svg;
+    }
+
+    chartEl.innerHTML = buildSVG();
+
+    // 图例
+    var legendHtml = '';
+    rankList.forEach(function (r, i) {
+      var isTop = (i === 0);
+      var isBottom = (i === rankList.length - 1);
+      var badge = isTop ? ' 🏆' : (isBottom ? ' ⚠️' : '');
+      var pctStr = (r.finalPct >= 0 ? '+' : '') + r.finalPct.toFixed(2) + '%';
+      var pctColor = r.finalPct >= 0 ? '#dc2626' : '#16a34a';
+      legendHtml += '<button class="perf-legend-item' + (hidden[r.symbol] ? ' disabled' : '') + '" data-sym="' + r.symbol + '">';
+      legendHtml += '<span class="perf-legend-dot" style="background:' + colorMap[r.symbol] + '"></span>';
+      legendHtml += '<span class="perf-legend-sym">' + r.symbol + badge + '</span>';
+      legendHtml += '<span class="perf-legend-pct" style="color:' + pctColor + '">' + pctStr + '</span>';
+      legendHtml += '</button>';
+    });
+    legendEl.innerHTML = legendHtml;
+
+    // 点击图例切换显示
+    legendEl.querySelectorAll('.perf-legend-item').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sym = btn.getAttribute('data-sym');
+        hidden[sym] = !hidden[sym];
+        btn.classList.toggle('disabled', hidden[sym]);
+        chartEl.innerHTML = buildSVG();
+      });
     });
   }
 
