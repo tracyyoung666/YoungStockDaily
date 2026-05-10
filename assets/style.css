@@ -1224,6 +1224,105 @@ footer {
   font-weight: 700 !important;
 }
 
+/* ========== 9.8 Web3 报告内容样式 ========== */
+.web3-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
+}
+.web3-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 24px 0 10px;
+}
+.web3-content h4 {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #334155;
+  margin: 18px 0 8px;
+  padding-left: 10px;
+  border-left: 3px solid #2563eb;
+}
+.web3-content p {
+  margin: 6px 0;
+  line-height: 1.7;
+}
+.web3-content strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+.web3-content .web3-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.web3-content .web3-list li {
+  position: relative;
+  padding: 6px 0 6px 18px;
+  line-height: 1.6;
+  color: #334155;
+}
+.web3-content .web3-list li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: #2563eb;
+  font-weight: 700;
+}
+.web3-content .web3-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 16px;
+  font-size: 13.5px;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.web3-content .web3-table tr.web3-table-head th,
+.web3-content .web3-table th {
+  background: linear-gradient(135deg, #eef2ff 0%, #e8f0fe 100%);
+  padding: 10px 12px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: left;
+  font-size: 12.5px;
+  border-bottom: 2px solid #cbd5e1;
+  white-space: nowrap;
+}
+.web3-content .web3-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  text-align: left;
+  vertical-align: top;
+}
+.web3-content .web3-table tr:nth-child(even) td {
+  background: #fafbfd;
+}
+.web3-content .web3-table tr:hover td {
+  background: #f0f4ff;
+}
+.web3-content .web3-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+  margin: 20px 0;
+}
+.web3-content .web3-quote {
+  border-left: 3px solid #94a3b8;
+  background: #f8fafc;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  color: #64748b;
+  font-style: italic;
+}
+
 /* ========== 10. 7天走势迷你图 ========== */
 .sparkline-section {
   margin: 0 0 28px;

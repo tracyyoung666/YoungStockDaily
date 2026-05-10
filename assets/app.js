@@ -33,6 +33,56 @@
       .replace(/href="\.\.\/(images\/[^"]+)"/g, 'href="$1"');
   }
 
+  /* Web3 报告 HTML 后处理：将混合格式（HTML标签 + 残留Markdown）转为纯净 HTML */
+  function formatWeb3Html(html) {
+    if (!html) return '';
+    var s = html;
+
+    // 1. **bold** → <strong>bold</strong>
+    s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+    // 2. 将 Markdown 表格转为 HTML table
+    s = s.replace(/((?:\|[^\n]+\|\s*\n){2,})/g, function (block) {
+      var rows = block.trim().split('\n').filter(function (r) { return r.trim(); });
+      if (rows.length < 2) return block;
+      var tableHtml = '<table class="web3-table">';
+      rows.forEach(function (row, idx) {
+        // 跳过分隔行 |---|---|
+        if (/^\s*\|[\s\-:]+\|\s*$/.test(row)) return;
+        var cells = row.split('|').filter(function (c, i, arr) {
+          return i > 0 && i < arr.length - 1;
+        });
+        var tag = (idx === 0) ? 'th' : 'td';
+        var trClass = (idx === 0) ? ' class="web3-table-head"' : '';
+        tableHtml += '<tr' + trClass + '>';
+        cells.forEach(function (c) {
+          tableHtml += '<' + tag + '>' + c.trim() + '</' + tag + '>';
+        });
+        tableHtml += '</tr>';
+      });
+      tableHtml += '</table>';
+      return tableHtml;
+    });
+
+    // 3. 连续的裸 <li> 包裹进 <ul>（没有被 ul/ol 包裹的情况）
+    s = s.replace(/(<li>[\s\S]*?<\/li>)(?=\s*<li>)/g, '$1');
+    s = s.replace(/((?:<li>[^<]*<\/li>\s*)+)/g, function (match) {
+      // 检查前面是否已有<ul>或<ol>
+      return '<ul class="web3-list">' + match + '</ul>';
+    });
+    // 去掉 <ul> 嵌套（如果已有 ul 包裹则会双重包裹，清理掉）
+    s = s.replace(/<ul class="web3-list"><ul/g, '<ul');
+    s = s.replace(/<\/ul><\/ul>/g, '</ul>');
+
+    // 4. 给 <hr> 加 class 以便样式美化
+    s = s.replace(/<hr\s*\/?>/g, '<hr class="web3-divider">');
+
+    // 5. 给 <blockquote> 加 class
+    s = s.replace(/<blockquote>/g, '<blockquote class="web3-quote">');
+
+    return s;
+  }
+
   // ================= Tab 切换 & 路由 =================
   function initTabs() {
     document.querySelectorAll('.tab-btn').forEach(function (b) {
@@ -483,7 +533,7 @@
       if (hasWeb3) {
         html += '<section class="daily-block" id="web3-section">' +
                   '<h2 class="daily-block-title">🪙 Web3 加密日报</h2>' +
-                  '<div class="daily-block-body">' + (d.web3_body_html || '') + '</div>' +
+                  '<div class="daily-block-body web3-content">' + formatWeb3Html(d.web3_body_html || '') + '</div>' +
                 '</section>';
       }
       if (!hasStock && !hasWeb3) {
