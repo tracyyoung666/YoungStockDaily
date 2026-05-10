@@ -862,8 +862,7 @@ footer {
   padding: 0 !important;
   margin: 18px 0 !important;
   max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 /* 只保留标题样式（从 h2 下边框继承） */
 .daily-block-body .card h2 {
@@ -1021,9 +1020,11 @@ footer {
   border-spacing: 0;
   font-size: 14px;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 2px 12px rgba(37, 99, 235, 0.06);
   margin: 16px 0 24px;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .stock-table thead {
   background: linear-gradient(135deg, #eef2ff 0%, #e8f0fe 100%);
