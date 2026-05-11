@@ -38,47 +38,79 @@
     if (!html) return '';
     var s = html;
 
-    // 1. **bold** → <strong>bold</strong>
+    // === 阶段0：清理多余的 <br> 标签 ===
+    // 去掉 HTML 标签前后的 <br>（如 <h3>...<br>\n<h4> 之间的 br）
+    s = s.replace(/<br\s*\/?>\s*\n?/gi, '\n');
+    // 清理连续空行（超过2个换行符合并为2个）
+    s = s.replace(/\n{3,}/g, '\n\n');
+
+    // === 阶段1：Markdown 内联语法 ===
+    // **bold** → <strong>bold</strong>
     s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 
-    // 2. 将 Markdown 表格转为 HTML table
-    s = s.replace(/((?:\|[^\n]+\|\s*\n){2,})/g, function (block) {
+    // === 阶段2：Markdown blockquote（> 开头的行）===
+    s = s.replace(/(?:^|\n)>\s*([^\n]+)/g, function (match, content) {
+      return '\n<blockquote class="web3-quote">' + content.trim() + '</blockquote>';
+    });
+
+    // === 阶段3：Markdown 表格 → HTML table ===
+    // 匹配连续的 | 开头的行（至少2行）
+    s = s.replace(/((?:^|\n)\|[^\n]+\|(?:\n\|[^\n]+\|)+)/g, function (block) {
       var rows = block.trim().split('\n').filter(function (r) { return r.trim(); });
       if (rows.length < 2) return block;
       var tableHtml = '<table class="web3-table">';
-      rows.forEach(function (row, idx) {
+      var isFirstDataRow = true;
+      rows.forEach(function (row) {
         // 跳过分隔行 |---|---|
         if (/^\s*\|[\s\-:|]+\|\s*$/.test(row)) return;
         var cells = row.split('|').filter(function (c, i, arr) {
           return i > 0 && i < arr.length - 1;
         });
-        var tag = (idx === 0) ? 'th' : 'td';
-        var trClass = (idx === 0) ? ' class="web3-table-head"' : '';
-        tableHtml += '<tr' + trClass + '>';
+        if (!cells.length) return;
+        var tag = isFirstDataRow ? 'th' : 'td';
+        tableHtml += '<tr>';
         cells.forEach(function (c) {
           tableHtml += '<' + tag + '>' + c.trim() + '</' + tag + '>';
         });
         tableHtml += '</tr>';
+        isFirstDataRow = false;
       });
       tableHtml += '</table>';
       return tableHtml;
     });
 
-    // 3. 连续的裸 <li> 包裹进 <ul>（没有被 ul/ol 包裹的情况）
-    s = s.replace(/(<li>[\s\S]*?<\/li>)(?=\s*<li>)/g, '$1');
-    s = s.replace(/((?:<li>[^<]*<\/li>\s*)+)/g, function (match) {
-      // 检查前面是否已有<ul>或<ol>
-      return '<ul class="web3-list">' + match + '</ul>';
+    // === 阶段4：裸 <li> 包裹进 <ul> ===
+    s = s.replace(/((?:\s*<li>[\s\S]*?<\/li>\s*)+)/g, function (match, g, offset) {
+      // 检查前面是否已有 <ul> 或 <ol>
+      var before = s.substring(Math.max(0, offset - 5), offset);
+      if (/<[uo]l/i.test(before)) return match;
+      return '<ul class="web3-list">' + match.trim() + '</ul>';
     });
-    // 去掉 <ul> 嵌套（如果已有 ul 包裹则会双重包裹，清理掉）
-    s = s.replace(/<ul class="web3-list"><ul/g, '<ul');
-    s = s.replace(/<\/ul><\/ul>/g, '</ul>');
 
-    // 4. 给 <hr> 加 class 以便样式美化
-    s = s.replace(/<hr\s*\/?>/g, '<hr class="web3-divider">');
+    // === 阶段5：有序列表（数字. 开头的行）===
+    s = s.replace(/((?:^|\n)\d+\.\s+<strong>[^\n]+(?:\n|$))+/g, function (block) {
+      var items = block.trim().split('\n').filter(function (l) { return l.trim(); });
+      var ol = '<ol class="web3-ordered-list">';
+      items.forEach(function (item) {
+        var content = item.replace(/^\d+\.\s+/, '');
+        ol += '<li>' + content + '</li>';
+      });
+      ol += '</ol>';
+      return ol;
+    });
 
-    // 5. 给 <blockquote> 加 class
-    s = s.replace(/<blockquote>/g, '<blockquote class="web3-quote">');
+    // === 阶段6：美化标签 ===
+    // 给 <hr> 加 class
+    s = s.replace(/<hr\s*\/?>/gi, '<hr class="web3-divider">');
+
+    // 给已有的 <blockquote>（没有 class 的）加 class
+    s = s.replace(/<blockquote>(?![\s\S]*class=)/g, '<blockquote class="web3-quote">');
+
+    // === 阶段7：清理残留 ===
+    // 清理孤立的换行变成的空白段落
+    s = s.replace(/\n\n+/g, '\n');
+    // 去掉 <p>\n</p> 这种空段落
+    s = s.replace(/<p>\s*<\/p>/g, '');
 
     return s;
   }
