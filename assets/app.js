@@ -38,10 +38,18 @@
     if (!html) return '';
     var s = html;
 
-    // === 阶段0：清理多余的 <br> 标签 ===
-    // 去掉 HTML 标签前后的 <br>（如 <h3>...<br>\n<h4> 之间的 br）
-    s = s.replace(/<br\s*\/?>\s*\n?/gi, '\n');
-    // 清理连续空行（超过2个换行符合并为2个）
+    // === 阶段0：精确清理多余的 <br> 标签 ===
+    // 0a. 删除 HTML 闭合标签后紧跟的 <br>（如 </h3><br>, </li><br>, <hr><br>）
+    s = s.replace(/(<\/(?:h[1-6]|li|ul|ol|table|tr|td|th|blockquote|div|p|figure|figcaption|section)>)\s*<br\s*\/?>/gi, '$1');
+    s = s.replace(/(<hr\s*\/?>)\s*<br\s*\/?>/gi, '$1');
+    // 0b. 删除 HTML 开始标签前紧跟的 <br>（如 <br>\n<h3>）
+    s = s.replace(/<br\s*\/?>\s*\n?\s*(<(?:h[1-6]|hr|table|ul|ol|blockquote|div|section)\b)/gi, '\n$1');
+    // 0c. 删除独占一行的纯 <br>（空行标记）
+    s = s.replace(/^\s*<br\s*\/?>\s*$/gm, '');
+    // 0d. Markdown 表格行末的 <br> 转为 \n（让表格正则能匹配连续行）
+    s = s.replace(/\|<br\s*\/?>\s*\n?/gi, '|\n');
+    // 0e. 剩余的 <br> 保留（段内有意义的换行）
+    // 0f. 清理连续空行
     s = s.replace(/\n{3,}/g, '\n\n');
 
     // === 阶段1：Markdown 内联语法 ===
