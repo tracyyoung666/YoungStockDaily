@@ -247,6 +247,22 @@ sys.stdout.write(json.dumps({'date':date,'digest_md':md,'digest_wechat':wc,
   | python3 /data/workspace/web3-archive/archive.py
 ```
 
+**⚠️ web3_body_html 格式强制规范（写入 daily JSON 前必须遵守）：**
+
+Web3 日报原始数据是混合格式（HTML标签 + Markdown残留），前端虽有 `formatWeb3Html` 后处理，但**生成端也必须确保数据质量**：
+
+1. **严禁**在 HTML 闭合标签后多加 `<br>`（如 `</h3><br>`、`</li><br>`、`<hr><br>` 都是错误的）
+2. **严禁**用独占一行的 `<br>` 作为空行分隔（应直接用 `\n\n`）
+3. **段内换行可以用 `<br>`**（如"影响等级: High<br>\n核心事件:"），但不要在 HTML 结构标签后面加
+4. **表格必须用 HTML `<table>` 标签**，严禁保留 Markdown 管道语法（`| 列1 | 列2 |`）
+5. **引用必须用 `<blockquote>` 标签**，严禁保留 Markdown `>` 语法
+6. **加粗必须用 `<strong>` 标签**，严禁保留 Markdown `**` 语法
+7. **有序列表必须用 `<ol><li>` 标签**，严禁保留 `1. 2. 3.` 纯文本格式
+8. **无序列表的 `<li>` 必须被 `<ul>` 包裹**
+9. 整个 web3_body_html 建议包裹在 `<div class="web3-report">` 中
+
+**简而言之：web3_body_html 应该是纯净的 HTML，不含任何 Markdown 残留语法。**
+
 ### 步骤 5：更新索引并 git push
 
 **⚠️ 严格按以下步骤执行，不要自己手写 daily.json 追加逻辑！**
