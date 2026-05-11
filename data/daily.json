@@ -1,6 +1,50 @@
 {
-  "updated_at": "2026-05-11T09:10:02",
+  "updated_at": "2026-05-11T19:10:19",
   "dailies": [
+    {
+      "slug": "daily_20260511_1909",
+      "date": "2026-05-11",
+      "generated_at": "2026-05-11 19:09:20",
+      "title": "📈 自选股盘前分析 | 2026-05-11 19:09",
+      "summary": {
+        "abnormal_signals": [
+          "MU +15.49% RSI超买89.3 创52W高",
+          "INTC +13.96% RSI超买+盘前续涨6%",
+          "CRWV -11.40% 放量暴跌"
+        ],
+        "suggestions": [
+          "半导体三巨头超买 持仓者可减仓1/3",
+          "CRWV $110企稳可试探 止损$105"
+        ],
+        "hotspots": [
+          "MU +15.49% AI叙事+HBM需求爆发",
+          "INTC +13.96% 代工转型叙事",
+          "DDOG +6.06% AI可观测性需求爆发"
+        ],
+        "web3": {
+          "btc": "$80,780 (+0.03%)",
+          "eth": "$2,332 (+0.08%)",
+          "fear_greed": "50 (中性)",
+          "summary": "监管推进与司法介入并行，市场处于高波动强分化的关键过渡期"
+        }
+      },
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260511_1909.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260511_0909",
       "date": "2026-05-11",
