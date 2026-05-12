@@ -1,6 +1,52 @@
 {
-  "updated_at": "2026-05-12T09:07:46",
+  "updated_at": "2026-05-12T19:08:07",
   "dailies": [
+    {
+      "slug": "daily_20260512_1902",
+      "date": "2026-05-12",
+      "generated_at": "2026-05-12T19:02:00+08:00",
+      "title": "📈 自选股盘前分析 | 2026-05-12 19:02",
+      "summary": {
+        "abnormal_signals": [
+          "CRCL +15.91% 量比2.21 — Q1财报营收超预期",
+          "MU +6.50% RSI6=91.5超买 — AI存储超级周期",
+          "INTC/TSLA RSI超买88+ — 短线回调风险"
+        ],
+        "suggestions": [
+          "MU/INTC/TSLA 超买区间设止盈",
+          "CRCL 暴涨后观望 回调至$120以下再考虑"
+        ],
+        "web3": {
+          "btc": "$80,895 (+0.25%)",
+          "eth": "$2,296 (-1.42%)",
+          "fear_greed": "50 (中性)",
+          "summary": "资金集中于BTC与可预测收益资产，ETH与山寨承压"
+        },
+        "hotspots": [
+          {
+            "symbol": "MU",
+            "pct_2d": "+6.50%",
+            "reason": "AI驱动存储超级周期+HBM需求爆发"
+          }
+        ]
+      },
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260512_1902.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260512_0901",
       "date": "2026-05-12",

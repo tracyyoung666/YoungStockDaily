@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12 09:02:57",
+  "updated_at": "2026-05-12 19:04:21",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,57 +11,8 @@
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
       "close": 795.33,
-      "pct_2d": 23.0,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "close": 129.44,
-      "pct_2d": 18.08,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 458.79,
-      "pct_2d": 12.32,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 213.66,
-      "pct_2d": 8.72,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "TSLA",
-      "name": "Tesla, Inc.",
-      "close": 445.0,
-      "pct_2d": 8.06,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 542.26,
-      "pct_2d": 7.23,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 202.32,
-      "pct_2d": 7.2,
-      "date_range": "2026-05-07 ~ 2026-05-11"
-    },
-    {
-      "symbol": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "close": 98.72,
-      "pct_2d": 7.12,
-      "date_range": "2026-05-07 ~ 2026-05-11"
+      "pct_2d": 6.5,
+      "date_range": "2026-05-08 ~ 2026-05-12"
     }
   ]
 }
