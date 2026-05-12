@@ -347,9 +347,10 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 
 #### 阶段一：初筛（满足任意一项即进入确认阶段）
 
-1. **事件日历匹配**：`westock-data reserve` 返回某只股票的 `disclosureDate` 为**昨天或今天**（美东日期）
-2. **新闻关键词检测**：该股票新闻标题中包含以下关键词之一：`财报`、`earnings`、`Q1`/`Q2`/`Q3`/`Q4`、`季度业绩`、`beat`、`miss`、`超预期`、`不及预期`、`每股收益`、`EPS`
+1. **事件日历匹配**：`westock-data reserve` 返回某只股票的 `disclosureDate` 在**过去3个自然日内**（含今天），这样能覆盖周末发布的情况（如周日发布的财报到周一仍能检测）
+2. **新闻关键词检测**：该股票新闻标题中包含以下关键词之一：`财报`、`earnings`、`Q1`/`Q2`/`Q3`/`Q4`、`季度业绩`、`beat`、`miss`、`超预期`、`不及预期`、`每股收益`、`EPS`、`营收`、`revenue`
 3. **盘后/盘前异常波动**：`extended_pct_vs_close` 绝对值 > 10%（大幅财报反应的特征）
+4. **🆕 日涨幅异常 + 量比**：当日涨跌幅绝对值 > 10% 且量比 > 2，应主动检查是否为财报驱动
 
 #### 阶段二：确认财报已实际发布（🚨关键！防止误判）
 
@@ -360,6 +361,8 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
    - 因此：`disclosureDate` 为今天的股票，**早9点场景（盘后模式）才可能已发布**；晚19点场景（盘前模式）此时还未到美股盘后，**不应触发**
    - 规则：`disclosureDate = 今天` 时 → 仅在**早9点推送**中触发（此时已过美东盘后）
    - 规则：`disclosureDate = 昨天` 时 → 早9点和晚19点都可触发
+   - 🆕 **周末场景**：`disclosureDate` 为周五/周六/周日的财报 → 到周一时可能已过2-3天，必须仍然触发。规则：**如果 disclosureDate 在过去3天内（含今天），都应进入确认阶段**
+   - 🆕 **日涨幅异常触发**：即使 disclosureDate 不匹配，如果当日涨跌幅 > 10% 且新闻标题含财报关键词，也必须进入确认阶段
 
 2. **新闻验证**：必须通过 `westock-data news` 能搜索到**包含具体财务数据**的新闻（如"营收XX亿"、"EPS $X.XX"、"同比增长XX%"），而不仅仅是"即将发布"或"预告"类新闻
 

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08 09:04:00",
+  "updated_at": "2026-05-12 09:25:53",
   "reports": [
     {
       "symbol": "MSTR",
@@ -68,6 +68,23 @@
       "revenue_unit": "B",
       "url": "earnings/CRWV-2026Q1.html",
       "generated_at": "2026-05-08 09:04:00"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle Internet Group",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-11",
+      "verdict": "mixed",
+      "verdict_label": "营收Beat+6.8% 利润Miss-15% USDC流通+28%",
+      "eps_actual": 0.22,
+      "eps_estimate": 0.26,
+      "revenue_actual": 0.694,
+      "revenue_estimate": 0.65,
+      "revenue_unit": "B",
+      "url": "earnings/CRCL-2026Q1.html",
+      "generated_at": "2026-05-12 09:25:53"
     }
   ]
 }
