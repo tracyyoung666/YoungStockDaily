@@ -1,18 +1,10 @@
 {
-  "updated_at": "2026-05-12 19:04:21",
+  "updated_at": "2026-05-13 09:03:37",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 795.33,
-      "pct_2d": 6.5,
-      "date_range": "2026-05-08 ~ 2026-05-12"
-    }
-  ]
+  "hotspots": []
 }
