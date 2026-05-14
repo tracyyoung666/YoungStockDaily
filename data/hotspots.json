@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14 09:05:16",
+  "updated_at": "2026-05-14 19:07:08",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,8 +11,8 @@
       "symbol": "PANW",
       "name": "Palo Alto Networks, Inc.",
       "close": 227.79,
-      "pct_2d": 6.61,
-      "date_range": "2026-05-11 ~ 2026-05-13"
+      "pct_2d": 5.65,
+      "date_range": "2026-05-12 ~ 2026-05-14"
     }
   ]
 }
