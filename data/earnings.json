@@ -16,7 +16,14 @@
       "revenue_estimate": 0.0494,
       "revenue_unit": "B",
       "url": "earnings/MSTR-2026Q1.html",
-      "generated_at": "2026-05-08 00:57:00"
+      "generated_at": "2026-05-08 00:57:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-05-06",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000031/mstr-20260331.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000031/",
+        "local_file": "earnings-filings/MSTR-2026Q1-sec-filing.htm"
+      }
     },
     {
       "symbol": "AMD",
@@ -33,7 +40,14 @@
       "revenue_estimate": 9.89,
       "revenue_unit": "B",
       "url": "earnings/AMD-2026Q1.html",
-      "generated_at": "2026-05-08 00:36:00"
+      "generated_at": "2026-05-08 00:36:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-05-06",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000076/amd-20260328.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000076/",
+        "local_file": "earnings-filings/AMD-2026Q1-sec-filing.htm"
+      }
     },
     {
       "symbol": "GOOG",
@@ -50,7 +64,14 @@
       "revenue_estimate": 107.0,
       "revenue_unit": "B",
       "url": "earnings/GOOG-2026Q1.html",
-      "generated_at": "2026-04-30 15:22:00"
+      "generated_at": "2026-04-30 15:22:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-04-30",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/",
+        "local_file": "earnings-filings/GOOG-2026Q1-sec-filing.htm"
+      }
     },
     {
       "symbol": "CRWV",
@@ -67,7 +88,14 @@
       "revenue_estimate": 1.965,
       "revenue_unit": "B",
       "url": "earnings/CRWV-2026Q1.html",
-      "generated_at": "2026-05-08 09:04:00"
+      "generated_at": "2026-05-08 09:04:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-05-08",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/",
+        "local_file": "earnings-filings/CRWV-2026Q1-sec-filing.htm"
+      }
     },
     {
       "symbol": "CRCL",
@@ -84,7 +112,14 @@
       "revenue_estimate": 0.65,
       "revenue_unit": "B",
       "url": "earnings/CRCL-2026Q1.html",
-      "generated_at": "2026-05-12 09:25:53"
+      "generated_at": "2026-05-12 09:25:53",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-05-11",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000150/crcl-20260331.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000150/",
+        "local_file": "earnings-filings/CRCL-2026Q1-sec-filing.htm"
+      }
     },
     {
       "symbol": "NBIS",
@@ -101,7 +136,14 @@
       "revenue_estimate": 0.371,
       "revenue_unit": "B",
       "url": "earnings/NBIS-2026Q1.html",
-      "generated_at": "2026-05-14 09:03:00"
+      "generated_at": "2026-05-14 09:03:00",
+      "sec_filing": {
+        "form": "6-K",
+        "filing_date": "2026-05-13",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_6k.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/",
+        "local_file": "earnings-filings/NBIS-2026Q1-sec-filing.htm"
+      }
     }
   ]
 }

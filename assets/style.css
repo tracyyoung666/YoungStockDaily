@@ -1515,3 +1515,132 @@ footer {
     font-size: 11.5px;
   }
 }
+
+/* ========== 14. 财报页增强：SEC原文下载 + 完整分析 ========== */
+.sec-filing-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 28px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #eff6ff 100%);
+  border: 1.5px solid #bfdbfe;
+  border-radius: 12px;
+}
+.sec-filing-bar .sec-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.sec-filing-bar .sec-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+.sec-btn-primary {
+  background: #2563eb;
+  color: #fff !important;
+}
+.sec-btn-primary:hover {
+  background: #1d4ed8;
+}
+.sec-btn-outline {
+  background: #fff;
+  color: #2563eb !important;
+  border: 1.5px solid #93c5fd;
+}
+.sec-btn-outline:hover {
+  background: #eff6ff;
+}
+.sec-filing-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #64748b;
+  margin-left: auto;
+}
+/* 完整分析板块 */
+.full-analysis {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 3px solid #e2e8f0;
+}
+.full-analysis .section-title {
+  color: #7c3aed;
+  border-bottom-color: #ddd6fe;
+}
+.full-analysis-note {
+  font-size: 13px;
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #a78bfa;
+}
+.analysis-subsection {
+  margin: 20px 0;
+}
+.analysis-subsection h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 10px;
+}
+.analysis-detail {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #334155;
+}
+.analysis-detail p {
+  margin: 8px 0;
+}
+.analysis-detail ul, .analysis-detail ol {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+.analysis-detail li {
+  margin: 4px 0;
+}
+.analysis-detail strong {
+  color: #1e293b;
+}
+.analysis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+}
+.analysis-table th {
+  background: #f5f3ff;
+  padding: 10px;
+  text-align: left;
+  font-weight: 700;
+  color: #5b21b6;
+  border-bottom: 2px solid #ddd6fe;
+}
+.analysis-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.analysis-table .num {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 640px) {
+  .sec-filing-bar {
+    flex-direction: column;
+    padding: 12px 14px;
+  }
+  .sec-filing-meta {
+    margin-left: 0;
+  }
+}
