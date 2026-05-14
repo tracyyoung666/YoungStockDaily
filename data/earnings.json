@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12 09:25:53",
+  "updated_at": "2026-05-14 09:03:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -85,6 +85,23 @@
       "revenue_unit": "B",
       "url": "earnings/CRCL-2026Q1.html",
       "generated_at": "2026-05-12 09:25:53"
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius Group",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-13",
+      "verdict": "beat",
+      "verdict_label": "大幅超预期 营收+684% EBITDA首次转正",
+      "eps_actual": -0.4,
+      "eps_estimate": -0.7,
+      "revenue_actual": 0.399,
+      "revenue_estimate": 0.371,
+      "revenue_unit": "B",
+      "url": "earnings/NBIS-2026Q1.html",
+      "generated_at": "2026-05-14 09:03:00"
     }
   ]
 }

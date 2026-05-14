@@ -1,10 +1,18 @@
 {
-  "updated_at": "2026-05-13 19:06:44",
+  "updated_at": "2026-05-14 09:05:16",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 227.79,
+      "pct_2d": 6.61,
+      "date_range": "2026-05-11 ~ 2026-05-13"
+    }
+  ]
 }

@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-13T19:12:48",
+  "updated_at": "2026-05-14T09:11:19",
   "dailies": [
+    {
+      "slug": "daily_20260514_0903",
+      "date": "2026-05-14",
+      "generated_at": "2026-05-14 09:03",
+      "title": "📈 自选股行情分析 | AI基建财报炸裂 NBIS+15.72%",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260514_0903.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260513_1905",
       "date": "2026-05-13",
