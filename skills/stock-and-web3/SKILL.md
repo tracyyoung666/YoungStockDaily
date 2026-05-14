@@ -384,15 +384,29 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
    - 通过 `web_search` 搜索 "{SYMBOL} Q{N} {YEAR} earnings results" 获取详细数据（EPS/营收/分部表现/指引等）
    - 通过 `westock-data finance` 获取历史季度数据做同比对比
    - 通过 `westock-data rating` + `westock-data consensus` 获取市场预期作为对比基准
-3. **生成 `earnings/SYMBOL-YYYYQN.html`**：参照已有模板（如 `earnings/AMD-2026Q1.html`），必须包含：
+3. **🆕 获取 SEC Filing 原文**：
+   - 运行 `python3 scripts/fetch_sec_filing.py {SYMBOL} {YYYYQN} --download --output-dir {REPO}/earnings-filings --json`
+   - 脚本自动从 SEC EDGAR 查找匹配的 10-Q/10-K（美国公司）或 6-K/20-F（外国公司）
+   - 下载原始 HTM 文件到 `earnings-filings/SYMBOL-YYYYQN-sec-filing.htm`
+   - 将 sec_filing 信息（form/filing_date/sec_url/sec_index_url/local_file）写入 earnings.json 对应条目
+4. **生成 `earnings/SYMBOL-YYYYQN.html`**：参照已有模板（如 `earnings/NBIS-2026Q1.html`），必须包含：
+   - **SEC 原文下载栏**（在 header 后面）：3个按钮（查看SEC原文/Filing目录/下载本地归档）+ 提交日期
    - KPI 速览（营收/EPS/净利润/核心业务指标）
    - 业务分部表（各业务线营收+YoY+亮点）
    - 核心亮点分析（3-5 条）
    - 风险与关注点（3-4 条）
    - 投资建议（短期/中期/风险控制/关键价位）
    - 与市场预期对比表
-4. **更新 `data/earnings.json`**：追加新条目（symbol/name/period/period_label/fiscal_end/report_date/verdict/verdict_label/eps_actual/eps_estimate/revenue_actual/revenue_estimate/revenue_unit/url/generated_at）
-5. **git add + commit**（随日报一起推送即可）
+   - **🆕 📖 财报完整分析板块**（在页面底部）：基于 SEC Filing 原文的深度解读，结构包括：
+     ① SEC Filing 概要（filing类型/日期/内容结构）
+     ② 分部收入深度解析（逐业务线拆解+表格）
+     ③ 利润率与费用结构分析
+     ④ 资产负债表与现金流要点
+     ⑤ 管理层讨论与分析（MD&A）摘要
+     ⑥ 10-Q/10-K 风险因素更新
+     ⑦ 前瞻展望与催化剂
+5. **更新 `data/earnings.json`**：追加新条目（symbol/name/period/period_label/fiscal_end/report_date/verdict/verdict_label/eps_actual/eps_estimate/revenue_actual/revenue_estimate/revenue_unit/url/generated_at/sec_filing）
+6. **git add + commit**（随日报一起推送即可）
 
 ### 推送补充
 
