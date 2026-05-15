@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-15T09:46:41",
+  "updated_at": "2026-05-15T19:10:58",
   "dailies": [
+    {
+      "slug": "daily_20260515_1904",
+      "date": "2026-05-15",
+      "generated_at": "2026-05-15 19:04",
+      "title": "📈 自选股盘前分析 | 2026-05-15 19:04",
+      "summary": "AI算力链持续领涨（NVDA创新高、NBIS财报暴增684%），盘前全线回落注意技术性回调风险。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260515_1904.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260515_0911",
       "date": "2026-05-15",
