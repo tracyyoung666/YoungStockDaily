@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14 19:07:08",
+  "updated_at": "2026-05-15 09:06:10",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,10 +8,45 @@
   },
   "hotspots": [
     {
+      "symbol": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "close": 115.53,
+      "pct_2d": 16.36,
+      "date_range": "2026-05-12 ~ 2026-05-14"
+    },
+    {
       "symbol": "PANW",
       "name": "Palo Alto Networks, Inc.",
-      "close": 227.79,
-      "pct_2d": 5.65,
+      "close": 238.21,
+      "pct_2d": 10.49,
+      "date_range": "2026-05-12 ~ 2026-05-14"
+    },
+    {
+      "symbol": "NET",
+      "name": "Cloudflare, Inc.",
+      "close": 199.81,
+      "pct_2d": 6.97,
+      "date_range": "2026-05-12 ~ 2026-05-14"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia Corporation",
+      "close": 235.74,
+      "pct_2d": 6.78,
+      "date_range": "2026-05-12 ~ 2026-05-14"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 579.95,
+      "pct_2d": 6.18,
+      "date_range": "2026-05-12 ~ 2026-05-14"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 153.7,
+      "pct_2d": 5.15,
       "date_range": "2026-05-12 ~ 2026-05-14"
     }
   ]
