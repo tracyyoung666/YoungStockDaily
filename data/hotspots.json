@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18 09:04:13",
+  "updated_at": "2026-05-18 19:06:16",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,60 +8,25 @@
   },
   "hotspots": [
     {
-      "symbol": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "close": 118.21,
-      "pct_2d": 16.04,
-      "date_range": "2026-05-13 ~ 2026-05-15"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 95.07,
-      "pct_2d": 9.21,
-      "date_range": "2026-05-13 ~ 2026-05-15"
-    },
-    {
       "symbol": "TEAM",
       "name": "Atlassian Corporation",
       "close": 87.46,
-      "pct_2d": 8.48,
-      "date_range": "2026-05-13 ~ 2026-05-15"
+      "pct_2d": 8.16,
+      "date_range": "2026-05-14 ~ 2026-05-18"
     },
     {
       "symbol": "WDAY",
       "name": "Workday, Inc.",
       "close": 125.01,
-      "pct_2d": 7.3,
-      "date_range": "2026-05-13 ~ 2026-05-15"
+      "pct_2d": 5.27,
+      "date_range": "2026-05-14 ~ 2026-05-18"
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 242.83,
-      "pct_2d": 6.6,
-      "date_range": "2026-05-13 ~ 2026-05-15"
-    },
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 161.05,
-      "pct_2d": 5.66,
-      "date_range": "2026-05-13 ~ 2026-05-15"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 594.08,
-      "pct_2d": 5.6,
-      "date_range": "2026-05-13 ~ 2026-05-15"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 100.28,
-      "pct_2d": 5.12,
-      "date_range": "2026-05-13 ~ 2026-05-15"
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 95.07,
+      "pct_2d": 5.05,
+      "date_range": "2026-05-14 ~ 2026-05-18"
     }
   ]
 }
