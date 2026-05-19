@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18 19:06:16",
+  "updated_at": "2026-05-19 09:02:03",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,24 +8,66 @@
   },
   "hotspots": [
     {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 103.42,
+      "pct_2d": 14.28,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 174.69,
+      "pct_2d": 13.66,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
       "symbol": "TEAM",
       "name": "Atlassian Corporation",
-      "close": 87.46,
-      "pct_2d": 8.16,
+      "close": 89.44,
+      "pct_2d": 10.61,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 164.24,
+      "pct_2d": 8.94,
       "date_range": "2026-05-14 ~ 2026-05-18"
     },
     {
       "symbol": "WDAY",
       "name": "Workday, Inc.",
-      "close": 125.01,
-      "pct_2d": 5.27,
+      "close": 128.88,
+      "pct_2d": 8.53,
       "date_range": "2026-05-14 ~ 2026-05-18"
     },
     {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 95.07,
-      "pct_2d": 5.05,
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 255.64,
+      "pct_2d": 7.86,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce, Inc.",
+      "close": 179.48,
+      "pct_2d": 7.1,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 618.83,
+      "pct_2d": 6.7,
+      "date_range": "2026-05-14 ~ 2026-05-18"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 102.39,
+      "pct_2d": 5.1,
       "date_range": "2026-05-14 ~ 2026-05-18"
     }
   ]
