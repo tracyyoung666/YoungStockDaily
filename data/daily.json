@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-19T09:06:53",
+  "updated_at": "2026-05-19T19:09:18",
   "dailies": [
+    {
+      "slug": "daily_20260519_1904",
+      "date": "2026-05-19",
+      "generated_at": "2026-05-19 19:04",
+      "title": "📈 自选股盘前分析 | 2026-05-19 19:04",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260519_1904.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260519_0906",
       "date": "2026-05-19",
