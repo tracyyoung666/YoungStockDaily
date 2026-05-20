@@ -1,32 +1,10 @@
 {
-  "updated_at": "2026-05-20 09:03:38",
+  "updated_at": "2026-05-20 19:03:43",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 175.25,
-      "pct_2d": 8.82,
-      "date_range": "2026-05-15 ~ 2026-05-19"
-    },
-    {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 169.55,
-      "pct_2d": 7.67,
-      "date_range": "2026-05-15 ~ 2026-05-19"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 101.83,
-      "pct_2d": 7.11,
-      "date_range": "2026-05-15 ~ 2026-05-19"
-    }
-  ]
+  "hotspots": []
 }
