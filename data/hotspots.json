@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-19 19:05:47",
+  "updated_at": "2026-05-20 09:03:38",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,17 +8,24 @@
   },
   "hotspots": [
     {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 103.42,
-      "pct_2d": 8.78,
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 175.25,
+      "pct_2d": 8.82,
       "date_range": "2026-05-15 ~ 2026-05-19"
     },
     {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 174.69,
-      "pct_2d": 8.47,
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 169.55,
+      "pct_2d": 7.67,
+      "date_range": "2026-05-15 ~ 2026-05-19"
+    },
+    {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 101.83,
+      "pct_2d": 7.11,
       "date_range": "2026-05-15 ~ 2026-05-19"
     }
   ]
