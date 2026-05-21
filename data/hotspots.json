@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21 09:03:01",
+  "updated_at": "2026-05-21 19:03:08",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,32 +8,25 @@
   },
   "hotspots": [
     {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "close": 118.96,
-      "pct_2d": 9.98,
-      "date_range": "2026-05-18 ~ 2026-05-20"
-    },
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 731.99,
-      "pct_2d": 7.4,
-      "date_range": "2026-05-18 ~ 2026-05-20"
-    },
-    {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "close": 447.58,
-      "pct_2d": 6.32,
-      "date_range": "2026-05-18 ~ 2026-05-20"
+      "pct_2d": 8.1,
+      "date_range": "2026-05-19 ~ 2026-05-21"
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "close": 118.96,
+      "pct_2d": 7.36,
+      "date_range": "2026-05-19 ~ 2026-05-21"
     },
     {
       "symbol": "CRWD",
       "name": "Crowdstrike Holdings, Inc.",
       "close": 650.11,
-      "pct_2d": 5.05,
-      "date_range": "2026-05-18 ~ 2026-05-20"
+      "pct_2d": 5.39,
+      "date_range": "2026-05-19 ~ 2026-05-21"
     }
   ]
 }

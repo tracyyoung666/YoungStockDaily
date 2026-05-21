@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-21T09:07:09",
+  "updated_at": "2026-05-21T19:07:33",
   "dailies": [
+    {
+      "slug": "daily_20260521_1901",
+      "date": "2026-05-21",
+      "generated_at": "2026-05-21 19:01",
+      "title": "📈 自选股盘前分析 | 2026-05-21 19:01",
+      "summary": "半导体板块爆发AMD+8.1%/INTC+7.4%/MU+4.8%，2nm量产+三星罢工催化；NBIS盘前+7.3%反弹；BTC $77.5K横盘",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260521_1901.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260521_0906",
       "date": "2026-05-21",
