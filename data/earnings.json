@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14 09:03:00",
+  "updated_at": "2026-05-22 09:09:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -143,6 +143,30 @@
         "sec_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_6k.htm",
         "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/",
         "local_file": "earnings-filings/NBIS-2026Q1-sec-filing.htm"
+      }
+    },
+    {
+      "symbol": "NVDA",
+      "name": "英伟达 NVIDIA",
+      "period": "2026Q1",
+      "period_label": "FY2027 Q1",
+      "fiscal_end": "2026-04-26",
+      "report_date": "2026-05-20",
+      "verdict": "beat",
+      "verdict_label": "超预期 营收$816亿 +85% YoY 数据中心+92%",
+      "eps_actual": 2.39,
+      "eps_estimate": 1.65,
+      "revenue_actual": 81.6,
+      "revenue_estimate": 76.4,
+      "revenue_unit": "B",
+      "url": "earnings/NVDA-2026Q1.html",
+      "generated_at": "2026-05-22 09:09:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-05-20",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/",
+        "local_file": "earnings-filings/NVDA-2026Q1-sec-filing.htm"
       }
     }
   ]

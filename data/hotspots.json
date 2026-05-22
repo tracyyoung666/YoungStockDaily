@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21 19:03:08",
+  "updated_at": "2026-05-22 09:04:27",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,24 +8,45 @@
   },
   "hotspots": [
     {
+      "symbol": "IBM",
+      "name": "International Business Machines Corporation",
+      "close": 252.97,
+      "pct_2d": 13.78,
+      "date_range": "2026-05-19 ~ 2026-05-21"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "close": 762.1,
+      "pct_2d": 9.07,
+      "date_range": "2026-05-19 ~ 2026-05-21"
+    },
+    {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "close": 447.58,
-      "pct_2d": 8.1,
+      "close": 449.59,
+      "pct_2d": 8.58,
       "date_range": "2026-05-19 ~ 2026-05-21"
     },
     {
       "symbol": "INTC",
       "name": "Intel Corporation",
-      "close": 118.96,
-      "pct_2d": 7.36,
+      "close": 118.5,
+      "pct_2d": 6.95,
+      "date_range": "2026-05-19 ~ 2026-05-21"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 252.92,
+      "pct_2d": 5.33,
       "date_range": "2026-05-19 ~ 2026-05-21"
     },
     {
       "symbol": "CRWD",
       "name": "Crowdstrike Holdings, Inc.",
-      "close": 650.11,
-      "pct_2d": 5.39,
+      "close": 648.23,
+      "pct_2d": 5.08,
       "date_range": "2026-05-19 ~ 2026-05-21"
     }
   ]
