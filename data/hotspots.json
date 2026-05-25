@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22 19:11:30",
+  "updated_at": "2026-05-25 09:02:49",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,8 +10,22 @@
     {
       "symbol": "IBM",
       "name": "International Business Machines Corporation",
-      "close": 252.97,
-      "pct_2d": 12.43,
+      "close": 253.84,
+      "pct_2d": 12.82,
+      "date_range": "2026-05-20 ~ 2026-05-22"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 260.58,
+      "pct_2d": 5.64,
+      "date_range": "2026-05-20 ~ 2026-05-22"
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "close": 120.41,
+      "pct_2d": 5.3,
       "date_range": "2026-05-20 ~ 2026-05-22"
     }
   ]
