@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26 09:08:44",
+  "updated_at": "2026-05-26 19:12:23",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,25 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "IBM",
-      "name": "International Business Machines Corporation",
-      "close": 253.84,
-      "pct_2d": 12.82,
-      "date_range": "2026-05-20 ~ 2026-05-22"
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 182.37,
+      "pct_2d": 6.64,
+      "date_range": "2026-05-21 ~ 2026-05-26"
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 260.58,
-      "pct_2d": 5.64,
-      "date_range": "2026-05-20 ~ 2026-05-22"
-    },
-    {
-      "symbol": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "close": 120.41,
-      "pct_2d": 5.3,
-      "date_range": "2026-05-20 ~ 2026-05-22"
+      "symbol": "WDAY",
+      "name": "Workday, Inc.",
+      "close": 128.14,
+      "pct_2d": 5.16,
+      "date_range": "2026-05-21 ~ 2026-05-26"
     }
   ]
 }

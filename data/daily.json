@@ -1,6 +1,59 @@
 {
-  "updated_at": "2026-05-26T09:13:11",
+  "updated_at": "2026-05-26T19:16:59",
   "dailies": [
+    {
+      "slug": "daily_20260526_1910",
+      "date": "2026-05-26",
+      "generated_at": "2026-05-26T19:10:00+08:00",
+      "title": "自选股盘前分析 | 2026-05-26 19:10",
+      "summary": {
+        "abnormal_signals": [
+          "MU 盘前+5.99%",
+          "XPEV 盘前+5.97%"
+        ],
+        "suggestions": [
+          "MU 盘前大涨注意开盘回落风险",
+          "XPEV GX爆款催化短期利好"
+        ],
+        "sector": {
+          "新能源车": "+0.84%",
+          "半导体": "+0.44%",
+          "科技巨头": "-1.07%",
+          "AI基建": "-2.15%",
+          "Crypto": "-2.27%"
+        },
+        "hotspots": [
+          {
+            "symbol": "ZS",
+            "name": "Zscaler",
+            "pct_2d": "+6.64%",
+            "reason": "AI安全需求+Q3财报预期上调"
+          },
+          {
+            "symbol": "WDAY",
+            "name": "Workday",
+            "pct_2d": "+5.16%",
+            "reason": "净利增226%+AI业务放量"
+          }
+        ]
+      },
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260526_1910.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260526_0912",
       "date": "2026-05-26",
