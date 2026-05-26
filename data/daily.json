@@ -1,6 +1,62 @@
 {
-  "updated_at": "2026-05-25T19:13:46",
+  "updated_at": "2026-05-26T09:13:11",
   "dailies": [
+    {
+      "slug": "daily_20260526_0912",
+      "date": "2026-05-26",
+      "generated_at": "2026-05-26 09:12",
+      "title": "📈 自选股行情分析 | 2026-05-26 09:12",
+      "summary": {
+        "abnormal_signals": [
+          "AMD 日涨+5.13% 接近52W高点",
+          "XPEV 量比2.51放量下跌"
+        ],
+        "suggestions": [
+          "AMD RSI偏高 设止盈$480-490",
+          "XPEV 放量下跌警惕破52W低"
+        ],
+        "sector_analysis": {
+          "半导体": "+1.88%",
+          "新能源车": "+0.83%",
+          "科技巨头": "+0.35%",
+          "AI基建": "-0.62%",
+          "Crypto": "-1.24%"
+        },
+        "hotspots": [
+          {
+            "symbol": "IBM",
+            "pct_2d": 12.82,
+            "reason": "美国政府投资20亿美元量子计算项目"
+          },
+          {
+            "symbol": "PANW",
+            "pct_2d": 5.64,
+            "reason": "创历史新高 净利增61.62%"
+          },
+          {
+            "symbol": "CSCO",
+            "pct_2d": 5.3,
+            "reason": "AI订单上调至90亿美元 创新高"
+          }
+        ]
+      },
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260526_0912.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260525_1906",
       "date": "2026-05-25",
