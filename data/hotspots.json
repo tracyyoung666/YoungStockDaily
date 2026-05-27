@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27 09:02:01",
+  "updated_at": "2026-05-27 19:08:17",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,29 +11,15 @@
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
       "close": 895.88,
-      "pct_2d": 17.55,
-      "date_range": "2026-05-21 ~ 2026-05-26"
+      "pct_2d": 19.29,
+      "date_range": "2026-05-22 ~ 2026-05-27"
     },
     {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "close": 503.89,
-      "pct_2d": 12.08,
-      "date_range": "2026-05-21 ~ 2026-05-26"
-    },
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 184.6,
-      "pct_2d": 7.95,
-      "date_range": "2026-05-21 ~ 2026-05-26"
-    },
-    {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 177.6,
-      "pct_2d": 7.29,
-      "date_range": "2026-05-21 ~ 2026-05-26"
+      "pct_2d": 7.78,
+      "date_range": "2026-05-22 ~ 2026-05-27"
     }
   ]
 }

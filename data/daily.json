@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-27T09:07:33",
+  "updated_at": "2026-05-27T19:14:44",
   "dailies": [
+    {
+      "slug": "daily_20260527_1906",
+      "date": "2026-05-27",
+      "generated_at": "2026-05-27 19:06",
+      "title": "📈 自选股盘前分析 | 半导体板块暴涨 MU+19% | 2026-05-27",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260527_1906.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260527_0907",
       "date": "2026-05-27",
