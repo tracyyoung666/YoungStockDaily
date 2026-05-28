@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27 19:08:17",
+  "updated_at": "2026-05-28 09:07:50",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,15 +10,15 @@
     {
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
-      "close": 895.88,
-      "pct_2d": 19.29,
+      "close": 928.41,
+      "pct_2d": 23.62,
       "date_range": "2026-05-22 ~ 2026-05-27"
     },
     {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "close": 503.89,
-      "pct_2d": 7.78,
+      "close": 495.54,
+      "pct_2d": 6.0,
       "date_range": "2026-05-22 ~ 2026-05-27"
     }
   ]
