@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22 09:09:00",
+  "updated_at": "2026-05-28 19:03:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -168,6 +168,23 @@
         "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/",
         "local_file": "earnings-filings/NVDA-2026Q1-sec-filing.htm"
       }
+    },
+    {
+      "symbol": "XPEV",
+      "name": "小鹏集团 XPeng",
+      "period": "2026Q1",
+      "period_label": "2026 Q1",
+      "fiscal_end": "2026-03-31",
+      "report_date": "2026-05-28",
+      "verdict": "mixed",
+      "verdict_label": "营收略低预期 亏损扩大 交付指引超预期",
+      "eps_actual": -1.88,
+      "eps_estimate": -1.2,
+      "revenue_actual": 130.3,
+      "revenue_estimate": 133.0,
+      "revenue_unit": "亿元",
+      "url": "earnings/XPEV-2026Q1.html",
+      "generated_at": "2026-05-28 19:03:00"
     }
   ]
 }

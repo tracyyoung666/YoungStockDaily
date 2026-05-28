@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-05-28T09:11:44",
+  "updated_at": "2026-05-28T19:10:31",
   "dailies": [
+    {
+      "slug": "daily_20260528_1903",
+      "date": "2026-05-28",
+      "generated_at": "2026-05-28 19:03",
+      "title": "📈 自选股盘前分析 | 2026-05-28 19:03",
+      "summary": "NBIS财报暴增盘前+9%，MU获瑞穗上调目标$1150，XPEV Q1财报Q2指引超预期。BTC跌至$73K拖累Crypto板块。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260528_1903.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260528_0911",
       "date": "2026-05-28",
