@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30",
+  "updated_at": "2026-05-29",
   "categories": {
     "default": {
       "description": "默认自选（美股半导体/AI/Crypto相关）",
@@ -118,6 +118,50 @@
             "新能源车",
             "智驾",
             "机器人"
+          ]
+        },
+        {
+          "symbol": "MRVL",
+          "market": "US",
+          "name": "Marvell 迈威尔科技",
+          "added_at": "2026-05-29",
+          "tags": [
+            "半导体",
+            "AI",
+            "数据中心"
+          ]
+        },
+        {
+          "symbol": "NOK",
+          "market": "US",
+          "name": "Nokia 诺基亚",
+          "added_at": "2026-05-29",
+          "tags": [
+            "通信",
+            "5G",
+            "网络设备"
+          ]
+        },
+        {
+          "symbol": "COHR",
+          "market": "US",
+          "name": "Coherent 相干公司",
+          "added_at": "2026-05-29",
+          "tags": [
+            "光通信",
+            "AI基建",
+            "半导体"
+          ]
+        },
+        {
+          "symbol": "QUBT",
+          "market": "US",
+          "name": "Quantum Computing 量子计算",
+          "added_at": "2026-05-29",
+          "tags": [
+            "量子计算",
+            "AI",
+            "前沿科技"
           ]
         }
       ]
