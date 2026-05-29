@@ -1,10 +1,53 @@
 {
-  "updated_at": "2026-05-28 19:04:16",
+  "updated_at": "2026-05-29 09:08:39",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 239.2,
+      "pct_2d": 34.68,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    },
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 93.29,
+      "pct_2d": 9.86,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 115.03,
+      "pct_2d": 9.66,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    },
+    {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 108.73,
+      "pct_2d": 8.82,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "close": 203.7,
+      "pct_2d": 5.51,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    },
+    {
+      "symbol": "IBM",
+      "name": "International Business Machines Corporation",
+      "close": 264.22,
+      "pct_2d": 5.4,
+      "date_range": "2026-05-26 ~ 2026-05-28"
+    }
+  ]
 }
