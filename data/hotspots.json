@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 09:08:39",
+  "updated_at": "2026-05-29 19:10:07",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,43 +11,43 @@
       "symbol": "SNOW",
       "name": "Snowflake Inc.",
       "close": 239.2,
-      "pct_2d": 34.68,
-      "date_range": "2026-05-26 ~ 2026-05-28"
+      "pct_2d": 36.48,
+      "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 93.29,
-      "pct_2d": 9.86,
-      "date_range": "2026-05-26 ~ 2026-05-28"
+      "symbol": "NET",
+      "name": "Cloudflare, Inc.",
+      "close": 228.11,
+      "pct_2d": 9.03,
+      "date_range": "2026-05-27 ~ 2026-05-29"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 143.34,
+      "pct_2d": 8.17,
+      "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
       "symbol": "SHOP",
       "name": "Shopify Inc.",
       "close": 115.03,
-      "pct_2d": 9.66,
-      "date_range": "2026-05-26 ~ 2026-05-28"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 108.73,
-      "pct_2d": 8.82,
-      "date_range": "2026-05-26 ~ 2026-05-28"
+      "pct_2d": 7.91,
+      "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
       "symbol": "ORCL",
       "name": "Oracle Corporation",
       "close": 203.7,
-      "pct_2d": 5.51,
-      "date_range": "2026-05-26 ~ 2026-05-28"
+      "pct_2d": 6.67,
+      "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
-      "symbol": "IBM",
-      "name": "International Business Machines Corporation",
-      "close": 264.22,
-      "pct_2d": 5.4,
-      "date_range": "2026-05-26 ~ 2026-05-28"
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 108.73,
+      "pct_2d": 6.47,
+      "date_range": "2026-05-27 ~ 2026-05-29"
     }
   ]
 }
