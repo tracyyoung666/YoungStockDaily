@@ -1,0 +1,102 @@
+{
+  "slug": "daily_20260601_1914",
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01 19:14",
+  "title": "📈 自选股盘前分析 | 2026-06-01 19:14",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/daily_20260601_1914.png",
+  "stock_body_html": "<div class=\"stock-report\">\n\n<h3>📊 异常信号总览表</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>代码</th><th>名称</th><th>收盘价</th><th>今日涨跌</th>\n  <th>盘前价</th><th>盘前涨跌%</th><th>距52W高</th><th>信号</th>\n</tr></thead>\n<tbody>\n<tr>\n  <td><strong>MU</strong></td><td>美光科技</td><td>$971.00</td>\n  <td style=\"color:#dc2626\">+5.14%</td>\n  <td>$1,018.40</td><td style=\"color:#dc2626\">+4.88%</td>\n  <td>-1.02%</td><td style=\"color:#dc2626\">⚠️ 日涨>4% + 盘前>4%</td>\n</tr>\n<tr>\n  <td><strong>AMD</strong></td><td>超威半导体</td><td>$516.10</td>\n  <td style=\"color:#16a34a\">-0.38%</td>\n  <td>$493.98</td><td style=\"color:#16a34a\">-4.29%</td>\n  <td>-2.11%</td><td style=\"color:#16a34a\">⚠️ 盘前跌>4%</td>\n</tr>\n<tr>\n  <td><strong>INTC</strong></td><td>英特尔</td><td>$114.68</td>\n  <td style=\"color:#16a34a\">-5.14%</td>\n  <td>$107.25</td><td style=\"color:#16a34a\">-6.48%</td>\n  <td>-13.61%</td><td style=\"color:#16a34a\">⚠️ 日跌>4% + 盘前跌>4%</td>\n</tr>\n<tr>\n  <td><strong>GOOG</strong></td><td>谷歌-C</td><td>$376.43</td>\n  <td style=\"color:#16a34a\">-2.51%</td>\n  <td>$373.30</td><td style=\"color:#16a34a\">-0.83%</td>\n  <td>-6.93%</td><td>⚠️ 量比>2(2.86)</td>\n</tr>\n<tr>\n  <td><strong>NVDA</strong></td><td>英伟达</td><td>$211.14</td>\n  <td style=\"color:#16a34a\">-1.45%</td>\n  <td>$215.67</td><td style=\"color:#dc2626\">+2.14%</td>\n  <td>-10.74%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>NBIS</strong></td><td>Nebius Group</td><td>$231.09</td>\n  <td style=\"color:#dc2626\">+2.10%</td>\n  <td>$247.40</td><td style=\"color:#dc2626\">+7.06%</td>\n  <td>-1.13%</td><td style=\"color:#dc2626\">⚠️ 盘前>4%</td>\n</tr>\n<tr>\n  <td><strong>CRWV</strong></td><td>CoreWeave</td><td>$109.53</td>\n  <td style=\"color:#dc2626\">+2.50%</td>\n  <td>$115.31</td><td style=\"color:#dc2626\">+5.27%</td>\n  <td>-41.43%</td><td style=\"color:#dc2626\">⚠️ 盘前>4%</td>\n</tr>\n<tr>\n  <td><strong>CRCL</strong></td><td>Circle</td><td>$113.00</td>\n  <td style=\"color:#dc2626\">+4.40%</td>\n  <td>$109.60</td><td style=\"color:#16a34a\">-3.01%</td>\n  <td>-62.21%</td><td style=\"color:#dc2626\">⚠️ 日涨>4% + 量比>2</td>\n</tr>\n<tr>\n  <td><strong>MSTR</strong></td><td>微策略</td><td>$159.09</td>\n  <td style=\"color:#dc2626\">+4.91%</td>\n  <td>$155.65</td><td style=\"color:#16a34a\">-2.16%</td>\n  <td>-65.20%</td><td style=\"color:#dc2626\">⚠️ 日涨>4%</td>\n</tr>\n<tr>\n  <td><strong>TSLA</strong></td><td>特斯拉</td><td>$435.79</td>\n  <td style=\"color:#16a34a\">-1.99%</td>\n  <td>$429.81</td><td style=\"color:#16a34a\">-1.37%</td>\n  <td>-12.64%</td><td>正常</td>\n</tr>\n<tr>\n  <td><strong>XPEV</strong></td><td>小鹏汽车</td><td>$16.45</td>\n  <td style=\"color:#dc2626\">+0.06%</td>\n  <td>$17.16</td><td style=\"color:#dc2626\">+4.32%</td>\n  <td>-41.75%</td><td style=\"color:#dc2626\">⚠️ 盘前>4%</td>\n</tr>\n<tr>\n  <td><strong>MRVL</strong></td><td>Marvell迈威尔</td><td>--</td>\n  <td>--</td>\n  <td>--</td><td>--</td>\n  <td>--</td><td>数据暂缺</td>\n</tr>\n<tr>\n  <td><strong>NOK</strong></td><td>诺基亚</td><td>--</td>\n  <td>--</td>\n  <td>--</td><td>--</td>\n  <td>--</td><td>数据暂缺</td>\n</tr>\n<tr>\n  <td><strong>COHR</strong></td><td>相干公司</td><td>--</td>\n  <td>--</td>\n  <td>--</td><td>--</td>\n  <td>--</td><td>数据暂缺</td>\n</tr>\n<tr>\n  <td><strong>QUBT</strong></td><td>量子计算</td><td>--</td>\n  <td>--</td>\n  <td>--</td><td>--</td>\n  <td>--</td><td>数据暂缺</td>\n</tr>\n</tbody>\n</table>\n\n<h3>⚡ 异常信号详解</h3>\n<ul>\n  <li><strong>MU：</strong>日涨+5.14% + 盘前续涨+4.88%突破$1000，机构大幅上调全球存储市场规模预期至$1.28万亿（2027），英伟达超级芯片带动HBM需求预期。RSI6=84.16接近超买区间。</li>\n  <li><strong>INTC：</strong>日跌-5.14% + 盘前续跌-6.48%至$107.25，英伟达发布Vera CPU+PC芯片正面进攻Intel地盘，市场担忧PC/服务器份额被蚕食。量比1.98接近异常放量。</li>\n  <li><strong>AMD：</strong>盘前跌-4.29%至$494，同样受英伟达入局PC芯片冲击，但巴克莱上调目标价至$665，多空分歧加大。</li>\n  <li><strong>NBIS：</strong>盘前涨+7.06%至$247.40逼近52W高，算力涨价驱动营收增长，AI基建持续受追捧。</li>\n  <li><strong>CRWV：</strong>盘前涨+5.27%至$115.31，智能体AI平台上新+训练成本降40%消息刺激。</li>\n  <li><strong>CRCL：</strong>日涨+4.40%+量比2.18放量，Nium合作打通USDC跨境支付+段永平首次建仓Circle。</li>\n  <li><strong>MSTR：</strong>日涨+4.91%，设8.71亿美元储备保障优先股股息，财务优化缓解杠杆担忧。</li>\n  <li><strong>GOOG：</strong>量比2.86异常放量（正常~1.0），日跌-2.51%，市场对AI竞争格局担忧加剧。</li>\n  <li><strong>XPEV：</strong>盘前涨+4.32%至$17.16，5月交付量环比增长4%。</li>\n</ul>\n\n<h3>💡 建议动作</h3>\n<ul>\n  <li><strong>P0 MU：</strong>RSI6=84.16逼近超买（>85），盘前突破$1000心理关口，短线获利盘压力大。持有者可部分止盈，观察开盘后能否站稳$1000。未持有者不宜追高。</li>\n  <li><strong>P1 INTC：</strong>盘前跌至$107（富国上调目标价$110），若跌破$105支撑可考虑补仓博反弹，但需注意英伟达入局PC芯片是长期利空。</li>\n  <li><strong>P2 NBIS/CRWV：</strong>AI基建双雄盘前均涨>5%，若开盘回落至前日收盘价附近可考虑加仓。</li>\n</ul>\n\n<h3>📝 逐股详解</h3>\n\n<h4>1️⃣ MU · 美光科技 — 评分 8.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$971.00(+5.14%)，盘前$1,018.40(+4.88%)，距52W高仅-1.02%</li>\n  <li><strong>技术：</strong>RSI6=84.16（逼近超买85阈值），KDJ_K=89.70（高位钝化），连续放量上攻</li>\n  <li><strong>新闻：</strong>①机构大幅上调全球存储市场规模至2027年$1.28万亿(+44% YoY) ②英伟达超级芯片发布带动HBM需求 ③三星车载存储超越美光居首</li>\n  <li><strong>评级：</strong>多家机构看好存储周期，HBM供不应求预期强化</li>\n  <li><strong>事件：</strong>暂无近期财报/除权日</li>\n  <li><strong>建议：</strong>短线RSI接近超买，$1000上方获利盘压力大。中线AI算力扩张→HBM需求逻辑不变，回调至$950-960为较好加仓位。</li>\n</ul>\n\n<h4>2️⃣ AMD · 超威半导体 — 评分 6.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$516.10(-0.38%)，盘前$493.98(-4.29%)，距52W高-2.11%</li>\n  <li><strong>技术：</strong>RSI6=79.0（偏高但未超买），KDJ_K=89.03，盘前急跌破坏短线形态</li>\n  <li><strong>新闻：</strong>①瑞穗+巴克莱上调目标价至$665 ②英伟达Vera CPU进入AMD传统地盘（x86 PC/服务器）</li>\n  <li><strong>评级：</strong>巴克莱目标$665(+34%空间)，但英伟达竞争压力为新变量</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>盘前回调受英伟达入局冲击，但多家券商逆势上调目标价形成多空对峙。若开盘跌至$490支撑企稳可短线博弈，中线等待AI数据中心订单确认。</li>\n</ul>\n\n<h4>3️⃣ INTC · 英特尔 — 评分 4.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$114.68(-5.14%)，盘前$107.25(-6.48%)，距52W高-13.61%</li>\n  <li><strong>技术：</strong>RSI6=43.79（中性偏弱），KDJ_K=61.27，量比1.98接近异常放量</li>\n  <li><strong>新闻：</strong>①英伟达发布Vera CPU+PC芯片正面挑战Intel ②富国上调目标$110 ③发布至强6+/OpenVINO物理AI框架</li>\n  <li><strong>评级：</strong>富国目标$110（当前已跌破），巴克莱目标$100</li>\n  <li><strong>事件：</strong>暂无近期财报</li>\n  <li><strong>建议：</strong>英伟达全面入局x86+PC芯片是重大利空，短期恐慌性抛售可能继续。$105-107为关键支撑区，跌破则看$95-100。不建议抄底，等待企稳信号。</li>\n</ul>\n\n<h4>4️⃣ GOOG · 谷歌 Alphabet C — 评分 6.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$376.43(-2.51%)，盘前$373.30(-0.83%)，距52W高-6.93%</li>\n  <li><strong>技术：</strong>RSI6=33.17（偏空），KDJ_K=17.06（超卖区域！），量比2.86异常放量</li>\n  <li><strong>新闻：</strong>①欧陆通与Google达成GPU电源合作 ②派杰上调目标$445</li>\n  <li><strong>评级：</strong>派杰目标$445(+18%空间)</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>KDJ_K=17进入超卖区域，量比2.86放量下跌后短线可能迎来技术反弹。$370为支撑位，若企稳可轻仓博弹至$385。</li>\n</ul>\n\n<h4>5️⃣ NVDA · 英伟达 — 评分 7.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$211.14(-1.45%)，盘前$215.67(+2.14%)，距52W高-10.74%</li>\n  <li><strong>技术：</strong>RSI6=34.99（偏弱），KDJ_K=16.68（超卖区域！），但盘前反弹</li>\n  <li><strong>新闻：</strong>①发布Vera CPU进军PC芯片 ②助力Uber&Autobrains Robotaxi ③高通盘前跌8.8%受其冲击</li>\n  <li><strong>评级：</strong>扩展至PC/CPU领域打开新增长空间</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>虽然短线超卖，但发布CPU芯片是战略级利好（TAM扩大），盘前已企稳反弹。$210-212为支撑，回调不破可加仓。</li>\n</ul>\n\n<h4>6️⃣ NBIS · Nebius Group — 评分 8.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$231.09(+2.10%)，盘前$247.40(+7.06%)，距52W高仅-1.13%</li>\n  <li><strong>技术：</strong>RSI6=71.29（偏强），KDJ_K=75.63，盘前大涨逼近历史新高</li>\n  <li><strong>新闻：</strong>算力涨价驱动营收增长，AI基建景气度持续</li>\n  <li><strong>评级：</strong>暂无最新评级</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>盘前+7%逼近52W新高$233.73（盘前已突破），动能极强。持有者继续持有，追高者注意$240上方获利盘。</li>\n</ul>\n\n<h4>7️⃣ CRWV · CoreWeave — 评分 7.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$109.53(+2.50%)，盘前$115.31(+5.27%)，距52W高-41.43%</li>\n  <li><strong>技术：</strong>RSI6=56.11（中性），KDJ_K=66.60，反弹趋势形成中</li>\n  <li><strong>新闻：</strong>智能体AI平台上新，称可将训练成本降低40%</li>\n  <li><strong>评级：</strong>暂无</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>距52W高仍有-41%空间，处于反弹修复阶段。$110-115为短线阻力，突破可看$120。AI基建逻辑支撑中线。</li>\n</ul>\n\n<h4>8️⃣ CRCL · Circle — 评分 7.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$113.00(+4.40%)，盘前$109.60(-3.01%)，距52W高-62.21%</li>\n  <li><strong>技术：</strong>RSI6=54.53（中性），KDJ_K=50.93，量比2.18放量</li>\n  <li><strong>新闻：</strong>①Nium合作打通USDC跨境支付 ②段永平首次建仓Circle ③美联储官员表态稳定币扩大美元影响力</li>\n  <li><strong>评级：</strong>暂无</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>段永平建仓+稳定币政策利好叠加，但盘前回落-3%显示获利盘活跃。$105-108为支撑区，中线看好稳定币赛道龙头地位。</li>\n</ul>\n\n<h4>9️⃣ MSTR · 微策略 — 评分 6.0</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$159.09(+4.91%)，盘前$155.65(-2.16%)，距52W高-65.20%</li>\n  <li><strong>技术：</strong>RSI6=41.58（偏弱），KDJ_K=37.71，短线反弹力度有限</li>\n  <li><strong>新闻：</strong>①设8.71亿美元储备保障优先股股息 ②财务优化缓解杠杆担忧</li>\n  <li><strong>评级：</strong>暂无</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>日涨后盘前回落，BTC当前$73,084(-1.18%)偏弱压制MSTR。关注BTC能否守住$72,000，若破位则MSTR可能继续下探$148-150。</li>\n</ul>\n\n<h4>🔟 TSLA · 特斯拉 — 评分 6.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$435.79(-1.99%)，盘前$429.81(-1.37%)，距52W高-12.64%</li>\n  <li><strong>技术：</strong>RSI6=60.19（中性偏强），KDJ_K=77.40</li>\n  <li><strong>新闻：</strong>①西班牙5月注册量同比+112.8% ②多名中国车主起诉FSD不能用</li>\n  <li><strong>评级：</strong>暂无最新</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>欧洲销量恢复是正面信号，但中国FSD诉讼为负面。$425-430为支撑，$450为阻力。维持观望，等待Robotaxi进展催化。</li>\n</ul>\n\n<h4>1️⃣1️⃣ XPEV · 小鹏汽车 — 评分 6.5</h4>\n<ul>\n  <li><strong>行情：</strong>收盘$16.45(+0.06%)，盘前$17.16(+4.32%)，距52W高-41.75%</li>\n  <li><strong>技术：</strong>RSI6=65.08（偏强），KDJ_K=68.29</li>\n  <li><strong>新闻：</strong>①GX降维定价分析 ②5月交付量环比增长4%</li>\n  <li><strong>评级：</strong>暂无</li>\n  <li><strong>事件：</strong>暂无</li>\n  <li><strong>建议：</strong>交付量持续增长+GX新车上市，盘前+4%显示市场认可。$17上方若站稳可看$18-19，$15.5为止损位。</li>\n</ul>\n\n<h3>🏷️ 板块关联分析</h3>\n<ul>\n  <li><strong>Crypto：</strong>+4.66%（CRCL +4.40%, MSTR +4.91%）— 段永平建仓Circle+稳定币政策利好+MicroStrategy财务优化，板块领涨</li>\n  <li><strong>AI基建：</strong>+2.30%（NBIS +2.10%, CRWV +2.50%）— 算力涨价+智能体AI平台创新，盘前涨势更强（NBIS +7%, CRWV +5%）</li>\n  <li><strong>半导体：</strong>-0.46%（MU +5.14%, AMD -0.38%, INTC -5.14%, NVDA -1.45%）— 分化严重：存储(MU)受益vs PC芯片(INTC/AMD)受英伟达入局冲击</li>\n  <li><strong>新能源车：</strong>-0.96%（TSLA -1.99%, XPEV +0.06%）— 整体偏弱，小鹏盘前交付数据提振</li>\n  <li><strong>科技巨头：</strong>-2.51%（GOOG -2.51%）— 谷歌超卖放量，AI竞争格局担忧</li>\n</ul>\n\n<h3>🔥 市场近期热点（全市场2日涨幅Top）</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>排名</th><th>代码</th><th>名称</th><th>收盘价</th><th>2日涨幅</th><th>热点原因</th>\n</tr></thead>\n<tbody>\n<tr>\n  <td>1</td><td><strong>TEAM</strong></td><td>Atlassian</td><td>$107.61</td>\n  <td style=\"color:#dc2626\">+15.35%</td><td>营收增长31.71%+SaaS板块共振</td>\n</tr>\n<tr>\n  <td>2</td><td><strong>NOW</strong></td><td>ServiceNow</td><td>$124.37</td>\n  <td style=\"color:#dc2626\">+14.38%</td><td>AI驱动企业自动化需求爆发</td>\n</tr>\n<tr>\n  <td>3</td><td><strong>IBM</strong></td><td>IBM</td><td>$297.80</td>\n  <td style=\"color:#dc2626\">+12.71%</td><td>百亿美元量子计算投资计划+多家投行上调目标价</td>\n</tr>\n<tr>\n  <td>4</td><td><strong>WDAY</strong></td><td>Workday</td><td>$146.19</td>\n  <td style=\"color:#dc2626\">+12.45%</td><td>AI企业软件板块共振+业绩预期上修</td>\n</tr>\n<tr>\n  <td>5</td><td><strong>ORCL</strong></td><td>Oracle</td><td>$225.78</td>\n  <td style=\"color:#dc2626\">+10.84%</td><td>云数据库AI化+企业SaaS需求增长</td>\n</tr>\n<tr>\n  <td>6</td><td><strong>DDOG</strong></td><td>Datadog</td><td>$247.35</td>\n  <td style=\"color:#dc2626\">+9.82%</td><td>AI可观测性需求爆发+SaaS板块联动</td>\n</tr>\n<tr>\n  <td>7</td><td><strong>PANW</strong></td><td>Palo Alto Networks</td><td>$281.69</td>\n  <td style=\"color:#dc2626\">+9.28%</td><td>AI安全需求升级+网络安全板块走强</td>\n</tr>\n<tr>\n  <td>8</td><td><strong>PLTR</strong></td><td>Palantir</td><td>$156.54</td>\n  <td style=\"color:#dc2626\">+9.21%</td><td>AI数据分析平台政府+商业订单双增</td>\n</tr>\n<tr>\n  <td>9</td><td><strong>CRWD</strong></td><td>CrowdStrike</td><td>$731.00</td>\n  <td style=\"color:#dc2626\">+8.94%</td><td>AI驱动端点安全+企业安全支出增加</td>\n</tr>\n<tr>\n  <td>10</td><td><strong>CRM</strong></td><td>Salesforce</td><td>$191.10</td>\n  <td style=\"color:#dc2626\">+8.47%</td><td>Agentforce AI智能体产品商业化加速</td>\n</tr>\n</tbody>\n</table>\n\n<h3>💡 一句话结论</h3>\n<p>英伟达发布Vera CPU全面入局PC/服务器芯片引发半导体分化（存储强/PC弱），SaaS+AI软件板块集体暴涨（TEAM+15%领涨），Crypto受稳定币政策利好走强。盘前关注：MU能否站稳$1000、INTC支撑$105、NBIS冲击新高。</p>\n\n</div>",
+  "web3_body_html": "<div class=\"web3-report\">\n\n<h3>📊 市场概览</h3>\n<table class=\"stock-table\">\n<thead><tr>\n  <th>指标</th><th>数值</th><th>变动</th>\n</tr></thead>\n<tbody>\n<tr><td><strong>BTC</strong></td><td>$73,084</td><td style=\"color:#16a34a\">-1.18%</td></tr>\n<tr><td><strong>ETH</strong></td><td>$1,986</td><td style=\"color:#16a34a\">-2.05%</td></tr>\n<tr><td><strong>恐惧&贪婪指数</strong></td><td>34 / 100</td><td>恐慌</td></tr>\n</tbody>\n</table>\n<p><strong>市场解读：</strong>市场情绪恐慌（指数34），BTC续跌-1.2%，市场缺乏承接，观望为主等待企稳信号。</p>\n\n<h3>📰 宏观市场分析</h3>\n\n<h4>🔥 主线1：稳定币成政策工具</h4>\n<p><strong>影响等级：</strong>High | <strong>涉及领域：</strong>稳定币 / 宏观政策</p>\n<p><strong>核心事件：</strong>美联储理事Waller公开表示稳定币将扩大美国货币政策影响力，ECB官员则警告其可能巩固美元霸权。央行分歧显示稳定币已从市场创新升级为宏观政策工具。</p>\n<ul>\n  <li><strong>短期：</strong>稳定币监管预期升温</li>\n  <li><strong>中期：</strong>美元稳定币优势强化</li>\n</ul>\n<p><em>相关来源：Bloomberg、Reuters、Cointelegraph</em></p>\n\n<h4>🔥 主线2：ETH失守2000美元</h4>\n<p><strong>影响等级：</strong>High | <strong>涉及领域：</strong>公链 / 市场情绪</p>\n<p><strong>核心事件：</strong>ETH跌破2000美元关键位，卖压主导市场，多家机构指出可能测试更低支撑，但同时出现矿企与部分鲸鱼增持，市场分歧加剧。</p>\n<ul>\n  <li><strong>短期：</strong>波动放大，情绪偏空</li>\n  <li><strong>中期：</strong>基本面支撑或延后反弹</li>\n</ul>\n<p><em>相关来源：Cryptonews、Yahoo Finance</em></p>\n\n<h4>🔥 主线3：合规永续加速落地</h4>\n<p><strong>影响等级：</strong>Medium | <strong>涉及领域：</strong>衍生品 / 监管</p>\n<p><strong>核心事件：</strong>Kraken宣布将在美国推出CFTC合规的加密永续合约，Coinbase亦进入同一赛道，标志美监管框架下衍生品竞争正式开启。</p>\n<ul>\n  <li><strong>短期：</strong>交易所竞争加剧</li>\n  <li><strong>中期：</strong>合规资金持续入场</li>\n</ul>\n<p><em>相关来源：Cointelegraph、MEXC</em></p>\n\n<h3>💰 资金流向追踪</h3>\n<h4>主要流入</h4>\n<table class=\"stock-table\">\n<thead><tr><th>方向</th><th>金额</th><th>解读</th></tr></thead>\n<tbody>\n<tr><td>Bit Digital → ETH</td><td>暂无明确数据</td><td>矿企逆势增持</td></tr>\n<tr><td>机构资金 → UNI/INJ</td><td>暂无明确数据</td><td>布局基础设施</td></tr>\n<tr><td>多头鲸鱼 → HYPE</td><td>暂无明确数据</td><td>高风险偏好</td></tr>\n</tbody>\n</table>\n\n<h4>主要流出</h4>\n<table class=\"stock-table\">\n<thead><tr><th>方向</th><th>金额</th><th>解读</th></tr></thead>\n<tbody>\n<tr><td>Multicoin → AAVE</td><td>2670万美元</td><td>DeFi仓位收缩</td></tr>\n<tr><td>高杠杆空头 → HYPE</td><td>暂无明确数据</td><td>逼空风险显现</td></tr>\n<tr><td>散户 → ETH</td><td>暂无明确数据</td><td>情绪性止损</td></tr>\n</tbody>\n</table>\n\n<h3>📡 全球 KOL 舆情</h3>\n<p><strong>综合情绪指数：6.1 / 10（偏乐观）</strong></p>\n<table class=\"stock-table\">\n<thead><tr><th>维度</th><th>中文圈</th><th>英文圈</th><th>差异解读</th></tr></thead>\n<tbody>\n<tr><td>市场情绪</td><td>分化偏乐观 5.8/10</td><td>明显偏多 6.6/10</td><td>英文圈趋势信心更强</td></tr>\n<tr><td>主要担忧</td><td>监管、出金、被盗</td><td>回撤、情绪反转</td><td>中文更偏现实风险</td></tr>\n<tr><td>关注焦点</td><td>美股接入、BNB、RWA</td><td>BTC、HYPE、ETF</td><td>中文偏叙事，英文偏趋势</td></tr>\n<tr><td>操作风格</td><td>短线+情绪博弈</td><td>趋势跟随+杠杆</td><td>英文更适合顺势配置</td></tr>\n</tbody>\n</table>\n\n<h4>最大分歧：Solana 生态是否已经走到尽头</h4>\n<ul>\n  <li><strong>中文圈：</strong>SOL生态仍有交易与叙事机会，链切换频繁但资金逐利</li>\n  <li><strong>英文圈：</strong>Solana被黑客与meme消耗殆尽，信任难以修复</li>\n</ul>\n\n<h4>高度共识</h4>\n<ol>\n  <li><strong>BTC仍是市场锚</strong> — 无论情绪如何，BTC叙事未动摇</li>\n  <li><strong>AI与算力是长期主线</strong> — 中英文均认可下一阶段核心</li>\n  <li><strong>RWA/美股代币化是新增量</strong> — 被视为吸引新资金的重要方向</li>\n</ol>\n\n<h3>⚠️ 风险警示</h3>\n<ul>\n  <li><strong>🚨 市场流动性风险（★★★★★）：</strong>ETH与山寨币同步下跌，杠杆与情绪共振，若宏观数据走弱可能触发连锁清算。<em>应对：降低杠杆比例</em></li>\n  <li><strong>🚨 DeFi安全风险（★★★★☆）：</strong>Gravity Bridge等跨链协议再遭攻击，暴露验证与签名机制缺陷。<em>应对：回避高风险桥</em></li>\n  <li><strong>⚠️ 监管不确定性（★★★☆☆）：</strong>稳定币与永续合约监管表态不一，短期政策解读差异可能扰动市场。<em>应对：关注官方表态</em></li>\n</ul>\n\n<h3>💡 机会信号</h3>\n<ul>\n  <li><strong>合规衍生品机会（★★★★☆）：</strong>美监管放行永续合约，未来1-3个月关注Coinbase、Kraken相关产品放量</li>\n  <li><strong>稳定币基础设施（★★★★☆）：</strong>政策认可提升长期价值，关注美元稳定币发行与合规托管方向</li>\n  <li><strong>超跌反弹机会（★★★☆☆）：</strong>ETH关键位博弈期，若宏观数据改善，短期或出现技术性反弹</li>\n</ul>\n\n<h3>💬 一句话总结</h3>\n<p><strong>加密市场短期承压但结构性变化加速：稳定币与合规衍生品成为宏观主线，风险释放与长期资金布局并行。</strong></p>\n\n</div>",
+  "tickers": [
+    "MU",
+    "AMD",
+    "INTC",
+    "GOOG",
+    "NVDA",
+    "NBIS",
+    "CRWV",
+    "CRCL",
+    "MSTR",
+    "TSLA",
+    "XPEV",
+    "MRVL",
+    "NOK",
+    "COHR",
+    "QUBT"
+  ],
+  "session": "premarket",
+  "session_label": "盘前",
+  "hotspots": [
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian",
+      "close": 107.61,
+      "pct_2d": 15.35,
+      "reason": "营收增长31.71%+SaaS板块共振"
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "close": 124.37,
+      "pct_2d": 14.38,
+      "reason": "AI驱动企业自动化需求爆发"
+    },
+    {
+      "symbol": "IBM",
+      "name": "IBM",
+      "close": 297.8,
+      "pct_2d": 12.71,
+      "reason": "百亿美元量子计算投资计划"
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday",
+      "close": 146.19,
+      "pct_2d": 12.45,
+      "reason": "AI企业软件板块共振"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle",
+      "close": 225.78,
+      "pct_2d": 10.84,
+      "reason": "云数据库AI化"
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog",
+      "close": 247.35,
+      "pct_2d": 9.82,
+      "reason": "AI可观测性需求爆发"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "close": 281.69,
+      "pct_2d": 9.28,
+      "reason": "AI安全需求升级"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "close": 156.54,
+      "pct_2d": 9.21,
+      "reason": "AI数据分析政府+商业双增"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 731.0,
+      "pct_2d": 8.94,
+      "reason": "AI端点安全+企业安全支出增加"
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "close": 191.1,
+      "pct_2d": 8.47,
+      "reason": "Agentforce AI智能体商业化"
+    }
+  ]
+}
