@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28 19:03:00",
+  "updated_at": "2026-06-01 09:10:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -185,6 +185,23 @@
       "revenue_unit": "亿元",
       "url": "earnings/XPEV-2026Q1.html",
       "generated_at": "2026-05-28 19:03:00"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell 迈威尔科技",
+      "period": "2027Q1",
+      "period_label": "FY2027 Q1",
+      "fiscal_end": "2026-05-03",
+      "report_date": "2026-05-28",
+      "verdict": "beat",
+      "verdict_label": "超预期 营收+28% YoY AI需求异常强劲",
+      "eps_actual": 0.8,
+      "eps_estimate": 0.79,
+      "revenue_actual": 2.42,
+      "revenue_estimate": 2.41,
+      "revenue_unit": "B",
+      "url": "earnings/MRVL-2027Q1.html",
+      "generated_at": "2026-06-01 09:10:00"
     }
   ]
 }

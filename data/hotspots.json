@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 21:43:24",
+  "updated_at": "2026-06-01 09:08:53",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,71 +10,71 @@
     {
       "symbol": "SNOW",
       "name": "Snowflake Inc.",
-      "close": 247.51,
-      "pct_2d": 41.22,
+      "close": 255.55,
+      "pct_2d": 45.81,
       "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
       "symbol": "NOW",
       "name": "Servicenow, Inc.",
-      "close": 117.82,
-      "pct_2d": 15.37,
-      "date_range": "2026-05-27 ~ 2026-05-29"
-    },
-    {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "close": 152.39,
-      "pct_2d": 15.0,
-      "date_range": "2026-05-27 ~ 2026-05-29"
-    },
-    {
-      "symbol": "ORCL",
-      "name": "Oracle Corporation",
-      "close": 215.3,
-      "pct_2d": 12.75,
+      "close": 124.37,
+      "pct_2d": 21.79,
       "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
       "symbol": "TEAM",
       "name": "Atlassian Corporation",
-      "close": 99.46,
-      "pct_2d": 11.66,
+      "close": 107.61,
+      "pct_2d": 20.82,
       "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
-      "symbol": "NET",
-      "name": "Cloudflare, Inc.",
-      "close": 231.66,
-      "pct_2d": 10.73,
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "close": 225.78,
+      "pct_2d": 18.23,
       "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 703.56,
-      "pct_2d": 9.02,
-      "date_range": "2026-05-27 ~ 2026-05-29"
-    },
-    {
-      "symbol": "IBM",
-      "name": "International Business Machines Corporation",
-      "close": 277.82,
-      "pct_2d": 8.86,
-      "date_range": "2026-05-27 ~ 2026-05-29"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 114.95,
-      "pct_2d": 7.83,
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 156.54,
+      "pct_2d": 18.13,
       "date_range": "2026-05-27 ~ 2026-05-29"
     },
     {
       "symbol": "WDAY",
       "name": "Workday, Inc.",
-      "close": 133.81,
-      "pct_2d": 7.48,
+      "close": 146.19,
+      "pct_2d": 17.42,
+      "date_range": "2026-05-27 ~ 2026-05-29"
+    },
+    {
+      "symbol": "IBM",
+      "name": "International Business Machines Corporation",
+      "close": 297.8,
+      "pct_2d": 16.69,
+      "date_range": "2026-05-27 ~ 2026-05-29"
+    },
+    {
+      "symbol": "NET",
+      "name": "Cloudflare, Inc.",
+      "close": 241.82,
+      "pct_2d": 15.58,
+      "date_range": "2026-05-27 ~ 2026-05-29"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 281.69,
+      "pct_2d": 13.37,
+      "date_range": "2026-05-27 ~ 2026-05-29"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 731.0,
+      "pct_2d": 13.27,
       "date_range": "2026-05-27 ~ 2026-05-29"
     }
   ]
