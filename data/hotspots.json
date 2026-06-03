@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03 09:10:39",
+  "updated_at": "2026-06-03 19:04:24",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,11 @@
   },
   "hotspots": [
     {
-      "symbol": "NET",
-      "name": "Cloudflare, Inc.",
-      "close": 272.66,
-      "pct_2d": 12.75,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "IBM",
-      "name": "International Business Machines Corporation",
-      "close": 329.23,
-      "pct_2d": 10.55,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 1064.1,
-      "pct_2d": 9.59,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 269.13,
-      "pct_2d": 8.81,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "ORCL",
-      "name": "Oracle Corporation",
-      "close": 244.58,
-      "pct_2d": 8.33,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
       "symbol": "CSCO",
       "name": "Cisco Systems, Inc.",
       "close": 128.0,
-      "pct_2d": 6.29,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "NVDA",
-      "name": "Nvidia Corporation",
-      "close": 222.82,
-      "pct_2d": 5.53,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 297.18,
       "pct_2d": 5.5,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 768.95,
-      "pct_2d": 5.19,
-      "date_range": "2026-05-29 ~ 2026-06-02"
-    },
-    {
-      "symbol": "CRM",
-      "name": "Salesforce, Inc.",
-      "close": 200.84,
-      "pct_2d": 5.1,
-      "date_range": "2026-05-29 ~ 2026-06-02"
+      "date_range": "2026-06-01 ~ 2026-06-03"
     }
   ]
 }
