@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03 19:04:24",
+  "updated_at": "2026-06-04 09:10:22",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,10 +8,10 @@
   },
   "hotspots": [
     {
-      "symbol": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "close": 128.0,
-      "pct_2d": 5.5,
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "close": 542.52,
+      "pct_2d": 6.35,
       "date_range": "2026-06-01 ~ 2026-06-03"
     }
   ]
