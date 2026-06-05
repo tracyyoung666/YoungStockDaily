@@ -1,6 +1,43 @@
 {
-  "updated_at": "2026-06-05T09:08:55",
+  "updated_at": "2026-06-05T19:14:59",
   "dailies": [
+    {
+      "slug": "daily_20260605_1910",
+      "date": "2026-06-05",
+      "generated_at": "2026-06-05 19:10",
+      "title": "自选股盘前分析 | 2026-06-05 19:10",
+      "summary": {
+        "abnormal": [
+          "MU 日跌-7.74%（博通财报暴雷拖累半导体板块）"
+        ],
+        "actions": [
+          "关注MU $940支撑位，企稳后可分批建仓",
+          "MSTR首次减持BTC，观望不追"
+        ],
+        "web3": {
+          "btc": "$61,592 (-3.41%)",
+          "eth": "$1,643 (-7.60%)",
+          "fear_greed": "16 (极度恐慌)",
+          "one_liner": "加密市场正经历由宏观流动性收紧与信任危机共振驱动的深度重定价阶段，短期防御优先。"
+        }
+      },
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260605_1910.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260605_0908",
       "date": "2026-06-05",
