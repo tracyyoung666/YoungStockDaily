@@ -1,10 +1,18 @@
 {
-  "updated_at": "2026-06-04 19:09:03",
+  "updated_at": "2026-06-05 09:05:13",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "close": 627.57,
+      "pct_2d": 5.01,
+      "date_range": "2026-06-02 ~ 2026-06-04"
+    }
+  ]
 }
