@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-06-08T09:11:09",
+  "updated_at": "2026-06-08T19:12:11",
   "dailies": [
+    {
+      "slug": "daily_20260608_1906",
+      "date": "2026-06-08",
+      "generated_at": "2026-06-08 19:06",
+      "title": "📈 自选股盘前分析 | 2026-06-08 19:06",
+      "summary": "全线暴跌：半导体-10.4% AI基建-9.7% Crypto-9.1%，宏观加息预期强化引发系统性抛售，盘前普遍反弹1-4%",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20260608_1906.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260608_0905",
       "date": "2026-06-08",
