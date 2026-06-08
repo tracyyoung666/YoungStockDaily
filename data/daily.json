@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-06-06T20:06:25",
+  "updated_at": "2026-06-08T09:11:09",
   "dailies": [
+    {
+      "slug": "daily_20260608_0905",
+      "date": "2026-06-08",
+      "generated_at": "2026-06-08 09:05",
+      "title": "📈 自选股盘后分析 | 2026-06-08 09:05",
+      "summary": "6月5日美股遭遇黑色星期五，Semianalysis研报冲击存储板块，15只自选股中12只跌超4%，仅MSTR逆市上涨。BTC反弹+3.95%，加密市场恐慌指数15。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260608_0905.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20260606",
       "date": "2026-06-06",
