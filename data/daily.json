@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-06-09T09:15:15",
+  "updated_at": "2026-06-09T19:10:49",
   "dailies": [
+    {
+      "slug": "daily_20260609_1905",
+      "date": "2026-06-09",
+      "generated_at": "2026-06-09T19:05:00+08:00",
+      "title": "📈 自选股盘前分析 | 2026-06-09 19:05",
+      "summary": "半导体板块全面爆发（INTC+11%谷歌大单/MU+10%存储缺货），BTC$63K企稳带动Crypto反弹",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260609_1905.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260609_0915",
       "date": "2026-06-09",
