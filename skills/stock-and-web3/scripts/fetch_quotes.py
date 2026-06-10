@@ -40,15 +40,22 @@ WESTOCK_CODE_MAP = {
     "MSTR": "usMSTR.OQ",
     "TSLA": "usTSLA.OQ",
     "XPEV": "usXPEV.N",
+    "MRVL": "usMRVL.OQ",
+    "NOK":  "usNOK.N",
+    "COHR": "usCOHR.N",
+    "QUBT": "usQUBT.OQ",
 }
 
 # 板块分组
 SECTOR_MAP = {
-    "半导体": ["MU", "AMD", "INTC", "NVDA"],
+    "半导体": ["MU", "AMD", "INTC", "NVDA", "MRVL"],
     "科技巨头": ["GOOG"],
     "AI基建": ["NBIS", "CRWV"],
     "Crypto": ["CRCL", "MSTR"],
     "新能源车": ["TSLA", "XPEV"],
+    "光通信": ["COHR"],
+    "量子计算": ["QUBT"],
+    "通信设备": ["NOK"],
 }
 
 WESTOCK_SCRIPT = "/data/workspace/.agent/skills/westock-data/scripts/index.js"
@@ -132,36 +139,63 @@ def _run_westock(cmd_args: List[str], timeout: int = 30) -> str:
 
 
 def fetch_westock_quote(symbols: List[str]) -> Dict[str, Dict]:
-    """通过 westock-data 获取最新收盘行情。"""
+    """通过 westock-data 获取最新收盘行情（基于表头动态定位字段）。"""
     codes = [WESTOCK_CODE_MAP.get(s.upper(), s) for s in symbols]
     result = {}
     try:
         stdout = _run_westock(["quote", ",".join(codes)])
-        lines = [l for l in stdout.split("\n") if l.startswith("| us")]
-        for line in lines:
+        all_lines = stdout.split("\n")
+        # 找到表头行（以 | code 开头）
+        header_line = None
+        data_lines = []
+        for line in all_lines:
+            if line.startswith("| code"):
+                header_line = line
+            elif line.startswith("| us"):
+                data_lines.append(line)
+        if not header_line:
+            return {"_error": "no header found in westock quote output"}
+        headers = [h.strip() for h in header_line.split("|")[1:-1]]
+        col = {name: idx for idx, name in enumerate(headers)}
+
+        for line in data_lines:
             parts = [p.strip() for p in line.split("|")[1:-1]]
-            code = parts[0]
+            code = parts[col["code"]]
             sym = code.replace("us", "").split(".")[0]
             try:
-                high_52w = float(parts[33])
-                price = float(parts[5])
+                def _f(field, default=0):
+                    """安全取 float"""
+                    idx = col.get(field)
+                    if idx is None or idx >= len(parts) or not parts[idx]:
+                        return default
+                    return float(parts[idx])
+
+                def _i(field, default=0):
+                    """安全取 int"""
+                    idx = col.get(field)
+                    if idx is None or idx >= len(parts) or not parts[idx]:
+                        return default
+                    return int(float(parts[idx]))
+
+                high_52w = _f("high_52week")
+                price = _f("price")
                 dist = (price - high_52w) / high_52w * 100 if high_52w else 0
                 result[sym] = {
-                    "name": parts[3],
+                    "name": parts[col.get("name", 3)],
                     "close_price": price,
-                    "prev_close": float(parts[6]),
-                    "open": float(parts[7]),
-                    "high": float(parts[16]),
-                    "low": float(parts[17]),
-                    "pct_1d": float(parts[15]),
-                    "volume": int(parts[8]),
-                    "amount": float(parts[18]),
-                    "volume_ratio": float(parts[20]) if parts[20] else None,
-                    "pe": float(parts[22]) if parts[22] else None,
+                    "prev_close": _f("prev_close"),
+                    "open": _f("open"),
+                    "high": _f("high"),
+                    "low": _f("low"),
+                    "pct_1d": _f("change_percent"),
+                    "volume": _i("volume"),
+                    "amount": _f("amount"),
+                    "volume_ratio": _f("volume_ratio") or None,
+                    "pe": _f("pe_ratio") or None,
                     "high_52w": high_52w,
-                    "low_52w": float(parts[34]),
+                    "low_52w": _f("low_52week"),
                     "dist_from_52w_high_pct": round(dist, 2),
-                    "trading_date_et": parts[13],
+                    "trading_date_et": parts[col["time"]] if "time" in col and col["time"] < len(parts) else "",
                 }
             except (ValueError, IndexError) as e:
                 result[sym] = {"error": f"parse_fail: {e}"}
