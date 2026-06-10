@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09 19:07:16",
+  "updated_at": "2026-06-10 09:07:24",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,22 +10,15 @@
     {
       "symbol": "INTC",
       "name": "Intel Corporation",
-      "close": 110.27,
-      "pct_2d": 11.19,
+      "close": 107.92,
+      "pct_2d": 8.82,
       "date_range": "2026-06-05 ~ 2026-06-09"
     },
     {
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
-      "close": 949.28,
-      "pct_2d": 9.87,
-      "date_range": "2026-06-05 ~ 2026-06-09"
-    },
-    {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 490.33,
-      "pct_2d": 5.14,
+      "close": 935.89,
+      "pct_2d": 8.32,
       "date_range": "2026-06-05 ~ 2026-06-09"
     }
   ]
