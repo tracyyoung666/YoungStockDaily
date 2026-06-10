@@ -1,25 +1,10 @@
 {
-  "updated_at": "2026-06-10 09:07:24",
+  "updated_at": "2026-06-10 18:01:57",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "close": 107.92,
-      "pct_2d": 8.82,
-      "date_range": "2026-06-05 ~ 2026-06-09"
-    },
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 935.89,
-      "pct_2d": 8.32,
-      "date_range": "2026-06-05 ~ 2026-06-09"
-    }
-  ]
+  "hotspots": []
 }
