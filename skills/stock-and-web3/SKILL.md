@@ -39,9 +39,62 @@ web3-daily ─→ Web3 日报（MD+微信版）───────────
 
 MU / AMD / INTC / GOOG / NVDA / NBIS / CRWV / CRCL / MSTR / TSLA / XPEV
 
-## 工作流（标准六步）
+## 工作流（标准七步，含前置步骤 0）
 
 **重要：任一步出错必须通过 notify 工具告知用户。下列步骤可按需跳过，但顺序不能颠倒。**
+
+### 步骤 0：前置 Skill 升级检查（⭐ 最前置，每次流程开始前必做）
+
+**目的**：保证依赖的数据底座 `westock-data` / `westock-tool` 不过期。若距离上次升级超过 **14 天（2 周）**，自动触发升级并推送通知。
+
+**维护的两个 skill（相对较新，需保持更新）：**
+| skill | skill_id | 升级详情页 |
+|---|---|---|
+| `westock-data` | `2984` | https://knot.woa.com/skills/detail/2984 |
+| `westock-tool` | `5600` | https://knot.woa.com/skills/detail/5600 |
+
+**执行逻辑**：
+
+```bash
+# 0.1 读取上次升级时间台账（首次运行若文件不存在，视为"从未升级"，直接触发升级）
+LEDGER=/data/workspace/.agent/skills/stock-and-web3/.skill_upgrade.json
+NOW_TS=$(date +%s)
+THRESHOLD=$((14*24*3600))   # 14 天
+
+# 对 westock-data(2984) 和 westock-tool(5600) 分别判断：
+#   last_upgrade = 台账中该 skill 的 last_upgrade（ISO 时间）
+#   若 (NOW - last_upgrade) > 14 天 或 台账无记录 → 标记为需升级
+```
+
+**0.2 若需升级**，对每个待升级 skill 依次执行（通过 mcporter-internal 调用 knot-skill-finder）：
+```bash
+# 获取下载链接（skill_id：westock-data=2984，westock-tool=5600）
+mcporter-internal call knot.get_skill_download_url --args '{"skill_id": "2984"}'
+# 用返回的 url 下载并覆盖安装到 /data/workspace/.agent/skills/
+wget -O /tmp/westock-data.zip "<download_url>"
+unzip -o /tmp/westock-data.zip -d /data/workspace/.agent/skills/
+# 验证：检查 .agent/skills/westock-data/SKILL.md 存在且 package.json version 已更新
+```
+
+**0.3 升级成功后更新台账** `.skill_upgrade.json`：
+```json
+{
+  "westock-data": {"skill_id": "2984", "last_upgrade": "2026-06-10T17:40:00+08:00", "version": "1.0.x"},
+  "westock-tool": {"skill_id": "5600", "last_upgrade": "2026-06-10T17:40:00+08:00", "version": "1.0.x"}
+}
+```
+
+**0.4 若本次触发了升级，必须额外推送一条通知**（在所有日报推送之前或之后均可，但必须发）：
+- title：`🔧 依赖 Skill 已自动升级 | YYYY-MM-DD`
+- message（纯文本，发送到当前会话 ChatID `T21660007A`）：
+  ```
+  检测到投研依赖 skill 距上次升级已超过 2 周，已自动升级：
+  ・westock-data：vA → vB（https://knot.woa.com/skills/detail/2984）
+  ・westock-tool：vC → vD（https://knot.woa.com/skills/detail/5600）
+  本次日报/周报将使用升级后的最新数据能力。
+  ```
+- 若未触发升级（未到 2 周），则**不发**此通知，直接进入步骤 1。
+- 若升级失败：用 notify 发 title `⚠️ Skill 自动升级失败 | YYYY-MM-DD`，说明失败的 skill 和原因，但**不阻断**后续日报流程（用现有版本继续跑）。
 
 ### 步骤 1：维护自选股清单（如有增删请求）
 
@@ -294,13 +347,18 @@ git push "https://x-access-token:${TOKEN}@github.com/tracyyoung666/YoungStockDai
 
 ### 步骤 6：通过 notify 推送（两条，先图后文）
 
-**第一条（图片链接，纯文本 URL）**：
+**🎯 推送目标（方案 B）**：所有 notify 推送均发送到**当前会话 / 群聊 ChatID `T21660007A`**。
+> 背景：定时任务默认运行在隔离会话（isolated），其 notify 路由曾出现投递丢失。为确保你能收到，jobMessage 已强制指定推送到当前会话 ChatID。若某条 notify 返回超时/失败，必须**重试至多 3 次**；3 次仍失败则记录并在下次任务补发。
+
+**第一条（总览图，✅ 用 Markdown 图片语法直接显示）**：
 - title: `📈 自选股行情分析 | YYYY-MM-DD HH:MM`
-- message（⚠️ 纯文本+URL，严禁 markdown `![]()` 语法）：
+- message（✅ 用 `![]()` 让图片在 IM 内直接渲染显示，已于 2026-06-10 验证 GitHub raw 链接在企微端可正常显示）：
   ```
   实时价格总览图：
-  https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/daily_YYYYMMDD_HHMM.png
+
+  ![自选股总览图](https://raw.githubusercontent.com/tracyyoung666/YoungStockDaily/main/images/daily_YYYYMMDD_HHMM.png)
   ```
+  > 注：图片直链必须是 push 成功后的 GitHub raw 地址（文件名用本次实际生成的 `daily_YYYYMMDD_HHMM.png`）。务必先 git push 成功、再推送此条，否则链接 404 裂图。
 
 **第二条（文字简报，仅精简摘要）**：
 - title: `📝 今日投研简报 | YYYY-MM-DD HH:MM`
