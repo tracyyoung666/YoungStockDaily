@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-06-11T19:08:55",
+  "updated_at": "2026-06-12T09:12:22",
   "dailies": [
+    {
+      "slug": "daily_20260612_0906",
+      "date": "2026-06-12",
+      "generated_at": "2026-06-12 09:06",
+      "title": "自选股盘后分析 + Web3日报 | 2026-06-12",
+      "summary": "半导体集体大涨(板块+8.45%) MU/MRVL涨超11% HBM售罄+CPO叙事+博通转单英特尔; BTC反弹+3.2%恐贪18极度恐慌",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260612_0906.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260611_1902",
       "date": "2026-06-11",
