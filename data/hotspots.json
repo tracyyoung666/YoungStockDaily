@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 19:05:56",
+  "updated_at": "2026-06-15 09:08:49",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,38 +8,38 @@
   },
   "hotspots": [
     {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 995.87,
-      "pct_2d": 11.66,
-      "date_range": "2026-06-10 ~ 2026-06-12"
-    },
-    {
       "symbol": "INTC",
       "name": "Intel Corporation",
-      "close": 116.96,
-      "pct_2d": 9.27,
+      "close": 124.57,
+      "pct_2d": 16.38,
       "date_range": "2026-06-10 ~ 2026-06-12"
     },
     {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "close": 488.45,
-      "pct_2d": 7.97,
+      "close": 511.57,
+      "pct_2d": 13.08,
       "date_range": "2026-06-10 ~ 2026-06-12"
     },
     {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 691.53,
-      "pct_2d": 6.76,
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "close": 981.61,
+      "pct_2d": 10.06,
+      "date_range": "2026-06-10 ~ 2026-06-12"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "close": 406.43,
+      "pct_2d": 6.51,
       "date_range": "2026-06-10 ~ 2026-06-12"
     },
     {
       "symbol": "PANW",
       "name": "Palo Alto Networks, Inc.",
-      "close": 279.53,
-      "pct_2d": 6.2,
+      "close": 279.62,
+      "pct_2d": 6.23,
       "date_range": "2026-06-10 ~ 2026-06-12"
     }
   ]
