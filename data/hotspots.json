@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 09:07:31",
+  "updated_at": "2026-06-16 19:08:06",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,25 +8,39 @@
   },
   "hotspots": [
     {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 547.26,
-      "pct_2d": 12.04,
-      "date_range": "2026-06-11 ~ 2026-06-15"
-    },
-    {
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
       "close": 1087.99,
-      "pct_2d": 9.25,
-      "date_range": "2026-06-11 ~ 2026-06-15"
+      "pct_2d": 10.84,
+      "date_range": "2026-06-12 ~ 2026-06-16"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "close": 547.26,
+      "pct_2d": 6.98,
+      "date_range": "2026-06-12 ~ 2026-06-16"
+    },
+    {
+      "symbol": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "close": 72.85,
+      "pct_2d": 5.81,
+      "date_range": "2026-06-12 ~ 2026-06-16"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 134.71,
+      "pct_2d": 5.25,
+      "date_range": "2026-06-12 ~ 2026-06-16"
     },
     {
       "symbol": "ABNB",
       "name": "Airbnb, Inc.",
       "close": 138.96,
-      "pct_2d": 6.18,
-      "date_range": "2026-06-11 ~ 2026-06-15"
+      "pct_2d": 5.05,
+      "date_range": "2026-06-12 ~ 2026-06-16"
     }
   ]
 }
