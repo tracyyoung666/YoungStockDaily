@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-06-19T19:15:35",
+  "updated_at": "2026-06-20T20:37:10",
   "dailies": [
+    {
+      "slug": "weekly_20260619",
+      "date": "2026-06-19",
+      "generated_at": "2026-06-20 20:15",
+      "title": "自选股周报 | 2026-06-15 ~ 06-19",
+      "summary": "",
+      "tickers": [
+        "NBIS",
+        "CRWV",
+        "INTC",
+        "MU",
+        "MRVL",
+        "AMD",
+        "QUBT",
+        "COHR",
+        "GOOG",
+        "NVDA",
+        "TSLA",
+        "CRCL",
+        "NOK",
+        "MSTR",
+        "XPEV"
+      ],
+      "image": "images/weekly_20260619.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260619_1907",
       "date": "2026-06-19",
