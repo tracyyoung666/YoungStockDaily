@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 09:07:08",
+  "updated_at": "2026-06-24 19:11:31",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,8 +11,8 @@
       "symbol": "IBM",
       "name": "International Business Machines Corporation",
       "close": 264.94,
-      "pct_2d": 6.36,
-      "date_range": "2026-06-18 ~ 2026-06-23"
+      "pct_2d": 5.04,
+      "date_range": "2026-06-22 ~ 2026-06-24"
     }
   ]
 }
