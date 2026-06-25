@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 19:11:31",
+  "updated_at": "2026-06-25 19:06:38",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,11 +8,25 @@
   },
   "hotspots": [
     {
-      "symbol": "IBM",
-      "name": "International Business Machines Corporation",
-      "close": 264.94,
-      "pct_2d": 5.04,
-      "date_range": "2026-06-22 ~ 2026-06-24"
+      "symbol": "BKNG",
+      "name": "Booking Holdings Inc. Common Stock",
+      "close": 181.25,
+      "pct_2d": 7.29,
+      "date_range": "2026-06-23 ~ 2026-06-25"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 114.17,
+      "pct_2d": 6.03,
+      "date_range": "2026-06-23 ~ 2026-06-25"
+    },
+    {
+      "symbol": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "close": 73.85,
+      "pct_2d": 6.0,
+      "date_range": "2026-06-23 ~ 2026-06-25"
     }
   ]
 }
