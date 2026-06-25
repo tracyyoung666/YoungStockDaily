@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 09:10:00",
+  "updated_at": "2026-06-25 09:10:00",
   "reports": [
     {
       "symbol": "MSTR",
@@ -202,6 +202,23 @@
       "revenue_unit": "B",
       "url": "earnings/MRVL-2027Q1.html",
       "generated_at": "2026-06-01 09:10:00"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron 美光科技",
+      "period": "2026Q3",
+      "period_label": "FY2026 Q3",
+      "fiscal_end": "2026-05-28",
+      "report_date": "2026-06-24",
+      "verdict": "beat",
+      "verdict_label": "史诗级超预期 营收+346% YoY 调整后净利+1398% 毛利率84.9% Q4指引远超预期",
+      "eps_actual": null,
+      "eps_estimate": null,
+      "revenue_actual": null,
+      "revenue_estimate": null,
+      "revenue_unit": "B",
+      "url": "earnings/MU-2026Q3.html",
+      "generated_at": "2026-06-25 09:10:00"
     }
   ]
 }
