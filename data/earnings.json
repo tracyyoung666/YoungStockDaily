@@ -211,14 +211,14 @@
       "fiscal_end": "2026-05-28",
       "report_date": "2026-06-24",
       "verdict": "beat",
-      "verdict_label": "史诗级超预期 营收+346% YoY 调整后净利+1398% 毛利率84.9% Q4指引远超预期",
-      "eps_actual": null,
-      "eps_estimate": null,
-      "revenue_actual": null,
-      "revenue_estimate": null,
+      "verdict_label": "史诗级超预期 营收+346% YoY 调整后EPS$25.11 净利+1398% 毛利率84.9% Q4指引远超预期",
+      "eps_actual": 25.11,
+      "eps_estimate": 20.49,
+      "revenue_actual": 41.46,
+      "revenue_estimate": 35.69,
       "revenue_unit": "B",
       "url": "earnings/MU-2026Q3.html",
-      "generated_at": "2026-06-25 09:10:00"
+      "generated_at": "2026-06-26 09:10:00"
     }
   ]
 }
