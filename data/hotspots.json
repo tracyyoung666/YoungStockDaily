@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29 09:07:35",
+  "updated_at": "2026-06-29 19:06:36",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,46 +8,74 @@
   },
   "hotspots": [
     {
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "close": 5.92,
+      "pct_2d": 15.62,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 98.34,
+      "pct_2d": 9.85,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
       "symbol": "SNOW",
       "name": "Snowflake Inc.",
       "close": 248.96,
-      "pct_2d": 10.18,
-      "date_range": "2026-06-24 ~ 2026-06-26"
-    },
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "close": 1132.33,
-      "pct_2d": 7.99,
-      "date_range": "2026-06-24 ~ 2026-06-26"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 239.77,
-      "pct_2d": 7.69,
-      "date_range": "2026-06-24 ~ 2026-06-26"
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 304.2,
-      "pct_2d": 6.64,
-      "date_range": "2026-06-24 ~ 2026-06-26"
-    },
-    {
-      "symbol": "NET",
-      "name": "Cloudflare, Inc.",
-      "close": 237.24,
-      "pct_2d": 6.16,
-      "date_range": "2026-06-24 ~ 2026-06-26"
+      "pct_2d": 9.65,
+      "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
       "symbol": "WDAY",
       "name": "Workday, Inc.",
       "close": 124.21,
-      "pct_2d": 5.18,
-      "date_range": "2026-06-24 ~ 2026-06-26"
+      "pct_2d": 9.18,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 239.77,
+      "pct_2d": 8.52,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "close": 73.57,
+      "pct_2d": 6.92,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 132.26,
+      "pct_2d": 6.83,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "TTD",
+      "name": "The Trade Desk, Inc.",
+      "close": 18.37,
+      "pct_2d": 6.0,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "close": 372.97,
+      "pct_2d": 5.71,
+      "date_range": "2026-06-25 ~ 2026-06-29"
+    },
+    {
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "close": 28.23,
+      "pct_2d": 5.69,
+      "date_range": "2026-06-25 ~ 2026-06-29"
     }
   ]
 }
