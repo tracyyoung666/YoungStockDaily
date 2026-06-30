@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29 19:06:36",
+  "updated_at": "2026-06-30 09:10:48",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,71 +10,71 @@
     {
       "symbol": "LCID",
       "name": "Lucid Group, Inc.",
-      "close": 5.92,
-      "pct_2d": 15.62,
+      "close": 6.51,
+      "pct_2d": 27.15,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 98.34,
-      "pct_2d": 9.85,
+      "symbol": "RBLX",
+      "name": "Roblox Corporation",
+      "close": 54.34,
+      "pct_2d": 17.14,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 248.96,
-      "pct_2d": 9.65,
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 332.0,
+      "pct_2d": 13.28,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "WDAY",
-      "name": "Workday, Inc.",
-      "close": 124.21,
-      "pct_2d": 9.18,
+      "symbol": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "close": 16.81,
+      "pct_2d": 13.12,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
       "symbol": "DDOG",
       "name": "Datadog, Inc.",
-      "close": 239.77,
-      "pct_2d": 8.52,
+      "close": 248.57,
+      "pct_2d": 12.51,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "close": 73.57,
-      "pct_2d": 6.92,
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 99.97,
+      "pct_2d": 11.67,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
       "symbol": "ZS",
       "name": "Zscaler, Inc.",
-      "close": 132.26,
-      "pct_2d": 6.83,
+      "close": 137.6,
+      "pct_2d": 11.15,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "TTD",
-      "name": "The Trade Desk, Inc.",
-      "close": 18.37,
-      "pct_2d": 6.0,
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 251.65,
+      "pct_2d": 10.83,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "close": 372.97,
-      "pct_2d": 5.71,
+      "symbol": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "close": 75.96,
+      "pct_2d": 10.39,
       "date_range": "2026-06-25 ~ 2026-06-29"
     },
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 28.23,
-      "pct_2d": 5.69,
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "close": 411.84,
+      "pct_2d": 9.79,
       "date_range": "2026-06-25 ~ 2026-06-29"
     }
   ]
