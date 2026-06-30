@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30 09:10:48",
+  "updated_at": "2026-06-30 19:06:22",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,60 @@
   },
   "hotspots": [
     {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "close": 6.51,
-      "pct_2d": 27.15,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
       "symbol": "RBLX",
       "name": "Roblox Corporation",
       "close": 54.34,
-      "pct_2d": 17.14,
-      "date_range": "2026-06-25 ~ 2026-06-29"
+      "pct_2d": 14.26,
+      "date_range": "2026-06-26 ~ 2026-06-30"
+    },
+    {
+      "symbol": "MSTR",
+      "name": "Strategy Inc",
+      "close": 92.68,
+      "pct_2d": 12.6,
+      "date_range": "2026-06-26 ~ 2026-06-30"
+    },
+    {
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "close": 6.51,
+      "pct_2d": 9.97,
+      "date_range": "2026-06-26 ~ 2026-06-30"
     },
     {
       "symbol": "PANW",
       "name": "Palo Alto Networks, Inc.",
       "close": 332.0,
-      "pct_2d": 13.28,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "RIVN",
-      "name": "Rivian Automotive, Inc.",
-      "close": 16.81,
-      "pct_2d": 13.12,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 248.57,
-      "pct_2d": 12.51,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 99.97,
-      "pct_2d": 11.67,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 137.6,
-      "pct_2d": 11.15,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 251.65,
-      "pct_2d": 10.83,
-      "date_range": "2026-06-25 ~ 2026-06-29"
-    },
-    {
-      "symbol": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "close": 75.96,
-      "pct_2d": 10.39,
-      "date_range": "2026-06-25 ~ 2026-06-29"
+      "pct_2d": 9.14,
+      "date_range": "2026-06-26 ~ 2026-06-30"
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "close": 411.84,
-      "pct_2d": 9.79,
-      "date_range": "2026-06-25 ~ 2026-06-29"
+      "pct_2d": 8.46,
+      "date_range": "2026-06-26 ~ 2026-06-30"
+    },
+    {
+      "symbol": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "close": 16.81,
+      "pct_2d": 7.55,
+      "date_range": "2026-06-26 ~ 2026-06-30"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 742.91,
+      "pct_2d": 5.96,
+      "date_range": "2026-06-26 ~ 2026-06-30"
+    },
+    {
+      "symbol": "XPEV",
+      "name": "Xpeng Inc",
+      "close": 12.8,
+      "pct_2d": 5.87,
+      "date_range": "2026-06-26 ~ 2026-06-30"
     }
   ]
 }
