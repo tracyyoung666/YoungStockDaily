@@ -47,6 +47,11 @@
     .bad-box  { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
     .good-box h4, .bad-box h4 { margin: 0 0 6px; font-size: 15px; }
     .cand-note { font-size: 12.5px; color: #94a3b8; margin-top: 6px; }
+    .pie-switch { display:flex; gap:8px; justify-content:flex-end; margin:6px 0 4px; }
+    .pie-btn { border:1px solid #e2e8f0; background:#fff; color:#64748b; font-size:12.5px;
+      padding:6px 14px; border-radius:999px; cursor:pointer; transition:all .15s ease; }
+    .pie-btn:hover { border-color:#f59e0b; color:#b45309; }
+    .pie-btn.active { background:#f59e0b; border-color:#f59e0b; color:#fff; font-weight:700; }
     @media (max-width: 640px){ .acct-grid{ grid-template-columns: 1fr; } .midyear-hero h1{ font-size: 22px; } }
   </style>
 </head>
@@ -242,7 +247,112 @@
         <p class="cand-note">⚠️ 本页为个人复盘小结，所有观点与候选标的仅为个人思考记录，不构成任何投资建议。投资有风险，决策需谨慎。</p>
       </div>
     </section>
+
+    <section class="daily-block">
+      <h2 class="daily-block-title">🥧 当前持仓分布（2026-07-01）</h2>
+      <div class="daily-block-body">
+        <p style="color:#64748b;font-size:14px;line-height:1.8;">
+          下图为当前完整持仓的市值占比（金额已脱敏、按固定单位换算）。点击右上角按钮，可在<b>「个股维度」</b>与<b>「领域大类维度」</b>之间切换查看。
+        </p>
+        <div class="pie-switch">
+          <button id="btnStock" class="pie-btn active" onclick="switchPie('stock')">按个股</button>
+          <button id="btnCat" class="pie-btn" onclick="switchPie('cat')">按领域大类</button>
+        </div>
+        <div id="holdingPie" style="width:100%;height:440px;"></div>
+        <p class="cand-note">总仓位约 31 份（脱敏单位）。红涨绿跌配色仅用于走势，本图颜色仅作分类区分。</p>
+      </div>
+    </section>
+
+    <section class="daily-block">
+      <h2 class="daily-block-title">🔍 持仓结构诊断 · 关键结论</h2>
+      <div class="daily-block-body">
+        <div class="verdict">
+          <b>一句话概括：</b>整体是一套<b>「AI 算力 + 存储」重仓、方向正确</b>的组合（该主线合计约占 <b>53%</b>），但被两大问题拖累——<b>①单一个股 XPEV 占比过高（约 13%）且是失血标的；②加密敞口（BTC+CRCL 约 19%）在熊市中持续承压</b>。赢家仓位分散、输家仓位集中，是当前最需要修正的结构性问题。
+        </div>
+        <div class="acct-grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="acct-card win"><div class="acct-name">AI算力+存储</div><div class="acct-pct up">≈53%</div><div class="acct-gap">主线正确，赢家阵营</div></div>
+          <div class="acct-card lose"><div class="acct-name">加密(BTC+CRCL)</div><div class="acct-pct down">≈19%</div><div class="acct-gap">熊市失血，需减</div></div>
+          <div class="acct-card lose"><div class="acct-name">新能源车 XPEV</div><div class="acct-pct down">≈13%</div><div class="acct-gap">单票过重，需砍</div></div>
+        </div>
+        <div class="good-box" style="margin-top:14px;">
+          <h4>✅ 结构优点</h4>
+          重仓押对了 AI 算力/存储主线：NBIS(12%)、存储三件套(海力士+DRAM+MU≈18%)、算力芯片(TSM/AMD/AMAT/MRVL/COHR)构成了扎实的赢家底仓，方向与半年赢家逻辑一致。
+        </div>
+        <div class="bad-box">
+          <h4>⚠️ 结构隐患</h4>
+          ①<b>XPEV 4w 是全组合最大单票</b>，却是持续下跌的失血标的，与"已计划退出新能源车"的判断严重矛盾；②<b>加密敞口近 1/5</b>，BTC 已跌破熊市生命线、CRCL 逻辑崩塌，双重承压；③QUBT/XE 等题材股趋势向下，属可有可无的消耗仓。
+        </div>
+      </div>
+    </section>
+
+    <section class="daily-block">
+      <h2 class="daily-block-title">🛠️ 分标的持仓调整建议</h2>
+      <div class="daily-block-body">
+        <table class="signal-table">
+          <thead><tr><th>标的</th><th>主营/逻辑</th><th>走势</th><th>建议</th></tr></thead>
+          <tbody>
+            <tr class="row-fire"><td><b>XPEV</b> 小鹏</td><td>新能源车，赛道承压</td><td class="neg">YTD -35%</td><td><b>坚决减仓/清仓</b>：最大单票却是失血源，反弹即走</td></tr>
+            <tr class="row-fire"><td><b>CRCL</b> Circle</td><td>稳定币，护城河被侵蚀</td><td class="neg">-38%(20d)</td><td><b>止损离场</b>：逻辑未修复，别补仓</td></tr>
+            <tr class="row-fire"><td><b>BTC</b></td><td>加密龙头，跌破熊市生命线</td><td class="neg">半年-50%</td><td><b>减至底仓</b>：熊市未确认反转前控制敞口</td></tr>
+            <tr class="row-warn"><td><b>NOK</b> 诺基亚</td><td>通信设备，AI网络受益但估值高</td><td class="neg">-21%(20d)</td><td><b>观察</b>：1.6w 偏重，走弱可减</td></tr>
+            <tr class="row-warn"><td><b>QUBT/XE</b></td><td>量子计算/核能，题材股</td><td class="neg">趋势向下</td><td><b>清理</b>：占比小、消耗仓，腾挪给主线</td></tr>
+            <tr class="row-warn"><td><b>泡泡玛特</b></td><td>潮玩消费，高位回落</td><td class="neg">-14%(20d)</td><td><b>持有观察</b>：仓位小，非核心</td></tr>
+            <tr><td><b>NBIS</b> Nebius</td><td>AI算力新贵，半年最大赢家</td><td class="pos">+230%</td><td><b>核心持有</b>：主仓，回调加仓</td></tr>
+            <tr><td><b>MU/海力士/DRAM</b></td><td>存储，HBM超级周期</td><td class="pos">MU +305%</td><td><b>加仓主力</b>：可把腾挪资金优先投这里</td></tr>
+            <tr><td><b>AMD/TSM/AMAT/MRVL/COHR</b></td><td>算力芯片/设备/光互联</td><td class="pos">普遍强势</td><td><b>持有</b>：AMAT/COHR 强，可小幅加</td></tr>
+            <tr><td><b>GOOG</b> 谷歌</td><td>AI+搜索+云，估值合理</td><td class="pos">+19%</td><td><b>持有/可加</b>：稳健底仓</td></tr>
+            <tr><td><b>CRWV</b> CoreWeave</td><td>AI云算力，弹性大但亏损</td><td class="neg">-15%(20d)</td><td><b>小仓持有</b>：控制比例，博弹性</td></tr>
+          </tbody>
+        </table>
+        <div class="verdict" style="margin-top:14px;">
+          <b>调仓总方向：</b>砍掉 XPEV / CRCL / BTC(部分) / QUBT / XE 这些失血与消耗仓（合计可释放约 8~10w），<b>集中回补到存储(MU/海力士) + AI算力(NBIS/AMD/AMAT) 主线</b>。目标是把"赢家分散、输家集中"的畸形结构，扭转为"赢家集中、输家出清"——这也是下半年冲 +50% 唯一可行的路径。
+        </div>
+        <p class="cand-note">⚠️ 以上为个人持仓思考记录，不构成投资建议。</p>
+      </div>
+    </section>
   </main>
+  <script src="../assets/echarts.min.js"></script>
+  <script>
+    var CATS = {
+      'AI存储/内存':  { color:'#dc2626', items:[['海力士',2],['DRAM',3],['MU',0.5]] },
+      'AI算力/芯片':  { color:'#ea580c', items:[['TSM',1.4],['AMD',1],['AMAT',1],['MRVL',2],['CRWV',1],['COHR',0.7]] },
+      'AI算力云(NBIS)':{ color:'#f59e0b', items:[['NBIS',3.7]] },
+      '互联网/科技':  { color:'#0ea5e9', items:[['GOOG',1],['NOK',1.6]] },
+      '新能源车':     { color:'#16a34a', items:[['XPEV',4]] },
+      '消费':         { color:'#8b5cf6', items:[['泡泡玛特',0.5]] },
+      '加密/区块链':  { color:'#64748b', items:[['BTC',3],['CRCL',3]] },
+      '前沿题材':     { color:'#94a3b8', items:[['QUBT',0.5],['XE',0.7]] },
+      '现金':         { color:'#cbd5e1', items:[['现金',1]] }
+    };
+    var stockData = [], catData = [];
+    Object.keys(CATS).forEach(function(c){
+      var sum = 0;
+      CATS[c].items.forEach(function(it){ stockData.push({name:it[0], value:it[1]}); sum += it[1]; });
+      catData.push({name:c, value:+sum.toFixed(1), itemStyle:{color:CATS[c].color}});
+    });
+    var chart = echarts.init(document.getElementById('holdingPie'));
+    function baseOpt(title){
+      return {
+        tooltip:{ trigger:'item', formatter:function(p){ return p.name+'：'+p.value+' 份<br/>占比 '+p.percent+'%'; } },
+        legend:{ type:'scroll', bottom:0, textStyle:{fontSize:11} },
+        title:{ text:title, left:'center', top:8, textStyle:{fontSize:13,color:'#64748b'} }
+      };
+    }
+    function switchPie(mode){
+      document.getElementById('btnStock').classList.toggle('active', mode==='stock');
+      document.getElementById('btnCat').classList.toggle('active', mode==='cat');
+      var opt = baseOpt(mode==='stock' ? '按个股 · 市值占比' : '按领域大类 · 市值占比');
+      opt.series = [{
+        type:'pie', radius:['38%','68%'], center:['50%','48%'],
+        avoidLabelOverlap:true, itemStyle:{borderColor:'#fff',borderWidth:2},
+        label:{ formatter:'{b}\n{d}%', fontSize:11 },
+        data: mode==='stock' ? stockData : catData
+      }];
+      chart.setOption(opt, true);
+    }
+    switchPie('stock');
+    window.addEventListener('resize', function(){ chart.resize(); });
+  </script>
   <footer>© Young's Stock Daily</footer>
 </body>
 </html>
