@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01 09:08:44",
+  "updated_at": "2026-07-01 19:05:05",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "HON",
-      "name": "Honeywell International Inc.",
-      "close": 223.9,
-      "pct_2d": 1899.11,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "RBLX",
-      "name": "Roblox Corporation",
-      "close": 54.38,
-      "pct_2d": 14.34,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "close": 6.69,
-      "pct_2d": 13.01,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 341.02,
-      "pct_2d": 12.1,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "close": 580.91,
-      "pct_2d": 11.38,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "RIVN",
-      "name": "Rivian Automotive, Inc.",
-      "close": 17.35,
-      "pct_2d": 11.0,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "TSLA",
-      "name": "Tesla, Inc.",
-      "close": 420.6,
-      "pct_2d": 10.77,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "XPEV",
-      "name": "Xpeng Inc",
-      "close": 13.24,
-      "pct_2d": 9.51,
-      "date_range": "2026-06-26 ~ 2026-06-30"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 763.14,
-      "pct_2d": 8.85,
-      "date_range": "2026-06-26 ~ 2026-06-30"
+      "pct_2d": 7.68,
+      "date_range": "2026-06-29 ~ 2026-07-01"
     },
     {
       "symbol": "INTC",
       "name": "Intel Corporation",
       "close": 139.63,
-      "pct_2d": 8.81,
-      "date_range": "2026-06-26 ~ 2026-06-30"
+      "pct_2d": 6.01,
+      "date_range": "2026-06-29 ~ 2026-07-01"
     }
   ]
 }
