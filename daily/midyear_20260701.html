@@ -315,8 +315,9 @@
   <script>
     var CATS = {
       'AI存储/内存':  { color:'#dc2626', items:[['海力士',2],['DRAM',3],['MU',0.5]] },
-      'AI算力/芯片':  { color:'#ea580c', items:[['TSM',1.4],['AMD',1],['AMAT',1],['MRVL',2],['CRWV',1],['COHR',0.7]] },
-      'AI算力云(NBIS)':{ color:'#f59e0b', items:[['NBIS',3.7]] },
+      'AI算力/芯片':  { color:'#ea580c', items:[['AMD',1],['MRVL',2],['COHR',0.7]] },
+      'AI半导体设备': { color:'#fb923c', items:[['TSM',1.4],['AMAT',1]] },
+      'AI算力云':     { color:'#f59e0b', items:[['NBIS',3.7],['CRWV',1]] },
       '互联网/科技':  { color:'#0ea5e9', items:[['GOOG',1],['NOK',1.6]] },
       '新能源车':     { color:'#16a34a', items:[['XPEV',4]] },
       '消费':         { color:'#8b5cf6', items:[['泡泡玛特',0.5]] },
@@ -326,14 +327,17 @@
     };
     var stockData = [], catData = [];
     Object.keys(CATS).forEach(function(c){
-      var sum = 0;
-      CATS[c].items.forEach(function(it){ stockData.push({name:it[0], value:it[1]}); sum += it[1]; });
-      catData.push({name:c, value:+sum.toFixed(1), itemStyle:{color:CATS[c].color}});
+      var sum = 0, names = [];
+      CATS[c].items.forEach(function(it){ stockData.push({name:it[0], value:it[1]}); sum += it[1]; names.push(it[0]); });
+      catData.push({name:c, value:+sum.toFixed(1), members:names.join('·'), itemStyle:{color:CATS[c].color}});
     });
     var chart = echarts.init(document.getElementById('holdingPie'));
     function baseOpt(title){
       return {
-        tooltip:{ trigger:'item', formatter:function(p){ return p.name+'：'+p.value+' 份<br/>占比 '+p.percent+'%'; } },
+        tooltip:{ trigger:'item', formatter:function(p){
+          var m = p.data && p.data.members ? '<br/>含：'+p.data.members : '';
+          return p.name+'：'+p.value+' 份<br/>占比 '+p.percent+'%'+m;
+        } },
         legend:{ type:'scroll', bottom:0, textStyle:{fontSize:11} },
         title:{ text:title, left:'center', top:8, textStyle:{fontSize:13,color:'#64748b'} }
       };
@@ -342,12 +346,24 @@
       document.getElementById('btnStock').classList.toggle('active', mode==='stock');
       document.getElementById('btnCat').classList.toggle('active', mode==='cat');
       var opt = baseOpt(mode==='stock' ? '按个股 · 市值占比' : '按领域大类 · 市值占比');
-      opt.series = [{
-        type:'pie', radius:['38%','68%'], center:['50%','48%'],
-        avoidLabelOverlap:true, itemStyle:{borderColor:'#fff',borderWidth:2},
-        label:{ formatter:'{b}\n{d}%', fontSize:11 },
-        data: mode==='stock' ? stockData : catData
-      }];
+      if (mode==='stock') {
+        opt.series = [{
+          type:'pie', radius:['38%','68%'], center:['50%','48%'],
+          avoidLabelOverlap:true, itemStyle:{borderColor:'#fff',borderWidth:2},
+          label:{ formatter:'{b}\n{d}%', fontSize:11 },
+          data: stockData
+        }];
+      } else {
+        opt.series = [{
+          type:'pie', radius:['30%','62%'], center:['50%','46%'],
+          avoidLabelOverlap:true, itemStyle:{borderColor:'#fff',borderWidth:2},
+          label:{ formatter:function(p){ return p.data.name+' '+p.percent+'%\n{s|'+p.data.members+'}'; },
+            fontSize:11.5, fontWeight:700, lineHeight:15,
+            rich:{ s:{ fontSize:9.5, color:'#94a3b8', fontWeight:400, lineHeight:13 } } },
+          labelLine:{ length:14, length2:10 },
+          data: catData
+        }];
+      }
       chart.setOption(opt, true);
     }
     switchPie('stock');
