@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01 19:05:05",
+  "updated_at": "2026-07-02 09:10:07",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,17 +8,73 @@
   },
   "hotspots": [
     {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 580.91,
-      "pct_2d": 7.68,
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "close": 612.91,
+      "pct_2d": 8.94,
       "date_range": "2026-06-29 ~ 2026-07-01"
     },
     {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "close": 139.63,
-      "pct_2d": 6.01,
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 125.73,
+      "pct_2d": 8.67,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "RBLX",
+      "name": "Roblox Corporation",
+      "close": 57.95,
+      "pct_2d": 6.64,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "close": 30.19,
+      "pct_2d": 6.64,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 121.63,
+      "pct_2d": 6.5,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 146.45,
+      "pct_2d": 6.43,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 264.48,
+      "pct_2d": 6.4,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "XPEV",
+      "name": "Xpeng Inc",
+      "close": 13.6,
+      "pct_2d": 6.25,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 352.04,
+      "pct_2d": 6.04,
+      "date_range": "2026-06-29 ~ 2026-07-01"
+    },
+    {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 105.8,
+      "pct_2d": 5.83,
       "date_range": "2026-06-29 ~ 2026-07-01"
     }
   ]
