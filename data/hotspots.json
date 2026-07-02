@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02 09:10:07",
+  "updated_at": "2026-07-02 19:09:24",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,74 @@
   },
   "hotspots": [
     {
+      "symbol": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "close": 159.24,
+      "pct_2d": 8.93,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
       "close": 612.91,
-      "pct_2d": 8.94,
-      "date_range": "2026-06-29 ~ 2026-07-01"
+      "pct_2d": 8.81,
+      "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
       "close": 125.73,
-      "pct_2d": 8.67,
-      "date_range": "2026-06-29 ~ 2026-07-01"
+      "pct_2d": 7.77,
+      "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
-      "symbol": "RBLX",
-      "name": "Roblox Corporation",
-      "close": 57.95,
-      "pct_2d": 6.64,
-      "date_range": "2026-06-29 ~ 2026-07-01"
+      "symbol": "MSTR",
+      "name": "Strategy Inc",
+      "close": 93.39,
+      "pct_2d": 7.43,
+      "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 30.19,
-      "pct_2d": 6.64,
-      "date_range": "2026-06-29 ~ 2026-07-01"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 121.63,
-      "pct_2d": 6.5,
-      "date_range": "2026-06-29 ~ 2026-07-01"
-    },
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 146.45,
-      "pct_2d": 6.43,
-      "date_range": "2026-06-29 ~ 2026-07-01"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 264.48,
-      "pct_2d": 6.4,
-      "date_range": "2026-06-29 ~ 2026-07-01"
-    },
-    {
-      "symbol": "XPEV",
-      "name": "Xpeng Inc",
-      "close": 13.6,
-      "pct_2d": 6.25,
-      "date_range": "2026-06-29 ~ 2026-07-01"
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 352.04,
-      "pct_2d": 6.04,
-      "date_range": "2026-06-29 ~ 2026-07-01"
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 83.17,
+      "pct_2d": 6.92,
+      "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
       "symbol": "NOW",
       "name": "Servicenow, Inc.",
       "close": 105.8,
-      "pct_2d": 5.83,
-      "date_range": "2026-06-29 ~ 2026-07-01"
+      "pct_2d": 6.57,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "RBLX",
+      "name": "Roblox Corporation",
+      "close": 57.95,
+      "pct_2d": 6.56,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 121.63,
+      "pct_2d": 6.52,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday, Inc.",
+      "close": 130.27,
+      "pct_2d": 6.41,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "TTD",
+      "name": "The Trade Desk, Inc.",
+      "close": 19.15,
+      "pct_2d": 5.92,
+      "date_range": "2026-06-30 ~ 2026-07-02"
     }
   ]
 }
