@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02 19:09:24",
+  "updated_at": "2026-07-03 09:10:18",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,73 +8,73 @@
   },
   "hotspots": [
     {
-      "symbol": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "close": 159.24,
-      "pct_2d": 8.93,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "META",
-      "name": "Meta Platforms, Inc.",
-      "close": 612.91,
-      "pct_2d": 8.81,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
-      "close": 125.73,
-      "pct_2d": 7.77,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "MSTR",
-      "name": "Strategy Inc",
-      "close": 93.39,
-      "pct_2d": 7.43,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 83.17,
-      "pct_2d": 6.92,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 105.8,
-      "pct_2d": 6.57,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "RBLX",
-      "name": "Roblox Corporation",
-      "close": 57.95,
-      "pct_2d": 6.56,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 121.63,
-      "pct_2d": 6.52,
+      "close": 129.3,
+      "pct_2d": 10.83,
       "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
       "symbol": "WDAY",
       "name": "Workday, Inc.",
-      "close": 130.27,
-      "pct_2d": 6.41,
+      "close": 135.4,
+      "pct_2d": 10.6,
       "date_range": "2026-06-30 ~ 2026-07-02"
     },
     {
-      "symbol": "TTD",
-      "name": "The Trade Desk, Inc.",
-      "close": 19.15,
-      "pct_2d": 5.92,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "close": 308.63,
+      "pct_2d": 9.54,
+      "date_range": "2026-06-29 ~ 2026-07-02"
+    },
+    {
+      "symbol": "MSTR",
+      "name": "Strategy Inc",
+      "close": 100.77,
+      "pct_2d": 8.73,
+      "date_range": "2026-06-29 ~ 2026-07-02"
+    },
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 83.84,
+      "pct_2d": 7.78,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "close": 18.63,
+      "pct_2d": 7.38,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 219.72,
+      "pct_2d": 6.44,
+      "date_range": "2026-06-29 ~ 2026-07-02"
+    },
+    {
+      "symbol": "NOW",
+      "name": "Servicenow, Inc.",
+      "close": 106.32,
+      "pct_2d": 6.35,
+      "date_range": "2026-06-29 ~ 2026-07-02"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "close": 390.49,
+      "pct_2d": 5.95,
+      "date_range": "2026-06-29 ~ 2026-07-02"
+    },
+    {
+      "symbol": "SPOT",
+      "name": "Spotify Technology S.A.",
+      "close": 485.97,
+      "pct_2d": 5.85,
       "date_range": "2026-06-30 ~ 2026-07-02"
     }
   ]
