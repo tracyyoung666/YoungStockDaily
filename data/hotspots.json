@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03 09:10:18",
+  "updated_at": "2026-07-03 19:06:31",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -7,6 +7,13 @@
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
+    {
+      "symbol": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "close": 165.48,
+      "pct_2d": 13.2,
+      "date_range": "2026-06-30 ~ 2026-07-02"
+    },
     {
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
@@ -69,13 +76,6 @@
       "close": 390.49,
       "pct_2d": 5.95,
       "date_range": "2026-06-29 ~ 2026-07-02"
-    },
-    {
-      "symbol": "SPOT",
-      "name": "Spotify Technology S.A.",
-      "close": 485.97,
-      "pct_2d": 5.85,
-      "date_range": "2026-06-30 ~ 2026-07-02"
     }
   ]
 }
