@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 09:07:22",
+  "updated_at": "2026-07-06 19:03:47",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "MSTR",
-      "name": "Strategy Inc",
-      "close": 100.77,
-      "pct_2d": 15.92,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "close": 165.48,
-      "pct_2d": 13.2,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "close": 129.3,
-      "pct_2d": 10.83,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "WDAY",
-      "name": "Workday, Inc.",
-      "close": 135.4,
-      "pct_2d": 10.6,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "NFLX",
-      "name": "Netflix, Inc.",
-      "close": 77.65,
-      "pct_2d": 8.75,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 83.84,
-      "pct_2d": 7.78,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
       "symbol": "RIVN",
       "name": "Rivian Automotive, Inc.",
       "close": 18.63,
-      "pct_2d": 7.38,
-      "date_range": "2026-06-30 ~ 2026-07-02"
+      "pct_2d": 8.44,
+      "date_range": "2026-07-01 ~ 2026-07-06"
     },
     {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 219.72,
-      "pct_2d": 7.17,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "NOW",
-      "name": "Servicenow, Inc.",
-      "close": 106.32,
-      "pct_2d": 7.09,
-      "date_range": "2026-06-30 ~ 2026-07-02"
-    },
-    {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "close": 308.63,
-      "pct_2d": 6.66,
-      "date_range": "2026-06-30 ~ 2026-07-02"
+      "symbol": "MSTR",
+      "name": "Strategy Inc",
+      "close": 100.77,
+      "pct_2d": 7.9,
+      "date_range": "2026-07-01 ~ 2026-07-06"
     }
   ]
 }
