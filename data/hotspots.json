@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 19:03:47",
+  "updated_at": "2026-07-07 09:06:57",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,8 +10,15 @@
     {
       "symbol": "RIVN",
       "name": "Rivian Automotive, Inc.",
-      "close": 18.63,
-      "pct_2d": 8.44,
+      "close": 20.14,
+      "pct_2d": 17.23,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "close": 68.65,
+      "pct_2d": 10.82,
       "date_range": "2026-07-01 ~ 2026-07-06"
     },
     {
@@ -19,6 +26,48 @@
       "name": "Strategy Inc",
       "close": 100.77,
       "pct_2d": 7.9,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "close": 312.66,
+      "pct_2d": 6.21,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "close": 168.87,
+      "pct_2d": 6.05,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday, Inc.",
+      "close": 137.99,
+      "pct_2d": 5.93,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 132.54,
+      "pct_2d": 5.42,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile Us, Inc.",
+      "close": 181.79,
+      "pct_2d": 5.04,
+      "date_range": "2026-07-01 ~ 2026-07-06"
+    },
+    {
+      "symbol": "RTX",
+      "name": "Rtx Corporation",
+      "close": 201.37,
+      "pct_2d": 5.0,
       "date_range": "2026-07-01 ~ 2026-07-06"
     }
   ]
