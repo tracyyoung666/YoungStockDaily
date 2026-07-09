@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07 19:11:13",
+  "updated_at": "2026-07-09 09:10:02",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,32 +8,32 @@
   },
   "hotspots": [
     {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "close": 6.66,
-      "pct_2d": 9.54,
-      "date_range": "2026-07-02 ~ 2026-07-07"
+      "symbol": "NET",
+      "name": "Cloudflare, Inc.",
+      "close": 273.4,
+      "pct_2d": 10.44,
+      "date_range": "2026-07-06 ~ 2026-07-08"
     },
     {
-      "symbol": "RIVN",
-      "name": "Rivian Automotive, Inc.",
-      "close": 20.14,
-      "pct_2d": 8.11,
-      "date_range": "2026-07-02 ~ 2026-07-07"
+      "symbol": "COP",
+      "name": "Conocophillips",
+      "close": 110.72,
+      "pct_2d": 6.89,
+      "date_range": "2026-07-06 ~ 2026-07-08"
     },
     {
-      "symbol": "TSLA",
-      "name": "Tesla, Inc.",
-      "close": 419.77,
-      "pct_2d": 6.69,
-      "date_range": "2026-07-02 ~ 2026-07-07"
+      "symbol": "EOG",
+      "name": "Eog Resources, Inc.",
+      "close": 137.59,
+      "pct_2d": 6.34,
+      "date_range": "2026-07-06 ~ 2026-07-08"
     },
     {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 552.05,
-      "pct_2d": 6.61,
-      "date_range": "2026-07-02 ~ 2026-07-07"
+      "symbol": "TGT",
+      "name": "Target Corporation",
+      "close": 132.42,
+      "pct_2d": 5.01,
+      "date_range": "2026-07-06 ~ 2026-07-08"
     }
   ]
 }
