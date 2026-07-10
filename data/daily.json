@@ -1,6 +1,60 @@
 {
-  "updated_at": "2026-07-09T09:13:56",
+  "updated_at": "2026-07-10T09:12:30",
   "dailies": [
+    {
+      "slug": "daily_20260710_0908",
+      "date": "2026-07-10",
+      "generated_at": "2026-07-10 09:08",
+      "title": "自选股行情 + Web3 日报 | 2026-07-10 盘后",
+      "summary": "半导体板块+3.32%领涨，MU+4.52%/AMD+5.67%/MRVL+4.99%三只自选半导体同步大涨且未过热；NOK+7.95%放量领涨修复超跌。AI主线(算力+HBM+光互联+网络设备)依旧是资金主战场；Crypto随BTC恐贪指数28恐慌走弱。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260710_0908.png",
+      "has_stock": true,
+      "has_web3": true
+    },
+    {
+      "slug": "daily_20260709_1909",
+      "date": "2026-07-09",
+      "generated_at": "2026-07-09 19:09",
+      "title": "自选股行情 + Web3 日报 | 2026-07-09 盘前",
+      "summary": "AI主线强势：存储超级周期发酵(美光广岛HBM扩产)+AI算力NBIS +10.91%/CRWV +7.75%领涨，半导体盘前普涨；Crypto随BTC回落6万美元走弱MSTR -3.58%。Web3：BTC $62857 +1.27%，恐贪指数27恐慌，ETH资金回流+RWA扩张。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260709_1909.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260709_0907",
       "date": "2026-07-09",
