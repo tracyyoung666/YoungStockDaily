@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-07-10T19:14:15",
+  "updated_at": "2026-07-11T22:08:51",
   "dailies": [
+    {
+      "slug": "weekly_20260710",
+      "date": "2026-07-10",
+      "generated_at": "2026-07-11 22:10",
+      "title": "自选股周报 | 2026-07-06 ~ 07-10",
+      "summary": "本周(07-06~07-10)9涨6跌，涨跌冠军CRWV +9.72%(AI云基建)，末位MSTR -6.83%(加密敞口)。周三三星财报引爆芯片股系统性回调后周五快速修复。下周为财报季真空期(GOOG/TSLA/INTC财报在07-22后)。Web3:BTC $63,890周内+1.93%,恐贪27→30。",
+      "tickers": [
+        "CRWV",
+        "NOK",
+        "AMD",
+        "NVDA",
+        "TSLA",
+        "MU",
+        "QUBT",
+        "NBIS",
+        "GOOG",
+        "XPEV",
+        "MRVL",
+        "COHR",
+        "CRCL",
+        "INTC",
+        "MSTR"
+      ],
+      "image": "images/weekly_20260710.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260710_1907",
       "date": "2026-07-10",
