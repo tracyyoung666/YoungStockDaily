@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13 09:12:47",
+  "updated_at": "2026-07-13 19:03:50",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,22 +11,8 @@
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
       "close": 669.21,
-      "pct_2d": 10.96,
-      "date_range": "2026-07-08 ~ 2026-07-10"
-    },
-    {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "close": 557.89,
-      "pct_2d": 7.82,
-      "date_range": "2026-07-08 ~ 2026-07-10"
-    },
-    {
-      "symbol": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "close": 121.31,
-      "pct_2d": 6.58,
-      "date_range": "2026-07-08 ~ 2026-07-10"
+      "pct_2d": 5.97,
+      "date_range": "2026-07-09 ~ 2026-07-13"
     }
   ]
 }
