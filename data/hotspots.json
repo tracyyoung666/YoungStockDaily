@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 09:06:20",
+  "updated_at": "2026-07-14 19:03:38",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,22 +11,8 @@
       "symbol": "TEAM",
       "name": "Atlassian Corporation",
       "close": 96.16,
-      "pct_2d": 6.01,
-      "date_range": "2026-07-09 ~ 2026-07-13"
-    },
-    {
-      "symbol": "CRM",
-      "name": "Salesforce, Inc.",
-      "close": 171.22,
-      "pct_2d": 5.37,
-      "date_range": "2026-07-09 ~ 2026-07-13"
-    },
-    {
-      "symbol": "PYPL",
-      "name": "Paypal Holdings, Inc.",
-      "close": 47.65,
-      "pct_2d": 5.14,
-      "date_range": "2026-07-09 ~ 2026-07-13"
+      "pct_2d": 8.22,
+      "date_range": "2026-07-10 ~ 2026-07-14"
     }
   ]
 }
