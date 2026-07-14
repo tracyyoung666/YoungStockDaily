@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13 19:03:50",
+  "updated_at": "2026-07-14 09:06:20",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,10 +8,24 @@
   },
   "hotspots": [
     {
-      "symbol": "META",
-      "name": "Meta Platforms, Inc.",
-      "close": 669.21,
-      "pct_2d": 5.97,
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 96.16,
+      "pct_2d": 6.01,
+      "date_range": "2026-07-09 ~ 2026-07-13"
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce, Inc.",
+      "close": 171.22,
+      "pct_2d": 5.37,
+      "date_range": "2026-07-09 ~ 2026-07-13"
+    },
+    {
+      "symbol": "PYPL",
+      "name": "Paypal Holdings, Inc.",
+      "close": 47.65,
+      "pct_2d": 5.14,
       "date_range": "2026-07-09 ~ 2026-07-13"
     }
   ]
