@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 19:03:38",
+  "updated_at": "2026-07-15 09:05:03",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,10 +8,45 @@
   },
   "hotspots": [
     {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 96.16,
-      "pct_2d": 8.22,
+      "symbol": "CRWD",
+      "name": "Crowdstrike Holdings, Inc.",
+      "close": 210.73,
+      "pct_2d": 12.58,
+      "date_range": "2026-07-10 ~ 2026-07-14"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 152.09,
+      "pct_2d": 9.21,
+      "date_range": "2026-07-10 ~ 2026-07-14"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "close": 352.89,
+      "pct_2d": 8.28,
+      "date_range": "2026-07-10 ~ 2026-07-14"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 275.94,
+      "pct_2d": 5.54,
+      "date_range": "2026-07-10 ~ 2026-07-14"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 133.72,
+      "pct_2d": 5.47,
+      "date_range": "2026-07-10 ~ 2026-07-14"
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 270.73,
+      "pct_2d": 5.12,
       "date_range": "2026-07-10 ~ 2026-07-14"
     }
   ]
