@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16 09:08:41",
+  "updated_at": "2026-07-16 19:13:50",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,53 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "CRWD",
-      "name": "Crowdstrike Holdings, Inc.",
-      "close": 206.77,
-      "pct_2d": 10.04,
-      "date_range": "2026-07-13 ~ 2026-07-15"
-    },
-    {
       "symbol": "LCID",
       "name": "Lucid Group, Inc.",
       "close": 5.95,
-      "pct_2d": 7.99,
-      "date_range": "2026-07-13 ~ 2026-07-15"
+      "pct_2d": 28.79,
+      "date_range": "2026-07-14 ~ 2026-07-16"
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "close": 354.02,
-      "pct_2d": 7.18,
-      "date_range": "2026-07-13 ~ 2026-07-15"
-    },
-    {
-      "symbol": "XPEV",
-      "name": "Xpeng Inc",
-      "close": 13.78,
-      "pct_2d": 6.41,
-      "date_range": "2026-07-13 ~ 2026-07-15"
-    },
-    {
-      "symbol": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "close": 167.21,
-      "pct_2d": 6.25,
-      "date_range": "2026-07-13 ~ 2026-07-15"
-    },
-    {
-      "symbol": "MSTR",
-      "name": "Strategy Inc",
-      "close": 97.47,
-      "pct_2d": 5.83,
-      "date_range": "2026-07-13 ~ 2026-07-15"
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "Alphabet Inc.",
-      "close": 370.92,
-      "pct_2d": 5.22,
-      "date_range": "2026-07-13 ~ 2026-07-15"
+      "symbol": "PYPL",
+      "name": "Paypal Holdings, Inc.",
+      "close": 55.52,
+      "pct_2d": 17.2,
+      "date_range": "2026-07-14 ~ 2026-07-16"
     }
   ]
 }
