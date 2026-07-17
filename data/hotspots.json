@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 09:08:28",
+  "updated_at": "2026-07-17 19:09:17",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -11,43 +11,8 @@
       "symbol": "LCID",
       "name": "Lucid Group, Inc.",
       "close": 6.46,
-      "pct_2d": 39.83,
-      "date_range": "2026-07-14 ~ 2026-07-16"
-    },
-    {
-      "symbol": "PYPL",
-      "name": "Paypal Holdings, Inc.",
-      "close": 56.73,
-      "pct_2d": 19.76,
-      "date_range": "2026-07-14 ~ 2026-07-16"
-    },
-    {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 235.31,
-      "pct_2d": 6.58,
-      "date_range": "2026-07-14 ~ 2026-07-16"
-    },
-    {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "close": 333.26,
-      "pct_2d": 5.84,
-      "date_range": "2026-07-14 ~ 2026-07-16"
-    },
-    {
-      "symbol": "BKNG",
-      "name": "Booking Holdings Inc. Common Stock",
-      "close": 184.61,
-      "pct_2d": 5.58,
-      "date_range": "2026-07-14 ~ 2026-07-16"
-    },
-    {
-      "symbol": "XPEV",
-      "name": "Xpeng Inc",
-      "close": 14.04,
-      "pct_2d": 5.09,
-      "date_range": "2026-07-14 ~ 2026-07-16"
+      "pct_2d": 8.57,
+      "date_range": "2026-07-15 ~ 2026-07-17"
     }
   ]
 }
