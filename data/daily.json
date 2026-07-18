@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-07-17T19:13:39",
+  "updated_at": "2026-07-18T20:09:32",
   "dailies": [
+    {
+      "slug": "weekly_20260717",
+      "date": "2026-07-17",
+      "generated_at": "2026-07-18 20:09",
+      "title": "自选股周报 | 2026-07-13 ~ 07-17",
+      "summary": "本周(07-13~07-17)2涨13跌，系统性回调周。涨跌冠军XPEV +3.84%(独立新能源车行情)，末位MRVL -19.99%(AI芯片估值消化)。周四TSMC利润率警示+Meta出售算力冲击neocloud引爆系统性去风险，NBIS -19.09%领跌。下周TSLA/GOOG(7/22)、INTC(7/23)、NBIS(7/24)财报密集，7/28-29 FOMC，波动放大。",
+      "tickers": [
+        "XPEV",
+        "MSTR",
+        "GOOG",
+        "NVDA",
+        "TSLA",
+        "CRCL",
+        "QUBT",
+        "AMD",
+        "MU",
+        "INTC",
+        "COHR",
+        "CRWV",
+        "NOK",
+        "NBIS",
+        "MRVL"
+      ],
+      "image": "images/weekly_20260717.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260717_1905",
       "date": "2026-07-17",
