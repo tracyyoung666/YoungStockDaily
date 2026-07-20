@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 19:09:17",
+  "updated_at": "2026-07-20 09:05:22",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,8 +10,15 @@
     {
       "symbol": "LCID",
       "name": "Lucid Group, Inc.",
-      "close": 6.46,
-      "pct_2d": 8.57,
+      "close": 7.36,
+      "pct_2d": 23.7,
+      "date_range": "2026-07-15 ~ 2026-07-17"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 237.25,
+      "pct_2d": 5.65,
       "date_range": "2026-07-15 ~ 2026-07-17"
     }
   ]
