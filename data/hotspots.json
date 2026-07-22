@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22 09:07:08",
+  "updated_at": "2026-07-22 19:09:16",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,39 +8,39 @@
   },
   "hotspots": [
     {
-      "symbol": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "close": 71.08,
-      "pct_2d": 17.57,
-      "date_range": "2026-07-17 ~ 2026-07-21"
-    },
-    {
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
       "close": 970.82,
-      "pct_2d": 14.36,
-      "date_range": "2026-07-17 ~ 2026-07-21"
+      "pct_2d": 12.17,
+      "date_range": "2026-07-20 ~ 2026-07-22"
     },
     {
       "symbol": "COIN",
       "name": "Coinbase Global, Inc.",
       "close": 175.85,
-      "pct_2d": 11.92,
-      "date_range": "2026-07-17 ~ 2026-07-21"
+      "pct_2d": 9.61,
+      "date_range": "2026-07-20 ~ 2026-07-22"
     },
     {
       "symbol": "INTC",
       "name": "Intel Corporation",
       "close": 105.45,
-      "pct_2d": 10.95,
-      "date_range": "2026-07-17 ~ 2026-07-21"
+      "pct_2d": 8.64,
+      "date_range": "2026-07-20 ~ 2026-07-22"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "close": 71.08,
+      "pct_2d": 8.6,
+      "date_range": "2026-07-20 ~ 2026-07-22"
     },
     {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "close": 544.43,
-      "pct_2d": 9.82,
-      "date_range": "2026-07-17 ~ 2026-07-21"
+      "pct_2d": 8.11,
+      "date_range": "2026-07-20 ~ 2026-07-22"
     }
   ]
 }
