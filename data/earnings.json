@@ -1,6 +1,54 @@
 {
-  "updated_at": "2026-06-25 09:10:00",
+  "updated_at": "2026-07-23 19:15:00",
   "reports": [
+    {
+      "symbol": "TSLA",
+      "name": "Tesla 特斯拉",
+      "period": "2026Q2",
+      "period_label": "2026 Q2",
+      "fiscal_end": "2026-06-30",
+      "report_date": "2026-07-22",
+      "verdict": "mixed",
+      "verdict_label": "营收超预期+26% 但盈利大幅Miss 毛利率16.8%",
+      "eps_actual": 0.33,
+      "eps_estimate": 0.51,
+      "revenue_actual": 28.24,
+      "revenue_estimate": 26.32,
+      "revenue_unit": "B",
+      "url": "earnings/TSLA-2026Q2.html",
+      "generated_at": "2026-07-23 19:15:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-07-23",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/",
+        "local_file": "earnings-filings/TSLA-2026Q2-sec-filing.htm"
+      }
+    },
+    {
+      "symbol": "GOOG",
+      "name": "Alphabet 谷歌",
+      "period": "2026Q2",
+      "period_label": "2026 Q2",
+      "fiscal_end": "2026-06-30",
+      "report_date": "2026-07-22",
+      "verdict": "mixed",
+      "verdict_label": "营收/云超预期 Cloud+82% 但Capex上调至2050亿 FCF首次转负",
+      "eps_actual": 2.85,
+      "eps_estimate": 2.95,
+      "revenue_actual": 119.8,
+      "revenue_estimate": 116.93,
+      "revenue_unit": "B",
+      "url": "earnings/GOOG-2026Q2.html",
+      "generated_at": "2026-07-23 19:15:00",
+      "sec_filing": {
+        "form": "10-Q",
+        "filing_date": "2026-07-23",
+        "sec_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/",
+        "local_file": "earnings-filings/GOOG-2026Q2-sec-filing.htm"
+      }
+    },
     {
       "symbol": "MSTR",
       "name": "Strategy 微策略",
