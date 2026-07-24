@@ -1,10 +1,39 @@
 {
-  "updated_at": "2026-07-23 19:18:20",
+  "updated_at": "2026-07-24 09:14:29",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "LMT",
+      "name": "洛克希德马丁",
+      "close": 568.59,
+      "pct_2d": 10.54,
+      "date_range": "2026-07-22 ~ now"
+    },
+    {
+      "symbol": "TMO",
+      "name": "赛默飞世尔",
+      "close": 572.32,
+      "pct_2d": 8.71,
+      "date_range": "2026-07-22 ~ now"
+    },
+    {
+      "symbol": "RTX",
+      "name": "雷神技术",
+      "close": 209.16,
+      "pct_2d": 7.33,
+      "date_range": "2026-07-22 ~ now"
+    },
+    {
+      "symbol": "HON",
+      "name": "霍尼韦尔",
+      "close": 246.27,
+      "pct_2d": 5.7,
+      "date_range": "2026-07-22 ~ now"
+    }
+  ]
 }
