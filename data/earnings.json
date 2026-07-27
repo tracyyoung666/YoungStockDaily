@@ -46,5 +46,29 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926041296/",
       "local_file": "earnings-filings/NOK-2026Q2-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "INTC",
+    "name": "英特尔",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-07-23",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收创15年最快增速/数据中心暴涨59%/非GAAP转亏为盈）",
+    "eps_actual": 0.42,
+    "eps_estimate": 0.21,
+    "revenue_actual": 16128,
+    "revenue_estimate": 14430,
+    "revenue_unit": "百万美元",
+    "url": "earnings/INTC-2026Q2.html",
+    "generated_at": "2026-07-27 19:15",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-07-24",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/",
+      "local_file": "earnings-filings/INTC-2026Q2-sec-filing.htm"
+    }
   }
 ]
