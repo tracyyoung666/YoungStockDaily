@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24 19:06:16",
+  "updated_at": "2026-07-27 09:04:00",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,32 +8,60 @@
   },
   "hotspots": [
     {
-      "symbol": "LMT",
-      "name": "洛克希德马丁",
-      "close": 568.59,
-      "pct_2d": 10.54,
-      "date_range": "2026-07-22 ~ now"
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "close": 52.42,
+      "pct_2d": 11.01,
+      "date_range": "2026-07-23 ~ now"
     },
     {
-      "symbol": "TMO",
-      "name": "赛默飞世尔",
-      "close": 572.32,
-      "pct_2d": 8.71,
-      "date_range": "2026-07-22 ~ now"
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 86.88,
+      "pct_2d": 8.4,
+      "date_range": "2026-07-23 ~ now"
     },
     {
-      "symbol": "RTX",
-      "name": "雷神技术",
-      "close": 209.16,
-      "pct_2d": 7.33,
-      "date_range": "2026-07-22 ~ now"
+      "symbol": "NOW",
+      "name": "现在服务公司",
+      "close": 98.78,
+      "pct_2d": 7.44,
+      "date_range": "2026-07-23 ~ now"
     },
     {
-      "symbol": "HON",
-      "name": "霍尼韦尔",
-      "close": 246.27,
-      "pct_2d": 5.7,
-      "date_range": "2026-07-22 ~ now"
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 225.11,
+      "pct_2d": 6.1,
+      "date_range": "2026-07-23 ~ now"
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday",
+      "close": 135.34,
+      "pct_2d": 5.84,
+      "date_range": "2026-07-23 ~ now"
+    },
+    {
+      "symbol": "VZ",
+      "name": "威瑞森通信",
+      "close": 46.38,
+      "pct_2d": 5.84,
+      "date_range": "2026-07-23 ~ now"
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile Us, Inc.",
+      "close": 180.09,
+      "pct_2d": 5.67,
+      "date_range": "2026-07-23 ~ now"
+    },
+    {
+      "symbol": "T",
+      "name": "美国电话电报",
+      "close": 24.13,
+      "pct_2d": 5.1,
+      "date_range": "2026-07-23 ~ now"
     }
   ]
 }
