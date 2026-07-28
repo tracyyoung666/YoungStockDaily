@@ -29,6 +29,7 @@ render_overview.py · v4
 import argparse
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -80,6 +81,10 @@ C = {
     'fire': '#ef4444',
     'ok': '#10b981',
     'header_bg': '#eef2f8',
+    # 左侧"异常等级条"专用中性色阶（刻意避开红/绿，防止与红涨绿跌混淆）
+    'level_none': '#cbd5e1',   # 浅灰：无异常
+    'level_warn': '#f59e0b',   # 琥珀：一般异常（量比/RSI极端/52周新高）
+    'level_high': '#1d4ed8',   # 深蓝：重大异常（大幅波动 >4%）
 }
 
 
@@ -208,7 +213,7 @@ def render(data, out_path):
     ext_label = '盘后' if is_afterhours else ('盘中' if is_realtime else '盘前')
 
     # ====== 布局参数 ======
-    W = 1180
+    W = 1090
     PAD_X = 36
     HEADER_H = 110
     TABLE_HEADER_H = 52
@@ -242,9 +247,9 @@ def render(data, out_path):
     y = HEADER_H
 
     # ===== 表头 =====
-    # 8 列布局：按内容宽度分配，代码列避开左侧色条，末列信号收窄
-    # 表格可用区 x ∈ [36, 1144]，色条占 36~42
-    cols_x = [95, 200, 310, 425, 530, 636, 762, 950]
+    # 8 列布局：按内容宽度分配，代码列避开左侧色条，末列信号已精简文案故可收窄
+    # 表格可用区 x ∈ [36, 1054]，色条占 36~43
+    cols_x = [92, 196, 305, 415, 515, 618, 738, 900]
     cols_name = ['代码', '收盘价', '今日涨跌', f'{ext_label}价', f'{ext_label}%', '距52W高', '定投', '信号']
 
     ax.add_patch(FancyBboxPatch(
@@ -264,12 +269,13 @@ def render(data, out_path):
         ax.add_patch(Rectangle((PAD_X, row_y), W - 2 * PAD_X, ROW_H,
                                facecolor=row_bg, edgecolor='none'))
 
-        # 信号等级色条
+        # 异常等级色条（中性色阶：浅灰=无异常 / 琥珀=一般异常 / 深蓝=重大波动）
         signals = s.get('signals', [])
         has_fire = any('>4%' in sig for sig in signals)
         has_warn = len(signals) > 0
-        level_color = C['fire'] if has_fire else (C['orange'] if has_warn else C['ok'])
-        ax.add_patch(Rectangle((PAD_X, row_y), 6, ROW_H,
+        level_color = (C['level_high'] if has_fire
+                       else (C['level_warn'] if has_warn else C['level_none']))
+        ax.add_patch(Rectangle((PAD_X, row_y), 7, ROW_H,
                                facecolor=level_color, edgecolor='none'))
 
         # 底部分隔线
@@ -325,14 +331,25 @@ def render(data, out_path):
                 fontsize=12, fontweight='bold', color=adv_color,
                 va='center', ha='center')
 
-        # 8 信号
+        # 8 信号（精简文案：去掉括号内百分比，避免与"今日涨跌"列重复占宽）
         if signals:
             label = signals[0]
-            if len(label) > 14:
-                label = label[:13] + '…'
+            label = re.sub(r'\s*\([^)]*\)', '', label)   # 去掉 (±X.XX%)
+            label = (label.replace('日涨跌>4%', '波动>4%')
+                          .replace('接近52w新高', '近52W高')
+                          .replace('接近52W新高', '近52W高')
+                          .replace('创52周新高', '52W新高')
+                          .replace('创52周新低', '52W新低')
+                          .replace('量比>2', '放量'))
+            if len(signals) > 1:
+                label += f'+{len(signals) - 1}'
+            if len(label) > 11:
+                label = label[:10] + '…'
         else:
             label = '正常'
-        label_color = C['fire'] if has_fire else (C['orange'] if has_warn else C['ok'])
+        # 与色条同一套中性色阶：正常=浅灰字 / 一般异常=琥珀 / 重大波动=深蓝
+        label_color = (C['level_high'] if has_fire
+                       else (C['level_warn'] if has_warn else C['muted']))
         ax.text(cols_x[7], cy, label,
                 fontsize=11, fontweight='bold', color=label_color,
                 va='center', ha='center')
