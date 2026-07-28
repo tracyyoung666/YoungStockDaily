@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-07-28T10:37:44",
+  "updated_at": "2026-07-28T19:17:08",
   "dailies": [
+    {
+      "slug": "daily_20260728_1910",
+      "date": "2026-07-28",
+      "generated_at": "2026-07-28 19:10",
+      "title": "2026-07-28 盘前 · 自选股分析 + Web3 日报",
+      "summary": "AI硬件杀估值、软件应用层接棒：15只自选股13只盘前下跌，半导体-3.14%/光通信-3.92%领跌；TSLA(RSI6=13.2)、MRVL/CRWV/NOK(回撤>-40%+RSI6<30) 触发 Strong Buy；MSTR/QUBT/CRCL 深跌但RSI6中性，属趋势崩坏不抄底。BTC $63,489(-2.91%)，恐贪指数34恐慌。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260728_1910.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260728_0903",
       "date": "2026-07-28",
