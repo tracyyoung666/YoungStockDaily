@@ -60,6 +60,11 @@ SECTOR_MAP = {
 
 WESTOCK_SCRIPT = "/data/workspace/.agent/skills/westock-data/scripts/index.js"
 
+# 新版 westock-data 改为 Go CLI（westock），优先使用本地已安装的二进制
+WESTOCK_CLI = os.path.expanduser("~/.local/bin/westock")
+if not os.path.exists(WESTOCK_CLI):
+    WESTOCK_CLI = "westock"
+
 # 新闻过滤关键词（这些是无意义的成交额/成交量播报）
 NEWS_FILTER_KEYWORDS = [
     "成交额为", "成交量为", "成交额达", "成交量达",
@@ -129,11 +134,10 @@ def detect_market_session() -> Dict:
 
 
 def _run_westock(cmd_args: List[str], timeout: int = 30) -> str:
-    """运行 westock-data 命令并返回 stdout。"""
+    """运行 westock CLI 命令并返回 stdout（新版 Go CLI）。"""
     proc = subprocess.run(
-        ["node", WESTOCK_SCRIPT] + cmd_args,
+        [WESTOCK_CLI] + cmd_args,
         capture_output=True, text=True, timeout=timeout,
-        cwd="/data/workspace/.agent/skills/westock-data"
     )
     return proc.stdout
 
@@ -196,6 +200,11 @@ def fetch_westock_quote(symbols: List[str]) -> Dict[str, Dict]:
                     "low_52w": _f("low_52week"),
                     "dist_from_52w_high_pct": round(dist, 2),
                     "trading_date_et": parts[col["time"]] if "time" in col and col["time"] < len(parts) else "",
+                    # 新版 CLI 直接返回的盘前/盘后价（替代新浪接口）
+                    "cli_pre_market_price": _f("pre_market_price") or None,
+                    "cli_pre_market_pct": _f("pre_market_price_chg_pct") or None,
+                    "cli_post_market_price": _f("post_market_price") or None,
+                    "cli_post_market_pct": _f("post_market_price_chg_pct") or None,
                 }
             except (ValueError, IndexError) as e:
                 result[sym] = {"error": f"parse_fail: {e}"}
@@ -205,43 +214,60 @@ def fetch_westock_quote(symbols: List[str]) -> Dict[str, Dict]:
 
 
 def fetch_westock_technical(symbols: List[str]) -> Dict[str, Dict]:
-    """获取技术指标（RSI6 / KDJ / MA 等）。"""
-    codes = [WESTOCK_CODE_MAP.get(s.upper(), s) for s in symbols]
+    """获取技术指标（RSI6 / KDJ / MA 等）。
+
+    注意（2026-07-28 修复）：
+      1. westock technical 只接受**无后缀**代码（usMU），带 .OQ/.N 会返回 CLI_004 未找到匹配数据
+      2. 单次批量最多 10 个代码（CLI_003），需分批
+      3. 新版表头为 `RSI_6` / `KDJ_K`（旧版为 `rsi.RSI_6` / `kdj.KDJ_K`），两者都兼容
+      4. 表头首列是 `date` 而非 `code`，代码在第 2 列
+    """
     result = {}
-    try:
-        stdout = _run_westock(["technical", ",".join(codes)])
-        # 找表头确认 RSI6 位置
-        header_line = None
-        data_lines = []
-        for line in stdout.split("\n"):
-            if line.startswith("| code"):
-                header_line = line
-            elif line.startswith("| us"):
-                data_lines.append(line)
+    plain_codes = ["us" + s.upper() for s in symbols]
+    batches = [plain_codes[i:i + 8] for i in range(0, len(plain_codes), 8)]
+    for batch in batches:
+        try:
+            stdout = _run_westock(["technical", ",".join(batch)])
+            header_line = None
+            data_lines = []
+            for line in stdout.split("\n"):
+                ls = line.strip()
+                if ls.startswith("| date") or ls.startswith("| code"):
+                    header_line = ls
+                elif ls.startswith("| 20"):
+                    data_lines.append(ls)
 
-        if not header_line:
-            return result
+            if not header_line:
+                continue
 
-        headers = [h.strip() for h in header_line.split("|")[1:-1]]
-        rsi6_idx = None
-        kdj_k_idx = None
-        for i, h in enumerate(headers):
-            if h == "rsi.RSI_6":
-                rsi6_idx = i
-            elif h == "kdj.KDJ_K":
-                kdj_k_idx = i
+            headers = [h.strip() for h in header_line.split("|")[1:-1]]
+            rsi6_idx = None
+            kdj_k_idx = None
+            code_idx = None
+            for i, h in enumerate(headers):
+                if h in ("RSI_6", "rsi.RSI_6"):
+                    rsi6_idx = i
+                elif h in ("KDJ_K", "kdj.KDJ_K"):
+                    kdj_k_idx = i
+                elif h == "code":
+                    code_idx = i
 
-        for line in data_lines:
-            parts = [p.strip() for p in line.split("|")[1:-1]]
-            sym = parts[0].replace("us", "").split(".")[0]
-            try:
-                rsi6 = float(parts[rsi6_idx]) if rsi6_idx and parts[rsi6_idx] not in ['-', ''] else None
-                kdj_k = float(parts[kdj_k_idx]) if kdj_k_idx and parts[kdj_k_idx] not in ['-', ''] else None
-                result[sym] = {"rsi6": rsi6, "kdj_k": kdj_k}
-            except (ValueError, IndexError):
-                pass
-    except Exception:
-        pass
+            for line in data_lines:
+                parts = [p.strip() for p in line.split("|")[1:-1]]
+                if code_idx is None or code_idx >= len(parts):
+                    continue
+                sym = parts[code_idx].upper()
+                if sym.startswith("US"):
+                    sym = sym[2:]
+                sym = sym.split(".")[0]
+                try:
+                    rsi6 = float(parts[rsi6_idx]) if rsi6_idx is not None and parts[rsi6_idx] not in ['-', ''] else None
+                    kdj_k = float(parts[kdj_k_idx]) if kdj_k_idx is not None and parts[kdj_k_idx] not in ['-', ''] else None
+                    result[sym] = {"rsi6": rsi6, "kdj_k": kdj_k}
+                except (ValueError, IndexError):
+                    pass
+        except Exception:
+            continue
     return result
 
 
@@ -250,14 +276,14 @@ def fetch_westock_news(symbols: List[str]) -> Dict[str, List[str]]:
     codes = [WESTOCK_CODE_MAP.get(s.upper(), s) for s in symbols]
     result = {s.upper(): [] for s in symbols}
     try:
-        stdout = _run_westock(["news", ",".join(codes), "--type", "3", "--limit", "4"])
+        stdout = _run_westock(["news", "list", ",".join(codes), "--limit", "4"])
         current_sym = None
         for line in stdout.split("\n"):
             m = re.match(r'\*\*(us(\w+)\.\w+)\*\*', line)
             if m:
                 current_sym = m.group(2)
                 continue
-            if current_sym and line.startswith("|") and "time" not in line and "---" not in line:
+            if current_sym and line.startswith("|") and "title" not in line and "---" not in line:
                 parts = [p.strip() for p in line.split("|")]
                 if len(parts) > 5 and parts[5]:
                     title = parts[5][:100]
@@ -302,7 +328,7 @@ def fetch_westock_events(symbols: List[str]) -> Dict[str, List[Dict]]:
     result = {s.upper(): [] for s in symbols}
     try:
         # 财报披露日
-        stdout = _run_westock(["reserve", ",".join(codes)])
+        stdout = _run_westock(["disclosure", ",".join(codes)])
         current_sym = None
         for line in stdout.split("\n"):
             m = re.match(r'\*\*(us(\w+)\.\w+)\*\*', line)
@@ -322,7 +348,7 @@ def fetch_westock_events(symbols: List[str]) -> Dict[str, List[Dict]]:
 
     try:
         # 分红除权日
-        stdout = _run_westock(["exdiv", ",".join(codes)])
+        stdout = _run_westock(["dividend", ",".join(codes)])
         current_sym = None
         for line in stdout.split("\n"):
             m = re.match(r'\*\*(us(\w+)\.\w+)\*\*', line)
@@ -501,6 +527,18 @@ def fetch_all(symbols: List[str], include_extras: bool = True) -> Dict:
         ext_price = ext.get("extended_price")
         close_price = q.get("close_price")
 
+        # 优先使用新版 CLI 直接返回的盘前/盘后价（比新浪更稳定）
+        cli_ext_price = None
+        cli_ext_pct = None
+        if ext_type == "afterhours":
+            cli_ext_price = q.get("cli_post_market_price")
+            cli_ext_pct = q.get("cli_post_market_pct")
+        elif ext_type == "premarket":
+            cli_ext_price = q.get("cli_pre_market_price")
+            cli_ext_pct = q.get("cli_pre_market_pct")
+        if cli_ext_price:
+            ext_price = cli_ext_price
+
         # 新浪 [1] 更新优先
         sina_close = ext.get("close_price_sina")
         if sina_close and close_price and abs(sina_close - close_price) > 0.5:
@@ -513,7 +551,11 @@ def fetch_all(symbols: List[str], include_extras: bool = True) -> Dict:
         # 自算扩展时段涨跌%
         ext_pct = None
         ext_note = ext.get("reason")
-        if ext_type == "realtime":
+        if cli_ext_price and cli_ext_pct is not None:
+            # 优先用 CLI 直接返回的盘前/盘后涨跌%
+            ext_pct = cli_ext_pct
+            ext_note = "ok_cli"
+        elif ext_type == "realtime":
             # 盘中实时：涨跌% 直接用接口的（[2] = 当前价 vs 昨收）
             ext_pct = ext.get("extended_pct")
         elif ext_price is not None and close_price and close_price > 0:
