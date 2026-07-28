@@ -766,6 +766,8 @@ footer {
 .report-card .badge.stock { background: #eff6ff; color: #1d4ed8; }
 .report-card .badge.web3  { background: #fef3c7; color: #b45309; }
 .report-card .badge.weekly { background: #f0fdf4; color: #15803d; }
+.report-card .badge.special { background: #fff7ed; color: #b45309; }
+.report-card.special-card { border-left: 3px solid #f59e0b; }
 
 /* 周报卡片区分样式 */
 .report-card.weekly-card {
@@ -1648,30 +1650,41 @@ footer {
 /* ================================================================
    特别报告入口横幅
    ================================================================ */
-.special-report-banner {
-  display: flex; align-items: center; justify-content: space-between; gap: 14px;
-  background: linear-gradient(135deg, #fff7ed 0%, #fffdf8 55%, #ffffff 100%);
-  border: 1px solid #fde3c4; border-left: 4px solid #f59e0b;
+/* ===== 置顶：投资铁律（常驻警示卡） ===== */
+.iron-rules {
+  background: linear-gradient(135deg, #fef2f2 0%, #fffbfb 55%, #ffffff 100%);
+  border: 1px solid #fecaca; border-left: 4px solid #dc2626;
   border-radius: 14px; padding: 16px 20px; margin: 4px 0 20px;
-  text-decoration: none; color: inherit;
-  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 2px 10px rgba(220, 38, 38, .06);
 }
-.special-report-banner:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(245, 158, 11, .16);
+.iron-rules .ir-head {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px;
+  padding-bottom: 10px; margin-bottom: 10px;
+  border-bottom: 1px dashed #fecaca;
 }
-.special-report-banner .sr-badge {
-  display: inline-block; background: #f59e0b; color: #fff;
-  font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+.iron-rules .ir-title {
+  font-size: 16px; font-weight: 800; color: #b91c1c; letter-spacing: .3px;
 }
-.special-report-banner .sr-title {
-  font-size: 17px; font-weight: 800; color: #0f172a; margin: 8px 0 4px;
+.iron-rules .ir-sub { font-size: 12.5px; color: #a8a29e; }
+.iron-rules .ir-list {
+  margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px;
 }
-.special-report-banner .sr-sub { font-size: 12.5px; color: #94a3b8; }
-.special-report-banner .sr-arrow {
-  flex-shrink: 0; font-size: 14px; font-weight: 700; color: #b45309; white-space: nowrap;
+.iron-rules .ir-list li { color: var(--text); }
+.iron-rules .ir-list li::marker { color: #dc2626; font-weight: 800; }
+.iron-rules .ir-rule {
+  font-size: 14.5px; font-weight: 700; color: #1f2937; line-height: 1.5;
+}
+.iron-rules .ir-case {
+  margin-top: 3px; font-size: 12px; color: #9ca3af; line-height: 1.5;
+  word-break: break-word;
 }
 @media (max-width: 640px) {
-  .special-report-banner { flex-direction: column; align-items: flex-start; padding: 14px 16px; }
-  .special-report-banner .sr-title { font-size: 15px; }
+  .iron-rules { padding: 14px 16px; }
+  .iron-rules .ir-title { font-size: 15px; }
+  .iron-rules .ir-rule { font-size: 13.5px; }
+  .iron-rules .ir-list { padding-left: 20px; }
+}
+
+@media (max-width: 640px) {
+  .iron-rules .ir-head { gap: 6px; }
 }

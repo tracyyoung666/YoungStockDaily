@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T19:17:08",
+  "updated_at": "2026-07-29T00:18:05",
   "dailies": [
     {
       "slug": "daily_20260728_1910",
@@ -1161,6 +1161,24 @@
       "image": "images/daily_20260701_1901.png",
       "has_stock": true,
       "has_web3": true
+    },
+    {
+      "slug": "midyear_20260701",
+      "date": "2026-07-01",
+      "generated_at": "2026-07-01 12:00",
+      "title": "📌 2026 年中小结：Flag 立于年初，账已过半",
+      "summary": "三账户 +50% 目标进度 · 候选标的半年成绩单 · 复盘与下半年候选池。FT +9.8% / LongB -35.4% / Chars +107.7% / 整体 +22.7%。",
+      "tickers": [
+        "NBIS",
+        "RKLB",
+        "TSLA",
+        "CRCL",
+        "XPEV"
+      ],
+      "image": null,
+      "has_stock": true,
+      "has_web3": false,
+      "external_url": "daily/midyear_20260701.html"
     },
     {
       "slug": "daily_20260701_0905",

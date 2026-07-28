@@ -9,6 +9,24 @@ ROOT = Path(__file__).resolve().parent.parent
 DAILY_DIR = ROOT / 'daily'
 DATA_DIR  = ROOT / 'data'
 
+# 特别报告（纯 HTML 页，无对应 JSON）：不常驻首页，但需出现在"分析日报"列表中
+# 新增专题页时在此登记即可，external_url 相对站点根目录
+SPECIAL_REPORTS = [
+    {
+        "slug": "midyear_20260701",
+        "date": "2026-07-01",
+        "generated_at": "2026-07-01 12:00",
+        "title": "📌 2026 年中小结：Flag 立于年初，账已过半",
+        "summary": "三账户 +50% 目标进度 · 候选标的半年成绩单 · 复盘与下半年候选池。"
+                   "FT +9.8% / LongB -35.4% / Chars +107.7% / 整体 +22.7%。",
+        "tickers": ["NBIS", "RKLB", "TSLA", "CRCL", "XPEV"],
+        "image": None,
+        "has_stock": True,
+        "has_web3": False,
+        "external_url": "daily/midyear_20260701.html",
+    },
+]
+
 def main():
     entries = []
     # 扫描日报 daily_*.json 和周报 weekly_*.json
@@ -36,6 +54,14 @@ def main():
             "has_stock":    d.get("has_stock", False),
             "has_web3":     d.get("has_web3", False),
         })
+    # 合并特别报告（纯 HTML 专题），仅当文件确实存在时才加入索引
+    for sp in SPECIAL_REPORTS:
+        html_path = ROOT / sp["external_url"]
+        if not html_path.exists():
+            print(f'[skip] 特别报告文件不存在: {sp["external_url"]}', file=sys.stderr)
+            continue
+        entries.append(dict(sp))
+
     entries.sort(key=lambda x: (x['date'], x['generated_at']), reverse=True)
     idx = {
         "updated_at": datetime.now().strftime('%Y-%m-%dT%H:%M:%S'),

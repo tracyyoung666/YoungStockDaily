@@ -218,7 +218,7 @@ def render(data, out_path):
     HEADER_H = 110
     TABLE_HEADER_H = 52
     ROW_H = 60
-    FOOTER_H = 52
+    FOOTER_H = 118          # 含三条精简投资铁律小字
 
     n_rows = len(stocks)
     table_h = TABLE_HEADER_H + ROW_H * n_rows
@@ -356,10 +356,29 @@ def render(data, out_path):
 
         y += ROW_H
 
-    # ===== 底部 =====
-    ax.text(W / 2, H - 22,
+    # ===== 底部：投资铁律（小字低调） + 免责声明 =====
+    rules_top = HEADER_H + table_h + 18
+    # 细分隔线
+    ax.add_patch(Rectangle((PAD_X, rules_top), W - 2 * PAD_X, 1,
+                           facecolor=C['border'], edgecolor='none'))
+    ry = rules_top + 18
+    ax.text(PAD_X + 4, ry, '⚠ 投资铁律',
+            fontsize=9.5, fontweight='bold', color='#b91c1c',
+            va='center', ha='left')
+    IRON_RULES = [
+        '连续冲高后回调 5% 必须开始止盈',
+        '买入逻辑未按预期兑现，及时卖出',
+        '小仓位打野同样必须止损，不可当价值股死扛',
+    ]
+    rx = PAD_X + 92
+    for i, txt in enumerate(IRON_RULES):
+        ax.text(rx, ry, f'{i + 1}. {txt}',
+                fontsize=9, color=C['muted'], va='center', ha='left')
+        ry += 17
+
+    ax.text(W / 2, H - 20,
             "Young's Stock Daily · 仅为个人投资备忘，不构成投资建议",
-            fontsize=10.5, color=C['muted'],
+            fontsize=10, color='#b8c0cc',
             va='center', ha='center')
 
     # ===== 保存 =====

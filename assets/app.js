@@ -474,6 +474,7 @@
       }
       listEl.innerHTML = filtered.map(function (r) {
         const isWeekly = (r.slug || '').indexOf('weekly_') === 0;
+        const isSpecial = !!r.external_url;
         const badges =
           (r.has_stock ? '<span class="badge stock">📈 股票</span>' : '') +
           (r.has_web3  ? '<span class="badge web3">🪙 Web3</span>'  : '');
@@ -484,10 +485,18 @@
             }).join('') + '</div>'
           : '';
         const img = r.image ? '<img class="thumb" src="' + escapeHtml(r.image) + '" alt="" loading="lazy">' : '';
-        return '<a class="report-card' + (isWeekly ? ' weekly-card' : '') + '" data-date="' + escapeHtml(r.date) + '" href="#daily/' + encodeURIComponent(r.slug) + '">' +
+        // 特别报告（纯 HTML 页）直接跳转，其余走 hash 路由原地渲染
+        const href = isSpecial
+          ? escapeHtml(r.external_url)
+          : '#daily/' + encodeURIComponent(r.slug);
+        const cls = 'report-card' + (isWeekly ? ' weekly-card' : '') + (isSpecial ? ' special-card' : '');
+        return '<a class="' + cls + '" data-date="' + escapeHtml(r.date) + '" href="' + href + '">' +
                  img +
                  '<div class="date">' + escapeHtml(r.date) + ' <small>🕒 ' + escapeHtml(r.generated_at || '') + '</small></div>' +
-                 '<div class="badges">' + badges + (isWeekly ? '<span class="badge weekly">📊 周报</span>' : '') + '</div>' +
+                 '<div class="badges">' + badges +
+                   (isWeekly ? '<span class="badge weekly">📊 周报</span>' : '') +
+                   (isSpecial ? '<span class="badge special">📌 特别报告</span>' : '') +
+                 '</div>' +
                  '<div class="title">' + escapeHtml(r.title) + '</div>' +
                  '<div class="summary">' + escapeHtml(r.summary || '') + '</div>' +
                  tickers +
