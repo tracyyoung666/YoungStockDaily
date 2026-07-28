@@ -356,7 +356,7 @@ def render(data, out_path):
 
         y += ROW_H
 
-    # ===== 底部：投资铁律（小字低调） + 免责声明 =====
+    # ===== 底部：投资铁律（小字但红色醒目） + 免责声明 =====
     rules_top = HEADER_H + table_h + 18
     # 细分隔线
     ax.add_patch(Rectangle((PAD_X, rules_top), W - 2 * PAD_X, 1,
@@ -373,7 +373,7 @@ def render(data, out_path):
     rx = PAD_X + 92
     for i, txt in enumerate(IRON_RULES):
         ax.text(rx, ry, f'{i + 1}. {txt}',
-                fontsize=9, color=C['muted'], va='center', ha='left')
+                fontsize=9.5, color='#dc2626', va='center', ha='left')
         ry += 17
 
     ax.text(W / 2, H - 20,
