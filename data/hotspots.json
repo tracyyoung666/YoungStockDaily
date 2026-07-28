@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27 19:11:33",
+  "updated_at": "2026-07-28 09:05:26",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,60 +8,74 @@
   },
   "hotspots": [
     {
-      "symbol": "SLB",
-      "name": "斯伦贝谢",
-      "close": 52.42,
-      "pct_2d": 11.01,
-      "date_range": "2026-07-23 ~ now"
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 126.88,
+      "pct_2d": 11.54,
+      "date_range": "2026-07-24 ~ now"
     },
     {
       "symbol": "TEAM",
       "name": "Atlassian Corporation",
-      "close": 86.88,
-      "pct_2d": 8.4,
-      "date_range": "2026-07-23 ~ now"
-    },
-    {
-      "symbol": "NOW",
-      "name": "现在服务公司",
-      "close": 98.78,
-      "pct_2d": 7.44,
-      "date_range": "2026-07-23 ~ now"
-    },
-    {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 225.11,
-      "pct_2d": 6.1,
-      "date_range": "2026-07-23 ~ now"
+      "close": 95.87,
+      "pct_2d": 10.35,
+      "date_range": "2026-07-24 ~ now"
     },
     {
       "symbol": "WDAY",
       "name": "Workday",
-      "close": 135.34,
-      "pct_2d": 5.84,
-      "date_range": "2026-07-23 ~ now"
+      "close": 147.54,
+      "pct_2d": 9.01,
+      "date_range": "2026-07-24 ~ now"
     },
     {
-      "symbol": "VZ",
-      "name": "威瑞森通信",
-      "close": 46.38,
-      "pct_2d": 5.84,
-      "date_range": "2026-07-23 ~ now"
+      "symbol": "MSTR",
+      "name": "微策略",
+      "close": 98.65,
+      "pct_2d": 7.61,
+      "date_range": "2026-07-24 ~ now"
     },
     {
-      "symbol": "TMUS",
-      "name": "T-Mobile Us, Inc.",
-      "close": 180.09,
-      "pct_2d": 5.67,
-      "date_range": "2026-07-23 ~ now"
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 131.53,
+      "pct_2d": 7.0,
+      "date_range": "2026-07-24 ~ now"
     },
     {
-      "symbol": "T",
-      "name": "美国电话电报",
-      "close": 24.13,
-      "pct_2d": 5.1,
-      "date_range": "2026-07-23 ~ now"
+      "symbol": "NOW",
+      "name": "现在服务公司",
+      "close": 105.56,
+      "pct_2d": 6.86,
+      "date_range": "2026-07-24 ~ now"
+    },
+    {
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "close": 30.44,
+      "pct_2d": 6.36,
+      "date_range": "2026-07-24 ~ now"
+    },
+    {
+      "symbol": "CRM",
+      "name": "赛富时",
+      "close": 173.6,
+      "pct_2d": 6.07,
+      "date_range": "2026-07-24 ~ now"
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "close": 167.49,
+      "pct_2d": 5.81,
+      "date_range": "2026-07-24 ~ now"
+    },
+    {
+      "symbol": "ISRG",
+      "name": "直觉外科公司",
+      "close": 356.83,
+      "pct_2d": 5.73,
+      "date_range": "2026-07-24 ~ now"
     }
   ]
 }
