@@ -96,6 +96,66 @@ def color_pct(v):
     return C['red'] if v > 0 else C['green'] if v < 0 else C['sub']
 
 
+# ---------- 定投买卖点判定（与 SKILL.md 步骤 2.55 口径一致） ----------
+def compute_advice(s):
+    """返回 (label, color)。三档：定投买(红)/定投卖(绿)/观望(灰)。
+    优先取股票自带的 advice_label，没有则按规则现算。"""
+    # 若上游已算好，直接用
+    lbl = s.get('advice_label') or s.get('advice')
+    if lbl:
+        if '买' in lbl:
+            return '定投买▲', C['red']
+        if '卖' in lbl:
+            return '定投卖▼', C['green']
+        return '观望—', C['muted']
+
+    rsi = s.get('rsi6')
+    d52h = s.get('dist_52w_high') if s.get('dist_52w_high') is not None else s.get('dist_from_52w_high_pct')
+    pct1d = s.get('pct_1d')
+    ext = s.get('extended_pct')
+    if ext is None:
+        ext = s.get('premarket_pct')
+    if ext is None:
+        ext = s.get('extended_pct_vs_close')
+
+    def _drop():  # 当日或盘前盘后最大跌幅（正数表示跌幅）
+        vals = [x for x in (pct1d, ext) if x is not None]
+        return -min(vals) if vals else None
+
+    def _rise():  # 当日或盘前盘后最大涨幅
+        vals = [x for x in (pct1d, ext) if x is not None]
+        return max(vals) if vals else None
+
+    # ---- 卖出信号（优先）----
+    if rsi is not None:
+        if rsi > 85:
+            return '定投卖▼', C['green']
+        if d52h is not None and d52h > -2 and rsi > 70:
+            return '定投卖▼', C['green']
+        r = _rise()
+        if r is not None and r > 10 and rsi > 75:
+            return '定投卖▼', C['green']
+    # ---- 买入信号 ----
+    if rsi is not None:
+        if rsi < 20:
+            return '定投买▲', C['red']
+        if d52h is not None and d52h < -20 and rsi < 45:
+            return '定投买▲', C['red']
+        dp = _drop()
+        if dp is not None and dp > 6 and rsi < 40:
+            return '定投买▲', C['red']
+        return '观望—', C['muted']
+    # ---- RSI 缺失：降级为纯价格判定 ----
+    if d52h is not None and d52h < -20:
+        return '定投买▲', C['red']
+    dp = _drop()
+    if dp is not None and dp > 6:
+        return '定投买▲', C['red']
+    if d52h is not None and d52h > -2:
+        return '定投卖▼', C['green']
+    return '观望—', C['muted']
+
+
 # ---------- 主渲染 ----------
 def render(data, out_path):
     setup_font()
@@ -114,7 +174,7 @@ def render(data, out_path):
     ext_label = '盘后' if is_afterhours else ('盘中' if is_realtime else '盘前')
 
     # ====== 布局参数 ======
-    W = 1080
+    W = 1240
     PAD_X = 36
     HEADER_H = 110
     TABLE_HEADER_H = 52
@@ -148,9 +208,9 @@ def render(data, out_path):
     y = HEADER_H
 
     # ===== 表头 =====
-    # 7 列布局
-    cols_x = [80, 205, 360, 520, 680, 840, 985]
-    cols_name = ['代码', '收盘价', '今日涨跌', f'{ext_label}价', f'{ext_label}%', '距52W高', '信号']
+    # 8 列布局（新增"定投"列）
+    cols_x = [70, 175, 300, 420, 535, 650, 780, 1010]
+    cols_name = ['代码', '收盘价', '今日涨跌', f'{ext_label}价', f'{ext_label}%', '距52W高', '定投', '信号']
 
     ax.add_patch(FancyBboxPatch(
         (PAD_X, y), W - 2 * PAD_X, TABLE_HEADER_H,
@@ -224,7 +284,13 @@ def render(data, out_path):
         ax.text(cols_x[5], cy, d52_text,
                 fontsize=12, color=d52_color, va='center', ha='center')
 
-        # 7 信号
+        # 7 定投买卖建议
+        adv_label, adv_color = compute_advice(s)
+        ax.text(cols_x[6], cy, adv_label,
+                fontsize=12, fontweight='bold', color=adv_color,
+                va='center', ha='center')
+
+        # 8 信号
         if signals:
             label = signals[0]
             if len(label) > 14:
@@ -232,7 +298,7 @@ def render(data, out_path):
         else:
             label = '正常'
         label_color = C['fire'] if has_fire else (C['orange'] if has_warn else C['ok'])
-        ax.text(cols_x[6], cy, label,
+        ax.text(cols_x[7], cy, label,
                 fontsize=11, fontweight='bold', color=label_color,
                 va='center', ha='center')
 
