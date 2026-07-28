@@ -97,17 +97,34 @@ def color_pct(v):
 
 
 # ---------- 定投买卖点判定（与 SKILL.md 步骤 2.55 口径一致） ----------
-def compute_advice(s):
-    """返回 (label, color)。三档：定投买(红)/定投卖(绿)/观望(灰)。
-    优先取股票自带的 advice_label，没有则按规则现算。"""
-    # 若上游已算好，直接用
-    lbl = s.get('advice_label') or s.get('advice')
-    if lbl:
-        if '买' in lbl:
-            return '定投买▲', C['red']
-        if '卖' in lbl:
-            return '定投卖▼', C['green']
-        return '观望—', C['muted']
+# 五档标签与配色
+ADV = {
+    'strong_buy':  ('Strong Buy▲▲', '#b91c1c'),   # 深红：极端超卖/深度回撤，重仓抄底
+    'buy':         ('定投Buy▲',      '#dc2626'),   # 红：常规定投买入
+    'hold':        ('观望—',         '#6b7280'),   # 灰：信号中性
+    'sell':        ('定投Sell▼',     '#16a34a'),   # 绿：常规定投卖出
+    'strong_sell': ('Strong Sell▼▼', '#15803d'),  # 深绿：极端超买/破顶，重仓止盈
+}
+
+
+def advice_key(s):
+    """返回五档 key：strong_buy / buy / hold / sell / strong_sell。"""
+    # 若上游已算好标签，直接映射
+    lbl = s.get('advice_key')
+    if lbl in ADV:
+        return lbl
+    raw = s.get('advice_label') or s.get('advice')
+    if raw:
+        low = str(raw).lower()
+        if 'strong' in low and ('buy' in low or '买' in raw):
+            return 'strong_buy'
+        if 'strong' in low and ('sell' in low or '卖' in raw):
+            return 'strong_sell'
+        if 'buy' in low or '买' in raw:
+            return 'buy'
+        if 'sell' in low or '卖' in raw:
+            return 'sell'
+        return 'hold'
 
     rsi = s.get('rsi6')
     d52h = s.get('dist_52w_high') if s.get('dist_52w_high') is not None else s.get('dist_from_52w_high_pct')
@@ -117,43 +134,60 @@ def compute_advice(s):
         ext = s.get('premarket_pct')
     if ext is None:
         ext = s.get('extended_pct_vs_close')
+    vals = [x for x in (pct1d, ext) if x is not None]
+    drop = -min(vals) if vals else None   # 最大跌幅（正数）
+    rise = max(vals) if vals else None    # 最大涨幅
 
-    def _drop():  # 当日或盘前盘后最大跌幅（正数表示跌幅）
-        vals = [x for x in (pct1d, ext) if x is not None]
-        return -min(vals) if vals else None
-
-    def _rise():  # 当日或盘前盘后最大涨幅
-        vals = [x for x in (pct1d, ext) if x is not None]
-        return max(vals) if vals else None
-
-    # ---- 卖出信号（优先）----
     if rsi is not None:
+        # ---- 卖出侧（优先）----
+        if rsi > 92:
+            return 'strong_sell'
+        if rsi > 85 and d52h is not None and d52h > -2:
+            return 'strong_sell'
+        if rsi > 85 and rise is not None and rise > 10:
+            return 'strong_sell'
         if rsi > 85:
-            return '定投卖▼', C['green']
+            return 'sell'
         if d52h is not None and d52h > -2 and rsi > 70:
-            return '定投卖▼', C['green']
-        r = _rise()
-        if r is not None and r > 10 and rsi > 75:
-            return '定投卖▼', C['green']
-    # ---- 买入信号 ----
-    if rsi is not None:
+            return 'sell'
+        if rise is not None and rise > 10 and rsi > 75:
+            return 'sell'
+        # ---- 买入侧 ----
+        if rsi < 12:
+            return 'strong_buy'
+        if rsi < 20 and d52h is not None and d52h < -30:
+            return 'strong_buy'
+        if rsi < 20 and drop is not None and drop > 6:
+            return 'strong_buy'
+        if d52h is not None and d52h < -40 and rsi < 30:
+            return 'strong_buy'
         if rsi < 20:
-            return '定投买▲', C['red']
+            return 'buy'
         if d52h is not None and d52h < -20 and rsi < 45:
-            return '定投买▲', C['red']
-        dp = _drop()
-        if dp is not None and dp > 6 and rsi < 40:
-            return '定投买▲', C['red']
-        return '观望—', C['muted']
-    # ---- RSI 缺失：降级为纯价格判定 ----
-    if d52h is not None and d52h < -20:
-        return '定投买▲', C['red']
-    dp = _drop()
-    if dp is not None and dp > 6:
-        return '定投买▲', C['red']
+            return 'buy'
+        if drop is not None and drop > 6 and rsi < 40:
+            return 'buy'
+        return 'hold'
+
+    # ---- RSI 缺失：降级为纯价格判定（保守，不轻易发 Strong 档）----
+    # ⚠️ 仅"距52周高点跌得深"不等于抄底良机——趋势崩坏的标的往往跌最深。
+    #    因此纯价格判定下 Strong Buy 必须同时具备"深度回撤 + 当下恐慌下跌"。
+    if d52h is not None and d52h < -40 and drop is not None and drop > 6:
+        return 'strong_buy'
+    if drop is not None and drop > 6:
+        return 'buy'
+    if d52h is not None and d52h < -20 and drop is not None and drop > 0:
+        return 'buy'
+    if d52h is not None and d52h > -2 and rise is not None and rise > 6:
+        return 'strong_sell'
     if d52h is not None and d52h > -2:
-        return '定投卖▼', C['green']
-    return '观望—', C['muted']
+        return 'sell'
+    return 'hold'
+
+
+def compute_advice(s):
+    """返回 (label, color)。"""
+    return ADV[advice_key(s)]
 
 
 # ---------- 主渲染 ----------
@@ -174,7 +208,7 @@ def render(data, out_path):
     ext_label = '盘后' if is_afterhours else ('盘中' if is_realtime else '盘前')
 
     # ====== 布局参数 ======
-    W = 1240
+    W = 1180
     PAD_X = 36
     HEADER_H = 110
     TABLE_HEADER_H = 52
@@ -208,8 +242,9 @@ def render(data, out_path):
     y = HEADER_H
 
     # ===== 表头 =====
-    # 8 列布局（新增"定投"列）
-    cols_x = [70, 175, 300, 420, 535, 650, 780, 1010]
+    # 8 列布局：按内容宽度分配，代码列避开左侧色条，末列信号收窄
+    # 表格可用区 x ∈ [36, 1144]，色条占 36~42
+    cols_x = [95, 200, 310, 425, 530, 636, 762, 950]
     cols_name = ['代码', '收盘价', '今日涨跌', f'{ext_label}价', f'{ext_label}%', '距52W高', '定投', '信号']
 
     ax.add_patch(FancyBboxPatch(
