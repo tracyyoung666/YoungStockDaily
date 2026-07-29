@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-07-29T00:18:05",
+  "updated_at": "2026-07-29T09:26:30",
   "dailies": [
+    {
+      "slug": "daily_20260729_0910",
+      "date": "2026-07-29",
+      "generated_at": "2026-07-29 09:10",
+      "title": "2026-07-29 盘后 · 自选股分析 + Web3 日报",
+      "summary": "美股芯片风暴：地缘冲突+SK海力士预期差引爆抛售，半导体-6.08%/AI基建-7.30%全线杀跌，COHR -10.31%(放量)、NBIS -9.68%、MU -8.85%、AMD -8.15%、MRVL -7.77%；GOOG +1.85% 为唯一避风港。机械技术规则触发11只买入信号，二次基本面校验后仅剩2只Strong Buy(MRVL/COHR)+4只Buy(MU/AMD/TSLA/NBIS)，INTC/CRWV/NOK/XPEV/QUBT 因≥2项Red Flag降级观望。BTC $63,884(+0.30%)/ETH $1,920(+1.58%)，恐贪指数35(恐慌)。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT"
+      ],
+      "image": "images/daily_20260729_0910.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260728_1910",
       "date": "2026-07-28",
