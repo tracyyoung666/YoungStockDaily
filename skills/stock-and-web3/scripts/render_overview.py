@@ -102,19 +102,22 @@ def color_pct(v):
 
 
 # ---------- 定投买卖点判定（与 SKILL.md 步骤 2.55 口径一致） ----------
-# 五档标签与配色
+# 六档标签与配色。⚠️ 权威判定在 scripts/compute_signals.py，本处仅负责渲染：
+#   优先读上游注入的 advice_key/shares（来自 _signals.json），
+#   仅当完全缺失时才用下方兜底规则现算（纯指标，不含趋势与反弹确认）。
 ADV = {
-    'strong_buy':  ('Strong Buy▲▲', '#b91c1c'),   # 深红：极端超卖/深度回撤，重仓抄底
-    'buy':         ('定投Buy▲',      '#dc2626'),   # 红：常规定投买入
-    'hold':        ('观望—',         '#6b7280'),   # 灰：信号中性
-    'sell':        ('定投Sell▼',     '#16a34a'),   # 绿：常规定投卖出
-    'strong_sell': ('Strong Sell▼▼', '#15803d'),  # 深绿：极端超买/破顶，重仓止盈
+    'strong_buy':  ('Strong Buy▲▲', '#b91c1c'),
+    'buy':         ('定投Buy▲',      '#dc2626'),
+    'dca':         ('定投▲',         '#f59e0b'),
+    'hold':        ('观望—',         '#6b7280'),
+    'sell':        ('定投Sell▼',     '#16a34a'),
+    'strong_sell': ('Strong Sell▼▼', '#15803d'),
 }
 
 
 def advice_key(s):
-    """返回五档 key：strong_buy / buy / hold / sell / strong_sell。"""
-    # 若上游已算好标签，直接映射
+    """返回六档 key：strong_buy / buy / dca / hold / sell / strong_sell。"""
+    # 若上游（compute_signals.py）已算好，直接用——这是权威口径
     lbl = s.get('advice_key')
     if lbl in ADV:
         return lbl
@@ -129,6 +132,8 @@ def advice_key(s):
             return 'buy'
         if 'sell' in low or '卖' in raw:
             return 'sell'
+        if '定投' in raw:
+            return 'dca'
         return 'hold'
 
     rsi = s.get('rsi6')
@@ -191,8 +196,16 @@ def advice_key(s):
 
 
 def compute_advice(s):
-    """返回 (label, color)。"""
-    return ADV[advice_key(s)]
+    """返回 (label, color)。label 含建议份额（如 'Strong Buy▲▲ +2.0'）。"""
+    key = advice_key(s)
+    label, color = ADV[key]
+    sh = s.get('shares')
+    if sh is None:
+        sh = {'strong_buy': 2.0, 'buy': 1.0, 'dca': 0.5,
+              'hold': 0.0, 'sell': -1.0, 'strong_sell': -2.0}.get(key, 0.0)
+    if sh:
+        label = f'{label} {sh:+.1f}'
+    return label, color
 
 
 # ---------- 主渲染 ----------
