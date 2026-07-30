@@ -70,5 +70,29 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/",
       "local_file": "earnings-filings/INTC-2026Q2-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "BE",
+    "name": "Bloom Energy",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-07-28",
+    "verdict": "beat",
+    "verdict_label": "大幅超预期 Beat（营收首破10亿美元/同比+165.5%/上调全年指引）",
+    "eps_actual": 0.78,
+    "eps_estimate": 0.41,
+    "revenue_actual": 1065.37,
+    "revenue_estimate": 834.3,
+    "revenue_unit": "百万美元",
+    "url": "earnings/BE-2026Q2.html",
+    "generated_at": "2026-07-30 09:29",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-07-28",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050247/be-20260630.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050247/",
+      "local_file": "earnings-filings/BE-2026Q2-sec-filing.htm"
+    }
   }
 ]

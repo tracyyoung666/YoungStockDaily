@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29",
+  "updated_at": "2026-07-30",
   "categories": {
     "default": {
       "description": "默认自选（美股半导体/AI/Crypto相关）",
@@ -162,6 +162,29 @@
             "量子计算",
             "AI",
             "前沿科技"
+          ]
+        },
+        {
+          "symbol": "BE",
+          "market": "US",
+          "name": "Bloom Energy 布鲁姆能源",
+          "added_at": "2026-07-30",
+          "tags": [
+            "燃料电池",
+            "AI数据中心供电",
+            "清洁能源"
+          ]
+        },
+        {
+          "symbol": "TSM",
+          "market": "US",
+          "name": "台积电 TSMC",
+          "added_at": "2026-07-30",
+          "tags": [
+            "半导体",
+            "晶圆代工",
+            "AI",
+            "先进制程"
           ]
         }
       ]
