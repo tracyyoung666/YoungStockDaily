@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 09:24:00",
+  "updated_at": "2026-07-30 19:14:48",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -27,56 +27,6 @@
       "close": 168.01,
       "pct_2d": 5.21,
       "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "NOW",
-      "name": "现在服务公司",
-      "close": 115.76,
-      "pct_2d": 4.65,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 282.9,
-      "pct_2d": 4.64,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "EOG",
-      "name": "EOG能源",
-      "close": 145.94,
-      "pct_2d": 4.51,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 104.28,
-      "pct_2d": 4.3,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "CRM",
-      "name": "赛富时",
-      "close": 188.38,
-      "pct_2d": 3.79,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "COP",
-      "name": "康菲石油",
-      "close": 118.06,
-      "pct_2d": 3.47,
-      "date_range": "2026-07-28 ~ now"
-    },
-    {
-      "symbol": "XPEV",
-      "name": "小鹏集团",
-      "close": 13.06,
-      "pct_2d": 2.75,
-      "date_range": "2026-07-28 ~ now"
     }
-  ],
-  "note": "当日全市场无大市值个股2日涨幅≥5%达标数量不足，故列出实际2日涨幅Top10（阈值放宽），反映资金从AI硬件向软件/SaaS与能源轮动"
+  ]
 }
