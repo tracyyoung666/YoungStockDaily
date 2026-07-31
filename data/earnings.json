@@ -1,5 +1,29 @@
 [
   {
+    "symbol": "MSTR",
+    "name": "Strategy 微策略",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-07-30",
+    "verdict": "miss",
+    "verdict_label": "不及预期 Miss（BTC公允价值损失导致净亏82.2亿美元）",
+    "eps_actual": -24.45,
+    "eps_estimate": -2.19,
+    "revenue_actual": 122.37,
+    "revenue_estimate": 122.9,
+    "revenue_unit": "百万美元",
+    "url": "earnings/MSTR-2026Q2.html",
+    "generated_at": "2026-07-31 09:32",
+    "sec_filing": {
+      "form": "8-K Exhibit 99.1",
+      "filing_date": "2026-07-30",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1050446/000162828026051027/mstr-20260730x8kxex991.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1050446/000162828026051027/",
+      "local_file": "earnings-filings/MSTR-2026Q2-sec-filing.htm"
+    }
+  },
+  {
     "symbol": "TSLA",
     "name": "特斯拉",
     "period": "2026Q2",

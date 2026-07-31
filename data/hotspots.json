@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 19:14:48",
+  "updated_at": "2026-07-31 09:27:22",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,25 +8,74 @@
   },
   "hotspots": [
     {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 263.43,
-      "pct_2d": 5.72,
-      "date_range": "2026-07-28 ~ now"
+      "symbol": "NBIS",
+      "name": "Nebius Group N.V.",
+      "close": 188.43,
+      "pct_2d": 27.13,
+      "date_range": "2026-07-29 ~ now"
     },
     {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 264.2,
-      "pct_2d": 5.31,
-      "date_range": "2026-07-28 ~ now"
+      "symbol": "CRWV",
+      "name": "Coreweave, Inc.",
+      "close": 73.9,
+      "pct_2d": 21.51,
+      "date_range": "2026-07-29 ~ now"
     },
     {
-      "symbol": "WDAY",
-      "name": "Workday",
-      "close": 168.01,
-      "pct_2d": 5.21,
-      "date_range": "2026-07-28 ~ now"
+      "symbol": "MU",
+      "name": "美光科技",
+      "close": 874.66,
+      "pct_2d": 18.36,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "LRCX",
+      "name": "泛林集团",
+      "close": 297.72,
+      "pct_2d": 17.98,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "微软",
+      "close": 451.1,
+      "pct_2d": 15.51,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "AMAT",
+      "name": "应用材料",
+      "close": 501.77,
+      "pct_2d": 14.97,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 485.39,
+      "pct_2d": 13.0,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 183.3,
+      "pct_2d": 12.18,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 91.13,
+      "pct_2d": 11.3,
+      "date_range": "2026-07-29 ~ now"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "甲骨文",
+      "close": 127.56,
+      "pct_2d": 8.34,
+      "date_range": "2026-07-29 ~ now"
     }
   ]
 }
