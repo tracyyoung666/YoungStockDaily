@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-07-31T19:27:19",
+  "updated_at": "2026-08-01T20:09:17",
   "dailies": [
+    {
+      "slug": "weekly_20260731",
+      "date": "2026-07-31",
+      "generated_at": "2026-08-01 20:09",
+      "title": "自选股周报 | 2026-07-27 ~ 07-31",
+      "summary": "本周9涨8跌，GOOG +11.77%领涨，MU -10.63%垫底；去杠杆后周五强反弹，下周关注AMD与CRCL财报。",
+      "tickers": [
+        "GOOG",
+        "BE",
+        "QUBT",
+        "XPEV",
+        "MSTR",
+        "NBIS",
+        "NOK",
+        "CRCL",
+        "TSM",
+        "CRWV",
+        "TSLA",
+        "INTC",
+        "NVDA",
+        "MRVL",
+        "COHR",
+        "AMD",
+        "MU"
+      ],
+      "image": "images/weekly_20260731.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260731_1924",
       "date": "2026-07-31",
