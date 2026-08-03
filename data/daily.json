@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-01T20:09:17",
+  "updated_at": "2026-08-03T09:28:14",
   "dailies": [
+    {
+      "slug": "daily_20260803_0927",
+      "date": "2026-08-03",
+      "generated_at": "2026-08-03 09:27",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-03 09:27",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260803_0927.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20260731",
       "date": "2026-07-31",
