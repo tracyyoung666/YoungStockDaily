@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04 09:25:10",
+  "updated_at": "2026-08-04 19:18:00",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -7,34 +7,6 @@
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
-    {
-      "symbol": "CRWV",
-      "name": "Coreweave, Inc.",
-      "close": 85.76,
-      "pct_2d": 19.49,
-      "date_range": "2026-07-31 ~ now"
-    },
-    {
-      "symbol": "NBIS",
-      "name": "Nebius Group N.V.",
-      "close": 212.58,
-      "pct_2d": 11.64,
-      "date_range": "2026-07-31 ~ now"
-    },
-    {
-      "symbol": "FSLR",
-      "name": "第一太阳能",
-      "close": 232.73,
-      "pct_2d": 10.28,
-      "date_range": "2026-07-31 ~ now"
-    },
-    {
-      "symbol": "ORCL",
-      "name": "甲骨文",
-      "close": 141.85,
-      "pct_2d": 9.22,
-      "date_range": "2026-07-31 ~ now"
-    },
     {
       "symbol": "BA",
       "name": "波音",
@@ -54,20 +26,6 @@
       "name": "Crowdstrike Holdings, Inc.",
       "close": 202.54,
       "pct_2d": 6.12,
-      "date_range": "2026-07-31 ~ now"
-    },
-    {
-      "symbol": "META",
-      "name": "Meta Platforms, Inc.",
-      "close": 590.24,
-      "pct_2d": 6.02,
-      "date_range": "2026-07-31 ~ now"
-    },
-    {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 33.38,
-      "pct_2d": 5.27,
       "date_range": "2026-07-31 ~ now"
     }
   ]
