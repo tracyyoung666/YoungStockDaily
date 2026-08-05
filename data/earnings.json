@@ -118,5 +118,29 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050247/",
       "local_file": "earnings-filings/BE-2026Q2-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "AMD",
+    "name": "超威半导体",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-08-04",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收+50%/数据中心+107%，但盘后-8.82%）",
+    "eps_actual": 1.66,
+    "eps_estimate": 1.62,
+    "revenue_actual": 11536,
+    "revenue_estimate": 11300,
+    "revenue_unit": "百万美元",
+    "url": "earnings/AMD-2026Q2.html",
+    "generated_at": "2026-08-05 09:40",
+    "sec_filing": {
+      "form": "8-K Exhibit 99.1",
+      "filing_date": "2026-08-04",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/",
+      "local_file": "earnings-filings/AMD-2026Q2-sec-filing.htm"
+    }
   }
 ]
