@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05 09:20:53",
+  "updated_at": "2026-08-05 19:19:48",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -7,6 +7,13 @@
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "close": 162.66,
+      "pct_2d": 29.45,
+      "date_range": "2026-08-03 ~ now"
+    },
     {
       "symbol": "ARM",
       "name": "安谋",
@@ -19,6 +26,13 @@
       "name": "迈威尔科技",
       "close": 218.59,
       "pct_2d": 12.8,
+      "date_range": "2026-08-03 ~ now"
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 100.86,
+      "pct_2d": 10.84,
       "date_range": "2026-08-03 ~ now"
     },
     {
@@ -50,31 +64,17 @@
       "date_range": "2026-08-03 ~ now"
     },
     {
-      "symbol": "AMD",
-      "name": "超威半导体",
-      "close": 518.58,
-      "pct_2d": 7.0,
+      "symbol": "MCHP",
+      "name": "微芯科技",
+      "close": 80.67,
+      "pct_2d": 7.25,
       "date_range": "2026-08-03 ~ now"
     },
     {
-      "symbol": "KLAC",
-      "name": "科磊",
-      "close": 195.45,
-      "pct_2d": 6.95,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "AVGO",
-      "name": "博通",
-      "close": 418.16,
-      "pct_2d": 6.61,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "NET",
-      "name": "科赋锐",
-      "close": 301.33,
-      "pct_2d": 6.57,
+      "symbol": "CRWV",
+      "name": "Coreweave, Inc.",
+      "close": 91.9,
+      "pct_2d": 7.16,
       "date_range": "2026-08-03 ~ now"
     }
   ]
