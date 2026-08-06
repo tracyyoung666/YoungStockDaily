@@ -142,5 +142,29 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/",
       "local_file": "earnings-filings/AMD-2026Q2-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "CRCL",
+    "name": "Circle",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-08-05",
+    "verdict": "mixed",
+    "verdict_label": "喜忧参半（营收连续两季不及预期/EPS超预期/Arc主网9月16日上线）",
+    "eps_actual": 0.18,
+    "eps_estimate": 0.16,
+    "revenue_actual": 701,
+    "revenue_estimate": 713,
+    "revenue_unit": "百万美元",
+    "url": "earnings/CRCL-2026Q2.html",
+    "generated_at": "2026-08-06 09:35",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-08-05",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/",
+      "local_file": "earnings-filings/CRCL-2026Q2-sec-filing.htm"
+    }
   }
 ]

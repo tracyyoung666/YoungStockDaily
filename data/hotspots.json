@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05 19:19:48",
+  "updated_at": "2026-08-06 09:14:08",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,11 @@
   },
   "hotspots": [
     {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "close": 162.66,
-      "pct_2d": 29.45,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "ARM",
-      "name": "安谋",
-      "close": 280.56,
-      "pct_2d": 17.36,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "MRVL",
-      "name": "迈威尔科技",
-      "close": 218.59,
-      "pct_2d": 12.8,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "INTC",
-      "name": "英特尔",
-      "close": 100.86,
-      "pct_2d": 10.84,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "SMCI",
-      "name": "超微电脑",
-      "close": 31.69,
-      "pct_2d": 10.65,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "LRCX",
-      "name": "泛林集团",
-      "close": 317.74,
-      "pct_2d": 7.85,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "MU",
-      "name": "美光科技",
-      "close": 892.67,
-      "pct_2d": 7.62,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "QCOM",
-      "name": "高通",
-      "close": 162.67,
-      "pct_2d": 7.32,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "MCHP",
-      "name": "微芯科技",
-      "close": 80.67,
-      "pct_2d": 7.25,
-      "date_range": "2026-08-03 ~ now"
-    },
-    {
-      "symbol": "CRWV",
-      "name": "Coreweave, Inc.",
-      "close": 91.9,
-      "pct_2d": 7.16,
-      "date_range": "2026-08-03 ~ now"
+      "symbol": "BKNG",
+      "name": "Booking Holdings Inc. Common Stock",
+      "close": 207.02,
+      "pct_2d": 6.56,
+      "date_range": "2026-08-04 ~ now"
     }
   ]
 }
