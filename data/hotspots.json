@@ -1,18 +1,93 @@
 {
-  "updated_at": "2026-08-06 09:14:08",
+  "updated_at": "2026-08-06 19:16:26",
   "period": "2 trading days",
+  "base_date": "2026-08-04",
+  "universe_size": 118,
+  "above_5pct_count": 2,
   "filter": {
-    "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 5.0,
-    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
+    "min_pct_2d": 0.0,
+    "note": "普跌市场下保留Top10排名，below_threshold=True 表示未达+5%热点标准"
   },
   "hotspots": [
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 144.24,
+      "pct_2d": 16.98,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": false
+    },
     {
       "symbol": "BKNG",
       "name": "Booking Holdings Inc. Common Stock",
       "close": 207.02,
       "pct_2d": 6.56,
-      "date_range": "2026-08-04 ~ now"
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": false
+    },
+    {
+      "symbol": "LLY",
+      "name": "礼来",
+      "close": 1169.86,
+      "pct_2d": 4.86,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "AMGN",
+      "name": "安进",
+      "close": 407.83,
+      "pct_2d": 4.57,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "DIS",
+      "name": "迪士尼",
+      "close": 101.76,
+      "pct_2d": 3.65,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "NVDA",
+      "name": "英伟达",
+      "close": 219.22,
+      "pct_2d": 3.43,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 113.32,
+      "pct_2d": 2.73,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "TMO",
+      "name": "赛默飞世尔",
+      "close": 577.83,
+      "pct_2d": 2.32,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "NKE",
+      "name": "耐克",
+      "close": 42.45,
+      "pct_2d": 2.22,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
+    },
+    {
+      "symbol": "MCD",
+      "name": "麦当劳",
+      "close": 274.0,
+      "pct_2d": 2.11,
+      "date_range": "2026-08-04 ~ now",
+      "below_threshold": true
     }
   ]
 }
