@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-07T09:23:13",
+  "updated_at": "2026-08-07T19:28:01",
   "dailies": [
+    {
+      "slug": "daily_20260807_1900",
+      "date": "2026-08-07",
+      "generated_at": "2026-08-07 19:00",
+      "title": "投研日报 · 2026-08-07 盘前 | 无 Strong Buy，INTC/BE 双双命中铁律一止盈",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260807_1900.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260807_0920",
       "date": "2026-08-07",

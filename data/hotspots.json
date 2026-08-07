@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-07 09:09:54",
+  "updated_at": "2026-08-07 19:20:55",
   "period": "2 trading days",
   "base_date": "2026-08-05",
-  "universe_size": 98,
+  "universe_size": 118,
   "above_5pct_count": 1,
   "filter": {
     "min_pct_2d": 0.0,
@@ -50,6 +50,14 @@
       "below_threshold": true
     },
     {
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "close": 51.54,
+      "pct_2d": 3.27,
+      "date_range": "2026-08-05 ~ now",
+      "below_threshold": true
+    },
+    {
       "symbol": "PYPL",
       "name": "Paypal",
       "close": 59.78,
@@ -66,26 +74,18 @@
       "below_threshold": true
     },
     {
+      "symbol": "DIS",
+      "name": "迪士尼",
+      "close": 104.68,
+      "pct_2d": 2.87,
+      "date_range": "2026-08-05 ~ now",
+      "below_threshold": true
+    },
+    {
       "symbol": "T",
       "name": "美国电话电报",
       "close": 23.71,
       "pct_2d": 2.82,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
-    },
-    {
-      "symbol": "MSFT",
-      "name": "微软",
-      "close": 499.86,
-      "pct_2d": 2.54,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 147.44,
-      "pct_2d": 2.22,
       "date_range": "2026-08-05 ~ now",
       "below_threshold": true
     }
