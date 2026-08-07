@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-06T19:25:30",
+  "updated_at": "2026-08-07T09:23:13",
   "dailies": [
+    {
+      "slug": "daily_20260807_0920",
+      "date": "2026-08-07",
+      "generated_at": "2026-08-07 09:20",
+      "title": "投研日报 · 2026-08-07 盘后 | NBIS 单日 -13.29% 领跌，AI 基建 -9.18% 内部再定价",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260807_0920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260806_1924",
       "date": "2026-08-06",
