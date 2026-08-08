@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-07T19:28:01",
+  "updated_at": "2026-08-08T20:10:36",
   "dailies": [
+    {
+      "slug": "weekly_20260807",
+      "date": "2026-08-07",
+      "generated_at": "2026-08-08 20:09",
+      "title": "自选股周报 | 2026-08-03 ~ 08-07",
+      "summary": "本周14涨3跌，COHR +44.22%领涨创历史新高，XPEV -6.69%垫底；AMD财报Beat后连跌、NBIS遭显存传闻崩跌，下周QUBT/CRWV/NBIS/COHR四份财报密集披露。",
+      "tickers": [
+        "COHR",
+        "CRWV",
+        "MRVL",
+        "QUBT",
+        "INTC",
+        "NVDA",
+        "MSTR",
+        "MU",
+        "BE",
+        "CRCL",
+        "TSLA",
+        "TSM",
+        "NOK",
+        "AMD",
+        "GOOG",
+        "NBIS",
+        "XPEV"
+      ],
+      "image": "images/weekly_20260807.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260807_1900",
       "date": "2026-08-07",
