@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-10T09:25:04",
+  "updated_at": "2026-08-10T19:26:25",
   "dailies": [
+    {
+      "slug": "daily_20260810_1920",
+      "date": "2026-08-10",
+      "generated_at": "2026-08-10 19:20",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-10 19:20",
+      "summary": "COHR +13.44% 光通信一枝独秀但进入铁律一止盈观察区；NBIS 获唯一 1.0 份左侧试探（🟢技术错杀），XPEV/NOK 降级 0.3 份，INTC 触发铁律一止盈 -1.0 份；净份额 +7.1 份，本轮无 Strong Buy。Web3：BTC $64,958 +0.04%，恐贪指数 40（恐慌）。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260810_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260810_0920",
       "date": "2026-08-10",
