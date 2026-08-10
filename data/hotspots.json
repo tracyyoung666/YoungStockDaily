@@ -1,93 +1,93 @@
 {
-  "updated_at": "2026-08-07 19:20:55",
+  "updated_at": "2026-08-10 09:18:08",
   "period": "2 trading days",
   "base_date": "2026-08-05",
   "universe_size": 118,
-  "above_5pct_count": 1,
+  "above_5pct_count": 15,
   "filter": {
     "min_pct_2d": 0.0,
-    "note": "普跌市场下保留Top10排名，below_threshold=True 表示未达+5%热点标准"
+    "note": "普跌时保留Top10排名"
   },
   "hotspots": [
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 40.81,
-      "pct_2d": 15.05,
-      "date_range": "2026-08-05 ~ now",
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 149.07,
+      "pct_2d": 31.55,
+      "date_range": "2026-08-05 ~ 2026-08-07",
       "below_threshold": false
     },
     {
-      "symbol": "ARM",
-      "name": "安谋",
-      "close": 286.68,
-      "pct_2d": 4.41,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "close": 43.0,
+      "pct_2d": 21.23,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     },
     {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "close": 6.98,
-      "pct_2d": 4.18,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
-    },
-    {
-      "symbol": "TMUS",
-      "name": "T-Mobile Us, Inc.",
-      "close": 179.97,
-      "pct_2d": 3.75,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "symbol": "ABNB",
+      "name": "爱彼迎",
+      "close": 178.07,
+      "pct_2d": 16.77,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     },
     {
       "symbol": "UBER",
       "name": "优步",
-      "close": 70.47,
-      "pct_2d": 3.36,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "close": 75.02,
+      "pct_2d": 10.03,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     },
     {
-      "symbol": "SLB",
-      "name": "斯伦贝谢",
-      "close": 51.54,
-      "pct_2d": 3.27,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "symbol": "MCHP",
+      "name": "微芯科技",
+      "close": 84.69,
+      "pct_2d": 8.87,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     },
     {
-      "symbol": "PYPL",
-      "name": "Paypal",
-      "close": 59.78,
-      "pct_2d": 3.19,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "close": 172.01,
+      "pct_2d": 8.57,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
+    },
+    {
+      "symbol": "ENPH",
+      "name": "Enphase Energy, Inc.",
+      "close": 41.87,
+      "pct_2d": 7.5,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
+    },
+    {
+      "symbol": "QCOM",
+      "name": "高通",
+      "close": 167.86,
+      "pct_2d": 6.56,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
+    },
+    {
+      "symbol": "NOW",
+      "name": "现在服务公司",
+      "close": 124.88,
+      "pct_2d": 6.53,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     },
     {
       "symbol": "FSLR",
       "name": "第一太阳能",
-      "close": 244.14,
-      "pct_2d": 3.1,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
-    },
-    {
-      "symbol": "DIS",
-      "name": "迪士尼",
-      "close": 104.68,
-      "pct_2d": 2.87,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
-    },
-    {
-      "symbol": "T",
-      "name": "美国电话电报",
-      "close": 23.71,
-      "pct_2d": 2.82,
-      "date_range": "2026-08-05 ~ now",
-      "below_threshold": true
+      "close": 250.05,
+      "pct_2d": 5.6,
+      "date_range": "2026-08-05 ~ 2026-08-07",
+      "below_threshold": false
     }
   ]
 }

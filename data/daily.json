@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-08T20:10:36",
+  "updated_at": "2026-08-10T09:25:04",
   "dailies": [
+    {
+      "slug": "daily_20260810_0920",
+      "date": "2026-08-10",
+      "generated_at": "2026-08-10 09:20",
+      "title": "投研日报 · 2026-08-10 盘后 | COHR +13.44% 创新高，INTC 触发铁律一止盈，TSLA 技术 Strong Buy 被基本面降级",
+      "summary": "",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260810_0920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20260807",
       "date": "2026-08-07",
