@@ -1,93 +1,53 @@
 {
-  "updated_at": "2026-08-10 09:18:08",
+  "updated_at": "2026-08-11 09:44:21",
   "period": "2 trading days",
-  "base_date": "2026-08-05",
-  "universe_size": 118,
-  "above_5pct_count": 15,
   "filter": {
-    "min_pct_2d": 0.0,
-    "note": "普跌时保留Top10排名"
+    "min_market_cap_usd": 20000000000,
+    "min_pct_2d": 5.0,
+    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
     {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 149.07,
-      "pct_2d": 31.55,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 260.78,
+      "pct_2d": 11.48,
+      "date_range": "2026-08-07 ~ now"
     },
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 43.0,
-      "pct_2d": 21.23,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "PANW",
+      "name": "派拓网络",
+      "close": 385.04,
+      "pct_2d": 5.82,
+      "date_range": "2026-08-07 ~ now"
     },
     {
-      "symbol": "ABNB",
-      "name": "爱彼迎",
-      "close": 178.07,
-      "pct_2d": 16.77,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "VRTX",
+      "name": "福泰制药",
+      "close": 523.91,
+      "pct_2d": 5.61,
+      "date_range": "2026-08-07 ~ now"
     },
     {
-      "symbol": "UBER",
-      "name": "优步",
-      "close": 75.02,
-      "pct_2d": 10.03,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "EOG",
+      "name": "EOG能源",
+      "close": 142.22,
+      "pct_2d": 5.55,
+      "date_range": "2026-08-07 ~ now"
     },
     {
-      "symbol": "MCHP",
-      "name": "微芯科技",
-      "close": 84.69,
-      "pct_2d": 8.87,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "close": 53.2,
+      "pct_2d": 5.28,
+      "date_range": "2026-08-07 ~ now"
     },
     {
-      "symbol": "PLTR",
-      "name": "Palantir",
-      "close": 172.01,
-      "pct_2d": 8.57,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
-    },
-    {
-      "symbol": "ENPH",
-      "name": "Enphase Energy, Inc.",
-      "close": 41.87,
-      "pct_2d": 7.5,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
-    },
-    {
-      "symbol": "QCOM",
-      "name": "高通",
-      "close": 167.86,
-      "pct_2d": 6.56,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
-    },
-    {
-      "symbol": "NOW",
-      "name": "现在服务公司",
-      "close": 124.88,
-      "pct_2d": 6.53,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
-    },
-    {
-      "symbol": "FSLR",
-      "name": "第一太阳能",
-      "close": 250.05,
-      "pct_2d": 5.6,
-      "date_range": "2026-08-05 ~ 2026-08-07",
-      "below_threshold": false
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 225.16,
+      "pct_2d": 5.01,
+      "date_range": "2026-08-07 ~ now"
     }
   ]
 }

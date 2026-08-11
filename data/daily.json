@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-10T19:26:25",
+  "updated_at": "2026-08-11T09:50:04",
   "dailies": [
+    {
+      "slug": "daily_20260811_0940",
+      "date": "2026-08-11",
+      "generated_at": "2026-08-11 09:40",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-11 09:40",
+      "summary": "COHR 单日暴跌 14.24%，自 20 日高回调 14.2% 触发铁律一止盈（-1.0 份）；17 只 13 跌，光通信 -14.24%/半导体 -3.26% 领跌，仅 GOOG/TSLA/CRCL 收红。买入侧无 Strong Buy，NBIS 唯一 +1.0 份但因 8/12 财报窗口建议延后；XPEV/NOK 各 2 项 RedFlag 判 🔴基本面恶化，份额压至 0.3。净份额 +7.5 份（校验后约 +7.1）。全市场热点集中软件安全(DDOG+11.5%/PANW/CRWD)与能源(EOG/SLB)，与自选股 AI 硬件仓位风格错配。Web3：BTC $63,946 -1.46%，ETH $1,872 -1.98%，恐贪指数 37（恐慌）。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260811_0940.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260810_1920",
       "date": "2026-08-10",
