@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-11T09:50:04",
+  "updated_at": "2026-08-11T19:33:52",
   "dailies": [
+    {
+      "slug": "daily_20260811_1935",
+      "date": "2026-08-11",
+      "generated_at": "2026-08-11 19:35",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-11 19:35",
+      "summary": "AI 硬件链集体退潮：光通信 -14.24%（COHR 崩跌）、半导体 -3.26%，仅 GOOG 收涨；全市场 2 日 Top6 中能源占 5 席且无一涨幅达 5%，资金切向油气与现金流确定性。择时引擎：3 买（NBIS +1.0 / NOK 压至 0.3 / XPEV 建议跳过）+ 2 卖（COHR、INTC 各 -1.0），校验后净 +5.3 份，无 Strong Buy 无 Strong Sell；核心动作是 COHR 按铁律一止盈（回调 14.24%，明日财报）。BTC $64,037(-1.82%)，恐贪 37 恐慌。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260811_1935.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260811_0940",
       "date": "2026-08-11",
