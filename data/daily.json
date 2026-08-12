@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-12T09:35:04",
+  "updated_at": "2026-08-12T19:33:30",
   "dailies": [
+    {
+      "slug": "daily_20260812_1930",
+      "date": "2026-08-12",
+      "generated_at": "2026-08-12 19:30",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-12 19:30",
+      "summary": "AI基建 +3.69% 为唯一强势主线：CRWV 借 Q2 营收 +112%、backlog 1040 亿美元盘前 +17.42%，NBIS 今日盘前发 Q2 财报叠加高盛最高目标价与 24% 空头逼空，盘前 +8.16%；光通信受 Lumentum 超预期外溢，NOK 盘前 +7.94%、COHR +5.46%。GOOG -3.61% 为唯一显著下跌，全市场大盘股无一只 2 日涨幅达 5%，三大指数收跌等 CPI。择时引擎：唯一 Strong Buy▲▲ 为 MU（+2.0 份，🟢技术错杀型，0 项 Red Flag、净利率 57.8%、机构卖出 0 家、自 20 日低 $739 反弹 17.5% 并站上 MA10，止损 $739）；XPEV 定投Buy▲ 因 3 项 Red Flag 由 +0.5 压至 +0.3；零卖出信号但 BE（回调 9.87% vs 阈值 10.0%）/CRWV/MRVL/NVDA/TSM 进入止盈观察带；校验后净 +9.8 份。NBIS、COHR 今日财报窗口判定为待确认（仅有前瞻类新闻、无具体财务数据），不生成财报页、不新开仓。BTC $63,614(-0.41%)，ETH $1,885(+0.70%)，恐贪 37 恐慌。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260812_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260812_0925",
       "date": "2026-08-12",
