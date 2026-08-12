@@ -166,5 +166,30 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/",
       "local_file": "earnings-filings/CRCL-2026Q2-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "CRWV",
+    "name": "CoreWeave",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-08-11",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收+112%双超预期/积压订单1040亿美元/全年指引与资本开支同步上调）",
+    "eps_actual": -1.03,
+    "eps_estimate": -1.2,
+    "revenue_actual": 2580,
+    "revenue_estimate": 2560,
+    "revenue_unit": "百万美元",
+    "url": "earnings/CRWV-2026Q2.html",
+    "generated_at": "2026-08-12 09:30",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": null,
+      "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628&type=10-Q&dateb=&owner=include&count=10",
+      "sec_index_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628&type=10-Q&dateb=&owner=include&count=10",
+      "local_file": null,
+      "note": "10-Q 发布时点尚未在 EDGAR 上线，待后续补充归档"
+    }
   }
 ]

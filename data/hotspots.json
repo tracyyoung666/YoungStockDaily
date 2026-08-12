@@ -1,54 +1,18 @@
 {
-  "updated_at": "2026-08-11 19:35:00",
+  "updated_at": "2026-08-12 09:19:51",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 0.0,
-    "note": "今日全市场无标的达 +5% 门槛，已放宽为实际 Top 榜",
+    "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
     {
-      "symbol": "EOG",
-      "name": "EOG能源",
-      "close": 142.22,
-      "pct_2d": 5.55,
-      "date_range": "2026-08-07 ~ now"
-    },
-    {
-      "symbol": "SLB",
-      "name": "斯伦贝谢",
-      "close": 53.2,
-      "pct_2d": 5.28,
-      "date_range": "2026-08-07 ~ now"
-    },
-    {
-      "symbol": "SPOT",
-      "name": "Spotify Technology S.A.",
-      "close": 511.82,
-      "pct_2d": 4.85,
-      "date_range": "2026-08-07 ~ now"
-    },
-    {
-      "symbol": "COP",
-      "name": "康菲石油",
-      "close": 123.03,
-      "pct_2d": 4.61,
-      "date_range": "2026-08-07 ~ now"
-    },
-    {
-      "symbol": "CVX",
-      "name": "雪佛龙",
-      "close": 194.91,
-      "pct_2d": 4.48,
-      "date_range": "2026-08-07 ~ now"
-    },
-    {
-      "symbol": "XOM",
-      "name": "埃克森美孚",
-      "close": 159.79,
-      "pct_2d": 4.41,
-      "date_range": "2026-08-07 ~ now"
+      "symbol": "CRCL",
+      "name": "Circle互联网集团",
+      "close": 71.16,
+      "pct_2d": 6.13,
+      "date_range": "2026-08-10 ~ now"
     }
   ]
 }

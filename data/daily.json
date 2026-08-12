@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-11T19:33:52",
+  "updated_at": "2026-08-12T09:35:04",
   "dailies": [
+    {
+      "slug": "daily_20260812_0925",
+      "date": "2026-08-12",
+      "generated_at": "2026-08-12 09:25",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-12 09:25",
+      "summary": "CRWV Q2 财报以 $1040 亿 backlog（+246%）反驳 AI 资本开支见顶论，盘后 +15.72%、NBIS 跟涨 +7.90%，AI基建板块 +3.69% 领涨；GOOG -3.61% 为唯一显著下跌，全市场 2 日涨幅仅 CRCL 一只达 5%，三大指数集体收跌等 CPI。择时引擎：唯一 Strong Buy▲▲ 为 MU（+2.0 份，🟢技术错杀型，0 项 Red Flag / 机构卖出 0 家 / 净利率 57.8% / 自 20 日低反弹 17.5% 站上 MA10），XPEV 定投Buy▲ 因 2 项 Red Flag 由 +1.0 压至 +0.3，无任何卖出信号，校验后净 +9.8 份。已生成 CRWV 2026Q2 财报分析页；COHR / NBIS 今日财报窗口不加仓。BTC $63,550(-0.55%)，ETH $1,881(+0.52%)，恐贪 37 恐慌。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260812_0925.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260811_1935",
       "date": "2026-08-11",
