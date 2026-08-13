@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-12T19:33:30",
+  "updated_at": "2026-08-13T09:36:16",
   "dailies": [
+    {
+      "slug": "daily_20260813_0907",
+      "date": "2026-08-13",
+      "generated_at": "2026-08-13 09:07",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-13 09:07",
+      "summary": "NBIS Q2 营收同比+454%、AI云+514%、ARR 30亿(+598%)、调整后EBITDA转正2.36亿，带动股价+34.14%并点燃整条AI算力链（CRWV +19.28%、BE +12.29%、NOK +9.32%、COHR +8.24%）；但盘后5只热门股有3只转跌，科技巨头/Crypto/新能源车全线收绿，属存量资金极致轮动而非普涨。择时信号今日无Strong Buy、无任何Sell，唯二技术买入信号MSTR/XPEV双双被二次基本面校验判为🔴基本面恶化型、份额压至0.3，净份额+8.3份。Web3端BTC $63,408(-0.19%)、恐贪指数36恐慌，USDT供应60天缩水40亿美元。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260813_0907.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260812_1930",
       "date": "2026-08-12",

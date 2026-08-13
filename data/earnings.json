@@ -191,5 +191,30 @@
       "local_file": null,
       "note": "10-Q 发布时点尚未在 EDGAR 上线，待后续补充归档"
     }
+  },
+  {
+    "symbol": "NBIS",
+    "name": "Nebius Group",
+    "period": "2026Q2",
+    "period_label": "2026 Q2",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-08-12",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收+454%超预期/ARR三倍至30亿美元/调整后EBITDA转正利润率41%/全年指引全项重申）",
+    "eps_actual": -0.68,
+    "eps_estimate": -0.86,
+    "revenue_actual": 582.3,
+    "revenue_estimate": 569.9,
+    "revenue_unit": "百万美元",
+    "url": "earnings/NBIS-2026Q2.html",
+    "generated_at": "2026-08-13 09:25",
+    "sec_filing": {
+      "form": "6-K Exhibit 99.1",
+      "filing_date": "2026-08-12",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/",
+      "local_file": "earnings-filings/NBIS-2026Q2-sec-filing.htm",
+      "note": "外国私人发行人不提交10-Q，季度业绩以6-K披露；年报为20-F"
+    }
   }
 ]
