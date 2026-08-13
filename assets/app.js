@@ -219,40 +219,61 @@
 
         var first = klines[0];
         var last = klines[klines.length - 1];
-        var weekPct = ((last.close - first.open) / first.open * 100).toFixed(2);
-        var isWeekUp = last.close >= first.open;
+        // 兼容两种数据：OHLC（蜡烛图）/ 仅收盘价（折线图）
+        var hasOHLC = typeof first.open === 'number' && typeof first.high === 'number' && typeof first.low === 'number';
+        var base = hasOHLC ? first.open : first.close;
+        if (typeof base !== 'number' || typeof last.close !== 'number') return;
+        var weekPct = ((last.close - base) / base * 100).toFixed(2);
+        var isWeekUp = last.close >= base;
         var themeColor = isWeekUp ? '#dc2626' : '#16a34a';
 
-        // 计算全局高低
-        var allHigh = Math.max.apply(null, klines.map(function (k) { return k.high; }));
-        var allLow = Math.min.apply(null, klines.map(function (k) { return k.low; }));
-        var priceRange = allHigh - allLow || 1;
-
-        // SVG K线图参数
+        // SVG 图参数
         var W = 154, H = 52, PAD_T = 3, PAD_B = 3, PAD_X = 6;
-        var barW = Math.min(14, (W - PAD_X * 2) / klines.length - 2);
-        var gap = (W - PAD_X * 2 - barW * klines.length) / (klines.length - 1 || 1);
-
         var svgContent = '';
-        klines.forEach(function (k, i) {
-          var x = PAD_X + i * (barW + gap) + barW / 2;
-          var isUp = k.close >= k.open;
-          var bodyTop = isUp ? k.close : k.open;
-          var bodyBot = isUp ? k.open : k.close;
-          var color = isUp ? '#dc2626' : '#16a34a';
 
-          // Y 坐标映射（价格 → 像素，Y 轴反转）
-          var yHigh = PAD_T + (1 - (k.high - allLow) / priceRange) * (H - PAD_T - PAD_B);
-          var yLow = PAD_T + (1 - (k.low - allLow) / priceRange) * (H - PAD_T - PAD_B);
-          var yBodyTop = PAD_T + (1 - (bodyTop - allLow) / priceRange) * (H - PAD_T - PAD_B);
-          var yBodyBot = PAD_T + (1 - (bodyBot - allLow) / priceRange) * (H - PAD_T - PAD_B);
-          var bodyH = Math.max(1, yBodyBot - yBodyTop);
+        if (hasOHLC) {
+          // 蜡烛图：计算全局高低
+          var allHigh = Math.max.apply(null, klines.map(function (k) { return k.high; }));
+          var allLow = Math.min.apply(null, klines.map(function (k) { return k.low; }));
+          var priceRange = allHigh - allLow || 1;
+          var barW = Math.min(14, (W - PAD_X * 2) / klines.length - 2);
+          var gap = (W - PAD_X * 2 - barW * klines.length) / (klines.length - 1 || 1);
 
-          // 上下影线
-          svgContent += '<line x1="' + x.toFixed(1) + '" y1="' + yHigh.toFixed(1) + '" x2="' + x.toFixed(1) + '" y2="' + yLow.toFixed(1) + '" stroke="' + color + '" stroke-width="1.2"/>';
-          // 实体
-          svgContent += '<rect x="' + (x - barW / 2).toFixed(1) + '" y="' + yBodyTop.toFixed(1) + '" width="' + barW + '" height="' + bodyH.toFixed(1) + '" fill="' + (isUp ? color : color) + '" rx="1"/>';
-        });
+          klines.forEach(function (k, i) {
+            var x = PAD_X + i * (barW + gap) + barW / 2;
+            var isUp = k.close >= k.open;
+            var bodyTop = isUp ? k.close : k.open;
+            var bodyBot = isUp ? k.open : k.close;
+            var color = isUp ? '#dc2626' : '#16a34a';
+
+            // Y 坐标映射（价格 → 像素，Y 轴反转）
+            var yHigh = PAD_T + (1 - (k.high - allLow) / priceRange) * (H - PAD_T - PAD_B);
+            var yLow = PAD_T + (1 - (k.low - allLow) / priceRange) * (H - PAD_T - PAD_B);
+            var yBodyTop = PAD_T + (1 - (bodyTop - allLow) / priceRange) * (H - PAD_T - PAD_B);
+            var yBodyBot = PAD_T + (1 - (bodyBot - allLow) / priceRange) * (H - PAD_T - PAD_B);
+            var bodyH = Math.max(1, yBodyBot - yBodyTop);
+
+            // 上下影线
+            svgContent += '<line x1="' + x.toFixed(1) + '" y1="' + yHigh.toFixed(1) + '" x2="' + x.toFixed(1) + '" y2="' + yLow.toFixed(1) + '" stroke="' + color + '" stroke-width="1.2"/>';
+            // 实体
+            svgContent += '<rect x="' + (x - barW / 2).toFixed(1) + '" y="' + yBodyTop.toFixed(1) + '" width="' + barW + '" height="' + bodyH.toFixed(1) + '" fill="' + (isUp ? color : color) + '" rx="1"/>';
+          });
+        } else {
+          // 仅收盘价：折线图
+          var closes = klines.map(function (k) { return k.close; });
+          var ch = Math.max.apply(null, closes);
+          var cl = Math.min.apply(null, closes);
+          var range = ch - cl || 1;
+          var step = (W - PAD_X * 2) / (klines.length - 1);
+          var pts = klines.map(function (k, i) {
+            var x = PAD_X + i * step;
+            var y = PAD_T + (1 - (k.close - cl) / range) * (H - PAD_T - PAD_B);
+            return x.toFixed(1) + ',' + y.toFixed(1);
+          });
+          var lastPt = pts[pts.length - 1].split(',');
+          svgContent += '<polyline points="' + pts.join(' ') + '" fill="none" stroke="' + themeColor + '" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>';
+          svgContent += '<circle cx="' + lastPt[0] + '" cy="' + lastPt[1] + '" r="2.2" fill="' + themeColor + '"/>';
+        }
 
         html += '<div class="sparkline-card" style="border-color: ' + themeColor + '22;">';
         html += '<div class="sparkline-header">';
