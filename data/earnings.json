@@ -1,5 +1,30 @@
 [
   {
+    "symbol": "COHR",
+    "name": "Coherent 相干公司",
+    "period": "2026Q4",
+    "period_label": "2026 Q4（FY2026 第四财季）",
+    "fiscal_end": "2026-06-30",
+    "report_date": "2026-08-12",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收+34%首破20亿/非GAAP EPS+74%/Q1指引再超，但盘后-3.4% sell-the-news）",
+    "eps_actual": 1.74,
+    "eps_estimate": 1.62,
+    "revenue_actual": 2046,
+    "revenue_estimate": 1990,
+    "revenue_unit": "百万美元",
+    "url": "earnings/COHR-2026Q4.html",
+    "generated_at": "2026-08-13 19:25",
+    "sec_filing": {
+      "form": "8-K Exhibit 99.1",
+      "filing_date": "2026-08-12",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/",
+      "local_file": "earnings-filings/COHR-2026Q4-sec-filing.htm",
+      "note": "美国公司季度业绩以8-K Ex-99.1披露，正式10-K年报后续提交"
+    }
+  },
+  {
     "symbol": "MSTR",
     "name": "Strategy 微策略",
     "period": "2026Q2",

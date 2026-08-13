@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-13T09:36:16",
+  "updated_at": "2026-08-13T19:40:03",
   "dailies": [
+    {
+      "slug": "daily_20260813_1924",
+      "date": "2026-08-13",
+      "generated_at": "2026-08-13 19:24",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-13 19:24",
+      "summary": "8/12 AI基建极致狂欢（NBIS +34.14%/CRWV +19.28%/BE +12.29%/NOK +9.32%/COHR +8.24%），但8/13盘前三只热门股集体回吐（NBIS -3.93%/CRWV -2.26%/COHR -4.32%），COHR财报双超预期仍跌4.32%的sell-the-news印证估值墙。信号面无Strong Buy，唯一卖出MU（铁律一：冲高后回调8.0%），唯二买入MSTR/XPEV双双被基本面否决压至0.3份，净份额+6.6份。Web3端BTC $63,650(-0.41%)、恐贪指数38恐慌，ETH机构化与DeFi现金流叙事升温。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260813_1924.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260813_0907",
       "date": "2026-08-13",
