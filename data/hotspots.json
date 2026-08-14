@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13 19:08:24",
+  "updated_at": "2026-08-14 09:13:34",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,32 +8,67 @@
   },
   "hotspots": [
     {
-      "symbol": "NBIS",
-      "name": "Nebius集团",
-      "close": 259.2,
-      "pct_2d": 34.14,
-      "date_range": "2026-08-11 ~ now"
+      "symbol": "WDAY",
+      "name": "Workday",
+      "close": 206.45,
+      "pct_2d": 17.78,
+      "date_range": "2026-08-12 ~ now"
     },
     {
-      "symbol": "CRWV",
-      "name": "CoreWeave",
-      "close": 107.73,
-      "pct_2d": 19.28,
-      "date_range": "2026-08-11 ~ now"
+      "symbol": "TTD",
+      "name": "萃弈",
+      "close": 14.56,
+      "pct_2d": 7.93,
+      "date_range": "2026-08-12 ~ now"
     },
     {
-      "symbol": "SMCI",
-      "name": "超微电脑",
-      "close": 37.61,
-      "pct_2d": 19.02,
-      "date_range": "2026-08-11 ~ now"
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 165.98,
+      "pct_2d": 6.92,
+      "date_range": "2026-08-12 ~ now"
     },
     {
-      "symbol": "ORCL",
-      "name": "甲骨文",
-      "close": 153.28,
-      "pct_2d": 5.36,
-      "date_range": "2026-08-11 ~ now"
+      "symbol": "RBLX",
+      "name": "罗布乐思",
+      "close": 37.95,
+      "pct_2d": 6.78,
+      "date_range": "2026-08-12 ~ now"
+    },
+    {
+      "symbol": "NET",
+      "name": "科赋锐",
+      "close": 330.83,
+      "pct_2d": 6.22,
+      "date_range": "2026-08-12 ~ now"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 188.18,
+      "pct_2d": 6.12,
+      "date_range": "2026-08-12 ~ now"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle互联网集团",
+      "close": 75.38,
+      "pct_2d": 5.75,
+      "date_range": "2026-08-12 ~ now"
+    },
+    {
+      "symbol": "NFLX",
+      "name": "奈飞",
+      "close": 78.24,
+      "pct_2d": 5.43,
+      "date_range": "2026-08-12 ~ now"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "close": 158.53,
+      "pct_2d": 5.4,
+      "date_range": "2026-08-12 ~ now"
     }
   ]
 }
