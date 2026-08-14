@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-14T09:17:38",
+  "updated_at": "2026-08-14T19:19:45",
   "dailies": [
+    {
+      "slug": "daily_20260814_1919",
+      "date": "2026-08-14",
+      "generated_at": "2026-08-14 19:19",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-14 19:19",
+      "summary": "8/13美股普涨后进入8/14盘前，半导体(MU +4.23%)与Crypto(CRCL +5.75%)延续强势，AI基建分化。信号面无Strong Buy/Sell，唯一左侧买入XPEV被基本面否决（净利亏损+净利率-13.69%）压至0.3份，净份额+8.3份偏中性。Web3端BTC $62,868(-1.32%)、恐贪指数36恐慌，机构资金流向ETH质押与RWA。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260814_1919.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260814_0914",
       "date": "2026-08-14",
