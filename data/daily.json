@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-14T19:19:45",
+  "updated_at": "2026-08-15T20:13:52",
   "dailies": [
+    {
+      "slug": "weekly_20260814",
+      "date": "2026-08-14",
+      "generated_at": "2026-08-15 20:13",
+      "title": "自选股周报 | 2026-08-10 ~ 08-14",
+      "summary": "本周12涨5跌，NBIS +47.73%领涨(Q2财报暴增)、COHR -14.06%垫底(sell-the-news)；CRWV/NBIS财报大超预期点燃AI算力链，下周财报空窗，关注NVDA 08-26财报。",
+      "tickers": [
+        "NBIS",
+        "CRWV",
+        "NOK",
+        "MU",
+        "CRCL",
+        "AMD",
+        "BE",
+        "TSLA",
+        "MRVL",
+        "TSM",
+        "INTC",
+        "NVDA",
+        "QUBT",
+        "GOOG",
+        "XPEV",
+        "MSTR",
+        "COHR"
+      ],
+      "image": "images/weekly_20260814.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260814_1919",
       "date": "2026-08-14",
