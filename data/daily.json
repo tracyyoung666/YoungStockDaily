@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-17T09:21:05",
+  "updated_at": "2026-08-17T19:21:46",
   "dailies": [
+    {
+      "slug": "daily_20260817_1918",
+      "date": "2026-08-17",
+      "generated_at": "2026-08-17 19:18",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-17 19:18",
+      "summary": "盘前，AI云(NBIS +8.88%)与半导体(AMD +6.5%)延续强势，Crypto回落。CRCL冲高回调命中铁律一减仓；MSTR/XPEV技术Buy但基本面恶化压至0.3份，净份额+6.6份。Web3端BTC $63,336(+0.51%)、恐贪指数37恐慌，主线切换至ETH与RWA驱动。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260817_1918.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260817_0920",
       "date": "2026-08-17",
