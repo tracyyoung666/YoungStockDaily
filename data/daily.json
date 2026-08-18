@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-18T09:25:55",
+  "updated_at": "2026-08-18T19:21:39",
   "dailies": [
+    {
+      "slug": "daily_20260818_1920",
+      "date": "2026-08-18",
+      "generated_at": "2026-08-18 19:20",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-18 19:20",
+      "summary": "周一盘后半导体与Crypto强势（COHR +7.79%、MRVL +5.54%、MSTR +4.99%、MU +4.13%），但盘前普跌回吐涨幅。17只全部机械定投（净份额 +8.5 份），无买/卖信号。Web3端 BTC $64,213(+1.37%)、恐贪指数40恐慌，主线转向ETH机构化、稳定币监管与机构DeFi扩张。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260818_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260818_0924",
       "date": "2026-08-18",
