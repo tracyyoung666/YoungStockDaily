@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-17T19:21:46",
+  "updated_at": "2026-08-18T09:25:55",
   "dailies": [
+    {
+      "slug": "daily_20260818_0924",
+      "date": "2026-08-18",
+      "generated_at": "2026-08-18 09:24",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-18 09:24",
+      "summary": "周一盘后，半导体与Crypto强势：COHR +7.79%、MRVL +5.54%、MSTR +4.99%、MU +4.13%，AI算力主线延续，NBIS逆势-3.18%。17只全部机械定投（净份额+8.5份），无买/卖信号。Web3端BTC $64,507(+2.64%)反弹、恐贪指数40恐慌，主线转向ETH与稳定币/RWA的机构化与合规化驱动。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260818_0924.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260817_1918",
       "date": "2026-08-17",

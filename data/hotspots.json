@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17 19:17:18",
+  "updated_at": "2026-08-18 09:23:21",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,18 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "NBIS",
-      "name": "Nebius集团",
-      "close": 277.68,
-      "pct_2d": 8.88,
-      "date_range": "2026-08-13 ~ now"
+      "symbol": "AMAT",
+      "name": "应用材料",
+      "close": 535.31,
+      "pct_2d": 5.55,
+      "date_range": "2026-08-14 ~ now"
     },
     {
-      "symbol": "AMD",
-      "name": "超威半导体",
-      "close": 514.39,
-      "pct_2d": 6.5,
-      "date_range": "2026-08-13 ~ now"
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 234.33,
+      "pct_2d": 5.54,
+      "date_range": "2026-08-14 ~ now"
     }
   ]
 }
