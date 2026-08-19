@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-18T19:21:39",
+  "updated_at": "2026-08-19T09:35:40",
   "dailies": [
+    {
+      "slug": "daily_20260819_0935",
+      "date": "2026-08-19",
+      "generated_at": "2026-08-19 09:35",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-19 09:35",
+      "summary": "美债抛售恐慌引发高位科技股普跌：11/17只跌超4%，光通信/AI基建领跌（COHR -12.75%、CRWV -12.10%、BE -9.97%），GOOG独稳。MU冲高后回调7%触发铁律一止盈（Sell -1.0）；技术Buy 6只经基本面校验：BE/COHR维持🟢1.0份，INTC/MSTR/XPEV/QUBT压至🔴0.3份；净份额+7.2份。新增QUBT 2026Q2财报分析。Web3端BTC $64,480(+0.24%)、恐贪指数41恐慌，SEC松绑+传统金融入场为主线。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260819_0935.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260818_1920",
       "date": "2026-08-18",

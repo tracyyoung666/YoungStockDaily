@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-08-18 19:18:20",
+  "updated_at": "2026-08-19 09:26:10",
   "period": "2 trading days",
+  "note": "普跌日全市场无个股2日涨幅≥5%，以下为2日涨幅Top3（避险/防御板块轮动）",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
@@ -8,18 +9,25 @@
   },
   "hotspots": [
     {
-      "symbol": "AMAT",
-      "name": "应用材料",
-      "close": 535.31,
-      "pct_2d": 5.55,
-      "date_range": "2026-08-14 ~ now"
+      "symbol": "SPOT",
+      "name": "Spotify",
+      "close": 516.28,
+      "pct_2d": 4.83,
+      "reason": "Q2净利6.34亿美元同比+750%，订阅用户破3亿+AI商业化加速"
     },
     {
-      "symbol": "MRVL",
-      "name": "迈威尔科技",
-      "close": 234.33,
-      "pct_2d": 5.54,
-      "date_range": "2026-08-14 ~ now"
+      "symbol": "LLY",
+      "name": "礼来",
+      "close": 1225.73,
+      "pct_2d": 3.6,
+      "reason": "登顶2026全球制药50强，芯片抛售日资金避险流入医药"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe",
+      "close": 263.14,
+      "pct_2d": 3.58,
+      "reason": "防御性软件板块轮动，无个股利空"
     }
   ]
 }
