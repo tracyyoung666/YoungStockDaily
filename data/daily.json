@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-19T09:35:40",
+  "updated_at": "2026-08-19T19:22:06",
   "dailies": [
+    {
+      "slug": "daily_20260819_1920",
+      "date": "2026-08-19",
+      "generated_at": "2026-08-19 19:20",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-19 19:20",
+      "summary": "半导体/AI基建全线抛售：11/17只跌超4%（COHR -12.75%、CRWV -12.10%、BE -9.97%），MU冲高后回调7.0%触发铁律一止盈信号（Sell -1.0）；COHR/BE为🟢技术错杀型Buy（1.0份），INTC/MSTR/XPEV/QUBT技术Buy被基本面否决压至0.3份；净份额+7.2。Web3：BTC $64,418（+0.34%）、ETH $1,924（+1.42%）、恐贪指数41恐慌。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260819_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260819_0935",
       "date": "2026-08-19",
