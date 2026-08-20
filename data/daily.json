@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-20T09:34:19",
+  "updated_at": "2026-08-20T19:20:58",
   "dailies": [
+    {
+      "slug": "daily_20260820_1915",
+      "date": "2026-08-20",
+      "generated_at": "2026-08-20 19:15",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-20 19:15",
+      "summary": "盘前分化延续：BTC+8%逼近7万带动MSTR盘前+10.8%/CRCL放量+9.6%，AI基建/光通信领跌（NBIS -9.9%/COHR -6.2%）。择时：Buy 6只——AMD/COHR/BE🟢各1.0份优先，INTC/CRWV/QUBT🔴压至0.3份，净份额+9.4；无Strong Buy。MSTR/CRCL/TSLA/MRVL刚冲高，铁律一：回调≥5%必止盈。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260820_1915.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260820_0927",
       "date": "2026-08-20",
