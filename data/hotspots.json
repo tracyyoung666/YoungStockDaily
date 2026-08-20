@@ -1,10 +1,81 @@
 {
-  "updated_at": "2026-08-19 19:17:11",
+  "updated_at": "2026-08-20 09:26:36",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "EL",
+      "name": "雅诗兰黛",
+      "close": 98.01,
+      "pct_2d": 16.3,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "MSTR",
+      "name": "微策略",
+      "close": 104.25,
+      "pct_2d": 12.68,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "MRK",
+      "name": "默沙东",
+      "close": 152.2,
+      "pct_2d": 12.6,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 237.27,
+      "pct_2d": 9.85,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle互联网集团",
+      "close": 78.59,
+      "pct_2d": 9.56,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "close": 160.2,
+      "pct_2d": 9.55,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 174.23,
+      "pct_2d": 6.89,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "NOW",
+      "name": "现在服务公司",
+      "close": 127.2,
+      "pct_2d": 6.45,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "close": 15.73,
+      "pct_2d": 6.43,
+      "date_range": "2026-08-18 ~ now"
+    },
+    {
+      "symbol": "CRM",
+      "name": "赛富时",
+      "close": 206.09,
+      "pct_2d": 5.07,
+      "date_range": "2026-08-18 ~ now"
+    }
+  ]
 }
