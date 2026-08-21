@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-21T09:25:56",
+  "updated_at": "2026-08-21T19:17:02",
   "dailies": [
+    {
+      "slug": "daily_20260821_1920",
+      "date": "2026-08-21",
+      "generated_at": "2026-08-21 19:20",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-08-21 19:20",
+      "summary": "Crypto逼空行情：BTC+8.45%带动MSTR/CRCL放量大涨，MU+3.97%领涨半导体，AI基建盘前修复。择时信号：Buy 6只（BE/COHR🟢空头试探优先），INTC/NBIS/CRWV/QUBT基本面校验压至0.3份，净份额+7.7。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260821_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260821_0935",
       "date": "2026-08-21",

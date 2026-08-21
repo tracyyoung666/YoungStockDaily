@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21 09:08:34",
+  "updated_at": "2026-08-21 19:13:52",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -7,6 +7,34 @@
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
+    {
+      "symbol": "MSTR",
+      "name": "微策略",
+      "close": 112.39,
+      "pct_2d": 7.81,
+      "date_range": "2026-08-19 ~ now"
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "close": 172.35,
+      "pct_2d": 7.58,
+      "date_range": "2026-08-19 ~ now"
+    },
+    {
+      "symbol": "DE",
+      "name": "迪尔股份",
+      "close": 620.94,
+      "pct_2d": 6.94,
+      "date_range": "2026-08-19 ~ now"
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle互联网集团",
+      "close": 83.66,
+      "pct_2d": 6.45,
+      "date_range": "2026-08-19 ~ now"
+    },
     {
       "symbol": "MRVL",
       "name": "迈威尔科技",
