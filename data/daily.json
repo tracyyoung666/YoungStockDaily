@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-20T19:20:58",
+  "updated_at": "2026-08-21T09:25:56",
   "dailies": [
+    {
+      "slug": "daily_20260821_0935",
+      "date": "2026-08-21",
+      "generated_at": "2026-08-21 09:35",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-21 09:35",
+      "summary": "Crypto板块借BTC破7.2万全面爆发（CRCL +6.45%/MSTR +7.81%）；MRVL获瑞银上调目标价+谷歌TPU合作扩大+5.79%。择时信号：COHR/BE为仅有的两只🟢技术错杀型Buy（各1.0份）；INTC/NBIS/CRWV/QUBT技术超卖但仍在亏损🔴压至0.3份；NVDA财报08-26前保持克制。净份额+8.7份。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260821_0935.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260820_1915",
       "date": "2026-08-20",
