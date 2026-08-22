@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-21T19:17:02",
+  "updated_at": "2026-08-22T20:27:05",
   "dailies": [
+    {
+      "slug": "weekly_20260821",
+      "date": "2026-08-21",
+      "generated_at": "2026-08-22 20:26",
+      "title": "自选股周报 | 2026-08-17 ~ 08-21",
+      "summary": "本周5涨12跌，MSTR +28.17%领涨(BTC破7.5万逼空)、NBIS -21.09%垫底(董事售股+可转债摊薄)；Crypto周MSTR/CRCL暴涨、周二美债恐慌普跌，下周关注XPEV/NVDA/MRVL三场财报。",
+      "tickers": [
+        "MSTR",
+        "CRCL",
+        "MRVL",
+        "TSLA",
+        "XPEV",
+        "MU",
+        "GOOG",
+        "QUBT",
+        "TSM",
+        "NVDA",
+        "NOK",
+        "AMD",
+        "COHR",
+        "INTC",
+        "BE",
+        "CRWV",
+        "NBIS"
+      ],
+      "image": "images/weekly_20260821.png",
+      "has_stock": true,
+      "has_web3": false
+    },
     {
       "slug": "daily_20260821_1920",
       "date": "2026-08-21",
