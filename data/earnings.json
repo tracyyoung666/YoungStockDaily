@@ -265,5 +265,29 @@
    "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026055218/",
    "local_file": "earnings-filings/QUBT-2026Q2-sec-filing.htm"
   }
+ },
+ {
+  "symbol": "XPEV",
+  "name": "小鹏集团",
+  "period": "2026Q2",
+  "period_label": "2026 Q2",
+  "fiscal_end": "2026-06-30",
+  "report_date": "2026-08-24",
+  "verdict": "mixed",
+  "verdict_label": "喜忧参半（营收197.4亿+8%/毛利率20.7%创同期新高，但净亏13.4亿同比扩大近3倍、Q3指引217-234亿大幅低于预期272.6亿）",
+  "eps_actual": -0.19,
+  "eps_estimate": null,
+  "revenue_actual": 197.4,
+  "revenue_estimate": 272.6,
+  "revenue_unit": "亿元人民币（Q3指引vs预期）",
+  "url": "earnings/XPEV-2026Q2.html",
+  "generated_at": "2026-08-24 19:25",
+  "sec_filing": {
+   "form": "6-K",
+   "filing_date": "2026-08-24",
+   "sec_url": "https://www.sec.gov/Archives/edgar/data/1810997/000119312526135938/d10967d6k.htm",
+   "sec_index_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001810997&type=6-K&dateb=&owner=include&count=10",
+   "local_file": "earnings-filings/XPEV-2026Q2-sec-filing.htm"
+  }
  }
 ]

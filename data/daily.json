@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T09:17:46",
+  "updated_at": "2026-08-24T19:26:55",
   "dailies": [
     {
       "slug": "daily_20260824_0915",
@@ -27,6 +27,35 @@
         "TSM"
       ],
       "image": "images/daily_20260824_0915.png",
+      "has_stock": true,
+      "has_web3": true
+    },
+    {
+      "slug": "daily_20260824_1905",
+      "date": "2026-08-24",
+      "generated_at": "2026-08-24 19:05",
+      "title": "自选股盘前分析 | 2026-08-24 19:05",
+      "summary": "AI硬件回调Crypto领涨：MRVL触发铁律一止盈(-1.0份)；净买入+7.2份但4只被基本面压至0.3份，干净买点仅COHR/BE；XPEV财报Q3指引miss；BTC $77,579恐贪79极度贪婪",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260824_1905.png",
       "has_stock": true,
       "has_web3": true
     },
