@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-22T20:27:05",
+  "updated_at": "2026-08-24T09:17:46",
   "dailies": [
+    {
+      "slug": "daily_20260824_0915",
+      "date": "2026-08-24 09:15",
+      "generated_at": "2026-08-24T09:15:00+08:00",
+      "title": "自选股盘后分析 + Web3 日报 | 2026-08-24 09:15",
+      "summary": "半导体高位分化：MRVL冲高回调5.6%触发止盈且8/27财报临近；AI云/量子深跌反弹中盈利分化，COHR与BE为基本面干净的技术错杀（1.0份优先）；BTC破7.5万带动Crypto板块，恐贪78极度贪婪警惕回调。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260824_0915.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20260821",
       "date": "2026-08-21",
