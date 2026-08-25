@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-24T19:26:55",
+  "updated_at": "2026-08-25T09:26:52",
   "dailies": [
+    {
+      "slug": "daily_20260825_0925",
+      "date": "2026-08-25",
+      "generated_at": "2026-08-25 09:25",
+      "title": "自选股盘后分析 | 2026-08-25 09:25",
+      "summary": "AI硬件回调日：半导体-3.72%共振下跌、17只自选12跌；8只技术Buy中5只被基本面降级（INTC/NBIS/CRWV压0.3份、XPEV/QUBT观望），干净买点MU/AMD(🟢)；NVDA 8/26、MRVL 8/27财报窗口暂停新买入；BTC $78,930(+1.58%)逼近8万，恐贪81极度贪婪",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260825_0925.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260824_0915",
       "date": "2026-08-24 09:15",
