@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-01T09:23:45",
+  "updated_at": "2026-09-01T19:30:48",
   "dailies": [
+    {
+      "slug": "daily_20260901_1922",
+      "date": "2026-09-01",
+      "generated_at": "2026-09-01 19:22",
+      "title": "自选股盘前分析 | 2026-09-01 19:22",
+      "summary": "美股三大指数收跌背景下Crypto板块+7.04%领涨（CRCL+9.65%/MSTR+4.42%/TSLA+5.51%），盘前全线小幅回落。择时净份额+8.2：仅BE/MRVL/COHR三只🟢技术错杀型Buy通过基本面校验，INTC/NBIS/CRWV/QUBT🔴恶化型压至0.3份试探、XPEV三RedFlag降为观望。Web3：BTC $77,874(-0.75%)/ETH $2,449(+0.12%)，恐贪指数73贪婪，机构资金回流主线延续。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260901_1922.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260901_0920",
       "date": "2026-09-01",
