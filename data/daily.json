@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-08-25T09:26:52",
+  "updated_at": "2026-09-01T09:23:45",
   "dailies": [
+    {
+      "slug": "daily_20260901_0920",
+      "date": "2026-09-01",
+      "generated_at": "2026-09-01 09:20",
+      "title": "自选股盘后分析 | 2026-09-01 09:20",
+      "summary": "NVDA史诗级财报（营收$962亿+106%、FY2028指引+70%）落地后AI叙事延续，Crypto领涨（CRCL+9.65%/MSTR+4.42%/TSLA+5.51%）；美债收益率创年内新高压制估值。择时净份额+8.5：MRVL/BE/COHR🟢校验通过Buy，INTC/NBIS/CRWV/XPEV/QUBT🔴恶化型压至0.3份。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260901_0920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260825_0925",
       "date": "2026-08-25",
