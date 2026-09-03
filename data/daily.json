@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-02T19:38:18",
+  "updated_at": "2026-09-03T19:25:26",
   "dailies": [
+    {
+      "slug": "daily_20260903_1930",
+      "date": "2026-09-03",
+      "generated_at": "2026-09-03 19:30",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-03",
+      "summary": "17只自选股7涨10跌全员无异常，半导体+0.89%领涨(NVDA+3.21%/MU+2.43%)、光通信-1.25%垫底；择时0只Strong Buy/9只定投Buy/7只机械定投/1只观望，净份额+8.0份——9只Buy全卡在反弹未确认，6只当日收盘即20日最低；二次校验降级6只(INTC/NBIS/CRWV/XPEV/NOK压至0.3、QUBT降观望)，仅AMD(净利率19.98%)与MRVL(9.71%)为0 RedFlag优先标的。Web3: BTC 77,796(+1.46%)、恐贪72贪婪。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260903_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260902_1935",
       "date": "2026-09-02",
