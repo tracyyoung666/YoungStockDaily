@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-04T19:23:36",
+  "updated_at": "2026-09-05T20:18:29",
   "dailies": [
+    {
+      "slug": "weekly_20260904",
+      "date": "2026-09-05",
+      "generated_at": "2026-09-05 20:30",
+      "title": "自选股周报 | 2026-08-31 ~ 09-04",
+      "summary": "本周17只13涨4跌，BE +19.97%(标普500纳入)/CRCL +17.11%(Arc链)/MSTR +12.16%(BTC破8.1万)领涨，XPEV -5.03%垫底；周三至暗(9只Buy全卡反弹未确认)后周四周五V型反转，全周无一日Strong Buy，校验后仅AMD/MRVL/COHR为0RedFlag；涨幅前三全部进入铁律一5%止盈监控区，BE RSI6=82.2。Web3: BTC $79,634(+0.89%)、恐贪81→75。下周核心验证「降息预期」在非农超预期后是否反转。",
+      "tickers": [
+        "BE",
+        "CRCL",
+        "MSTR",
+        "MU",
+        "NBIS",
+        "INTC",
+        "CRWV",
+        "NVDA",
+        "MRVL",
+        "TSM",
+        "AMD",
+        "TSLA",
+        "COHR",
+        "QUBT",
+        "NOK",
+        "GOOG",
+        "XPEV"
+      ],
+      "image": "images/weekly_20260904.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260904_1902",
       "date": "2026-09-04",
