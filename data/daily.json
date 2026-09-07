@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-05T20:18:29",
+  "updated_at": "2026-09-07T19:35:04",
   "dailies": [
+    {
+      "slug": "daily_20260907_1930",
+      "date": "2026-09-07",
+      "generated_at": "2026-09-07 19:30",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-07 19:30",
+      "summary": "AI 算力链全面爆发（半导体 +4.64% / AI基建 +6.58% / 光通信 +6.60%），全市场 2 日涨幅 Top6 中自选股独占 4 席；机械规则产出 3 只 Strong Buy，但二次基本面校验后仅 MRVL 一只 0 项 RedFlag 保留加倍资格（净利率 9.71%、机构卖出 0 家），NBIS/CRWV 因 GAAP 仍亏损各命中 2 项 RedFlag 压至 0.3 份，净份额 +12.5 → +8.7；BE 已 RSI6=82.2 进入高位预警需设 -5% 移动止盈，GOOG 熔断降为观望。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260907_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20260904",
       "date": "2026-09-05",
