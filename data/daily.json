@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-07T19:35:04",
+  "updated_at": "2026-09-08T19:39:59",
   "dailies": [
+    {
+      "slug": "daily_20260908_1940",
+      "date": "2026-09-08",
+      "generated_at": "2026-09-08 19:40",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-08 19:40",
+      "summary": "AI 算力链全面爆发（光通信 +6.60% / AI基建 +6.58% / 半导体 +4.64%），全市场 2 日涨幅 Top6 清一色算力链且自选股独占 4 席（NBIS/MRVL/MU/CRWV），MU 首破千元收 $1,016.59；新能源车（TSLA -5.92%）与 Crypto 同步失血，属主线切换非普涨。机械规则产出 2 只 Strong Buy（COHR/CRWV）+ 2 只 Buy（XPEV/QUBT），二次基本面校验后仅 COHR 一只 0 项 RedFlag 保留加倍资格（净利率 8.70%、机构卖出 0 家），CRWV（净亏 6.26 亿，2 项）与 QUBT（3 项）压至 0.3 份，净份额 +11.0 → +10.6；BE 已 RSI6=82.2 + 盘前再涨 6.1% 进入高位预警需设 -5% 移动止盈，GOOG 连续定投 6 次触发熔断降为观望。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260908_1940.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260907_1930",
       "date": "2026-09-07",
