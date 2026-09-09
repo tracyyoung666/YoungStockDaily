@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 19:15:13",
+  "updated_at": "2026-09-09 19:11:54",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,67 +8,39 @@
   },
   "hotspots": [
     {
-      "symbol": "MSTR",
-      "name": "微策略",
-      "close": 144.82,
-      "pct_2d": 17.56,
-      "date_range": "2026-09-02 ~ now"
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "close": 99.83,
+      "pct_2d": 11.72,
+      "date_range": "2026-09-07 ~ now"
     },
     {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 356.47,
-      "pct_2d": 16.55,
-      "date_range": "2026-09-02 ~ now"
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 104.47,
+      "pct_2d": 9.05,
+      "date_range": "2026-09-07 ~ now"
     },
     {
-      "symbol": "CRCL",
-      "name": "Circle互联网集团",
-      "close": 103.23,
-      "pct_2d": 16.46,
-      "date_range": "2026-09-02 ~ now"
+      "symbol": "NBIS",
+      "name": "Nebius集团",
+      "close": 243.88,
+      "pct_2d": 7.73,
+      "date_range": "2026-09-07 ~ now"
     },
     {
-      "symbol": "COIN",
-      "name": "Coinbase",
-      "close": 192.7,
-      "pct_2d": 10.14,
-      "date_range": "2026-09-02 ~ now"
+      "symbol": "ENPH",
+      "name": "Enphase Energy, Inc.",
+      "close": 38.83,
+      "pct_2d": 6.76,
+      "date_range": "2026-09-07 ~ now"
     },
     {
-      "symbol": "PLTR",
-      "name": "Palantir",
-      "close": 182.53,
-      "pct_2d": 7.71,
-      "date_range": "2026-09-02 ~ now"
-    },
-    {
-      "symbol": "NOW",
-      "name": "现在服务公司",
-      "close": 145.59,
-      "pct_2d": 6.49,
-      "date_range": "2026-09-02 ~ now"
-    },
-    {
-      "symbol": "ORCL",
-      "name": "甲骨文",
-      "close": 154.04,
-      "pct_2d": 5.69,
-      "date_range": "2026-09-02 ~ now"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CrowdStrike",
-      "close": 214.97,
-      "pct_2d": 5.68,
-      "date_range": "2026-09-02 ~ now"
-    },
-    {
-      "symbol": "TSLA",
-      "name": "特斯拉",
-      "close": 376.37,
-      "pct_2d": 5.42,
-      "date_range": "2026-09-02 ~ now"
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 505.74,
+      "pct_2d": 5.9,
+      "date_range": "2026-09-07 ~ now"
     }
   ]
 }
