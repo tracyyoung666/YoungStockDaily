@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 19:11:54",
+  "updated_at": "2026-09-10 19:18:14",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,39 +8,25 @@
   },
   "hotspots": [
     {
-      "symbol": "CRWV",
-      "name": "CoreWeave",
-      "close": 99.83,
-      "pct_2d": 11.72,
-      "date_range": "2026-09-07 ~ now"
+      "symbol": "NET",
+      "name": "科赋锐",
+      "close": 314.18,
+      "pct_2d": 10.51,
+      "date_range": "2026-09-08 ~ now"
     },
     {
-      "symbol": "INTC",
-      "name": "英特尔",
-      "close": 104.47,
-      "pct_2d": 9.05,
-      "date_range": "2026-09-07 ~ now"
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 225.27,
+      "pct_2d": 7.15,
+      "date_range": "2026-09-08 ~ now"
     },
     {
-      "symbol": "NBIS",
-      "name": "Nebius集团",
-      "close": 243.88,
-      "pct_2d": 7.73,
-      "date_range": "2026-09-07 ~ now"
-    },
-    {
-      "symbol": "ENPH",
-      "name": "Enphase Energy, Inc.",
-      "close": 38.83,
-      "pct_2d": 6.76,
-      "date_range": "2026-09-07 ~ now"
-    },
-    {
-      "symbol": "AMD",
-      "name": "超威半导体",
-      "close": 505.74,
-      "pct_2d": 5.9,
-      "date_range": "2026-09-07 ~ now"
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "close": 653.69,
+      "pct_2d": 6.55,
+      "date_range": "2026-09-08 ~ now"
     }
   ]
 }
