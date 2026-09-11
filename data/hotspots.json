@@ -1,32 +1,10 @@
 {
-  "updated_at": "2026-09-10 19:18:14",
+  "updated_at": "2026-09-11 19:16:21",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "NET",
-      "name": "科赋锐",
-      "close": 314.18,
-      "pct_2d": 10.51,
-      "date_range": "2026-09-08 ~ now"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 225.27,
-      "pct_2d": 7.15,
-      "date_range": "2026-09-08 ~ now"
-    },
-    {
-      "symbol": "META",
-      "name": "Meta Platforms",
-      "close": 653.69,
-      "pct_2d": 6.55,
-      "date_range": "2026-09-08 ~ now"
-    }
-  ]
+  "hotspots": []
 }

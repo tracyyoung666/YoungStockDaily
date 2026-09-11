@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-10T19:23:14",
+  "updated_at": "2026-09-11T19:21:19",
   "dailies": [
+    {
+      "slug": "daily_20260911_1907",
+      "date": "2026-09-11",
+      "generated_at": "2026-09-11T19:07:00+08:00",
+      "title": "📈 自选股盘前分析 | 2026-09-11 19:07",
+      "summary": "市场周五普跌，半导体与AI基建领跌；COHR触发Strong Buy（技术错杀型）；INTC冲高回落触发止盈；XPEV/QUBT买入信号被基本面否决",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260911_1907.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260910_1908",
       "date": "2026-09-10",

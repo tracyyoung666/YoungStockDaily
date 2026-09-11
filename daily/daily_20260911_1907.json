@@ -1,0 +1,229 @@
+{
+  "slug": "daily_20260911_1907",
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T19:07:00+08:00",
+  "title": "📈 自选股盘前分析 | 2026-09-11 19:07",
+  "session": "premarket",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/daily_20260911_1907.png",
+  "stock_body_html": "<div class=\"stock-report\">\n<h3>📊 异常信号总览表</h3>\n<table class=\"stock-table\"><thead><tr>\n<th>代码</th><th>名称</th><th>收盘价</th><th>今日涨跌</th><th>盘前价</th><th>盘前%</th><th>距52W高</th><th>RSI6</th><th>信号</th>\n</tr></thead><tbody>\n<tr><td><strong>MU</strong></td><td>美光科技</td>\n<td>$977.41</td>\n<td style=\"color:#16a34a\">-4.90%</td>\n<td>$984.50</td>\n<td style=\"color:#dc2626\">+0.73%</td>\n<td>-22.10%</td>\n<td>50.9</td>\n<td>日涨跌>4%(-4.90%)</td></tr>\n<tr><td><strong>AMD</strong></td><td>超威半导体</td>\n<td>$503.60</td>\n<td style=\"color:#16a34a\">-3.36%</td>\n<td>$508.50</td>\n<td style=\"color:#dc2626\">+0.97%</td>\n<td>-13.87%</td>\n<td>62.2</td>\n<td>正常</td></tr>\n<tr><td><strong>INTC</strong></td><td>英特尔</td>\n<td>$100.32</td>\n<td style=\"color:#16a34a\">-5.57%</td>\n<td>$101.14</td>\n<td style=\"color:#dc2626\">+0.82%</td>\n<td>-29.53%</td>\n<td>60.4</td>\n<td>日涨跌>4%(-5.57%)</td></tr>\n<tr><td><strong>GOOG</strong></td><td>谷歌</td>\n<td>$330.39</td>\n<td style=\"color:#dc2626\">+0.61%</td>\n<td>$332.00</td>\n<td style=\"color:#dc2626\">+0.49%</td>\n<td>-18.22%</td>\n<td>36.6</td>\n<td>正常</td></tr>\n<tr><td><strong>NVDA</strong></td><td>英伟达</td>\n<td>$218.36</td>\n<td style=\"color:#16a34a\">-2.26%</td>\n<td>$219.75</td>\n<td style=\"color:#dc2626\">+0.64%</td>\n<td>-7.47%</td>\n<td>42.2</td>\n<td>正常</td></tr>\n<tr><td><strong>NBIS</strong></td><td>Nebius</td>\n<td>$228.11</td>\n<td style=\"color:#16a34a\">-5.09%</td>\n<td>$232.65</td>\n<td style=\"color:#dc2626\">+1.99%</td>\n<td>-23.93%</td>\n<td>54.1</td>\n<td>日涨跌>4%(-5.09%)</td></tr>\n<tr><td><strong>CRWV</strong></td><td>CoreWeave</td>\n<td>$89.12</td>\n<td style=\"color:#16a34a\">-6.13%</td>\n<td>$90.75</td>\n<td style=\"color:#dc2626\">+1.83%</td>\n<td>-41.83%</td>\n<td>48.8</td>\n<td>日涨跌>4%(-6.13%)</td></tr>\n<tr><td><strong>CRCL</strong></td><td>Circle</td>\n<td>$90.32</td>\n<td style=\"color:#16a34a\">-2.87%</td>\n<td>$90.55</td>\n<td style=\"color:#dc2626\">+0.25%</td>\n<td>-43.36%</td>\n<td>45.8</td>\n<td>正常</td></tr>\n<tr><td><strong>MSTR</strong></td><td>MicroStrategy</td>\n<td>$128.56</td>\n<td style=\"color:#16a34a\">-3.12%</td>\n<td>$128.70</td>\n<td style=\"color:#dc2626\">+0.11%</td>\n<td>-64.80%</td>\n<td>47.8</td>\n<td>正常</td></tr>\n<tr><td><strong>TSLA</strong></td><td>特斯拉</td>\n<td>$363.56</td>\n<td style=\"color:#16a34a\">-1.16%</td>\n<td>$362.92</td>\n<td style=\"color:#16a34a\">-0.18%</td>\n<td>-27.12%</td>\n<td>53.5</td>\n<td>正常</td></tr>\n<tr><td><strong>XPEV</strong></td><td>小鹏汽车</td>\n<td>$10.34</td>\n<td style=\"color:#16a34a\">-2.18%</td>\n<td>$10.54</td>\n<td style=\"color:#dc2626\">+1.93%</td>\n<td>-63.39%</td>\n<td>17.6</td>\n<td>正常</td></tr>\n<tr><td><strong>MRVL</strong></td><td>迈威尔科技</td>\n<td>$226.96</td>\n<td style=\"color:#16a34a\">-3.43%</td>\n<td>$229.01</td>\n<td style=\"color:#dc2626\">+0.90%</td>\n<td>-31.18%</td>\n<td>53.8</td>\n<td>正常</td></tr>\n<tr><td><strong>NOK</strong></td><td>诺基亚</td>\n<td>$10.62</td>\n<td style=\"color:#16a34a\">-1.30%</td>\n<td>$10.68</td>\n<td style=\"color:#dc2626\">+0.55%</td>\n<td>-38.97%</td>\n<td>63.8</td>\n<td>正常</td></tr>\n<tr><td><strong>COHR</strong></td><td>Coherent</td>\n<td>$293.17</td>\n<td style=\"color:#16a34a\">-3.40%</td>\n<td>$297.06</td>\n<td style=\"color:#dc2626\">+1.33%</td>\n<td>-33.37%</td>\n<td>53.9</td>\n<td>正常</td></tr>\n<tr><td><strong>QUBT</strong></td><td>量子计算</td>\n<td>$7.82</td>\n<td style=\"color:#16a34a\">-2.74%</td>\n<td>$7.91</td>\n<td style=\"color:#dc2626\">+1.15%</td>\n<td>-69.74%</td>\n<td>36.0</td>\n<td>正常</td></tr>\n<tr><td><strong>BE</strong></td><td>Bloom Energy</td>\n<td>$258.49</td>\n<td style=\"color:#16a34a\">-4.01%</td>\n<td>$264.64</td>\n<td style=\"color:#dc2626\">+2.38%</td>\n<td>-26.41%</td>\n<td>65.2</td>\n<td>日涨跌>4%(-4.01%)</td></tr>\n<tr><td><strong>TSM</strong></td><td>台积电</td>\n<td>$428.03</td>\n<td style=\"color:#16a34a\">-1.68%</td>\n<td>$428.23</td>\n<td style=\"color:#dc2626\">+0.05%</td>\n<td>-10.64%</td>\n<td>54.8</td>\n<td>正常</td></tr>\n</tbody></table>\n<h3>⚡ 异常信号详解</h3>\n<ul>\n<li><strong>MU（美光科技）：</strong>日涨跌>4%(-4.90%)。收盘$977.41（-4.90%）。爆了！存储巨头重奖中国台湾地区员工，避免罢工危机！</li>\n<li><strong>INTC（英特尔）：</strong>日涨跌>4%(-5.57%)。收盘$100.32（-5.57%）。英特尔封装月产10万片，谷歌TPU订单三家分食</li>\n<li><strong>NBIS（Nebius）：</strong>日涨跌>4%(-5.09%)。收盘$228.11（-5.09%）。Truist首予Nebius“买入”评级 AI云收入潜力被低估</li>\n<li><strong>CRWV（CoreWeave）：</strong>日涨跌>4%(-6.13%)。收盘$89.12（-6.13%）。财联社9月10日电，CoreWeave将把专有数据转化为生产级AI。</li>\n<li><strong>BE（Bloom Energy）：</strong>日涨跌>4%(-4.01%)。收盘$258.49（-4.01%）。AI尽头是供电! Bloom期权热度碾压SpaceX，燃料电池吃满AI算力超级周期红利</li>\n</ul>\n<h3>💡 建议动作</h3>\n<ul>\n<li><strong>P0 COHR（Coherent）：</strong>Strong Buy▲▲（🟢技术错杀型）— 距52W高-33.4%深跌+近5日曾超卖+自低点反弹10.9%≥阈值8.9%+收盘≥MA10结构修复，净利率8.7%/机构卖出0家，建议+2.0份加倍抄底。止损锚点$264.41。</li>\n<li><strong>P1 INTC（英特尔）：</strong>定投Sell▼ — 曾连续冲高后回调5.6%≥铁律一5%，建议减仓-1.0份锁利。PE为负（亏损状态），需警惕继续回调。</li>\n<li><strong>⚠️ XPEV（小鹏）：</strong>技术面Buy信号被基本面否决 — RSI6=17.6超卖但净亏损196.4M/净利率-6.8%，2项RedFlag，🔴基本面恶化型，份额压至0.3，仅作观察性试探。止损$10.34。</li>\n<li><strong>⚠️ QUBT（量子计算）：</strong>技术面Buy信号被基本面否决 — 距52W高-69.7%但净亏损/净利率-211.7%/仅6家覆盖，3项RedFlag，🔴基本面恶化型，份额压至0.3。止损$7.82。</li>\n<li><strong>GOOG（谷歌）：</strong>空头排列下已连续机械定投9次＞4，触发熔断，暂停定投观望，等待趋势改善。</li>\n</ul>\n<h3>📝 逐股详解</h3>\n<h4>1️⃣ MU · 美光科技 — 评分 4.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$977.41（-4.90%）</span>，盘前 $984.50（+0.73%），距52W高 -22.10%，量比 1.00</li>\n<li><strong>技术：</strong>RSI6=50.9，KDJ_K=69.81，趋势=多头，MA5=$999.89/MA10=$982.24/MA20=$965.16，σ=3.23%</li>\n<li><strong>新闻：</strong>爆了！存储巨头重奖中国台湾地区员工，避免罢工危机！；美光于台湾推激励方案 但工会诉求尚未解决</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.12, exdiv: USD 0.12</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$910.43</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>2️⃣ AMD · 超威半导体 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$503.60（-3.36%）</span>，盘前 $508.50（+0.97%），距52W高 -13.87%，量比 0.83</li>\n<li><strong>技术：</strong>RSI6=62.2，KDJ_K=71.493，趋势=震荡，MA5=$484.37/MA10=$476.69/MA20=$479.78，σ=4.17%</li>\n<li><strong>新闻：</strong>集邦咨询：第二季度全球前十大IC设计厂营收年增73%，AI需求持续强劲；财通海外</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$456.75</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>3️⃣ INTC · 英特尔 — 评分 2.5</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$100.32（-5.57%）</span>，盘前 $101.14（+0.82%），距52W高 -29.53%，量比 1.02</li>\n<li><strong>技术：</strong>RSI6=60.4，KDJ_K=78.777，趋势=多头，MA5=$101.43/MA10=$96.32/MA20=$94.14，σ=3.58%</li>\n<li><strong>新闻：</strong>英特尔封装月产10万片，谷歌TPU订单三家分食；英特尔年度旗舰大会，将在苏州召开！</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#16a34a\">定投Sell▼（-1.0份）</span> — 曾连续冲高，自高点回调5.6%（≥铁律一 5%）；止损$87.26</li>\n<li><strong>建议：</strong>冲高后回调触发铁律一，减仓-1.0份锁利。</li>\n</ul>\n<h4>4️⃣ GOOG · 谷歌 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#dc2626\">$330.39（+0.61%）</span>，盘前 $332.00（+0.49%），距52W高 -18.22%，量比 1.14</li>\n<li><strong>技术：</strong>RSI6=36.6，KDJ_K=27.274，趋势=空头，MA5=$333.50/MA10=$337.40/MA20=$337.75，σ=1.09%</li>\n<li><strong>新闻：</strong>欧陆通：已与Google达成算力设备GPU电源项目合作，正推进测试及小批量生产；【建投算研】AI泡沫：硬化，消化还是破灭？</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.21, exdiv: USD 0.21</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#6b7280\">观望—（+0.0份）</span> — 无技术信号，按周期机械定投，保留参与度；空头排列下已连续机械定投9次（>4），暂停定投待趋势转好；止损$328.38</li>\n<li><strong>建议：</strong>观望不动作，等待明确方向信号。</li>\n</ul>\n<h4>5️⃣ NVDA · 英伟达 — 评分 5.5</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$218.36（-2.26%）</span>，盘前 $219.75（+0.64%），距52W高 -7.47%，量比 0.84</li>\n<li><strong>技术：</strong>RSI6=42.2，KDJ_K=46.713，趋势=震荡，MA5=$223.15/MA10=$223.59/MA20=$220.21，σ=2.80%</li>\n<li><strong>新闻：</strong>黄仁勋高盛会议重申：英伟达明年营收有望再增 70%；黄仁勋预言成真！英伟达投 1 块回来 100 块，这叫循环？多来点</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.01, exdiv: USD 0.01</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$208.25</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>6️⃣ NBIS · Nebius — 评分 4.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$228.11（-5.09%）</span>，盘前 $232.65（+1.99%），距52W高 -23.93%，量比 0.88</li>\n<li><strong>技术：</strong>RSI6=54.1，KDJ_K=62.462，趋势=震荡，MA5=$229.93/MA10=$227.21/MA20=$231.00，σ=6.75%</li>\n<li><strong>新闻：</strong>Truist首予Nebius“买入”评级 AI云收入潜力被低估</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$209.18</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>7️⃣ CRWV · CoreWeave — 评分 4.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$89.12（-6.13%）</span>，盘前 $90.75（+1.83%），距52W高 -41.83%，量比 1.09</li>\n<li><strong>技术：</strong>RSI6=48.8，KDJ_K=51.568，趋势=震荡，MA5=$92.47/MA10=$88.40/MA20=$89.25，σ=4.76%</li>\n<li><strong>新闻：</strong>财联社9月10日电，CoreWeave将把专有数据转化为生产级AI。；金山云越来越像CoreWeave，可最难的一关才刚开始</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$80.93</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>8️⃣ CRCL · Circle — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$90.32（-2.87%）</span>，盘前 $90.55（+0.25%），距52W高 -43.36%，量比 0.60</li>\n<li><strong>技术：</strong>RSI6=45.8，KDJ_K=50.483，趋势=多头，MA5=$94.37/MA10=$88.81/MA20=$87.51，σ=5.50%</li>\n<li><strong>新闻：</strong>Form 144</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$71.73</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>9️⃣ MSTR · MicroStrategy — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$128.56（-3.12%）</span>，盘前 $128.70（+0.11%），距52W高 -64.80%，量比 0.58</li>\n<li><strong>技术：</strong>RSI6=47.8，KDJ_K=53.915，趋势=多头，MA5=$133.83/MA10=$133.78/MA20=$125.06，σ=6.70%</li>\n<li><strong>新闻：</strong>巨丰微策略：放量下跌！A股或进入震荡低吸的配置周期；巨丰微策略：沪指连涨三天，A股在悄悄变盘？</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$92.52</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>🔟 TSLA · 特斯拉 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$363.56（-1.16%）</span>，盘前 $362.92（-0.18%），距52W高 -27.12%，量比 0.60</li>\n<li><strong>技术：</strong>RSI6=53.5，KDJ_K=54.213，趋势=多头，MA5=$363.43/MA10=$355.02/MA20=$353.59，σ=1.98%</li>\n<li><strong>新闻：</strong>特斯拉Cybercab首次在日本展出，暂无在日销售计划；2026年8月新能源车型销量盘点 星愿居首 零跑A10第二</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$336.87</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>1️⃣1️⃣ XPEV · 小鹏汽车 — 评分 7.5</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$10.34（-2.18%）</span>，盘前 $10.54（+1.93%），距52W高 -63.39%，量比 0.82</li>\n<li><strong>技术：</strong>RSI6=17.6，KDJ_K=9.622，趋势=空头，MA5=$10.63/MA10=$10.88/MA20=$11.31，σ=2.68%</li>\n<li><strong>新闻：</strong>小鹏发布 XCoT 技术报告，探索物理 AI 的推理新范式；小鹏汽车登顶埃及高端EV市场 上半年注册量排名第一</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#dc2626\">定投Buy▲</span> → <span style=\"color:#dc2626\">定投Buy▲（🔴基本面恶化）</span> — RSI6=17.6<20超卖 / 距52W高-63.4%且RSI6=17.6<45；未升级Strong Buy：反弹未确认、未站上MA10；空头排列 → 份额砍半，逆势试探；校验：净亏损-196.4M(RedFlag①), 净利率-6.8%<2%(RedFlag③), 2项RedFlag；止损$10.34</li>\n<li><strong>建议：</strong>基本面恶化，份额压至0.3。仅作观察性极小仓位试探，跌破$10.34立即止损。严禁加倍抄底。</li>\n</ul>\n<h4>1️⃣2️⃣ MRVL · 迈威尔科技 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$226.96（-3.43%）</span>，盘前 $229.01（+0.90%），距52W高 -31.18%，量比 0.85</li>\n<li><strong>技术：</strong>RSI6=53.8，KDJ_K=50.55，趋势=震荡，MA5=$227.58/MA10=$226.39/MA20=$227.11，σ=6.42%</li>\n<li><strong>新闻：</strong>Marvell专家交流；Marvell董事长出席花旗2026 全球 TMT 大会演讲全文（深度解读）</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.06, exdiv: USD 0.06</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$208.83</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>1️⃣3️⃣ NOK · 诺基亚 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$10.62（-1.30%）</span>，盘前 $10.68（+0.55%），距52W高 -38.97%，量比 0.87</li>\n<li><strong>技术：</strong>RSI6=63.8，KDJ_K=60.809，趋势=震荡，MA5=$10.54/MA10=$10.24/MA20=$10.28，σ=2.42%</li>\n<li><strong>新闻：</strong>【老王看产业】nokia回来了......；Omdia分析师：AI算力互联驱动光网络市场创下25年来历史新高</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.03, exdiv: USD 0.03</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$9.77</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>1️⃣4️⃣ COHR · Coherent — 评分 7.5</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$293.17（-3.40%）</span>，盘前 $297.06（+1.33%），距52W高 -33.37%，量比 1.04</li>\n<li><strong>技术：</strong>RSI6=53.9，KDJ_K=59.071，趋势=震荡，MA5=$294.71/MA10=$287.04/MA20=$292.87，σ=5.94%</li>\n<li><strong>新闻：</strong>美股光通信板块盘初走高，Lumentum、Coherent涨超3%</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#b91c1c\">Strong Buy▲▲</span> → <span style=\"color:#b91c1c\">Strong Buy▲▲（🟢技术错杀）</span> — 距52W高-33.4%（<-20%）+ 近5日曾超卖 + 自20日低$264.41反弹10.9%（≥阈值8.9%）+ 收盘$293.17≥MA10$287.04结构修复；校验：净利润146.7M>0, 净利率8.7%>5%, 机构卖出0家, 0项RedFlag；止损$264.41</li>\n<li><strong>建议：</strong>右侧确认抄底，+2.0份加倍买入。跌破$264.41即视为判断失败，严格止损。</li>\n</ul>\n<h4>1️⃣5️⃣ QUBT · 量子计算 — 评分 6.5</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$7.82（-2.74%）</span>，盘前 $7.91（+1.15%），距52W高 -69.74%，量比 1.05</li>\n<li><strong>技术：</strong>RSI6=36.0，KDJ_K=18.823，趋势=空头，MA5=$7.98/MA10=$7.98/MA20=$8.24，σ=3.85%</li>\n<li><strong>新闻：</strong>暂无重要新闻</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#dc2626\">定投Buy▲</span> → <span style=\"color:#dc2626\">定投Buy▲（🔴基本面恶化）</span> — 距52W高-69.7%且RSI6=36.0<45；未升级Strong Buy：近5日未超卖、反弹未确认、未站上MA10；空头排列 → 份额砍半，逆势试探；校验：净亏损-11.8M(RedFlag①), 净利率-211.7%(RedFlag③), 仅6家覆盖(信息不足≈1RedFlag), 3项RedFlag；止损$7.82</li>\n<li><strong>建议：</strong>基本面恶化，份额压至0.3。仅作观察性极小仓位试探，跌破$7.82立即止损。严禁加倍抄底。</li>\n</ul>\n<h4>1️⃣6️⃣ BE · Bloom Energy — 评分 4.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$258.49（-4.01%）</span>，盘前 $264.64（+2.38%），距52W高 -26.41%，量比 0.71</li>\n<li><strong>技术：</strong>RSI6=65.2，KDJ_K=79.763，趋势=多头，MA5=$263.27/MA10=$244.20/MA20=$239.72，σ=6.10%</li>\n<li><strong>新闻：</strong>AI尽头是供电! Bloom期权热度碾压SpaceX，燃料电池吃满AI算力超级周期红利</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>近期无重大事件</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$202.48</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h4>1️⃣7️⃣ TSM · 台积电 — 评分 5.0</h4>\n<ul>\n<li><strong>行情：</strong>收盘 <span style=\"color:#16a34a\">$428.03（-1.68%）</span>，盘前 $428.23（+0.05%），距52W高 -10.64%，量比 0.89</li>\n<li><strong>技术：</strong>RSI6=54.8，KDJ_K=66.218，趋势=多头，MA5=$431.87/MA10=$425.01/MA20=$421.58，σ=1.69%</li>\n<li><strong>新闻：</strong>台积电8月营收同比增长53.3%，AI需求推升单月纪录；【晶圆制造简报】台积电营收创新高，晶圆厂的增长靠什么兑现？</li>\n<li><strong>评级：</strong>机构覆盖中</li>\n<li><strong>事件：</strong>exdiv: USD 0.65, exdiv: USD 0.63</li>\n<li><strong>🎯 定投信号：</strong><span style=\"color:#f59e0b\">定投▲（+0.5份）</span> — 无技术信号，按周期机械定投，保留参与度；止损$410.12</li>\n<li><strong>建议：</strong>按周期机械定投+0.5份，保留参与度。</li>\n</ul>\n<h3>🎯 定投买卖点建议（全量 17 只）</h3>\n<table class=\"stock-table\"><thead><tr>\n<th>代码</th><th>名称</th><th>收盘价</th><th>RSI6</th><th>距52W高</th><th>趋势</th><th>定投信号</th><th>份额</th><th>基本面校验</th><th>止损锚点</th><th>依据</th>\n</tr></thead><tbody>\n<tr><td><strong>MU</strong></td><td>美光科技</td>\n<td>$977.41</td>\n<td>50.9</td>\n<td>-22.10%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$910.43</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>AMD</strong></td><td>超威半导体</td>\n<td>$503.60</td>\n<td>62.2</td>\n<td>-13.87%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$456.75</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>INTC</strong></td><td>英特尔</td>\n<td>$100.32</td>\n<td>60.4</td>\n<td>-29.53%</td>\n<td>多头</td>\n<td style=\"color:#16a34a\">定投Sell▼</td>\n<td>-1.0</td>\n<td>—</td>\n<td>$87.26</td>\n<td>曾连续冲高，自高点回调5.6%（≥铁律一 5%）</td></tr>\n<tr><td><strong>GOOG</strong></td><td>谷歌</td>\n<td>$330.39</td>\n<td>36.6</td>\n<td>-18.22%</td>\n<td>空头</td>\n<td style=\"color:#6b7280\">观望—</td>\n<td>0</td>\n<td>—</td>\n<td>$328.38</td>\n<td>无技术信号，按周期机械定投，保留参与度；空头排列下已连续机械定投9次（>4），暂停定投待趋势转好</td></tr>\n<tr><td><strong>NVDA</strong></td><td>英伟达</td>\n<td>$218.36</td>\n<td>42.2</td>\n<td>-7.47%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$208.25</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>NBIS</strong></td><td>Nebius</td>\n<td>$228.11</td>\n<td>54.1</td>\n<td>-23.93%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$209.18</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>CRWV</strong></td><td>CoreWeave</td>\n<td>$89.12</td>\n<td>48.8</td>\n<td>-41.83%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$80.93</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>CRCL</strong></td><td>Circle</td>\n<td>$90.32</td>\n<td>45.8</td>\n<td>-43.36%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$71.73</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>MSTR</strong></td><td>MicroStrategy</td>\n<td>$128.56</td>\n<td>47.8</td>\n<td>-64.80%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$92.52</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>TSLA</strong></td><td>特斯拉</td>\n<td>$363.56</td>\n<td>53.5</td>\n<td>-27.12%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$336.87</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>XPEV</strong></td><td>小鹏汽车</td>\n<td>$10.34</td>\n<td>17.6</td>\n<td>-63.39%</td>\n<td>空头</td>\n<td style=\"color:#dc2626\">定投Buy▲</td>\n<td>+0.3</td>\n<td>🔴基本面恶化</td>\n<td>$10.34</td>\n<td>RSI6=17.6<20超卖 / 距52W高-63.4%且RSI6=17.6<45；未升级Strong Buy：反弹未确...</td></tr>\n<tr><td><strong>MRVL</strong></td><td>迈威尔科技</td>\n<td>$226.96</td>\n<td>53.8</td>\n<td>-31.18%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$208.83</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>NOK</strong></td><td>诺基亚</td>\n<td>$10.62</td>\n<td>63.8</td>\n<td>-38.97%</td>\n<td>震荡</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$9.77</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>COHR</strong></td><td>Coherent</td>\n<td>$293.17</td>\n<td>53.9</td>\n<td>-33.37%</td>\n<td>震荡</td>\n<td style=\"color:#b91c1c\">Strong Buy▲▲</td>\n<td>+2.0</td>\n<td>🟢技术错杀</td>\n<td>$264.41</td>\n<td>距52W高-33.4%（<-20%）+ 近5日曾超卖 + 自20日低$264.41反弹10.9%（≥阈值8.9%）+ 收...</td></tr>\n<tr><td><strong>QUBT</strong></td><td>量子计算</td>\n<td>$7.82</td>\n<td>36.0</td>\n<td>-69.74%</td>\n<td>空头</td>\n<td style=\"color:#dc2626\">定投Buy▲</td>\n<td>+0.3</td>\n<td>🔴基本面恶化</td>\n<td>$7.82</td>\n<td>距52W高-69.7%且RSI6=36.0<45；未升级Strong Buy：近5日未超卖、反弹未确认、未站上MA10；...</td></tr>\n<tr><td><strong>BE</strong></td><td>Bloom Energy</td>\n<td>$258.49</td>\n<td>65.2</td>\n<td>-26.41%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$202.48</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n<tr><td><strong>TSM</strong></td><td>台积电</td>\n<td>$428.03</td>\n<td>54.8</td>\n<td>-10.64%</td>\n<td>多头</td>\n<td style=\"color:#f59e0b\">定投▲</td>\n<td>+0.5</td>\n<td>—</td>\n<td>$410.12</td>\n<td>无技术信号，按周期机械定投，保留参与度</td></tr>\n</tbody></table>\n<h3>🏷️ 板块关联分析</h3>\n<ul>\n<li><strong>科技巨头：</strong><span style=\"color:#dc2626\">+0.61%</span>（GOOG +0.61%）</li>\n<li><strong>通信设备：</strong><span style=\"color:#16a34a\">-1.30%</span>（NOK -1.30%）</li>\n<li><strong>新能源车：</strong><span style=\"color:#16a34a\">-1.67%</span>（TSLA -1.16%, XPEV -2.18%）</li>\n<li><strong>量子计算：</strong><span style=\"color:#16a34a\">-2.74%</span>（QUBT -2.74%）</li>\n<li><strong>Crypto：</strong><span style=\"color:#16a34a\">-3.00%</span>（CRCL -2.87%, MSTR -3.12%）</li>\n<li><strong>光通信：</strong><span style=\"color:#16a34a\">-3.40%</span>（COHR -3.40%）</li>\n<li><strong>半导体：</strong><span style=\"color:#16a34a\">-3.90%</span>（MU -4.90%, AMD -3.36%, INTC -5.57%, NVDA -2.26%, MRVL -3.43%）</li>\n<li><strong>AI基建：</strong><span style=\"color:#16a34a\">-5.61%</span>（NBIS -5.09%, CRWV -6.13%）</li>\n</ul>\n<h3>🔥 市场近期热点（全市场2日涨幅Top）</h3>\n<p>今日市场普跌，大盘股中无个股2日涨幅超过5%。半导体板块回调明显（MU -4.9%, INTC -5.6%），AI基建股同步承压（CRWV -6.1%, NBIS -5.1%）。</p>\n<h3>💡 一句话结论</h3>\n<p>市场周五普跌，半导体与AI基建板块领跌；COHR 深度回调后右侧确认反弹触发 Strong Buy（🟢技术错杀型，净利率8.7%），为唯一可执行的加倍买入标的；INTC 冲高回落触发铁律一止盈；XPEV/QUBT 技术超卖但基本面恶化（均亏损），份额压至0.3严控风险。GOOG 空头排列下连续定投熔断，暂停观望。整体持防守姿态，保留现金等待下周方向明朗。</p>\n</div>",
+  "web3_body_html": "<div class=\"web3-report\">\n<h2>📅 Web3 日报 | 2026-09-11</h2>\n\n<hr>\n\n<h3>📊 市场概览</h3>\n\n<strong>大盘行情</strong>:\n<ul>\n<li><strong>BTC</strong>: $77,335 (-0.97%)</li>\n<li><strong>ETH</strong>: $2,476 (+0.22%)</li>\n</ul>\n<strong>市场情绪</strong>:\n<ul>\n<li><strong>恐惧&贪婪指数</strong>: 68 / 100 (贪婪)</li>\n</ul>\n💡 <strong>市场解读</strong>: 市场情绪偏贪婪 (指数 68)，BTC 小幅波动 (-1.0%)，市场分歧加大，等待量能配合再做方向。\n\n<hr>\n\n<h3>📰 宏观市场分析</h3>\n\n<blockquote>数据来源：166条新闻，时间窗口：过去24小时</blockquote>\n\n<h4>🔥 主线1：宏观紧缩压制风险资产</h4>\n<strong>影响等级</strong>: High | <strong>涉及领域</strong>: BTC / ETH / 宏观\n\n<strong>核心事件</strong>:\n美国PPI超预期、油价突破100美元，美债收益率创多年新高，市场重新计价加息预期，BTC跌破8万美元，ETH与山寨币同步承压。\n\n<strong>影响分析</strong>:\n<ul>\n<li><strong>短期</strong>: 风险资产波动继续放大</li>\n<li><strong>中期</strong>: 高利率或压制山寨估值</li>\n</ul>\n<strong>相关来源</strong>: Cointelegraph、The Defiant、TradingView\n\n<hr>\n\n<h4>🔥 主线2：加密监管推进提速</h4>\n<strong>影响等级</strong>: High | <strong>涉及领域</strong>: 政策 / 交易所 / 稳定币\n\n<strong>核心事件</strong>:\n美国参议院公布新版CLARITY Act草案，财政部长Bessent公开催促通过；英国、欧盟同步推进数字资产监管与风险框架。\n\n<strong>影响分析</strong>:\n<ul>\n<li><strong>短期</strong>: 合规交易平台受益</li>\n<li><strong>中期</strong>: 稳定币与RWA加速落地</li>\n</ul>\n<strong>相关来源</strong>: The Block、Cointelegraph、CryptoRank\n\n<hr>\n\n<h4>🔥 主线3：链上金融与稳定币扩张</h4>\n<strong>影响等级</strong>: Medium | <strong>涉及领域</strong>: DeFi / 支付 / RWA\n\n<strong>核心事件</strong>:\nCoinbase联合Moov接入社区银行稳定币支付，MoneyGram推出稳定币Visa卡，Uniswap上线稳定币动态费率池，传统金融持续链上化。\n\n<strong>影响分析</strong>:\n<ul>\n<li><strong>短期</strong>: 稳定币交易需求提升</li>\n<li><strong>中期</strong>: DeFi支付融合加速</li>\n</ul>\n<strong>相关来源</strong>: The Block、Cointelegraph、The Defiant\n\n<hr>\n\n<h3>💰 资金流向追踪</h3>\n\n<h4>主要流入</h4>\n<table class=\"web3-table\"><thead><tr><th>方向</th><th>金额</th><th>解读</th></tr></thead><tbody><tr><td>Nasdaq → Kraken母公司</td><td>1亿美元</td><td>机构押注代币化交易</td></tr><tr><td>Tether/Fasanara → 私募信贷基金</td><td>4亿美元</td><td>稳定币扩张信用市场</td></tr><tr><td>SOL现货ETF → Solana生态</td><td>1173万美元</td><td>资金回流SOL生态</td></tr></tbody></table>\n\n<h4>主要流出</h4>\n<table class=\"web3-table\"><thead><tr><th>方向</th><th>金额</th><th>解读</th></tr></thead><tbody><tr><td>BTC ETF → 市场流出</td><td>1.67亿美元</td><td>获利资金撤离</td></tr><tr><td>全网多头爆仓</td><td>超1亿美元</td><td>杠杆情绪降温</td></tr><tr><td>中国反洗钱行动 → 涉案资产</td><td>1800万美元</td><td>监管打击链上洗钱</td></tr></tbody></table>\n\n<hr>\n\n<h3>📡 全球 KOL 舆情</h3>\n\n<blockquote>数据来源：279条推文（中文123条 | 英文156条），64位KOL</blockquote>\n\n<h4>综合情绪指数: 7.1 / 10（偏乐观）</h4>\n\n<table class=\"web3-table\"><thead><tr><th>维度</th><th>中文圈</th><th>英文圈</th><th>差异解读</th></tr></thead><tbody><tr><td>市场情绪</td><td>高波动乐观 7.5/10</td><td>谨慎乐观 6.8/10</td><td>中文更激进追涨</td></tr><tr><td>主要担忧</td><td>CPI、加息、回撤</td><td>债券收益率、监管</td><td>英文更关注宏观</td></tr><tr><td>关注焦点</td><td>Meme、AI交易、BSC</td><td>BTC、RWA、监管</td><td>中文偏短线题材</td></tr><tr><td>操作风格</td><td>高频博弈</td><td>配置+叙事投资</td><td>存在周期信息差</td></tr></tbody></table>\n\n<h4>最大分歧：Meme 是否仍是本轮核心主线</h4>\n\n<strong>中文圈主流观点</strong>: 牛来、PONS 等中文 Meme 被视为“新资产类别”，Neso、麦总等继续高强度看多。\n\n<strong>英文圈主流观点</strong>: Murad、EllioTrades 等认为旧 VC 币、RWA 与 BTC 主线更具持续性，Meme 进入淘汰赛。\n\n<strong>差异分析</strong>:\n<ul>\n<li>信息差：英文圈宏观更全面</li>\n<li>立场差异：中文偏短线情绪</li>\n<li>操作启示：警惕高位接力风险</li>\n</ul>\n<h4>高度共识</h4>\n1. <strong>RWA持续爆发</strong> - 美股代币化与链上合约最热\n2. <strong>AI叙事继续强化</strong> - AI交易、Agent、推理需求升温\n3. <strong>监管环境改善</strong> - CLARITY法案被视为关键利好\n\n<hr>\n\n<h3>⚠️ 风险警示</h3>\n\n<h4>🚨 宏观流动性风险（风险等级：★★★★★）</h4>\n油价飙升叠加美国通胀超预期，市场重新押注加息，全球风险资产与加密市场同步承压。\n<strong>应对建议</strong>: 降低高杠杆仓位\n\n<h4>🚨 安全与钓鱼风险（风险等级：★★★★☆）</h4>\nTrezor邮件系统漏洞导致34.7万用户暴露，硬件钱包用户面临新一轮钓鱼攻击风险。\n<strong>应对建议</strong>: 停止点击邮件链接\n\n<h4>⚠️ Meme高波动风险（风险等级：★★★☆☆）</h4>\nMeme与币股概念持续剧烈波动，多项目单日跌超20%，巨鲸空头与高杠杆博弈加剧。\n<strong>应对建议</strong>: 控制仓位与止损\n\n<hr>\n\n<h3>💡 机会信号</h3>\n\n<h4>稳定币支付扩张（可信度：★★★★☆）</h4>\nCoinbase、MoneyGram与银行体系推进稳定币支付，未来1-3个月跨境支付链或受关注。\n\n<h4>ETH流动性修复（可信度：★★★★☆）</h4>\nETH链上流动性持续改善，若美联储预期缓和，四季度或重新吸引机构配置。\n\n<h4>RWA与代币化交易（可信度：★★★☆☆）</h4>\n股票衍生品、代币化证券和预测市场快速扩张，交易所与合规基础设施存在增量机会。\n\n<hr>\n\n<h3>💬 一句话总结</h3>\n\n<strong>宏观高利率与油价冲击压制加密风险偏好，但监管推进与稳定币、RWA扩张仍在支撑中长期资金入场预期。</strong>\n\n<hr>\n\n<strong>数据统计</strong>\n<ul>\n<li>推文总数：279条（中文123条 | 英文156条）</li>\n<li>KOL数量：64位</li>\n<li>新闻来源：166条</li>\n<li>数据时间：过去24小时</li>\n</ul>\n<hr>\n\n<strong>免责声明</strong>: 本日报仅供参考，不构成投资建议。投资有风险，入市需谨慎。\n\n</div>",
+  "tickers": [
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "close": 977.41,
+      "pct_1d": -4.9,
+      "extended_price": 984.5,
+      "extended_pct": 0.73,
+      "rsi6": 50.948,
+      "volume_ratio": 1.0,
+      "dist_52w_high": -22.1,
+      "abnormal_signals": [
+        "日涨跌>4%(-4.90%)"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 503.6,
+      "pct_1d": -3.36,
+      "extended_price": 508.5,
+      "extended_pct": 0.97,
+      "rsi6": 62.18,
+      "volume_ratio": 0.83,
+      "dist_52w_high": -13.87,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 100.32,
+      "pct_1d": -5.57,
+      "extended_price": 101.14,
+      "extended_pct": 0.82,
+      "rsi6": 60.42,
+      "volume_ratio": 1.02,
+      "dist_52w_high": -29.53,
+      "abnormal_signals": [
+        "日涨跌>4%(-5.57%)"
+      ]
+    },
+    {
+      "symbol": "GOOG",
+      "name": "谷歌",
+      "close": 330.39,
+      "pct_1d": 0.61,
+      "extended_price": 332.0,
+      "extended_pct": 0.49,
+      "rsi6": 36.557,
+      "volume_ratio": 1.14,
+      "dist_52w_high": -18.22,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "NVDA",
+      "name": "英伟达",
+      "close": 218.36,
+      "pct_1d": -2.26,
+      "extended_price": 219.75,
+      "extended_pct": 0.64,
+      "rsi6": 42.207,
+      "volume_ratio": 0.84,
+      "dist_52w_high": -7.47,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius",
+      "close": 228.11,
+      "pct_1d": -5.09,
+      "extended_price": 232.65,
+      "extended_pct": 1.99,
+      "rsi6": 54.146,
+      "volume_ratio": 0.88,
+      "dist_52w_high": -23.93,
+      "abnormal_signals": [
+        "日涨跌>4%(-5.09%)"
+      ]
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "close": 89.12,
+      "pct_1d": -6.13,
+      "extended_price": 90.75,
+      "extended_pct": 1.83,
+      "rsi6": 48.82,
+      "volume_ratio": 1.09,
+      "dist_52w_high": -41.83,
+      "abnormal_signals": [
+        "日涨跌>4%(-6.13%)"
+      ]
+    },
+    {
+      "symbol": "CRCL",
+      "name": "Circle",
+      "close": 90.32,
+      "pct_1d": -2.87,
+      "extended_price": 90.55,
+      "extended_pct": 0.25,
+      "rsi6": 45.766,
+      "volume_ratio": 0.6,
+      "dist_52w_high": -43.36,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "MSTR",
+      "name": "MicroStrategy",
+      "close": 128.56,
+      "pct_1d": -3.12,
+      "extended_price": 128.7,
+      "extended_pct": 0.11,
+      "rsi6": 47.847,
+      "volume_ratio": 0.58,
+      "dist_52w_high": -64.8,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "TSLA",
+      "name": "特斯拉",
+      "close": 363.56,
+      "pct_1d": -1.16,
+      "extended_price": 362.92,
+      "extended_pct": -0.18,
+      "rsi6": 53.509,
+      "volume_ratio": 0.6,
+      "dist_52w_high": -27.12,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "XPEV",
+      "name": "小鹏汽车",
+      "close": 10.34,
+      "pct_1d": -2.18,
+      "extended_price": 10.54,
+      "extended_pct": 1.93,
+      "rsi6": 17.611,
+      "volume_ratio": 0.82,
+      "dist_52w_high": -63.39,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 226.96,
+      "pct_1d": -3.43,
+      "extended_price": 229.01,
+      "extended_pct": 0.9,
+      "rsi6": 53.818,
+      "volume_ratio": 0.85,
+      "dist_52w_high": -31.18,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "NOK",
+      "name": "诺基亚",
+      "close": 10.62,
+      "pct_1d": -1.3,
+      "extended_price": 10.68,
+      "extended_pct": 0.55,
+      "rsi6": 63.793,
+      "volume_ratio": 0.87,
+      "dist_52w_high": -38.97,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "close": 293.17,
+      "pct_1d": -3.4,
+      "extended_price": 297.06,
+      "extended_pct": 1.33,
+      "rsi6": 53.874,
+      "volume_ratio": 1.04,
+      "dist_52w_high": -33.37,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "QUBT",
+      "name": "量子计算",
+      "close": 7.82,
+      "pct_1d": -2.74,
+      "extended_price": 7.91,
+      "extended_pct": 1.15,
+      "rsi6": 35.998,
+      "volume_ratio": 1.05,
+      "dist_52w_high": -69.74,
+      "abnormal_signals": []
+    },
+    {
+      "symbol": "BE",
+      "name": "Bloom Energy",
+      "close": 258.49,
+      "pct_1d": -4.01,
+      "extended_price": 264.64,
+      "extended_pct": 2.38,
+      "rsi6": 65.161,
+      "volume_ratio": 0.71,
+      "dist_52w_high": -26.41,
+      "abnormal_signals": [
+        "日涨跌>4%(-4.01%)"
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "name": "台积电",
+      "close": 428.03,
+      "pct_1d": -1.68,
+      "extended_price": 428.23,
+      "extended_pct": 0.05,
+      "rsi6": 54.843,
+      "volume_ratio": 0.89,
+      "dist_52w_high": -10.64,
+      "abnormal_signals": []
+    }
+  ],
+  "summary": "市场周五普跌，半导体与AI基建领跌；COHR触发Strong Buy（技术错杀型）；INTC冲高回落触发止盈；XPEV/QUBT买入信号被基本面否决"
+}
