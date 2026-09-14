@@ -1,10 +1,25 @@
 {
-  "updated_at": "2026-09-11 19:16:21",
+  "updated_at": "2026-09-14 19:25:59",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "ON",
+      "name": "安森美半导体",
+      "close": 76.14,
+      "pct_2d": 8.51,
+      "date_range": "2026-09-10 ~ now"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "超微电脑",
+      "close": 40.1,
+      "pct_2d": 7.28,
+      "date_range": "2026-09-10 ~ now"
+    }
+  ]
 }
