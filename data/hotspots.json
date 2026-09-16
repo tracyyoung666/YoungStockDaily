@@ -1,10 +1,70 @@
 {
-  "updated_at": "2026-09-15 19:10:41",
+  "updated_at": "2026-09-16 19:17:46",
   "period": "2 trading days",
+  "base_date": "2026-09-14",
   "filter": {
-    "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 5.0,
-    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
+    "note": "market flat, no stock >=5%; showing actual Top ranking"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "TMO",
+      "name": "赛默飞世尔",
+      "close": 641.39,
+      "pct_2d": 4.61
+    },
+    {
+      "symbol": "QCOM",
+      "name": "高通",
+      "close": 187.8,
+      "pct_2d": 4.25
+    },
+    {
+      "symbol": "EOG",
+      "name": "EOG能源",
+      "close": 153.74,
+      "pct_2d": 3.5
+    },
+    {
+      "symbol": "COP",
+      "name": "康菲石油",
+      "close": 141.22,
+      "pct_2d": 3.33
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 242.49,
+      "pct_2d": 3.02
+    },
+    {
+      "symbol": "CVX",
+      "name": "雪佛龙",
+      "close": 217.77,
+      "pct_2d": 2.64
+    },
+    {
+      "symbol": "XOM",
+      "name": "埃克森美孚",
+      "close": 169.32,
+      "pct_2d": 2.57
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 504.2,
+      "pct_2d": 2.19
+    },
+    {
+      "symbol": "ON",
+      "name": "安森美半导体",
+      "close": 73.2,
+      "pct_2d": 2.16
+    },
+    {
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "close": 54.2,
+      "pct_2d": 1.65
+    }
+  ]
 }

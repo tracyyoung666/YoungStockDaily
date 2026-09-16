@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-15T19:18:07",
+  "updated_at": "2026-09-16T19:26:05",
   "dailies": [
+    {
+      "slug": "daily_20260916_1903",
+      "date": "2026-09-16",
+      "generated_at": "2026-09-16 19:03",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-16 19:03",
+      "summary": "17只自选股零Strong Buy零Sell，8只定投Buy▲+9只定投▲，校验后净份额+9.7份；Crypto板块因CLARITY法案折戟崩塌-8.38%（CRCL -11.41%），通信设备/光通信/半导体逆势走强；Web3：BTC $75,703(-1.54%)，恐贪62贪婪。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260916_1903.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260915_1903",
       "date": "2026-09-15",
