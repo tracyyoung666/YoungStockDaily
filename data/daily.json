@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-21T19:31:11",
+  "updated_at": "2026-09-22T19:30:27",
   "dailies": [
+    {
+      "slug": "daily_20260922_1930",
+      "date": "2026-09-22",
+      "generated_at": "2026-09-22 19:30",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-22 19:30",
+      "summary": "半导体主线点火（板块+6.51%，INTC+12.14%/AMD+9.95%创新高），AMD/INTC/MSTR 进超买区未回调需预设止盈；唯一 Strong Buy（CRWV）因3项RedFlag降至0.3份，XPEV同降级；BTC $86,035 但恐贪78极度贪婪。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260922_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260921_1920",
       "date": "2026-09-21",
