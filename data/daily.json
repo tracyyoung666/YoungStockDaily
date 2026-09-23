@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-22T19:30:27",
+  "updated_at": "2026-09-23T19:38:13",
   "dailies": [
+    {
+      "slug": "daily_20260923_1920",
+      "date": "2026-09-23",
+      "generated_at": "2026-09-23 19:20",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-23 19:20",
+      "summary": "全市场2日涨幅≥5%的大票仅2只，宽度极窄；MU +5.00% 领涨、AMD/INTC RSI6 双破85进入高位预警。信号引擎给出 NBIS/MSTR 两只 Strong Buy + XPEV 一只 Buy，但三者二次基本面校验全部判为🔴基本面恶化型（单季净亏+净利率<2%），份额一律压至0.3份，今日无可加倍抄底机会；净下注由 +11.5 份收缩至 +7.9 份。Web3：BTC $85,840 横盘、总市值 -2.26%、主导率升至58.7%，恐贪自78降至71。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260923_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260922_1930",
       "date": "2026-09-22",
