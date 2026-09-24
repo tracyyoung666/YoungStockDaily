@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 19:21:00",
+  "updated_at": "2026-09-24 19:14:35",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,74 +8,11 @@
   },
   "hotspots": [
     {
-      "symbol": "ARM",
-      "name": "安谋",
-      "close": 322.9,
-      "pct_2d": 17.16,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "INTC",
-      "name": "英特尔",
-      "close": 121.78,
-      "pct_2d": 12.14,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "META",
-      "name": "Meta Platforms",
-      "close": 741.25,
-      "pct_2d": 11.43,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "AMD",
-      "name": "超威半导体",
-      "close": 615.52,
-      "pct_2d": 9.95,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "MSTR",
-      "name": "Strategy",
-      "close": 168.5,
-      "pct_2d": 9.47,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "QCOM",
-      "name": "高通",
-      "close": 194.23,
-      "pct_2d": 9.29,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "NET",
-      "name": "科赋锐",
-      "close": 351.67,
-      "pct_2d": 8.67,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 137.92,
-      "pct_2d": 7.33,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "RBLX",
-      "name": "罗布乐思",
-      "close": 51.25,
-      "pct_2d": 7.17,
-      "date_range": "2026-09-18 ~ now"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 245.05,
-      "pct_2d": 6.58,
-      "date_range": "2026-09-18 ~ now"
+      "symbol": "PANW",
+      "name": "派拓网络",
+      "close": 393.3,
+      "pct_2d": 5.0,
+      "date_range": "2026-09-22 ~ now"
     }
   ]
 }

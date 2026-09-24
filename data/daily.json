@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-23T19:38:13",
+  "updated_at": "2026-09-24T19:21:31",
   "dailies": [
+    {
+      "slug": "daily_20260924_1902",
+      "date": "2026-09-24",
+      "generated_at": "2026-09-24 19:02",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-24",
+      "summary": "全域系统性降温：8大板块7跌、盘前16/17下跌；唯一Strong Buy(CRWV)经基本面校验降至0.3份试探；AMD/INTC/QUBT高位预警；BTC $83,508 -2.59%，恐贪71。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260924_1902.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260923_1920",
       "date": "2026-09-23",
