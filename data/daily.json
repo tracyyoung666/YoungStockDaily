@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-24T19:21:31",
+  "updated_at": "2026-09-25T19:27:25",
   "dailies": [
+    {
+      "slug": "daily_20260925_1909",
+      "date": "2026-09-25",
+      "generated_at": "2026-09-25 19:09",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-25 19:09",
+      "summary": "盘前 16/17 翻红；AI基建 +5.58% 领涨（NBIS +7.44% 登顶全市场2日涨幅榜）；无 Strong Buy，经基本面校验仅 COHR 可执行 1.0 份（🟢技术错杀），XPEV 因2项RedFlag降至0.3份观望；AMD/INTC/QUBT RSI6>82 高位需预设移动止盈线；净份额 +8.8 份。BTC $85,101（+1.91%），恐贪 71（Greed）。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260925_1909.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260924_1902",
       "date": "2026-09-24",
