@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-28T19:33:55",
+  "updated_at": "2026-09-29T19:27:40",
   "dailies": [
+    {
+      "slug": "daily_20260929_1900",
+      "date": "2026-09-29",
+      "generated_at": "2026-09-29 19:00",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-29 19:00",
+      "summary": "科技板块全线情绪杀：17只自选股16跌、8大赛道全跌，资金撤向网络安全与防御消费；择时信号无一卖出、买入侧7只，但基本面校验把5只压至0.3~0.5份，仅COHR为🟢技术错杀型可按完整份额执行。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260929_1900.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260928_1920",
       "date": "2026-09-28",
