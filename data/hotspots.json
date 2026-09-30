@@ -1,117 +1,81 @@
 {
-  "updated_at": "2026-09-29 19:20:47",
+  "updated_at": "2026-09-30 19:12:00",
   "period": "2 trading days",
   "filter": {
-    "note": "no 5% floor; relative top gainers",
-    "universe": "119 US large-caps"
+    "min_market_cap_usd": 20000000000,
+    "min_pct_2d": 0.0,
+    "universe": "119 US large-cap stocks"
   },
   "hotspots": [
     {
-      "symbol": "PANW",
-      "name": "派拓网络",
-      "close": 392.09,
-      "pct_2d": 4.63,
-      "date_range": "2026-09-25 ~ now"
+      "symbol": "AMAT",
+      "name": "应用材料",
+      "close": 512.01,
+      "pct_2d": 5.19,
+      "date_range": "2026-09-28 ~ now"
     },
     {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 199.39,
-      "pct_2d": 3.28,
-      "date_range": "2026-09-25 ~ now"
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 263.27,
+      "pct_2d": 4.51,
+      "date_range": "2026-09-28 ~ now"
     },
     {
-      "symbol": "CRWD",
-      "name": "CrowdStrike",
-      "close": 259.25,
-      "pct_2d": 2.82,
-      "date_range": "2026-09-25 ~ now"
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "close": 4.07,
+      "pct_2d": 4.36,
+      "date_range": "2026-09-28 ~ now"
     },
     {
-      "symbol": "ISRG",
-      "name": "直觉外科公司",
-      "close": 414.79,
-      "pct_2d": 2.37,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "PG",
-      "name": "宝洁",
-      "close": 149.03,
-      "pct_2d": 1.91,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "NKE",
-      "name": "耐克",
-      "close": 36.39,
-      "pct_2d": 1.79,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "PM",
-      "name": "菲利普莫里斯",
-      "close": 193.76,
-      "pct_2d": 1.72,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "NVDA",
-      "name": "英伟达",
-      "close": 228.86,
-      "pct_2d": 1.68,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "BMY",
-      "name": "施贵宝",
-      "close": 63.88,
-      "pct_2d": 1.62,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "ASML",
-      "name": "阿斯麦",
-      "close": 1771.41,
-      "pct_2d": 1.58,
-      "date_range": "2026-09-25 ~ now"
-    }
-  ],
-  "laggards": [
-    {
-      "symbol": "INTC",
-      "name": "英特尔",
-      "close": 116.03,
-      "pct_2d": -5.67,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "BA",
-      "name": "波音",
-      "close": 184.39,
-      "pct_2d": -6.91,
-      "date_range": "2026-09-25 ~ now"
-    },
-    {
-      "symbol": "QCOM",
-      "name": "高通",
-      "close": 187.48,
-      "pct_2d": -7.17,
-      "date_range": "2026-09-25 ~ now"
+      "symbol": "KLAC",
+      "name": "科磊",
+      "close": 196.53,
+      "pct_2d": 3.89,
+      "date_range": "2026-09-28 ~ now"
     },
     {
       "symbol": "ARM",
       "name": "安谋",
-      "close": 283.33,
-      "pct_2d": -8.7,
-      "date_range": "2026-09-25 ~ now"
+      "close": 293.67,
+      "pct_2d": 3.65,
+      "date_range": "2026-09-28 ~ now"
     },
     {
-      "symbol": "RBLX",
-      "name": "罗布乐思",
-      "close": 41.86,
-      "pct_2d": -9.86,
-      "date_range": "2026-09-25 ~ now"
+      "symbol": "LRCX",
+      "name": "泛林集团",
+      "close": 323.86,
+      "pct_2d": 2.99,
+      "date_range": "2026-09-28 ~ now"
+    },
+    {
+      "symbol": "ENPH",
+      "name": "Enphase Energy, Inc.",
+      "close": 31.83,
+      "pct_2d": 2.98,
+      "date_range": "2026-09-28 ~ now"
+    },
+    {
+      "symbol": "FSLR",
+      "name": "第一太阳能",
+      "close": 176.93,
+      "pct_2d": 2.29,
+      "date_range": "2026-09-28 ~ now"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "博通",
+      "close": 355.1,
+      "pct_2d": 1.58,
+      "date_range": "2026-09-28 ~ now"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 262.74,
+      "pct_2d": 1.35,
+      "date_range": "2026-09-28 ~ now"
     }
   ]
 }

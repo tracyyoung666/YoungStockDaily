@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-29T19:27:40",
+  "updated_at": "2026-09-30T19:26:42",
   "dailies": [
+    {
+      "slug": "daily_20260930_1900",
+      "date": "2026-09-30",
+      "generated_at": "2026-09-30 19:00",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-09-30 19:00",
+      "summary": "市场无主线窄幅震荡（全市场无一只2日涨幅破5%），资金从AI芯片向上游设备与配套电力扩散，BE单日+10.8%、光通信+3.46%为代表；择时信号今日无一只卖出、买入侧4只，二次基本面校验把QUBT与XPEV各压至0.3份（净+8.6份），唯一可按完整份额执行的是TSLA；MU今晚财报±7.46%构成事件窗口。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20260930_1900.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260929_1900",
       "date": "2026-09-29",
