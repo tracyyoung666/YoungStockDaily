@@ -1,81 +1,10 @@
 {
-  "updated_at": "2026-09-30 19:12:00",
+  "updated_at": "2026-10-01 19:18:24",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 0.0,
-    "universe": "119 US large-cap stocks"
+    "min_pct_2d": 5.0,
+    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "AMAT",
-      "name": "应用材料",
-      "close": 512.01,
-      "pct_2d": 5.19,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "MRVL",
-      "name": "迈威尔科技",
-      "close": 263.27,
-      "pct_2d": 4.51,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "close": 4.07,
-      "pct_2d": 4.36,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "KLAC",
-      "name": "科磊",
-      "close": 196.53,
-      "pct_2d": 3.89,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "ARM",
-      "name": "安谋",
-      "close": 293.67,
-      "pct_2d": 3.65,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "LRCX",
-      "name": "泛林集团",
-      "close": 323.86,
-      "pct_2d": 2.99,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "ENPH",
-      "name": "Enphase Energy, Inc.",
-      "close": 31.83,
-      "pct_2d": 2.98,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "FSLR",
-      "name": "第一太阳能",
-      "close": 176.93,
-      "pct_2d": 2.29,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "AVGO",
-      "name": "博通",
-      "close": 355.1,
-      "pct_2d": 1.58,
-      "date_range": "2026-09-28 ~ now"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CrowdStrike",
-      "close": 262.74,
-      "pct_2d": 1.35,
-      "date_range": "2026-09-28 ~ now"
-    }
-  ]
+  "hotspots": []
 }

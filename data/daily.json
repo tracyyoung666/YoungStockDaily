@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-30T19:26:42",
+  "updated_at": "2026-10-01T19:30:44",
   "dailies": [
+    {
+      "slug": "daily_20261001_1930",
+      "date": "2026-10-01",
+      "generated_at": "2026-10-01 19:30",
+      "title": "2026-10-01 盘前 · 美光爆表财报股价零反应，COHR 成唯一技术错杀型买点",
+      "summary": "MU FY2026Q4 营收542.3亿同比+379%、毛利率87%、Q1指引615亿全面超预期，股价却收0.00%零反应；全市场大市值股2日涨幅无一超5%，赚钱效应缺失。17只自选股无Strong Buy无卖出信号，6只Buy经基本面校验后仅COHR为🟢技术错杀型，XPEV/NOK/QUBT因基本面恶化压至0.3份。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261001_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20260930_1900",
       "date": "2026-09-30",

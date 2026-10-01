@@ -314,5 +314,30 @@
       "local_file": "earnings-filings/NVDA-2027Q2-sec-filing.htm",
       "note": "10-Q与8-K新闻稿同日提交，报告期结束2026-07-26"
     }
+  },
+  {
+    "symbol": "MU",
+    "name": "Micron 美光科技",
+    "period": "2026Q4",
+    "period_label": "2026 Q4（FY2026 第四财季，14周）",
+    "fiscal_end": "2026-09-03",
+    "report_date": "2026-09-30",
+    "verdict": "beat",
+    "verdict_label": "全面超预期 Beat（营收542.3亿同比+379%/非GAAP EPS 33.42超共识5.8%/毛利率87%/Q1指引615亿远超预期，但次日股价0.00%零反应）",
+    "eps_actual": 33.42,
+    "eps_estimate": 31.6,
+    "revenue_actual": 54229,
+    "revenue_estimate": 51070,
+    "revenue_unit": "百万美元",
+    "url": "earnings/MU-2026Q4.html",
+    "generated_at": "2026-10-01 19:30",
+    "sec_filing": {
+      "form": "8-K",
+      "filing_date": "2026-09-30",
+      "sec_url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "sec_index_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000723125&type=10-K&dateb=&owner=include&count=10",
+      "local_file": "",
+      "note": "8-K业绩公告已于2026-09-30 16:02 ET提交；10-K年报处于EDGAR索引延迟窗口，自动抓取未命中"
+    }
   }
 ]
