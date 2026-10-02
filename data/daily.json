@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-01T19:30:44",
+  "updated_at": "2026-10-02T19:29:16",
   "dailies": [
+    {
+      "slug": "daily_20261002_1930",
+      "date": "2026-10-02",
+      "generated_at": "2026-10-02 19:30",
+      "title": "2026-10-02 盘前 · COHR 数据中心+58.6%完成右侧确认，唯一零RedFlag的Strong Buy",
+      "summary": "COHR 日涨10.90%+量比2.07，自20日低反弹19.8%并站上MA10，技术四条件全中；净利率10.60%、毛利率38.69%、23家机构零卖出、20日+20.7%，0项RedFlag判🟢技术错杀型，成为本轮唯一 Strong Buy▲▲（2.0份，止损$266.50）。XPEV创52周新低(RSI6=17.5)与QUBT(净利率-211.7%)各命中2项RedFlag压至0.3份。17只自选股无卖出信号，校验后净份额+10.1份。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261002_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261001_1930",
       "date": "2026-10-01",
