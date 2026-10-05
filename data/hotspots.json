@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02 19:17:15",
+  "updated_at": "2026-10-05 19:15:28",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,18 +8,18 @@
   },
   "hotspots": [
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 43.61,
-      "pct_2d": 6.55,
-      "date_range": "2026-09-30 ~ now"
+      "symbol": "ON",
+      "name": "安森美半导体",
+      "close": 84.89,
+      "pct_2d": 6.01,
+      "date_range": "2026-10-01 ~ now"
     },
     {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 189.91,
-      "pct_2d": 5.92,
-      "date_range": "2026-09-30 ~ now"
+      "symbol": "ARM",
+      "name": "安谋",
+      "close": 307.49,
+      "pct_2d": 5.18,
+      "date_range": "2026-10-01 ~ now"
     }
   ]
 }
