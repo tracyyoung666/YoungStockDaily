@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-06T19:33:28",
+  "updated_at": "2026-10-07T19:24:26",
   "dailies": [
+    {
+      "slug": "daily_20261007_1921",
+      "date": "2026-10-07",
+      "generated_at": "2026-10-07 19:21",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-10-07 19:21",
+      "summary": "盘前17只中14只回吐、BTC跌2.5%情绪偏弱；机械引擎1只Strong Buy+4只Buy，二次校验后仅CRCL质地过关，TSLA降为1.0份、INTC/XPEV/QUBT压至0.3份；NVDA/TSM/AMD高位不宜新买入。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261007_1921.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261006_1930",
       "date": "2026-10-06",

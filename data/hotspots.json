@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06 19:26:23",
+  "updated_at": "2026-10-07 19:18:31",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,11 +8,25 @@
   },
   "hotspots": [
     {
-      "symbol": "SHOP",
-      "name": "Shopify Inc.",
-      "close": 160.11,
-      "pct_2d": 5.76,
-      "date_range": "2026-10-02 ~ now"
+      "symbol": "NBIS",
+      "name": "Nebius集团",
+      "close": 249.87,
+      "pct_2d": 7.44,
+      "date_range": "2026-10-05 ~ now"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 287.01,
+      "pct_2d": 5.81,
+      "date_range": "2026-10-05 ~ now"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 212.25,
+      "pct_2d": 5.18,
+      "date_range": "2026-10-05 ~ now"
     }
   ]
 }
