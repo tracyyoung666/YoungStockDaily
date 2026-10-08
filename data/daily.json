@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-07T19:24:26",
+  "updated_at": "2026-10-08T19:29:12",
   "dailies": [
+    {
+      "slug": "daily_20261008_1905",
+      "date": "2026-10-08",
+      "generated_at": "2026-10-08 19:05",
+      "title": "自选股盘前分析 + Web3日报 | 2026-10-08",
+      "summary": "盘前普跌，NOK技术面Strong Buy被2项Red Flag否决降为观望；NBIS触发铁律一止盈减1.0份；AMD/MRVL/NVDA高位不宜新买入；BTC跌破$83,000拖累Crypto与AI基建；净份额+5.7份低强度偏多。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261008_1905.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261007_1921",
       "date": "2026-10-07",
