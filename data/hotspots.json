@@ -1,32 +1,82 @@
 {
-  "updated_at": "2026-10-07 19:18:31",
+  "updated_at": "2026-10-09 19:25:00",
   "period": "2 trading days",
+  "note": "全市场普跌，无标的2日涨幅≥5%，按实际涨幅Top排序",
   "filter": {
     "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 5.0,
-    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
+    "min_pct_2d": 0,
+    "universe": "119 US large-cap stocks"
   },
   "hotspots": [
     {
-      "symbol": "NBIS",
-      "name": "Nebius集团",
-      "close": 249.87,
-      "pct_2d": 7.44,
-      "date_range": "2026-10-05 ~ now"
+      "symbol": "PM",
+      "name": "菲利普莫里斯",
+      "close": 200.5,
+      "pct_2d": 4.05,
+      "date_range": "2026-10-07 ~ 2026-10-09"
     },
     {
-      "symbol": "MRVL",
-      "name": "迈威尔科技",
-      "close": 287.01,
-      "pct_2d": 5.81,
-      "date_range": "2026-10-05 ~ now"
+      "symbol": "LOW",
+      "name": "劳氏",
+      "close": 188.85,
+      "pct_2d": 4.03,
+      "date_range": "2026-10-07 ~ 2026-10-09"
     },
     {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 212.25,
-      "pct_2d": 5.18,
-      "date_range": "2026-10-05 ~ now"
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "close": 203.57,
+      "pct_2d": 3.97,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "PEP",
+      "name": "百事可乐",
+      "close": 128.34,
+      "pct_2d": 3.73,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 241.05,
+      "pct_2d": 3.56,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "HD",
+      "name": "家得宝",
+      "close": 295.47,
+      "pct_2d": 3.39,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "COP",
+      "name": "康菲石油",
+      "close": 134.19,
+      "pct_2d": 3.35,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 343.4,
+      "pct_2d": 3.17,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "CVX",
+      "name": "雪佛龙",
+      "close": 211.55,
+      "pct_2d": 3.12,
+      "date_range": "2026-10-07 ~ 2026-10-09"
+    },
+    {
+      "symbol": "EOG",
+      "name": "EOG能源",
+      "close": 148.51,
+      "pct_2d": 2.98,
+      "date_range": "2026-10-07 ~ 2026-10-09"
     }
   ]
 }

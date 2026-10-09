@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-08T19:29:12",
+  "updated_at": "2026-10-09T19:30:03",
   "dailies": [
+    {
+      "slug": "daily_20261009_1902",
+      "date": "2026-10-09",
+      "generated_at": "2026-10-09 19:02",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-10-09 19:02",
+      "summary": "17只中16只收跌、AI基建-7.56%与光通信-9.63%杀幅最深，但全部17只盘前翻红；机械规则10只买入信号净+13.0份，二次基本面校验后7只压至0.3倍、净份额降至+7.4份；仅COHR/BE/CRCL三只0项Red Flag值得下注，无Strong Buy/Sell。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261009_1902.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261008_1905",
       "date": "2026-10-08",
