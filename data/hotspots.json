@@ -1,82 +1,60 @@
 {
-  "updated_at": "2026-10-09 19:25:00",
+  "updated_at": "2026-10-12 19:12:31",
   "period": "2 trading days",
-  "note": "全市场普跌，无标的2日涨幅≥5%，按实际涨幅Top排序",
   "filter": {
     "min_market_cap_usd": 20000000000,
-    "min_pct_2d": 0,
-    "universe": "119 US large-cap stocks"
+    "min_pct_2d": 5.0,
+    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
     {
-      "symbol": "PM",
-      "name": "菲利普莫里斯",
-      "close": 200.5,
-      "pct_2d": 4.05,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "LOW",
-      "name": "劳氏",
-      "close": 188.85,
-      "pct_2d": 4.03,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "TEAM",
-      "name": "Atlassian Corporation",
-      "close": 203.57,
-      "pct_2d": 3.97,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "PEP",
-      "name": "百事可乐",
-      "close": 128.34,
-      "pct_2d": 3.73,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 241.05,
-      "pct_2d": 3.56,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "HD",
-      "name": "家得宝",
-      "close": 295.47,
-      "pct_2d": 3.39,
-      "date_range": "2026-10-07 ~ 2026-10-09"
-    },
-    {
-      "symbol": "COP",
-      "name": "康菲石油",
-      "close": 134.19,
-      "pct_2d": 3.35,
-      "date_range": "2026-10-07 ~ 2026-10-09"
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 233.73,
+      "pct_2d": 7.8,
+      "date_range": "2026-10-08 ~ now"
     },
     {
       "symbol": "SNOW",
       "name": "Snowflake Inc.",
-      "close": 343.4,
-      "pct_2d": 3.17,
-      "date_range": "2026-10-07 ~ 2026-10-09"
+      "close": 368.89,
+      "pct_2d": 7.42,
+      "date_range": "2026-10-08 ~ now"
     },
     {
-      "symbol": "CVX",
-      "name": "雪佛龙",
-      "close": 211.55,
-      "pct_2d": 3.12,
-      "date_range": "2026-10-07 ~ 2026-10-09"
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 293.26,
+      "pct_2d": 7.11,
+      "date_range": "2026-10-08 ~ now"
     },
     {
-      "symbol": "EOG",
-      "name": "EOG能源",
-      "close": 148.51,
-      "pct_2d": 2.98,
-      "date_range": "2026-10-07 ~ 2026-10-09"
+      "symbol": "RBLX",
+      "name": "罗布乐思",
+      "close": 48.09,
+      "pct_2d": 5.65,
+      "date_range": "2026-10-08 ~ now"
+    },
+    {
+      "symbol": "NET",
+      "name": "科赋锐",
+      "close": 360.93,
+      "pct_2d": 5.57,
+      "date_range": "2026-10-08 ~ now"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "close": 209.05,
+      "pct_2d": 5.17,
+      "date_range": "2026-10-08 ~ now"
+    },
+    {
+      "symbol": "PANW",
+      "name": "派拓网络",
+      "close": 418.78,
+      "pct_2d": 5.09,
+      "date_range": "2026-10-08 ~ now"
     }
   ]
 }
