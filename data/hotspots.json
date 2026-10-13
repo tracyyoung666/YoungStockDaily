@@ -1,60 +1,10 @@
 {
-  "updated_at": "2026-10-12 19:12:31",
+  "updated_at": "2026-10-13 19:15:38",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 233.73,
-      "pct_2d": 7.8,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "SNOW",
-      "name": "Snowflake Inc.",
-      "close": 368.89,
-      "pct_2d": 7.42,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "DDOG",
-      "name": "Datadog, Inc.",
-      "close": 293.26,
-      "pct_2d": 7.11,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "RBLX",
-      "name": "罗布乐思",
-      "close": 48.09,
-      "pct_2d": 5.65,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "NET",
-      "name": "科赋锐",
-      "close": 360.93,
-      "pct_2d": 5.57,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "PLTR",
-      "name": "Palantir",
-      "close": 209.05,
-      "pct_2d": 5.17,
-      "date_range": "2026-10-08 ~ now"
-    },
-    {
-      "symbol": "PANW",
-      "name": "派拓网络",
-      "close": 418.78,
-      "pct_2d": 5.09,
-      "date_range": "2026-10-08 ~ now"
-    }
-  ]
+  "hotspots": []
 }

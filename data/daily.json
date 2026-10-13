@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-12T19:18:41",
+  "updated_at": "2026-10-13T19:28:14",
   "dailies": [
+    {
+      "slug": "daily_20261013_1924",
+      "date": "2026-10-13",
+      "generated_at": "2026-10-13 19:24:00",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-10-13 19:24",
+      "summary": "17只自选股16跌，光通信/量子领跌；择时引擎9只Buy但0只Strong Buy（均未站上MA10），基本面校验将6只压至0.3份，仅MU/BE/COHR保留1.0份；BTC $83,379 恐贪55中性。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261013_1924.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261012_1913",
       "date": "2026-10-12",
