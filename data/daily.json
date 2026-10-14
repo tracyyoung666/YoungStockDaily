@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-13T19:28:14",
+  "updated_at": "2026-10-14T19:30:41",
   "dailies": [
+    {
+      "slug": "daily_20261014_1930",
+      "date": "2026-10-14",
+      "generated_at": "2026-10-14 19:30",
+      "title": "自选股盘前分析 + Web3 日报 | 2026-10-14 19:30",
+      "summary": "盘前17只自选股9只触发买入信号但无一只达Strong Buy（反弹0.0%~2.7%全低于阈值R且未站上MA10），二次基本面校验将6只≥2项RedFlag标的压至0.3份，有效加仓仅MU/BE/COHR三只🟢技术错杀型；净份额+8.8份，无卖出信号。全市场2日涨幅Top1 ORCL仅+4.23%、无股达5%热点门槛，热度全面降温；BTC $83,378横盘、恐贪54中性。TSM财报10-15建议回避。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261014_1930.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261013_1924",
       "date": "2026-10-13",
