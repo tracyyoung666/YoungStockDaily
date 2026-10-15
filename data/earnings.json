@@ -1,5 +1,30 @@
 [
   {
+    "symbol": "TSM",
+    "name": "台积电 TSMC",
+    "period": "2026Q3",
+    "period_label": "2026 Q3（FY2026 第三财季）",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-10-15",
+    "verdict": "beat",
+    "verdict_label": "超预期 Beat（营收$467.2亿超指引上限/净利同比+68.7%创第六季新高/Q4指引同比+55%~61%，但当日随科技股回调-3.40%）",
+    "eps_actual": 4.6,
+    "eps_estimate": 4.5,
+    "revenue_actual": 46720,
+    "revenue_estimate": 46000,
+    "revenue_unit": "百万美元",
+    "url": "earnings/TSM-2026Q3.html",
+    "generated_at": "2026-10-15 19:30",
+    "sec_filing": {
+      "form": "6-K",
+      "filing_date": "2026-09-10",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/",
+      "local_file": "earnings-filings/TSM-2026Q3-sec-filing.htm",
+      "note": "台积电为外国私人发行人，季度业绩以6-K披露、年报为20-F；本次抓取为最近一期6-K月度营收公告，Q3业绩原文见官方发布稿"
+    }
+  },
+  {
     "symbol": "COHR",
     "name": "Coherent 相干公司",
     "period": "2026Q4",
