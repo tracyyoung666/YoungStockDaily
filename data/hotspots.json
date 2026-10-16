@@ -1,10 +1,21 @@
 {
-  "updated_at": "2026-10-15 19:23:41",
+  "updated_at": "2026-10-16 19:11:10",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": []
+  "hotspots": [
+    {
+      "symbol": "NOW",
+      "name": "现在服务公司",
+      "close": 148.57,
+      "pct_2d": 6.14,
+      "date_range": "2026-10-14 ~ now",
+      "reason": "ServiceNow推出企业AI代理构建及治理工具；TD Cowen维持买入并上调目标价至165美元（新闻关联，不证明唯一上涨因果）",
+      "source": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026101523231298884700&s=b"
+    }
+  ],
+  "coverage_note": "119只预设核心大市值美股样本，非全市场；筛选2日涨幅≥5%，本轮仅1只，不能编造Top3"
 }

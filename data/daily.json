@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-15T19:37:21",
+  "updated_at": "2026-10-16T19:17:14",
   "dailies": [
+    {
+      "slug": "daily_20261016_1916",
+      "date": "2026-10-16",
+      "generated_at": "2026-10-16 19:16",
+      "title": "📈 自选股盘前分析 + Web3日报 | 2026-10-16 19:16",
+      "summary": "17只自选 · Strong Buy 0 / Buy 11 · 净份额+9.0 · 热点NOW +6.14%",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261016_1916.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261015_1930",
       "date": "2026-10-15",
