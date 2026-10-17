@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-16T19:17:14",
+  "updated_at": "2026-10-17T20:12:40",
   "dailies": [
+    {
+      "slug": "weekly_20261017",
+      "date": "2026-10-17",
+      "generated_at": "2026-10-17 20:12",
+      "title": "自选股周报 | 2026-10-12 ~ 10-16",
+      "summary": "10-12~10-16：17只全跌，等权均值-13.48%；相对冠军CRCL -2.71%，末位COHR -25.50%。本周异常55次（五日报43条含3条上周延续，另补周五15条）；下周TSLA 10-21、NOK/BE 10-22财报。BTC $82,189（-0.49%）、ETH $2,451（-2.08%），恐贪56→51。优先核查旧止损，财报前不新增押注。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/weekly_20261017.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261016_1916",
       "date": "2026-10-16",
