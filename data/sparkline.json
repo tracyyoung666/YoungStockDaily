@@ -1,13 +1,9 @@
 {
-  "updated_at": "2026-10-16 19:17:14",
+  "updated_at": "2026-10-19 19:21:03",
   "period": "day",
   "days": 7,
   "stocks": {
     "MU": [
-      {
-        "date": "2026-10-08",
-        "close": 1035.633
-      },
       {
         "date": "2026-10-09",
         "close": 1028.794
@@ -30,14 +26,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 931.24
+        "close": 878.84
+      },
+      {
+        "date": "2026-10-19",
+        "close": 878.84
       }
     ],
     "AMD": [
-      {
-        "date": "2026-10-08",
-        "close": 620.68
-      },
       {
         "date": "2026-10-09",
         "close": 608.1
@@ -60,14 +56,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 562.23
+        "close": 528.75
+      },
+      {
+        "date": "2026-10-19",
+        "close": 528.75
       }
     ],
     "INTC": [
-      {
-        "date": "2026-10-08",
-        "close": 107.08
-      },
       {
         "date": "2026-10-09",
         "close": 104.7
@@ -90,14 +86,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 95.37
+        "close": 89.85
+      },
+      {
+        "date": "2026-10-19",
+        "close": 89.85
       }
     ],
     "GOOG": [
-      {
-        "date": "2026-10-08",
-        "close": 344.86
-      },
       {
         "date": "2026-10-09",
         "close": 347.86
@@ -120,23 +116,68 @@
       },
       {
         "date": "2026-10-16",
-        "close": 344.91
+        "close": 336.91
+      },
+      {
+        "date": "2026-10-19",
+        "close": 336.91
       }
     ],
     "NVDA": [
       {
-        "date": "2026-10-08",
-        "close": 230.48
-      },
-      {
         "date": "2026-10-09",
         "close": 229.28
+      },
+      {
+        "date": "2026-10-12",
+        "close": 226.32
+      },
+      {
+        "date": "2026-10-13",
+        "close": 228.52,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-14",
+        "close": 221.3,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-15",
+        "close": 217.23,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-16",
+        "close": 214.13,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-19",
+        "close": 214.13,
+        "backfill_source": "本轮performance.json"
       }
     ],
     "NBIS": [
       {
+        "date": "2026-10-09",
+        "close": 221.07,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-12",
+        "close": 210.06,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-13",
+        "close": 206.86,
+        "backfill_source": "本轮performance.json"
+      },
+      {
         "date": "2026-10-14",
-        "close": 186.01
+        "close": 186.01,
+        "backfill_source": "本轮performance.json"
       },
       {
         "date": "2026-10-15",
@@ -144,14 +185,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 188.41
+        "close": 165.47
+      },
+      {
+        "date": "2026-10-19",
+        "close": 165.47
       }
     ],
     "CRWV": [
-      {
-        "date": "2026-10-08",
-        "close": 81.58
-      },
       {
         "date": "2026-10-09",
         "close": 82.08
@@ -174,14 +215,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 69.69
+        "close": 61.39
+      },
+      {
+        "date": "2026-10-19",
+        "close": 61.39
       }
     ],
     "CRCL": [
-      {
-        "date": "2026-10-08",
-        "close": 80.84
-      },
       {
         "date": "2026-10-09",
         "close": 84.51
@@ -204,14 +245,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 86.97
+        "close": 82.22
+      },
+      {
+        "date": "2026-10-19",
+        "close": 82.22
       }
     ],
     "MSTR": [
-      {
-        "date": "2026-10-08",
-        "close": 151.47
-      },
       {
         "date": "2026-10-09",
         "close": 154.34
@@ -234,14 +275,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 151.29
+        "close": 136.83
+      },
+      {
+        "date": "2026-10-19",
+        "close": 136.83
       }
     ],
     "TSLA": [
-      {
-        "date": "2026-10-08",
-        "close": 375.0
-      },
       {
         "date": "2026-10-09",
         "close": 382.7
@@ -253,19 +294,51 @@
       {
         "date": "2026-10-13",
         "close": 375.23
+      },
+      {
+        "date": "2026-10-14",
+        "close": 367.16
+      },
+      {
+        "date": "2026-10-15",
+        "close": 362.44
+      },
+      {
+        "date": "2026-10-16",
+        "close": 354.72
       }
     ],
     "XPEV": [
       {
-        "date": "2026-10-16",
+        "date": "2026-10-09",
+        "close": 9.9
+      },
+      {
+        "date": "2026-10-12",
+        "close": 9.66
+      },
+      {
+        "date": "2026-10-13",
+        "close": 9.75
+      },
+      {
+        "date": "2026-10-14",
+        "close": 9.42
+      },
+      {
+        "date": "2026-10-15",
         "close": 9.63
+      },
+      {
+        "date": "2026-10-16",
+        "close": 9.23
+      },
+      {
+        "date": "2026-10-19",
+        "close": 9.23
       }
     ],
     "MRVL": [
-      {
-        "date": "2026-10-08",
-        "close": 274.605
-      },
       {
         "date": "2026-10-09",
         "close": 275.28
@@ -288,14 +361,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 241.24
+        "close": 227.83
+      },
+      {
+        "date": "2026-10-19",
+        "close": 227.83
       }
     ],
     "NOK": [
-      {
-        "date": "2026-10-08",
-        "close": 10.14
-      },
       {
         "date": "2026-10-09",
         "close": 10.36
@@ -318,14 +391,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 9.57
+        "close": 9.14
+      },
+      {
+        "date": "2026-10-19",
+        "close": 9.14
       }
     ],
     "COHR": [
-      {
-        "date": "2026-10-08",
-        "close": 302.35
-      },
       {
         "date": "2026-10-09",
         "close": 312.62
@@ -348,14 +421,14 @@
       },
       {
         "date": "2026-10-16",
-        "close": 250.6
+        "close": 232.9
+      },
+      {
+        "date": "2026-10-19",
+        "close": 232.9
       }
     ],
     "QUBT": [
-      {
-        "date": "2026-10-08",
-        "close": 7.45
-      },
       {
         "date": "2026-10-09",
         "close": 7.44
@@ -378,16 +451,58 @@
       },
       {
         "date": "2026-10-16",
-        "close": 6.84
+        "close": 6.36
+      },
+      {
+        "date": "2026-10-19",
+        "close": 6.36
       }
     ],
     "BE": [
       {
-        "date": "2026-10-08",
-        "close": 272.82
+        "date": "2026-10-09",
+        "close": 280.5
+      },
+      {
+        "date": "2026-10-12",
+        "close": 262.28,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-13",
+        "close": 263.45,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-14",
+        "close": 239.34,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-15",
+        "close": 236.3,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-16",
+        "close": 221.31,
+        "backfill_source": "本轮performance.json"
+      },
+      {
+        "date": "2026-10-19",
+        "close": 221.31,
+        "backfill_source": "本轮performance.json"
       }
     ],
     "TSM": [
+      {
+        "date": "2026-10-09",
+        "close": 453.31
+      },
+      {
+        "date": "2026-10-12",
+        "close": 444.35
+      },
       {
         "date": "2026-10-13",
         "close": 445.12
@@ -402,8 +517,35 @@
       },
       {
         "date": "2026-10-16",
-        "close": 422.25
+        "close": 412.61
+      },
+      {
+        "date": "2026-10-19",
+        "close": 412.61
       }
     ]
+  },
+  "quality": {
+    "backfill_source": "本轮20日走势采集，仅补已经取得的同日期真实价格；无插值",
+    "backfilled": {
+      "NVDA": {
+        "before": 2,
+        "after": 7
+      },
+      "NBIS": {
+        "before": 3,
+        "after": 7
+      },
+      "BE": {
+        "before": 1,
+        "after": 7
+      }
+    },
+    "incomplete": {
+      "TSLA": 6
+    },
+    "retry_fetch": {
+      "XPEV": 7
+    }
   }
 }

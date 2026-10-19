@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16 19:11:10",
+  "updated_at": "2026-10-19 19:18:57",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,14 +8,35 @@
   },
   "hotspots": [
     {
-      "symbol": "NOW",
-      "name": "现在服务公司",
-      "close": 148.57,
-      "pct_2d": 6.14,
-      "date_range": "2026-10-14 ~ now",
-      "reason": "ServiceNow推出企业AI代理构建及治理工具；TD Cowen维持买入并上调目标价至165美元（新闻关联，不证明唯一上涨因果）",
-      "source": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026101523231298884700&s=b"
+      "symbol": "LMT",
+      "name": "洛克希德马丁",
+      "close": 552.09,
+      "pct_2d": 5.72,
+      "date_range": "2026-10-14 ~ 2026-10-16",
+      "reason": "与Avio签署固体火箭发动机生产协议、推进荷兰工业及无人机合作；属于同期防务催化，未证实单一因果",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261015231235988843f7&s=b"
+    },
+    {
+      "symbol": "BLK",
+      "name": "贝莱德",
+      "close": 1134.38,
+      "pct_2d": 5.64,
+      "date_range": "2026-10-14 ~ 2026-10-16",
+      "reason": "Q3利润率修复的研报预期、大摩10月16日维持买入并上调目标价至1,531美元；10月19日代币化消息不倒推作上周涨因",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261016224834a6cda955&s=b"
+    },
+    {
+      "symbol": "NKE",
+      "name": "耐克",
+      "close": 37.13,
+      "pct_2d": 5.18,
+      "date_range": "2026-10-14 ~ 2026-10-16",
+      "reason": "中国本土源创产品及组织转型带来修复预期；同期营收与评级风险仍存，不等同盈利反转已兑现",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261017085125a4783153&s=b"
     }
   ],
-  "coverage_note": "119只预设核心大市值美股样本，非全市场；筛选2日涨幅≥5%，本轮仅1只，不能编造Top3"
+  "latest_completed_session_et": "2026-10-16",
+  "base_session_et": "2026-10-14",
+  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-14收盘至2026-10-16收盘；不把周一盘前算成已完成交易日，不声称穷尽全美股。",
+  "data_errors": []
 }
