@@ -1,42 +1,14 @@
 {
-  "updated_at": "2026-10-19 19:18:57",
+  "updated_at": "2026-10-20 19:18:32",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "LMT",
-      "name": "洛克希德马丁",
-      "close": 552.09,
-      "pct_2d": 5.72,
-      "date_range": "2026-10-14 ~ 2026-10-16",
-      "reason": "与Avio签署固体火箭发动机生产协议、推进荷兰工业及无人机合作；属于同期防务催化，未证实单一因果",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261015231235988843f7&s=b"
-    },
-    {
-      "symbol": "BLK",
-      "name": "贝莱德",
-      "close": 1134.38,
-      "pct_2d": 5.64,
-      "date_range": "2026-10-14 ~ 2026-10-16",
-      "reason": "Q3利润率修复的研报预期、大摩10月16日维持买入并上调目标价至1,531美元；10月19日代币化消息不倒推作上周涨因",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261016224834a6cda955&s=b"
-    },
-    {
-      "symbol": "NKE",
-      "name": "耐克",
-      "close": 37.13,
-      "pct_2d": 5.18,
-      "date_range": "2026-10-14 ~ 2026-10-16",
-      "reason": "中国本土源创产品及组织转型带来修复预期；同期营收与评级风险仍存，不等同盈利反转已兑现",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261017085125a4783153&s=b"
-    }
-  ],
-  "latest_completed_session_et": "2026-10-16",
-  "base_session_et": "2026-10-14",
-  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-14收盘至2026-10-16收盘；不把周一盘前算成已完成交易日，不声称穷尽全美股。",
+  "hotspots": [],
+  "latest_completed_session_et": "2026-10-19",
+  "base_session_et": "2026-10-15",
+  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-15收盘至2026-10-19收盘；不把今日盘前算成已完成交易日，不声称穷尽全美股。",
   "data_errors": []
 }
