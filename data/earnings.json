@@ -1,5 +1,77 @@
 [
   {
+    "symbol": "NOK",
+    "name": "Nokia 诺基亚",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-10-22",
+    "verdict": "mixed",
+    "verdict_label": "营收+10%/净利+95%，但报告经营利润-22%、自由现金流转负（非净利崩塌）",
+    "eps_actual": 0.03,
+    "eps_estimate": null,
+    "revenue_actual": 5154,
+    "revenue_estimate": null,
+    "revenue_unit": "百万欧元",
+    "url": "earnings/NOK-2026Q3.html",
+    "generated_at": "2026-10-23 19:12",
+    "sec_filing": {
+      "form": "6-K",
+      "filing_date": "2026-10-22",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/",
+      "local_file": "earnings-filings/NOK-2026Q3-sec-filing.htm"
+    }
+  },
+  {
+    "symbol": "BE",
+    "name": "Bloom Energy",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-10-22",
+    "verdict": "growth",
+    "verdict_label": "营收同比+138.1%且转盈，财报后股价承压（无同口径共识，不断言Beat）",
+    "eps_actual": 0.78,
+    "eps_estimate": null,
+    "revenue_actual": 1235.837,
+    "revenue_estimate": null,
+    "revenue_unit": "百万美元",
+    "url": "earnings/BE-2026Q3.html",
+    "generated_at": "2026-10-23 19:12",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-10-22",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/",
+      "local_file": "earnings-filings/BE-2026Q3-sec-filing.htm"
+    }
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla 特斯拉",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-10-21",
+    "verdict": "mixed",
+    "verdict_label": "营收持平、归属净利同比-42.7%（GAAP原文；不混用调整后共识）",
+    "eps_actual": 0.22,
+    "eps_estimate": null,
+    "revenue_actual": 28046,
+    "revenue_estimate": null,
+    "revenue_unit": "百万美元",
+    "url": "earnings/TSLA-2026Q3.html",
+    "generated_at": "2026-10-23 19:12",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-10-22",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/",
+      "local_file": "earnings-filings/TSLA-2026Q3-sec-filing.htm"
+    }
+  },
+  {
     "symbol": "TSM",
     "name": "台积电 TSMC",
     "period": "2026Q3",

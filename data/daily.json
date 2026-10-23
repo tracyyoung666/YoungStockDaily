@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-20T19:30:14",
+  "updated_at": "2026-10-23T19:14:44",
   "dailies": [
+    {
+      "slug": "daily_20261023_1912",
+      "date": "2026-10-23",
+      "generated_at": "2026-10-23 19:12",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-10-23 19:12",
+      "summary": "常规时段普跌，盘前局部修复不等于右侧确认：Strong Buy 0只，Buy 12只，机械定投5只，观望0只，Sell 0只；引擎净份额+7.5份。基本面恶化档仅显示0.3份风险上限，不是抄底推荐；优先防信用风险和财报事件，等待右侧确认。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261023_1912.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261020_1917",
       "date": "2026-10-20",

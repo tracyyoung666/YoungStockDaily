@@ -1,14 +1,62 @@
 {
-  "updated_at": "2026-10-20 19:18:32",
+  "updated_at": "2026-10-23 19:12:51",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [],
-  "latest_completed_session_et": "2026-10-19",
-  "base_session_et": "2026-10-15",
-  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-15收盘至2026-10-19收盘；不把今日盘前算成已完成交易日，不声称穷尽全美股。",
-  "data_errors": []
+  "hotspots": [
+    {
+      "symbol": "SPOT",
+      "name": "Spotify Technology S.A.",
+      "close": 583.66,
+      "pct_2d": 10.95,
+      "date_range": "2026-10-20 ~ 2026-10-22",
+      "reason": "Q4利润指引高于预期、订阅用户增长与毛利改善；新闻为本轮报道，非保证继续上涨。",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023094555a4820691&s=b",
+      "market_cap_usd": 119991277000
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 237.76,
+      "pct_2d": 10.84,
+      "date_range": "2026-10-20 ~ 2026-10-22",
+      "reason": "媒体解读为AI投入扩张带动云安全需求预期；未核验独立订单落地，不把叙事当收入。",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261022214525a6d71df6&s=b",
+      "market_cap_usd": 38767885000
+    },
+    {
+      "symbol": "LMT",
+      "name": "洛克希德马丁",
+      "close": 589.91,
+      "pct_2d": 7.51,
+      "date_range": "2026-10-20 ~ 2026-10-22",
+      "reason": "Q3营收增长11%并上调全年指引；F-35初步增购协议仍需拨款，不按已实现收入计。",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102223564297a845e6&s=b",
+      "market_cap_usd": 136145773000
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "close": 270.55,
+      "pct_2d": 5.38,
+      "date_range": "2026-10-20 ~ 2026-10-22",
+      "reason": "本轮仅查到成交及价格异动播报，暂无可核实独立上涨催化；不虚构财报或产品利好。",
+      "source_url": "",
+      "market_cap_usd": 105298060000
+    }
+  ],
+  "latest_completed_session_et": "2026-10-22",
+  "base_session_et": "2026-10-20",
+  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-20收盘至2026-10-22收盘；不把本次盘前算成已完成交易日，不声称穷尽全美股。 已复核涨幅候选实际市值，剔除LCID；Top3为样本池排行，不是全市场穷举。",
+  "data_errors": [],
+  "excluded": [
+    {
+      "symbol": "LCID",
+      "market_cap_usd": 1363483000,
+      "reason": "实际市值不足200亿美元"
+    }
+  ]
 }
