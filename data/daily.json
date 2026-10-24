@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-23T19:14:44",
+  "updated_at": "2026-10-24T20:06:59",
   "dailies": [
+    {
+      "slug": "weekly_20261024",
+      "date": "2026-10-24",
+      "generated_at": "2026-10-24 20:06",
+      "title": "自选股周报 | 2026-10-19 ~ 2026-10-23",
+      "summary": "10-19~10-23：6涨11跌，等权均值-2.45%；冠军MSTR +6.71%, 末位BE -12.66%。可验证异常33条；缺周三周四股票日报。下周GOOG 10-28、INTC/MSTR 10-29财报，NOK 10-27除息。BTC快照周变化-0.54%、ETH -1.80%，恐贪51→49。BE已破旧止损$217.77，先风险后反弹。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/weekly_20261024.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261023_1912",
       "date": "2026-10-23",
