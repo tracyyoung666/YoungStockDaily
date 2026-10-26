@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23 19:12:51",
+  "updated_at": "2026-10-26 19:25:30",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,53 +10,90 @@
     {
       "symbol": "SPOT",
       "name": "Spotify Technology S.A.",
-      "close": 583.66,
-      "pct_2d": 10.95,
-      "date_range": "2026-10-20 ~ 2026-10-22",
-      "reason": "Q4利润指引高于预期、订阅用户增长与毛利改善；新闻为本轮报道，非保证继续上涨。",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023094555a4820691&s=b",
-      "market_cap_usd": 119991277000
+      "close": 584.22,
+      "pct_2d": 11.21,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 120106404000,
+      "reason": "费用投入放缓利好利润兑现；10月23日报道Q4经营利润指引超预期。新闻背景不等于证明全部涨幅因果。",
+      "news_id": "SN20261023213219a6d90225",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213219a6d90225&s=b"
     },
     {
       "symbol": "ZS",
       "name": "Zscaler, Inc.",
-      "close": 237.76,
-      "pct_2d": 10.84,
-      "date_range": "2026-10-20 ~ 2026-10-22",
-      "reason": "媒体解读为AI投入扩张带动云安全需求预期；未核验独立订单落地，不把叙事当收入。",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261022214525a6d71df6&s=b",
-      "market_cap_usd": 38767885000
+      "close": 255.15,
+      "pct_2d": 10.3,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 41603406000,
+      "reason": "PHP漏洞事件催化零信任安全需求，媒体报道创60日新高；不保证该因素解释全部涨幅。",
+      "news_id": "SN20261023213310a6d9026e",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213310a6d9026e&s=b"
+    },
+    {
+      "symbol": "PANW",
+      "name": "派拓网络",
+      "close": 380.55,
+      "pct_2d": 9.59,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 311289900000,
+      "reason": "AI时代安全溢价与网络安全板块修复；大摩长期行业观点为背景，未确认独立单股公告催化。",
+      "news_id": "SN20261022164826b6638006",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261022164826b6638006&s=b"
     },
     {
       "symbol": "LMT",
       "name": "洛克希德马丁",
-      "close": 589.91,
-      "pct_2d": 7.51,
-      "date_range": "2026-10-20 ~ 2026-10-22",
-      "reason": "Q3营收增长11%并上调全年指引；F-35初步增购协议仍需拨款，不按已实现收入计。",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102223564297a845e6&s=b",
-      "market_cap_usd": 136145773000
+      "close": 604.18,
+      "pct_2d": 9.55,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 139568383000,
+      "reason": "订单规模创纪录及机构上调目标价为报道背景；注意目标价不是买入保证。",
+      "news_id": "SN2026102403253995455cd7",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102403253995455cd7&s=b"
     },
     {
-      "symbol": "ADBE",
-      "name": "Adobe Inc.",
-      "close": 270.55,
-      "pct_2d": 5.38,
-      "date_range": "2026-10-20 ~ 2026-10-22",
-      "reason": "本轮仅查到成交及价格异动播报，暂无可核实独立上涨催化；不虚构财报或产品利好。",
-      "source_url": "",
-      "market_cap_usd": 105298060000
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 257.57,
+      "pct_2d": 7.62,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 263734897000,
+      "reason": "PHP2Shell事件与AI机器身份安全需求引发关注，作为板块新闻背景而非单一因果断言。",
+      "news_id": "SN20261024151519b666e48b",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261024151519b666e48b&s=b"
+    },
+    {
+      "symbol": "NET",
+      "name": "科赋锐",
+      "close": 325.73,
+      "pct_2d": 6.02,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 115985846000,
+      "reason": "大摩绩前看好AI相关需求和增长持续性；高估值仍需业绩兑现。",
+      "news_id": "SN20261023134030b6651933",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023134030b6651933&s=b"
+    },
+    {
+      "symbol": "ISRG",
+      "name": "直觉外科公司",
+      "close": 452.29,
+      "pct_2d": 5.65,
+      "date_range": "2026-10-21 ~ 2026-10-23",
+      "market_cap_usd": 159784124000,
+      "reason": "媒体称财报利空出清及大行上调目标价；财报预期与估值风险仍需观察。",
+      "news_id": "SN20261023213149b665de14",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213149b665de14&s=b"
     }
   ],
-  "latest_completed_session_et": "2026-10-22",
-  "base_session_et": "2026-10-20",
-  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-20收盘至2026-10-22收盘；不把本次盘前算成已完成交易日，不声称穷尽全美股。 已复核涨幅候选实际市值，剔除LCID；Top3为样本池排行，不是全市场穷举。",
+  "latest_completed_session_et": "2026-10-23",
+  "base_session_et": "2026-10-21",
+  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-21收盘至2026-10-23收盘；不把本次盘前算成已完成交易日，不声称穷尽全美股。本轮对全部入选热点核验真实市值，剔除LCID；Top3为候选池排名，新闻归因为报道背景，不声称已经证明因果。",
   "data_errors": [],
-  "excluded": [
+  "excluded_by_market_cap": [
     {
       "symbol": "LCID",
-      "market_cap_usd": 1363483000,
-      "reason": "实际市值不足200亿美元"
+      "market_cap_usd": 1387127000,
+      "reason": "不满足原技能市值>200亿美元条件"
     }
   ]
 }
