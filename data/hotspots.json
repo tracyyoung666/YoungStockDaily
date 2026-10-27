@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 19:25:30",
+  "updated_at": "2026-10-27 19:18:35",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,92 +8,118 @@
   },
   "hotspots": [
     {
-      "symbol": "SPOT",
-      "name": "Spotify Technology S.A.",
-      "close": 584.22,
-      "pct_2d": 11.21,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 120106404000,
-      "reason": "费用投入放缓利好利润兑现；10月23日报道Q4经营利润指引超预期。新闻背景不等于证明全部涨幅因果。",
-      "news_id": "SN20261023213219a6d90225",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213219a6d90225&s=b"
-    },
-    {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 255.15,
-      "pct_2d": 10.3,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 41603406000,
-      "reason": "PHP漏洞事件催化零信任安全需求，媒体报道创60日新高；不保证该因素解释全部涨幅。",
-      "news_id": "SN20261023213310a6d9026e",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213310a6d9026e&s=b"
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 261.83,
+      "pct_2d": 10.04,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 268096860000,
+      "reason": "机器身份增长与AI安全预算获关注，大摩强调企业上下文及定价权；为报道背景，不证明全部涨幅因果。",
+      "news_id": "SN20261025194531b668544c",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261025194531b668544c&s=b"
     },
     {
       "symbol": "PANW",
       "name": "派拓网络",
-      "close": 380.55,
-      "pct_2d": 9.59,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 311289900000,
-      "reason": "AI时代安全溢价与网络安全板块修复；大摩长期行业观点为背景，未确认独立单股公告催化。",
-      "news_id": "SN20261022164826b6638006",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261022164826b6638006&s=b"
+      "close": 390.46,
+      "pct_2d": 10.01,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 319396280000,
+      "reason": "网络安全候选集共同走强；最新报道VPN漏洞遭大规模利用，存在产品安全风险，未确认独立利好催化。",
+      "news_id": "SN20261027123554a488d6a6",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261027123554a488d6a6&s=b"
     },
     {
-      "symbol": "LMT",
-      "name": "洛克希德马丁",
-      "close": 604.18,
-      "pct_2d": 9.55,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 139568383000,
-      "reason": "订单规模创纪录及机构上调目标价为报道背景；注意目标价不是买入保证。",
-      "news_id": "SN2026102403253995455cd7",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102403253995455cd7&s=b"
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CrowdStrike",
-      "close": 257.57,
-      "pct_2d": 7.62,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 263734897000,
-      "reason": "PHP2Shell事件与AI机器身份安全需求引发关注，作为板块新闻背景而非单一因果断言。",
-      "news_id": "SN20261024151519b666e48b",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261024151519b666e48b&s=b"
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 260.45,
+      "pct_2d": 9.54,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 42467596000,
+      "reason": "AI安全产品获机构关注，美银维持买入评级及285美元目标价；目标价不是收益保证。",
+      "news_id": "SN2026102621311297ae5645",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102621311297ae5645&s=b"
     },
     {
       "symbol": "NET",
       "name": "科赋锐",
-      "close": 325.73,
-      "pct_2d": 6.02,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 115985846000,
-      "reason": "大摩绩前看好AI相关需求和增长持续性；高估值仍需业绩兑现。",
-      "news_id": "SN20261023134030b6651933",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023134030b6651933&s=b"
+      "close": 331.86,
+      "pct_2d": 9.3,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 118168614000,
+      "reason": "近两日价格走强；本轮最新报道多为成交额及盘中波动，未确认独立公司催化，不编造上涨原因。",
+      "news_id": "SN20261026220014b66a357e",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261026220014b66a357e&s=b"
     },
     {
-      "symbol": "ISRG",
-      "name": "直觉外科公司",
-      "close": 452.29,
-      "pct_2d": 5.65,
-      "date_range": "2026-10-21 ~ 2026-10-23",
-      "market_cap_usd": 159784124000,
-      "reason": "媒体称财报利空出清及大行上调目标价；财报预期与估值风险仍需观察。",
-      "news_id": "SN20261023213149b665de14",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261023213149b665de14&s=b"
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "close": 280.24,
+      "pct_2d": 8.73,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 100627185000,
+      "reason": "华尔街绩前进一步看多的报道为背景；估值与业绩兑现风险仍需关注。",
+      "news_id": "SN20261027185610954aefe4",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261027185610954aefe4&s=b"
+    },
+    {
+      "symbol": "LMT",
+      "name": "洛克希德马丁",
+      "close": 635.2,
+      "pct_2d": 7.68,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 146734147000,
+      "reason": "摩根士丹利维持买入和835美元目标价，股价近两日走强；评级为报道背景，不保证目标价兑现。",
+      "news_id": "SN202610262326059899fd3d",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN202610262326059899fd3d&s=b"
+    },
+    {
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "close": 53.08,
+      "pct_2d": 7.12,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 78346080000,
+      "reason": "最新报道Q3净利7.35亿美元、同比-0.54%，大摩维持买入；不将这一混合财务表现包装成大幅超预期。",
+      "news_id": "SN202610240400419895f87b",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN202610240400419895f87b&s=b"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake Inc.",
+      "close": 334.95,
+      "pct_2d": 6.69,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 118170360000,
+      "reason": "纽约巡展与企业AI合作网络相关报道受到关注；未确认能够独立解释全部涨幅的公司公告。",
+      "news_id": "SN2026102711091297af4a79",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026102711091297af4a79&s=b"
+    },
+    {
+      "symbol": "TXN",
+      "name": "德州仪器",
+      "close": 298.12,
+      "pct_2d": 6.66,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 272257400000,
+      "reason": "媒体报道Q3净利增长78%与供需趋紧，作为财报相关背景；非本次自选股财报页新增对象。",
+      "news_id": "SN20261027034614989a3cc4",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261027034614989a3cc4&s=b"
+    },
+    {
+      "symbol": "ARM",
+      "name": "安谋",
+      "close": 223.35,
+      "pct_2d": 6.31,
+      "date_range": "2026-10-22 ~ 2026-10-26",
+      "market_cap_usd": 238537480000,
+      "reason": "富国维持买入评级与280美元目标价，近两日股价修复；评级不是实际订单或盈利确认。",
+      "news_id": "SN20261027003643954986de",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261027003643954986de&s=b"
     }
   ],
-  "latest_completed_session_et": "2026-10-23",
-  "base_session_et": "2026-10-21",
-  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-21收盘至2026-10-23收盘；不把本次盘前算成已完成交易日，不声称穷尽全美股。本轮对全部入选热点核验真实市值，剔除LCID；Top3为候选池排名，新闻归因为报道背景，不声称已经证明因果。",
-  "data_errors": [],
-  "excluded_by_market_cap": [
-    {
-      "symbol": "LCID",
-      "market_cap_usd": 1387127000,
-      "reason": "不满足原技能市值>200亿美元条件"
-    }
-  ]
+  "latest_completed_session_et": "2026-10-26",
+  "base_session_et": "2026-10-22",
+  "note": "固定大市值候选池近2个已完成交易日排行：2026-10-22收盘至2026-10-26收盘；不把本次盘前算成已完成交易日，不声称穷尽全美股。已逐一核验全部10只真实市值，均超过200亿美元；Top3只代表119只固定候选池，不声称穷尽全市场。最新PANW漏洞报道属于风险，不冒充上涨利好。",
+  "data_errors": []
 }
