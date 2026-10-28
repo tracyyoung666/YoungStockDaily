@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-27T19:20:07",
+  "updated_at": "2026-10-28T19:35:32",
   "dailies": [
+    {
+      "slug": "daily_20261028_1924",
+      "date": "2026-10-28",
+      "generated_at": "2026-10-28 19:24",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-10-28 19:24",
+      "summary": "AI基建与半导体最近收盘反弹，但大部分仍处空头排列。权威信号：Strong Buy 2只、Buy 6只、机械定投7只、观望2只、Sell 0只；净份额+10.4仅为引擎输出合计，不是实际投入建议。NOK存在存疑型与Strong Buy档位规则冲突，已告警，不鼓励加倍抄底。技术错杀型优先COHR；NBIS/CRWV/MSTR校验压至0.3，INTC观望。先对照止损、财报窗口和既定仓位，不启动传统自动扣款。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261028_1924.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261027_1918",
       "date": "2026-10-27",
