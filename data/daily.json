@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-28T19:35:32",
+  "updated_at": "2026-10-29T19:23:51",
   "dailies": [
+    {
+      "slug": "daily_20261029_1920",
+      "date": "2026-10-29",
+      "generated_at": "2026-10-29 19:20",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-10-29 19:20",
+      "summary": "权威引擎输出Strong Buy 2只、Buy 2只、机械定投9只、观望2只、Sell 2只；净份额+8.0仅为引擎输出合计，不是实际投入建议。Strong Buy按0项RedFlag及净利率排序BE > NOK；BE技术错杀分型通过，NOK存疑型与Strong Buy执行规则冲突，已告警，不鼓励加倍抄底。CRWV四项RedFlag由同一引擎降为观望。GOOG财报后盘前大跌，MRVL收购传闻风险上升；先对照止损与财报窗口，不启动传统自动扣款。 GOOG/MRVL盘前已低于止损锚点，优先风控。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261029_1920.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261028_1924",
       "date": "2026-10-28",

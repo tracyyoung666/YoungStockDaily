@@ -1,5 +1,34 @@
 [
   {
+    "symbol": "GOOG",
+    "name": "谷歌 Alphabet C",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-10-28",
+    "verdict": "miss",
+    "verdict_label": "营收/EPS不及报道共识，Cloud+103%但自由现金流连续为负",
+    "eps_actual": 2.12,
+    "eps_estimate": null,
+    "eps_estimate_range": [
+      2.99,
+      3.02
+    ],
+    "revenue_actual": 127577,
+    "revenue_estimate": 128220,
+    "revenue_unit": "百万美元（实际SEC，预期新闻）",
+    "url": "earnings/GOOG-2026Q3.html",
+    "generated_at": "2026-10-29 19:22",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-10-29",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/",
+      "local_file": "earnings-filings/GOOG-2026Q3-sec-filing.htm"
+    },
+    "expectation_source": "本轮westock news detail；consensus接口无可用美股数据，不伪造单点EPS共识"
+  },
+  {
     "symbol": "NOK",
     "name": "Nokia 诺基亚",
     "period": "2026Q3",
