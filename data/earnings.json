@@ -1,5 +1,58 @@
 [
   {
+    "name": "Strategy 微策略",
+    "fiscal_end": "2026-09-30",
+    "verdict": "mixed",
+    "verdict_label": "Q3净利195.33亿美元主要来自BTC重估，软件收入-3%、稀释风险仍在",
+    "eps_actual": 44.75,
+    "eps_estimate": null,
+    "revenue_actual": 125.427,
+    "revenue_estimate": null,
+    "symbol": "MSTR",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "report_date": "2026-10-29",
+    "revenue_unit": "百万美元（SEC实际）",
+    "url": "earnings/MSTR-2026Q3.html",
+    "generated_at": "2026-10-30 19:21",
+    "sec_filing": {
+      "form": "8-K Exhibit 99.1",
+      "filing_date": "2026-10-29",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/mstr-20261029x8kxex9912.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/",
+      "local_file": "earnings-filings/MSTR-2026Q3-sec-filing.htm",
+      "note": "指定脚本未找到本期10-Q；按真实SEC目录恢复8-K业绩附件。不是10-Q，不伪造未披露现金流表或Item1A更新。"
+    },
+    "expectation_source": "本轮westock news detail；同口径缺失共识留空，美股consensus能力不支持"
+  },
+  {
+    "name": "英特尔",
+    "fiscal_end": "2026-09-26",
+    "verdict": "mixed",
+    "verdict_label": "Q3数据中心增长78%，但Q4指引明显偏弱，事件后盘前重挫",
+    "eps_actual": 0.6,
+    "eps_estimate": null,
+    "revenue_actual": 16513,
+    "revenue_estimate": null,
+    "symbol": "INTC",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "report_date": "2026-10-29",
+    "revenue_unit": "百万美元（SEC实际）",
+    "url": "earnings/INTC-2026Q3.html",
+    "generated_at": "2026-10-30 19:21",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-10-30",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/",
+      "local_file": "earnings-filings/INTC-2026Q3-sec-filing.htm"
+    },
+    "expectation_source": "本轮westock news detail；同口径缺失共识留空，美股consensus能力不支持",
+    "eps_adjusted_actual": 0.52,
+    "eps_adjusted_estimate": 0.41
+  },
+  {
     "symbol": "GOOG",
     "name": "谷歌 Alphabet C",
     "period": "2026Q3",

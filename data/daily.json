@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-29T19:23:51",
+  "updated_at": "2026-10-30T19:24:01",
   "dailies": [
+    {
+      "slug": "daily_20261030_1921",
+      "date": "2026-10-30",
+      "generated_at": "2026-10-30 19:21",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-10-30 19:21",
+      "summary": "17只盘前：Strong Buy 0、Buy 6、机械定投6、观望1、Sell4，净份额+2.8；6只Buy盘前已低于锚点，先风控。新增INTC/MSTR Q3原文分析；Web3恐慌指数37。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261030_1921.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261029_1920",
       "date": "2026-10-29",
