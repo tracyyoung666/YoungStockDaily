@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-30T19:24:01",
+  "updated_at": "2026-10-31T20:08:13",
   "dailies": [
+    {
+      "slug": "weekly_20261031",
+      "date": "2026-10-31",
+      "generated_at": "2026-10-31 20:07",
+      "title": "自选股周报 | 2026-10-26 ~ 2026-10-30",
+      "summary": "10-26~10-30：7涨10跌，等权均值-4.04%；冠军TSLA +7.41%, 末位INTC -24.38%。可验证异常68条。下周AMD 11-03、CRCL/COHR 11-04财报。BTC快照周变化-4.69%、ETH -7.56%，恐贪49→37。5份日报meta缺失已恢复，NOK历史基准已核正。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/weekly_20261031.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261030_1921",
       "date": "2026-10-30",
