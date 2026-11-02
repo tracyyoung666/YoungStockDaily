@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-31T20:08:13",
+  "updated_at": "2026-11-02T19:23:26",
   "dailies": [
+    {
+      "slug": "daily_20261102_1918",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02 19:18",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-11-02 19:18",
+      "summary": "17只盘前：Strong Buy 0、Buy 13、机械定投2、观望1、Strong Sell 1(NOK)，引擎净份额+6.0；5只Buy校验压至0.3，INTC盘前低于止损锚点，先风控。热点REGN/SPOT/LLY；Web3恐慌指数37。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/daily_20261102_1918.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "weekly_20261031",
       "date": "2026-10-31",

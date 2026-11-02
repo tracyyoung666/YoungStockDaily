@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 19:12:12",
+  "updated_at": "2026-11-02 19:20:15",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,84 +8,120 @@
   },
   "hotspots": [
     {
-      "symbol": "KLAC",
-      "name": "科磊",
-      "close": 167.43,
-      "pct_2d": 8.96,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 218497237000,
-      "reason": "季度营收与利润高于指引中值、AI检测需求受关注；本次盘前再跌，历史涨幅不等于当前分钟涨幅。10月29日盘中已有财报行情报道，后续数字新闻是背景补充。",
-      "news_id": "SN20261029222726954f2c3f",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261029222726954f2c3f&s=b"
+      "symbol": "REGN",
+      "name": "再生元制药公司",
+      "close": 927.89,
+      "pct_2d": 14.09,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 95530904000,
+      "reason": "10月30日窗口内报道为业绩超预期及上调全年指引；后续报道提及度普利尤单抗销售和营收增长36%。具体数字以正式财报为准。",
+      "news_id": "SN20261030213336b671e6b0",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261030213336b671e6b0&s=b"
+    },
+    {
+      "symbol": "SPOT",
+      "name": "Spotify Technology S.A.",
+      "close": 593.44,
+      "pct_2d": 10.22,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 122001891000,
+      "reason": "10月30日传拟于明年一季度上线AI混音、附加月费4至5美元，反映新增付费变现预期；不是已确认服务落地。",
+      "news_id": "SN20261030165220971d08d6",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261030165220971d08d6&s=b"
     },
     {
       "symbol": "LLY",
       "name": "礼来",
-      "close": 1373.7,
-      "pct_2d": 7.16,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 1224457200000,
-      "reason": "减肥药放量、Q3财报及上调全年指引是本轮报道的主要催化；部分新闻发布时间为10月30日，不将其倒推为全部两日涨幅原因。",
-      "news_id": "SN2026103018273198a142db",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026103018273198a142db&s=b"
+      "close": 1417.54,
+      "pct_2d": 10.03,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 1262666711000,
+      "reason": "本轮新闻回顾Q3营收243亿美元、同比39%与替尔泊肽放量；11月2日回顾报道仅作业绩背景，不倒推为此前全部两日涨幅的确定原因。",
+      "news_id": "SN2026110217094298a57f61",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110217094298a57f61&s=b"
     },
     {
-      "symbol": "ORCL",
-      "name": "甲骨文",
-      "close": 139.56,
-      "pct_2d": 6.92,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 423076300000,
-      "reason": "前两日AI云反弹和深化Intel合作为报道背景，最新盘前承压；融资与现金回报担忧仍在，不将历史反弹视为风险解除。",
-      "news_id": "SN20261030115631a6e474b8",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261030115631a6e474b8&s=b"
+      "symbol": "CMCSA",
+      "name": "康卡斯特",
+      "close": 23.22,
+      "pct_2d": 7.65,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 82454367000,
+      "reason": "窗口内新闻侧重环球影城负债与乐园盈利承压，未确认解释两日上涨的独立利好；价格上涨不等于基本面风险消失。",
+      "news_id": "SN20261028212752b66df6f6",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261028212752b66df6f6&s=b"
     },
     {
-      "symbol": "AMAT",
-      "name": "应用材料",
-      "close": 421.66,
-      "pct_2d": 6.5,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 334628298000,
-      "reason": "增持BESI至约20%的报道及设备股反弹为背景；本次盘前又跌，合作或投资叙事不等于现金回报已兑现。",
-      "news_id": "SN20261029153614b66f5439",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261029153614b66f5439&s=b"
+      "symbol": "GILD",
+      "name": "吉利德科学",
+      "close": 170.68,
+      "pct_2d": 7.21,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 211813880000,
+      "reason": "本轮报道含授权交易、临床暂停和11月2日机构上调目标价；后于涨幅窗口，不据此断言两日上涨由目标价驱动。",
+      "news_id": "SN2026110219000997219f6f",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110219000997219f6f&s=b"
     },
     {
-      "symbol": "LRCX",
-      "name": "泛林集团",
-      "close": 254.39,
-      "pct_2d": 5.62,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 318349843000,
-      "reason": "随半导体设备股反弹；本轮新闻主要成交及异动播报，未确认独立公司催化，不编造财报驱动。",
-      "news_id": "SN20261028214119954d23a0",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261028214119954d23a0&s=b"
+      "symbol": "MRK",
+      "name": "默沙东",
+      "close": 149.52,
+      "pct_2d": 6.1,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 368891503000,
+      "reason": "11月1日研报回顾Q3业绩稳健及一次性因素，属涨幅窗口后的观察背景；未确认全部两日上涨的独立催化。",
+      "news_id": "SN20261101092723b673d533",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261101092723b673d533&s=b"
     },
     {
-      "symbol": "GE",
-      "name": "GE航天航空",
-      "close": 313.05,
-      "pct_2d": 5.17,
-      "date_range": "2026-10-27 ~ 2026-10-29",
-      "market_cap_usd": 324808945000,
-      "reason": "本轮价格显示航空股反弹，新闻多为异动播报，未核实独立公司催化，原因保留待确认。",
-      "news_id": "SN20261029221706a48db18f",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261029221706a48db18f&s=b"
+      "symbol": "TMUS",
+      "name": "T-Mobile Us, Inc.",
+      "close": 156.44,
+      "pct_2d": 5.65,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 165712601000,
+      "reason": "窗口内新闻有机构评级观察，其余多为成交播报；未确认独立基本面催化，保留待确认。",
+      "news_id": "SN20261030005615971bcf9d",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261030005615971bcf9d&s=b"
+    },
+    {
+      "symbol": "VRTX",
+      "name": "福泰制药",
+      "close": 558.88,
+      "pct_2d": 5.51,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 141654241000,
+      "reason": "10月30日报道将创新高归因于防御性医药避险需求及估值溢价；为新闻解释，不等于新增财报验证。",
+      "news_id": "SN2026103021333298a194f8",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026103021333298a194f8&s=b"
+    },
+    {
+      "symbol": "DE",
+      "name": "迪尔股份",
+      "close": 675.48,
+      "pct_2d": 5.43,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 182126573000,
+      "reason": "窗口内可见上涨异动报道，但缺乏新的可核实经营催化，不将9月旧去库存观点冒充本轮原因。",
+      "news_id": "SN20261029230047989fbf9e",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261029230047989fbf9e&s=b"
+    },
+    {
+      "symbol": "LOW",
+      "name": "劳氏",
+      "close": 209.07,
+      "pct_2d": 5.38,
+      "date_range": "2026-10-28 ~ 2026-10-30",
+      "market_cap_usd": 117299564000,
+      "reason": "10月29日股价突破200美元的报道为价格事实；无明确新利好，排除劳氏船级社同名误匹配，原因待确认。",
+      "news_id": "SN20261029213331954f1646",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261029213331954f1646&s=b"
     }
   ],
-  "latest_completed_session_et": "2026-10-29",
-  "base_session_et": "2026-10-27",
-  "note": "固定119只候选池近2个已完成交易日排行：10月27日收盘至10月29日收盘，实际市值已错峰核验。LULU市值约127亿美元未达200亿美元，已排除。并非穷尽全美股；不含本次盘前涨幅。新闻是可核实报道背景，晚于窗口的新闻不得被倒推为此前上涨的确定原因。",
+  "latest_completed_session_et": "2026-10-30",
+  "base_session_et": "2026-10-28",
+  "note": "固定119只候选池，10月28日收盘至10月30日收盘两交易日排行；市值已用本轮原表核验（门槛200亿美元），不声称穷尽全美股，不含11月2日盘前涨幅。新闻为报道背景，晚于窗口的新闻不倒推为确定原因；未确认独立催化的标的明确留空原因。",
   "data_errors": [],
-  "recovered_attempts": [
-    1
-  ],
-  "market_cap_excluded": [
-    {
-      "symbol": "LULU",
-      "reason": "本轮实际市值未超过200亿美元",
-      "market_cap_usd": 12720010000
-    }
-  ]
+  "recovered_attempts": [],
+  "market_cap_excluded": []
 }
