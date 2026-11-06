@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 19:14:43",
+  "updated_at": "2026-11-06 19:22:48",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -8,105 +8,105 @@
   },
   "hotspots": [
     {
-      "symbol": "REGN",
-      "name": "再生元制药公司",
-      "close": 961.26,
-      "pct_2d": 17.4,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 99440289000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "11月2日窗口内报道为Q3营收增长36%超预期及多产品创新高；属于报道解释，实际财务数字须以正式财报为准。",
-      "news_id": "SN2026110222315798a5fce8",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110222315798a5fce8&s=b"
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "close": 48.8,
+      "pct_2d": 20.55,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 21476340000,
+      "market_cap_date": "2026-11-05",
+      "reason": "Q3首次GAAP转盈的报道带动重估；11月5日盘后新增收购谈判传闻，非已完成交易，不能倒推为全部收盘涨幅原因。",
+      "news_id": "SN2026110522301198aba1e2",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110522301198aba1e2&s=b"
     },
     {
-      "symbol": "TMUS",
-      "name": "T-Mobile Us, Inc.",
-      "close": 160.15,
-      "pct_2d": 8.73,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 169642502000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "窗口内可见10月29日机构评级观察，最高目标价258美元；其他新消息以成交播报为主，未确认独立上涨催化。",
-      "news_id": "SN20261030005615971bcf9d",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261030005615971bcf9d&s=b"
+      "symbol": "XYZ",
+      "name": "Block, Inc.",
+      "close": 84.04,
+      "pct_2d": 10.58,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 50804029000,
+      "market_cap_date": "2026-11-05",
+      "reason": "Q3业绩超预期、指引上调的报道；最新已完成交易日下跌4.10%，两日累计涨幅并非直线上涨。",
+      "news_id": "SN20261104223101a497b78d",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261104223101a497b78d&s=b"
     },
     {
-      "symbol": "CMCSA",
-      "name": "康卡斯特",
-      "close": 23.87,
-      "pct_2d": 7.18,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 84762521000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "近期有效报道仍讨论乐园负债和盈利承压；没有本轮可核实的独立利好，不把两日价格上涨当基本面改善。",
-      "news_id": "SN20261028212752b66df6f6",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261028212752b66df6f6&s=b"
-    },
-    {
-      "symbol": "SPOT",
-      "name": "Spotify Technology S.A.",
-      "close": 594.04,
-      "pct_2d": 6.6,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 122125241000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "11月2日报道AI混音2027年上线打开ARPU空间；与10月31日称服务已落地的表述冲突，保守视为变现预期，不宣称已经上线。",
-      "news_id": "SN202611022254219721f7ba",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN202611022254219721f7ba&s=b"
-    },
-    {
-      "symbol": "ABT",
-      "name": "雅培",
-      "close": 110.16,
-      "pct_2d": 5.35,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 190619024000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "11月2日股价异动可见；11月3日FDA批准与iCGM报道晚于涨幅窗口，只作后续业务背景，不倒推为两日全部上涨原因。",
-      "news_id": "SN20261103171438a4955d12",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261103171438a4955d12&s=b"
-    },
-    {
-      "symbol": "WMT",
-      "name": "沃尔玛",
-      "close": 127.69,
-      "pct_2d": 5.31,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 1013060058000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "11月3日报道高科技履约中心和加拿大AI购物助手；报道晚于10月30日与11月2日涨幅窗口，不认定为确定上涨原因。",
-      "news_id": "SN202611031702039723540f",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN202611031702039723540f&s=b"
+      "symbol": "BKNG",
+      "name": "Booking Holdings Inc. Common Stock",
+      "close": 168.72,
+      "pct_2d": 8.38,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 125477276000,
+      "market_cap_date": "2026-11-05",
+      "reason": "中金报道Q3调整后业绩超预期，但Q4指引偏弱；最新已完成交易日下跌1.32%。",
+      "news_id": "SN20261105104600b67ad744",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261105104600b67ad744&s=b"
     },
     {
       "symbol": "LOW",
       "name": "劳氏",
-      "close": 218.15,
-      "pct_2d": 5.24,
-      "date_range": "2026-10-29 ~ 2026-11-02",
-      "market_cap_usd": 122393934000,
-      "market_cap_source": "本轮westock quote原表total_market_cap，单位亿美元",
-      "reason": "11月2日可见上涨异动播报，但未确认新的经营催化；排除劳氏船级社同名误匹配，不把旧评级调整当本轮利好。",
-      "news_id": "SN20261102225400a49400be",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261102225400a49400be&s=b"
-    }
-  ],
-  "latest_completed_session_et": "2026-11-02",
-  "base_session_et": "2026-10-29",
-  "note": "固定119只候选池，10月29日收盘至11月2日收盘两个已完成交易日排行；市值以本轮原表核验，门槛200亿美元，RIVN/ENPH未达门槛已排除。不是穷尽全美股，不含11月3日盘前分钟涨幅。新闻为报道背景，晚于窗口的新闻不倒推为确定原因；无明确新利好者注明催化待确认。",
-  "data_errors": [],
-  "recovered_attempts": [],
-  "market_cap_excluded": [
-    {
-      "symbol": "RIVN",
-      "market_cap_usd": 19252238000,
-      "reason": "本轮市值未超过200亿美元，按原技能阈值排除"
+      "close": 227.24,
+      "pct_2d": 6.5,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 127493915000,
+      "market_cap_date": "2026-11-05",
+      "reason": "家装需求与消费政策预期相关报道；政策预期不是已兑现订单。",
+      "news_id": "SN2026110522324294c28b2f",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110522324294c28b2f&s=b"
     },
     {
-      "symbol": "ENPH",
-      "market_cap_usd": 3695538000,
-      "reason": "本轮市值未超过200亿美元，按原技能阈值排除"
+      "symbol": "ISRG",
+      "name": "直觉外科公司",
+      "close": 468.52,
+      "pct_2d": 6.3,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 165517826000,
+      "market_cap_date": "2026-11-05",
+      "reason": "本轮最新新闻多为成交和内部人交易，未找到可确认独立上涨催化，不凭空归因。",
+      "news_id": "SN20261106035926a499e9cb",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261106035926a499e9cb&s=b"
+    },
+    {
+      "symbol": "MCD",
+      "name": "麦当劳",
+      "close": 278.04,
+      "pct_2d": 5.7,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 196752651000,
+      "market_cap_date": "2026-11-05",
+      "reason": "防御消费、套餐与加盟业务相关报道；目标价上调发生在统计窗口之后，不倒推为本轮两日收益原因。",
+      "news_id": "SN2026110618090394c40122",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110618090394c40122&s=b"
+    },
+    {
+      "symbol": "CMCSA",
+      "name": "康卡斯特",
+      "close": 24.95,
+      "pct_2d": 5.41,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 88597608000,
+      "market_cap_date": "2026-11-05",
+      "reason": "存在11月4日上涨播报，但缺少明确新增经营催化；不能把旧主题乐园报道写成当前利好。",
+      "news_id": "SN20261104234421b67a193d",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261104234421b67a193d&s=b"
+    },
+    {
+      "symbol": "FSLR",
+      "name": "第一太阳能",
+      "close": 195.76,
+      "pct_2d": 5.3,
+      "date_range": "2026-11-03 ~ 2026-11-05",
+      "market_cap_usd": 21040510000,
+      "market_cap_date": "2026-11-05",
+      "reason": "盈利逆势走高与评级上调相关报道，同时存在下调营收预期风险，不把榜单涨幅当买入指令。",
+      "news_id": "SN2026110522265997279a55",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110522265997279a55&s=b"
     }
-  ]
+  ],
+  "latest_completed_session_et": "2026-11-05",
+  "base_session_et": "2026-11-03",
+  "note": "固定119只候选池近2个已完成交易日排行：2026-11-03收盘至2026-11-05收盘；8只入榜标的市值均已用2026-11-05原表核验超过200亿美元，不声称穷尽全美股。新闻为相关催化/风险，不证明唯一因果。",
+  "data_errors": [],
+  "recovered_attempts": []
 }
