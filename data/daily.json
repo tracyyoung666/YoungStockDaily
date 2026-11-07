@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-11-06T19:24:23",
+  "updated_at": "2026-11-07T20:16:12",
   "dailies": [
+    {
+      "slug": "weekly_20261107",
+      "date": "2026-11-07",
+      "generated_at": "2026-11-07 20:16",
+      "title": "自选股周报 | 2026-11-02 ~ 2026-11-06",
+      "summary": "11-02~11-06：2涨15跌，自选等权-9.63%；冠军XPEV +13.27%, 末位MRVL -28.11%。异常80条（含缓存及周五补充）。下周QUBT 11-09、CRWV 11-10、NBIS 11-12财报。BTC快照周-2.85%，ETH +0.13%，恐贪37→31；3份日报meta恢复，2日未发布缓存补充。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/weekly_20261107.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261106_1916",
       "date": "2026-11-06",
