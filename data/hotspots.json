@@ -1,41 +1,114 @@
 {
-  "updated_at": "2026-11-09 19:22:53",
+  "updated_at": "2026-11-13 19:22:32",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
-    "universe": "119 US large-cap stocks (S&P500+NDX100 core)"
+    "universe": "118 US large-cap stocks (S&P500+NDX100 core)"
   },
   "hotspots": [
     {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 51.49,
-      "pct_2d": 21.27,
-      "date_range": "2026-11-04 ~ 2026-11-06",
-      "market_cap_usd": 22660179000,
-      "market_cap_date": "2026-11-06",
-      "reason": "Q3首次GAAP转盈、Vector增长与并购谈判预期；银湖/PIF谈判尚未成交，不能把收购溢价当保证收益。",
-      "news_id": "SN2026110522301198aba1e2",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026110522301198aba1e2&s=b"
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "close": 56.6,
+      "pct_2d": 16.15,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 31216972000,
+      "reason": "Q3财报后两日反弹；最新高盛维持买入与盘前再承压并存，亏损及融资风险未消失",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111314401394ced22f&s=b"
     },
     {
-      "symbol": "ABNB",
-      "name": "爱彼迎",
-      "close": 189.99,
-      "pct_2d": 7.72,
-      "date_range": "2026-11-04 ~ 2026-11-06",
-      "market_cap_usd": 112015384000,
-      "market_cap_date": "2026-11-06",
-      "reason": "Q3净利增长38%的复盘报道、AI智能体计划及评级支持；11月6日AI计划为2027年拟上线，不是已兑现业务。",
-      "news_id": "SN20261106211154a6f0ff28",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261106211154a6f0ff28&s=b"
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 585.3,
+      "pct_2d": 13.6,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 959943068000,
+      "reason": "AI芯片新品与季度复盘是新闻线索，最新融资生态风险仍在；未确认唯一上涨因果",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261113114636a6fb3c57&s=b"
+    },
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "close": 798.44,
+      "pct_2d": 10.11,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 903373549000,
+      "reason": "存储板块反弹后常规收盘回落1.59%；两日涨幅保留，最新产业链风险报道不是新增利好",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111310552294ce87e7&s=b"
+    },
+    {
+      "symbol": "ARM",
+      "name": "安谋",
+      "close": 199.78,
+      "pct_2d": 10.08,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 213764600000,
+      "reason": "两日反弹但最新财报新闻净利同比下降45.38%；未确认独立上涨催化",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261113000110b6871be2&s=b"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "博通",
+      "close": 364.36,
+      "pct_2d": 9.75,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 1739319778000,
+      "reason": "半导体两日反弹，最新报道聚焦AI融资风险与做空；未确认独立新增利好",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111315401094ceead0&s=b"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "甲骨文",
+      "close": 127.11,
+      "pct_2d": 7.74,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 396291870000,
+      "reason": "AI云赛道两日修复，最新盘前普跌与资本链风险并存；新闻关联不等于因果",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111317211397342775&s=b"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "迈威尔科技",
+      "close": 164.45,
+      "pct_2d": 6.52,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 147966499000,
+      "reason": "收购Lumentum相关消息、董事会调整与1.6T DSP获奖为线索；收购尚非已完成并表",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261113105730a4a58125&s=b"
+    },
+    {
+      "symbol": "ON",
+      "name": "安森美半导体",
+      "close": 73.73,
+      "pct_2d": 5.92,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 28701945000,
+      "reason": "EliteSiC M4功率密度与汽车区域架构新品线索；未证明其为上涨唯一原因",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111214564898b62818&s=b"
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "close": 61.2,
+      "pct_2d": 5.28,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 325278000000,
+      "reason": "AI联盟及D270芯片消息为线索，但最新收盘跌2.08%，不能将两日反弹当趋势修复",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261113180241b6886325&s=b"
+    },
+    {
+      "symbol": "LRCX",
+      "name": "泛林集团",
+      "close": 233.78,
+      "pct_2d": 5.12,
+      "date_range": "2026-11-10 ~ 2026-11-12",
+      "market_cap_usd": 292557987000,
+      "reason": "半导体设备两日修复；本轮新闻主要为成交和盘中异动，未找到独立新增催化",
+      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261112223138a4a4ba51&s=b"
     }
   ],
-  "latest_completed_session_et": "2026-11-06",
-  "base_session_et": "2026-11-04",
-  "note": "固定119只候选池近2个已完成交易日排行：2026-11-04收盘至2026-11-06收盘；当前价与基准价均指定历史交易日，不包含盘前分钟涨幅，不声称穷尽全美股。候选市值须另行核验。 已核验U/ABNB市值均超过200亿美元；仅2只达到近2日≥5%门槛，第3席空缺，不编造合格热点。",
-  "data_errors": [],
-  "recovered_attempts": [],
-  "top3_shortfall": 1
+  "latest_completed_session_et": "2026-11-12",
+  "base_session_et": "2026-11-10",
+  "note": "固定118只候选池样本排行：2026-11-10至2026-11-12两个已完成美股交易日；非全市场穷尽排行。ROKU暂无接口记录，SQ旧代码改为XYZ；市值需另行核验。"
 }

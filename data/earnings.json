@@ -595,5 +595,80 @@
       "local_file": "",
       "note": "8-K业绩公告已于2026-09-30 16:02 ET提交；10-K年报处于EDGAR索引延迟窗口，自动抓取未命中"
     }
+  },
+  {
+    "symbol": "NBIS",
+    "name": "Nebius集团",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-11-12",
+    "verdict": "mixed",
+    "verdict_label": "营收超报道共识、净亏收窄，但指引收窄与资本开支上调引发融资压力",
+    "eps_actual": -0.13,
+    "eps_estimate": null,
+    "revenue_actual": 980.8,
+    "revenue_estimate": 907.5,
+    "revenue_unit": "百万美元",
+    "url": "earnings/NBIS-2026Q3.html",
+    "generated_at": "2026-11-13 19:22",
+    "sec_filing": {
+      "form": "6-K Exhibit 99.1",
+      "filing_date": "2026-11-12",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/",
+      "local_file": "earnings-filings/NBIS-2026Q3-sec-filing.htm"
+    },
+    "eps_adjusted_actual": 0.31,
+    "eps_adjusted_estimate": -0.69,
+    "expectation_source": "本轮westock news detail报道LSEG预期；非SEC原文"
+  },
+  {
+    "symbol": "CRWV",
+    "name": "CoreWeave",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-11-10",
+    "verdict": "mixed",
+    "verdict_label": "收入增长但净亏与融资压力扩大；本期10-Q已核验归档",
+    "eps_actual": -1.27,
+    "eps_estimate": null,
+    "revenue_actual": 3661,
+    "revenue_estimate": null,
+    "revenue_unit": "百万美元",
+    "url": "earnings/CRWV-2026Q3.html",
+    "generated_at": "2026-11-13 19:22",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-11-12",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/",
+      "local_file": "earnings-filings/CRWV-2026Q3-sec-filing.htm"
+    }
+  },
+  {
+    "symbol": "QUBT",
+    "name": "Quantum Computing Inc.",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-11-09",
+    "verdict": "mixed",
+    "verdict_label": "并购驱动收入放量但经营亏损扩大；不判超预期",
+    "eps_actual": -0.07,
+    "eps_estimate": null,
+    "revenue_actual": 9.5,
+    "revenue_estimate": null,
+    "revenue_unit": "百万美元",
+    "url": "earnings/QUBT-2026Q3.html",
+    "generated_at": "2026-11-13 19:22",
+    "sec_filing": {
+      "form": "10-Q",
+      "filing_date": "2026-11-09",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072119/qubt-20260930.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072119/",
+      "local_file": "earnings-filings/QUBT-2026Q3-sec-filing.htm"
+    }
   }
 ]
