@@ -1,24 +1,13 @@
 {
-  "updated_at": "2026-11-16 19:27:51",
+  "updated_at": "2026-11-17 19:18:12",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "118 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
-    {
-      "symbol": "U",
-      "name": "Unity Software Inc.",
-      "close": 52.81,
-      "pct_2d": 6.36,
-      "date_range": "2026-11-11 ~ 2026-11-13",
-      "market_cap_usd": 23438594000,
-      "reason": "同窗口新闻线索：派杰投资11月13日维持买入评级、上调目标价至72美元；仅为关联线索，不认定唯一上涨因果。11月15日净利润报道晚于统计窗口，不能倒推为当时上涨原因。",
-      "source_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261113234936a6fc3b8c&s=b"
-    }
-  ],
-  "latest_completed_session_et": "2026-11-13",
-  "base_session_et": "2026-11-11",
-  "note": "118只固定候选池样本排行，美东2026-11-11至2026-11-13两个已完成交易日；不是穷尽全市场。按近2日涨幅≥5%且市值≥200亿美元条件仅1只符合，无法凑足Top3，不暗中放宽条件。市值为本轮quote查询值。"
+  "hotspots": [],
+  "latest_completed_session_et": "2026-11-16",
+  "base_session_et": "2026-11-12",
+  "note": "118只固定候选池样本，完整查询两天各118/118只；美东2026-11-12至2026-11-16两个已完成交易日，非穷尽全市场。技能门槛近2日涨幅≥5%，本轮0只达标，无法给符合条件的Top3，不放宽条件或编造上涨催化。"
 }

@@ -670,5 +670,32 @@
       "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072119/",
       "local_file": "earnings-filings/QUBT-2026Q3-sec-filing.htm"
     }
+  },
+  {
+    "symbol": "XPEV",
+    "name": "小鹏集团",
+    "period": "2026Q3",
+    "period_label": "2026 Q3",
+    "fiscal_end": "2026-09-30",
+    "report_date": "2026-11-16",
+    "verdict": "mixed",
+    "verdict_label": "收入与交付创高、环比减亏但同比亏损扩大；6-K本期原文已核验",
+    "eps_actual": -0.14,
+    "eps_actual_rmb_per_ads": -0.91,
+    "eps_estimate": null,
+    "revenue_actual": 24276.048,
+    "revenue_estimate": null,
+    "revenue_unit": "百万元人民币",
+    "url": "earnings/XPEV-2026Q3.html",
+    "generated_at": "2026-11-17 19:17",
+    "expectation_source": "本轮结构化共识不可用，同口径预期缺失，不判Beat/Miss",
+    "sec_filing": {
+      "form": "6-K Exhibit 99.1",
+      "filing_date": "2026-11-16",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1810997/000119312526461897/d182197dex991.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1810997/000119312526461897/",
+      "local_file": "earnings-filings/XPEV-2026Q3-sec-filing.htm",
+      "note": "指定脚本误匹配7月历史6-K；通过最新SEC submissions精确恢复本期业绩附件，非10-Q，未披露完整现金流表。"
+    }
   }
 ]
