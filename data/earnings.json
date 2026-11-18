@@ -697,5 +697,38 @@
       "local_file": "earnings-filings/XPEV-2026Q3-sec-filing.htm",
       "note": "指定脚本误匹配7月历史6-K；通过最新SEC submissions精确恢复本期业绩附件，非10-Q，未披露完整现金流表。"
     }
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA 英伟达",
+    "period": "2027Q3",
+    "period_label": "FY2027 Q3（自然年2026，期末10月25日）",
+    "fiscal_end": "2026-10-25",
+    "report_date": "2026-11-17",
+    "verdict": "beat",
+    "verdict_label": "营收超过报道预期、AI交付增长；承诺与担保敞口及回款压力并存",
+    "eps_actual": 2.7,
+    "eps_adjusted_actual": 2.68,
+    "eps_estimate": null,
+    "revenue_actual": 115844,
+    "revenue_estimate": null,
+    "revenue_estimate_range": [
+      109100,
+      109300
+    ],
+    "revenue_unit": "百万美元（SEC实际）",
+    "url": "earnings/NVDA-2027Q3.html",
+    "generated_at": "2026-11-18 19:18",
+    "expectation_source": "本轮westock news detail 金融投资报；美股结构化共识不可用，EPS留空",
+    "sec_filing": {
+      "form": "8-K Exhibit 99.1",
+      "filing_date": "2026-11-17",
+      "sec_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+      "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/",
+      "local_file": "earnings-filings/NVDA-2027Q3-sec-filing.htm",
+      "cfo_local_file": "earnings-filings/NVDA-2027Q3-cfo.htm",
+      "supplement_local_file": "earnings-filings/NVDA-2027Q3-supplement.htm",
+      "note": "指定下载脚本按自然年未匹配；从真实最新8-K附件恢复，10-Q尚待未来数周提交。"
+    }
   }
 ]
