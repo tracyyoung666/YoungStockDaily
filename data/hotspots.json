@@ -1,24 +1,68 @@
 {
-  "updated_at": "2026-11-18 19:19:25",
+  "updated_at": "2026-11-19 19:16:23",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "118 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [],
-  "latest_completed_session_et": "2026-11-17",
-  "base_session_et": "2026-11-13",
-  "note": "118只固定候选池样本，2026-11-13至2026-11-17两个已完成美股交易日；不是穷尽全市场。技能门槛2日涨幅≥5%且市值≥200亿美元，市值与新闻另行核验，不放宽门槛或编造Top3。 本轮没有符合门槛的标的，不能提供达标Top3。",
-  "rejected": [
+  "hotspots": [
     {
-      "symbol": "XPEV",
-      "name": "小鹏集团",
-      "close": 9.99,
-      "pct_2d": 6.62,
-      "date_range": "2026-11-13 ~ 2026-11-17",
-      "market_cap_usd": 9570188000,
-      "reason": "市值95.70亿美元低于200亿美元技能门槛"
+      "symbol": "PANW",
+      "name": "派拓网络",
+      "close": 339.92,
+      "pct_2d": 7.54,
+      "date_range": "2026-11-16 ~ 2026-11-18",
+      "market_cap_usd": 278316853000.0,
+      "reason": "本轮季报报道营收增长39%、45亿美元AI安全收购，提供增长与安全需求线索；不将新闻相关性等同2日涨幅的独立因果。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119191113973d9983&s=b"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "close": 237.03,
+      "pct_2d": 6.19,
+      "date_range": "2026-11-16 ~ 2026-11-18",
+      "market_cap_usd": 242703276000.0,
+      "reason": "网络安全板块走强；本轮高盛报道Fiddler AI与Dreadnode收购提升AI安全能力，是板块与并购关注线索，不保证涨势延续。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119142753b6916200&s=b"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "博通",
+      "close": 354.05,
+      "pct_2d": 6.19,
+      "date_range": "2026-11-16 ~ 2026-11-18",
+      "market_cap_usd": 1690103654000.0,
+      "reason": "本轮高盛维持买入并预计3Q业绩温和上行，AI硬件链条关注度回升；属于预期报道，不冒充已公布新财报或确定性催化。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119132425a4af0ce8&s=b"
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "close": 530.14,
+      "pct_2d": 5.13,
+      "date_range": "2026-11-16 ~ 2026-11-18",
+      "market_cap_usd": 877416462999.9999,
+      "reason": "OpenAI模型辅助AMD旗舰GPU设计指标改善最高14%的报道，以及FSR插件更新，属于产品创新关注线索，不直接等同新增盈利。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119085919973cbe2b&s=b"
+    }
+  ],
+  "latest_completed_session_et": "2026-11-18",
+  "base_session_et": "2026-11-16",
+  "note": "固定118只候选池样本，2026-11-16至2026-11-18两个已完成美股交易日；非全市场穷尽。依技能门槛近2日涨幅≥5%且市值≥200亿美元，追加官方市值与新闻核验后保留4只，LCID和LULU市值不足被剔除。新闻为本輪相关线索，不宣称已独立证明过去两日上涨的唯一原因。",
+  "excluded": [
+    {
+      "symbol": "LCID",
+      "pct_2d": 5.36,
+      "market_cap_usd": 1166965000.0,
+      "reason": "市值低于200亿美元门槛"
+    },
+    {
+      "symbol": "LULU",
+      "pct_2d": 5.04,
+      "market_cap_usd": 12831203000.0,
+      "reason": "市值低于200亿美元门槛"
     }
   ]
 }
