@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 19:16:23",
+  "updated_at": "2026-11-20 19:22:55",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
@@ -10,59 +10,55 @@
     {
       "symbol": "PANW",
       "name": "派拓网络",
-      "close": 339.92,
-      "pct_2d": 7.54,
-      "date_range": "2026-11-16 ~ 2026-11-18",
-      "market_cap_usd": 278316853000.0,
-      "reason": "本轮季报报道营收增长39%、45亿美元AI安全收购，提供增长与安全需求线索；不将新闻相关性等同2日涨幅的独立因果。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119191113973d9983&s=b"
+      "close": 361.73,
+      "pct_2d": 16.95,
+      "date_range": "2026-11-17 ~ 2026-11-19",
+      "market_cap_usd": 296174262000.0,
+      "reason": "第一财季营收同比增长39%、备考口径23%，下一代安全ARR增长66%；瑞银目标价390→400美元但仍为中性评级。财报与平台整合是相关催化线索，不证明两日涨幅的唯一原因。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120173304b6937c68&s=b"
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "close": 205.71,
+      "pct_2d": 11.08,
+      "date_range": "2026-11-17 ~ 2026-11-19",
+      "market_cap_usd": 33541982000.0,
+      "reason": "云安全板块走强，报道指出云安全需求与规模效应改善；此前TD Cowen维持买入、目标价230美元。新闻日内涨10.13%不是最终收盘涨幅，不直接证明算力外溢的因果。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119225415a4afda62&s=b"
     },
     {
       "symbol": "CRWD",
       "name": "CrowdStrike",
-      "close": 237.03,
-      "pct_2d": 6.19,
-      "date_range": "2026-11-16 ~ 2026-11-18",
-      "market_cap_usd": 242703276000.0,
-      "reason": "网络安全板块走强；本轮高盛报道Fiddler AI与Dreadnode收购提升AI安全能力，是板块与并购关注线索，不保证涨势延续。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119142753b6916200&s=b"
+      "close": 243.46,
+      "pct_2d": 10.88,
+      "date_range": "2026-11-17 ~ 2026-11-19",
+      "market_cap_usd": 249287177000.00003,
+      "reason": "本轮新闻确认网络安全概念股集体走强，为板块共振线索；未取得独立公司层面的新增催化，不将涨幅归因于未经核实的交易或新财报。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111922215398c1d56f&s=b"
     },
     {
-      "symbol": "AVGO",
-      "name": "博通",
-      "close": 354.05,
-      "pct_2d": 6.19,
-      "date_range": "2026-11-16 ~ 2026-11-18",
-      "market_cap_usd": 1690103654000.0,
-      "reason": "本轮高盛维持买入并预计3Q业绩温和上行，AI硬件链条关注度回升；属于预期报道，不冒充已公布新财报或确定性催化。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119132425a4af0ce8&s=b"
+      "symbol": "NET",
+      "name": "科赋锐",
+      "close": 303.68,
+      "pct_2d": 6.63,
+      "date_range": "2026-11-17 ~ 2026-11-19",
+      "market_cap_usd": 108836560000.00002,
+      "reason": "本轮新闻仅取得盘中波动与成交报道，未确认独立公司催化；近2日上涨是行情事实，不凭涨幅编造AI合同、订单或新财报原因。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119223435b69212aa&s=b"
     },
     {
-      "symbol": "AMD",
-      "name": "超威半导体",
-      "close": 530.14,
-      "pct_2d": 5.13,
-      "date_range": "2026-11-16 ~ 2026-11-18",
-      "market_cap_usd": 877416462999.9999,
-      "reason": "OpenAI模型辅助AMD旗舰GPU设计指标改善最高14%的报道，以及FSR插件更新，属于产品创新关注线索，不直接等同新增盈利。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119085919973cbe2b&s=b"
+      "symbol": "RBLX",
+      "name": "罗布乐思",
+      "close": 46.35,
+      "pct_2d": 5.34,
+      "date_range": "2026-11-17 ~ 2026-11-19",
+      "market_cap_usd": 33173314000.0,
+      "reason": "美银维持持有评级、目标价48美元；近2日反弹但最新常规时段下跌2.07%，评级维持不能冒充新上调或利好兑现。未确认独立上涨催化。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119233215973df4ae&s=b"
     }
   ],
-  "latest_completed_session_et": "2026-11-18",
-  "base_session_et": "2026-11-16",
-  "note": "固定118只候选池样本，2026-11-16至2026-11-18两个已完成美股交易日；非全市场穷尽。依技能门槛近2日涨幅≥5%且市值≥200亿美元，追加官方市值与新闻核验后保留4只，LCID和LULU市值不足被剔除。新闻为本輪相关线索，不宣称已独立证明过去两日上涨的唯一原因。",
-  "excluded": [
-    {
-      "symbol": "LCID",
-      "pct_2d": 5.36,
-      "market_cap_usd": 1166965000.0,
-      "reason": "市值低于200亿美元门槛"
-    },
-    {
-      "symbol": "LULU",
-      "pct_2d": 5.04,
-      "market_cap_usd": 12831203000.0,
-      "reason": "市值低于200亿美元门槛"
-    }
-  ]
+  "latest_completed_session_et": "2026-11-19",
+  "base_session_et": "2026-11-17",
+  "note": "118只固定候选池样本，2026-11-17至2026-11-19两个已完成美股交易日，非全市场穷尽。近2日涨幅≥5%且本轮官方市值≥200亿美元，市值及新闻核验后保留5只；新闻作为相关线索，不保证涨幅因果或延续。"
 }
