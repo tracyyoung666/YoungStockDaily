@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-11-20T19:22:55",
+  "updated_at": "2026-11-21T20:15:09",
   "dailies": [
+    {
+      "slug": "weekly_20261121",
+      "date": "2026-11-21",
+      "generated_at": "2026-11-21 20:14",
+      "title": "📊 自选股周报 | 11-16 ~ 11-20",
+      "summary": "11/16~11/20，17只全部下跌；相对领跑GOOG -9.75%，末位MSTR -30.30%；五份日报去重异常73条；下周感恩节休市与提前收盘。BTC同源周快照-10.87%，恐贪20→10。",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV",
+        "MRVL",
+        "NOK",
+        "COHR",
+        "QUBT",
+        "BE",
+        "TSM"
+      ],
+      "image": "images/weekly_20261121.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261120_1920",
       "date": "2026-11-20",

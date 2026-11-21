@@ -1,0 +1,5099 @@
+{
+  "slug": "weekly_20261121",
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21 20:14",
+  "title": "📊 自选股周报 | 11-16 ~ 11-20",
+  "session_label": "周报",
+  "has_stock": true,
+  "has_web3": true,
+  "image": "images/weekly_20261121.png",
+  "stock_body_html": "<div class=\"stock-report\">\n<h3>📊 本周涨跌排名表</h3>\n<p>统计交易周：2026-11-16（周一）至2026-11-20（周五），17只自选股全部下跌。<strong>周涨跌=(11月20日收盘÷11月13日收盘−1)×100%</strong>；周一开盘至周五收盘仅作区间展示，不替代周涨跌基准。该表不是账户收益率，未加入股息或仓位权重。</p>\n<p>相对领跑：<strong>GOOG <span style=\"color:#16a34a\">-9.75%</span></strong>（跌幅最小，并非上涨）；末位：<strong>MSTR <span style=\"color:#16a34a\">-30.30%</span></strong>。盘后反弹与常规周收益分开，未把盘后价计入周涨跌。</p>\n<table class=\"stock-table\"><thead><tr><th>排名</th><th>代码/名称</th><th>上周五收盘</th><th>周一开盘</th><th>周五收盘</th><th>周涨跌%</th><th>盘后价/涨跌</th><th>归档异常数</th></tr></thead><tbody>\n<tr><td>1</td><td><strong>GOOG</strong><br>谷歌-C</td><td>$292.52</td><td>$290.55</td><td>$264.00</td><td><span style=\"color:#16a34a\">-9.75%</span></td><td>$268.50 / <span style=\"color:#dc2626\">+1.70%</span></td><td>1</td></tr>\n<tr><td>2</td><td><strong>TSLA</strong><br>特斯拉</td><td>$390.22</td><td>$387.00</td><td>$345.82</td><td><span style=\"color:#16a34a\">-11.38%</span></td><td>$351.07 / <span style=\"color:#dc2626\">+1.52%</span></td><td>0</td></tr>\n<tr><td>3</td><td><strong>XPEV</strong><br>小鹏集团</td><td>$9.37</td><td>$9.90</td><td>$8.08</td><td><span style=\"color:#16a34a\">-13.77%</span></td><td>$8.17 / <span style=\"color:#dc2626\">+1.11%</span></td><td>1</td></tr>\n<tr><td>4</td><td><strong>INTC</strong><br>英特尔</td><td>$59.66</td><td>$56.71</td><td>$51.28</td><td><span style=\"color:#16a34a\">-14.05%</span></td><td>$53.00 / <span style=\"color:#dc2626\">+3.36%</span></td><td>4</td></tr>\n<tr><td>5</td><td><strong>COHR</strong><br>Coherent Corp.</td><td>$218.15</td><td>$201.36</td><td>$187.22</td><td><span style=\"color:#16a34a\">-14.18%</span></td><td>$193.70 / <span style=\"color:#dc2626\">+3.46%</span></td><td>6</td></tr>\n<tr><td>6</td><td><strong>NOK</strong><br>诺基亚</td><td>$8.07</td><td>$7.87</td><td>$6.88</td><td><span style=\"color:#16a34a\">-14.75%</span></td><td>$7.00 / <span style=\"color:#dc2626\">+1.74%</span></td><td>1</td></tr>\n<tr><td>7</td><td><strong>TSM</strong><br>台积电</td><td>$398.73</td><td>$379.59</td><td>$318.71</td><td><span style=\"color:#16a34a\">-20.07%</span></td><td>$328.59 / <span style=\"color:#dc2626\">+3.10%</span></td><td>2</td></tr>\n<tr><td>8</td><td><strong>AMD</strong><br>超威半导体</td><td>$534.06</td><td>$503.45</td><td>$424.39</td><td><span style=\"color:#16a34a\">-20.54%</span></td><td>$439.44 / <span style=\"color:#dc2626\">+3.55%</span></td><td>6</td></tr>\n<tr><td>9</td><td><strong>QUBT</strong><br>Quantum Computing Inc.</td><td>$5.56</td><td>$5.38</td><td>$4.40</td><td><span style=\"color:#16a34a\">-20.86%</span></td><td>$4.51 / <span style=\"color:#dc2626\">+2.50%</span></td><td>3</td></tr>\n<tr><td>10</td><td><strong>MRVL</strong><br>迈威尔科技</td><td>$156.76</td><td>$147.56</td><td>$122.28</td><td><span style=\"color:#16a34a\">-22.00%</span></td><td>$125.75 / <span style=\"color:#dc2626\">+2.84%</span></td><td>5</td></tr>\n<tr><td>11</td><td><strong>NVDA</strong><br>英伟达</td><td>$162.85</td><td>$159.02</td><td>$125.53</td><td><span style=\"color:#16a34a\">-22.92%</span></td><td>$130.03 / <span style=\"color:#dc2626\">+3.58%</span></td><td>3</td></tr>\n<tr><td>12</td><td><strong>MU</strong><br>美光科技</td><td>$778.31</td><td>$734.16</td><td>$594.51</td><td><span style=\"color:#16a34a\">-23.62%</span></td><td>$610.60 / <span style=\"color:#dc2626\">+2.71%</span></td><td>4</td></tr>\n<tr><td>13</td><td><strong>CRCL</strong><br>Circle互联网集团</td><td>$62.20</td><td>$57.67</td><td>$47.51</td><td><span style=\"color:#16a34a\">-23.62%</span></td><td>$48.96 / <span style=\"color:#dc2626\">+3.05%</span></td><td>6</td></tr>\n<tr><td>14</td><td><strong>CRWV</strong><br>CoreWeave</td><td>$53.13</td><td>$49.36</td><td>$39.51</td><td><span style=\"color:#16a34a\">-25.64%</span></td><td>$40.95 / <span style=\"color:#dc2626\">+3.64%</span></td><td>8</td></tr>\n<tr><td>15</td><td><strong>BE</strong><br>Bloom Energy</td><td>$191.99</td><td>$176.60</td><td>$142.39</td><td><span style=\"color:#16a34a\">-25.83%</span></td><td>$145.61 / <span style=\"color:#dc2626\">+2.26%</span></td><td>6</td></tr>\n<tr><td>16</td><td><strong>NBIS</strong><br>Nebius集团</td><td>$115.88</td><td>$106.80</td><td>$81.31</td><td><span style=\"color:#16a34a\">-29.83%</span></td><td>$84.53 / <span style=\"color:#dc2626\">+3.96%</span></td><td>7</td></tr>\n<tr><td>17</td><td><strong>MSTR</strong><br>Strategy</td><td>$111.62</td><td>$103.74</td><td>$77.80</td><td><span style=\"color:#16a34a\">-30.30%</span></td><td>$79.50 / <span style=\"color:#dc2626\">+2.19%</span></td><td>10</td></tr>\n</tbody></table>\n<p><strong>数据修复与时区：</strong>五份日报按索引date字段全部纳入，但都没有meta.stocks，已从各自存档HTML总览表恢复close_price、pct_1d及异常信号，未修改原日报。它们是北京时间盘前报告，最近常规收盘依次对应美东11/13、11/16、11/17、11/18、11/19，不能误当作当天收盘。另用指定日quote补齐11/13基准、11/16开盘和11/20收盘。统一fetch_quotes.py最新缓存亦核验为11/20收盘。本轮脚本et_time固定EDT标签错误，报告按America/New_York冬令时EST重算，保留原值用于审计。</p>\n<details><summary>展开5个交易日涨跌明细（按美东交易日）</summary><table class=\"stock-table\"><thead><tr><th>代码</th><th>11/16</th><th>11/17</th><th>11/18</th><th>11/19</th><th>11/20</th></tr></thead><tbody>\n<tr><td>GOOG</td><td><span style=\"color:#16a34a\">-3.85%</span></td><td><span style=\"color:#16a34a\">-1.30%</span></td><td><span style=\"color:#dc2626\">+0.58%</span></td><td><span style=\"color:#16a34a\">-2.93%</span></td><td><span style=\"color:#16a34a\">-2.59%</span></td></tr>\n<tr><td>TSLA</td><td><span style=\"color:#16a34a\">-2.69%</span></td><td><span style=\"color:#dc2626\">+0.10%</span></td><td><span style=\"color:#dc2626\">+0.95%</span></td><td><span style=\"color:#16a34a\">-2.43%</span></td><td><span style=\"color:#16a34a\">-7.64%</span></td></tr>\n<tr><td>XPEV</td><td><span style=\"color:#dc2626\">+3.20%</span></td><td><span style=\"color:#dc2626\">+3.31%</span></td><td><span style=\"color:#16a34a\">-2.50%</span></td><td><span style=\"color:#16a34a\">-3.70%</span></td><td><span style=\"color:#16a34a\">-13.86%</span></td></tr>\n<tr><td>INTC</td><td><span style=\"color:#16a34a\">-7.02%</span></td><td><span style=\"color:#16a34a\">-0.54%</span></td><td><span style=\"color:#16a34a\">-0.91%</span></td><td><span style=\"color:#dc2626\">+1.92%</span></td><td><span style=\"color:#16a34a\">-7.97%</span></td></tr>\n<tr><td>COHR</td><td><span style=\"color:#16a34a\">-6.75%</span></td><td><span style=\"color:#dc2626\">+3.65%</span></td><td><span style=\"color:#dc2626\">+0.94%</span></td><td><span style=\"color:#dc2626\">+0.99%</span></td><td><span style=\"color:#16a34a\">-12.90%</span></td></tr>\n<tr><td>NOK</td><td><span style=\"color:#16a34a\">-4.71%</span></td><td><span style=\"color:#16a34a\">-1.30%</span></td><td><span style=\"color:#64748b\">+0.00%</span></td><td><span style=\"color:#16a34a\">-1.19%</span></td><td><span style=\"color:#16a34a\">-8.27%</span></td></tr>\n<tr><td>TSM</td><td><span style=\"color:#16a34a\">-6.34%</span></td><td><span style=\"color:#16a34a\">-3.68%</span></td><td><span style=\"color:#dc2626\">+0.81%</span></td><td><span style=\"color:#16a34a\">-2.90%</span></td><td><span style=\"color:#16a34a\">-9.48%</span></td></tr>\n<tr><td>AMD</td><td><span style=\"color:#16a34a\">-5.58%</span></td><td><span style=\"color:#16a34a\">-0.17%</span></td><td><span style=\"color:#dc2626\">+5.31%</span></td><td><span style=\"color:#16a34a\">-7.72%</span></td><td><span style=\"color:#16a34a\">-13.25%</span></td></tr>\n<tr><td>QUBT</td><td><span style=\"color:#16a34a\">-5.58%</span></td><td><span style=\"color:#16a34a\">-2.29%</span></td><td><span style=\"color:#16a34a\">-0.58%</span></td><td><span style=\"color:#16a34a\">-4.31%</span></td><td><span style=\"color:#16a34a\">-9.84%</span></td></tr>\n<tr><td>MRVL</td><td><span style=\"color:#16a34a\">-7.27%</span></td><td><span style=\"color:#dc2626\">+2.33%</span></td><td><span style=\"color:#16a34a\">-2.15%</span></td><td><span style=\"color:#16a34a\">-4.86%</span></td><td><span style=\"color:#16a34a\">-11.69%</span></td></tr>\n<tr><td>NVDA</td><td><span style=\"color:#16a34a\">-4.12%</span></td><td><span style=\"color:#16a34a\">-0.44%</span></td><td><span style=\"color:#16a34a\">-2.89%</span></td><td><span style=\"color:#16a34a\">-3.30%</span></td><td><span style=\"color:#16a34a\">-14.01%</span></td></tr>\n<tr><td>MU</td><td><span style=\"color:#16a34a\">-7.62%</span></td><td><span style=\"color:#16a34a\">-0.92%</span></td><td><span style=\"color:#16a34a\">-1.00%</span></td><td><span style=\"color:#16a34a\">-2.10%</span></td><td><span style=\"color:#16a34a\">-13.89%</span></td></tr>\n<tr><td>CRCL</td><td><span style=\"color:#16a34a\">-7.32%</span></td><td><span style=\"color:#16a34a\">-5.24%</span></td><td><span style=\"color:#16a34a\">-2.42%</span></td><td><span style=\"color:#16a34a\">-2.68%</span></td><td><span style=\"color:#16a34a\">-8.42%</span></td></tr>\n<tr><td>CRWV</td><td><span style=\"color:#16a34a\">-6.12%</span></td><td><span style=\"color:#dc2626\">+0.02%</span></td><td><span style=\"color:#16a34a\">-4.13%</span></td><td><span style=\"color:#16a34a\">-6.10%</span></td><td><span style=\"color:#16a34a\">-12.02%</span></td></tr>\n<tr><td>BE</td><td><span style=\"color:#16a34a\">-7.66%</span></td><td><span style=\"color:#16a34a\">-2.15%</span></td><td><span style=\"color:#16a34a\">-1.43%</span></td><td><span style=\"color:#16a34a\">-1.68%</span></td><td><span style=\"color:#16a34a\">-15.30%</span></td></tr>\n<tr><td>NBIS</td><td><span style=\"color:#16a34a\">-7.55%</span></td><td><span style=\"color:#16a34a\">-1.02%</span></td><td><span style=\"color:#dc2626\">+0.87%</span></td><td><span style=\"color:#16a34a\">-9.39%</span></td><td><span style=\"color:#16a34a\">-16.11%</span></td></tr>\n<tr><td>MSTR</td><td><span style=\"color:#16a34a\">-7.70%</span></td><td><span style=\"color:#16a34a\">-6.34%</span></td><td><span style=\"color:#16a34a\">-6.40%</span></td><td><span style=\"color:#16a34a\">-4.64%</span></td><td><span style=\"color:#16a34a\">-9.67%</span></td></tr>\n</tbody></table></details>\n<h3>🚨 本周异常事件回顾</h3>\n<p>五份日报合计<strong>73条去重异常事件</strong>，按“报告日期+代码+完整信号”去重；同日重复展示不重复计数，不同日独立发生保留。每日为18、16、8、15、16条。常规信号标注实际美东收盘日，盘前信号对应报告日。本周一日报含上周五常规信号，按用户要求保留，不能将73条误说成纯本周美东常规成交异常。</p>\n<table class=\"stock-table\"><thead><tr><th>报告日期</th><th>常规交易日/时段</th><th>代码</th><th>原始异常</th></tr></thead><tbody>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>MU</td><td>盘前&gt;4%(-4.67%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>AMD</td><td>日涨跌&gt;4%(-8.75%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>AMD</td><td>盘前&gt;4%(-4.32%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>INTC</td><td>盘前&gt;4%(-4.44%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>NBIS</td><td>日涨跌&gt;4%(-9.92%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>NBIS</td><td>盘前&gt;4%(-4.86%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>CRWV</td><td>日涨跌&gt;4%(-6.13%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>CRWV</td><td>盘前&gt;4%(-5.51%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>CRCL</td><td>盘前&gt;4%(-6.99%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>MSTR</td><td>盘前&gt;4%(-7.02%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>MRVL</td><td>日涨跌&gt;4%(-4.68%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>MRVL</td><td>盘前&gt;4%(-4.57%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>COHR</td><td>日涨跌&gt;4%(-6.00%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>COHR</td><td>盘前&gt;4%(-5.02%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>QUBT</td><td>日涨跌&gt;4%(-4.47%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-13 常规</td><td>BE</td><td>日涨跌&gt;4%(-4.92%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>BE</td><td>盘前&gt;4%(-4.60%)</td></tr>\n<tr><td>2026-11-16</td><td>2026-11-16 盘前</td><td>TSM</td><td>盘前&gt;4%(-4.20%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>MU</td><td>日涨跌&gt;4%(-7.62%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>AMD</td><td>日涨跌&gt;4%(-5.58%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>INTC</td><td>日涨跌&gt;4%(-7.02%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>NVDA</td><td>日涨跌&gt;4%(-4.12%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>NBIS</td><td>日涨跌&gt;4%(-7.55%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>CRWV</td><td>日涨跌&gt;4%(-6.12%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>CRCL</td><td>日涨跌&gt;4%(-7.32%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>MSTR</td><td>日涨跌&gt;4%(-7.70%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>MSTR</td><td>RSI6超卖(14.7)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>XPEV</td><td>量比&gt;2(2.38)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>MRVL</td><td>日涨跌&gt;4%(-7.27%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>NOK</td><td>日涨跌&gt;4%(-4.71%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>COHR</td><td>日涨跌&gt;4%(-6.75%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>QUBT</td><td>日涨跌&gt;4%(-5.58%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>BE</td><td>日涨跌&gt;4%(-7.66%)</td></tr>\n<tr><td>2026-11-17</td><td>2026-11-16 常规</td><td>TSM</td><td>日涨跌&gt;4%(-6.34%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-18 盘前</td><td>NBIS</td><td>盘前&gt;4%(+6.29%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-18 盘前</td><td>CRWV</td><td>盘前&gt;4%(+4.55%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-17 常规</td><td>CRCL</td><td>日涨跌&gt;4%(-5.24%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-17 常规</td><td>CRCL</td><td>RSI6超卖(13.2)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-17 常规</td><td>MSTR</td><td>日涨跌&gt;4%(-6.34%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-17 常规</td><td>MSTR</td><td>RSI6超卖(11.8)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-18 盘前</td><td>COHR</td><td>盘前&gt;4%(+5.43%)</td></tr>\n<tr><td>2026-11-18</td><td>2026-11-18 盘前</td><td>BE</td><td>盘前&gt;4%(+5.59%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>MU</td><td>盘前&gt;4%(+4.80%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>AMD</td><td>日涨跌&gt;4%(+5.31%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>INTC</td><td>盘前&gt;4%(+4.37%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>GOOG</td><td>盘前&gt;4%(+4.01%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>NVDA</td><td>RSI6超卖(13.6)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>NBIS</td><td>盘前&gt;4%(+5.09%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>CRWV</td><td>日涨跌&gt;4%(-4.13%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>CRWV</td><td>盘前&gt;4%(+5.07%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>CRCL</td><td>RSI6超卖(12.1)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>MSTR</td><td>日涨跌&gt;4%(-6.40%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-18 常规</td><td>MSTR</td><td>RSI6超卖(9.7)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>MSTR</td><td>盘前&gt;4%(+4.67%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>MRVL</td><td>盘前&gt;4%(+4.22%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>COHR</td><td>盘前&gt;4%(+4.72%)</td></tr>\n<tr><td>2026-11-19</td><td>2026-11-19 盘前</td><td>BE</td><td>盘前&gt;4%(+5.57%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>MU</td><td>盘前&gt;4%(-4.10%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>AMD</td><td>日涨跌&gt;4%(-7.72%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>AMD</td><td>盘前&gt;4%(-5.34%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>INTC</td><td>盘前&gt;4%(-4.64%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>NVDA</td><td>RSI6超卖(11.5)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>NBIS</td><td>日涨跌&gt;4%(-9.39%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>NBIS</td><td>盘前&gt;4%(-4.51%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>CRWV</td><td>日涨跌&gt;4%(-6.10%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>CRWV</td><td>盘前&gt;4%(-4.12%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>CRCL</td><td>RSI6超卖(10.9)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>MSTR</td><td>日涨跌&gt;4%(-4.64%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>MSTR</td><td>RSI6超卖(8.4)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>MRVL</td><td>日涨跌&gt;4%(-4.86%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>COHR</td><td>盘前&gt;4%(-5.46%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-19 常规</td><td>QUBT</td><td>日涨跌&gt;4%(-4.31%)</td></tr>\n<tr><td>2026-11-20</td><td>2026-11-20 盘前</td><td>BE</td><td>盘前&gt;4%(-5.42%)</td></tr>\n</tbody></table>\n<p><strong>周五收盘补充观察（未混入73条存档计数）：</strong>16只当日跌幅超过4%；NVDA -14.01%、NBIS -16.11%、BE -15.30%、MU -13.89%等体现广泛风险收缩。RSI6&lt;15：NVDA, CRCL, MSTR, QUBT。盘后均反弹但仅约1%至4%，不构成右侧趋势确认。原始补充信号保存在meta.friday_latest_signals。</p>\n<h3>📰 本周重要新闻 TOP 5</h3>\n<p>从五份日报去重后的82组逐股新闻候选中，按财务可验证性、持仓相关性与风险影响选择。过滤纯盘口播报和重复标题。标题中夸张数字、管理层与融资传闻不作为已确认事实，旧财报复盘明确标期；所有候选及来源保留在meta。</p><ol>\n<li><strong>NVDA FY2027Q3实绩发布：AI增长与回款风险并存</strong>（归档2026-11-18）<p>11月17日美东发布、本周日报已核验并归档。营收1158.44亿美元，GAAP毛利率74.8%，净利652.87亿美元；必须同步观察供给承诺、担保敞口与回款周期。周五跌14.01%说明财报数字强不等于市场风险已消失。</p><p><a href=\"daily/daily_20261118_1918.json\" target=\"_blank\" rel=\"noopener\">来源日报原始归档</a>；<a href=\"earnings/NVDA-2027Q3.html\" target=\"_blank\" rel=\"noopener\">已有财报解读</a>；<a href=\"https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm\" target=\"_blank\" rel=\"noopener\">SEC原文</a>；<a href=\"http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261118185041b69007d2&amp;s=b\" target=\"_blank\" rel=\"noopener\">原始新闻链接</a></p></li>\n<li><strong>小鹏Q3收入与交付增长，亏损同比扩大</strong>（归档2026-11-17）<p>11月16日本期6-K实绩：营收242.76048亿元人民币，净亏8.67975亿元，亏损同比扩大127.9%，汽车毛利率13.1%。规模增长尚未转化为盈利，机器人及车型催化不能替代现金流验证。</p><p><a href=\"daily/daily_20261117_1917.json\" target=\"_blank\" rel=\"noopener\">来源日报原始归档</a>；<a href=\"earnings/XPEV-2026Q3.html\" target=\"_blank\" rel=\"noopener\">已有财报解读</a>；<a href=\"https://www.sec.gov/Archives/edgar/data/1810997/000119312526461897/d182197dex991.htm\" target=\"_blank\" rel=\"noopener\">SEC原文</a>；<a href=\"http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111717461694d4e377&amp;s=b\" target=\"_blank\" rel=\"noopener\">原始新闻链接</a></p></li>\n<li><strong>MU：NAND降价疑虑与长期供货紧张报道并存</strong>（归档2026-11-20）<p>五份日报中存储价格、长期订单与DRAM诉讼反复出现。周五候选标题包括“NAND Flash，要降价了？”及“2027年自身75%库存已售罄”；这里只复盘报道，不把预订、诉讼主张或新闻标题当作已兑现业绩，须区分NAND、DRAM与HBM。</p><p><a href=\"daily/daily_20261120_1920.json\" target=\"_blank\" rel=\"noopener\">来源日报原始归档</a>；<a href=\"http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120185955a706f83c&amp;s=b\" target=\"_blank\" rel=\"noopener\">原始新闻链接</a></p></li>\n<li><strong>Nebius减亏与交付、融资压力成为本周焦点</strong>（归档2026-11-20）<p>本周新闻重新引用已于11月12日发布的Q3，不是新增财报：净亏3750万美元、同比减亏68.75%。减亏仍不等于盈利；周跌幅位于后列，合同与需求叙事需由交付和融资能力验证。</p><p><a href=\"daily/daily_20261120_1920.json\" target=\"_blank\" rel=\"noopener\">来源日报原始归档</a>；<a href=\"earnings/NBIS-2026Q3.html\" target=\"_blank\" rel=\"noopener\">已有财报解读</a>；<a href=\"https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm\" target=\"_blank\" rel=\"noopener\">SEC原文</a>；<a href=\"http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026112000011694d8f13e&amp;s=b\" target=\"_blank\" rel=\"noopener\">原始新闻链接</a></p></li>\n<li><strong>CoreWeave融资风险讨论升温，营收增长不能掩盖亏损</strong>（归档2026-11-19）<p>本周复盘既有Q3业绩与融资风险：净亏7.09亿美元，净利率样本-19.37%，现金投入巨大。创始人套现及管理层报道未逐项独立核实，列为待核线索，不作为已确认事实或买入依据。Q3原于11月10日披露，本周不重复认定为新财报。</p><p><a href=\"daily/daily_20261119_1913.json\" target=\"_blank\" rel=\"noopener\">来源日报原始归档</a>；<a href=\"earnings/CRWV-2026Q3.html\" target=\"_blank\" rel=\"noopener\">已有财报解读</a>；<a href=\"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm\" target=\"_blank\" rel=\"noopener\">SEC原文</a></p></li>\n</ol>\n<h3>📅 下周关键事件预告</h3>\n<ul><li><strong>财报（11/23至11/27）：</strong>17只自选股disclosure查询未发现该周预约披露；这不是对尚未更新日历的绝对保证。下一已列预约为MRVL 12/01、MU 12/17，都在下周之外。NVDA和XPEV本周已发布，不重复当作下周财报。</li><li><strong>除权除息：</strong>17只dividend --all查询未返回下周除权日；部分标的为空，仅表示接口暂无数据。按除权日而非派息日判断。</li><li><strong>11/26（周四）感恩节：</strong>美股常规交易休市；本周全部常规交易日已完成，下周仅三个完整交易日和一个半日。</li><li><strong>11/27（周五）提前收盘：</strong>股票13:00 EST，即北京时间11/28 02:00；符合条件的期权13:15 EST，即02:15。个股期权不一概适用13:15，须核对交易场所和合约。</li><li><strong>期权到期：</strong>若持有11/27到期周权，提前核对最后交易时间、行权/放弃行权截止、被指派现金与股票需求，券商截止可能更早；不是所有自选股或合约都有这一到期序列。避免假日薄流动性中裸卖或临期加杠杆。</li><li><strong>待核线索：</strong>11/19归档新闻提及小鹏11/25科技日，缺少可核验官方原文，不列为已确认事件，更不能据此预先赌发布兑现。</li></ul>\n<p>事件接口已随依赖迁移：reserve → disclosure，exdiv → dividend。交易所休市与提前收盘另经<a href=\"https://www.nyse.com/markets/hours-calendars\" target=\"_blank\" rel=\"noopener\">NYSE官方日历</a>核验；不凭经验猜星期或美东时差。</p>\n<h3>💡 下周操作策略建议</h3>\n<ul><li><strong>先防守，后验证：</strong>17只全部下跌，排名第一只是跌得少。盘后普遍回升不是反转，下一周优先看常规收盘能否修复均线、止跌是否扩散，不因RSI超卖或跌离52周高点就加倍抄底。本周报不重跑每日信号引擎，不发布新的Strong Buy、买卖份额或下单指令。</li><li><strong>半导体与算力：</strong>MU/AMD/NVDA/MRVL/TSM关注订单兑现、产品结构与现金回收；NVDA财报增长未消除价格和信用敞口风险。先等下一交易日确认，不追盘后反弹。</li><li><strong>AI云与高波动：</strong>NBIS/CRWV优先复核交付、现金投入与融资；亏损或融资压力不能用“算力需求强”一句话抵消。QUBT仍属小仓位风险资产，不能按成熟价值股死扛。</li><li><strong>Crypto与新能源车：</strong>MSTR/CRCL受风险偏好和币价传导，极度恐慌不是底部证据。XPEV本期亏损同比扩大，TSLA盈利质量与估值需分开，新闻发布不等于交易逻辑已兑现。</li><li><strong>假日仓位：</strong>尊重既定风险预算，整体仓位维持不高于60%、现金至少40%的防守框架；这是风险上限，不代表已读取或核验账户现有仓位。财报前优先锁利减赌注，假日前控制临期衍生品与隔夜敞口。</li><li><strong>铁律一：</strong>连续冲高之后回调5%一定开始止盈，但不能把已持续下行多日的标的机械称为“刚冲高保护利润”；有盈利的交易按各自买入与峰值记录核验。</li><li><strong>铁律二：</strong>按交易逻辑买入而没有按预期走，及时卖出；先处理已经失效的旧计划，不为续命不断下移止损。铁律三：打野小仓位同样必须止损，不按价值股死扛。以上防守建议不与三条铁律冲突。</li></ul>\n<p><strong>逐股周复盘：</strong>以下17只全部覆盖；止损价应以每笔既定交易锚点和现仓风险为准。本任务未获账户成本与旧计划，不编造新的买入价或止损线。</p>\n<h4>1. GOOG · 谷歌-C</h4><p>周涨跌<span style=\"color:#16a34a\">-9.75%</span>；周一开盘$290.55 → 周五收盘$264.00；周五单日<span style=\"color:#16a34a\">-2.59%</span>，盘后$268.50（<span style=\"color:#dc2626\">+1.70%</span>）；最新RSI6=19.64。归档异常1条。跌幅相对较小但仍下跌，AI模型进展需由盈利与现金流验证。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>2. TSLA · 特斯拉</h4><p>周涨跌<span style=\"color:#16a34a\">-11.38%</span>；周一开盘$387.00 → 周五收盘$345.82；周五单日<span style=\"color:#16a34a\">-7.64%</span>，盘后$351.07（<span style=\"color:#dc2626\">+1.52%</span>）；最新RSI6=24.00。归档异常0条。估值与盈利质量须独立复核，亏损中的交易不能靠远期产品故事续命。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>3. XPEV · 小鹏集团</h4><p>周涨跌<span style=\"color:#16a34a\">-13.77%</span>；周一开盘$9.90 → 周五收盘$8.08；周五单日<span style=\"color:#16a34a\">-13.86%</span>，盘后$8.17（<span style=\"color:#dc2626\">+1.11%</span>）；最新RSI6=20.02。归档异常1条。本周Q3已实际发布，亏损同比扩大；科技日待核，不预先赌兑现。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>4. INTC · 英特尔</h4><p>周涨跌<span style=\"color:#16a34a\">-14.05%</span>；周一开盘$56.71 → 周五收盘$51.28；周五单日<span style=\"color:#16a34a\">-7.97%</span>，盘后$53.00（<span style=\"color:#dc2626\">+3.36%</span>）；最新RSI6=24.04。归档异常4条。负PE与持续回撤风险仍需复核，投资者诉讼报道不等于司法结论。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>5. COHR · Coherent Corp.</h4><p>周涨跌<span style=\"color:#16a34a\">-14.18%</span>；周一开盘$201.36 → 周五收盘$187.22；周五单日<span style=\"color:#16a34a\">-12.90%</span>，盘后$193.70（<span style=\"color:#dc2626\">+3.46%</span>）；最新RSI6=32.28。归档异常6条。光通信需求要对应订单回款和投入，盘后上涨不能替代趋势确认。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>6. NOK · 诺基亚</h4><p>周涨跌<span style=\"color:#16a34a\">-14.75%</span>；周一开盘$7.87 → 周五收盘$6.88；周五单日<span style=\"color:#16a34a\">-8.27%</span>，盘后$7.00（<span style=\"color:#dc2626\">+1.74%</span>）；最新RSI6=17.58。归档异常1条。AI-RAN合作与专利许可线索不是当期现金流，低净利率不自动等于盈利崩塌。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>7. TSM · 台积电</h4><p>周涨跌<span style=\"color:#16a34a\">-20.07%</span>；周一开盘$379.59 → 周五收盘$318.71；周五单日<span style=\"color:#16a34a\">-9.48%</span>，盘后$328.59（<span style=\"color:#dc2626\">+3.10%</span>）；最新RSI6=17.57。归档异常2条。产能与供电协议属中期线索，周五跌幅扩大说明板块风险未散。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>8. AMD · 超威半导体</h4><p>周涨跌<span style=\"color:#16a34a\">-20.54%</span>；周一开盘$503.45 → 周五收盘$424.39；周五单日<span style=\"color:#16a34a\">-13.25%</span>，盘后$439.44（<span style=\"color:#dc2626\">+3.55%</span>）；最新RSI6=29.70。归档异常6条。周五大幅下跌，产品与超算份额线索不足以单独确认反转。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>9. QUBT · Quantum Computing Inc.</h4><p>周涨跌<span style=\"color:#16a34a\">-20.86%</span>；周一开盘$5.38 → 周五收盘$4.40；周五单日<span style=\"color:#16a34a\">-9.84%</span>，盘后$4.51（<span style=\"color:#dc2626\">+2.50%</span>）；最新RSI6=14.93。归档异常3条。仍亏损且高波动，小仓位必须设定并遵守既有止损。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>10. MRVL · 迈威尔科技</h4><p>周涨跌<span style=\"color:#16a34a\">-22.00%</span>；周一开盘$147.56 → 周五收盘$122.28；周五单日<span style=\"color:#16a34a\">-11.69%</span>，盘后$125.75（<span style=\"color:#dc2626\">+2.84%</span>）；最新RSI6=19.85。归档异常5条。12/01预约财报不在下周，假日前可准备事件清单，不追新闻标题。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>11. NVDA · 英伟达</h4><p>周涨跌<span style=\"color:#16a34a\">-22.92%</span>；周一开盘$159.02 → 周五收盘$125.53；周五单日<span style=\"color:#16a34a\">-14.01%</span>，盘后$130.03（<span style=\"color:#dc2626\">+3.58%</span>）；最新RSI6=6.44。归档异常3条。本周新财报已有原文归档，强劲收入与供应承诺、回款压力同时看。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>12. MU · 美光科技</h4><p>周涨跌<span style=\"color:#16a34a\">-23.62%</span>；周一开盘$734.16 → 周五收盘$594.51；周五单日<span style=\"color:#16a34a\">-13.89%</span>，盘后$610.60（<span style=\"color:#dc2626\">+2.71%</span>）；最新RSI6=18.73。归档异常4条。存储产品周期与价格结构分化，长期订单报道不能替代现金兑现。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>13. CRCL · Circle互联网集团</h4><p>周涨跌<span style=\"color:#16a34a\">-23.62%</span>；周一开盘$57.67 → 周五收盘$47.51；周五单日<span style=\"color:#16a34a\">-8.42%</span>，盘后$48.96（<span style=\"color:#dc2626\">+3.05%</span>）；最新RSI6=7.96。归档异常6条。稳定币收入结构、利率和币价不同，极低RSI不能证明纯技术错杀。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>14. CRWV · CoreWeave</h4><p>周涨跌<span style=\"color:#16a34a\">-25.64%</span>；周一开盘$49.36 → 周五收盘$39.51；周五单日<span style=\"color:#16a34a\">-12.02%</span>，盘后$40.95（<span style=\"color:#dc2626\">+3.64%</span>）；最新RSI6=23.90。归档异常8条。营收增长与大额亏损并存，融资叙事不能等同经营修复。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>15. BE · Bloom Energy</h4><p>周涨跌<span style=\"color:#16a34a\">-25.83%</span>；周一开盘$176.60 → 周五收盘$142.39；周五单日<span style=\"color:#16a34a\">-15.30%</span>，盘后$145.61（<span style=\"color:#dc2626\">+2.26%</span>）；最新RSI6=20.82。归档异常6条。数据中心供电叙事强但周内大跌，关注现金回收与资本投入。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>16. NBIS · Nebius集团</h4><p>周涨跌<span style=\"color:#16a34a\">-29.83%</span>；周一开盘$106.80 → 周五收盘$81.31；周五单日<span style=\"color:#16a34a\">-16.11%</span>，盘后$84.53（<span style=\"color:#dc2626\">+3.96%</span>）；最新RSI6=19.37。归档异常7条。本周明显落后，旧Q3减亏尚未转盈，交付与融资优先。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<h4>17. MSTR · Strategy</h4><p>周涨跌<span style=\"color:#16a34a\">-30.30%</span>；周一开盘$103.74 → 周五收盘$77.80；周五单日<span style=\"color:#16a34a\">-9.67%</span>，盘后$79.50（<span style=\"color:#dc2626\">+2.19%</span>）；最新RSI6=6.41。归档异常10条。周内末位，BTC敞口与融资能力叠加，公允价值利润不等同持续经营利润。 本周报只提供复盘与条件性风险提示，不将历史日报的Buy档位直接沿用为下周建议。</p>\n<div class=\"web3-report\"><h3>🪙 本周 Web3 摘要</h3>\n<p><strong>统计边界：</strong>BTC/ETH为全年无休资产，以下按11/13日报快照至11/20日报快照计算同源一周变化，不是交易所周五精确收盘；仅汇总已有日报，不生成周末日报，也不伪装为11/21实时币价。另列周一至周五变化供区分。</p>\n<ul><li><strong>BTC周变化：</strong>$69,282 → $61,753，<span style=\"color:#16a34a\">-10.87%</span>；周一快照$64,667至周五变化<span style=\"color:#16a34a\">-4.51%</span>。</li><li><strong>ETH周变化：</strong>$1,952 → $1,749，<span style=\"color:#16a34a\">-10.40%</span>；周一快照$1,810至周五变化<span style=\"color:#16a34a\">-3.37%</span>。</li><li><strong>恐贪指数：</strong>上周五20 → 本周五10；本周一13 → 周五10。全周13、12、13、12、10，始终极度恐慌，情绪恶化不等于底部已确认。</li><li><strong>主题聚合：</strong>五份日报反复关注ETF撤资、宏观流动性收紧、ETH衍生品与DeFi信用压力、合规稳定币及RWA。聚合API缺少逐条可核验原文的管理层、安全和监管传闻不升级为事实。</li><li><strong>跨资产策略：</strong>不把13F存量与ETF当日流量相加，不因为恐贪个位数便上杠杆；先验证BTC止跌、资金流缓和和信用风险，再考虑MSTR/CRCL的风险传导。</li></ul>\n<table class=\"stock-table\"><thead><tr><th>日报日期</th><th>BTC快照</th><th>ETH快照</th><th>恐贪指数</th></tr></thead><tbody>\n<tr><td>2026-11-13</td><td>$69,282</td><td>$1,952</td><td>20</td></tr>\n<tr><td>2026-11-16</td><td>$64,667</td><td>$1,810</td><td>13</td></tr>\n<tr><td>2026-11-17</td><td>$64,118</td><td>$1,789</td><td>12</td></tr>\n<tr><td>2026-11-18</td><td>$64,242</td><td>$1,802</td><td>13</td></tr>\n<tr><td>2026-11-19</td><td>$63,675</td><td>$1,801</td><td>12</td></tr>\n<tr><td>2026-11-20</td><td>$61,753</td><td>$1,749</td><td>10</td></tr>\n</tbody></table></div>\n<p>本报告为个人投资备忘，不构成投资建议。数据来源：腾讯自选股CLI、五份已归档日报与已有财报原文归档、NYSE交易日历。行情抓取：2026-11-21T20:08:41+08:00；美东：2026-11-21T07:08:41-05:00。</p></div>",
+  "web3_body_html": "<div class=\"web3-report\"><h3>🪙 本周 Web3 摘要</h3>\n<p><strong>统计边界：</strong>BTC/ETH为全年无休资产，以下按11/13日报快照至11/20日报快照计算同源一周变化，不是交易所周五精确收盘；仅汇总已有日报，不生成周末日报，也不伪装为11/21实时币价。另列周一至周五变化供区分。</p>\n<ul><li><strong>BTC周变化：</strong>$69,282 → $61,753，<span style=\"color:#16a34a\">-10.87%</span>；周一快照$64,667至周五变化<span style=\"color:#16a34a\">-4.51%</span>。</li><li><strong>ETH周变化：</strong>$1,952 → $1,749，<span style=\"color:#16a34a\">-10.40%</span>；周一快照$1,810至周五变化<span style=\"color:#16a34a\">-3.37%</span>。</li><li><strong>恐贪指数：</strong>上周五20 → 本周五10；本周一13 → 周五10。全周13、12、13、12、10，始终极度恐慌，情绪恶化不等于底部已确认。</li><li><strong>主题聚合：</strong>五份日报反复关注ETF撤资、宏观流动性收紧、ETH衍生品与DeFi信用压力、合规稳定币及RWA。聚合API缺少逐条可核验原文的管理层、安全和监管传闻不升级为事实。</li><li><strong>跨资产策略：</strong>不把13F存量与ETF当日流量相加，不因为恐贪个位数便上杠杆；先验证BTC止跌、资金流缓和和信用风险，再考虑MSTR/CRCL的风险传导。</li></ul>\n<table class=\"stock-table\"><thead><tr><th>日报日期</th><th>BTC快照</th><th>ETH快照</th><th>恐贪指数</th></tr></thead><tbody>\n<tr><td>2026-11-13</td><td>$69,282</td><td>$1,952</td><td>20</td></tr>\n<tr><td>2026-11-16</td><td>$64,667</td><td>$1,810</td><td>13</td></tr>\n<tr><td>2026-11-17</td><td>$64,118</td><td>$1,789</td><td>12</td></tr>\n<tr><td>2026-11-18</td><td>$64,242</td><td>$1,802</td><td>13</td></tr>\n<tr><td>2026-11-19</td><td>$63,675</td><td>$1,801</td><td>12</td></tr>\n<tr><td>2026-11-20</td><td>$61,753</td><td>$1,749</td><td>10</td></tr>\n</tbody></table></div>",
+  "tickers": [
+    "MU",
+    "AMD",
+    "INTC",
+    "GOOG",
+    "NVDA",
+    "NBIS",
+    "CRWV",
+    "CRCL",
+    "MSTR",
+    "TSLA",
+    "XPEV",
+    "MRVL",
+    "NOK",
+    "COHR",
+    "QUBT",
+    "BE",
+    "TSM"
+  ],
+  "summary": "11/16~11/20，17只全部下跌；相对领跑GOOG -9.75%，末位MSTR -30.30%；五份日报去重异常73条；下周感恩节休市与提前收盘。BTC同源周快照-10.87%，恐贪20→10。",
+  "meta": {
+    "report_type": "weekly",
+    "week_start": "2026-11-16",
+    "week_end": "2026-11-20",
+    "baseline_date": "2026-11-13",
+    "week_return_formula": "(fri_regular_close / prev_fri_regular_close - 1) * 100",
+    "latest_completed_session_et": "2026-11-20",
+    "source_fetched_at": "2026-11-21 20:08:41 CST",
+    "source_et_time_corrected": "2026-11-21T07:08:41-05:00",
+    "original_fetch_meta": {
+      "session": "weekend_afterhours",
+      "session_label": "周末休市 → 获取周五收盘+盘后",
+      "extended_type": "afterhours",
+      "bj_time": "2026-11-21 20:08:41 CST",
+      "et_time": "2026-11-21 08:08:41 EDT",
+      "bj_weekday": 5
+    },
+    "source_reports": [
+      "daily_20261116_1923",
+      "daily_20261117_1917",
+      "daily_20261118_1918",
+      "daily_20261119_1913",
+      "daily_20261120_1920"
+    ],
+    "missing_daily_dates": [],
+    "daily_meta_stocks_available": false,
+    "daily_snapshots": [
+      {
+        "slug": "daily_20261116_1923",
+        "date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "source_type": "recovered_from_archived_html",
+        "stocks": [
+          {
+            "symbol": "MU",
+            "name": "美光科技",
+            "close_price": 778.31,
+            "pct_1d": -2.52,
+            "extended_price": 742.0,
+            "extended_pct": -4.67,
+            "rsi6": 46.5,
+            "dist_from_52w_high_pct": -37.96,
+            "abnormal_signals": [
+              "盘前>4%(-4.67%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "AMD",
+            "name": "超威半导体",
+            "close_price": 534.06,
+            "pct_1d": -8.75,
+            "extended_price": 511.0,
+            "extended_pct": -4.32,
+            "rsi6": 53.1,
+            "dist_from_52w_high_pct": -18.9,
+            "abnormal_signals": [
+              "日涨跌>4%(-8.75%)",
+              "盘前>4%(-4.32%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "INTC",
+            "name": "英特尔",
+            "close_price": 59.66,
+            "pct_1d": -2.52,
+            "extended_price": 57.01,
+            "extended_pct": -4.44,
+            "rsi6": 36.6,
+            "dist_from_52w_high_pct": -58.09,
+            "abnormal_signals": [
+              "盘前>4%(-4.44%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "GOOG",
+            "name": "谷歌-C",
+            "close_price": 292.52,
+            "pct_1d": -0.96,
+            "extended_price": 291.94,
+            "extended_pct": -0.2,
+            "rsi6": 50.6,
+            "dist_from_52w_high_pct": -27.59,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "NVDA",
+            "name": "英伟达",
+            "close_price": 162.85,
+            "pct_1d": -2.01,
+            "extended_price": 159.14,
+            "extended_pct": -2.28,
+            "rsi6": 19.6,
+            "dist_from_52w_high_pct": -33.09,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "NBIS",
+            "name": "Nebius集团",
+            "close_price": 115.88,
+            "pct_1d": -9.92,
+            "extended_price": 110.25,
+            "extended_pct": -4.86,
+            "rsi6": 33.8,
+            "dist_from_52w_high_pct": -61.36,
+            "abnormal_signals": [
+              "日涨跌>4%(-9.92%)",
+              "盘前>4%(-4.86%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "CRWV",
+            "name": "CoreWeave",
+            "close_price": 53.13,
+            "pct_1d": -6.13,
+            "extended_price": 50.2,
+            "extended_pct": -5.51,
+            "rsi6": 48.4,
+            "dist_from_52w_high_pct": -61.57,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.13%)",
+              "盘前>4%(-5.51%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "CRCL",
+            "name": "Circle互联网集团",
+            "close_price": 62.2,
+            "pct_1d": -2.54,
+            "extended_price": 57.85,
+            "extended_pct": -6.99,
+            "rsi6": 22.1,
+            "dist_from_52w_high_pct": -55.57,
+            "abnormal_signals": [
+              "盘前>4%(-6.99%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "MSTR",
+            "name": "Strategy",
+            "close_price": 111.62,
+            "pct_1d": -2.44,
+            "extended_price": 103.78,
+            "extended_pct": -7.02,
+            "rsi6": 20.2,
+            "dist_from_52w_high_pct": -47.8,
+            "abnormal_signals": [
+              "盘前>4%(-7.02%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "TSLA",
+            "name": "特斯拉",
+            "close_price": 390.22,
+            "pct_1d": -1.82,
+            "extended_price": 387.92,
+            "extended_pct": -0.59,
+            "rsi6": 54.9,
+            "dist_from_52w_high_pct": -21.77,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "XPEV",
+            "name": "小鹏集团",
+            "close_price": 9.37,
+            "pct_1d": -0.95,
+            "extended_price": 9.73,
+            "extended_pct": 3.82,
+            "rsi6": 36.6,
+            "dist_from_52w_high_pct": -64.0,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "MRVL",
+            "name": "迈威尔科技",
+            "close_price": 156.76,
+            "pct_1d": -4.68,
+            "extended_price": 149.6,
+            "extended_pct": -4.57,
+            "rsi6": 37.3,
+            "dist_from_52w_high_pct": -52.46,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.68%)",
+              "盘前>4%(-4.57%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "NOK",
+            "name": "诺基亚",
+            "close_price": 8.07,
+            "pct_1d": -2.54,
+            "extended_price": 7.94,
+            "extended_pct": -1.61,
+            "rsi6": 42.2,
+            "dist_from_52w_high_pct": -53.54,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "COHR",
+            "name": "Coherent Corp.",
+            "close_price": 218.15,
+            "pct_1d": -6.0,
+            "extended_price": 207.19,
+            "extended_pct": -5.02,
+            "rsi6": 49.8,
+            "dist_from_52w_high_pct": -50.42,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.00%)",
+              "盘前>4%(-5.02%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "QUBT",
+            "name": "Quantum Computing Inc.",
+            "close_price": 5.56,
+            "pct_1d": -4.47,
+            "extended_price": 5.45,
+            "extended_pct": -1.98,
+            "rsi6": 31.4,
+            "dist_from_52w_high_pct": -61.52,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.47%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "BE",
+            "name": "Bloom Energy",
+            "close_price": 191.99,
+            "pct_1d": -4.92,
+            "extended_price": 183.15,
+            "extended_pct": -4.6,
+            "rsi6": 45.3,
+            "dist_from_52w_high_pct": -45.35,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.92%)",
+              "盘前>4%(-4.60%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          },
+          {
+            "symbol": "TSM",
+            "name": "台积电",
+            "close_price": 398.73,
+            "pct_1d": -1.67,
+            "extended_price": 382.0,
+            "extended_pct": -4.2,
+            "rsi6": 48.3,
+            "dist_from_52w_high_pct": -18.2,
+            "abnormal_signals": [
+              "盘前>4%(-4.20%)"
+            ],
+            "trading_date_et": "2026-11-13"
+          }
+        ]
+      },
+      {
+        "slug": "daily_20261117_1917",
+        "date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "source_type": "recovered_from_archived_html",
+        "stocks": [
+          {
+            "symbol": "MU",
+            "name": "美光科技",
+            "close_price": 719.02,
+            "pct_1d": -7.62,
+            "extended_price": 714.01,
+            "extended_pct": -0.7,
+            "rsi6": 36.0,
+            "dist_from_52w_high_pct": -42.68,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.62%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "AMD",
+            "name": "超威半导体",
+            "close_price": 504.28,
+            "pct_1d": -5.58,
+            "extended_price": 503.5,
+            "extended_pct": -0.15,
+            "rsi6": 45.7,
+            "dist_from_52w_high_pct": -23.42,
+            "abnormal_signals": [
+              "日涨跌>4%(-5.58%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "INTC",
+            "name": "英特尔",
+            "close_price": 55.47,
+            "pct_1d": -7.02,
+            "extended_price": 53.95,
+            "extended_pct": -2.73,
+            "rsi6": 29.3,
+            "dist_from_52w_high_pct": -61.03,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.02%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "GOOG",
+            "name": "谷歌-C",
+            "close_price": 281.26,
+            "pct_1d": -3.85,
+            "extended_price": 279.3,
+            "extended_pct": -0.7,
+            "rsi6": 33.5,
+            "dist_from_52w_high_pct": -30.38,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "NVDA",
+            "name": "英伟达",
+            "close_price": 156.14,
+            "pct_1d": -4.12,
+            "extended_price": 155.4,
+            "extended_pct": -0.47,
+            "rsi6": 16.2,
+            "dist_from_52w_high_pct": -35.84,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.12%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "NBIS",
+            "name": "Nebius集团",
+            "close_price": 107.13,
+            "pct_1d": -7.55,
+            "extended_price": 106.66,
+            "extended_pct": -0.44,
+            "rsi6": 30.2,
+            "dist_from_52w_high_pct": -64.27,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.55%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "CRWV",
+            "name": "CoreWeave",
+            "close_price": 49.88,
+            "pct_1d": -6.12,
+            "extended_price": 49.26,
+            "extended_pct": -1.24,
+            "rsi6": 42.2,
+            "dist_from_52w_high_pct": -63.92,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.12%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "CRCL",
+            "name": "Circle互联网集团",
+            "close_price": 57.65,
+            "pct_1d": -7.32,
+            "extended_price": 56.45,
+            "extended_pct": -2.08,
+            "rsi6": 16.1,
+            "dist_from_52w_high_pct": -58.82,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.32%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "MSTR",
+            "name": "Strategy",
+            "close_price": 103.03,
+            "pct_1d": -7.7,
+            "extended_price": 101.27,
+            "extended_pct": -1.71,
+            "rsi6": 14.7,
+            "dist_from_52w_high_pct": -51.82,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.70%)",
+              "RSI6超卖(14.7)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "TSLA",
+            "name": "特斯拉",
+            "close_price": 379.74,
+            "pct_1d": -2.69,
+            "extended_price": 377.89,
+            "extended_pct": -0.49,
+            "rsi6": 45.8,
+            "dist_from_52w_high_pct": -23.87,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "XPEV",
+            "name": "小鹏集团",
+            "close_price": 9.67,
+            "pct_1d": 3.2,
+            "extended_price": 9.69,
+            "extended_pct": 0.21,
+            "rsi6": 49.9,
+            "dist_from_52w_high_pct": -59.99,
+            "abnormal_signals": [
+              "量比>2(2.38)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "MRVL",
+            "name": "迈威尔科技",
+            "close_price": 145.36,
+            "pct_1d": -7.27,
+            "extended_price": 146.21,
+            "extended_pct": 0.58,
+            "rsi6": 30.6,
+            "dist_from_52w_high_pct": -55.92,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.27%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "NOK",
+            "name": "诺基亚",
+            "close_price": 7.69,
+            "pct_1d": -4.71,
+            "extended_price": 7.6,
+            "extended_pct": -1.17,
+            "rsi6": 33.1,
+            "dist_from_52w_high_pct": -55.73,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.71%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "COHR",
+            "name": "Coherent Corp.",
+            "close_price": 203.43,
+            "pct_1d": -6.75,
+            "extended_price": 208.0,
+            "extended_pct": 2.25,
+            "rsi6": 41.5,
+            "dist_from_52w_high_pct": -53.77,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.75%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "QUBT",
+            "name": "Quantum Computing Inc.",
+            "close_price": 5.25,
+            "pct_1d": -5.58,
+            "extended_price": 5.21,
+            "extended_pct": -0.76,
+            "rsi6": 26.5,
+            "dist_from_52w_high_pct": -63.67,
+            "abnormal_signals": [
+              "日涨跌>4%(-5.58%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "BE",
+            "name": "Bloom Energy",
+            "close_price": 177.28,
+            "pct_1d": -7.66,
+            "extended_price": 176.97,
+            "extended_pct": -0.17,
+            "rsi6": 37.3,
+            "dist_from_52w_high_pct": -49.53,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.66%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          },
+          {
+            "symbol": "TSM",
+            "name": "台积电",
+            "close_price": 373.45,
+            "pct_1d": -6.34,
+            "extended_price": 368.15,
+            "extended_pct": -1.42,
+            "rsi6": 34.4,
+            "dist_from_52w_high_pct": -23.39,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.34%)"
+            ],
+            "trading_date_et": "2026-11-16"
+          }
+        ]
+      },
+      {
+        "slug": "daily_20261118_1918",
+        "date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "source_type": "recovered_from_archived_html",
+        "stocks": [
+          {
+            "symbol": "MU",
+            "name": "美光科技",
+            "close_price": 712.42,
+            "pct_1d": -0.92,
+            "extended_price": 731.6,
+            "extended_pct": 2.69,
+            "rsi6": 35.0,
+            "dist_from_52w_high_pct": -43.21,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "AMD",
+            "name": "超威半导体",
+            "close_price": 503.41,
+            "pct_1d": -0.17,
+            "extended_price": 515.56,
+            "extended_pct": 2.41,
+            "rsi6": 45.5,
+            "dist_from_52w_high_pct": -23.55,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "INTC",
+            "name": "英特尔",
+            "close_price": 55.17,
+            "pct_1d": -0.54,
+            "extended_price": 55.87,
+            "extended_pct": 1.27,
+            "rsi6": 28.8,
+            "dist_from_52w_high_pct": -61.24,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "GOOG",
+            "name": "谷歌-C",
+            "close_price": 277.6,
+            "pct_1d": -1.3,
+            "extended_price": 280.05,
+            "extended_pct": 0.88,
+            "rsi6": 29.6,
+            "dist_from_52w_high_pct": -31.28,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "NVDA",
+            "name": "英伟达",
+            "close_price": 155.46,
+            "pct_1d": -0.44,
+            "extended_price": 160.31,
+            "extended_pct": 3.12,
+            "rsi6": 15.9,
+            "dist_from_52w_high_pct": -36.12,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "NBIS",
+            "name": "Nebius集团",
+            "close_price": 106.04,
+            "pct_1d": -1.02,
+            "extended_price": 112.7,
+            "extended_pct": 6.29,
+            "rsi6": 29.7,
+            "dist_from_52w_high_pct": -64.64,
+            "abnormal_signals": [
+              "盘前>4%(+6.29%)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "CRWV",
+            "name": "CoreWeave",
+            "close_price": 49.89,
+            "pct_1d": 0.02,
+            "extended_price": 52.16,
+            "extended_pct": 4.55,
+            "rsi6": 42.2,
+            "dist_from_52w_high_pct": -63.91,
+            "abnormal_signals": [
+              "盘前>4%(+4.55%)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "CRCL",
+            "name": "Circle互联网集团",
+            "close_price": 54.63,
+            "pct_1d": -5.24,
+            "extended_price": 55.68,
+            "extended_pct": 1.92,
+            "rsi6": 13.2,
+            "dist_from_52w_high_pct": -60.98,
+            "abnormal_signals": [
+              "日涨跌>4%(-5.24%)",
+              "RSI6超卖(13.2)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "MSTR",
+            "name": "Strategy",
+            "close_price": 96.5,
+            "pct_1d": -6.34,
+            "extended_price": 97.94,
+            "extended_pct": 1.49,
+            "rsi6": 11.8,
+            "dist_from_52w_high_pct": -54.87,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.34%)",
+              "RSI6超卖(11.8)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "TSLA",
+            "name": "特斯拉",
+            "close_price": 380.11,
+            "pct_1d": 0.1,
+            "extended_price": 384.0,
+            "extended_pct": 1.02,
+            "rsi6": 46.2,
+            "dist_from_52w_high_pct": -23.8,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "XPEV",
+            "name": "小鹏集团",
+            "close_price": 9.99,
+            "pct_1d": 3.31,
+            "extended_price": 10.03,
+            "extended_pct": 0.4,
+            "rsi6": 60.4,
+            "dist_from_52w_high_pct": -56.41,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "MRVL",
+            "name": "迈威尔科技",
+            "close_price": 148.74,
+            "pct_1d": 2.33,
+            "extended_price": 154.02,
+            "extended_pct": 3.55,
+            "rsi6": 34.8,
+            "dist_from_52w_high_pct": -54.89,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "NOK",
+            "name": "诺基亚",
+            "close_price": 7.59,
+            "pct_1d": -1.3,
+            "extended_price": 7.68,
+            "extended_pct": 1.18,
+            "rsi6": 31.0,
+            "dist_from_52w_high_pct": -56.3,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "COHR",
+            "name": "Coherent Corp.",
+            "close_price": 210.86,
+            "pct_1d": 3.65,
+            "extended_price": 222.3,
+            "extended_pct": 5.43,
+            "rsi6": 46.9,
+            "dist_from_52w_high_pct": -52.08,
+            "abnormal_signals": [
+              "盘前>4%(+5.43%)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "QUBT",
+            "name": "Quantum Computing Inc.",
+            "close_price": 5.13,
+            "pct_1d": -2.29,
+            "extended_price": 5.3,
+            "extended_pct": 3.31,
+            "rsi6": 24.8,
+            "dist_from_52w_high_pct": -64.5,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "BE",
+            "name": "Bloom Energy",
+            "close_price": 173.46,
+            "pct_1d": -2.15,
+            "extended_price": 183.16,
+            "extended_pct": 5.59,
+            "rsi6": 35.4,
+            "dist_from_52w_high_pct": -50.62,
+            "abnormal_signals": [
+              "盘前>4%(+5.59%)"
+            ],
+            "trading_date_et": "2026-11-17"
+          },
+          {
+            "symbol": "TSM",
+            "name": "台积电",
+            "close_price": 359.69,
+            "pct_1d": -3.68,
+            "extended_price": 372.08,
+            "extended_pct": 3.44,
+            "rsi6": 28.9,
+            "dist_from_52w_high_pct": -26.21,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-17"
+          }
+        ]
+      },
+      {
+        "slug": "daily_20261119_1913",
+        "date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "source_type": "recovered_from_archived_html",
+        "stocks": [
+          {
+            "symbol": "MU",
+            "name": "美光科技",
+            "close_price": 705.27,
+            "pct_1d": -1.0,
+            "extended_price": 739.13,
+            "extended_pct": 4.8,
+            "rsi6": 33.7,
+            "dist_from_52w_high_pct": -43.78,
+            "abnormal_signals": [
+              "盘前>4%(+4.80%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "AMD",
+            "name": "超威半导体",
+            "close_price": 530.14,
+            "pct_1d": 5.31,
+            "extended_price": 546.06,
+            "extended_pct": 3.0,
+            "rsi6": 53.8,
+            "dist_from_52w_high_pct": -19.5,
+            "abnormal_signals": [
+              "日涨跌>4%(+5.31%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "INTC",
+            "name": "英特尔",
+            "close_price": 54.67,
+            "pct_1d": -0.91,
+            "extended_price": 57.06,
+            "extended_pct": 4.37,
+            "rsi6": 27.8,
+            "dist_from_52w_high_pct": -61.59,
+            "abnormal_signals": [
+              "盘前>4%(+4.37%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "GOOG",
+            "name": "谷歌-C",
+            "close_price": 279.2,
+            "pct_1d": 0.58,
+            "extended_price": 290.4,
+            "extended_pct": 4.01,
+            "rsi6": 33.7,
+            "dist_from_52w_high_pct": -30.89,
+            "abnormal_signals": [
+              "盘前>4%(+4.01%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "NVDA",
+            "name": "英伟达",
+            "close_price": 150.96,
+            "pct_1d": -2.89,
+            "extended_price": 153.72,
+            "extended_pct": 1.83,
+            "rsi6": 13.6,
+            "dist_from_52w_high_pct": -37.97,
+            "abnormal_signals": [
+              "RSI6超卖(13.6)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "NBIS",
+            "name": "Nebius集团",
+            "close_price": 106.96,
+            "pct_1d": 0.87,
+            "extended_price": 112.4,
+            "extended_pct": 5.09,
+            "rsi6": 30.8,
+            "dist_from_52w_high_pct": -64.33,
+            "abnormal_signals": [
+              "盘前>4%(+5.09%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "CRWV",
+            "name": "CoreWeave",
+            "close_price": 47.83,
+            "pct_1d": -4.13,
+            "extended_price": 50.25,
+            "extended_pct": 5.07,
+            "rsi6": 37.7,
+            "dist_from_52w_high_pct": -65.4,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.13%)",
+              "盘前>4%(+5.07%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "CRCL",
+            "name": "Circle互联网集团",
+            "close_price": 53.31,
+            "pct_1d": -2.42,
+            "extended_price": 55.32,
+            "extended_pct": 3.77,
+            "rsi6": 12.1,
+            "dist_from_52w_high_pct": -61.92,
+            "abnormal_signals": [
+              "RSI6超卖(12.1)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "MSTR",
+            "name": "Strategy",
+            "close_price": 90.32,
+            "pct_1d": -6.4,
+            "extended_price": 94.54,
+            "extended_pct": 4.67,
+            "rsi6": 9.7,
+            "dist_from_52w_high_pct": -55.71,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.40%)",
+              "RSI6超卖(9.7)",
+              "盘前>4%(+4.67%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "TSLA",
+            "name": "特斯拉",
+            "close_price": 383.72,
+            "pct_1d": 0.95,
+            "extended_price": 389.48,
+            "extended_pct": 1.5,
+            "rsi6": 50.2,
+            "dist_from_52w_high_pct": -23.08,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "XPEV",
+            "name": "小鹏集团",
+            "close_price": 9.74,
+            "pct_1d": -2.5,
+            "extended_price": 9.81,
+            "extended_pct": 0.72,
+            "rsi6": 50.5,
+            "dist_from_52w_high_pct": -56.19,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "MRVL",
+            "name": "迈威尔科技",
+            "close_price": 145.54,
+            "pct_1d": -2.15,
+            "extended_price": 151.68,
+            "extended_pct": 4.22,
+            "rsi6": 32.5,
+            "dist_from_52w_high_pct": -55.86,
+            "abnormal_signals": [
+              "盘前>4%(+4.22%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "NOK",
+            "name": "诺基亚",
+            "close_price": 7.59,
+            "pct_1d": 0.0,
+            "extended_price": 7.78,
+            "extended_pct": 2.5,
+            "rsi6": 31.0,
+            "dist_from_52w_high_pct": -56.3,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "COHR",
+            "name": "Coherent Corp.",
+            "close_price": 212.84,
+            "pct_1d": 0.94,
+            "extended_price": 222.89,
+            "extended_pct": 4.72,
+            "rsi6": 48.4,
+            "dist_from_52w_high_pct": -51.63,
+            "abnormal_signals": [
+              "盘前>4%(+4.72%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "QUBT",
+            "name": "Quantum Computing Inc.",
+            "close_price": 5.1,
+            "pct_1d": -0.58,
+            "extended_price": 5.25,
+            "extended_pct": 2.94,
+            "rsi6": 24.3,
+            "dist_from_52w_high_pct": -64.71,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "BE",
+            "name": "Bloom Energy",
+            "close_price": 170.98,
+            "pct_1d": -1.43,
+            "extended_price": 180.51,
+            "extended_pct": 5.57,
+            "rsi6": 34.0,
+            "dist_from_52w_high_pct": -51.33,
+            "abnormal_signals": [
+              "盘前>4%(+5.57%)"
+            ],
+            "trading_date_et": "2026-11-18"
+          },
+          {
+            "symbol": "TSM",
+            "name": "台积电",
+            "close_price": 362.62,
+            "pct_1d": 0.81,
+            "extended_price": 365.29,
+            "extended_pct": 0.74,
+            "rsi6": 31.7,
+            "dist_from_52w_high_pct": -25.61,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-18"
+          }
+        ]
+      },
+      {
+        "slug": "daily_20261120_1920",
+        "date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "source_type": "recovered_from_archived_html",
+        "stocks": [
+          {
+            "symbol": "MU",
+            "name": "美光科技",
+            "close_price": 690.44,
+            "pct_1d": -2.1,
+            "extended_price": 662.12,
+            "extended_pct": -4.1,
+            "rsi6": 30.9,
+            "dist_from_52w_high_pct": -44.96,
+            "abnormal_signals": [
+              "盘前>4%(-4.10%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "AMD",
+            "name": "超威半导体",
+            "close_price": 489.19,
+            "pct_1d": -7.72,
+            "extended_price": 463.06,
+            "extended_pct": -5.34,
+            "rsi6": 42.0,
+            "dist_from_52w_high_pct": -25.71,
+            "abnormal_signals": [
+              "日涨跌>4%(-7.72%)",
+              "盘前>4%(-5.34%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "INTC",
+            "name": "英特尔",
+            "close_price": 55.72,
+            "pct_1d": 1.92,
+            "extended_price": 53.14,
+            "extended_pct": -4.64,
+            "rsi6": 33.3,
+            "dist_from_52w_high_pct": -60.86,
+            "abnormal_signals": [
+              "盘前>4%(-4.64%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "GOOG",
+            "name": "谷歌-C",
+            "close_price": 271.02,
+            "pct_1d": -2.93,
+            "extended_price": 272.19,
+            "extended_pct": 0.43,
+            "rsi6": 24.9,
+            "dist_from_52w_high_pct": -32.91,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "NVDA",
+            "name": "英伟达",
+            "close_price": 145.98,
+            "pct_1d": -3.3,
+            "extended_price": 142.83,
+            "extended_pct": -2.16,
+            "rsi6": 11.5,
+            "dist_from_52w_high_pct": -40.02,
+            "abnormal_signals": [
+              "RSI6超卖(11.5)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "NBIS",
+            "name": "Nebius集团",
+            "close_price": 96.92,
+            "pct_1d": -9.39,
+            "extended_price": 92.55,
+            "extended_pct": -4.51,
+            "rsi6": 25.5,
+            "dist_from_52w_high_pct": -67.68,
+            "abnormal_signals": [
+              "日涨跌>4%(-9.39%)",
+              "盘前>4%(-4.51%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "CRWV",
+            "name": "CoreWeave",
+            "close_price": 44.91,
+            "pct_1d": -6.1,
+            "extended_price": 43.06,
+            "extended_pct": -4.12,
+            "rsi6": 32.0,
+            "dist_from_52w_high_pct": -67.52,
+            "abnormal_signals": [
+              "日涨跌>4%(-6.10%)",
+              "盘前>4%(-4.12%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "CRCL",
+            "name": "Circle互联网集团",
+            "close_price": 51.88,
+            "pct_1d": -2.68,
+            "extended_price": 51.0,
+            "extended_pct": -1.7,
+            "rsi6": 10.9,
+            "dist_from_52w_high_pct": -62.94,
+            "abnormal_signals": [
+              "RSI6超卖(10.9)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "MSTR",
+            "name": "Strategy",
+            "close_price": 86.13,
+            "pct_1d": -4.64,
+            "extended_price": 85.0,
+            "extended_pct": -1.31,
+            "rsi6": 8.4,
+            "dist_from_52w_high_pct": -56.59,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.64%)",
+              "RSI6超卖(8.4)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "TSLA",
+            "name": "特斯拉",
+            "close_price": 374.41,
+            "pct_1d": -2.43,
+            "extended_price": 368.01,
+            "extended_pct": -1.71,
+            "rsi6": 40.7,
+            "dist_from_52w_high_pct": -24.94,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "XPEV",
+            "name": "小鹏集团",
+            "close_price": 9.38,
+            "pct_1d": -3.7,
+            "extended_price": 9.22,
+            "extended_pct": -1.71,
+            "rsi6": 39.3,
+            "dist_from_52w_high_pct": -57.34,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "MRVL",
+            "name": "迈威尔科技",
+            "close_price": 138.47,
+            "pct_1d": -4.86,
+            "extended_price": 133.1,
+            "extended_pct": -3.88,
+            "rsi6": 27.8,
+            "dist_from_52w_high_pct": -58.01,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.86%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "NOK",
+            "name": "诺基亚",
+            "close_price": 7.5,
+            "pct_1d": -1.19,
+            "extended_price": 7.28,
+            "extended_pct": -2.93,
+            "rsi6": 28.7,
+            "dist_from_52w_high_pct": -56.82,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "COHR",
+            "name": "Coherent Corp.",
+            "close_price": 214.94,
+            "pct_1d": 0.99,
+            "extended_price": 203.2,
+            "extended_pct": -5.46,
+            "rsi6": 50.2,
+            "dist_from_52w_high_pct": -51.15,
+            "abnormal_signals": [
+              "盘前>4%(-5.46%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "QUBT",
+            "name": "Quantum Computing Inc.",
+            "close_price": 4.88,
+            "pct_1d": -4.31,
+            "extended_price": 4.75,
+            "extended_pct": -2.66,
+            "rsi6": 20.7,
+            "dist_from_52w_high_pct": -66.23,
+            "abnormal_signals": [
+              "日涨跌>4%(-4.31%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "BE",
+            "name": "Bloom Energy",
+            "close_price": 168.11,
+            "pct_1d": -1.68,
+            "extended_price": 159.0,
+            "extended_pct": -5.42,
+            "rsi6": 32.3,
+            "dist_from_52w_high_pct": -52.14,
+            "abnormal_signals": [
+              "盘前>4%(-5.42%)"
+            ],
+            "trading_date_et": "2026-11-19"
+          },
+          {
+            "symbol": "TSM",
+            "name": "台积电",
+            "close_price": 352.09,
+            "pct_1d": -2.9,
+            "extended_price": 338.5,
+            "extended_pct": -3.86,
+            "rsi6": 27.2,
+            "dist_from_52w_high_pct": -27.77,
+            "abnormal_signals": [],
+            "trading_date_et": "2026-11-19"
+          }
+        ]
+      }
+    ],
+    "week_ranking": [
+      {
+        "symbol": "GOOG",
+        "name": "谷歌-C",
+        "prev_fri_close": 292.52,
+        "mon_open": 290.55,
+        "mon_close": 281.26,
+        "fri_close": 264.0,
+        "fri_pct_1d": -2.59,
+        "week_pct": -9.749760700123067,
+        "open_to_close_pct": -9.137842023748066,
+        "afterhours_price": 268.5,
+        "afterhours_pct": 1.7,
+        "rsi6": 19.64,
+        "signal_count": 1,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 281.26,
+            "pct_1d": -3.85
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 277.6,
+            "pct_1d": -1.3
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 279.2,
+            "pct_1d": 0.58
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 271.02,
+            "pct_1d": -2.93
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 264.0,
+            "pct_1d": -2.59
+          }
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "name": "特斯拉",
+        "prev_fri_close": 390.22,
+        "mon_open": 387.0,
+        "mon_close": 379.74,
+        "fri_close": 345.82,
+        "fri_pct_1d": -7.64,
+        "week_pct": -11.378196914561023,
+        "open_to_close_pct": -10.640826873385013,
+        "afterhours_price": 351.07,
+        "afterhours_pct": 1.52,
+        "rsi6": 24.0046,
+        "signal_count": 0,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 379.74,
+            "pct_1d": -2.69
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 380.11,
+            "pct_1d": 0.1
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 383.72,
+            "pct_1d": 0.95
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 374.41,
+            "pct_1d": -2.43
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 345.82,
+            "pct_1d": -7.64
+          }
+        ]
+      },
+      {
+        "symbol": "XPEV",
+        "name": "小鹏集团",
+        "prev_fri_close": 9.37,
+        "mon_open": 9.9,
+        "mon_close": 9.67,
+        "fri_close": 8.08,
+        "fri_pct_1d": -13.86,
+        "week_pct": -13.767342582710773,
+        "open_to_close_pct": -18.38383838383839,
+        "afterhours_price": 8.17,
+        "afterhours_pct": 1.11,
+        "rsi6": 20.0163,
+        "signal_count": 1,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 9.67,
+            "pct_1d": 3.2
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 9.99,
+            "pct_1d": 3.31
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 9.74,
+            "pct_1d": -2.5
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 9.38,
+            "pct_1d": -3.7
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 8.08,
+            "pct_1d": -13.86
+          }
+        ]
+      },
+      {
+        "symbol": "INTC",
+        "name": "英特尔",
+        "prev_fri_close": 59.66,
+        "mon_open": 56.71,
+        "mon_close": 55.47,
+        "fri_close": 51.28,
+        "fri_pct_1d": -7.97,
+        "week_pct": -14.046262152195766,
+        "open_to_close_pct": -9.575030858755074,
+        "afterhours_price": 53.0,
+        "afterhours_pct": 3.36,
+        "rsi6": 24.0412,
+        "signal_count": 4,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 55.47,
+            "pct_1d": -7.02
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 55.17,
+            "pct_1d": -0.54
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 54.67,
+            "pct_1d": -0.91
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 55.72,
+            "pct_1d": 1.92
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 51.28,
+            "pct_1d": -7.97
+          }
+        ]
+      },
+      {
+        "symbol": "COHR",
+        "name": "Coherent Corp.",
+        "prev_fri_close": 218.15,
+        "mon_open": 201.36,
+        "mon_close": 203.43,
+        "fri_close": 187.22,
+        "fri_pct_1d": -12.9,
+        "week_pct": -14.178317671327068,
+        "open_to_close_pct": -7.022248708780299,
+        "afterhours_price": 193.7,
+        "afterhours_pct": 3.46,
+        "rsi6": 32.2761,
+        "signal_count": 6,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 203.43,
+            "pct_1d": -6.75
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 210.86,
+            "pct_1d": 3.65
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 212.84,
+            "pct_1d": 0.94
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 214.94,
+            "pct_1d": 0.99
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 187.22,
+            "pct_1d": -12.9
+          }
+        ]
+      },
+      {
+        "symbol": "NOK",
+        "name": "诺基亚",
+        "prev_fri_close": 8.07,
+        "mon_open": 7.87,
+        "mon_close": 7.69,
+        "fri_close": 6.88,
+        "fri_pct_1d": -8.27,
+        "week_pct": -14.745972738537795,
+        "open_to_close_pct": -12.579415501905977,
+        "afterhours_price": 7.0,
+        "afterhours_pct": 1.74,
+        "rsi6": 17.5773,
+        "signal_count": 1,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 7.69,
+            "pct_1d": -4.71
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 7.59,
+            "pct_1d": -1.3
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 7.59,
+            "pct_1d": 0.0
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 7.5,
+            "pct_1d": -1.19
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 6.88,
+            "pct_1d": -8.27
+          }
+        ]
+      },
+      {
+        "symbol": "TSM",
+        "name": "台积电",
+        "prev_fri_close": 398.73,
+        "mon_open": 379.59,
+        "mon_close": 373.45,
+        "fri_close": 318.71,
+        "fri_pct_1d": -9.48,
+        "week_pct": -20.068718180222213,
+        "open_to_close_pct": -16.03835717484654,
+        "afterhours_price": 328.59,
+        "afterhours_pct": 3.1,
+        "rsi6": 17.571,
+        "signal_count": 2,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 373.45,
+            "pct_1d": -6.34
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 359.69,
+            "pct_1d": -3.68
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 362.62,
+            "pct_1d": 0.81
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 352.09,
+            "pct_1d": -2.9
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 318.71,
+            "pct_1d": -9.48
+          }
+        ]
+      },
+      {
+        "symbol": "AMD",
+        "name": "超威半导体",
+        "prev_fri_close": 534.06,
+        "mon_open": 503.45,
+        "mon_close": 504.28,
+        "fri_close": 424.39,
+        "fri_pct_1d": -13.25,
+        "week_pct": -20.53514586376062,
+        "open_to_close_pct": -15.70364485053134,
+        "afterhours_price": 439.44,
+        "afterhours_pct": 3.55,
+        "rsi6": 29.6977,
+        "signal_count": 6,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 504.28,
+            "pct_1d": -5.58
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 503.41,
+            "pct_1d": -0.17
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 530.14,
+            "pct_1d": 5.31
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 489.19,
+            "pct_1d": -7.72
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 424.39,
+            "pct_1d": -13.25
+          }
+        ]
+      },
+      {
+        "symbol": "QUBT",
+        "name": "Quantum Computing Inc.",
+        "prev_fri_close": 5.56,
+        "mon_open": 5.38,
+        "mon_close": 5.25,
+        "fri_close": 4.4,
+        "fri_pct_1d": -9.84,
+        "week_pct": -20.863309352517977,
+        "open_to_close_pct": -18.21561338289962,
+        "afterhours_price": 4.51,
+        "afterhours_pct": 2.5,
+        "rsi6": 14.927,
+        "signal_count": 3,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 5.25,
+            "pct_1d": -5.58
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 5.13,
+            "pct_1d": -2.29
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 5.1,
+            "pct_1d": -0.58
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 4.88,
+            "pct_1d": -4.31
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 4.4,
+            "pct_1d": -9.84
+          }
+        ]
+      },
+      {
+        "symbol": "MRVL",
+        "name": "迈威尔科技",
+        "prev_fri_close": 156.76,
+        "mon_open": 147.56,
+        "mon_close": 145.36,
+        "fri_close": 122.28,
+        "fri_pct_1d": -11.69,
+        "week_pct": -21.99540699157948,
+        "open_to_close_pct": -17.13201409596097,
+        "afterhours_price": 125.75,
+        "afterhours_pct": 2.84,
+        "rsi6": 19.8459,
+        "signal_count": 5,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 145.36,
+            "pct_1d": -7.27
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 148.74,
+            "pct_1d": 2.33
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 145.54,
+            "pct_1d": -2.15
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 138.47,
+            "pct_1d": -4.86
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 122.28,
+            "pct_1d": -11.69
+          }
+        ]
+      },
+      {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "prev_fri_close": 162.85,
+        "mon_open": 159.02,
+        "mon_close": 156.14,
+        "fri_close": 125.53,
+        "fri_pct_1d": -14.01,
+        "week_pct": -22.91679459625422,
+        "open_to_close_pct": -21.06024399446611,
+        "afterhours_price": 130.03,
+        "afterhours_pct": 3.58,
+        "rsi6": 6.4418,
+        "signal_count": 3,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 156.14,
+            "pct_1d": -4.12
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 155.46,
+            "pct_1d": -0.44
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 150.96,
+            "pct_1d": -2.89
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 145.98,
+            "pct_1d": -3.3
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 125.53,
+            "pct_1d": -14.01
+          }
+        ]
+      },
+      {
+        "symbol": "MU",
+        "name": "美光科技",
+        "prev_fri_close": 778.31,
+        "mon_open": 734.16,
+        "mon_close": 719.02,
+        "fri_close": 594.51,
+        "fri_pct_1d": -13.89,
+        "week_pct": -23.61526898022638,
+        "open_to_close_pct": -19.021739130434778,
+        "afterhours_price": 610.6,
+        "afterhours_pct": 2.71,
+        "rsi6": 18.7268,
+        "signal_count": 4,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 719.02,
+            "pct_1d": -7.62
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 712.42,
+            "pct_1d": -0.92
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 705.27,
+            "pct_1d": -1.0
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 690.44,
+            "pct_1d": -2.1
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 594.51,
+            "pct_1d": -13.89
+          }
+        ]
+      },
+      {
+        "symbol": "CRCL",
+        "name": "Circle互联网集团",
+        "prev_fri_close": 62.2,
+        "mon_open": 57.67,
+        "mon_close": 57.65,
+        "fri_close": 47.51,
+        "fri_pct_1d": -8.42,
+        "week_pct": -23.617363344051455,
+        "open_to_close_pct": -17.617478758453274,
+        "afterhours_price": 48.96,
+        "afterhours_pct": 3.05,
+        "rsi6": 7.9561,
+        "signal_count": 6,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 57.65,
+            "pct_1d": -7.32
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 54.63,
+            "pct_1d": -5.24
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 53.31,
+            "pct_1d": -2.42
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 51.88,
+            "pct_1d": -2.68
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 47.51,
+            "pct_1d": -8.42
+          }
+        ]
+      },
+      {
+        "symbol": "CRWV",
+        "name": "CoreWeave",
+        "prev_fri_close": 53.13,
+        "mon_open": 49.36,
+        "mon_close": 49.88,
+        "fri_close": 39.51,
+        "fri_pct_1d": -12.02,
+        "week_pct": -25.635234330886515,
+        "open_to_close_pct": -19.95542949756889,
+        "afterhours_price": 40.95,
+        "afterhours_pct": 3.64,
+        "rsi6": 23.9049,
+        "signal_count": 8,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 49.88,
+            "pct_1d": -6.12
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 49.89,
+            "pct_1d": 0.02
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 47.83,
+            "pct_1d": -4.13
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 44.91,
+            "pct_1d": -6.1
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 39.51,
+            "pct_1d": -12.02
+          }
+        ]
+      },
+      {
+        "symbol": "BE",
+        "name": "Bloom Energy",
+        "prev_fri_close": 191.99,
+        "mon_open": 176.6,
+        "mon_close": 177.28,
+        "fri_close": 142.39,
+        "fri_pct_1d": -15.3,
+        "week_pct": -25.83467888952551,
+        "open_to_close_pct": -19.37146092865233,
+        "afterhours_price": 145.61,
+        "afterhours_pct": 2.26,
+        "rsi6": 20.8236,
+        "signal_count": 6,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 177.28,
+            "pct_1d": -7.66
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 173.46,
+            "pct_1d": -2.15
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 170.98,
+            "pct_1d": -1.43
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 168.11,
+            "pct_1d": -1.68
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 142.39,
+            "pct_1d": -15.3
+          }
+        ]
+      },
+      {
+        "symbol": "NBIS",
+        "name": "Nebius集团",
+        "prev_fri_close": 115.88,
+        "mon_open": 106.8,
+        "mon_close": 107.13,
+        "fri_close": 81.31,
+        "fri_pct_1d": -16.11,
+        "week_pct": -29.83258543320676,
+        "open_to_close_pct": -23.86704119850187,
+        "afterhours_price": 84.53,
+        "afterhours_pct": 3.96,
+        "rsi6": 19.3745,
+        "signal_count": 7,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 107.13,
+            "pct_1d": -7.55
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 106.04,
+            "pct_1d": -1.02
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 106.96,
+            "pct_1d": 0.87
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 96.92,
+            "pct_1d": -9.39
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 81.31,
+            "pct_1d": -16.11
+          }
+        ]
+      },
+      {
+        "symbol": "MSTR",
+        "name": "Strategy",
+        "prev_fri_close": 111.62,
+        "mon_open": 103.74,
+        "mon_close": 103.03,
+        "fri_close": 77.8,
+        "fri_pct_1d": -9.67,
+        "week_pct": -30.299229528758286,
+        "open_to_close_pct": -25.004819741661844,
+        "afterhours_price": 79.5,
+        "afterhours_pct": 2.19,
+        "rsi6": 6.4083,
+        "signal_count": 10,
+        "daily": [
+          {
+            "date_et": "2026-11-16",
+            "close_price": 103.03,
+            "pct_1d": -7.7
+          },
+          {
+            "date_et": "2026-11-17",
+            "close_price": 96.5,
+            "pct_1d": -6.34
+          },
+          {
+            "date_et": "2026-11-18",
+            "close_price": 90.32,
+            "pct_1d": -6.4
+          },
+          {
+            "date_et": "2026-11-19",
+            "close_price": 86.13,
+            "pct_1d": -4.64
+          },
+          {
+            "date_et": "2026-11-20",
+            "close_price": 77.8,
+            "pct_1d": -9.67
+          }
+        ]
+      }
+    ],
+    "stocks": {
+      "MU": {
+        "name": "美光科技",
+        "close_price": 594.51,
+        "prev_close": 690.44,
+        "open": 665.46,
+        "high": 669.0,
+        "low": 585.25,
+        "pct_1d": -13.89,
+        "volume": 59359401,
+        "amount": 36360725351.0,
+        "volume_ratio": 1.96,
+        "pe": 8.0,
+        "high_52w": 1254.5,
+        "low_52w": 192.36,
+        "dist_from_52w_high_pct": -52.61,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 656.78,
+        "cli_pre_market_pct": -4.88,
+        "cli_post_market_price": 610.6,
+        "cli_post_market_pct": 2.71,
+        "extended_type": "afterhours",
+        "extended_price": 610.6,
+        "extended_pct_vs_close": 2.71,
+        "extended_volume": 1654284,
+        "extended_high": 735.31,
+        "extended_low": 565.181,
+        "extended_amount": 998912706.6413,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:18:49",
+        "rsi6": 18.7268,
+        "kdj_k": 20.0968,
+        "news": [
+          "美光科技高管，释放存储短缺强信号",
+          "美光CEO：2027年供应已售出75%，供需缺口还看不到头，美光说内存这次真的不一样了"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.115",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.15",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.15",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.15",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [
+          "日涨跌>4%(-13.89%)"
+        ],
+        "afterhours_price": 610.6,
+        "afterhours_pct_vs_close": 2.71,
+        "afterhours_note": "ok_cli"
+      },
+      "AMD": {
+        "name": "超威半导体",
+        "close_price": 424.39,
+        "prev_close": 489.19,
+        "open": 471.73,
+        "high": 474.79,
+        "low": 418.76,
+        "pct_1d": -13.25,
+        "volume": 70230766,
+        "amount": 30819639181.0,
+        "volume_ratio": 1.54,
+        "pe": 92.06,
+        "high_52w": 658.52,
+        "low_52w": 188.22,
+        "dist_from_52w_high_pct": -35.55,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 464.88,
+        "cli_pre_market_pct": -4.97,
+        "cli_post_market_price": 439.44,
+        "cli_post_market_pct": 3.55,
+        "extended_type": "afterhours",
+        "extended_price": 439.44,
+        "extended_pct_vs_close": 3.55,
+        "extended_volume": 1547161,
+        "extended_high": 554.85,
+        "extended_low": 404.4406,
+        "extended_amount": 667595284.7073,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:18:00",
+        "rsi6": 29.6977,
+        "kdj_k": 31.739,
+        "news": [
+          "集体暴跌！亏麻了",
+          "综述丨科技股暴跌拖累美股整体进入回调区间"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-13.25%)"
+        ],
+        "afterhours_price": 439.44,
+        "afterhours_pct_vs_close": 3.55,
+        "afterhours_note": "ok_cli"
+      },
+      "INTC": {
+        "name": "英特尔",
+        "close_price": 51.28,
+        "prev_close": 55.72,
+        "open": 54.31,
+        "high": 56.48,
+        "low": 51.1,
+        "pct_1d": -7.97,
+        "volume": 208209767,
+        "amount": 11014154759.0,
+        "volume_ratio": 1.97,
+        "pe": -21.82,
+        "high_52w": 142.35,
+        "low_52w": 32.89,
+        "dist_from_52w_high_pct": -63.98,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 51.35,
+        "cli_pre_market_pct": -7.84,
+        "cli_post_market_price": 53.0,
+        "cli_post_market_pct": 3.36,
+        "extended_type": "afterhours",
+        "extended_price": 53.0,
+        "extended_pct_vs_close": 3.36,
+        "extended_volume": 13852684,
+        "extended_high": 56.55,
+        "extended_low": 51.1672,
+        "extended_amount": 719332940.8667,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:55",
+        "rsi6": 24.0412,
+        "kdj_k": 21.2174,
+        "news": [
+          "英特尔前CEO帕特·基辛格：摩尔定律尚未终结，AI需要1万倍效率跃升",
+          "英特尔放大招了，想在代工业务追上台积电"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-7.97%)"
+        ],
+        "afterhours_price": 53.0,
+        "afterhours_pct_vs_close": 3.36,
+        "afterhours_note": "ok_cli"
+      },
+      "GOOG": {
+        "name": "谷歌-C",
+        "close_price": 264.0,
+        "prev_close": 271.02,
+        "open": 272.45,
+        "high": 280.52,
+        "low": 262.27,
+        "pct_1d": -2.59,
+        "volume": 38091310,
+        "amount": 10286437314.0,
+        "volume_ratio": 1.71,
+        "pe": 13.79,
+        "high_52w": 403.98,
+        "low_52w": 262.27,
+        "dist_from_52w_high_pct": -34.65,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 264.0,
+        "cli_pre_market_pct": -2.59,
+        "cli_post_market_price": 268.5,
+        "cli_post_market_pct": 1.7,
+        "extended_type": "afterhours",
+        "extended_price": 268.5,
+        "extended_pct_vs_close": 1.7,
+        "extended_volume": 3235554,
+        "extended_high": 289.63,
+        "extended_low": 250.9426,
+        "extended_amount": 859772671.0522,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 19.64,
+        "kdj_k": 13.8748,
+        "news": [
+          "谷歌为 Gemini 上线 GIF 动态图片生成功能，由 Omni 1.2 Flash 模型驱动",
+          "给 Gemini 道歉，请自觉排队"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.21",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.21",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.22",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.22",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [],
+        "afterhours_price": 268.5,
+        "afterhours_pct_vs_close": 1.7,
+        "afterhours_note": "ok_cli"
+      },
+      "NVDA": {
+        "name": "英伟达",
+        "close_price": 125.53,
+        "prev_close": 145.98,
+        "open": 143.52,
+        "high": 143.73,
+        "low": 124.5,
+        "pct_1d": -14.01,
+        "volume": 630120259,
+        "amount": 83773137393.0,
+        "volume_ratio": 1.77,
+        "pe": 13.48,
+        "high_52w": 243.37,
+        "low_52w": 124.5,
+        "dist_from_52w_high_pct": -48.42,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 142.38,
+        "cli_pre_market_pct": -2.47,
+        "cli_post_market_price": 130.03,
+        "cli_post_market_pct": 3.58,
+        "extended_type": "afterhours",
+        "extended_price": 130.03,
+        "extended_pct_vs_close": 3.58,
+        "extended_volume": 39835603,
+        "extended_high": 164.89,
+        "extended_low": 125.2538,
+        "extended_amount": 5092929899.7243,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 6.4418,
+        "kdj_k": 6.3728,
+        "news": [
+          "应验？英伟达股价腰斩 林园9月拍胸脯：美国AI企业早晚要倒霉",
+          "英伟达发布显卡热修复驱动 修复SSD过度写入问题"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.01",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.01",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.25",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.25",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [
+          "日涨跌>4%(-14.01%)",
+          "RSI6超卖(6.4)"
+        ],
+        "afterhours_price": 130.03,
+        "afterhours_pct_vs_close": 3.58,
+        "afterhours_note": "ok_cli"
+      },
+      "NBIS": {
+        "name": "Nebius集团",
+        "close_price": 81.31,
+        "prev_close": 96.92,
+        "open": 93.69,
+        "high": 94.04,
+        "low": 80.67,
+        "pct_1d": -16.11,
+        "volume": 49792705,
+        "amount": 4268898189.0,
+        "volume_ratio": 1.42,
+        "pe": 290.39,
+        "high_52w": 299.86,
+        "low_52w": 73.52,
+        "dist_from_52w_high_pct": -72.88,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 91.96,
+        "cli_pre_market_pct": -5.12,
+        "cli_post_market_price": 84.53,
+        "cli_post_market_pct": 3.96,
+        "extended_type": "afterhours",
+        "extended_price": 84.53,
+        "extended_pct_vs_close": 3.96,
+        "extended_volume": 1270294,
+        "extended_high": 85.25,
+        "extended_low": 80.8,
+        "extended_amount": 106130917.6142,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 19.3745,
+        "kdj_k": 7.18,
+        "news": [
+          "Nebius集团日内跌10%，资本开支超预期引发担忧",
+          "Nebius集团盘中异动 早盘股价大跌8.25%"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-16.11%)"
+        ],
+        "afterhours_price": 84.53,
+        "afterhours_pct_vs_close": 3.96,
+        "afterhours_note": "ok_cli"
+      },
+      "CRWV": {
+        "name": "CoreWeave",
+        "close_price": 39.51,
+        "prev_close": 44.91,
+        "open": 43.2,
+        "high": 43.24,
+        "low": 39.28,
+        "pct_1d": -12.02,
+        "volume": 77164409,
+        "amount": 3126397647.0,
+        "volume_ratio": 1.16,
+        "pe": -8.34,
+        "high_52w": 138.25,
+        "low_52w": 39.28,
+        "dist_from_52w_high_pct": -71.42,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 39.51,
+        "cli_pre_market_pct": -12.02,
+        "cli_post_market_price": 40.95,
+        "cli_post_market_pct": 3.64,
+        "extended_type": "afterhours",
+        "extended_price": 40.95,
+        "extended_pct_vs_close": 3.64,
+        "extended_volume": 2406325,
+        "extended_high": 41.39,
+        "extended_low": 39.41,
+        "extended_amount": 97202952.9855,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 23.9049,
+        "kdj_k": 19.5561,
+        "news": [
+          "“大空头”迈克尔 · 伯里谈 AI 股暴跌：我早就提醒过你们了",
+          "AI算力市场的危险循环：越借不到钱，GPU租金反而越贵"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-12.02%)"
+        ],
+        "afterhours_price": 40.95,
+        "afterhours_pct_vs_close": 3.64,
+        "afterhours_note": "ok_cli"
+      },
+      "CRCL": {
+        "name": "Circle互联网集团",
+        "close_price": 47.51,
+        "prev_close": 51.88,
+        "open": 51.38,
+        "high": 52.74,
+        "low": 47.32,
+        "pct_1d": -8.42,
+        "volume": 14311532,
+        "amount": 707661366.0,
+        "volume_ratio": 1.56,
+        "pe": 20.48,
+        "high_52w": 140.0,
+        "low_52w": 47.32,
+        "dist_from_52w_high_pct": -66.06,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 52.11,
+        "cli_pre_market_pct": 1.92,
+        "cli_post_market_price": 48.96,
+        "cli_post_market_pct": 3.05,
+        "extended_type": "afterhours",
+        "extended_price": 48.96,
+        "extended_pct_vs_close": 3.05,
+        "extended_volume": 2299042,
+        "extended_high": 49.2999,
+        "extended_low": 47.3,
+        "extended_amount": 109568221.7688,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:10",
+        "rsi6": 7.9561,
+        "kdj_k": 3.3768,
+        "news": [
+          "Circle互联网集团盘中异动 早盘股价大跌5.01%",
+          "Circle互联网集团创历史新低，储备金收益率降至3.5%拖累"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-8.42%)",
+          "RSI6超卖(8.0)"
+        ],
+        "afterhours_price": 48.96,
+        "afterhours_pct_vs_close": 3.05,
+        "afterhours_note": "ok_cli"
+      },
+      "MSTR": {
+        "name": "Strategy",
+        "close_price": 77.8,
+        "prev_close": 86.13,
+        "open": 86.31,
+        "high": 87.95,
+        "low": 77.69,
+        "pct_1d": -9.67,
+        "volume": 35895626,
+        "amount": 2899627493.0,
+        "volume_ratio": 1.59,
+        "pe": -1.49,
+        "high_52w": 198.4,
+        "low_52w": 77.69,
+        "dist_from_52w_high_pct": -60.79,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 86.75,
+        "cli_pre_market_pct": 0.71,
+        "cli_post_market_price": 79.5,
+        "cli_post_market_pct": 2.19,
+        "extended_type": "afterhours",
+        "extended_price": 79.5,
+        "extended_pct_vs_close": 2.19,
+        "extended_volume": 1919939,
+        "extended_high": 80.0,
+        "extended_low": 77.6288,
+        "extended_amount": 151269671.385,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 6.4083,
+        "kdj_k": 2.0602,
+        "news": [
+          "Strategy：净储备达 350 亿美元，比特币均无抵押",
+          "比特币遭遇抛售：与股票同步下跌，加密资产再度通不过 “数字黄金”考验"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-9.67%)",
+          "RSI6超卖(6.4)"
+        ],
+        "afterhours_price": 79.5,
+        "afterhours_pct_vs_close": 2.19,
+        "afterhours_note": "ok_cli"
+      },
+      "TSLA": {
+        "name": "特斯拉",
+        "close_price": 345.82,
+        "prev_close": 374.41,
+        "open": 370.43,
+        "high": 373.88,
+        "low": 344.33,
+        "pct_1d": -7.64,
+        "volume": 46128942,
+        "amount": 16338810182.0,
+        "volume_ratio": 1.67,
+        "pe": 380.02,
+        "high_52w": 498.83,
+        "low_52w": 297.38,
+        "dist_from_52w_high_pct": -30.67,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 366.16,
+        "cli_pre_market_pct": -0.15,
+        "cli_post_market_price": 351.07,
+        "cli_post_market_pct": 1.52,
+        "extended_type": "afterhours",
+        "extended_price": 351.07,
+        "extended_pct_vs_close": 1.52,
+        "extended_volume": 3037298,
+        "extended_high": 386.7,
+        "extended_low": 326.2686,
+        "extended_amount": 1053923605.656,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 24.0046,
+        "kdj_k": 36.6622,
+        "news": [
+          "特斯拉Model 3被爆改成11座电动小巴：超充、FSD还能继续用",
+          "Hoffman EV推特斯拉零部件再造MPV Badger"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-7.64%)"
+        ],
+        "afterhours_price": 351.07,
+        "afterhours_pct_vs_close": 1.52,
+        "afterhours_note": "ok_cli"
+      },
+      "XPEV": {
+        "name": "小鹏集团",
+        "close_price": 8.08,
+        "prev_close": 9.38,
+        "open": 9.11,
+        "high": 9.12,
+        "low": 8.02,
+        "pct_1d": -13.86,
+        "volume": 18393399,
+        "amount": 154155962.0,
+        "volume_ratio": 1.92,
+        "pe": -14.59,
+        "high_52w": 21.99,
+        "low_52w": 8.02,
+        "dist_from_52w_high_pct": -63.26,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 8.91,
+        "cli_pre_market_pct": -2.09,
+        "cli_post_market_price": 8.17,
+        "cli_post_market_pct": 1.11,
+        "extended_type": "afterhours",
+        "extended_price": 8.17,
+        "extended_pct_vs_close": 1.11,
+        "extended_volume": 931771,
+        "extended_high": 8.27,
+        "extended_low": 8.0416,
+        "extended_amount": 7545161.0568,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:30",
+        "rsi6": 20.0163,
+        "kdj_k": 25.933,
+        "news": [
+          "前小鹏高管强顺强加入小米汽车",
+          "何小鹏：数量是没有价值的，小鹏追求高质量发展"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-13.86%)"
+        ],
+        "afterhours_price": 8.17,
+        "afterhours_pct_vs_close": 1.11,
+        "afterhours_note": "ok_cli"
+      },
+      "MRVL": {
+        "name": "迈威尔科技",
+        "close_price": 122.28,
+        "prev_close": 138.47,
+        "open": 132.89,
+        "high": 134.18,
+        "low": 120.56,
+        "pct_1d": -11.69,
+        "volume": 40443340,
+        "amount": 5065723976.0,
+        "volume_ratio": 1.63,
+        "pe": 40.49,
+        "high_52w": 329.75,
+        "low_52w": 70.63,
+        "dist_from_52w_high_pct": -62.92,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 132.18,
+        "cli_pre_market_pct": -4.54,
+        "cli_post_market_price": 125.75,
+        "cli_post_market_pct": 2.84,
+        "extended_type": "afterhours",
+        "extended_price": 125.75,
+        "extended_pct_vs_close": 2.84,
+        "extended_volume": 1153242,
+        "extended_high": 147.96,
+        "extended_low": 121.01,
+        "extended_amount": 143412461.3144,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 19.8459,
+        "kdj_k": 16.2972,
+        "news": [
+          "迈威尔科技跌超10%，收购Lumentum引发摊薄担忧",
+          "迈威尔科技创60日新低，AI算力链估值承压并购存不确定性"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.06",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.06",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.06",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.06",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [
+          "日涨跌>4%(-11.69%)"
+        ],
+        "afterhours_price": 125.75,
+        "afterhours_pct_vs_close": 2.84,
+        "afterhours_note": "ok_cli"
+      },
+      "NOK": {
+        "name": "诺基亚",
+        "close_price": 6.88,
+        "prev_close": 7.5,
+        "open": 7.29,
+        "high": 7.32,
+        "low": 6.81,
+        "pct_1d": -8.27,
+        "volume": 88273852,
+        "amount": 616785615.0,
+        "volume_ratio": 1.48,
+        "pe": 43.27,
+        "high_52w": 17.37,
+        "low_52w": 5.73,
+        "dist_from_52w_high_pct": -60.39,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 7.22,
+        "cli_pre_market_pct": -0.69,
+        "cli_post_market_price": 7.0,
+        "cli_post_market_pct": 1.74,
+        "extended_type": "afterhours",
+        "extended_price": 7.0,
+        "extended_pct_vs_close": 1.74,
+        "extended_volume": 1078397,
+        "extended_high": 7.07,
+        "extended_low": 6.85,
+        "extended_amount": 7476998.3357,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:19:19",
+        "rsi6": 17.5773,
+        "kdj_k": 15.0698,
+        "news": [
+          "诺基亚盘中异动 大幅跳水5.07%报7.12美元",
+          "诺基亚创60日新低，英伟达减持引发估值重估"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.025945",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.034765",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.033563",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.024416",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [
+          "日涨跌>4%(-8.27%)"
+        ],
+        "afterhours_price": 7.0,
+        "afterhours_pct_vs_close": 1.74,
+        "afterhours_note": "ok_cli"
+      },
+      "COHR": {
+        "name": "Coherent Corp.",
+        "close_price": 187.22,
+        "prev_close": 214.94,
+        "open": 207.0,
+        "high": 209.61,
+        "low": 180.43,
+        "pct_1d": -12.9,
+        "volume": 14279047,
+        "amount": 2698653214.0,
+        "volume_ratio": 1.53,
+        "pe": 38.76,
+        "high_52w": 440.0,
+        "low_52w": 130.42,
+        "dist_from_52w_high_pct": -57.45,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 187.22,
+        "cli_pre_market_pct": -12.9,
+        "cli_post_market_price": 193.7,
+        "cli_post_market_pct": 3.46,
+        "extended_type": "afterhours",
+        "extended_price": 193.7,
+        "extended_pct_vs_close": 3.46,
+        "extended_volume": 995841,
+        "extended_high": 195.0,
+        "extended_low": 187.2,
+        "extended_amount": 187716307.9615,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:20:00",
+        "rsi6": 32.2761,
+        "kdj_k": 37.6021,
+        "news": [
+          "Coherent创阶段新低，AI资本开支担忧拖累板块共振下跌",
+          "Coherent Corp.盘中异动 早盘股价大跌7.71%"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-12.90%)"
+        ],
+        "afterhours_price": 193.7,
+        "afterhours_pct_vs_close": 3.46,
+        "afterhours_note": "ok_cli"
+      },
+      "QUBT": {
+        "name": "Quantum Computing Inc.",
+        "close_price": 4.4,
+        "prev_close": 4.88,
+        "open": 4.74,
+        "high": 4.9,
+        "low": 4.37,
+        "pct_1d": -9.84,
+        "volume": 10239391,
+        "amount": 46456667.0,
+        "volume_ratio": 1.31,
+        "pe": -33.85,
+        "high_52w": 14.45,
+        "low_52w": 4.37,
+        "dist_from_52w_high_pct": -69.55,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 4.71,
+        "cli_pre_market_pct": -3.5,
+        "cli_post_market_price": 4.51,
+        "cli_post_market_pct": 2.5,
+        "extended_type": "afterhours",
+        "extended_price": 4.51,
+        "extended_pct_vs_close": 2.5,
+        "extended_volume": 352632,
+        "extended_high": 4.55,
+        "extended_low": 4.36,
+        "extended_amount": 1561189.6774,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:12:32",
+        "rsi6": 14.927,
+        "kdj_k": 7.7698,
+        "news": [
+          "Quantum Computing Inc.日内下跌 10.03%，现价4.39美元",
+          "Quantum Computing Inc.盘中异动 快速跳水5.02%"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-9.84%)",
+          "RSI6超卖(14.9)"
+        ],
+        "afterhours_price": 4.51,
+        "afterhours_pct_vs_close": 2.5,
+        "afterhours_note": "ok_cli"
+      },
+      "BE": {
+        "name": "Bloom Energy",
+        "close_price": 142.39,
+        "prev_close": 168.11,
+        "open": 162.02,
+        "high": 163.51,
+        "low": 140.69,
+        "pct_1d": -15.3,
+        "volume": 28679336,
+        "amount": 4248154746.0,
+        "volume_ratio": 1.99,
+        "pe": 86.3,
+        "high_52w": 351.28,
+        "low_52w": 75.7,
+        "dist_from_52w_high_pct": -59.47,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 159.15,
+        "cli_pre_market_pct": -2.36,
+        "cli_post_market_price": 145.61,
+        "cli_post_market_pct": 2.26,
+        "extended_type": "afterhours",
+        "extended_price": 145.61,
+        "extended_pct_vs_close": 2.26,
+        "extended_volume": 1025313,
+        "extended_high": 152.32,
+        "extended_low": 141.24,
+        "extended_amount": 148041288.7764,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:18:21",
+        "rsi6": 20.8236,
+        "kdj_k": 17.6342,
+        "news": [
+          "Bloom Energy受德州暂停数据中心审批拖累，Q3现金流为负",
+          "Bloom Energy盘中异动 早盘股价大跌7.41%"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [],
+        "abnormal_signals": [
+          "日涨跌>4%(-15.30%)"
+        ],
+        "afterhours_price": 145.61,
+        "afterhours_pct_vs_close": 2.26,
+        "afterhours_note": "ok_cli"
+      },
+      "TSM": {
+        "name": "台积电",
+        "close_price": 318.71,
+        "prev_close": 352.09,
+        "open": 338.24,
+        "high": 343.75,
+        "low": 318.48,
+        "pct_1d": -9.48,
+        "volume": 37267020,
+        "amount": 12153982171.0,
+        "volume_ratio": 2.17,
+        "pe": 20.83,
+        "high_52w": 487.47,
+        "low_52w": 263.05,
+        "dist_from_52w_high_pct": -34.62,
+        "trading_date_et": "2026-11-20",
+        "cli_pre_market_price": 338.5,
+        "cli_pre_market_pct": 0.24,
+        "cli_post_market_price": 328.59,
+        "cli_post_market_pct": 3.1,
+        "extended_type": "afterhours",
+        "extended_price": 328.59,
+        "extended_pct_vs_close": 3.1,
+        "extended_volume": 1365620,
+        "extended_high": 381.05,
+        "extended_low": 318.3187,
+        "extended_amount": 440446564.4279,
+        "extended_time_et": "Nov 20 07:59PM EST",
+        "extended_note": "ok_cli",
+        "extended_timestamp": "2026-11-21 09:16:11",
+        "rsi6": 17.571,
+        "kdj_k": 14.8461,
+        "news": [
+          "将靶材卖进台积电，江丰电子布局A+H，第二增长曲线成色待考",
+          "英特尔放大招了，想在代工业务追上台积电"
+        ],
+        "latest_rating": {
+          "date": "currentPri",
+          "institution": "ratingBuyCnt",
+          "rating": "ratingCnt",
+          "target_price": "ratingDecCnt"
+        },
+        "upcoming_events": [
+          {
+            "type": "exdiv",
+            "date": "0.628382",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.741788",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.742067",
+            "detail": "USD"
+          },
+          {
+            "type": "exdiv",
+            "date": "0.866038",
+            "detail": "USD"
+          }
+        ],
+        "abnormal_signals": [
+          "日涨跌>4%(-9.48%)",
+          "量比>2(2.17)"
+        ],
+        "afterhours_price": 328.59,
+        "afterhours_pct_vs_close": 3.1,
+        "afterhours_note": "ok_cli"
+      }
+    },
+    "abnormal_count": 73,
+    "abnormal_dedup_key": [
+      "report_date",
+      "symbol",
+      "full_signal"
+    ],
+    "abnormal_events": [
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "MU",
+        "signal": "盘前>4%(-4.67%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "AMD",
+        "signal": "日涨跌>4%(-8.75%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "AMD",
+        "signal": "盘前>4%(-4.32%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "INTC",
+        "signal": "盘前>4%(-4.44%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "NBIS",
+        "signal": "日涨跌>4%(-9.92%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "NBIS",
+        "signal": "盘前>4%(-4.86%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "CRWV",
+        "signal": "日涨跌>4%(-6.13%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "CRWV",
+        "signal": "盘前>4%(-5.51%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "CRCL",
+        "signal": "盘前>4%(-6.99%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "MSTR",
+        "signal": "盘前>4%(-7.02%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "MRVL",
+        "signal": "日涨跌>4%(-4.68%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "MRVL",
+        "signal": "盘前>4%(-4.57%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "COHR",
+        "signal": "日涨跌>4%(-6.00%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "COHR",
+        "signal": "盘前>4%(-5.02%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "QUBT",
+        "signal": "日涨跌>4%(-4.47%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "BE",
+        "signal": "日涨跌>4%(-4.92%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "BE",
+        "signal": "盘前>4%(-4.60%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-16",
+        "regular_date_et": "2026-11-13",
+        "symbol": "TSM",
+        "signal": "盘前>4%(-4.20%)",
+        "source_report": "daily_20261116_1923",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "MU",
+        "signal": "日涨跌>4%(-7.62%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "AMD",
+        "signal": "日涨跌>4%(-5.58%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "INTC",
+        "signal": "日涨跌>4%(-7.02%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "NVDA",
+        "signal": "日涨跌>4%(-4.12%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "NBIS",
+        "signal": "日涨跌>4%(-7.55%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "CRWV",
+        "signal": "日涨跌>4%(-6.12%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "CRCL",
+        "signal": "日涨跌>4%(-7.32%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "MSTR",
+        "signal": "日涨跌>4%(-7.70%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "MSTR",
+        "signal": "RSI6超卖(14.7)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "XPEV",
+        "signal": "量比>2(2.38)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "MRVL",
+        "signal": "日涨跌>4%(-7.27%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "NOK",
+        "signal": "日涨跌>4%(-4.71%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "COHR",
+        "signal": "日涨跌>4%(-6.75%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "QUBT",
+        "signal": "日涨跌>4%(-5.58%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "BE",
+        "signal": "日涨跌>4%(-7.66%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-17",
+        "regular_date_et": "2026-11-16",
+        "symbol": "TSM",
+        "signal": "日涨跌>4%(-6.34%)",
+        "source_report": "daily_20261117_1917",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "NBIS",
+        "signal": "盘前>4%(+6.29%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "CRWV",
+        "signal": "盘前>4%(+4.55%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "CRCL",
+        "signal": "日涨跌>4%(-5.24%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "CRCL",
+        "signal": "RSI6超卖(13.2)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "MSTR",
+        "signal": "日涨跌>4%(-6.34%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "MSTR",
+        "signal": "RSI6超卖(11.8)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "COHR",
+        "signal": "盘前>4%(+5.43%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-18",
+        "regular_date_et": "2026-11-17",
+        "symbol": "BE",
+        "signal": "盘前>4%(+5.59%)",
+        "source_report": "daily_20261118_1918",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "MU",
+        "signal": "盘前>4%(+4.80%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "AMD",
+        "signal": "日涨跌>4%(+5.31%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "INTC",
+        "signal": "盘前>4%(+4.37%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "GOOG",
+        "signal": "盘前>4%(+4.01%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "NVDA",
+        "signal": "RSI6超卖(13.6)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "NBIS",
+        "signal": "盘前>4%(+5.09%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "CRWV",
+        "signal": "日涨跌>4%(-4.13%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "CRWV",
+        "signal": "盘前>4%(+5.07%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "CRCL",
+        "signal": "RSI6超卖(12.1)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "MSTR",
+        "signal": "日涨跌>4%(-6.40%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "MSTR",
+        "signal": "RSI6超卖(9.7)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "MSTR",
+        "signal": "盘前>4%(+4.67%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "MRVL",
+        "signal": "盘前>4%(+4.22%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "COHR",
+        "signal": "盘前>4%(+4.72%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-19",
+        "regular_date_et": "2026-11-18",
+        "symbol": "BE",
+        "signal": "盘前>4%(+5.57%)",
+        "source_report": "daily_20261119_1913",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "MU",
+        "signal": "盘前>4%(-4.10%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "AMD",
+        "signal": "日涨跌>4%(-7.72%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "AMD",
+        "signal": "盘前>4%(-5.34%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "INTC",
+        "signal": "盘前>4%(-4.64%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "NVDA",
+        "signal": "RSI6超卖(11.5)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "NBIS",
+        "signal": "日涨跌>4%(-9.39%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "NBIS",
+        "signal": "盘前>4%(-4.51%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "CRWV",
+        "signal": "日涨跌>4%(-6.10%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "CRWV",
+        "signal": "盘前>4%(-4.12%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "CRCL",
+        "signal": "RSI6超卖(10.9)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "MSTR",
+        "signal": "日涨跌>4%(-4.64%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "MSTR",
+        "signal": "RSI6超卖(8.4)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "MRVL",
+        "signal": "日涨跌>4%(-4.86%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "COHR",
+        "signal": "盘前>4%(-5.46%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "QUBT",
+        "signal": "日涨跌>4%(-4.31%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "regular"
+      },
+      {
+        "report_date": "2026-11-20",
+        "regular_date_et": "2026-11-19",
+        "symbol": "BE",
+        "signal": "盘前>4%(-5.42%)",
+        "source_report": "daily_20261120_1920",
+        "signal_session": "premarket"
+      }
+    ],
+    "friday_latest_signals": [
+      {
+        "symbol": "MU",
+        "signals": [
+          "日涨跌>4%(-13.89%)"
+        ]
+      },
+      {
+        "symbol": "AMD",
+        "signals": [
+          "日涨跌>4%(-13.25%)"
+        ]
+      },
+      {
+        "symbol": "INTC",
+        "signals": [
+          "日涨跌>4%(-7.97%)"
+        ]
+      },
+      {
+        "symbol": "NVDA",
+        "signals": [
+          "日涨跌>4%(-14.01%)",
+          "RSI6超卖(6.4)"
+        ]
+      },
+      {
+        "symbol": "NBIS",
+        "signals": [
+          "日涨跌>4%(-16.11%)"
+        ]
+      },
+      {
+        "symbol": "CRWV",
+        "signals": [
+          "日涨跌>4%(-12.02%)"
+        ]
+      },
+      {
+        "symbol": "CRCL",
+        "signals": [
+          "日涨跌>4%(-8.42%)",
+          "RSI6超卖(8.0)"
+        ]
+      },
+      {
+        "symbol": "MSTR",
+        "signals": [
+          "日涨跌>4%(-9.67%)",
+          "RSI6超卖(6.4)"
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "signals": [
+          "日涨跌>4%(-7.64%)"
+        ]
+      },
+      {
+        "symbol": "XPEV",
+        "signals": [
+          "日涨跌>4%(-13.86%)"
+        ]
+      },
+      {
+        "symbol": "MRVL",
+        "signals": [
+          "日涨跌>4%(-11.69%)"
+        ]
+      },
+      {
+        "symbol": "NOK",
+        "signals": [
+          "日涨跌>4%(-8.27%)"
+        ]
+      },
+      {
+        "symbol": "COHR",
+        "signals": [
+          "日涨跌>4%(-12.90%)"
+        ]
+      },
+      {
+        "symbol": "QUBT",
+        "signals": [
+          "日涨跌>4%(-9.84%)",
+          "RSI6超卖(14.9)"
+        ]
+      },
+      {
+        "symbol": "BE",
+        "signals": [
+          "日涨跌>4%(-15.30%)"
+        ]
+      },
+      {
+        "symbol": "TSM",
+        "signals": [
+          "日涨跌>4%(-9.48%)",
+          "量比>2(2.17)"
+        ]
+      }
+    ],
+    "news_candidates": [
+      {
+        "symbol": "MU",
+        "date": "2026-11-16",
+        "title_block": "车企被内存涨价逼急了！单车成本增加2.5万：；被指控合谋DRAM减产抬价，三星、美光、SK海力士将进入实体审理",
+        "context": "新闻： 本轮新闻：车企被内存涨价逼急了！单车成本增加2.5万：；被指控合谋DRAM减产抬价，三星、美光、SK海力士将进入实体审理。DRAM合谋减产诉讼与内存价格上涨报道并存；新闻主张不等于司法认定。净利率为本轮CLI样本，不能外推长期持续利润。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-11-16",
+        "title_block": "嵌入式CPU卷到256核！AMD把数据中心级算力，塞进半导体测试机和防火墙；小摩分析师：英伟达AI算力合约份额从83%降至39%",
+        "context": "新闻： 本轮新闻：嵌入式CPU卷到256核！AMD把数据中心级算力，塞进半导体测试机和防火墙；小摩分析师：英伟达AI算力合约份额从83%降至39%。最近常规时段跌8.75%，盘前继续承压；嵌入式CPU新品与AI份额报道不能取消冲高回调风控。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "INTC",
+        "date": "2026-11-16",
+        "title_block": "英特尔CEO被告！美国芯片华裔四巨头，两人已出事；股价暴跌29%，芯片巨头英特尔遭投资者起诉",
+        "context": "新闻： 本轮新闻：英特尔CEO被告！美国芯片华裔四巨头，两人已出事；股价暴跌29%，芯片巨头英特尔遭投资者起诉。单季净利虽为正但PE为负，20日-33.6%且60日-35.24%命中持续下跌风险；投资者起诉消息不作已证实违法结论。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "GOOG",
+        "date": "2026-11-16",
+        "title_block": "【国际AI】OpenAI 推 ChatGPT Wallet，Google 发布 Gemini 4 Hydrogen｜11-16；AI Home产业发展持续升温，华曦达将参加Google 2026泰国峰会",
+        "context": "新闻： 本轮新闻：【国际AI】OpenAI 推 ChatGPT Wallet，Google 发布 Gemini 4 Hydrogen｜11-16；AI Home产业发展持续升温，华曦达将参加Google 2026泰国峰会。模型与AI产品发布属催化，不等于财务兑现；本轮CLI自由现金流为-9065百万美元。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-16",
+        "title_block": "瑞银下调英伟达目标价至240美元，担忧出口限制扩大或导致2028年营收减少1000亿美元；传英伟达接洽Arm CEO Rene Haas，寻找黄仁勋潜在继任者",
+        "context": "新闻： 本轮新闻：瑞银下调英伟达目标价至240美元，担忧出口限制扩大或导致2028年营收减少1000亿美元；传英伟达接洽Arm CEO Rene Haas，寻找黄仁勋潜在继任者。RSI6为19.6且空头排列，只是逆势试探而非右侧确认；11月17日财报预告尚未实际发布。出口限制与目标价下调为风险线索，管理层传闻未核实。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-16",
+        "title_block": "AI算力需求强劲难掩数据中心交付延迟风险 大摩维持Nebius“持股观望”评级及144美元目标价；Nebius集团盘中异动 急速下跌10.33%报115.35美元",
+        "context": "新闻： 本轮新闻：AI算力需求强劲难掩数据中心交付延迟风险 大摩维持Nebius“持股观望”评级及144美元目标价；Nebius集团盘中异动 急速下跌10.33%报115.35美元。最新CLI已更新至Q3：营收980.8百万美元，净亏37.5百万美元、净利率-3.82%，亏损同比收窄不是崩塌；20/60日下跌同时触发第四项风险。FreeCF_Q为-6992.57百万美元，交付延迟与融资压力不能忽略。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-16",
+        "title_block": "CoreWeave2026财年第三财季实现净利润-7.09亿美元，同比减少544.55%；AI周观察：谷歌与Anthropic更新旗舰模型，Coreweave财报表现良好",
+        "context": "新闻： 本轮新闻：CoreWeave2026财年第三财季实现净利润-7.09亿美元，同比减少544.55%；AI周观察：谷歌与Anthropic更新旗舰模型，Coreweave财报表现良好。Q3净亏709百万美元、净利率-19.37%，同比亏损扩大；FreeCF_Q为-7466百万美元。当前机械参与度档不是加倍抄底建议，也不是要求开启传统扣款。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "CRCL",
+        "date": "2026-11-16",
+        "title_block": "Circle互联网集团盘中异动 早盘快速跳水5.05%；Circle互联网集团创60日新低，监管成本上升合规承压",
+        "context": "新闻： 本轮新闻：Circle互联网集团盘中异动 早盘快速跳水5.05%；Circle互联网集团创60日新低，监管成本上升合规承压。净利率样本26.13%，但合规成本、稳定币收益和币价不能直接等同；空头排列下技术Buy份额仍仅0.5。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-16",
+        "title_block": "Strategy美股盘前跌超7%；Quantum Strategy 总裁：黄仁勋回归英伟达机会非常渺茫",
+        "context": "新闻： 本轮新闻：Strategy美股盘前跌超7%；Quantum Strategy 总裁：黄仁勋回归英伟达机会非常渺茫。PE为负构成1项RedFlag；15573%会计净利率受BTC公允价值影响，不代表软件业务持续利润率。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-16",
+        "title_block": "德国官员警告：特斯拉汽车可能存在间谍风险；暴跌86%！特斯拉崩盘",
+        "context": "新闻： 本轮新闻：德国官员警告：特斯拉汽车可能存在间谍风险；暴跌86%！特斯拉崩盘。净利率2.81%且7家机构卖出，零RedFlag只属存疑型，绝不能判恶化或技术错杀。德国监管疑虑与标题中的86%不是本股本日跌幅。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-16",
+        "title_block": "小鹏卖爆了，四季度每月要卖超5.6万辆！主要靠这台车；小鹏集团涨超4% 2026年Q3总收入242.8亿元 同比增长19.1%",
+        "context": "新闻： 本轮新闻：小鹏卖爆了，四季度每月要卖超5.6万辆！主要靠这台车；小鹏集团涨超4% 2026年Q3总收入242.8亿元 同比增长19.1%。本日18:12至18:38已出现Q3实际数据：营收242.8亿元、净亏8.7亿元（去年同季约3.8亿元），净利率未直接披露但亏损且营收为正可确定低于2%。CLI仍为旧Q2样本，买入校验改用本期新闻，净亏与上年基数均四舍五入；据此净利同比约-128.9%，另一报道为亏损扩大127.9%，不影响低于-50%阈值。毛利率18.9%、汽车毛利率13.1%、现金454.1亿元、Q4营收指引304至318亿元。SEC最新记录尚停留11月2日，不冒充已归档Q3原文。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN202611161820289738409f&s=b"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "MRVL",
+        "date": "2026-11-16",
+        "title_block": "快讯；Marvell 将在 SC26 展出 AI 互连与内存技术",
+        "context": "新闻： 本轮新闻：快讯；Marvell 将在 SC26 展出 AI 互连与内存技术。20日-31.19%且60日-37.54%构成1项RedFlag，存疑型而非零风险；91.65%净利率可能含特殊收益，不外推。SC26互连与内存展会是催化线索。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "NOK",
+        "date": "2026-11-16",
+        "title_block": "诺基亚等五企组建AI超级工厂联盟：欧洲算力自主化走向分布式协同；2026年全球光通信设备行业总体规模、主要企业市占率及排名调研预测分析",
+        "context": "新闻： 本轮新闻：诺基亚等五企组建AI超级工厂联盟：欧洲算力自主化走向分布式协同；2026年全球光通信设备行业总体规模、主要企业市占率及排名调研预测分析。净利率3.34%且4家卖出，0项RedFlag应为存疑型，不可判恶化；AI超级工厂联盟不等于本期业绩已兑现。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "COHR",
+        "date": "2026-11-16",
+        "title_block": "通信周观点：Coherent签署200亿美元长协 Arista目标27年AI网络收入翻倍；Coherent Corp.日内跌10%，费半重挫4.29%板块共振走弱",
+        "context": "新闻： 本轮新闻：通信周观点：Coherent签署200亿美元长协 Arista目标27年AI网络收入翻倍；Coherent Corp.日内跌10%，费半重挫4.29%板块共振走弱。长协新闻需核验履约与现金回收；本轮finance样本营收1805.641百万美元未标期末，不能冒充已归档FY2027Q1的SEC实际2370.324百万美元。自由现金流为-383.481百万美元。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "QUBT",
+        "date": "2026-11-16",
+        "title_block": "Quantum Computing Inc.盘中异动 快速跳水5.15%；Quantum Computing三季度营收暴增25倍，收购驱动但净亏1510万美元",
+        "context": "新闻： 本轮新闻：Quantum Computing Inc.盘中异动 快速跳水5.15%；Quantum Computing三季度营收暴增25倍，收购驱动但净亏1510万美元。Q3营收9.5百万美元、净亏15.145百万美元；CLI毛利率-51.67%与已核验SEC原文约5%存在差异，保留差异，不用收购增长叙事抵消亏损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "BE",
+        "date": "2026-11-16",
+        "title_block": "快讯；汇丰：美股回调过度，推荐11只具备基本面支撑的买入标的",
+        "context": "新闻： 本轮新闻：快讯；汇丰：美股回调过度，推荐11只具备基本面支撑的买入标的。数据中心供电叙事不等于现金回收；本轮样本FreeCF_Q为-180.634百万美元，保持风控。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "TSM",
+        "date": "2026-11-16",
+        "title_block": "什么信号？台积电调整产能分配机制 客户财务健康度成硬指标；芯片大事件汇总（11月16日）",
+        "context": "新闻： 本轮新闻：什么信号？台积电调整产能分配机制 客户财务健康度成硬指标；芯片大事件汇总（11月16日）。产能分配与客户财务健康度属经营线索，月度与产业链新闻不是新增季度财报；本轮CLI样本毛利率65.41%。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261116_1923"
+      },
+      {
+        "symbol": "MU",
+        "date": "2026-11-17",
+        "title_block": "价格暴涨697%，DRAM三巨头撤诉请求被全面驳回！；美光科技美股盘前跌超2%",
+        "context": "新闻： 本轮新闻：价格暴涨697%，DRAM三巨头撤诉请求被全面驳回！；美光科技美股盘前跌超2%。最近收盘跌7.62%，盘前仍跌0.70%；高净利率来自本轮finance未标期末样本，不冒充已归档FY2026Q4原文542.29亿美元营收，也不外推长期持续利润。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-11-17",
+        "title_block": "AMD斩获最新全球TOP500超算榜单超40%份额，同比飙升14%；Linux内核迎来关键更新 为AMD Zen 6异构处理器加入“容量感知调度”支持",
+        "context": "新闻： 本轮新闻：AMD斩获最新全球TOP500超算榜单超40%份额，同比飙升14%；Linux内核迎来关键更新 为AMD Zen 6异构处理器加入“容量感知调度”支持。超算份额与Zen6调度消息是产品催化线索，不抵消最近收盘跌5.58%的市场风险；不以单一新闻主观加档。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "INTC",
+        "date": "2026-11-17",
+        "title_block": "英特尔跌3.79% 英伟达Q3减持其25%股份；又一位世界级华人CEO，遇到了麻烦",
+        "context": "新闻： 本轮新闻：英特尔跌3.79% 英伟达Q3减持其25%股份；又一位世界级华人CEO，遇到了麻烦。净利为正但PE为负，仍命中亏损/估值项；减持与管理层相关新闻需区分持股披露和未经独立核实的传闻。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "GOOG",
+        "date": "2026-11-17",
+        "title_block": "Anthropic IPO背后，押注9000亿美元的数据中心豪赌；谷歌警告：AI“自主攻击的时代已到来”",
+        "context": "新闻： 本轮新闻：Anthropic IPO背后，押注9000亿美元的数据中心豪赌；谷歌警告：AI“自主攻击的时代已到来”。AI安全与Anthropic融资是产业线索，不等于本期财务兑现；本轮finance最新样本自由现金流为-9065百万美元。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-17",
+        "title_block": "黄仁勋辞任后，新云扩张谁来垫钱？；82 亿美元买下李飞飞团队，AMD 不想再只靠卖芯片挑战英伟达了",
+        "context": "新闻： 本轮新闻：黄仁勋辞任后，新云扩张谁来垫钱？；82 亿美元买下李飞飞团队，AMD 不想再只靠卖芯片挑战英伟达了。本次盘前约为美东06时，11月17日财报尚仅为预约和绩前报道；不能把历史营收或13F持仓报告当成新季财报。管理层与出口限制叙事未在本报告独立证实。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-17",
+        "title_block": "Nebius集团大股东披露持股3.4%，属被动投资；快讯",
+        "context": "新闻： 本轮新闻：Nebius集团大股东披露持股3.4%，属被动投资；快讯。Q3净亏37.5百万美元，亏损同比收窄而非盈利崩塌；净利率-3.82%仍命中低于2%项。被动持股披露不等于经营或现金流修复。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-17",
+        "title_block": "CoreWeave Q3营收暴增168%，“算力地主”的繁荣与隐忧；大摩——3Q26新云（Neocloud）业绩前瞻：融资环境成核心博弈点（Financing in Focus）（附下载）",
+        "context": "新闻： 本轮新闻：CoreWeave Q3营收暴增168%，“算力地主”的繁荣与隐忧；大摩——3Q26新云（Neocloud）业绩前瞻：融资环境成核心博弈点（Financing in Focus）（附下载）。Q3净亏709百万美元、净利率-19.37%，亏损同比扩大；FreeCF_Q为-7466百万美元。营收增长不能覆盖融资与偿债风险。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "CRCL",
+        "date": "2026-11-17",
+        "title_block": "Circle互联网集团盘中异动 早盘快速跳水5.05%",
+        "context": "新闻： 本轮新闻：Circle互联网集团盘中异动 早盘快速跳水5.05%。最新样本净利率26.13%为正，但ARC与稳定币收益存在一次性或利率因素；最近收盘跌7.32%并非只凭币价解释。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-17",
+        "title_block": "今日比特币：徘徊在6.5万美元下方，Strategy融资能力遭到考验",
+        "context": "新闻： 本轮新闻：今日比特币：徘徊在6.5万美元下方，Strategy融资能力遭到考验。PE为负构成风险项；15573%会计净利率受BTC公允价值重估影响，不代表软件业务持续利润。移除误关联A股微策略新闻。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-17",
+        "title_block": "特斯拉将斥资33.1亿美元扩建德国工厂，用于生产赛博无人驾驶出租车Cybercab；让你的车自己出去赚钱！马斯克10年前构想终于落地，特斯拉要学会自己跑去接单了",
+        "context": "新闻： 本轮新闻：特斯拉将斥资33.1亿美元扩建德国工厂，用于生产赛博无人驾驶出租车Cybercab；让你的车自己出去赚钱！马斯克10年前构想终于落地，特斯拉要学会自己跑去接单了。净利率2.81%且7家机构卖出，零RedFlag也只属存疑型，绝不能判恶化。德国工厂与Cybercab计划是前瞻，不当成已实现盈利。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-17",
+        "title_block": "小鹏G9L、MONA L03英国上市 G9L起售价64990英镑；卖一辆车毛赚2.4万，小鹏为什么还亏8.7亿？",
+        "context": "新闻： 本轮新闻：小鹏G9L、MONA L03英国上市 G9L起售价64990英镑；卖一辆车毛赚2.4万，小鹏为什么还亏8.7亿？。本轮SEC最新11月16日6-K Ex99.1已核验：Q3营收24276.048百万元人民币、净亏867.975百万元，上年净亏380.868百万元，原文亏损同比扩大127.9%；毛利率18.9%、汽车毛利率13.1%。finance CLI仍旧季度，二者明确区分；本期净利率未直接给百分数，亏损且营收为正可确定低于2%，不引用旧6.77%代替。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111717461694d4e377&s=b"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "MRVL",
+        "date": "2026-11-17",
+        "title_block": "Marvell、Penguin 共推业界首款多机架光学 I/O 内存池，提供 HBM 级带宽；Marvell 合作 Penguin 解决 AI 内存扩容难题",
+        "context": "新闻： 本轮新闻：Marvell、Penguin 共推业界首款多机架光学 I/O 内存池，提供 HBM 级带宽；Marvell 合作 Penguin 解决 AI 内存扩容难题。光学I/O内存池合作是行业催化，不等于当期现金兑现；91.65%净利率样本可能含特殊收益，不外推为持续经营能力。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "NOK",
+        "date": "2026-11-17",
+        "title_block": "诺基亚称黄仁勋离职不会影响他们与英伟达合作的 AI-RAN 项目；Nokia，Telia等牵头在北欧打造AI超级工厂",
+        "context": "新闻： 本轮新闻：诺基亚称黄仁勋离职不会影响他们与英伟达合作的 AI-RAN 项目；Nokia，Telia等牵头在北欧打造AI超级工厂。净利率3.34%且4家卖出，零RedFlag只能分为存疑，不能判恶化；AI-RAN及北欧联盟新闻不等于本季订单兑现。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "COHR",
+        "date": "2026-11-17",
+        "title_block": "光通信板块盘初走低，Lumentum、Coherent跌超8%，迈威尔跌超6%，康宁跌超5%；Coherent Corp.创60日新高受压，跌10%受NVIDIA投资疑虑与板块回调拖累",
+        "context": "新闻： 本轮新闻：光通信板块盘初走低，Lumentum、Coherent跌超8%，迈威尔跌超6%，康宁跌超5%；Coherent Corp.创60日新高受压，跌10%受NVIDIA投资疑虑与板块回调拖累。最近收盘跌6.75%，盘前反弹2.25%不是额外右侧确认；finance样本未标期末，与已归档FY2027Q1 SEC营收2370.324百万美元有差异，不冒充本期精确原文。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "QUBT",
+        "date": "2026-11-17",
+        "title_block": "Quantum Computing Inc.市净率破三年低位，AI板块回调拖累；Quantum Computing Inc.盘中异动 早盘大幅跳水5.04%",
+        "context": "新闻： 本轮新闻：Quantum Computing Inc.市净率破三年低位，AI板块回调拖累；Quantum Computing Inc.盘中异动 早盘大幅跳水5.04%。最新季度净亏15.145百万美元，负PE、负净利率风险仍在；CLI毛利率-51.67%与已归档SEC口径有差异，保留差异而不靠AI叙事抵消。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "BE",
+        "date": "2026-11-17",
+        "title_block": "快讯；摩根大通维持Bloom Energy买入评级",
+        "context": "新闻： 本轮新闻：快讯；摩根大通维持Bloom Energy买入评级。数据中心供电属于需求主线，但最新finance样本自由现金流-180.634百万美元；机构买入评级不能取消止损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "TSM",
+        "date": "2026-11-17",
+        "title_block": "ASIC企业，忙着到处借钱；台积电与APS达成供电协议 远期先进产能可达15万WPM",
+        "context": "新闻： 本轮新闻：ASIC企业，忙着到处借钱；台积电与APS达成供电协议 远期先进产能可达15万WPM。供电协议和远期产能是经营线索，不是新增季度财报；本輪rating实际为38买/0卖、47样本、18预测机构，不沿用旧评级数。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261117_1917"
+      },
+      {
+        "symbol": "MU",
+        "date": "2026-11-18",
+        "title_block": "苹果与三星接近签署DRAM长期供货协议，全球内存短缺下“芯片通胀”持续加剧；三星、SK 海力士、美光罕见联手，要给芯片工厂的机器人统一充电标准",
+        "context": "新闻： 本轮新闻：苹果与三星接近签署DRAM长期供货协议，全球内存短缺下“芯片通胀”持续加剧；三星、SK 海力士、美光罕见联手，要给芯片工厂的机器人统一充电标准。DRAM长期供货协议报道是需求线索；68.13%净利率为本轮finance未标期末样本，不冒充既有SEC归档财季，也不外推利润永续。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-11-18",
+        "title_block": "英伟达的麻烦在门外：微软高管暗示，客户正认真考虑AI芯片的“Plan B”；超威半导体：执行副总裁Norrod减持9630股 套现约518.94万美元",
+        "context": "新闻： 本轮新闻：英伟达的麻烦在门外：微软高管暗示，客户正认真考虑AI芯片的“Plan B”；超威半导体：执行副总裁Norrod减持9630股 套现约518.94万美元。替代AI芯片需求是行业机会，管理层减持是持股披露；不能用单条新闻主观提升技术档位。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "INTC",
+        "date": "2026-11-18",
+        "title_block": "英特尔被曝再度裁员，波及全球IT员工；彭博速报｜国产算力适配、英特尔新CPU曝光",
+        "context": "新闻： 本轮新闻：英特尔被曝再度裁员，波及全球IT员工；彭博速报｜国产算力适配、英特尔新CPU曝光。单季净利为正但PE为负，仍命中估值/亏损项；裁员报道不等于已验证盈利修复。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "GOOG",
+        "date": "2026-11-18",
+        "title_block": "谷歌全新AI芯片软件如何助力其对抗英伟达",
+        "context": "新闻： 本轮新闻：谷歌全新AI芯片软件如何助力其对抗英伟达。自研AI软件推进是竞争线索，finance样本自由现金流-9065百万美元；本轮删除不相关QDII标题，不把产品新闻当财务兑现。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-18",
+        "title_block": "刚刚，NVIDIA发布可能是对医疗业务最重要的财报；三星电机将与英伟达合作扩展至MLCC元件领域",
+        "context": "新闻： 本轮新闻：刚刚，NVIDIA发布可能是对医疗业务最重要的财报；三星电机将与英伟达合作扩展至MLCC元件领域。本轮finance最新未标期末样本净利31910百万美元、净利率55.98%，仍是旧季度。最新SEC 11月17日8-K Ex99.1/99.2/99.3确认FY2027Q3营收115844、净利65287百万美元、GAAP毛利率74.8%、经营现金流48253、自由现金流43777；本页明确区分旧CLI样本和新SEC实绩，不伪造本期NetMargin_Q。供给承诺3900亿美元、担保毛敞口1180亿美元及DSO64天需同时关注。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261118185041b69007d2&s=b"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-18",
+        "title_block": "Nebius集团盘后涨超10%，英伟达AI需求验证合同超120亿美元；Nebius集团大股东披露持股3.4%，属被动投资",
+        "context": "新闻： 本轮新闻：Nebius集团盘后涨超10%，英伟达AI需求验证合同超120亿美元；Nebius集团大股东披露持股3.4%，属被动投资。Q3净亏37.5百万美元，亏损同比收窄但净利率仍-3.82%，两个盈利风险项仍在。盘前反弹与合同新闻不能抵消融资风险；合同120亿美元为新闻报道，未独立逐份核验。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-18",
+        "title_block": "CoreWeave首席执行官：没有黄仁勋英伟达不会受影响；黄仁勋“落马”谁受伤？华尔街警告声迭起：新云企业面临生存危机！",
+        "context": "新闻： 本轮新闻：CoreWeave首席执行官：没有黄仁勋英伟达不会受影响；黄仁勋“落马”谁受伤？华尔街警告声迭起：新云企业面临生存危机！。净亏709百万美元、净利率-19.37%且亏损同比扩大，FreeCF_Q=-7466百万美元。未经本报告独立核实的个人传闻不作为交易事实，信用风险不因盘前上涨消失。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "CRCL",
+        "date": "2026-11-18",
+        "title_block": "世行拟用 USDC 拨付发展资金，Circle 股价反跌 5%；Circle互联网集团创52周新低，Q3储备收益率降61基点承压",
+        "context": "新闻： 本轮新闻：世行拟用 USDC 拨付发展资金，Circle 股价反跌 5%；Circle互联网集团创52周新低，Q3储备收益率降61基点承压。净利率26.13%样本为正；本期SEC归档显示储备收入与一次性收入结构需区分。USDC机构化新闻不能取消止损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-18",
+        "title_block": "南方两倍做空MSTR盘中涨超9% 公司频繁通过ATM机制增发融资 或稀释普通股股东份额；微策略 30 日踢出 MSCI，贝莱德 12 万股待售",
+        "context": "新闻： 本轮新闻：南方两倍做空MSTR盘中涨超9% 公司频繁通过ATM机制增发融资 或稀释普通股股东份额；微策略 30 日踢出 MSCI，贝莱德 12 万股待售。负PE是风险项；会计利润受BTC公允价值重估影响，15573%净利率不代表软件业务持续盈利。增发稀释需跟踪，移出MSCI的标题未独立核实，不断言已完成剔除。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-18",
+        "title_block": "2026年前10月纯电汽车销量榜，加速洗牌，特斯拉Model3跌出前十！；荷兰批准特斯拉欧洲版辅助驾驶新限速与分心监测规则",
+        "context": "新闻： 本轮新闻：2026年前10月纯电汽车销量榜，加速洗牌，特斯拉Model3跌出前十！；荷兰批准特斯拉欧洲版辅助驾驶新限速与分心监测规则。净利率2.81%且7家机构卖出，零RedFlag也只能存疑型，绝不能判恶化型。欧洲辅助驾驶规则是新闻线索，不是新增利润确认。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-18",
+        "title_block": "小鹏汽车加速深化英国市场布局；香港交易所信息显示，贝莱德在小鹏汽车-WH股的持股比例于11月13日从5.93%升至6.07%",
+        "context": "新闻： 本轮新闻：小鹏汽车加速深化英国市场布局；香港交易所信息显示，贝莱德在小鹏汽车-WH股的持股比例于11月13日从5.93%升至6.07%。本轮finance已返回亏损、负净利率；11月16日本期SEC实际财报昨日已归档，今天去重。美股财务表以百万美元呈现，SEC原稿人民币金额不混用。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "MRVL",
+        "date": "2026-11-18",
+        "title_block": "Credo Technology涨超5% 与迈威尔科技达成AEC专利和解；Marvell Technology：董事会主席兼首席执行官Matthew J. Murphy减持7500股，套现约109.91万美元",
+        "context": "新闻： 本轮新闻：Credo Technology涨超5% 与迈威尔科技达成AEC专利和解；Marvell Technology：董事会主席兼首席执行官Matthew J. Murphy减持7500股，套现约109.91万美元。AEC专利和解为新闻线索，91.65%净利率样本可能受特殊收益影响，不当成持续经营净利率。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "NOK",
+        "date": "2026-11-18",
+        "title_block": "诺基亚与华硕达成视频专利许可协议，仲裁程序终止；诺基亚称黄仁勋离职不会影响他们与英伟达合作的 AI-RAN 项目",
+        "context": "新闻： 本轮新闻：诺基亚与华硕达成视频专利许可协议，仲裁程序终止；诺基亚称黄仁勋离职不会影响他们与英伟达合作的 AI-RAN 项目。净利率3.34%且4家卖出，零RedFlag只属存疑，不判恶化。专利协议可跟踪，不能由此推导本季利润增长。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "COHR",
+        "date": "2026-11-18",
+        "title_block": "​美股光通信板块走高 Coherent涨超5%；Coherent Corp.盘中异动 早盘股价大涨5.52%报214.66美元",
+        "context": "新闻： 本轮新闻：​美股光通信板块走高 Coherent涨超5%；Coherent Corp.盘中异动 早盘股价大涨5.52%报214.66美元。光通信板块报道与盘前5.43%反弹可描述为相关线索，不宣称已完成右侧确认。finance未标期末样本与已归档FY2027Q1 SEC数字有差异，不冒充本期精确原文。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "BE",
+        "date": "2026-11-18",
+        "title_block": "摩根大通维持Bloom Energy买入评级",
+        "context": "新闻： 本轮新闻：摩根大通维持Bloom Energy买入评级。盘前5.59%上涨伴随摩根大通买入评级报道，无法确认独立因果；finance样本自由现金流-180.634百万美元，估值和融资仍需风控。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "TSM",
+        "date": "2026-11-18",
+        "title_block": "理想汽车CTO谢炎台积电OIP论坛解读马赫M100全流程；台积电2026年度优秀供应商名单，光电传感器企业在列",
+        "context": "新闻： 本轮新闻：理想汽车CTO谢炎台积电OIP论坛解读马赫M100全流程；台积电2026年度优秀供应商名单，光电传感器企业在列。优秀供应商名单与OIP论坛是产业新闻，不是新增季度财报；净利率51.07%样本为正但不能用龙头身份取消止损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261118_1918"
+      },
+      {
+        "symbol": "MU",
+        "date": "2026-11-19",
+        "title_block": "机构：部分CSP下修订单抵销北美拉货，2027年NAND F；TrendForce预测：2027Q1起NAND闪存合约价格将转向下跌",
+        "context": "新闻： 本轮新闻：机构：部分CSP下修订单抵销北美拉货，2027年NAND F；TrendForce预测：2027Q1起NAND闪存合约价格将转向下跌。本轮新闻报道TrendForce预计2027Q1起NAND合约价下跌，不能用盘前反弹否认周期风险；68.13%净利率是CLI未标期末样本，不外推为永续利润。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-11-19",
+        "title_block": "OpenAI：模型将助 AMD 旗舰 GPU 设计指标改善最高 14%；超威半导体盘中异动 早盘大幅上涨3.05%报518.75美元",
+        "context": "新闻： 本轮新闻：OpenAI：模型将助 AMD 旗舰 GPU 设计指标改善最高 14%；超威半导体盘中异动 早盘大幅上涨3.05%报518.75美元。OpenAI模型辅助GPU设计改善是产品新闻线索，不是本季新增财务兑现；今日常规时段上涨与盘前上涨分别展示。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "INTC",
+        "date": "2026-11-19",
+        "title_block": "Intel，重大突破；英特尔和微软深化合作，携手打造差异化的Azure基础设施",
+        "context": "新闻： 本轮新闻：Intel，重大突破；英特尔和微软深化合作，携手打造差异化的Azure基础设施。最新样本单季净利为正但PE为负，仍命中第一项风险；与微软Azure合作新闻不等于整体盈利已修复。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "GOOG",
+        "date": "2026-11-19",
+        "title_block": "AI系列之模型速评｜Google：Gemini 4 Neon智能指数反超Carbon，三档模型阵容成型；AI视频，进入DeepSeek时刻？",
+        "context": "新闻： 本轮新闻：AI系列之模型速评｜Google：Gemini 4 Neon智能指数反超Carbon，三档模型阵容成型；AI视频，进入DeepSeek时刻？。Gemini模型报道是竞争线索，finance样本自由现金流-9065百万美元；不能以产品热度替代资本开支和现金回报核验。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-19",
+        "title_block": "英伟达涨2.01% 机构指英伟达Q3业绩延续超预期节奏；英伟达美股盘前涨超2%",
+        "context": "新闻： 本轮新闻：英伟达涨2.01% 机构指英伟达Q3业绩延续超预期节奏；英伟达美股盘前涨超2%。本轮finance仍返回净利31910百万美元、净利率55.98%的旧样本，与已归档FY2027Q3原文不是同一期间。最新实际财报已于美东11月17日发布并在既有索引归档；本轮不得将CLI旧样本标作新季实绩。财报超预期报道不代表股价趋势已经修复。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-19",
+        "title_block": "Nebius集团盘后涨超10%，英伟达AI需求验证合同超120亿美元",
+        "context": "新闻： 本轮新闻：Nebius集团盘后涨超10%，英伟达AI需求验证合同超120亿美元。季度净亏37.5百万美元、净利率-3.82%，盈利风险未消失，finance自由现金流样本-6992.57百万美元。合同超120亿美元为本轮新闻报道，未逐份独立验证，盘前上涨不能抵消融资风险。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-19",
+        "title_block": "CoreWeave三名创始人上市以来累计套现33亿美元，联合创始人斥资购入公司债券；CoreWeave淡化黄仁勋离任影响，称英伟达仍是关键合作伙伴",
+        "context": "新闻： 本轮新闻：CoreWeave三名创始人上市以来累计套现33亿美元，联合创始人斥资购入公司债券；CoreWeave淡化黄仁勋离任影响，称英伟达仍是关键合作伙伴。本轮样本净亏709百万美元、净利率-19.37%，亏损同比扩大，自由现金流-7466百万美元。创始人套现及管理层报道未逐项独立核实，不当作已确认交易事实；信用风险仍需优先关注。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "CRCL",
+        "date": "2026-11-19",
+        "title_block": "Circle互联网集团创60日新低，Q3利息收入占比76%环比降8%；世行拟用 USDC 拨付发展资金，Circle 股价反跌 5%",
+        "context": "新闻： 本轮新闻：Circle互联网集团创60日新低，Q3利息收入占比76%环比降8%；世行拟用 USDC 拨付发展资金，Circle 股价反跌 5%。净利率26.13%样本为正，但利息收入占比变化和降息风险须跟踪；USDC机构化新闻不取消止损。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-19",
+        "title_block": "摩根士丹利13F：Strategy持股增16.6%，IBIT增18.4%",
+        "context": "新闻： 本轮新闻：摩根士丹利13F：Strategy持股增16.6%，IBIT增18.4%。负PE是风险项，会计净利和15573%净利率受BTC公允价值重估影响，不代表软件业务持续盈利；13F持仓变化是滞后披露，不能当作盘前新资金流入。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-19",
+        "title_block": "特斯拉12月3日召开股东大会 重选马斯克等3名董事；特斯拉Roadster预订开启，顶配Rocket支持短时腾空",
+        "context": "新闻： 本轮新闻：特斯拉12月3日召开股东大会 重选马斯克等3名董事；特斯拉Roadster预订开启，顶配Rocket支持短时腾空。净利率2.81%、7家机构卖出，若0项RedFlag也只能存疑型，绝不判恶化型；股东大会及Roadster新闻不代表当季盈利增长。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-19",
+        "title_block": "小鹏集团三季度营收交付双增，盈利拐点待规模效应兑现；小鹏科技日11月25日开启 人形机器人将带来新演示",
+        "context": "新闻： 本轮新闻：小鹏集团三季度营收交付双增，盈利拐点待规模效应兑现；小鹏科技日11月25日开启 人形机器人将带来新演示。季度仍亏损且净利率负；11月16日已发布财报在既有索引归档，本轮去重。科技日与机器人消息是未来催化，不是利润兑现；美股CLI百万美元与SEC原稿人民币不混用。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "MRVL",
+        "date": "2026-11-19",
+        "title_block": "迈威尔科技盘中异动 股价大跌3.07%报144.18美元；Credo Technology涨超5% 与迈威尔科技达成AEC专利和解",
+        "context": "新闻： 本轮新闻：迈威尔科技盘中异动 股价大跌3.07%报144.18美元；Credo Technology涨超5% 与迈威尔科技达成AEC专利和解。AEC专利和解是新闻线索，91.65%净利率可能受特殊收益影响，不当作持续经营净利率或确定性的盈利增长。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "NOK",
+        "date": "2026-11-19",
+        "title_block": "诺基亚与华硕达成多年期视频专利许可协议，相关诉讼结束；派拉蒙、华纳诉诺基亚案伦敦开审：全球流媒体费率的第一次司法定价",
+        "context": "新闻： 本轮新闻：诺基亚与华硕达成多年期视频专利许可协议，相关诉讼结束；派拉蒙、华纳诉诺基亚案伦敦开审：全球流媒体费率的第一次司法定价。净利率3.34%、4家机构卖出，0项RedFlag归存疑型而非恶化型。专利协议和诉讼是观察线索，不能直接推导净利改善。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "COHR",
+        "date": "2026-11-19",
+        "title_block": "Coherent依赖国产硅光代工，新易盛、Lumentum排队验证；​美股光通信板块走高 Coherent涨超5%",
+        "context": "新闻： 本轮新闻：Coherent依赖国产硅光代工，新易盛、Lumentum排队验证；​美股光通信板块走高 Coherent涨超5%。光通信合作和板块上涨报道不是已完成右侧确认；本轮finance未标期末样本与既有SEC季度原文区别展示，不将其冒充本期精确实绩。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "BE",
+        "date": "2026-11-19",
+        "title_block": "本轮统一抓取无有效公司催化新闻",
+        "context": "新闻： 本轮统一抓取无有效公司催化新闻。盘前上涨没有从统一抓取新闻中取得有效公司催化，不编造上涨原因；finance样本自由现金流-180.634百万美元，估值和融资风险仍在。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "TSM",
+        "date": "2026-11-19",
+        "title_block": "台积电，迎来新机会；日月光、台积电接力扩产，先进封装为何扼住AI芯片“咽喉”？",
+        "context": "新闻： 本轮新闻：台积电，迎来新机会；日月光、台积电接力扩产，先进封装为何扼住AI芯片“咽喉”？。先进封装扩产报道是产业催化，不是新增财报；净利率51.07%未标期末样本为正，龙头身份不能取消止损。 原始新闻来源",
+        "links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "source_report": "daily_20261119_1913"
+      },
+      {
+        "symbol": "MU",
+        "date": "2026-11-20",
+        "title_block": "NAND Flash，要降价了？；美光：2027 年自身 75% 库存已售罄，客户已在谈 2028 年订单",
+        "context": "新闻： 统一抓取标题：NAND Flash，要降价了？；美光：2027 年自身 75% 库存已售罄，客户已在谈 2028 年订单。NAND降价担忧与2027年库存售罄报道并存，需区分NAND与HBM产品结构；68.13%净利率为CLI未标期末样本，不外推为长期可持续利润。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120185955a706f83c&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-11-20",
+        "title_block": "7人，5年，2股控制公司，1万亿美元，全球最大IPO来了！股东分食9000亿美元长单难解Anthropic“循环融资”之忧｜原创；AMD股价一度大跌11% Hunterbrook做空该公司股票",
+        "context": "新闻： 统一抓取标题：7人，5年，2股控制公司，1万亿美元，全球最大IPO来了！股东分食9000亿美元长单难解Anthropic“循环融资”之忧｜原创；AMD股价一度大跌11% Hunterbrook做空该公司股票。本轮新闻报告Hunterbrook做空及高管减持，属于公司层面风险线索，不能把所有下跌解释成技术错杀；未独立证实做空报告具体指控。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026112000100998c1f72c&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "INTC",
+        "date": "2026-11-20",
+        "title_block": "人气滚烫！磷化铟近期十大重磅新闻事件，你错过了哪个？；英特尔美股盘前跌超5%，现报52.922美元",
+        "context": "新闻： 统一抓取标题：人气滚烫！磷化铟近期十大重磅新闻事件，你错过了哪个？；英特尔美股盘前跌超5%，现报52.922美元。18A良率70%及液冷合作是产业新闻线索；PE为负且20/60日同时恶化，即便最新样本净利为正也不能消除风险。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120185512973f7559&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "GOOG",
+        "date": "2026-11-20",
+        "title_block": "存储涨价推高印度旗舰手机门槛 高端机型或涨超三成；给 Gemini 道歉，请自觉排队",
+        "context": "新闻： 统一抓取标题：存储涨价推高印度旗舰手机门槛 高端机型或涨超三成；给 Gemini 道歉，请自觉排队。Gemini与直接采购HBM报道涉及竞争与成本结构；CLI自由现金流样本为-9065百万美元，产品热度不替代现金回报核验。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120161610a706b2ce&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-20",
+        "title_block": "原来梁文锋很早就开始做准备了：DeepSeek成功避开英伟达垄断风险；黄仁勋回归，需要几步？",
+        "context": "新闻： 统一抓取标题：原来梁文锋很早就开始做准备了：DeepSeek成功避开英伟达垄断风险；黄仁勋回归，需要几步？。本轮news含管理层变动与人才流失报道，未取得公司公告逐项核实，不当作已证实事实。finance仍返回净利31910百万美元的未标期末样本，与已归档FY2027Q3原文不是同一期间；不能冒充最新财季精确实绩。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120184333a706f1ad&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-20",
+        "title_block": "Nebius集团2026财年第三财季实现净利润-37.50百万美元，同比增加68.75%；Nebius集团盘中异动 早盘快速拉升7.36%报114.83美元",
+        "context": "新闻： 统一抓取标题：Nebius集团2026财年第三财季实现净利润-37.50百万美元，同比增加68.75%；Nebius集团盘中异动 早盘快速拉升7.36%报114.83美元。新闻明确报告2026Q3净亏37.50百万美元、同比减亏68.75%，减亏不等于盈利；负净利率和中期动能恶化仍须校验。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026112000011694d8f13e&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-20",
+        "title_block": "科技股抛售潮拖累美股六连跌！华尔街神算子逆势力挺；美股、企业债、铜油齐发警报：美国经济繁荣期可能正在接近尾声",
+        "context": "新闻： 统一抓取标题：科技股抛售潮拖累美股六连跌！华尔街神算子逆势力挺；美股、企业债、铜油齐发警报：美国经济繁荣期可能正在接近尾声。本轮报道创始人购买债券，但信用风险与融资压力不能据此排除；季度净亏709百万美元、负净利率、自由现金流-7466百万美元样本需优先关注。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120085354a7060a38&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "CRCL",
+        "date": "2026-11-20",
+        "title_block": "Circle互联网集团盘中异动 早盘股价大涨5.01%；Circle互联网集团创60日新低，Q3利息收入占比76%环比降8%",
+        "context": "新闻： 统一抓取标题：Circle互联网集团盘中异动 早盘股价大涨5.01%；Circle互联网集团创60日新低，Q3利息收入占比76%环比降8%。Q3利息收入占比76%环比下降的新闻是主业结构线索；单季盈利为正不能抵消20/60日持续下跌风险。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119002100b6907506&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-20",
+        "title_block": "Strategy STRC 日成交破 6 亿美元，塞勒称 100 美元下方持续回购；Saylor：STRC按12%股息率自然需求约50亿至75亿美元",
+        "context": "新闻： 统一抓取标题：Strategy STRC 日成交破 6 亿美元，塞勒称 100 美元下方持续回购；Saylor：STRC按12%股息率自然需求约50亿至75亿美元。STRC优先股的成交、股息和融资与MSTR普通股不同；负PE与20/60日动能同时恶化命中风险。会计净利受BTC公允价值重估影响，不等于软件业务可持续利润。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120164304a4b12c52&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-20",
+        "title_block": "精选 马斯克称特斯拉AI4已能在暗黑破坏神达到Torment II；马斯克预计Optimus一年半后可分担家务并进入家庭",
+        "context": "新闻： 统一抓取标题：精选 马斯克称特斯拉AI4已能在暗黑破坏神达到Torment II；马斯克预计Optimus一年半后可分担家务并进入家庭。Optimus和Robotaxi标题为前瞻报道，尚未逐项公告核验；净利率2.81%、7家机构卖出，0项RedFlag也应为存疑型，绝不判恶化型。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120185424b6939e61&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-20",
+        "title_block": "毛利回到13.1%，小鹏离养得起机器人还差多远？；增速下滑亏损扩大，何小鹏激进军令状底气何在？",
+        "context": "新闻： 统一抓取标题：毛利回到13.1%，小鹏离养得起机器人还差多远？；增速下滑亏损扩大，何小鹏激进军令状底气何在？。本轮报道Q3毛利率回落与亏损扩大，最新财报已于11月16日归档，去重不重复生成。CLI未标期末样本净利率-3.58%与最新原文毛利率13.1%不能混作同一精确季度。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120183310a706ed8e&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "MRVL",
+        "date": "2026-11-20",
+        "title_block": "本周科技圈七大核弹（11.3-11.20）：Anthropic 800亿IPO敲钟、Marvell 1150亿收购、黄仁勋辞职；中国资产深夜大涨，拼多多狂飙近13%，阿里巴巴涨超4%，美股芯片、光通信爆发，Coherent涨11%，西部数据、英特尔涨超8%，国际油价猛拉",
+        "context": "新闻： 统一抓取标题：本周科技圈七大核弹（11.3-11.20）：Anthropic 800亿IPO敲钟、Marvell 1150亿收购、黄仁勋辞职；中国资产深夜大涨，拼多多狂飙近13%，阿里巴巴涨超4%，美股芯片、光通信爆发，Coherent涨11%，西部数据、英特尔涨超8%，国际油价猛拉。综合科技标题所称大额收购未经公告核验，不作为已确认事实；91.65%净利率样本可能受特殊收益影响，不当作持续经营净利率，20/60日动能已同时恶化。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120145044b693340a&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "NOK",
+        "date": "2026-11-20",
+        "title_block": "财联社11月20日电，诺基亚股价较赫尔辛基收盘价下跌4.6%",
+        "context": "新闻： 统一抓取标题：财联社11月20日电，诺基亚股价较赫尔辛基收盘价下跌4.6%。；诺基亚拥抱英伟达，爱立信走自己的路！。芬兰股价与美股ADR涨跌口径不能混用；净利率3.34%、4家机构卖出，0项RedFlag只判存疑型而非基本面恶化型。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111915425294d83e0f&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "COHR",
+        "date": "2026-11-20",
+        "title_block": "光子龙头 Coherent 入选《时代》制造榜；美股光通信概念股普涨 Coherent大涨逾11%",
+        "context": "新闻： 统一抓取标题：光子龙头 Coherent 入选《时代》制造榜；美股光通信概念股普涨 Coherent大涨逾11%。新闻报道盘中涨逾11%，但统一抓取的已结束常规涨幅仅0.99%，盘前为负，不能沿用盘中标题作为收盘涨幅或当前热点结论。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120034327973e37d1&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "BE",
+        "date": "2026-11-20",
+        "title_block": "全球钪的市场供需情况简介；Bloom Energy盘中异动 早盘大幅上涨5.28%",
+        "context": "新闻： 统一抓取标题：全球钪的市场供需情况简介；Bloom Energy盘中异动 早盘大幅上涨5.28%。BMO评级升级同时下调目标价，不能只选乐观半句；数据中心供电叙事不等于利润兑现。净利率20.25%样本为正但自由现金流-180.634百万美元，盘前下跌不能凭题材取消止损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119233250b6922511&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      },
+      {
+        "symbol": "TSM",
+        "date": "2026-11-20",
+        "title_block": "美国新规，台积电回应了！；英特尔失去潜在客户？",
+        "context": "新闻： 统一抓取标题：美国新规，台积电回应了！；英特尔失去潜在客户？。本轮美国新规与AI需求报道是政策和产业线索，非新增财报；台股指数与美股ADR不是同一收益口径。净利率51.07%未标期末样本为正，仍需执行止损。 本轮新闻来源",
+        "links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120174448a4b14639&s=b"
+          }
+        ],
+        "source_report": "daily_20261120_1920"
+      }
+    ],
+    "news_top5": [
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-18",
+        "title": "NVDA FY2027Q3实绩发布：AI增长与回款风险并存",
+        "summary": "11月17日美东发布、本周日报已核验并归档。营收1158.44亿美元，GAAP毛利率74.8%，净利652.87亿美元；必须同步观察供给承诺、担保敞口与回款周期。周五跌14.01%说明财报数字强不等于市场风险已消失。",
+        "source_report": "daily_20261118_1918",
+        "original_titles": "刚刚，NVIDIA发布可能是对医疗业务最重要的财报；三星电机将与英伟达合作扩展至MLCC元件领域",
+        "original_links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261118185041b69007d2&s=b"
+          }
+        ],
+        "earnings_archive": "earnings/NVDA-2027Q3.html",
+        "primary_source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+      },
+      {
+        "symbol": "XPEV",
+        "date": "2026-11-17",
+        "title": "小鹏Q3收入与交付增长，亏损同比扩大",
+        "summary": "11月16日本期6-K实绩：营收242.76048亿元人民币，净亏8.67975亿元，亏损同比扩大127.9%，汽车毛利率13.1%。规模增长尚未转化为盈利，机器人及车型催化不能替代现金流验证。",
+        "source_report": "daily_20261117_1917",
+        "original_titles": "小鹏G9L、MONA L03英国上市 G9L起售价64990英镑；卖一辆车毛赚2.4万，小鹏为什么还亏8.7亿？",
+        "original_links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111717461694d4e377&s=b"
+          }
+        ],
+        "earnings_archive": "earnings/XPEV-2026Q3.html",
+        "primary_source": "https://www.sec.gov/Archives/edgar/data/1810997/000119312526461897/d182197dex991.htm"
+      },
+      {
+        "symbol": "MU",
+        "date": "2026-11-20",
+        "title": "MU：NAND降价疑虑与长期供货紧张报道并存",
+        "summary": "五份日报中存储价格、长期订单与DRAM诉讼反复出现。周五候选标题包括“NAND Flash，要降价了？”及“2027年自身75%库存已售罄”；这里只复盘报道，不把预订、诉讼主张或新闻标题当作已兑现业绩，须区分NAND、DRAM与HBM。",
+        "source_report": "daily_20261120_1920",
+        "original_titles": "NAND Flash，要降价了？；美光：2027 年自身 75% 库存已售罄，客户已在谈 2028 年订单",
+        "original_links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120185955a706f83c&s=b"
+          }
+        ],
+        "earnings_archive": "",
+        "primary_source": ""
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-11-20",
+        "title": "Nebius减亏与交付、融资压力成为本周焦点",
+        "summary": "本周新闻重新引用已于11月12日发布的Q3，不是新增财报：净亏3750万美元、同比减亏68.75%。减亏仍不等于盈利；周跌幅位于后列，合同与需求叙事需由交付和融资能力验证。",
+        "source_report": "daily_20261120_1920",
+        "original_titles": "Nebius集团2026财年第三财季实现净利润-37.50百万美元，同比增加68.75%；Nebius集团盘中异动 早盘快速拉升7.36%报114.83美元",
+        "original_links": [
+          {
+            "text": "本轮新闻来源",
+            "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026112000011694d8f13e&s=b"
+          }
+        ],
+        "earnings_archive": "earnings/NBIS-2026Q3.html",
+        "primary_source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm"
+      },
+      {
+        "symbol": "CRWV",
+        "date": "2026-11-19",
+        "title": "CoreWeave融资风险讨论升温，营收增长不能掩盖亏损",
+        "summary": "本周复盘既有Q3业绩与融资风险：净亏7.09亿美元，净利率样本-19.37%，现金投入巨大。创始人套现及管理层报道未逐项独立核实，列为待核线索，不作为已确认事实或买入依据。Q3原于11月10日披露，本周不重复认定为新财报。",
+        "source_report": "daily_20261119_1913",
+        "original_titles": "CoreWeave三名创始人上市以来累计套现33亿美元，联合创始人斥资购入公司债券；CoreWeave淡化黄仁勋离任影响，称英伟达仍是关键合作伙伴",
+        "original_links": [
+          {
+            "text": "原始新闻来源",
+            "url": "https://youngstockdaily.pages.dev/"
+          }
+        ],
+        "earnings_archive": "earnings/CRWV-2026Q3.html",
+        "primary_source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm"
+      }
+    ],
+    "next_week_start": "2026-11-23",
+    "next_week_end": "2026-11-27",
+    "event_queries": {
+      "historical_quote_source": "westock quote --date; direct table field transcription",
+      "baseline_date": "2026-11-13",
+      "monday_date": "2026-11-16",
+      "friday_date": "2026-11-20",
+      "prices": {
+        "MU": {
+          "prev_fri_close": 778.31,
+          "mon_open": 734.16,
+          "mon_close": 719.02,
+          "fri_close": 594.51,
+          "fri_pct_1d": -13.89
+        },
+        "AMD": {
+          "prev_fri_close": 534.06,
+          "mon_open": 503.45,
+          "mon_close": 504.28,
+          "fri_close": 424.39,
+          "fri_pct_1d": -13.25
+        },
+        "INTC": {
+          "prev_fri_close": 59.66,
+          "mon_open": 56.71,
+          "mon_close": 55.47,
+          "fri_close": 51.28,
+          "fri_pct_1d": -7.97
+        },
+        "GOOG": {
+          "prev_fri_close": 292.52,
+          "mon_open": 290.55,
+          "mon_close": 281.26,
+          "fri_close": 264.0,
+          "fri_pct_1d": -2.59
+        },
+        "NVDA": {
+          "prev_fri_close": 162.85,
+          "mon_open": 159.02,
+          "mon_close": 156.14,
+          "fri_close": 125.53,
+          "fri_pct_1d": -14.01
+        },
+        "NBIS": {
+          "prev_fri_close": 115.88,
+          "mon_open": 106.8,
+          "mon_close": 107.13,
+          "fri_close": 81.31,
+          "fri_pct_1d": -16.11
+        },
+        "CRWV": {
+          "prev_fri_close": 53.13,
+          "mon_open": 49.36,
+          "mon_close": 49.88,
+          "fri_close": 39.51,
+          "fri_pct_1d": -12.02
+        },
+        "CRCL": {
+          "prev_fri_close": 62.2,
+          "mon_open": 57.67,
+          "mon_close": 57.65,
+          "fri_close": 47.51,
+          "fri_pct_1d": -8.42
+        },
+        "MSTR": {
+          "prev_fri_close": 111.62,
+          "mon_open": 103.74,
+          "mon_close": 103.03,
+          "fri_close": 77.8,
+          "fri_pct_1d": -9.67
+        },
+        "TSLA": {
+          "prev_fri_close": 390.22,
+          "mon_open": 387.0,
+          "mon_close": 379.74,
+          "fri_close": 345.82,
+          "fri_pct_1d": -7.64
+        },
+        "XPEV": {
+          "prev_fri_close": 9.37,
+          "mon_open": 9.9,
+          "mon_close": 9.67,
+          "fri_close": 8.08,
+          "fri_pct_1d": -13.86
+        },
+        "MRVL": {
+          "prev_fri_close": 156.76,
+          "mon_open": 147.56,
+          "mon_close": 145.36,
+          "fri_close": 122.28,
+          "fri_pct_1d": -11.69
+        },
+        "NOK": {
+          "prev_fri_close": 8.07,
+          "mon_open": 7.87,
+          "mon_close": 7.69,
+          "fri_close": 6.88,
+          "fri_pct_1d": -8.27
+        },
+        "COHR": {
+          "prev_fri_close": 218.15,
+          "mon_open": 201.36,
+          "mon_close": 203.43,
+          "fri_close": 187.22,
+          "fri_pct_1d": -12.9
+        },
+        "QUBT": {
+          "prev_fri_close": 5.56,
+          "mon_open": 5.38,
+          "mon_close": 5.25,
+          "fri_close": 4.4,
+          "fri_pct_1d": -9.84
+        },
+        "BE": {
+          "prev_fri_close": 191.99,
+          "mon_open": 176.6,
+          "mon_close": 177.28,
+          "fri_close": 142.39,
+          "fri_pct_1d": -15.3
+        },
+        "TSM": {
+          "prev_fri_close": 398.73,
+          "mon_open": 379.59,
+          "mon_close": 373.45,
+          "fri_close": 318.71,
+          "fri_pct_1d": -9.48
+        }
+      },
+      "disclosure_source_command": "westock disclosure (新版 reserve 对应命令)",
+      "disclosures": [
+        {
+          "symbol": "MU",
+          "date": "2026-12-17",
+          "period": "FY2027Q1"
+        },
+        {
+          "symbol": "AMD",
+          "date": "2026-11-03",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "INTC",
+          "date": "2026-10-29",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "GOOG",
+          "date": "2026-10-28",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "NVDA",
+          "date": "2026-11-17",
+          "period": "FY2027Q3"
+        },
+        {
+          "symbol": "NBIS",
+          "date": "2026-11-12",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "CRWV",
+          "date": "2026-11-10",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "CRCL",
+          "date": "2026-11-04",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "MSTR",
+          "date": "2026-10-29",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "TSLA",
+          "date": "2026-10-21",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "XPEV",
+          "date": "2026-11-16",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "MRVL",
+          "date": "2026-12-01",
+          "period": "FY2027Q3"
+        },
+        {
+          "symbol": "NOK",
+          "date": "2027-01-28",
+          "period": "FY2026Q4"
+        },
+        {
+          "symbol": "COHR",
+          "date": "2026-11-04",
+          "period": "FY2027Q1"
+        },
+        {
+          "symbol": "QUBT",
+          "date": "2026-11-09",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "BE",
+          "date": "2026-10-22",
+          "period": "FY2026Q3"
+        },
+        {
+          "symbol": "TSM",
+          "date": "2026-10-15",
+          "period": "FY2026Q3"
+        }
+      ],
+      "exdiv_source_command": "westock dividend --all (新版 exdiv 对应命令)",
+      "next_week_exdiv_results": [],
+      "exdiv_query_note": "17只均已查询，返回数据未发现2026-11-23至2026-11-27的除权日；部分标的返回空，不能据此断言未来绝无分红。",
+      "exchange_source": "https://www.nyse.com/markets/hours-calendars",
+      "next_week_events": [
+        {
+          "date": "2026-11-26",
+          "type": "holiday",
+          "title": "感恩节美股常规交易休市",
+          "confirmed": true
+        },
+        {
+          "date": "2026-11-27",
+          "type": "early_close",
+          "title": "美股13:00 ET提前收盘（北京时间11月28日02:00）；符合条件的期权13:15 ET收市",
+          "confirmed": true
+        },
+        {
+          "date": "2026-11-27",
+          "type": "weekly_option_risk",
+          "title": "若持有11月27日到期周权，核对具体合约最后交易时间与券商行权截止；不能把所有期权统一视为13:15收盘",
+          "confirmed": false,
+          "conditional": true
+        }
+      ]
+    },
+    "web3": {
+      "baseline": {
+        "date": "2026-11-13",
+        "btc": 69282,
+        "eth": 1952,
+        "fear_greed": 20,
+        "source_report": "daily_20261113_1922"
+      },
+      "daily_snapshots": [
+        {
+          "date": "2026-11-16",
+          "btc": 64667,
+          "eth": 1810,
+          "fear_greed": 13,
+          "source_report": "daily_20261116_1923",
+          "source": "archived_public_digest_snapshot"
+        },
+        {
+          "date": "2026-11-17",
+          "btc": 64118,
+          "eth": 1789,
+          "fear_greed": 12,
+          "source_report": "daily_20261117_1917",
+          "source": "archived_public_digest_snapshot"
+        },
+        {
+          "date": "2026-11-18",
+          "btc": 64242,
+          "eth": 1802,
+          "fear_greed": 13,
+          "source_report": "daily_20261118_1918",
+          "source": "archived_public_digest_snapshot"
+        },
+        {
+          "date": "2026-11-19",
+          "btc": 63675,
+          "eth": 1801,
+          "fear_greed": 12,
+          "source_report": "daily_20261119_1913",
+          "source": "archived_public_digest_snapshot"
+        },
+        {
+          "date": "2026-11-20",
+          "btc": 61753,
+          "eth": 1749,
+          "fear_greed": 10,
+          "source_report": "daily_20261120_1920",
+          "source": "archived_public_digest_snapshot"
+        }
+      ],
+      "btc_week_pct": -10.867180508645824,
+      "eth_week_pct": -10.399590163934425,
+      "btc_mon_fri_pct": -4.5061623393693795,
+      "eth_mon_fri_pct": -3.370165745856357,
+      "snapshot_not_exchange_close": true
+    },
+    "data_notes": [
+      "日报缺meta.stocks，从存档HTML恢复，原日报未修改",
+      "北京时间报告date与美东常规收盘日错开，已校正",
+      "73条为五份归档日报事件，最新周五补充另列",
+      "财报除权查询使用新版disclosure/dividend等价命令",
+      "官方技能包无package.json且版本不变，升级未通过校验并已告警",
+      "周报不重跑日频信号或修改DCA状态"
+    ]
+  }
+}
