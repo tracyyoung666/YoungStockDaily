@@ -1,64 +1,48 @@
 {
-  "updated_at": "2026-11-20 19:22:55",
+  "updated_at": "2026-11-23 19:23:12",
   "period": "2 trading days",
   "filter": {
     "min_market_cap_usd": 20000000000,
     "min_pct_2d": 5.0,
     "universe": "118 US large-cap stocks (S&P500+NDX100 core)"
   },
-  "hotspots": [
+  "hotspots": [],
+  "latest_completed_session_et": "2026-11-20",
+  "base_session_et": "2026-11-18",
+  "note": "118只固定大市值候选池完整覆盖，11月18日至20日两个已完成美股交易日，非全市场穷尽排行。严格≥5%热点筛选结果为0只；单列Top3参考（T/COP/CVX）均低于5%，不混入达标热点列表。新闻线索不证明涨幅因果，期后报道不能倒推解释历史上涨。",
+  "top3_reference": [
     {
-      "symbol": "PANW",
-      "name": "派拓网络",
-      "close": 361.73,
-      "pct_2d": 16.95,
-      "date_range": "2026-11-17 ~ 2026-11-19",
-      "market_cap_usd": 296174262000.0,
-      "reason": "第一财季营收同比增长39%、备考口径23%，下一代安全ARR增长66%；瑞银目标价390→400美元但仍为中性评级。财报与平台整合是相关催化线索，不证明两日涨幅的唯一原因。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120173304b6937c68&s=b"
+      "symbol": "T",
+      "code": "usT.N",
+      "name": "美国电话电报",
+      "close": 22.31,
+      "base_close": 21.95,
+      "pct_2d": 1.64,
+      "market_cap_usd": 150290722000.0,
+      "reason": "近2日相对抗跌，当前新闻主要为成交与盘中波动，未确认独立上涨催化。Anthropic类比AT&T的标题不属于AT&T公司利好，不能用作涨幅原因。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261120234929973fdad9&s=b"
     },
     {
-      "symbol": "ZS",
-      "name": "Zscaler, Inc.",
-      "close": 205.71,
-      "pct_2d": 11.08,
-      "date_range": "2026-11-17 ~ 2026-11-19",
-      "market_cap_usd": 33541982000.0,
-      "reason": "云安全板块走强，报道指出云安全需求与规模效应改善；此前TD Cowen维持买入、目标价230美元。新闻日内涨10.13%不是最终收盘涨幅，不直接证明算力外溢的因果。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119225415a4afda62&s=b"
+      "symbol": "COP",
+      "code": "usCOP.N",
+      "name": "康菲石油",
+      "close": 136.12,
+      "base_close": 134.4,
+      "pct_2d": 1.28,
+      "market_cap_usd": 160939448000.0,
+      "reason": "最新新闻报道拟以44.25亿美元出售挪威业务及油码头权益，属资产组合调整线索；新闻发表于11月23日，晚于本榜11月20日截止日，不能倒推为两日上涨原因。区间内未取得独立催化证据。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026112316282198c73d6e&s=b"
     },
     {
-      "symbol": "CRWD",
-      "name": "CrowdStrike",
-      "close": 243.46,
-      "pct_2d": 10.88,
-      "date_range": "2026-11-17 ~ 2026-11-19",
-      "market_cap_usd": 249287177000.00003,
-      "reason": "本轮新闻确认网络安全概念股集体走强，为板块共振线索；未取得独立公司层面的新增催化，不将涨幅归因于未经核实的交易或新财报。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026111922215398c1d56f&s=b"
-    },
-    {
-      "symbol": "NET",
-      "name": "科赋锐",
-      "close": 303.68,
-      "pct_2d": 6.63,
-      "date_range": "2026-11-17 ~ 2026-11-19",
-      "market_cap_usd": 108836560000.00002,
-      "reason": "本轮新闻仅取得盘中波动与成交报道，未确认独立公司催化；近2日上涨是行情事实，不凭涨幅编造AI合同、订单或新财报原因。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119223435b69212aa&s=b"
-    },
-    {
-      "symbol": "RBLX",
-      "name": "罗布乐思",
-      "close": 46.35,
-      "pct_2d": 5.34,
-      "date_range": "2026-11-17 ~ 2026-11-19",
-      "market_cap_usd": 33173314000.0,
-      "reason": "美银维持持有评级、目标价48美元；近2日反弹但最新常规时段下跌2.07%，评级维持不能冒充新上调或利好兑现。未确认独立上涨催化。",
-      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261119233215973df4ae&s=b"
+      "symbol": "CVX",
+      "code": "usCVX.N",
+      "name": "雪佛龙",
+      "close": 208.37,
+      "base_close": 205.88,
+      "pct_2d": 1.21,
+      "market_cap_usd": 406582731000.0,
+      "reason": "11月21日北京时间报道美国特使欢迎雪佛龙开展叙利亚能源磋商，为区间内能源业务线索；11月23日勘探船抵达希腊属于期后新闻，不能作为已完成区间涨幅的唯一原因。",
+      "news_url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20261121015602973ffa04&s=b"
     }
-  ],
-  "latest_completed_session_et": "2026-11-19",
-  "base_session_et": "2026-11-17",
-  "note": "118只固定候选池样本，2026-11-17至2026-11-19两个已完成美股交易日，非全市场穷尽。近2日涨幅≥5%且本轮官方市值≥200亿美元，市值及新闻核验后保留5只；新闻作为相关线索，不保证涨幅因果或延续。"
+  ]
 }
