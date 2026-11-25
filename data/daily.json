@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-11-23T19:23:12",
+  "updated_at": "2026-11-25T19:24:18",
   "dailies": [
+    {
+      "slug": "daily_20261125_1923",
+      "date": "2026-11-25",
+      "generated_at": "2026-11-25 19:23",
+      "title": "📈 自选股盘前分析 + Web3 日报 | 2026-11-25 19:23",
+      "summary": "NVDA🟢技术错杀Strong Buy+2.0；TSLA降级存疑Buy；INTC/NBIS/CRWV/MSTR恶化0.3份；BTC $58,777 恐贪8极度恐慌",
+      "tickers": [
+        "MU",
+        "AMD",
+        "INTC",
+        "GOOG",
+        "NVDA",
+        "NBIS",
+        "CRWV",
+        "CRCL",
+        "MSTR",
+        "TSLA",
+        "XPEV"
+      ],
+      "image": "images/daily_20261125_1923.png",
+      "has_stock": true,
+      "has_web3": true
+    },
     {
       "slug": "daily_20261123_1919",
       "date": "2026-11-23",
